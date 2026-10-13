@@ -1,0 +1,107 @@
+[
+  {
+    "participantId": "usr_eve",
+    "displayName": "Eve",
+    "role": "participant",
+    "salt": "78604503816b0328404e536d8d0e6b13",
+    "pinHash": "4fd15742788538744292aa8f8a351948225292ab916efe24ccacdce158022096"
+  },
+  {
+    "participantId": "usr_alexandre_comeau",
+    "displayName": "Alexandre Comeau",
+    "role": "participant",
+    "salt": "232017905d392944573be044dce39462",
+    "pinHash": "551c3a9f79bd999ec45926aa0c9807496693e67b98b5a118eaaacc54c36b5e09"
+  },
+  {
+    "participantId": "usr_hugo_berube",
+    "displayName": "Hugo Berube",
+    "role": "admin",
+    "salt": "993be5220c0d769b6e67b5f5f7444e75",
+    "pinHash": "98c5a9614782c1730d831bdc00caa3b0acac07078add061800378e28a305c23d"
+  },
+  {
+    "participantId": "usr_simon",
+    "displayName": "Simon",
+    "role": "participant",
+    "salt": "f1481cbbf7b915524ac6d3594af95755",
+    "pinHash": "515366feeddad73fd90e5df8341bbbe517d112ed42ae470516380c31ba5f0318"
+  },
+  {
+    "participantId": "usr_sylvianne",
+    "displayName": "Sylvianne",
+    "role": "participant",
+    "salt": "a5e74ca6eb3314a3b27c256f91c5b8e8",
+    "pinHash": "208e0bbe9e97fe218073ff52dc48e7f234833edc507da8e7ad9c4f1836dec224"
+  },
+  {
+    "participantId": "usr_etienne",
+    "displayName": "Étienne",
+    "role": "participant",
+    "salt": "e5ac229fff9ac4722ad4820234cd877e",
+    "pinHash": "bf73390a5d4c176b54df15872d566bccd02dc2ab931cf06ba2cab960ce01f1cf"
+  },
+  {
+    "participantId": "usr_florence",
+    "displayName": "Florence",
+    "role": "participant",
+    "salt": "89e903c00ac90f946f9352025005079f",
+    "pinHash": "3cae57a914634908b8164329cfe68c97c0dc6d74a5da6d741e4ac710d5e0c9fb"
+  },
+  {
+    "participantId": "usr_julien_berube",
+    "displayName": "Julien Bérubé",
+    "role": "participant",
+    "salt": "e2816d764793b8522d759484dc7d9445",
+    "pinHash": "b49cd014212eac908e082780d3d6125a57b0e59918119cd9c112f9522b07a0fe"
+  },
+  {
+    "participantId": "usr_louise_trottier",
+    "displayName": "Louise Trottier",
+    "role": "participant",
+    "salt": "049842cf6f6fb6b0a0479e840d54889f",
+    "pinHash": "0540549469a7dd414d3556f404e6ad403a0611a54a40d58c020759a673269b2b"
+  },
+  {
+    "participantId": "usr_jolyne_brossard",
+    "displayName": "Jolyne Brossard",
+    "role": "participant",
+    "salt": "b7e3b08eb16bcb15be4ded45250a56ff",
+    "pinHash": "777108441df37d22f63864dba185a750db64cc3fd6fa4c28c933e023d2a9c0fc"
+  },
+  {
+    "participantId": "usr_jackson_gagnon",
+    "displayName": "Jackson Gagnon",
+    "role": "participant",
+    "salt": "119403cdcf12ce36cdbb8f6a3c3ea9c1",
+    "pinHash": "c69ea4625cdfc653e4439714022d5456bcad55f534cd364b5330dc8d4b1ff8f8"
+  },
+  {
+    "participantId": "usr_maddox_gagnon",
+    "displayName": "Maddox Gagnon",
+    "role": "participant",
+    "salt": "1c3d7dd88fba61372c8d3a91c7017853",
+    "pinHash": "4bf56711a9d6b4b09a8dede723ccfa019e58b2fcee4970c4ff6cf85f4789ffa1"
+  },
+  {
+    "participantId": "usr_guillaume_brossard",
+    "displayName": "Guillaume Brossard",
+    "role": "participant",
+    "salt": "c63928b24c6c74451b4633f76455fd45",
+    "pinHash": "69186d8b0ad59272a551268779b1c2c41f9595fe30e719ba91aea157941175d9"
+  },
+  {
+    "participantId": "usr_michel_bry",
+    "displayName": "Michel Bry",
+    "role": "participant",
+    "salt": "5f89ba42b9a217d80c516916542b1933",
+    "pinHash": "24deed5d3d45be4990d949f60c0f5b0b7b1cb99e58b982e199882add347bd82d"
+  },
+  {
+    "participantId": "usr_marjolaine_comeau",
+    "displayName": "Marjolaine Comeau",
+    "role": "participant",
+    "salt": "ff57a592e92385fb16df9893b11195a2",
+    "pinHash": "a1e1dfd5e4c64d66f13394ab1ff7b4458b0f83c7a70e296b8fa63bb6a54a8d0f"
+  }
+]

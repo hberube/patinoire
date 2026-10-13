@@ -1,0 +1,8 @@
+# Source material kept locally only
+*.pdf
+pool_form_header.png
+la-patinoire-claude-spec/
+la-patinoire-claude-spec.zip
+*:Zone.Identifier
+__pycache__/
+.venv/

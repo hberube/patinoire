@@ -1,0 +1,45 @@
+name: Process Trade Approval
+
+on:
+  workflow_dispatch:
+    inputs:
+      trade_code:
+        description: 'Trade code from the participant (pasted in the admin panel)'
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pool-data
+  cancel-in-progress: false
+
+jobs:
+  run-trade:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Execute Trade
+        env:
+          TRADE_CODE: ${{ inputs.trade_code }}
+        run: python scripts/execute_trade.py "$TRADE_CODE"
+
+      - name: Commit & Push Roster Changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/*.json
+          git diff --staged --quiet && exit 0
+          git commit -m "Process trade"
+          git pull --rebase
+          git push

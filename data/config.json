@@ -1,0 +1,22 @@
+{
+  "poolName": "Le Pool à Hugo 2026-27",
+  "season": "20262027",
+  "tradeWindowStart": "2027-01-01T00:00:00-05:00",
+  "maxTrades": {
+    "F": 1,
+    "D": 1,
+    "G": 1
+  },
+  "scoring": {
+    "skater": {
+      "goals": 1,
+      "assists": 1
+    },
+    "goalie": {
+      "goals": 1,
+      "assists": 1,
+      "wins": 1,
+      "shutouts": 2
+    }
+  }
+}

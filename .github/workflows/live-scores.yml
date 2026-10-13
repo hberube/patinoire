@@ -1,0 +1,43 @@
+name: Live Scores (Ce soir)
+
+on:
+  schedule:
+    # Every 15 min from 12:00 to 01:59 ET (16:00-05:59 UTC covers EDT and EST).
+    # GitHub may delay scheduled runs by a few minutes; that's fine for a family pool.
+    - cron: '*/15 16-23,0-5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pool-data
+  cancel-in-progress: false
+
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Update live.json
+        run: python scripts/update_live.py
+
+      - name: Commit & Push Changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/live.json
+          git diff --staged --quiet && exit 0
+          git commit -m "Live scores"
+          git pull --rebase
+          git push

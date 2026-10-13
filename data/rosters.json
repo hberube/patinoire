@@ -1,0 +1,2717 @@
+[
+  {
+    "participantId": "usr_eve",
+    "participantName": "Eve",
+    "teamName": "Ève Mcdavid-demidov-bérubé",
+    "tradesUsed": {
+      "F": 0,
+      "D": 0,
+      "G": 0
+    },
+    "players": [
+      {
+        "id": 8478402,
+        "name": "Connor McDavid",
+        "pos": "F",
+        "team": "EDM",
+        "group": 1,
+        "baseline": null
+      },
+      {
+        "id": 8484144,
+        "name": "Connor Bedard",
+        "pos": "F",
+        "team": "CHI",
+        "group": 2,
+        "baseline": null
+      },
+      {
+        "id": 8477492,
+        "name": "Nathan MacKinnon",
+        "pos": "F",
+        "team": "COL",
+        "group": 3,
+        "baseline": null
+      },
+      {
+        "id": 8480018,
+        "name": "Nick Suzuki",
+        "pos": "F",
+        "team": "MTL",
+        "group": 4,
+        "baseline": null
+      },
+      {
+        "id": 8478483,
+        "name": "Mitch Marner",
+        "pos": "F",
+        "team": "VGK",
+        "group": 5,
+        "baseline": null
+      },
+      {
+        "id": 8477404,
+        "name": "Jake Guentzel",
+        "pos": "F",
+        "team": "TBL",
+        "group": 6,
+        "baseline": null
+      },
+      {
+        "id": 8481540,
+        "name": "Cole Caufield",
+        "pos": "F",
+        "team": "MTL",
+        "group": 7,
+        "baseline": null
+      },
+      {
+        "id": 8478420,
+        "name": "Mikko Rantanen",
+        "pos": "F",
+        "team": "DAL",
+        "group": 8,
+        "baseline": null
+      },
+      {
+        "id": 8475913,
+        "name": "Mark Stone",
+        "pos": "F",
+        "team": "VGK",
+        "group": 9,
+        "baseline": null
+      },
+      {
+        "id": 8483515,
+        "name": "Juraj Slafkovský",
+        "pos": "F",
+        "team": "MTL",
+        "group": 10,
+        "baseline": null
+      },
+      {
+        "id": 8480830,
+        "name": "Andrei Svechnikov",
+        "pos": "F",
+        "team": "CAR",
+        "group": 11,
+        "baseline": null
+      },
+      {
+        "id": 8479987,
+        "name": "Morgan Geekie",
+        "pos": "F",
+        "team": "BOS",
+        "group": 12,
+        "baseline": null
+      },
+      {
+        "id": 8482093,
+        "name": "Seth Jarvis",
+        "pos": "F",
+        "team": "CAR",
+        "group": 13,
+        "baseline": null
+      },
+      {
+        "id": 8471215,
+        "name": "Evgeni Malkin",
+        "pos": "F",
+        "team": "PIT",
+        "group": 14,
+        "baseline": null
+      },
+      {
+        "id": 8484984,
+        "name": "Ivan Demidov",
+        "pos": "F",
+        "team": "MTL",
+        "group": 15,
+        "baseline": null
+      },
+      {
+        "id": 8480803,
+        "name": "Evan Bouchard",
+        "pos": "D",
+        "team": "EDM",
+        "group": 16,
+        "baseline": null
+      },
+      {
+        "id": 8483457,
+        "name": "Lane Hutson",
+        "pos": "D",
+        "team": "MTL",
+        "group": 17,
+        "baseline": null
+      },
+      {
+        "id": 8479325,
+        "name": "Charlie McAvoy",
+        "pos": "D",
+        "team": "BOS",
+        "group": 18,
+        "baseline": null
+      },
+      {
+        "id": 8479979,
+        "name": "Jake Oettinger",
+        "pos": "G",
+        "team": "DAL",
+        "group": 19,
+        "baseline": null
+      },
+      {
+        "id": 8480313,
+        "name": "Logan Thompson",
+        "pos": "G",
+        "team": "WSH",
+        "group": 20,
+        "baseline": null
+      },
+      {
+        "id": 8482487,
+        "name": "Jakub Dobes",
+        "pos": "G",
+        "team": "MTL",
+        "group": 21,
+        "baseline": null
+      }
+    ],
+    "formerPlayers": []
+  },
+  {
+    "participantId": "usr_alexandre_comeau",
+    "participantName": "Alexandre Comeau",
+    "teamName": "Éperviers de Sorel",
+    "tradesUsed": {
+      "F": 0,
+      "D": 0,
+      "G": 0
+    },
+    "players": [
+      {
+        "id": 8478402,
+        "name": "Connor McDavid",
+        "pos": "F",
+        "team": "EDM",
+        "group": 1,
+        "baseline": null
+      },
+      {
+        "id": 8484144,
+        "name": "Connor Bedard",
+        "pos": "F",
+        "team": "CHI",
+        "group": 2,
+        "baseline": null
+      },
+      {
+        "id": 8477492,
+        "name": "Nathan MacKinnon",
+        "pos": "F",
+        "team": "COL",
+        "group": 3,
+        "baseline": null
+      },
+      {
+        "id": 8477934,
+        "name": "Leon Draisaitl",
+        "pos": "F",
+        "team": "EDM",
+        "group": 4,
+        "baseline": null
+      },
+      {
+        "id": 8478483,
+        "name": "Mitch Marner",
+        "pos": "F",
+        "team": "VGK",
+        "group": 5,
+        "baseline": null
+      },
+      {
+        "id": 8481559,
+        "name": "Jack Hughes",
+        "pos": "F",
+        "team": "NJD",
+        "group": 6,
+        "baseline": null
+      },
+      {
+        "id": 8481540,
+        "name": "Cole Caufield",
+        "pos": "F",
+        "team": "MTL",
+        "group": 7,
+        "baseline": null
+      },
+      {
+        "id": 8478420,
+        "name": "Mikko Rantanen",
+        "pos": "F",
+        "team": "DAL",
+        "group": 8,
+        "baseline": null
+      },
+      {
+        "id": 8479542,
+        "name": "Brandon Hagel",
+        "pos": "F",
+        "team": "TBL",
+        "group": 9,
+        "baseline": null
+      },
+      {
+        "id": 8483515,
+        "name": "Juraj Slafkovský",
+        "pos": "F",
+        "team": "MTL",
+        "group": 10,
+        "baseline": null
+      },
+      {
+        "id": 8480023,
+        "name": "Robert Thomas",
+        "pos": "F",
+        "team": "STL",
+        "group": 11,
+        "baseline": null
+      },
+      {
+        "id": 8484153,
+        "name": "Leo Carlsson",
+        "pos": "F",
+        "team": "ANA",
+        "group": 12,
+        "baseline": null
+      },
+      {
+        "id": 8482093,
+        "name": "Seth Jarvis",
+        "pos": "F",
+        "team": "CAR",
+        "group": 13,
+        "baseline": null
+      },
+      {
+        "id": 8482720,
+        "name": "Matthew Knies",
+        "pos": "F",
+        "team": "CBJ",
+        "group": 14,
+        "baseline": null
+      },
+      {
+        "id": 8484984,
+        "name": "Ivan Demidov",
+        "pos": "F",
+        "team": "MTL",
+        "group": 15,
+        "baseline": null
+      },
+      {
+        "id": 8480803,
+        "name": "Evan Bouchard",
+        "pos": "D",
+        "team": "EDM",
+        "group": 16,
+        "baseline": null
+      },
+      {
+        "id": 8483457,
+        "name": "Lane Hutson",
+        "pos": "D",
+        "team": "MTL",
+        "group": 17,
+        "baseline": null
+      },
+      {
+        "id": 8480839,
+        "name": "Rasmus Dahlin",
+        "pos": "D",
+        "team": "BUF",
+        "group": 18,
+        "baseline": null
+      },
+      {
+        "id": 8479979,
+        "name": "Jake Oettinger",
+        "pos": "G",
+        "team": "DAL",
+        "group": 19,
+        "baseline": null
+      },
+      {
+        "id": 8483548,
+        "name": "Brandon Bussi",
+        "pos": "G",
+        "team": "CAR",
+        "group": 20,
+        "baseline": null
+      },
+      {
+        "id": 8480280,
+        "name": "Jeremy Swayman",
+        "pos": "G",
+        "team": "BOS",
+        "group": 21,
+        "baseline": null
+      }
+    ],
+    "formerPlayers": []
+  },
+  {
+    "participantId": "usr_hugo_berube",
+    "participantName": "Hugo Berube",
+    "teamName": "Crazy Blue Heelers",
+    "tradesUsed": {
+      "F": 0,
+      "D": 0,
+      "G": 0
+    },
+    "players": [
+      {
+        "id": 8478402,
+        "name": "Connor McDavid",
+        "pos": "F",
+        "team": "EDM",
+        "group": 1,
+        "baseline": null
+      },
+      {
+        "id": 8484144,
+        "name": "Connor Bedard",
+        "pos": "F",
+        "team": "CHI",
+        "group": 2,
+        "baseline": null
+      },
+      {
+        "id": 8477492,
+        "name": "Nathan MacKinnon",
+        "pos": "F",
+        "team": "COL",
+        "group": 3,
+        "baseline": null
+      },
+      {
+        "id": 8477934,
+        "name": "Leon Draisaitl",
+        "pos": "F",
+        "team": "EDM",
+        "group": 4,
+        "baseline": null
+      },
+      {
+        "id": 8478483,
+        "name": "Mitch Marner",
+        "pos": "F",
+        "team": "VGK",
+        "group": 5,
+        "baseline": null
+      },
+      {
+        "id": 8481559,
+        "name": "Jack Hughes",
+        "pos": "F",
+        "team": "NJD",
+        "group": 6,
+        "baseline": null
+      },
+      {
+        "id": 8481540,
+        "name": "Cole Caufield",
+        "pos": "F",
+        "team": "MTL",
+        "group": 7,
+        "baseline": null
+      },
+      {
+        "id": 8478420,
+        "name": "Mikko Rantanen",
+        "pos": "F",
+        "team": "DAL",
+        "group": 8,
+        "baseline": null
+      },
+      {
+        "id": 8475913,
+        "name": "Mark Stone",
+        "pos": "F",
+        "team": "VGK",
+        "group": 9,
+        "baseline": null
+      },
+      {
+        "id": 8483515,
+        "name": "Juraj Slafkovský",
+        "pos": "F",
+        "team": "MTL",
+        "group": 10,
+        "baseline": null
+      },
+      {
+        "id": 8480830,
+        "name": "Andrei Svechnikov",
+        "pos": "F",
+        "team": "CAR",
+        "group": 11,
+        "baseline": null
+      },
+      {
+        "id": 8484153,
+        "name": "Leo Carlsson",
+        "pos": "F",
+        "team": "ANA",
+        "group": 12,
+        "baseline": null
+      },
+      {
+        "id": 8480012,
+        "name": "Elias Pettersson",
+        "pos": "F",
+        "team": "VAN",
+        "group": 13,
+        "baseline": null
+      },
+      {
+        "id": 8481533,
+        "name": "Trevor Zegras",
+        "pos": "F",
+        "team": "PHI",
+        "group": 14,
+        "baseline": null
+      },
+      {
+        "id": 8484984,
+        "name": "Ivan Demidov",
+        "pos": "F",
+        "team": "MTL",
+        "group": 15,
+        "baseline": null
+      },
+      {
+        "id": 8480803,
+        "name": "Evan Bouchard",
+        "pos": "D",
+        "team": "EDM",
+        "group": 16,
+        "baseline": null
+      },
+      {
+        "id": 8483457,
+        "name": "Lane Hutson",
+        "pos": "D",
+        "team": "MTL",
+        "group": 17,
+        "baseline": null
+      },
+      {
+        "id": 8479325,
+        "name": "Charlie McAvoy",
+        "pos": "D",
+        "team": "BOS",
+        "group": 18,
+        "baseline": null
+      },
+      {
+        "id": 8476883,
+        "name": "Andrei Vasilevskiy",
+        "pos": "G",
+        "team": "TBL",
+        "group": 19,
+        "baseline": null
+      },
+      {
+        "id": 8475683,
+        "name": "Sergei Bobrovsky",
+        "pos": "G",
+        "team": "TOR",
+        "group": 20,
+        "baseline": null
+      },
+      {
+        "id": 8480280,
+        "name": "Jeremy Swayman",
+        "pos": "G",
+        "team": "BOS",
+        "group": 21,
+        "baseline": null
+      }
+    ],
+    "formerPlayers": []
+  },
+  {
+    "participantId": "usr_simon",
+    "participantName": "Simon",
+    "teamName": "Les Méchants Grisonnants",
+    "tradesUsed": {
+      "F": 0,
+      "D": 0,
+      "G": 0
+    },
+    "players": [
+      {
+        "id": 8478402,
+        "name": "Connor McDavid",
+        "pos": "F",
+        "team": "EDM",
+        "group": 1,
+        "baseline": null
+      },
+      {
+        "id": 8480039,
+        "name": "Martin Necas",
+        "pos": "F",
+        "team": "COL",
+        "group": 2,
+        "baseline": null
+      },
+      {
+        "id": 8477492,
+        "name": "Nathan MacKinnon",
+        "pos": "F",
+        "team": "COL",
+        "group": 3,
+        "baseline": null
+      },
+      {
+        "id": 8477934,
+        "name": "Leon Draisaitl",
+        "pos": "F",
+        "team": "EDM",
+        "group": 4,
+        "baseline": null
+      },
+      {
+        "id": 8471675,
+        "name": "Sidney Crosby",
+        "pos": "F",
+        "team": "PIT",
+        "group": 5,
+        "baseline": null
+      },
+      {
+        "id": 8481559,
+        "name": "Jack Hughes",
+        "pos": "F",
+        "team": "NJD",
+        "group": 6,
+        "baseline": null
+      },
+      {
+        "id": 8481540,
+        "name": "Cole Caufield",
+        "pos": "F",
+        "team": "MTL",
+        "group": 7,
+        "baseline": null
+      },
+      {
+        "id": 8478420,
+        "name": "Mikko Rantanen",
+        "pos": "F",
+        "team": "DAL",
+        "group": 8,
+        "baseline": null
+      },
+      {
+        "id": 8479542,
+        "name": "Brandon Hagel",
+        "pos": "F",
+        "team": "TBL",
+        "group": 9,
+        "baseline": null
+      },
+      {
+        "id": 8477960,
+        "name": "Adrian Kempe",
+        "pos": "F",
+        "team": "LAK",
+        "group": 10,
+        "baseline": null
+      },
+      {
+        "id": 8482699,
+        "name": "Dylan Guenther",
+        "pos": "F",
+        "team": "UTA",
+        "group": 11,
+        "baseline": null
+      },
+      {
+        "id": 8477933,
+        "name": "Sam Reinhart",
+        "pos": "F",
+        "team": "FLA",
+        "group": 12,
+        "baseline": null
+      },
+      {
+        "id": 8482093,
+        "name": "Seth Jarvis",
+        "pos": "F",
+        "team": "CAR",
+        "group": 13,
+        "baseline": null
+      },
+      {
+        "id": 8480801,
+        "name": "Brady Tkachuk",
+        "pos": "F",
+        "team": "FLA",
+        "group": 14,
+        "baseline": null
+      },
+      {
+        "id": 8484984,
+        "name": "Ivan Demidov",
+        "pos": "F",
+        "team": "MTL",
+        "group": 15,
+        "baseline": null
+      },
+      {
+        "id": 8480803,
+        "name": "Evan Bouchard",
+        "pos": "D",
+        "team": "EDM",
+        "group": 16,
+        "baseline": null
+      },
+      {
+        "id": 8480069,
+        "name": "Cale Makar",
+        "pos": "D",
+        "team": "COL",
+        "group": 17,
+        "baseline": null
+      },
+      {
+        "id": 8480839,
+        "name": "Rasmus Dahlin",
+        "pos": "D",
+        "team": "BUF",
+        "group": 18,
+        "baseline": null
+      },
+      {
+        "id": 8476883,
+        "name": "Andrei Vasilevskiy",
+        "pos": "G",
+        "team": "TBL",
+        "group": 19,
+        "baseline": null
+      },
+      {
+        "id": 8480313,
+        "name": "Logan Thompson",
+        "pos": "G",
+        "team": "WSH",
+        "group": 20,
+        "baseline": null
+      },
+      {
+        "id": 8480280,
+        "name": "Jeremy Swayman",
+        "pos": "G",
+        "team": "BOS",
+        "group": 21,
+        "baseline": null
+      }
+    ],
+    "formerPlayers": []
+  },
+  {
+    "participantId": "usr_sylvianne",
+    "participantName": "Sylvianne",
+    "teamName": "Maman Girafe",
+    "tradesUsed": {
+      "F": 0,
+      "D": 0,
+      "G": 0
+    },
+    "players": [
+      {
+        "id": 8478402,
+        "name": "Connor McDavid",
+        "pos": "F",
+        "team": "EDM",
+        "group": 1,
+        "baseline": null
+      },
+      {
+        "id": 8480039,
+        "name": "Martin Necas",
+        "pos": "F",
+        "team": "COL",
+        "group": 2,
+        "baseline": null
+      },
+      {
+        "id": 8477492,
+        "name": "Nathan MacKinnon",
+        "pos": "F",
+        "team": "COL",
+        "group": 3,
+        "baseline": null
+      },
+      {
+        "id": 8477934,
+        "name": "Leon Draisaitl",
+        "pos": "F",
+        "team": "EDM",
+        "group": 4,
+        "baseline": null
+      },
+      {
+        "id": 8479420,
+        "name": "Tage Thompson",
+        "pos": "F",
+        "team": "BUF",
+        "group": 5,
+        "baseline": null
+      },
+      {
+        "id": 8477404,
+        "name": "Jake Guentzel",
+        "pos": "F",
+        "team": "TBL",
+        "group": 6,
+        "baseline": null
+      },
+      {
+        "id": 8481540,
+        "name": "Cole Caufield",
+        "pos": "F",
+        "team": "MTL",
+        "group": 7,
+        "baseline": null
+      },
+      {
+        "id": 8478420,
+        "name": "Mikko Rantanen",
+        "pos": "F",
+        "team": "DAL",
+        "group": 8,
+        "baseline": null
+      },
+      {
+        "id": 8483445,
+        "name": "Cutter Gauthier",
+        "pos": "F",
+        "team": "ANA",
+        "group": 9,
+        "baseline": null
+      },
+      {
+        "id": 8477960,
+        "name": "Adrian Kempe",
+        "pos": "F",
+        "team": "LAK",
+        "group": 10,
+        "baseline": null
+      },
+      {
+        "id": 8480023,
+        "name": "Robert Thomas",
+        "pos": "F",
+        "team": "STL",
+        "group": 11,
+        "baseline": null
+      },
+      {
+        "id": 8484153,
+        "name": "Leo Carlsson",
+        "pos": "F",
+        "team": "ANA",
+        "group": 12,
+        "baseline": null
+      },
+      {
+        "id": 8474564,
+        "name": "Steven Stamkos",
+        "pos": "F",
+        "team": "NSH",
+        "group": 13,
+        "baseline": null
+      },
+      {
+        "id": 8477946,
+        "name": "Dylan Larkin",
+        "pos": "F",
+        "team": "DET",
+        "group": 14,
+        "baseline": null
+      },
+      {
+        "id": 8484984,
+        "name": "Ivan Demidov",
+        "pos": "F",
+        "team": "MTL",
+        "group": 15,
+        "baseline": null
+      },
+      {
+        "id": 8480803,
+        "name": "Evan Bouchard",
+        "pos": "D",
+        "team": "EDM",
+        "group": 16,
+        "baseline": null
+      },
+      {
+        "id": 8480069,
+        "name": "Cale Makar",
+        "pos": "D",
+        "team": "COL",
+        "group": 17,
+        "baseline": null
+      },
+      {
+        "id": 8480839,
+        "name": "Rasmus Dahlin",
+        "pos": "D",
+        "team": "BUF",
+        "group": 18,
+        "baseline": null
+      },
+      {
+        "id": 8476883,
+        "name": "Andrei Vasilevskiy",
+        "pos": "G",
+        "team": "TBL",
+        "group": 19,
+        "baseline": null
+      },
+      {
+        "id": 8478872,
+        "name": "Karel Vejmelka",
+        "pos": "G",
+        "team": "UTA",
+        "group": 20,
+        "baseline": null
+      },
+      {
+        "id": 8480280,
+        "name": "Jeremy Swayman",
+        "pos": "G",
+        "team": "BOS",
+        "group": 21,
+        "baseline": null
+      }
+    ],
+    "formerPlayers": []
+  },
+  {
+    "participantId": "usr_etienne",
+    "participantName": "Étienne",
+    "teamName": "The titi master",
+    "tradesUsed": {
+      "F": 0,
+      "D": 0,
+      "G": 0
+    },
+    "players": [
+      {
+        "id": 8478402,
+        "name": "Connor McDavid",
+        "pos": "F",
+        "team": "EDM",
+        "group": 1,
+        "baseline": null
+      },
+      {
+        "id": 8484144,
+        "name": "Connor Bedard",
+        "pos": "F",
+        "team": "CHI",
+        "group": 2,
+        "baseline": null
+      },
+      {
+        "id": 8477492,
+        "name": "Nathan MacKinnon",
+        "pos": "F",
+        "team": "COL",
+        "group": 3,
+        "baseline": null
+      },
+      {
+        "id": 8477934,
+        "name": "Leon Draisaitl",
+        "pos": "F",
+        "team": "EDM",
+        "group": 4,
+        "baseline": null
+      },
+      {
+        "id": 8471675,
+        "name": "Sidney Crosby",
+        "pos": "F",
+        "team": "PIT",
+        "group": 5,
+        "baseline": null
+      },
+      {
+        "id": 8481559,
+        "name": "Jack Hughes",
+        "pos": "F",
+        "team": "NJD",
+        "group": 6,
+        "baseline": null
+      },
+      {
+        "id": 8476887,
+        "name": "Filip Forsberg",
+        "pos": "F",
+        "team": "NSH",
+        "group": 7,
+        "baseline": null
+      },
+      {
+        "id": 8478420,
+        "name": "Mikko Rantanen",
+        "pos": "F",
+        "team": "DAL",
+        "group": 8,
+        "baseline": null
+      },
+      {
+        "id": 8475913,
+        "name": "Mark Stone",
+        "pos": "F",
+        "team": "VGK",
+        "group": 9,
+        "baseline": null
+      },
+      {
+        "id": 8477960,
+        "name": "Adrian Kempe",
+        "pos": "F",
+        "team": "LAK",
+        "group": 10,
+        "baseline": null
+      },
+      {
+        "id": 8480830,
+        "name": "Andrei Svechnikov",
+        "pos": "F",
+        "team": "CAR",
+        "group": 11,
+        "baseline": null
+      },
+      {
+        "id": 8477933,
+        "name": "Sam Reinhart",
+        "pos": "F",
+        "team": "FLA",
+        "group": 12,
+        "baseline": null
+      },
+      {
+        "id": 8480012,
+        "name": "Elias Pettersson",
+        "pos": "F",
+        "team": "VAN",
+        "group": 13,
+        "baseline": null
+      },
+      {
+        "id": 8480801,
+        "name": "Brady Tkachuk",
+        "pos": "F",
+        "team": "FLA",
+        "group": 14,
+        "baseline": null
+      },
+      {
+        "id": 8484984,
+        "name": "Ivan Demidov",
+        "pos": "F",
+        "team": "MTL",
+        "group": 15,
+        "baseline": null
+      },
+      {
+        "id": 8480803,
+        "name": "Evan Bouchard",
+        "pos": "D",
+        "team": "EDM",
+        "group": 16,
+        "baseline": null
+      },
+      {
+        "id": 8480069,
+        "name": "Cale Makar",
+        "pos": "D",
+        "team": "COL",
+        "group": 17,
+        "baseline": null
+      },
+      {
+        "id": 8480839,
+        "name": "Rasmus Dahlin",
+        "pos": "D",
+        "team": "BUF",
+        "group": 18,
+        "baseline": null
+      },
+      {
+        "id": 8476883,
+        "name": "Andrei Vasilevskiy",
+        "pos": "G",
+        "team": "TBL",
+        "group": 19,
+        "baseline": null
+      },
+      {
+        "id": 8475683,
+        "name": "Sergei Bobrovsky",
+        "pos": "G",
+        "team": "TOR",
+        "group": 20,
+        "baseline": null
+      },
+      {
+        "id": 8476945,
+        "name": "Connor Hellebuyck",
+        "pos": "G",
+        "team": "WPG",
+        "group": 21,
+        "baseline": null
+      }
+    ],
+    "formerPlayers": []
+  },
+  {
+    "participantId": "usr_florence",
+    "participantName": "Florence",
+    "teamName": "The Eras Tour: Stanley Cup Edition",
+    "tradesUsed": {
+      "F": 0,
+      "D": 0,
+      "G": 0
+    },
+    "players": [
+      {
+        "id": 8484801,
+        "name": "Macklin Celebrini",
+        "pos": "F",
+        "team": "SJS",
+        "group": 1,
+        "baseline": null
+      },
+      {
+        "id": 8484144,
+        "name": "Connor Bedard",
+        "pos": "F",
+        "team": "CHI",
+        "group": 2,
+        "baseline": null
+      },
+      {
+        "id": 8477492,
+        "name": "Nathan MacKinnon",
+        "pos": "F",
+        "team": "COL",
+        "group": 3,
+        "baseline": null
+      },
+      {
+        "id": 8479314,
+        "name": "Matthew Tkachuk",
+        "pos": "F",
+        "team": "FLA",
+        "group": 4,
+        "baseline": null
+      },
+      {
+        "id": 8478483,
+        "name": "Mitch Marner",
+        "pos": "F",
+        "team": "VGK",
+        "group": 5,
+        "baseline": null
+      },
+      {
+        "id": 8481559,
+        "name": "Jack Hughes",
+        "pos": "F",
+        "team": "NJD",
+        "group": 6,
+        "baseline": null
+      },
+      {
+        "id": 8481540,
+        "name": "Cole Caufield",
+        "pos": "F",
+        "team": "MTL",
+        "group": 7,
+        "baseline": null
+      },
+      {
+        "id": 8478420,
+        "name": "Mikko Rantanen",
+        "pos": "F",
+        "team": "DAL",
+        "group": 8,
+        "baseline": null
+      },
+      {
+        "id": 8475913,
+        "name": "Mark Stone",
+        "pos": "F",
+        "team": "VGK",
+        "group": 9,
+        "baseline": null
+      },
+      {
+        "id": 8483515,
+        "name": "Juraj Slafkovský",
+        "pos": "F",
+        "team": "MTL",
+        "group": 10,
+        "baseline": null
+      },
+      {
+        "id": 8480830,
+        "name": "Andrei Svechnikov",
+        "pos": "F",
+        "team": "CAR",
+        "group": 11,
+        "baseline": null
+      },
+      {
+        "id": 8477933,
+        "name": "Sam Reinhart",
+        "pos": "F",
+        "team": "FLA",
+        "group": 12,
+        "baseline": null
+      },
+      {
+        "id": 8482093,
+        "name": "Seth Jarvis",
+        "pos": "F",
+        "team": "CAR",
+        "group": 13,
+        "baseline": null
+      },
+      {
+        "id": 8480801,
+        "name": "Brady Tkachuk",
+        "pos": "F",
+        "team": "FLA",
+        "group": 14,
+        "baseline": null
+      },
+      {
+        "id": 8484984,
+        "name": "Ivan Demidov",
+        "pos": "F",
+        "team": "MTL",
+        "group": 15,
+        "baseline": null
+      },
+      {
+        "id": 8480800,
+        "name": "Quinn Hughes",
+        "pos": "D",
+        "team": "MIN",
+        "group": 16,
+        "baseline": null
+      },
+      {
+        "id": 8480069,
+        "name": "Cale Makar",
+        "pos": "D",
+        "team": "COL",
+        "group": 17,
+        "baseline": null
+      },
+      {
+        "id": 8479345,
+        "name": "Jakob Chychrun",
+        "pos": "D",
+        "team": "WSH",
+        "group": 18,
+        "baseline": null
+      },
+      {
+        "id": 8476883,
+        "name": "Andrei Vasilevskiy",
+        "pos": "G",
+        "team": "TBL",
+        "group": 19,
+        "baseline": null
+      },
+      {
+        "id": 8475683,
+        "name": "Sergei Bobrovsky",
+        "pos": "G",
+        "team": "TOR",
+        "group": 20,
+        "baseline": null
+      },
+      {
+        "id": 8476945,
+        "name": "Connor Hellebuyck",
+        "pos": "G",
+        "team": "WPG",
+        "group": 21,
+        "baseline": null
+      }
+    ],
+    "formerPlayers": []
+  },
+  {
+    "participantId": "usr_julien_berube",
+    "participantName": "Julien Bérubé",
+    "teamName": "No Regretzkys",
+    "tradesUsed": {
+      "F": 0,
+      "D": 0,
+      "G": 0
+    },
+    "players": [
+      {
+        "id": 8478402,
+        "name": "Connor McDavid",
+        "pos": "F",
+        "team": "EDM",
+        "group": 1,
+        "baseline": null
+      },
+      {
+        "id": 8478427,
+        "name": "Sebastian Aho",
+        "pos": "F",
+        "team": "CAR",
+        "group": 2,
+        "baseline": null
+      },
+      {
+        "id": 8477492,
+        "name": "Nathan MacKinnon",
+        "pos": "F",
+        "team": "COL",
+        "group": 3,
+        "baseline": null
+      },
+      {
+        "id": 8479314,
+        "name": "Matthew Tkachuk",
+        "pos": "F",
+        "team": "FLA",
+        "group": 4,
+        "baseline": null
+      },
+      {
+        "id": 8471675,
+        "name": "Sidney Crosby",
+        "pos": "F",
+        "team": "PIT",
+        "group": 5,
+        "baseline": null
+      },
+      {
+        "id": 8481559,
+        "name": "Jack Hughes",
+        "pos": "F",
+        "team": "NJD",
+        "group": 6,
+        "baseline": null
+      },
+      {
+        "id": 8481540,
+        "name": "Cole Caufield",
+        "pos": "F",
+        "team": "MTL",
+        "group": 7,
+        "baseline": null
+      },
+      {
+        "id": 8478420,
+        "name": "Mikko Rantanen",
+        "pos": "F",
+        "team": "DAL",
+        "group": 8,
+        "baseline": null
+      },
+      {
+        "id": 8479542,
+        "name": "Brandon Hagel",
+        "pos": "F",
+        "team": "TBL",
+        "group": 9,
+        "baseline": null
+      },
+      {
+        "id": 8483515,
+        "name": "Juraj Slafkovský",
+        "pos": "F",
+        "team": "MTL",
+        "group": 10,
+        "baseline": null
+      },
+      {
+        "id": 8480830,
+        "name": "Andrei Svechnikov",
+        "pos": "F",
+        "team": "CAR",
+        "group": 11,
+        "baseline": null
+      },
+      {
+        "id": 8477933,
+        "name": "Sam Reinhart",
+        "pos": "F",
+        "team": "FLA",
+        "group": 12,
+        "baseline": null
+      },
+      {
+        "id": 8482093,
+        "name": "Seth Jarvis",
+        "pos": "F",
+        "team": "CAR",
+        "group": 13,
+        "baseline": null
+      },
+      {
+        "id": 8471214,
+        "name": "Alex Ovechkin",
+        "pos": "F",
+        "team": "WSH",
+        "group": 14,
+        "baseline": null
+      },
+      {
+        "id": 8484984,
+        "name": "Ivan Demidov",
+        "pos": "F",
+        "team": "MTL",
+        "group": 15,
+        "baseline": null
+      },
+      {
+        "id": 8480800,
+        "name": "Quinn Hughes",
+        "pos": "D",
+        "team": "MIN",
+        "group": 16,
+        "baseline": null
+      },
+      {
+        "id": 8480069,
+        "name": "Cale Makar",
+        "pos": "D",
+        "team": "COL",
+        "group": 17,
+        "baseline": null
+      },
+      {
+        "id": 8481542,
+        "name": "Moritz Seider",
+        "pos": "D",
+        "team": "DET",
+        "group": 18,
+        "baseline": null
+      },
+      {
+        "id": 8476883,
+        "name": "Andrei Vasilevskiy",
+        "pos": "G",
+        "team": "TBL",
+        "group": 19,
+        "baseline": null
+      },
+      {
+        "id": 8475683,
+        "name": "Sergei Bobrovsky",
+        "pos": "G",
+        "team": "TOR",
+        "group": 20,
+        "baseline": null
+      },
+      {
+        "id": 8476945,
+        "name": "Connor Hellebuyck",
+        "pos": "G",
+        "team": "WPG",
+        "group": 21,
+        "baseline": null
+      }
+    ],
+    "formerPlayers": []
+  },
+  {
+    "participantId": "usr_louise_trottier",
+    "participantName": "Louise Trottier",
+    "teamName": "Les huards",
+    "tradesUsed": {
+      "F": 0,
+      "D": 0,
+      "G": 0
+    },
+    "players": [
+      {
+        "id": 8478402,
+        "name": "Connor McDavid",
+        "pos": "F",
+        "team": "EDM",
+        "group": 1,
+        "baseline": null
+      },
+      {
+        "id": 8480039,
+        "name": "Martin Necas",
+        "pos": "F",
+        "team": "COL",
+        "group": 2,
+        "baseline": null
+      },
+      {
+        "id": 8477492,
+        "name": "Nathan MacKinnon",
+        "pos": "F",
+        "team": "COL",
+        "group": 3,
+        "baseline": null
+      },
+      {
+        "id": 8480018,
+        "name": "Nick Suzuki",
+        "pos": "F",
+        "team": "MTL",
+        "group": 4,
+        "baseline": null
+      },
+      {
+        "id": 8479420,
+        "name": "Tage Thompson",
+        "pos": "F",
+        "team": "BUF",
+        "group": 5,
+        "baseline": null
+      },
+      {
+        "id": 8482740,
+        "name": "Wyatt Johnston",
+        "pos": "F",
+        "team": "DAL",
+        "group": 6,
+        "baseline": null
+      },
+      {
+        "id": 8481540,
+        "name": "Cole Caufield",
+        "pos": "F",
+        "team": "MTL",
+        "group": 7,
+        "baseline": null
+      },
+      {
+        "id": 8477939,
+        "name": "William Nylander",
+        "pos": "F",
+        "team": "TOR",
+        "group": 8,
+        "baseline": null
+      },
+      {
+        "id": 8475913,
+        "name": "Mark Stone",
+        "pos": "F",
+        "team": "VGK",
+        "group": 9,
+        "baseline": null
+      },
+      {
+        "id": 8483515,
+        "name": "Juraj Slafkovský",
+        "pos": "F",
+        "team": "MTL",
+        "group": 10,
+        "baseline": null
+      },
+      {
+        "id": 8482699,
+        "name": "Dylan Guenther",
+        "pos": "F",
+        "team": "UTA",
+        "group": 11,
+        "baseline": null
+      },
+      {
+        "id": 8479987,
+        "name": "Morgan Geekie",
+        "pos": "F",
+        "team": "BOS",
+        "group": 12,
+        "baseline": null
+      },
+      {
+        "id": 8482093,
+        "name": "Seth Jarvis",
+        "pos": "F",
+        "team": "CAR",
+        "group": 13,
+        "baseline": null
+      },
+      {
+        "id": 8482720,
+        "name": "Matthew Knies",
+        "pos": "F",
+        "team": "CBJ",
+        "group": 14,
+        "baseline": null
+      },
+      {
+        "id": 8484984,
+        "name": "Ivan Demidov",
+        "pos": "F",
+        "team": "MTL",
+        "group": 15,
+        "baseline": null
+      },
+      {
+        "id": 8480803,
+        "name": "Evan Bouchard",
+        "pos": "D",
+        "team": "EDM",
+        "group": 16,
+        "baseline": null
+      },
+      {
+        "id": 8483457,
+        "name": "Lane Hutson",
+        "pos": "D",
+        "team": "MTL",
+        "group": 17,
+        "baseline": null
+      },
+      {
+        "id": 8479325,
+        "name": "Charlie McAvoy",
+        "pos": "D",
+        "team": "BOS",
+        "group": 18,
+        "baseline": null
+      },
+      {
+        "id": 8476883,
+        "name": "Andrei Vasilevskiy",
+        "pos": "G",
+        "team": "TBL",
+        "group": 19,
+        "baseline": null
+      },
+      {
+        "id": 8478872,
+        "name": "Karel Vejmelka",
+        "pos": "G",
+        "team": "UTA",
+        "group": 20,
+        "baseline": null
+      },
+      {
+        "id": 8482487,
+        "name": "Jakub Dobes",
+        "pos": "G",
+        "team": "MTL",
+        "group": 21,
+        "baseline": null
+      }
+    ],
+    "formerPlayers": []
+  },
+  {
+    "participantId": "usr_jolyne_brossard",
+    "participantName": "Jolyne Brossard",
+    "teamName": "SkiBum",
+    "tradesUsed": {
+      "F": 0,
+      "D": 0,
+      "G": 0
+    },
+    "players": [
+      {
+        "id": 8478402,
+        "name": "Connor McDavid",
+        "pos": "F",
+        "team": "EDM",
+        "group": 1,
+        "baseline": null
+      },
+      {
+        "id": 8477493,
+        "name": "Alexander Barkov",
+        "pos": "F",
+        "team": "FLA",
+        "group": 2,
+        "baseline": null
+      },
+      {
+        "id": 8477492,
+        "name": "Nathan MacKinnon",
+        "pos": "F",
+        "team": "COL",
+        "group": 3,
+        "baseline": null
+      },
+      {
+        "id": 8479314,
+        "name": "Matthew Tkachuk",
+        "pos": "F",
+        "team": "FLA",
+        "group": 4,
+        "baseline": null
+      },
+      {
+        "id": 8478483,
+        "name": "Mitch Marner",
+        "pos": "F",
+        "team": "VGK",
+        "group": 5,
+        "baseline": null
+      },
+      {
+        "id": 8482740,
+        "name": "Wyatt Johnston",
+        "pos": "F",
+        "team": "DAL",
+        "group": 6,
+        "baseline": null
+      },
+      {
+        "id": 8481540,
+        "name": "Cole Caufield",
+        "pos": "F",
+        "team": "MTL",
+        "group": 7,
+        "baseline": null
+      },
+      {
+        "id": 8478445,
+        "name": "Mathew Barzal",
+        "pos": "F",
+        "team": "NYI",
+        "group": 8,
+        "baseline": null
+      },
+      {
+        "id": 8483445,
+        "name": "Cutter Gauthier",
+        "pos": "F",
+        "team": "ANA",
+        "group": 9,
+        "baseline": null
+      },
+      {
+        "id": 8477960,
+        "name": "Adrian Kempe",
+        "pos": "F",
+        "team": "LAK",
+        "group": 10,
+        "baseline": null
+      },
+      {
+        "id": 8480830,
+        "name": "Andrei Svechnikov",
+        "pos": "F",
+        "team": "CAR",
+        "group": 11,
+        "baseline": null
+      },
+      {
+        "id": 8477933,
+        "name": "Sam Reinhart",
+        "pos": "F",
+        "team": "FLA",
+        "group": 12,
+        "baseline": null
+      },
+      {
+        "id": 8474564,
+        "name": "Steven Stamkos",
+        "pos": "F",
+        "team": "NSH",
+        "group": 13,
+        "baseline": null
+      },
+      {
+        "id": 8471214,
+        "name": "Alex Ovechkin",
+        "pos": "F",
+        "team": "WSH",
+        "group": 14,
+        "baseline": null
+      },
+      {
+        "id": 8484984,
+        "name": "Ivan Demidov",
+        "pos": "F",
+        "team": "MTL",
+        "group": 15,
+        "baseline": null
+      },
+      {
+        "id": 8480803,
+        "name": "Evan Bouchard",
+        "pos": "D",
+        "team": "EDM",
+        "group": 16,
+        "baseline": null
+      },
+      {
+        "id": 8480069,
+        "name": "Cale Makar",
+        "pos": "D",
+        "team": "COL",
+        "group": 17,
+        "baseline": null
+      },
+      {
+        "id": 8480839,
+        "name": "Rasmus Dahlin",
+        "pos": "D",
+        "team": "BUF",
+        "group": 18,
+        "baseline": null
+      },
+      {
+        "id": 8476883,
+        "name": "Andrei Vasilevskiy",
+        "pos": "G",
+        "team": "TBL",
+        "group": 19,
+        "baseline": null
+      },
+      {
+        "id": 8480313,
+        "name": "Logan Thompson",
+        "pos": "G",
+        "team": "WSH",
+        "group": 20,
+        "baseline": null
+      },
+      {
+        "id": 8476945,
+        "name": "Connor Hellebuyck",
+        "pos": "G",
+        "team": "WPG",
+        "group": 21,
+        "baseline": null
+      }
+    ],
+    "formerPlayers": []
+  },
+  {
+    "participantId": "usr_jackson_gagnon",
+    "participantName": "Jackson Gagnon",
+    "teamName": "Les Anglers",
+    "tradesUsed": {
+      "F": 0,
+      "D": 0,
+      "G": 0
+    },
+    "players": [
+      {
+        "id": 8478402,
+        "name": "Connor McDavid",
+        "pos": "F",
+        "team": "EDM",
+        "group": 1,
+        "baseline": null
+      },
+      {
+        "id": 8484144,
+        "name": "Connor Bedard",
+        "pos": "F",
+        "team": "CHI",
+        "group": 2,
+        "baseline": null
+      },
+      {
+        "id": 8477492,
+        "name": "Nathan MacKinnon",
+        "pos": "F",
+        "team": "COL",
+        "group": 3,
+        "baseline": null
+      },
+      {
+        "id": 8477934,
+        "name": "Leon Draisaitl",
+        "pos": "F",
+        "team": "EDM",
+        "group": 4,
+        "baseline": null
+      },
+      {
+        "id": 8479407,
+        "name": "Jesper Bratt",
+        "pos": "F",
+        "team": "NJD",
+        "group": 5,
+        "baseline": null
+      },
+      {
+        "id": 8481559,
+        "name": "Jack Hughes",
+        "pos": "F",
+        "team": "NJD",
+        "group": 6,
+        "baseline": null
+      },
+      {
+        "id": 8481540,
+        "name": "Cole Caufield",
+        "pos": "F",
+        "team": "MTL",
+        "group": 7,
+        "baseline": null
+      },
+      {
+        "id": 8478420,
+        "name": "Mikko Rantanen",
+        "pos": "F",
+        "team": "DAL",
+        "group": 8,
+        "baseline": null
+      },
+      {
+        "id": 8479542,
+        "name": "Brandon Hagel",
+        "pos": "F",
+        "team": "TBL",
+        "group": 9,
+        "baseline": null
+      },
+      {
+        "id": 8483515,
+        "name": "Juraj Slafkovský",
+        "pos": "F",
+        "team": "MTL",
+        "group": 10,
+        "baseline": null
+      },
+      {
+        "id": 8480830,
+        "name": "Andrei Svechnikov",
+        "pos": "F",
+        "team": "CAR",
+        "group": 11,
+        "baseline": null
+      },
+      {
+        "id": 8477933,
+        "name": "Sam Reinhart",
+        "pos": "F",
+        "team": "FLA",
+        "group": 12,
+        "baseline": null
+      },
+      {
+        "id": 8480012,
+        "name": "Elias Pettersson",
+        "pos": "F",
+        "team": "VAN",
+        "group": 13,
+        "baseline": null
+      },
+      {
+        "id": 8481533,
+        "name": "Trevor Zegras",
+        "pos": "F",
+        "team": "PHI",
+        "group": 14,
+        "baseline": null
+      },
+      {
+        "id": 8484984,
+        "name": "Ivan Demidov",
+        "pos": "F",
+        "team": "MTL",
+        "group": 15,
+        "baseline": null
+      },
+      {
+        "id": 8480800,
+        "name": "Quinn Hughes",
+        "pos": "D",
+        "team": "MIN",
+        "group": 16,
+        "baseline": null
+      },
+      {
+        "id": 8480069,
+        "name": "Cale Makar",
+        "pos": "D",
+        "team": "COL",
+        "group": 17,
+        "baseline": null
+      },
+      {
+        "id": 8480839,
+        "name": "Rasmus Dahlin",
+        "pos": "D",
+        "team": "BUF",
+        "group": 18,
+        "baseline": null
+      },
+      {
+        "id": 8479979,
+        "name": "Jake Oettinger",
+        "pos": "G",
+        "team": "DAL",
+        "group": 19,
+        "baseline": null
+      },
+      {
+        "id": 8475683,
+        "name": "Sergei Bobrovsky",
+        "pos": "G",
+        "team": "TOR",
+        "group": 20,
+        "baseline": null
+      },
+      {
+        "id": 8476945,
+        "name": "Connor Hellebuyck",
+        "pos": "G",
+        "team": "WPG",
+        "group": 21,
+        "baseline": null
+      }
+    ],
+    "formerPlayers": []
+  },
+  {
+    "participantId": "usr_maddox_gagnon",
+    "participantName": "Maddox Gagnon",
+    "teamName": "SK|MADDOXG",
+    "tradesUsed": {
+      "F": 0,
+      "D": 0,
+      "G": 0
+    },
+    "players": [
+      {
+        "id": 8477956,
+        "name": "David Pastrnak",
+        "pos": "F",
+        "team": "BOS",
+        "group": 1,
+        "baseline": null
+      },
+      {
+        "id": 8478427,
+        "name": "Sebastian Aho",
+        "pos": "F",
+        "team": "CAR",
+        "group": 2,
+        "baseline": null
+      },
+      {
+        "id": 8477492,
+        "name": "Nathan MacKinnon",
+        "pos": "F",
+        "team": "COL",
+        "group": 3,
+        "baseline": null
+      },
+      {
+        "id": 8480018,
+        "name": "Nick Suzuki",
+        "pos": "F",
+        "team": "MTL",
+        "group": 4,
+        "baseline": null
+      },
+      {
+        "id": 8471675,
+        "name": "Sidney Crosby",
+        "pos": "F",
+        "team": "PIT",
+        "group": 5,
+        "baseline": null
+      },
+      {
+        "id": 8477404,
+        "name": "Jake Guentzel",
+        "pos": "F",
+        "team": "TBL",
+        "group": 6,
+        "baseline": null
+      },
+      {
+        "id": 8481540,
+        "name": "Cole Caufield",
+        "pos": "F",
+        "team": "MTL",
+        "group": 7,
+        "baseline": null
+      },
+      {
+        "id": 8475158,
+        "name": "Ryan O'Reilly",
+        "pos": "F",
+        "team": "NSH",
+        "group": 8,
+        "baseline": null
+      },
+      {
+        "id": 8477940,
+        "name": "Nikolaj Ehlers",
+        "pos": "F",
+        "team": "CAR",
+        "group": 9,
+        "baseline": null
+      },
+      {
+        "id": 8483515,
+        "name": "Juraj Slafkovský",
+        "pos": "F",
+        "team": "MTL",
+        "group": 10,
+        "baseline": null
+      },
+      {
+        "id": 8480830,
+        "name": "Andrei Svechnikov",
+        "pos": "F",
+        "team": "CAR",
+        "group": 11,
+        "baseline": null
+      },
+      {
+        "id": 8475754,
+        "name": "Brock Nelson",
+        "pos": "F",
+        "team": "COL",
+        "group": 12,
+        "baseline": null
+      },
+      {
+        "id": 8474564,
+        "name": "Steven Stamkos",
+        "pos": "F",
+        "team": "NSH",
+        "group": 13,
+        "baseline": null
+      },
+      {
+        "id": 8471214,
+        "name": "Alex Ovechkin",
+        "pos": "F",
+        "team": "WSH",
+        "group": 14,
+        "baseline": null
+      },
+      {
+        "id": 8484984,
+        "name": "Ivan Demidov",
+        "pos": "F",
+        "team": "MTL",
+        "group": 15,
+        "baseline": null
+      },
+      {
+        "id": 8474578,
+        "name": "Erik Karlsson",
+        "pos": "D",
+        "team": "PIT",
+        "group": 16,
+        "baseline": null
+      },
+      {
+        "id": 8483457,
+        "name": "Lane Hutson",
+        "pos": "D",
+        "team": "MTL",
+        "group": 17,
+        "baseline": null
+      },
+      {
+        "id": 8481542,
+        "name": "Moritz Seider",
+        "pos": "D",
+        "team": "DET",
+        "group": 18,
+        "baseline": null
+      },
+      {
+        "id": 8480981,
+        "name": "Joel Hofer",
+        "pos": "G",
+        "team": "STL",
+        "group": 19,
+        "baseline": null
+      },
+      {
+        "id": 8475683,
+        "name": "Sergei Bobrovsky",
+        "pos": "G",
+        "team": "TOR",
+        "group": 20,
+        "baseline": null
+      },
+      {
+        "id": 8482487,
+        "name": "Jakub Dobes",
+        "pos": "G",
+        "team": "MTL",
+        "group": 21,
+        "baseline": null
+      }
+    ],
+    "formerPlayers": []
+  },
+  {
+    "participantId": "usr_guillaume_brossard",
+    "participantName": "Guillaume Brossard",
+    "teamName": "Laser Kiwis",
+    "tradesUsed": {
+      "F": 0,
+      "D": 0,
+      "G": 0
+    },
+    "players": [
+      {
+        "id": 8478402,
+        "name": "Connor McDavid",
+        "pos": "F",
+        "team": "EDM",
+        "group": 1,
+        "baseline": null
+      },
+      {
+        "id": 8480039,
+        "name": "Martin Necas",
+        "pos": "F",
+        "team": "COL",
+        "group": 2,
+        "baseline": null
+      },
+      {
+        "id": 8477492,
+        "name": "Nathan MacKinnon",
+        "pos": "F",
+        "team": "COL",
+        "group": 3,
+        "baseline": null
+      },
+      {
+        "id": 8477934,
+        "name": "Leon Draisaitl",
+        "pos": "F",
+        "team": "EDM",
+        "group": 4,
+        "baseline": null
+      },
+      {
+        "id": 8478483,
+        "name": "Mitch Marner",
+        "pos": "F",
+        "team": "VGK",
+        "group": 5,
+        "baseline": null
+      },
+      {
+        "id": 8481559,
+        "name": "Jack Hughes",
+        "pos": "F",
+        "team": "NJD",
+        "group": 6,
+        "baseline": null
+      },
+      {
+        "id": 8481557,
+        "name": "Matt Boldy",
+        "pos": "F",
+        "team": "MIN",
+        "group": 7,
+        "baseline": null
+      },
+      {
+        "id": 8477939,
+        "name": "William Nylander",
+        "pos": "F",
+        "team": "TOR",
+        "group": 8,
+        "baseline": null
+      },
+      {
+        "id": 8483445,
+        "name": "Cutter Gauthier",
+        "pos": "F",
+        "team": "ANA",
+        "group": 9,
+        "baseline": null
+      },
+      {
+        "id": 8480893,
+        "name": "Kirill Marchenko",
+        "pos": "F",
+        "team": "TOR",
+        "group": 10,
+        "baseline": null
+      },
+      {
+        "id": 8480023,
+        "name": "Robert Thomas",
+        "pos": "F",
+        "team": "STL",
+        "group": 11,
+        "baseline": null
+      },
+      {
+        "id": 8484153,
+        "name": "Leo Carlsson",
+        "pos": "F",
+        "team": "ANA",
+        "group": 12,
+        "baseline": null
+      },
+      {
+        "id": 8482093,
+        "name": "Seth Jarvis",
+        "pos": "F",
+        "team": "CAR",
+        "group": 13,
+        "baseline": null
+      },
+      {
+        "id": 8477946,
+        "name": "Dylan Larkin",
+        "pos": "F",
+        "team": "DET",
+        "group": 14,
+        "baseline": null
+      },
+      {
+        "id": 8486067,
+        "name": "Gavin McKenna",
+        "pos": "F",
+        "team": "TOR",
+        "group": 15,
+        "baseline": null
+      },
+      {
+        "id": 8480800,
+        "name": "Quinn Hughes",
+        "pos": "D",
+        "team": "MIN",
+        "group": 16,
+        "baseline": null
+      },
+      {
+        "id": 8480069,
+        "name": "Cale Makar",
+        "pos": "D",
+        "team": "COL",
+        "group": 17,
+        "baseline": null
+      },
+      {
+        "id": 8480839,
+        "name": "Rasmus Dahlin",
+        "pos": "D",
+        "team": "BUF",
+        "group": 18,
+        "baseline": null
+      },
+      {
+        "id": 8479979,
+        "name": "Jake Oettinger",
+        "pos": "G",
+        "team": "DAL",
+        "group": 19,
+        "baseline": null
+      },
+      {
+        "id": 8480313,
+        "name": "Logan Thompson",
+        "pos": "G",
+        "team": "WSH",
+        "group": 20,
+        "baseline": null
+      },
+      {
+        "id": 8480280,
+        "name": "Jeremy Swayman",
+        "pos": "G",
+        "team": "BOS",
+        "group": 21,
+        "baseline": null
+      }
+    ],
+    "formerPlayers": []
+  },
+  {
+    "participantId": "usr_michel_bry",
+    "participantName": "Michel Bry",
+    "teamName": "Les Ducks",
+    "tradesUsed": {
+      "F": 0,
+      "D": 0,
+      "G": 0
+    },
+    "players": [
+      {
+        "id": 8478402,
+        "name": "Connor McDavid",
+        "pos": "F",
+        "team": "EDM",
+        "group": 1,
+        "baseline": null
+      },
+      {
+        "id": 8480039,
+        "name": "Martin Necas",
+        "pos": "F",
+        "team": "COL",
+        "group": 2,
+        "baseline": null
+      },
+      {
+        "id": 8477492,
+        "name": "Nathan MacKinnon",
+        "pos": "F",
+        "team": "COL",
+        "group": 3,
+        "baseline": null
+      },
+      {
+        "id": 8477934,
+        "name": "Leon Draisaitl",
+        "pos": "F",
+        "team": "EDM",
+        "group": 4,
+        "baseline": null
+      },
+      {
+        "id": 8478483,
+        "name": "Mitch Marner",
+        "pos": "F",
+        "team": "VGK",
+        "group": 5,
+        "baseline": null
+      },
+      {
+        "id": 8481559,
+        "name": "Jack Hughes",
+        "pos": "F",
+        "team": "NJD",
+        "group": 6,
+        "baseline": null
+      },
+      {
+        "id": 8481540,
+        "name": "Cole Caufield",
+        "pos": "F",
+        "team": "MTL",
+        "group": 7,
+        "baseline": null
+      },
+      {
+        "id": 8477939,
+        "name": "William Nylander",
+        "pos": "F",
+        "team": "TOR",
+        "group": 8,
+        "baseline": null
+      },
+      {
+        "id": 8475913,
+        "name": "Mark Stone",
+        "pos": "F",
+        "team": "VGK",
+        "group": 9,
+        "baseline": null
+      },
+      {
+        "id": 8483515,
+        "name": "Juraj Slafkovský",
+        "pos": "F",
+        "team": "MTL",
+        "group": 10,
+        "baseline": null
+      },
+      {
+        "id": 8477949,
+        "name": "Alex Tuch",
+        "pos": "F",
+        "team": "WSH",
+        "group": 11,
+        "baseline": null
+      },
+      {
+        "id": 8484153,
+        "name": "Leo Carlsson",
+        "pos": "F",
+        "team": "ANA",
+        "group": 12,
+        "baseline": null
+      },
+      {
+        "id": 8480012,
+        "name": "Elias Pettersson",
+        "pos": "F",
+        "team": "VAN",
+        "group": 13,
+        "baseline": null
+      },
+      {
+        "id": 8482720,
+        "name": "Matthew Knies",
+        "pos": "F",
+        "team": "CBJ",
+        "group": 14,
+        "baseline": null
+      },
+      {
+        "id": 8486067,
+        "name": "Gavin McKenna",
+        "pos": "F",
+        "team": "TOR",
+        "group": 15,
+        "baseline": null
+      },
+      {
+        "id": 8480803,
+        "name": "Evan Bouchard",
+        "pos": "D",
+        "team": "EDM",
+        "group": 16,
+        "baseline": null
+      },
+      {
+        "id": 8483457,
+        "name": "Lane Hutson",
+        "pos": "D",
+        "team": "MTL",
+        "group": 17,
+        "baseline": null
+      },
+      {
+        "id": 8480839,
+        "name": "Rasmus Dahlin",
+        "pos": "D",
+        "team": "BUF",
+        "group": 18,
+        "baseline": null
+      },
+      {
+        "id": 8476883,
+        "name": "Andrei Vasilevskiy",
+        "pos": "G",
+        "team": "TBL",
+        "group": 19,
+        "baseline": null
+      },
+      {
+        "id": 8478872,
+        "name": "Karel Vejmelka",
+        "pos": "G",
+        "team": "UTA",
+        "group": 20,
+        "baseline": null
+      },
+      {
+        "id": 8480280,
+        "name": "Jeremy Swayman",
+        "pos": "G",
+        "team": "BOS",
+        "group": 21,
+        "baseline": null
+      }
+    ],
+    "formerPlayers": []
+  },
+  {
+    "participantId": "usr_marjolaine_comeau",
+    "participantName": "Marjolaine Comeau",
+    "teamName": "mchb",
+    "tradesUsed": {
+      "F": 0,
+      "D": 0,
+      "G": 0
+    },
+    "players": [
+      {
+        "id": 8478402,
+        "name": "Connor McDavid",
+        "pos": "F",
+        "team": "EDM",
+        "group": 1,
+        "baseline": null
+      },
+      {
+        "id": 8484144,
+        "name": "Connor Bedard",
+        "pos": "F",
+        "team": "CHI",
+        "group": 2,
+        "baseline": null
+      },
+      {
+        "id": 8477492,
+        "name": "Nathan MacKinnon",
+        "pos": "F",
+        "team": "COL",
+        "group": 3,
+        "baseline": null
+      },
+      {
+        "id": 8480018,
+        "name": "Nick Suzuki",
+        "pos": "F",
+        "team": "MTL",
+        "group": 4,
+        "baseline": null
+      },
+      {
+        "id": 8471675,
+        "name": "Sidney Crosby",
+        "pos": "F",
+        "team": "PIT",
+        "group": 5,
+        "baseline": null
+      },
+      {
+        "id": 8481559,
+        "name": "Jack Hughes",
+        "pos": "F",
+        "team": "NJD",
+        "group": 6,
+        "baseline": null
+      },
+      {
+        "id": 8481540,
+        "name": "Cole Caufield",
+        "pos": "F",
+        "team": "MTL",
+        "group": 7,
+        "baseline": null
+      },
+      {
+        "id": 8478445,
+        "name": "Mathew Barzal",
+        "pos": "F",
+        "team": "NYI",
+        "group": 8,
+        "baseline": null
+      },
+      {
+        "id": 8475913,
+        "name": "Mark Stone",
+        "pos": "F",
+        "team": "VGK",
+        "group": 9,
+        "baseline": null
+      },
+      {
+        "id": 8483515,
+        "name": "Juraj Slafkovský",
+        "pos": "F",
+        "team": "MTL",
+        "group": 10,
+        "baseline": null
+      },
+      {
+        "id": 8475166,
+        "name": "John Tavares",
+        "pos": "F",
+        "team": "TOR",
+        "group": 11,
+        "baseline": null
+      },
+      {
+        "id": 8479987,
+        "name": "Morgan Geekie",
+        "pos": "F",
+        "team": "BOS",
+        "group": 12,
+        "baseline": null
+      },
+      {
+        "id": 8480012,
+        "name": "Elias Pettersson",
+        "pos": "F",
+        "team": "VAN",
+        "group": 13,
+        "baseline": null
+      },
+      {
+        "id": 8480801,
+        "name": "Brady Tkachuk",
+        "pos": "F",
+        "team": "FLA",
+        "group": 14,
+        "baseline": null
+      },
+      {
+        "id": 8478401,
+        "name": "Pavel Zacha",
+        "pos": "F",
+        "team": "BOS",
+        "group": 15,
+        "baseline": null
+      },
+      {
+        "id": 8480803,
+        "name": "Evan Bouchard",
+        "pos": "D",
+        "team": "EDM",
+        "group": 16,
+        "baseline": null
+      },
+      {
+        "id": 8483457,
+        "name": "Lane Hutson",
+        "pos": "D",
+        "team": "MTL",
+        "group": 17,
+        "baseline": null
+      },
+      {
+        "id": 8479325,
+        "name": "Charlie McAvoy",
+        "pos": "D",
+        "team": "BOS",
+        "group": 18,
+        "baseline": null
+      },
+      {
+        "id": 8479979,
+        "name": "Jake Oettinger",
+        "pos": "G",
+        "team": "DAL",
+        "group": 19,
+        "baseline": null
+      },
+      {
+        "id": 8475683,
+        "name": "Sergei Bobrovsky",
+        "pos": "G",
+        "team": "TOR",
+        "group": 20,
+        "baseline": null
+      },
+      {
+        "id": 8480280,
+        "name": "Jeremy Swayman",
+        "pos": "G",
+        "team": "BOS",
+        "group": 21,
+        "baseline": null
+      }
+    ],
+    "formerPlayers": []
+  }
+]

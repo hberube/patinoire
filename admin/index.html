@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex">
+  <title>Admin — Le Pool à Hugo</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏒</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <nav class="topbar">
+    <div class="topbar-inner">
+      <strong class="admin-title">🏒 Admin</strong>
+      <div class="actions" style="margin-left:auto">
+        <a class="btn btn-sm" href="../index.html">← Pool</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div id="gate" class="card card-pad hidden">
+      Cette page est réservée à l'administrateur. <a href="../index.html#trades">Connectez-vous</a> avec le NIP admin.
+    </div>
+
+    <div id="admin" class="hidden">
+      <section>
+        <div class="section-head"><h2>1. Approuver un échange</h2><span id="window" class="muted"></span></div>
+        <div class="card card-pad grid">
+          <label class="field">Collez le message ou le code reçu
+            <textarea class="input code-box" id="trade-input" placeholder="Échange — Le Pool à Hugo …"></textarea>
+          </label>
+          <div id="trade-preview"></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head"><h2>2. Jeton GitHub</h2></div>
+        <div class="card card-pad grid">
+          <p class="hint">Un jeton <b>fine-grained</b> limité au dépôt <code>hberube/la-patinoire</code>, permission
+            <b>Actions: Read and write</b>. Il reste seulement dans ce navigateur.
+            <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">Créer un jeton</a></p>
+          <div class="form-row">
+            <input class="input" type="password" id="gh-token" placeholder="github_pat_…" autocomplete="off">
+            <button class="btn" id="save-token">Enregistrer</button>
+            <button class="btn btn-ghost" id="forget-token">Oublier</button>
+          </div>
+          <div class="form-row">
+            <button class="btn" id="run-daily">Mettre à jour les stats maintenant</button>
+            <a class="btn btn-ghost" id="actions-link" target="_blank" rel="noopener">Voir les GitHub Actions ↗</a>
+          </div>
+          <p class="status-line" id="token-status"></p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head"><h2>3. NIP d'un participant</h2></div>
+        <div class="card card-pad grid">
+          <p class="hint">Génère l'entrée à coller dans <code>data/users.json</code> (remplace l'ancienne entrée de cette personne).
+            Ou en ligne de commande : <code>python scripts/make_pins.py usr_… 1234</code>.</p>
+          <div class="form-row">
+            <select class="input" id="pin-user"></select>
+            <input class="input" id="pin-value" inputmode="numeric" placeholder="NIP (vide = aléatoire)" style="max-width:200px">
+            <button class="btn" id="pin-make">Générer</button>
+          </div>
+          <textarea class="input code-box hidden" id="pin-output" readonly></textarea>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head"><h2>4. Configuration</h2>
+          <a class="btn btn-sm" id="edit-config" target="_blank" rel="noopener">Modifier config.json ↗</a></div>
+        <div class="card card-pad"><pre id="config-view" class="config-view"></pre></div>
+      </section>
+    </div>
+  </main>
+  <script type="module" src="admin.js"></script>
+</body>
+</html>
