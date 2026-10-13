@@ -50,7 +50,38 @@
       </section>
 
       <section>
-        <div class="section-head"><h2>3. Jeton GitHub</h2></div>
+        <div class="section-head"><h2>3. Courriel à tous</h2><span id="mail-count" class="muted"></span></div>
+        <div class="card card-pad grid">
+          <p class="hint">Prépare un courriel pour tous les participants, en <b>copie cachée (CCI)</b> : personne ne voit
+            l'adresse des autres. Il s'ouvre dans Gmail ou dans votre application de courriel; vous le relisez et l'envoyez vous-même.</p>
+          <label class="field">Modèle
+            <select class="input" id="mail-template"></select>
+          </label>
+          <label class="field">Objet
+            <input class="input" id="mail-subject">
+          </label>
+          <label class="field">Message
+            <textarea class="input mail-body" id="mail-body" rows="12"></textarea>
+          </label>
+          <details class="recipients">
+            <summary id="mail-recipients-summary">Destinataires</summary>
+            <div class="form-row" style="margin:8px 0">
+              <button class="btn btn-sm" id="mail-all">Tous</button>
+              <button class="btn btn-sm btn-ghost" id="mail-none">Aucun</button>
+            </div>
+            <div id="mail-recipients" class="recipient-list"></div>
+          </details>
+          <div class="form-row">
+            <a class="btn btn-primary" id="mail-gmail" target="_blank" rel="noopener">Ouvrir dans Gmail</a>
+            <a class="btn" id="mail-app">Application de courriel</a>
+            <button class="btn btn-ghost" id="mail-copy">Copier les adresses</button>
+          </div>
+          <p class="status-line" id="mail-status"></p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head"><h2>4. Jeton GitHub</h2></div>
         <div class="card card-pad grid">
           <p class="hint">Un jeton <b>fine-grained</b> limité au dépôt <code id="repo-name">hberube/patinoire</code>, permission
             <b>Actions: Read and write</b>. Il reste seulement dans ce navigateur.
@@ -69,7 +100,7 @@
       </section>
 
       <section>
-        <div class="section-head"><h2>4. NIP d'un participant</h2></div>
+        <div class="section-head"><h2>5. NIP d'un participant</h2></div>
         <div class="card card-pad grid">
           <p class="hint">Génère l'entrée à coller dans <code>data/users.json</code> (remplace l'ancienne entrée de cette personne).
             Ou en ligne de commande : <code>python scripts/make_pins.py usr_… 1234</code>.</p>
@@ -83,7 +114,7 @@
       </section>
 
       <section>
-        <div class="section-head"><h2>5. Images d'équipe</h2></div>
+        <div class="section-head"><h2>6. Images d'équipe</h2></div>
         <div class="card card-pad grid">
           <p class="hint">Publiez le logo d'équipe ou la photo qu'un participant vous a envoyé. Elle est recadrée et
             convertie automatiquement, puis apparaît sur le site 2-3 minutes après.</p>
@@ -107,7 +138,7 @@
       </section>
 
       <section>
-        <div class="section-head"><h2>6. Configuration</h2>
+        <div class="section-head"><h2>7. Configuration</h2>
           <a class="btn btn-sm" id="edit-config" target="_blank" rel="noopener">Modifier config.json ↗</a></div>
         <div class="card card-pad"><pre id="config-view" class="config-view"></pre></div>
       </section>

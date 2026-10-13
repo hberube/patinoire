@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   document.getElementById("repo-name").textContent = `${OWNER}/${REPO}`;
   setupToken();
   setupContacts();
+  setupMail();
   setupTradeReview();
   setupPins();
   setupLogos();
@@ -73,7 +74,7 @@ function status(msg, ok) {
 
 async function dispatch(workflow, inputs) {
   const token = store.get();
-  if (!token) { status("Entrez et enregistrez d'abord votre jeton GitHub (section 3).", false); return false; }
+  if (!token) { status("Entrez et enregistrez d'abord votre jeton GitHub (section 4).", false); return false; }
   try {
     const res = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/actions/workflows/${workflow}/dispatches`, {
       method: "POST",
@@ -182,6 +183,7 @@ function setupContacts() {
       + (missing.length ? ` Sans courriel : ${missing.join(", ")}.` : "")
       + (unknown.length ? ` Noms non reconnus : ${unknown.join(", ")}.` : "");
     renderPreview(document.getElementById("trade-input").value);
+    refreshMail();
   });
   document.getElementById("contacts-forget").addEventListener("click", () => {
     try { localStorage.removeItem(CONTACTS_KEY); } catch { /* ignore */ }
@@ -189,6 +191,7 @@ function setupContacts() {
     st.className = "status-line ok";
     st.textContent = "Contacts effacés de ce navigateur.";
     renderPreview(document.getElementById("trade-input").value);
+    refreshMail();
   });
 }
 
@@ -259,4 +262,101 @@ function setupLogos() {
     if (!confirm("Retirer cette image?")) return;
     await run({ participant_id: select.value, kind: kindSel.value, remove: "true" }, "Image retirée (2-3 minutes).");
   });
+}
+
+// ---------- Email to everyone (BCC), sent from Hugo's own Gmail or mail app ----------
+let refreshMail = () => {};
+
+function mailTemplates() {
+  const site = new URL("../", location.href).href;
+  const opens = new Date(D.config.tradeWindowStart).toLocaleDateString("fr-CA", { dateStyle: "long" });
+  const { F, D: Dq, G } = D.config.maxTrades;
+  return [
+    { id: "launch", label: "Le nouveau site est en ligne",
+      subject: "Le Pool à Hugo 2026-27 — le nouveau site est en ligne!",
+      body: `Bonjour à tous!
+
+Le nouveau site du pool est en ligne :
+${site}
+
+Vous y trouverez le classement (mis à jour chaque matin), la Gazette avec les buts de vos joueurs, les duels de la semaine et les matchs de ce soir.
+
+Pour vous connecter, touchez « Connexion », choisissez votre nom et entrez votre NIP (je vous l'envoie séparément).
+
+Vous voulez changer votre photo ou le logo de votre équipe? Tout est expliqué ici :
+${site}?q=0-0#faq
+
+Bon pool!
+Hugo` },
+    { id: "trades", label: "La période d'échanges est ouverte",
+      subject: "Le Pool à Hugo — la période d'échanges est ouverte!",
+      body: `Bonjour à tous!
+
+La période d'échanges est ouverte depuis le ${opens}. Chaque équipe a droit à ${F} échange d'attaquant, ${Dq} de défenseur et ${G} de gardien, toujours contre un joueur de la même ronde.
+
+Comment faire, étape par étape :
+${site}?q=1-1#faq
+
+Envoyez-moi le message généré par le site à partir de votre propre courriel ou téléphone.
+
+Hugo` },
+    { id: "blank", label: "Message libre", subject: "Le Pool à Hugo", body: `Bonjour à tous!\n\n\n\nHugo\n${site}` },
+  ];
+}
+
+function setupMail() {
+  const $ = id => document.getElementById(id);
+  const templates = mailTemplates();
+  $("mail-template").innerHTML = templates.map(tp => `<option value="${tp.id}">${esc(tp.label)}</option>`).join("");
+  const applyTemplate = () => {
+    const tp = templates.find(x => x.id === $("mail-template").value);
+    $("mail-subject").value = tp.subject;
+    $("mail-body").value = tp.body;
+    updateLinks();
+  };
+  const selected = () => [...document.querySelectorAll("#mail-recipients input:checked")].map(i => i.value);
+
+  function updateLinks() {
+    const bcc = selected(), subject = $("mail-subject").value, body = $("mail-body").value;
+    const ready = bcc.length > 0;
+    $("mail-count").textContent = ready ? `${bcc.length} destinataire${bcc.length > 1 ? "s" : ""}` : "";
+    $("mail-recipients-summary").textContent = `Destinataires (${bcc.length})`;
+    const q = new URLSearchParams({ view: "cm", fs: "1", bcc: bcc.join(","), su: subject, body });
+    $("mail-gmail").href = ready ? `https://mail.google.com/mail/?${q}` : "#";
+    $("mail-app").href = ready
+      ? `mailto:?bcc=${encodeURIComponent(bcc.join(","))}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}` : "#";
+    for (const id of ["mail-gmail", "mail-app"]) $(id).classList.toggle("disabled", !ready);
+  }
+
+  refreshMail = () => {
+    const contacts = loadContacts();
+    const people = D.rosters.filter(r => contacts[r.participantId])
+      .sort((a, b) => a.participantName.localeCompare(b.participantName, "fr"));
+    $("mail-recipients").innerHTML = people.length ? people.map(r => `
+      <label class="recipient"><input type="checkbox" value="${esc(contacts[r.participantId])}" checked>
+        <span><b>${esc(r.participantName)}</b> <span class="muted">${esc(contacts[r.participantId])}</span></span></label>`).join("")
+      : `<p class="muted" style="margin:0">Aucun contact : chargez d'abord <code>roster_2027.txt</code> à la section 2.</p>`;
+    $("mail-status").className = "status-line err";
+    $("mail-status").textContent = people.length ? "" : "Chargez vos contacts (section 2) pour pouvoir écrire à tout le monde.";
+    if (people.length) $("mail-recipients-summary").parentElement.open = false;
+    updateLinks();
+  };
+
+  $("mail-template").addEventListener("change", applyTemplate);
+  for (const id of ["mail-subject", "mail-body"]) $(id).addEventListener("input", updateLinks);
+  $("mail-recipients").addEventListener("change", updateLinks);
+  $("mail-all").addEventListener("click", () => { document.querySelectorAll("#mail-recipients input").forEach(i => { i.checked = true; }); updateLinks(); });
+  $("mail-none").addEventListener("click", () => { document.querySelectorAll("#mail-recipients input").forEach(i => { i.checked = false; }); updateLinks(); });
+  for (const id of ["mail-gmail", "mail-app"]) {
+    $(id).addEventListener("click", e => { if ($(id).classList.contains("disabled")) e.preventDefault(); });
+  }
+  $("mail-copy").addEventListener("click", async () => {
+    const list = selected().join(", ");
+    if (!list) return;
+    try { await navigator.clipboard.writeText(list); } catch { prompt("Adresses :", list); return; }
+    $("mail-status").className = "status-line ok";
+    $("mail-status").textContent = "Adresses copiées : collez-les dans le champ CCI de votre courriel.";
+  });
+  applyTemplate();
+  refreshMail();
 }
