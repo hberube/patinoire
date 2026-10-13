@@ -1,0 +1,53 @@
+name: Rename Team
+
+on:
+  workflow_dispatch:
+    inputs:
+      participant_id:
+        description: 'Participant (e.g. usr_eve)'
+        required: true
+      team_name:
+        description: 'New team name (leave empty to keep it)'
+        required: false
+      participant_name:
+        description: 'New participant name (leave empty to keep it)'
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pool-data
+  cancel-in-progress: false
+
+jobs:
+  rename:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Rename
+        env:
+          PARTICIPANT: ${{ inputs.participant_id }}
+          TEAM_NAME: ${{ inputs.team_name }}
+          PARTICIPANT_NAME: ${{ inputs.participant_name }}
+        run: python scripts/rename_team.py "$PARTICIPANT"
+
+      - name: Commit & Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/*.json
+          git diff --staged --quiet && exit 0
+          git commit -m "Rename team"
+          git pull --rebase
+          git push

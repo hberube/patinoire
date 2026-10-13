@@ -46,6 +46,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   setupTradeReview();
   setupPins();
   setupLogos();
+  setupRename();
 });
 
 // ---------- GitHub token & dispatch ----------
@@ -359,4 +360,45 @@ function setupMail() {
   });
   applyTemplate();
   refreshMail();
+}
+
+// ---------- Rename a team ----------
+function setupRename() {
+  const $ = id => document.getElementById(id);
+  const sorted = [...D.rosters].sort((a, b) => a.participantName.localeCompare(b.participantName, "fr"));
+  $("rename-user").innerHTML = sorted.map(r => `<option value="${esc(r.participantId)}">${esc(r.participantName)} — ${esc(r.teamName)}</option>`).join("");
+  const current = () => D.rosters.find(r => r.participantId === $("rename-user").value);
+  const tidy = v => v.replace(/\s+/g, " ").trim();
+  const changes = () => {
+    const r = current(), team = tidy($("rename-team").value), name = tidy($("rename-name").value);
+    return { team: team && team !== r.teamName ? team : "", name: name && name !== r.participantName ? name : "" };
+  };
+  const fill = () => {
+    const r = current();
+    $("rename-team").value = r.teamName;
+    $("rename-name").value = r.participantName;
+    $("rename-go").disabled = true;
+  };
+  const check = () => { const c = changes(); $("rename-go").disabled = !c.team && !c.name; };
+  $("rename-user").addEventListener("change", fill);
+  $("rename-team").addEventListener("input", check);
+  $("rename-name").addEventListener("input", check);
+  $("rename-go").addEventListener("click", async () => {
+    const r = current(), c = changes(), st = $("rename-status");
+    const what = [c.team && `équipe « ${c.team} »`, c.name && `participant « ${c.name} »`].filter(Boolean).join(" et ");
+    if (!confirm(`Renommer ${r.participantName} : ${what}?`)) return;
+    $("rename-go").disabled = true;
+    const ok = await dispatch("rename-team.yml", { participant_id: r.participantId, team_name: c.team, participant_name: c.name });
+    st.className = `status-line ${ok ? "ok" : "err"}`;
+    st.textContent = ok ? "C'est parti! Le nouveau nom sera sur le site dans 2-3 minutes."
+      : document.getElementById("token-status").textContent;
+    if (ok) {  // reflect it here right away
+      if (c.team) r.teamName = c.team;
+      if (c.name) r.participantName = c.name;
+      $("rename-user").selectedOptions[0].textContent = `${r.participantName} — ${r.teamName}`;
+    } else {
+      $("rename-go").disabled = false;
+    }
+  });
+  fill();
 }

@@ -138,7 +138,26 @@
       </section>
 
       <section>
-        <div class="section-head"><h2>7. Configuration</h2>
+        <div class="section-head"><h2>7. Renommer une équipe</h2></div>
+        <div class="card card-pad grid">
+          <p class="hint">Change le nom d'une équipe (ou le nom affiché du participant). Les points, les choix, les échanges
+            et les images ne changent pas. Visible sur le site 2-3 minutes après.</p>
+          <select class="input" id="rename-user"></select>
+          <div class="form-row">
+            <label class="field" style="flex:2;min-width:220px">Nom de l'équipe
+              <input class="input" id="rename-team" maxlength="60"></label>
+            <label class="field" style="flex:1;min-width:160px">Nom du participant
+              <input class="input" id="rename-name" maxlength="60"></label>
+          </div>
+          <div class="form-row">
+            <button class="btn btn-primary" id="rename-go" disabled>Renommer</button>
+          </div>
+          <p class="status-line" id="rename-status"></p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head"><h2>8. Configuration</h2>
           <a class="btn btn-sm" id="edit-config" target="_blank" rel="noopener">Modifier config.json ↗</a></div>
         <div class="card card-pad"><pre id="config-view" class="config-view"></pre></div>
       </section>

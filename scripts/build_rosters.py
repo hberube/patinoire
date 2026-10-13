@@ -6,8 +6,11 @@
 
 Players are written "Name (TEAM)" and resolved to NHL player IDs.
 Unresolvable names go in scripts/roster_overrides.json as {"Name (TEAM)": player_id}.
+
+This rebuilds EVERY roster (start of season only). For late participants, use add_participants.py.
 """
 import json
+import os
 import re
 import sys
 import unicodedata
@@ -65,7 +68,8 @@ def read_submissions():
     Accepts the Google Form export (timestamp, name, club, email, 21 picks, pot answer)
     or the older sheet (name, club, 21 picks). Emails are never read into the output.
     """
-    for line in (ROOT / "roster_2027.txt").read_text(encoding="utf-8").splitlines():
+    source = Path(os.environ.get("POOL_ROSTER_FILE", ROOT / "roster_2027.txt"))
+    for line in source.read_text(encoding="utf-8").splitlines():
         cells = [c.strip() for c in line.split("\t")]
         if re.match(r"^\d{1,2}/\d{1,2}/\d{4}", cells[0]) and len(cells) >= 25:
             yield cells[1], cells[2], cells[4:25]
@@ -116,6 +120,12 @@ def resolve(cell, pos, by_name, overrides, notes):
 
 
 def main():
+    current = load("rosters.json") or []
+    if (any(r.get("formerPlayers") or any(r.get("tradesUsed", {}).values()) for r in current)
+            and "--force" not in sys.argv):
+        sys.exit("Trades have been made: re-importing the draft would erase them.\n"
+                 "To add late participants use scripts/add_participants.py instead.\n"
+                 "(Override with --force only if you really mean to rebuild every roster.)")
     config = load("config.json")
     season_players = fetch_season_stats(config["season"])
     by_name = {}

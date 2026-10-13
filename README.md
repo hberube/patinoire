@@ -40,6 +40,7 @@ Visitors see the new numbers the next time they open or reload the page.
 | Every 15 min, noon–2 AM ET | `live-scores.yml` | "Ce soir": scores and live goals/assists (`live.json`). Commits only when something changed. |
 | When you click **Approuver** on a trade | `process-trade.yml` | Checks the trade, swaps the player, banks the points, rebuilds the standings (~2–3 min). |
 | When you click **Publier** on a team image | `set-logo.yml` | Converts the image to 256px WebP in `img/teams/` and updates `data/logos.json` (~2–3 min). |
+| When you click **Renommer** on a team | `rename-team.yml` | Updates the team (and/or participant) name everywhere on the site (~2–3 min). |
 
 **Run an update right now:** use **Mettre à jour les stats maintenant** in `/admin/` (section 4), or on GitHub go to **Actions → Daily Pool Stats Update → Run workflow**. Each workflow's history and logs are on the **Actions** tab. A red ❌ means that run failed; click it to see why.
 
@@ -62,6 +63,32 @@ python3 -m http.server 8000            # then open http://localhost:8000
 ```
 
 Opening `index.html` straight from the file explorer won't work, because browsers block the data files that way. If you ran the scripts by hand and want the result online, commit and push the `data/` folder.
+
+## Adding late participants
+
+Late participants count their players' points for the **full season**, as if they had signed up on time. Nobody else is affected: existing picks, trades, banked points, images and PINs stay as they are.
+
+1. Have them fill in the same Google Form.
+2. Re-export the responses over your local `roster_2027.txt` (same format as before). It stays git-ignored because it has emails.
+3. Preview, then add:
+   ```bash
+   cd ~/workspace/agentic-workspace/agentic_hockey_pool
+   python3 scripts/add_participants.py            # dry run: lists who would be added
+   python3 scripts/add_participants.py --apply    # adds them, backfills their trajectory, prints their PINs
+   git add data && git commit -m "Add participants" && git push
+   ```
+   It takes about a minute, because it fetches their players' game history. If a submission doesn't have exactly one pick per round, nothing is added and the command says what to fix.
+4. **Send each new person their PIN** (printed once, not stored).
+5. In `/admin/`, **load `roster_2027.txt` again** in section 2, so their emails are in your contacts and the group email.
+6. Ask them for a photo and a team logo (FAQ link: `?q=0-0#faq`) and publish them from section 6. Until then, they show coloured initials.
+
+Running the command again is safe: people already in the pool are skipped. Someone who resubmits the form is ignored too, because picks can't be changed that way. Don't use `build_rosters.py` mid-season: it rebuilds every roster, and it refuses to run once trades exist.
+
+## Renaming a team
+
+`/admin/`, section **7. Renommer une équipe**: pick the participant, type the new team name (and/or a new display name), click **Renommer**. It's live 2–3 minutes later. Points, picks, trades and images don't change.
+
+By hand: `python3 scripts/rename_team.py usr_eve --team "Nouveau nom"` (add `--name "Ève"` to change the display name), then commit and push `data/`.
 
 ## Emailing everyone
 
