@@ -1,0 +1,708 @@
+{
+  "lastUpdated": "2026-10-13T21:04:55Z",
+  "gameDay": "2026-10-12",
+  "highlights": [
+    {
+      "playerId": 8480839,
+      "name": "Rasmus Dahlin",
+      "team": "BUF",
+      "opp": "FLA",
+      "period": 1,
+      "time": "15:55",
+      "strength": "pp",
+      "assists": [
+        "J. Quinn",
+        "T. Thompson"
+      ],
+      "poolAssists": [
+        "T. Thompson"
+      ],
+      "scorerOwned": true,
+      "owners": 8,
+      "ownerIds": [
+        "usr_alexandre_comeau",
+        "usr_simon",
+        "usr_sylvianne",
+        "usr_etienne",
+        "usr_jolyne_brossard",
+        "usr_jackson_gagnon",
+        "usr_guillaume_brossard",
+        "usr_michel_bry"
+      ],
+      "clipEn": "https://nhl.com/video/fla-buf-dahlin-scores-ppg-against-rasmus-dahlin-6406707433112",
+      "clipFr": "https://nhl.com/fr/video/fla-buf-markstrom-marque-un-but-en-a-n-contre-rasmus-dahlin-6406709373112",
+      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8480839.png"
+    },
+    {
+      "playerId": 8477933,
+      "name": "Sam Reinhart",
+      "team": "FLA",
+      "opp": "BUF",
+      "period": 2,
+      "time": "06:26",
+      "strength": "pp",
+      "assists": [
+        "S. Jones",
+        "M. Tkachuk"
+      ],
+      "poolAssists": [
+        "M. Tkachuk"
+      ],
+      "scorerOwned": true,
+      "owners": 6,
+      "ownerIds": [
+        "usr_simon",
+        "usr_etienne",
+        "usr_florence",
+        "usr_julien_berube",
+        "usr_jolyne_brossard",
+        "usr_jackson_gagnon"
+      ],
+      "clipEn": "https://nhl.com/video/fla-buf-reinhart-scores-ppg-against-colten-ellis-6406710592112",
+      "clipFr": "https://nhl.com/fr/video/fla-buf-reinhart-marque-un-but-en-a-n-contre-colten-ellis-6406709026112",
+      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8477933.png"
+    },
+    {
+      "playerId": 8477933,
+      "name": "Sam Reinhart",
+      "team": "FLA",
+      "opp": "BUF",
+      "period": 2,
+      "time": "13:41",
+      "strength": "pp",
+      "assists": [
+        "B. Tkachuk",
+        "S. Jones"
+      ],
+      "poolAssists": [
+        "B. Tkachuk"
+      ],
+      "scorerOwned": true,
+      "owners": 6,
+      "ownerIds": [
+        "usr_simon",
+        "usr_etienne",
+        "usr_florence",
+        "usr_julien_berube",
+        "usr_jolyne_brossard",
+        "usr_jackson_gagnon"
+      ],
+      "clipEn": "https://nhl.com/video/fla-buf-reinhart-scores-ppg-against-ukko-pekka-luukkonen-6406708138112",
+      "clipFr": "https://nhl.com/fr/video/fla-buf-reinhart-marque-un-but-en-a-n-contre-ukko-pekka-luukkonen-6406711489112",
+      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8477933.png"
+    },
+    {
+      "playerId": 8479420,
+      "name": "Tage Thompson",
+      "team": "BUF",
+      "opp": "FLA",
+      "period": 3,
+      "time": "13:20",
+      "strength": "ev",
+      "assists": [
+        "O. Power",
+        "P. Krebs"
+      ],
+      "poolAssists": [],
+      "scorerOwned": true,
+      "owners": 2,
+      "ownerIds": [
+        "usr_sylvianne",
+        "usr_louise_trottier"
+      ],
+      "clipEn": "https://nhl.com/video/fla-buf-thompson-scores-goal-against-akira-schmid-6406710374112",
+      "clipFr": "https://nhl.com/fr/video/fla-buf-thompson-marque-un-but-contre-akira-schmid-6406713721112",
+      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/BUF/8479420.png"
+    },
+    {
+      "playerId": 8481557,
+      "name": "Matt Boldy",
+      "team": "MIN",
+      "opp": "VGK",
+      "period": 1,
+      "time": "11:50",
+      "strength": "ev",
+      "assists": [
+        "O. Maatta",
+        "Q. Hughes"
+      ],
+      "poolAssists": [
+        "Q. Hughes"
+      ],
+      "scorerOwned": true,
+      "owners": 1,
+      "ownerIds": [
+        "usr_guillaume_brossard"
+      ],
+      "clipEn": "https://nhl.com/video/vgk-min-boldy-scores-goal-against-carter-hart-6406723388112",
+      "clipFr": "https://nhl.com/fr/video/vgk-min-boldy-marque-un-but-contre-carter-hart-6406723576112",
+      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8481557.png"
+    },
+    {
+      "playerId": 8481721,
+      "name": "Arseny Gritsyuk",
+      "team": "NJD",
+      "opp": "OTT",
+      "period": 3,
+      "time": "14:59",
+      "strength": "ev",
+      "assists": [
+        "J. Hughes"
+      ],
+      "poolAssists": [
+        "J. Hughes"
+      ],
+      "scorerOwned": false,
+      "owners": 0,
+      "ownerIds": [],
+      "clipEn": "https://nhl.com/video/ott-njd-gritsyuk-scores-goal-against-linus-ullmark-6406726181112",
+      "clipFr": "https://nhl.com/fr/video/ott-njd-gritsyuk-marque-un-but-contre-linus-ullmark-6406725499112",
+      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8481721.png"
+    },
+    {
+      "playerId": 8485702,
+      "name": "Maxim Shabanov",
+      "team": "MIN",
+      "opp": "VGK",
+      "period": 1,
+      "time": "14:32",
+      "strength": "pp",
+      "assists": [
+        "Q. Hughes"
+      ],
+      "poolAssists": [
+        "Q. Hughes"
+      ],
+      "scorerOwned": false,
+      "owners": 0,
+      "ownerIds": [],
+      "clipEn": "https://nhl.com/video/vgk-min-shabanov-scores-ppg-against-carter-hart-6406723588112",
+      "clipFr": "https://nhl.com/fr/video/vgk-min-shabanov-marque-un-but-en-a-n-contre-carter-hart-6406723398112",
+      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8485702.png"
+    },
+    {
+      "playerId": 8476448,
+      "name": "William Karlsson",
+      "team": "VGK",
+      "opp": "MIN",
+      "period": 3,
+      "time": "09:25",
+      "strength": "ev",
+      "assists": [
+        "B. Howden",
+        "M. Marner"
+      ],
+      "poolAssists": [
+        "M. Marner"
+      ],
+      "scorerOwned": false,
+      "owners": 0,
+      "ownerIds": [],
+      "clipEn": "https://nhl.com/video/vgk-min-karlsson-scores-goal-against-jesper-wallstedt-6406726422112",
+      "clipFr": "https://nhl.com/fr/video/vgk-min-karlsson-marque-un-but-contre-jesper-wallstedt-6406726229112",
+      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/VGK/8476448.png"
+    }
+  ],
+  "form": {
+    "8471214": {
+      "last5": 2,
+      "games": 5,
+      "dry": 0
+    },
+    "8471215": {
+      "last5": 4,
+      "games": 6,
+      "dry": 1
+    },
+    "8471675": {
+      "last5": 1,
+      "games": 6,
+      "dry": 4
+    },
+    "8474564": {
+      "last5": 7,
+      "games": 5,
+      "dry": 0
+    },
+    "8474578": {
+      "last5": 4,
+      "games": 6,
+      "dry": 1
+    },
+    "8475158": {
+      "last5": 3,
+      "games": 5,
+      "dry": 1
+    },
+    "8475166": {
+      "last5": 3,
+      "games": 5,
+      "dry": 1
+    },
+    "8475683": {
+      "last5": 1,
+      "games": 4,
+      "dry": 0
+    },
+    "8475754": {
+      "last5": 5,
+      "games": 5,
+      "dry": 0
+    },
+    "8475913": {
+      "last5": 6,
+      "games": 7,
+      "dry": 1
+    },
+    "8476883": {
+      "last5": 3,
+      "games": 4,
+      "dry": 0
+    },
+    "8476887": {
+      "last5": 4,
+      "games": 5,
+      "dry": 1
+    },
+    "8476945": {
+      "last5": 0,
+      "games": 0,
+      "dry": 0
+    },
+    "8477404": {
+      "last5": 6,
+      "games": 5,
+      "dry": 0
+    },
+    "8477492": {
+      "last5": 10,
+      "games": 5,
+      "dry": 0
+    },
+    "8477493": {
+      "last5": 0,
+      "games": 2,
+      "dry": 2
+    },
+    "8477933": {
+      "last5": 2,
+      "games": 6,
+      "dry": 0
+    },
+    "8477934": {
+      "last5": 9,
+      "games": 5,
+      "dry": 1
+    },
+    "8477939": {
+      "last5": 9,
+      "games": 6,
+      "dry": 0
+    },
+    "8477940": {
+      "last5": 3,
+      "games": 7,
+      "dry": 1
+    },
+    "8477946": {
+      "last5": 2,
+      "games": 3,
+      "dry": 2
+    },
+    "8477949": {
+      "last5": 3,
+      "games": 5,
+      "dry": 2
+    },
+    "8477956": {
+      "last5": 7,
+      "games": 6,
+      "dry": 0
+    },
+    "8477960": {
+      "last5": 3,
+      "games": 4,
+      "dry": 0
+    },
+    "8478401": {
+      "last5": 2,
+      "games": 6,
+      "dry": 0
+    },
+    "8478402": {
+      "last5": 13,
+      "games": 5,
+      "dry": 0
+    },
+    "8478420": {
+      "last5": 6,
+      "games": 5,
+      "dry": 1
+    },
+    "8478427": {
+      "last5": 10,
+      "games": 7,
+      "dry": 0
+    },
+    "8478445": {
+      "last5": 0,
+      "games": 0,
+      "dry": 0
+    },
+    "8478483": {
+      "last5": 5,
+      "games": 7,
+      "dry": 0
+    },
+    "8478872": {
+      "last5": 5,
+      "games": 5,
+      "dry": 0
+    },
+    "8479314": {
+      "last5": 5,
+      "games": 6,
+      "dry": 0
+    },
+    "8479325": {
+      "last5": 0,
+      "games": 0,
+      "dry": 0
+    },
+    "8479345": {
+      "last5": 3,
+      "games": 5,
+      "dry": 3
+    },
+    "8479407": {
+      "last5": 4,
+      "games": 5,
+      "dry": 1
+    },
+    "8479420": {
+      "last5": 7,
+      "games": 6,
+      "dry": 0
+    },
+    "8479542": {
+      "last5": 8,
+      "games": 5,
+      "dry": 0
+    },
+    "8479979": {
+      "last5": 6,
+      "games": 4,
+      "dry": 0
+    },
+    "8479987": {
+      "last5": 4,
+      "games": 6,
+      "dry": 1
+    },
+    "8480012": {
+      "last5": 4,
+      "games": 7,
+      "dry": 2
+    },
+    "8480018": {
+      "last5": 7,
+      "games": 5,
+      "dry": 1
+    },
+    "8480023": {
+      "last5": 1,
+      "games": 5,
+      "dry": 0
+    },
+    "8480039": {
+      "last5": 5,
+      "games": 5,
+      "dry": 0
+    },
+    "8480069": {
+      "last5": 7,
+      "games": 5,
+      "dry": 0
+    },
+    "8480280": {
+      "last5": 6,
+      "games": 5,
+      "dry": 0
+    },
+    "8480313": {
+      "last5": 3,
+      "games": 4,
+      "dry": 0
+    },
+    "8480800": {
+      "last5": 8,
+      "games": 6,
+      "dry": 0
+    },
+    "8480801": {
+      "last5": 1,
+      "games": 6,
+      "dry": 0
+    },
+    "8480803": {
+      "last5": 12,
+      "games": 5,
+      "dry": 0
+    },
+    "8480830": {
+      "last5": 7,
+      "games": 7,
+      "dry": 0
+    },
+    "8480839": {
+      "last5": 4,
+      "games": 6,
+      "dry": 0
+    },
+    "8480893": {
+      "last5": 4,
+      "games": 6,
+      "dry": 0
+    },
+    "8480981": {
+      "last5": 4,
+      "games": 3,
+      "dry": 0
+    },
+    "8481533": {
+      "last5": 2,
+      "games": 7,
+      "dry": 2
+    },
+    "8481540": {
+      "last5": 2,
+      "games": 5,
+      "dry": 3
+    },
+    "8481542": {
+      "last5": 2,
+      "games": 5,
+      "dry": 1
+    },
+    "8481557": {
+      "last5": 3,
+      "games": 6,
+      "dry": 0
+    },
+    "8481559": {
+      "last5": 5,
+      "games": 5,
+      "dry": 0
+    },
+    "8482093": {
+      "last5": 0,
+      "games": 0,
+      "dry": 0
+    },
+    "8482487": {
+      "last5": 1,
+      "games": 3,
+      "dry": 0
+    },
+    "8482699": {
+      "last5": 4,
+      "games": 6,
+      "dry": 2
+    },
+    "8482720": {
+      "last5": 4,
+      "games": 4,
+      "dry": 2
+    },
+    "8482740": {
+      "last5": 4,
+      "games": 5,
+      "dry": 1
+    },
+    "8483445": {
+      "last5": 4,
+      "games": 5,
+      "dry": 3
+    },
+    "8483457": {
+      "last5": 4,
+      "games": 5,
+      "dry": 2
+    },
+    "8483515": {
+      "last5": 1,
+      "games": 5,
+      "dry": 2
+    },
+    "8483548": {
+      "last5": 2,
+      "games": 4,
+      "dry": 0
+    },
+    "8484144": {
+      "last5": 0,
+      "games": 0,
+      "dry": 0
+    },
+    "8484153": {
+      "last5": 8,
+      "games": 5,
+      "dry": 0
+    },
+    "8484801": {
+      "last5": 6,
+      "games": 3,
+      "dry": 0
+    },
+    "8484984": {
+      "last5": 2,
+      "games": 2,
+      "dry": 0
+    },
+    "8486067": {
+      "last5": 4,
+      "games": 6,
+      "dry": 0
+    }
+  },
+  "awards": {
+    "goldenPick": {
+      "id": 8478427,
+      "name": "Sebastian Aho",
+      "team": "CAR",
+      "pos": "F",
+      "points": 11,
+      "owners": 2
+    },
+    "iceAnchor": {
+      "id": 8471675,
+      "name": "Sidney Crosby",
+      "team": "PIT",
+      "pos": "F",
+      "points": 2,
+      "owners": 5,
+      "dry": 4
+    },
+    "snub": {
+      "id": 8478403,
+      "name": "Jack Eichel",
+      "team": "VGK",
+      "pos": "F",
+      "points": 12,
+      "owners": 0,
+      "group": 3
+    }
+  },
+  "milestones": [
+    {
+      "id": 8480830,
+      "name": "Andrei Svechnikov",
+      "team": "CAR",
+      "pos": "F",
+      "points": 8,
+      "owners": 8,
+      "stat": "goals",
+      "value": 4,
+      "target": 5
+    },
+    {
+      "id": 8477934,
+      "name": "Leon Draisaitl",
+      "team": "EDM",
+      "pos": "F",
+      "points": 9,
+      "owners": 8,
+      "stat": "points",
+      "value": 9,
+      "target": 10
+    },
+    {
+      "id": 8480280,
+      "name": "Jeremy Swayman",
+      "team": "BOS",
+      "pos": "G",
+      "points": 6,
+      "owners": 7,
+      "stat": "wins",
+      "value": 4,
+      "target": 5
+    },
+    {
+      "id": 8479542,
+      "name": "Brandon Hagel",
+      "team": "TBL",
+      "pos": "F",
+      "points": 8,
+      "owners": 4,
+      "stat": "goals",
+      "value": 4,
+      "target": 5
+    },
+    {
+      "id": 8480800,
+      "name": "Quinn Hughes",
+      "team": "MIN",
+      "pos": "D",
+      "points": 9,
+      "owners": 4,
+      "stat": "points",
+      "value": 9,
+      "target": 10
+    },
+    {
+      "id": 8479420,
+      "name": "Tage Thompson",
+      "team": "BUF",
+      "pos": "F",
+      "points": 7,
+      "owners": 2,
+      "stat": "goals",
+      "value": 4,
+      "target": 5
+    },
+    {
+      "id": 8480830,
+      "name": "Andrei Svechnikov",
+      "team": "CAR",
+      "pos": "F",
+      "points": 8,
+      "owners": 8,
+      "stat": "points",
+      "value": 8,
+      "target": 10
+    },
+    {
+      "id": 8484153,
+      "name": "Leo Carlsson",
+      "team": "ANA",
+      "pos": "F",
+      "points": 8,
+      "owners": 5,
+      "stat": "points",
+      "value": 8,
+      "target": 10
+    },
+    {
+      "id": 8480012,
+      "name": "Elias Pettersson",
+      "team": "VAN",
+      "pos": "F",
+      "points": 8,
+      "owners": 5,
+      "stat": "points",
+      "value": 8,
+      "target": 10
+    },
+    {
+      "id": 8479542,
+      "name": "Brandon Hagel",
+      "team": "TBL",
+      "pos": "F",
+      "points": 8,
+      "owners": 4,
+      "stat": "points",
+      "value": 8,
+      "target": 10
+    }
+  ]
+}

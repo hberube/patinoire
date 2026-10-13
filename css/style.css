@@ -367,3 +367,97 @@ tr.me .spark circle { fill: var(--red); }
 body { overflow-x: hidden; }
 .mobile-updated { display: none; font-size: 12px; }
 @media (max-width: 720px) { .mobile-updated { display: block; order: 0; align-self: center; } }
+
+/* ---------- Team avatars ---------- */
+.av { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; flex-shrink: 0; background: var(--surface-2); display: inline-grid; place-items: center; }
+.av-md { width: 48px; height: 48px; }
+.av-row { width: 52px; height: 52px; }
+@media (max-width: 720px) { .av-row { width: 44px; height: 44px; } }
+.av-lg { width: 64px; height: 64px; }
+.av-xl { width: 96px; height: 96px; }
+.av-initials { background: hsl(var(--h) 55% 88%); color: hsl(var(--h) 55% 28%); font-weight: 800; font-size: 13px; letter-spacing: .02em; }
+.av-md.av-initials { font-size: 16px; }
+.av-lg.av-initials { font-size: 21px; }
+.av-xl.av-initials { font-size: 38px; }
+:root[data-theme="dark"] .av-initials { background: hsl(var(--h) 35% 24%); color: hsl(var(--h) 70% 82%); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .av-initials { background: hsl(var(--h) 35% 24%); color: hsl(var(--h) 70% 82%); }
+}
+.team-flex { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.av-wrap { position: relative; display: inline-block; margin: 0 auto; }
+.av-wrap .medal { position: absolute; left: -8px; bottom: -6px; font-size: 22px; }
+.podium .av-wrap .av { width: 96px; height: 96px; }
+.podium .first .av-wrap .av { width: 112px; height: 112px; }
+.podium .first .av-wrap .main, .podium .first .av-wrap .av-initials { box-shadow: 0 0 0 3px var(--surface), 0 0 0 5px var(--gold); }
+@media (max-width: 560px) {
+  .podium .av-wrap .av, .podium .first .av-wrap .av { width: 64px; height: 64px; }
+  .av-wrap .medal { font-size: 18px; }
+}
+.my-team { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; flex-wrap: wrap; }
+.img-preview { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+#image-modal { width: min(520px, calc(100vw - 24px)); }
+
+/* ---------- Gazette ---------- */
+.hl-strip { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(260px, 300px); gap: 12px; overflow-x: auto; padding-bottom: 6px; scroll-snap-type: x mandatory; }
+.hl { padding: 12px 14px; display: grid; gap: 8px; align-content: start; scroll-snap-align: start; }
+.hl .pname { font-weight: 700; }
+.hl .muted .logo { display: inline-block; vertical-align: -5px; width: 18px; height: 18px; }
+.hl-foot { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: auto; }
+.owner-stack { display: inline-flex; align-items: center; }
+.owner-stack .av { margin-left: -6px; }
+.owner-stack .main, .owner-stack .av-initials { box-shadow: 0 0 0 2px var(--surface); }
+.owner-stack .av:first-child { margin-left: 0; }
+.owner-stack .more { font-size: 12px; font-weight: 700; color: var(--text-3); margin-left: 4px; }
+.av-xs { width: 24px; height: 24px; }
+.av-xs.av-initials { font-size: 9px; }
+.duels { grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
+.duel { padding: 12px 14px; display: grid; gap: 8px; }
+.duel.mine { box-shadow: 0 0 0 2px var(--red); }
+.duel-side { display: flex; align-items: center; gap: 10px; }
+.duel-side > div:nth-child(2) { flex: 1; min-width: 0; }
+.duel-name { font-weight: 700; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.duel-pts { font: 800 28px/1 var(--ff-display); color: var(--text-3); }
+.duel-side.lead .duel-pts { color: var(--text); }
+.duel-bar { height: 6px; border-radius: 999px; background: var(--series-2); overflow: hidden; }
+.duel-bar span { display: block; height: 100%; background: var(--series-1); border-right: 2px solid var(--surface); }
+.award .mug { width: 48px; height: 48px; }
+.award .value .logo { display: inline-block; vertical-align: -4px; width: 20px; height: 20px; }
+.ms-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.ms-list li { display: flex; gap: 10px; align-items: baseline; }
+.ms-icon { width: 22px; text-align: center; flex-shrink: 0; }
+.stakes { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 10px; font-size: 12px; }
+.stake { display: inline-flex; align-items: center; gap: 3px; background: var(--surface-2); border-radius: 999px; padding: 2px 8px 2px 2px; }
+.stake.mine { box-shadow: inset 0 0 0 1.5px var(--red); }
+.form { font-size: 13px; }
+
+/* Avatar with images: .main fills the box, .face is the owner's bubble */
+.avs { position: relative; background: none; border-radius: 0; display: inline-block; }
+.avs .main { width: 100%; height: 100%; object-fit: cover; display: block; background: #fff; }
+.avs.round .main { border-radius: 50%; }
+.avs.square .main { border-radius: 24%; }
+.avs .badge { position: absolute; right: -12%; bottom: -12%; width: 56%; height: 56%; object-fit: cover; background: #fff; box-shadow: 0 0 0 2px var(--surface); }
+.avs .badge.round { border-radius: 50%; }
+.avs .badge.square { border-radius: 26%; }
+.av-xl.avs .badge { width: 44%; height: 44%; right: -6%; bottom: -6%; box-shadow: 0 0 0 3px var(--surface); }
+.av-xs.avs .badge { display: none; }
+.seg { display: inline-flex; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; justify-self: start; }
+.seg label { padding: 7px 14px; font-weight: 600; font-size: 14px; cursor: pointer; display: flex; gap: 6px; align-items: center; }
+.seg label:has(input:checked) { background: var(--surface-2); box-shadow: inset 0 -2px 0 var(--red); }
+.seg input { accent-color: var(--red); }
+
+/* ---------- Phone polish ---------- */
+@media (max-width: 720px) {
+  /* "Updated" stamp lives in the banner, under the title */
+  .hero-inner { flex-direction: column; align-items: flex-start; gap: 4px; padding-bottom: 10px; }
+  .hero .updated { display: block; font-size: 11px; }
+  .mobile-updated { display: none !important; }
+  .topbar-inner > .actions { margin-left: auto; }
+  /* Tab bar: hint that it scrolls sideways */
+  .tabs { position: relative; scroll-snap-type: x proximity; -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent); mask-image: linear-gradient(90deg, #000 85%, transparent); }
+  .tab { scroll-snap-align: start; }
+  /* Standings: compact face + logo so team names have room */
+  .team-cell { min-width: 0; }
+  .team-cell .name { font-size: 14px; }
+  /* My team card: button on its own row */
+  .my-team .btn { flex-basis: 100%; }
+}

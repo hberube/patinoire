@@ -130,3 +130,21 @@ def lookup_player(player_id):
         "team": d.get("currentTeamAbbrev", ""),
         "gp": 0, **EMPTY_STATS,
     }
+
+
+def game_line(g):
+    """One game-log entry as a pool stat line."""
+    return {"goals": g.get("goals", 0), "assists": g.get("assists", 0), "soGoals": 0,
+            "wins": 1 if g.get("decision") == "W" else 0,
+            "otl": 1 if g.get("decision") == "O" else 0,
+            "shutouts": g.get("shutouts", 0)}
+
+
+def fetch_game_logs(player_ids, season):
+    """{player id: [games, oldest first]}: one call per player, paced for the NHL API."""
+    logs = {}
+    for pid in sorted(player_ids):
+        data = get_json(f"https://api-web.nhle.com/v1/player/{pid}/game-log/{season}/2") or {}
+        logs[pid] = sorted(data.get("gameLog", []), key=lambda g: g["gameDate"])
+        time.sleep(0.4)
+    return logs

@@ -3,10 +3,13 @@
 import { getSession, hashPin, newSalt } from "../js/auth.js";
 import { decodeTrade, validateTrade } from "../js/trade.js";
 import { esc, fetchJson, headshot } from "../js/util.js";
+import { parseContacts } from "./contacts.js";
+import { prepareImage, blobToBase64 } from "../js/image.js";
 
 const OWNER = "hberube";
 const REPO = "la-patinoire";
 const TOKEN_KEY = "admin_gh_token";
+const CONTACTS_KEY = "admin_contacts";
 const ACTIONS_URL = `https://github.com/${OWNER}/${REPO}/actions`;
 const D = {};
 
@@ -21,10 +24,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     return;
   }
   document.getElementById("admin").classList.remove("hidden");
-  [D.config, D.rosters, D.groups, D.history, D.index] = await Promise.all([
+  [D.config, D.rosters, D.groups, D.history, D.index, D.logos] = await Promise.all([
     fetchJson("data/config.json", "../"), fetchJson("data/rosters.json", "../"),
     fetchJson("data/groups.json", "../"), fetchJson("data/trades_history.json", "../").catch(() => []),
-    fetchJson("data/players_index.json", "../").catch(() => []),
+    fetchJson("data/players_index.json", "../").catch(() => []), fetchJson("data/logos.json", "../").catch(() => ({})),
   ]);
   D.points = new Map(D.index.map(p => [p.id, p.points]));
 
@@ -34,8 +37,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   document.getElementById("edit-config").href = `https://github.com/${OWNER}/${REPO}/edit/main/data/config.json`;
   document.getElementById("actions-link").href = ACTIONS_URL;
   setupToken();
+  setupContacts();
   setupTradeReview();
   setupPins();
+  setupLogos();
 });
 
 // ---------- GitHub token & dispatch ----------
@@ -64,7 +69,7 @@ function status(msg, ok) {
 
 async function dispatch(workflow, inputs) {
   const token = store.get();
-  if (!token) { status("Entrez et enregistrez d'abord votre jeton GitHub (section 2).", false); return false; }
+  if (!token) { status("Entrez et enregistrez d'abord votre jeton GitHub (section 3).", false); return false; }
   try {
     const res = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/actions/workflows/${workflow}/dispatches`, {
       method: "POST",
@@ -111,13 +116,17 @@ function renderPreview(text) {
       · ${esc(trade.pos)}${out ? ` · ronde ${out.group}` : ""} · soumis ${trade.ts ? new Date(trade.ts).toLocaleString("fr-CA") : "?"}</span></div>
     <div class="swap">${side("out", out, trade.outName)}<span class="arrow">➜</span>${side("in", inn, trade.inName)}</div>
     ${issues.length ? `<ul class="issues">${issues.map(i => `<li>${esc(i)}</li>`).join("")}</ul>` : `<p class="ok-line">✓ Échange valide.</p>`}
+    ${senderCheck(roster)}
     <div class="form-row">
-      <button class="btn btn-primary" id="approve" ${issues.length ? "disabled" : ""}>Approuver l'échange</button>
+      <button class="btn btn-primary" id="approve" disabled>Approuver l'échange</button>
       <span class="muted" style="font-size:13px">Le classement se met à jour 2-3 minutes après.</span>
     </div>
     <p class="status-line" id="approve-status"></p>
   </div>`;
-  el.querySelector("#approve").addEventListener("click", async e => {
+  // Approve needs a valid trade AND Hugo confirming who sent it
+  const approve = el.querySelector("#approve"), sender = el.querySelector("#sender-ok");
+  sender.addEventListener("change", () => { approve.disabled = issues.length > 0 || !sender.checked; });
+  approve.addEventListener("click", async e => {
     if (!confirm(`Approuver : ${roster.participantName} — ${out.name} ➜ ${inn.name} ?`)) return;
     e.target.disabled = true;
     const ok = await dispatch("process-trade.yml", { trade_code: code });
@@ -130,6 +139,52 @@ function renderPreview(text) {
       st.className = "status-line err";
       st.textContent = document.getElementById("token-status").textContent;
     }
+  });
+}
+
+function senderCheck(roster) {
+  if (!roster) return `<input type="checkbox" id="sender-ok" class="hidden">`;
+  const email = loadContacts()[roster.participantId];
+  const who = email
+    ? `<b>${esc(email)}</b> (${esc(roster.participantName)})`
+    : `<b>${esc(roster.participantName)}</b> <span class="muted">— chargez vos contacts (section 2) pour voir son adresse</span>`;
+  return `<label class="sender-check"><input type="checkbox" id="sender-ok">
+    <span>Le message vient bien de ${who}, par courriel ou texto.</span></label>`;
+}
+
+// ---------- Contacts (emails stay in this browser only) ----------
+function loadContacts() {
+  try { return JSON.parse(localStorage.getItem(CONTACTS_KEY)) || {}; } catch { return {}; }
+}
+
+function setupContacts() {
+  const count = document.getElementById("contacts-count"), st = document.getElementById("contacts-status");
+  const show = () => {
+    const n = Object.keys(loadContacts()).length;
+    count.textContent = n ? `${n} contacts chargés` : "Aucun contact chargé";
+  };
+  show();
+  document.getElementById("contacts-file").addEventListener("change", async e => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const known = new Map(D.rosters.map(r => [r.participantId, r.participantName]));
+    const { contacts, unknown } = parseContacts(await file.text(), known);
+    try { localStorage.setItem(CONTACTS_KEY, JSON.stringify(contacts)); } catch { /* private mode */ }
+    e.target.value = "";
+    show();
+    const missing = [...known.keys()].filter(id => !contacts[id]).map(id => known.get(id));
+    st.className = `status-line ${missing.length || unknown.length ? "err" : "ok"}`;
+    st.textContent = `${Object.keys(contacts).length} courriels associés.`
+      + (missing.length ? ` Sans courriel : ${missing.join(", ")}.` : "")
+      + (unknown.length ? ` Noms non reconnus : ${unknown.join(", ")}.` : "");
+    renderPreview(document.getElementById("trade-input").value);
+  });
+  document.getElementById("contacts-forget").addEventListener("click", () => {
+    try { localStorage.removeItem(CONTACTS_KEY); } catch { /* ignore */ }
+    show();
+    st.className = "status-line ok";
+    st.textContent = "Contacts effacés de ce navigateur.";
+    renderPreview(document.getElementById("trade-input").value);
   });
 }
 
@@ -153,5 +208,51 @@ function setupPins() {
     out.value = `NIP pour ${r.participantName} : ${pin}\n\n${JSON.stringify(entry, null, 2)}`;
     out.classList.remove("hidden");
     input.value = "";
+  });
+}
+
+// ---------- Team images ----------
+// workflow_dispatch inputs are limited to ~65k characters, so the image is kept under 44 KB
+function setupLogos() {
+  const select = document.getElementById("logo-user"), st = document.getElementById("logo-status");
+  const publish = document.getElementById("logo-publish"), kindSel = document.getElementById("logo-kind");
+  let prepared = null;
+  select.innerHTML = D.rosters.map(r => `<option value="${esc(r.participantId)}">${esc(r.participantName)} — ${esc(r.teamName)}</option>`).join("");
+  const showCurrent = () => {
+    const src = D.logos[select.value]?.[kindSel.value];
+    document.getElementById("logo-current").innerHTML = src
+      ? `<img class="av av-lg" style="border-radius:${kindSel.value === "face" ? "50%" : "24%"}" src="../${esc(src)}" alt="">` : `<span class="muted">Aucune image</span>`;
+  };
+  select.addEventListener("change", showCurrent);
+  kindSel.addEventListener("change", showCurrent);
+  showCurrent();
+  document.getElementById("logo-file").addEventListener("change", async e => {
+    const file = e.target.files[0];
+    if (!file) return;
+    try {
+      prepared = await prepareImage(file, 256, 44000);
+      document.getElementById("logo-new").innerHTML = `<img class="av av-lg" src="${prepared.url}" alt="">`;
+      publish.disabled = false;
+      st.textContent = "";
+    } catch {
+      prepared = null;
+      publish.disabled = true;
+      st.className = "status-line err";
+      st.textContent = "Image illisible. Essayez un fichier JPG ou PNG.";
+    }
+  });
+  const run = async (inputs, okMsg) => {
+    const ok = await dispatch("set-logo.yml", inputs);
+    st.className = `status-line ${ok ? "ok" : "err"}`;
+    st.textContent = ok ? okMsg : document.getElementById("token-status").textContent;
+  };
+  publish.addEventListener("click", async () => {
+    publish.disabled = true;
+    await run({ participant_id: select.value, kind: kindSel.value, image: await blobToBase64(prepared.blob) },
+      "Image envoyée! Elle apparaîtra sur le site dans 2-3 minutes.");
+  });
+  document.getElementById("logo-remove").addEventListener("click", async () => {
+    if (!confirm("Retirer cette image?")) return;
+    await run({ participant_id: select.value, kind: kindSel.value, remove: "true" }, "Image retirée (2-3 minutes).");
   });
 }

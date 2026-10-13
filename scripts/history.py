@@ -7,12 +7,11 @@
 rostered player). The daily run then just records the current totals via record().
 """
 import sys
-import time
 from collections import defaultdict
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
-from pool_lib import get_json, load, save, score
+from pool_lib import fetch_game_logs, game_line, load, save, score
 
 EASTERN = ZoneInfo("America/Toronto")
 
@@ -53,18 +52,12 @@ def backfill():
         sys.exit("Backfill assumes no trades yet; trades exist, keep the recorded history.")
 
     per_player_day = {}  # player id -> {date: points}
-    ids = {(p["id"], p["pos"]) for r in rosters for p in r["players"]}
-    for pid, pos in sorted(ids):
-        log = get_json(f"https://api-web.nhle.com/v1/player/{pid}/game-log/{season}/2") or {}
+    pos_of = {p["id"]: p["pos"] for r in rosters for p in r["players"]}
+    for pid, games in fetch_game_logs(pos_of, season).items():
         days = defaultdict(int)
-        for g in log.get("gameLog", []):
-            line = {"goals": g.get("goals", 0), "assists": g.get("assists", 0),
-                    "wins": 1 if g.get("decision") == "W" else 0,
-                    "otl": 1 if g.get("decision") == "O" else 0,
-                    "shutouts": g.get("shutouts", 0), "soGoals": 0}
-            days[g["gameDate"]] += score(line, pos, scoring)
+        for g in games:
+            days[g["gameDate"]] += score(game_line(g), pos_of[pid], scoring)
         per_player_day[pid] = days
-        time.sleep(0.5)  # be gentle with the NHL API
 
     all_days = sorted({d for days in per_player_day.values() for d in days})
     hist = {"dates": all_days, "series": {}}
@@ -75,7 +68,7 @@ def backfill():
             series.append(total)
         hist["series"][r["participantId"]] = series
     save("history.json", hist)
-    print(f"History backfilled: {len(all_days)} game days, {len(ids)} players.")
+    print(f"History backfilled: {len(all_days)} game days, {len(pos_of)} players.")
 
 
 if __name__ == "__main__":

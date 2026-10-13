@@ -3,13 +3,14 @@ import { esc, fetchJson, headshot, teamLogo } from "./util.js";
 import { getSession, login, logout } from "./auth.js";
 import { windowOpen, tradesLeft, roundOptions, encodeTrade } from "./trade.js";
 import { renderChart } from "./chart.js";
+import { prepareImage } from "./image.js";
 
 const S = {
   tab: "standings",
   chartPicks: null,
   trade: { outId: null, inId: null, code: null },
 };
-const TABS = ["standings", "teams", "chart", "tonight", "trades"];
+const TABS = ["standings", "gazette", "teams", "chart", "tonight", "trades"];
 const POS_ICON = { F: "🏒", D: "🛡️", G: "🥅" };
 
 // ---------- Boot ----------
@@ -17,16 +18,17 @@ document.addEventListener("DOMContentLoaded", async () => {
   bindChrome();
   try {
     const opt = p => fetchJson(p).catch(() => null);
-    [S.config, S.board, S.history, S.live, S.groups, S.trades, S.index] = await Promise.all([
+    [S.config, S.board, S.history, S.live, S.groups, S.trades, S.index, S.logos, S.insights] = await Promise.all([
       fetchJson("data/config.json"), fetchJson("data/leaderboard.json"), opt("data/history.json"),
       opt("data/live.json"), fetchJson("data/groups.json"), opt("data/trades_history.json"),
-      opt("data/players_index.json"),
+      opt("data/players_index.json"), opt("data/logos.json"), opt("data/insights.json"),
     ]);
   } catch (err) {
     document.querySelector("main").innerHTML = `<div class="card empty">${esc(t("loadError"))}</div>`;
     return;
   }
   S.trades ||= [];
+  S.logos ||= {};
   S.pointsById = new Map((S.index || []).map(p => [p.id, p.points]));
   S.owners = new Map();
   for (const s of S.board.standings) for (const p of s.rosterStats) S.owners.set(p.id, (S.owners.get(p.id) || 0) + 1);
@@ -68,6 +70,12 @@ function showTab(tab) {
   S.tab = TABS.includes(tab) ? tab : "standings";
   if (location.hash.slice(1) !== S.tab) history.replaceState(null, "", `#${S.tab}`);
   document.querySelectorAll(".tab").forEach(b => b.setAttribute("aria-selected", b.dataset.tab === S.tab));
+  // Keep the active tab visible in the sideways-scrolling tab bar on phones
+  // (next frame, once the translated labels have their final widths)
+  requestAnimationFrame(() => {
+    const tab = document.querySelector(`.tab[data-tab="${S.tab}"]`), bar = tab?.parentElement;
+    if (bar) bar.scrollLeft = tab.offsetLeft - (bar.clientWidth - tab.offsetWidth) / 2;
+  });
   document.querySelectorAll(".panel").forEach(p => p.classList.toggle("active", p.id === `panel-${S.tab}`));
   if (S.tab === "chart" && S.board) renderTrajectory();
 }
@@ -87,6 +95,7 @@ function renderAll() {
   renderTeams();
   if (S.tab === "chart") renderTrajectory();
   renderTonight();
+  renderGazette();
   renderTrades();
 }
 
@@ -103,6 +112,32 @@ function mug(p, cls = "mug") {
 
 function logo(abbrev) {
   return abbrev ? `<img class="logo" src="${teamLogo(abbrev)}" alt="${esc(abbrev)}" title="${esc(abbrev)}" loading="lazy" onerror="this.remove()">` : "";
+}
+
+// Avatars combine the owner's face (round) and the team logo (rounded square):
+//   "team"   logo first, face in a corner bubble (standings, team cards)
+//   "face"   face first, logo in a corner bubble (podium, team window, my team)
+//   "person" face only (small stacks)
+//   "logo"   team logo only (standings table)
+// Coloured initials when there's no image.
+function avatar(s, cls = "av", mode = "team") {
+  return avatarFrom(S.logos[s.participantId] || {}, s, cls, mode);
+}
+
+function avatarFrom(imgs, s, cls, mode = "team") {
+  const { face, logo } = imgs;
+  const main = mode === "logo" ? logo : mode === "team" ? logo || face : face || logo;
+  if (!main) {
+    const initials = s.participantName.split(/\s+/).map(w => w[0]).join("").slice(0, 2).toUpperCase();
+    let hue = 0;
+    for (const ch of s.participantId) hue = (hue * 31 + ch.charCodeAt(0)) % 360;
+    return `<span class="${cls} av-initials" style="--h:${hue}" aria-hidden="true">${esc(initials)}</span>`;
+  }
+  const shape = main === face ? "round" : "square";
+  const other = main === face ? logo : face;
+  const badge = (mode === "team" || mode === "face") && other
+    ? `<img class="badge ${other === face ? "round" : "square"}" src="${esc(other)}" alt="" loading="lazy">` : "";
+  return `<span class="${cls} avs ${shape}"><img class="main" src="${esc(main)}" alt="" loading="lazy">${badge}</span>`;
 }
 
 function dayDeltas() {
@@ -160,7 +195,7 @@ function renderStandings() {
   const order = podium.length === 3 ? [podium[1], podium[0], podium[2]] : podium;
   document.getElementById("podium").innerHTML = order.map(({ s, i }) => `
     <button class="card step ${cls[i]}" data-team="${esc(s.participantId)}">
-      <div class="medal">${medals[i]}</div>
+      <div class="av-wrap">${avatar(s, "av av-xl", "face")}<span class="medal">${medals[i]}</span></div>
       <div><div class="team">${esc(s.teamName)}</div><div class="who">${esc(s.participantName)}</div></div>
       <div class="pts num" data-count="${s.totalPoints}">${s.totalPoints}</div>
     </button>`).join("");
@@ -196,7 +231,7 @@ function renderStandings() {
       const d = deltas[s.participantId];
       return `<tr class="clickable ${s.participantId === mine ? "me" : ""}" data-team="${esc(s.participantId)}" tabindex="0">
         <td class="l rank num">${s.rank}${mv ? `<span class="move ${mv > 0 ? "up" : "down"}">${mv > 0 ? "▲" : "▼"}${Math.abs(mv)}</span>` : ""}</td>
-        <td class="l team-cell"><div class="name">${esc(s.teamName)}</div><div class="who">${esc(s.participantName)}</div></td>
+        <td class="l team-cell"><div class="team-flex">${avatar(s, "av av-row", "logo")}<div><div class="name">${esc(s.teamName)}</div><div class="who">${esc(s.participantName)}</div></div></div></td>
         <td class="opt num">${s.totalGoals}</td><td class="opt num">${s.totalAssists}</td><td class="opt num">${s.goalieWins}</td>
         <td class="opt spark-col">${sparkline(S.history?.series[s.participantId])}</td>
         <td class="opt num muted">${s.rank === 1 ? "—" : `−${st[0].totalPoints - s.totalPoints}`}</td>
@@ -241,6 +276,7 @@ function bindTeamOpeners(root) {
 // ---------- Teams ----------
 function renderTeams() {
   const mine = me()?.participantId;
+  renderMyTeam();
   const list = [...S.board.standings].sort((a, b) => (b.participantId === mine) - (a.participantId === mine) || a.rank - b.rank);
   document.getElementById("teams-grid").innerHTML = list.map(s => {
     // "Edge" players: points weighted by how few other teams own them
@@ -250,17 +286,100 @@ function renderTeams() {
     const unique = s.rosterStats.filter(p => S.owners.get(p.id) === 1).length;
     return `<button class="card team-card" data-team="${esc(s.participantId)}">
       <div class="top">
-        <div><div class="rk">#${s.rank}${s.participantId === mine ? ` · ${esc(t("myTeam"))}` : ""}</div>
+        <div class="team-flex">${avatar(s, "av av-lg", "team")}<div><div class="rk">#${s.rank}${s.participantId === mine ? ` · ${esc(t("myTeam"))}` : ""}</div>
           <div style="font-weight:700;line-height:1.25">${esc(s.teamName)}</div>
-          <div class="muted" style="font-size:13px">${esc(s.participantName)}</div></div>
+          <div class="muted" style="font-size:13px">${esc(s.participantName)}</div></div></div>
         <div class="pts num">${s.totalPoints}</div>
       </div>
       <div class="edge-label">${esc(t("edgePlayers"))}</div>
       <div class="stars">${stars.map(p => `<div class="star" title="${esc(`${p.name} · ${t("ownedBy", { n: S.owners.get(p.id) })}`)}">${mug(p, "mug mug-sm")}<span class="sn">${esc(p.name.split(" ").slice(-1)[0])}</span><b class="num">${p.stats.points}</b><span class="own">×${S.owners.get(p.id)}</span></div>`).join("")}</div>
-      <div class="card-foot">${unique ? `<span class="tag unique">★ ${esc(t("uniqueCount", { n: unique }))}</span>` : `<span class="muted">${esc(t("noUnique"))}</span>`}</div>
+      <div class="card-foot">${unique ? `<span class="tag unique">★ ${esc(t(unique === 1 ? "uniqueOne" : "uniqueCount", { n: unique }))}</span>` : `<span class="muted">${esc(t("noUnique"))}</span>`}</div>
     </button>`;
   }).join("");
   bindTeamOpeners(document.getElementById("panel-teams"));
+}
+
+function renderMyTeam() {
+  const el = document.getElementById("my-team"), s = standingOf(me()?.participantId);
+  if (!s) { el.innerHTML = ""; return; }
+  el.innerHTML = `<div class="card card-pad my-team">
+    ${avatar(s, "av av-xl", "face")}
+    <div style="flex:1;min-width:0"><div class="rk muted" style="font-size:13px">${esc(t("myTeam"))} · #${s.rank}</div>
+      <div style="font-weight:800;font-size:18px;line-height:1.2">${esc(s.teamName)}</div></div>
+    <button class="btn" id="btn-image">${esc(t("changeImage"))}</button>
+  </div>`;
+  el.querySelector("#btn-image").addEventListener("click", () => openImageDialog(s));
+}
+
+// Participants pick a photo or logo; it's sent to Hugo, who publishes it from the admin page
+function openImageDialog(s) {
+  const modal = document.getElementById("image-modal");
+  let prepared = null, kind = "logo";
+  const current = S.logos[s.participantId] || {};
+  const preview = () => {
+    const imgs = prepared ? { ...current, [kind]: prepared.url } : current;
+    modal.querySelector("#img-big").innerHTML = avatarFrom(imgs, s, "av av-xl", "face");
+    modal.querySelector("#img-small").innerHTML = avatarFrom(imgs, s, "av");
+  };
+  modal.innerHTML = `<div class="login-form">
+    <h2>${esc(t("newImage"))}</h2>
+    <p class="muted" style="margin:0;font-size:14px">${esc(t("imageHint"))}</p>
+    <div class="seg" role="radiogroup">
+      <label><input type="radio" name="img-kind" value="logo" checked> ${esc(t("kindLogo"))}</label>
+      <label><input type="radio" name="img-kind" value="face"> ${esc(t("kindFace"))}</label>
+    </div>
+    <label class="btn" style="justify-self:start">${esc(t("chooseImage"))}
+      <input type="file" id="img-file" accept="image/*" class="hidden"></label>
+    <div class="img-preview">
+      <span id="img-big">${avatar(s, "av av-xl", "face")}</span>
+      <div class="card card-pad team-flex" style="flex:1">${`<span id="img-small">${avatar(s, "av")}</span>`}
+        <div><div style="font-weight:700">${esc(s.teamName)}</div><div class="muted" style="font-size:13px">${esc(s.participantName)}</div></div></div>
+    </div>
+    <p class="error-text" id="img-error"></p>
+    <div id="img-after" class="hidden" style="display:grid;gap:8px"></div>
+    <div class="actions" style="justify-content:flex-end">
+      <button class="btn" id="img-cancel">${esc(t("close"))}</button>
+      <button class="btn btn-primary" id="img-send" disabled>${esc(t("sendToHugo"))}</button>
+    </div>
+  </div>`;
+  const $ = sel => modal.querySelector(sel);
+  $("#img-cancel").addEventListener("click", () => modal.close());
+  $("#img-file").addEventListener("change", async e => {
+    const file = e.target.files[0];
+    $("#img-error").textContent = "";
+    if (!file) return;
+    try {
+      prepared = await prepareImage(file, 512, 2 * 1024 * 1024);
+    } catch {
+      prepared = null;
+      $("#img-error").textContent = t("imageError");
+      $("#img-send").disabled = true;
+      return;
+    }
+    preview();
+    $("#img-send").disabled = false;
+  });
+  modal.querySelectorAll('input[name="img-kind"]').forEach(r => r.addEventListener("change", () => {
+    kind = r.value;
+    preview();
+  }));
+  $("#img-send").addEventListener("click", async () => {
+    const ext = prepared.type.split("/")[1].replace("jpeg", "jpg");
+    const file = new File([prepared.blob], `${s.participantId}-${kind}.${ext}`, { type: prepared.type });
+    const text = t("imageMsg", { name: s.participantName, team: s.teamName, kind: t(kind === "face" ? "kindFace" : "kindLogo") });
+    if (navigator.canShare?.({ files: [file] })) {
+      try { await navigator.share({ files: [file], title: t("newImage"), text }); modal.close(); return; }
+      catch (err) { if (err.name === "AbortError") return; }
+    }
+    // No file sharing (most desktops): save the image, then email it as an attachment
+    const a = Object.assign(document.createElement("a"), { href: prepared.url, download: file.name });
+    a.click();
+    const after = $("#img-after");
+    after.classList.remove("hidden");
+    after.innerHTML = `<p style="margin:0;font-size:14px">${esc(t("imageSaved", { file: file.name }))}</p>
+      <a class="btn" style="justify-self:start" href="mailto:hugo.berube@gmail.com?subject=${encodeURIComponent(t("imageSubject", { team: s.teamName }))}&body=${encodeURIComponent(text)}">${esc(t("email"))}</a>`;
+  });
+  modal.showModal();
 }
 
 function openTeam(id) {
@@ -270,7 +389,7 @@ function openTeam(id) {
   const goalieCols = Object.keys(sc.goalie).includes("wins");
   const row = p => `<tr>
     <td class="rd num">${p.group ?? ""}</td>
-    <td class="l"><div class="player">${mug(p, "mug mug-sm")}<div style="min-width:0"><div class="pname">${esc(p.name)}</div>
+    <td class="l"><div class="player">${mug(p, "mug mug-sm")}<div style="min-width:0"><div class="pname">${esc(p.name)}${formBadge(p)}</div>
       <div class="pmeta">${logo(p.team)}${S.owners.get(p.id) === 1
         ? `<span class="tag unique" title="${esc(t("uniqueHint"))}">★ ${esc(t("uniquePick"))}</span>`
         : `<span title="${esc(t("ownedBy", { n: S.owners.get(p.id) }))}">×${S.owners.get(p.id)}</span>`}</div></div></div></td>
@@ -290,8 +409,8 @@ function openTeam(id) {
   const modal = document.getElementById("team-modal");
   modal.innerHTML = `
     <div class="modal-head">
-      <div><div class="muted" style="font-size:13px">#${s.rank} · ${esc(s.participantName)}</div>
-        <div style="font-weight:800;font-size:20px;line-height:1.2">${esc(s.teamName)}</div></div>
+      <div class="team-flex">${avatar(s, "av av-xl", "face")}<div><div class="muted" style="font-size:13px">#${s.rank} · ${esc(s.participantName)}</div>
+        <div style="font-weight:800;font-size:20px;line-height:1.2">${esc(s.teamName)}</div></div></div>
       <div style="text-align:right"><div class="big num">${s.totalPoints}</div><div class="muted" style="font-size:12px">${esc(t("pts"))}</div></div>
     </div>
     <div class="modal-body">
@@ -373,6 +492,7 @@ function renderTonight() {
         const pts = tl ? `${tl.goals ? `${tl.goals}${t("goals")}` : ""}${tl.assists ? ` ${tl.assists}${t("assists")}` : ""}` : "";
         return `<span class="pp-chip ${tl ? "scored" : ""} ${mineIds.has(p.id) ? "mine" : ""}" title="${esc(t("ownedBy", { n: S.owners.get(p.id) }))}">${esc(p.name)}${pts ? ` · ${esc(pts.trim())}` : ""}<span class="own">×${S.owners.get(p.id)}</span></span>`;
       }).join("")}</div>` : ""}
+      ${stakesRow(g)}
     </div>`;
   }).join("");
 
@@ -390,8 +510,8 @@ function renderTonight() {
   }).filter(r => r.pts > 0).sort((a, b) => b.pts - a.pts);
   document.getElementById("tonight-rank").innerHTML = rows.length ? `
     <div class="card card-pad" style="margin-bottom:12px"><h3>${esc(t("tonightPoints"))}</h3>
-      <table class="tonight-rank"><tbody>${rows.map(r => `<tr><td class="l team-cell"><span class="name">${esc(r.s.teamName)}</span>
-        <span class="who"> · ${esc(r.s.participantName)}</span></td><td class="pts-cell num">+${r.pts}</td></tr>`).join("")}</tbody></table>
+      <table class="tonight-rank"><tbody>${rows.map(r => `<tr><td class="l team-cell"><div class="team-flex">${avatar(r.s)}<div><span class="name">${esc(r.s.teamName)}</span>
+        <span class="who"> · ${esc(r.s.participantName)}</span></div></div></td><td class="pts-cell num">+${r.pts}</td></tr>`).join("")}</tbody></table>
       <p class="muted" style="font-size:12px;margin:6px 0 0">${esc(t("tonightNote"))}</p></div>` : "";
 }
 
@@ -498,4 +618,168 @@ function renderTradeBuilder() {
   el.querySelector("#tb-share")?.addEventListener("click", () => {
     navigator.share({ text: el.querySelector("#tb-message").value }).catch(() => {});
   });
+}
+
+// ---------- Tonight's stakes: which families have players in this game ----------
+function stakesRow(g) {
+  const teams = new Set([g.away.abbrev, g.home.abbrev]), mine = me()?.participantId;
+  const stakes = S.board.standings
+    .map(s => ({ s, n: s.rosterStats.filter(p => teams.has(p.team)).length }))
+    .filter(x => x.n).sort((a, b) => b.n - a.n);
+  if (!stakes.length) return "";
+  return `<div class="stakes"><span class="muted">${esc(t("atStake"))}</span>${stakes.map(x => `
+    <span class="stake ${x.s.participantId === mine ? "mine" : ""}" title="${esc(t("stakeTitle", { name: x.s.participantName, n: x.n }))}">
+      ${avatar(x.s, "av av-xs", "person")}<b class="num">${x.n}</b></span>`).join("")}</div>`;
+}
+
+// 🔥 / 🧊 from the last 5 games (insights.json)
+function formBadge(p) {
+  const f = S.insights?.form?.[String(p.id)];
+  if (!f) return "";
+  if (f.dry >= 4) return ` <span class="form cold" title="${esc(t("coldTitle", { n: f.dry }))}">🧊</span>`;
+  if (f.last5 >= (p.pos === "G" ? 6 : 5)) return ` <span class="form hot" title="${esc(t("hotTitle", { n: f.last5 }))}">🔥</span>`;
+  return "";
+}
+
+// ---------- Gazette ----------
+function renderGazette() {
+  renderHighlights();
+  renderDuels();
+  renderBadges();
+  renderMilestones();
+}
+
+function ownerStack(ids, max = 5) {
+  const list = ids.map(standingOf).filter(Boolean);
+  return `<span class="owner-stack">${list.slice(0, max).map(s => avatar(s, "av av-xs", "person")).join("")}${list.length > max ? `<span class="more">+${list.length - max}</span>` : ""}</span>`;
+}
+
+function renderHighlights() {
+  const el = document.getElementById("highlights"), ins = S.insights;
+  document.getElementById("hl-day").textContent = ins ? fmtDay(ins.gameDay, true) : "";
+  if (!ins?.highlights?.length) { el.innerHTML = `<div class="card empty">${esc(t("noHighlights"))}</div>`; return; }
+  el.innerHTML = ins.highlights.map(h => {
+    const clip = getLang() === "fr" ? (h.clipFr || h.clipEn) : (h.clipEn || h.clipFr);
+    const strength = h.strength === "pp" ? ` · ${t("ppGoal")}` : h.strength === "sh" ? ` · ${t("shGoal")}` : "";
+    return `<div class="card hl">
+      <div class="team-flex">${mug({ id: h.playerId }, "mug")}
+        <div style="min-width:0"><div class="pname">${esc(h.name)}</div>
+          <div class="muted" style="font-size:12px">${logo(h.team)} vs ${esc(h.opp)} · P${h.period} ${esc(h.time || "")}${esc(strength)}</div></div></div>
+      ${h.poolAssists.length ? `<div class="muted" style="font-size:12px">${esc(t("assistBy", { names: h.poolAssists.join(", ") }))}</div>` : ""}
+      <div class="hl-foot">${h.scorerOwned ? ownerStack(h.ownerIds) : `<span class="muted" style="font-size:12px">${esc(t("assistOnly"))}</span>`}
+        ${clip ? `<a class="btn btn-sm" href="${esc(clip)}" target="_blank" rel="noopener">▶ ${esc(t("watchGoal"))}</a>` : ""}</div>
+    </div>`;
+  }).join("");
+}
+
+// Weekly duels: pairs drawn from the week's date (same for everyone), scored on points
+// gained Monday→Sunday from history.json. An odd team out faces the pool average ("ghost").
+function weekStart(iso) {
+  const d = new Date(`${iso}T12:00:00`);
+  d.setDate(d.getDate() - ((d.getDay() + 6) % 7));
+  return d.toISOString().slice(0, 10);
+}
+
+function seededShuffle(items, seedText) {
+  let seed = 0;
+  for (const ch of seedText) seed = (seed * 31 + ch.charCodeAt(0)) >>> 0;
+  const rand = () => { seed = (seed + 0x6D2B79F5) >>> 0; let x = seed; x = Math.imul(x ^ (x >>> 15), x | 1); x ^= x + Math.imul(x ^ (x >>> 7), x | 61); return ((x ^ (x >>> 14)) >>> 0) / 4294967296; };
+  const a = [...items];
+  for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(rand() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
+  return a;
+}
+
+function weekScores(monday) {
+  const h = S.history, end = new Date(`${monday}T12:00:00`);
+  end.setDate(end.getDate() + 6);
+  const sunday = end.toISOString().slice(0, 10);
+  const before = h.dates.filter(d => d < monday).length - 1;
+  const last = h.dates.filter(d => d <= sunday).length - 1;
+  const gain = {};
+  for (const [id, vals] of Object.entries(h.series)) {
+    gain[id] = last >= 0 ? (vals[last] ?? 0) - (before >= 0 ? vals[before] ?? 0 : 0) : 0;
+  }
+  return gain;
+}
+
+function weekDuels(monday) {
+  const ids = S.board.standings.map(s => s.participantId).sort();
+  const order = seededShuffle(ids, monday), gain = weekScores(monday);
+  const avg = Math.round(Object.values(gain).reduce((a, b) => a + b, 0) / Math.max(1, ids.length));
+  const duels = [];
+  for (let i = 0; i < order.length; i += 2) duels.push([order[i], order[i + 1] ?? null]);
+  return { duels, gain, avg };
+}
+
+function renderDuels() {
+  const el = document.getElementById("duels"), h = S.history;
+  if (!h?.dates?.length) { el.innerHTML = `<div class="card empty">${esc(t("noHistory"))}</div>`; return; }
+  const latest = h.dates.at(-1), monday = weekStart(latest);
+  const dayN = Math.round((new Date(`${latest}T12:00:00`) - new Date(`${monday}T12:00:00`)) / 864e5) + 1;
+  document.getElementById("duel-week").textContent = t("weekOf", { date: fmtDay(monday), day: dayN });
+
+  // Season record from every completed week before this one
+  const record = {};
+  for (let m = weekStart(h.dates[0]); m < monday; ) {
+    const { duels, gain, avg } = weekDuels(m);
+    for (const [a, b] of duels) {
+      const ga = gain[a], gb = b ? gain[b] : avg;
+      for (const [id, mine, theirs] of [[a, ga, gb], [b, gb, ga]]) {
+        if (!id) continue;
+        record[id] ||= { w: 0, l: 0 };
+        if (mine > theirs) record[id].w++; else if (mine < theirs) record[id].l++;
+      }
+    }
+    const d = new Date(`${m}T12:00:00`); d.setDate(d.getDate() + 7); m = d.toISOString().slice(0, 10);
+  }
+
+  const { duels, gain, avg } = weekDuels(monday), mine = me()?.participantId;
+  duels.sort((x, y) => (y.includes(mine)) - (x.includes(mine)));
+  el.innerHTML = duels.map(([a, b]) => {
+    const A = standingOf(a), B = b ? standingOf(b) : null;
+    const ga = gain[a], gb = b ? gain[b] : avg;
+    const total = Math.max(1, ga + gb), pa = Math.round((ga / total) * 100);
+    const side = (s, g, lead, right) => `<div class="duel-side ${lead ? "lead" : ""} ${right ? "right" : ""}">
+      ${s ? avatar(s, "av av-md") : `<span class="av av-md av-initials" style="--h:220">👻</span>`}
+      <div style="min-width:0"><div class="duel-name">${esc(s ? s.teamName : t("ghost"))}</div>
+        <div class="muted" style="font-size:12px">${s ? esc(s.participantName) : esc(t("ghostSub"))}${s && record[s.participantId] ? ` · ${record[s.participantId].w}-${record[s.participantId].l}` : ""}</div></div>
+      <div class="duel-pts num">${g}</div></div>`;
+    return `<div class="card duel ${[a, b].includes(mine) ? "mine" : ""}">
+      ${side(A, ga, ga > gb, false)}
+      <div class="duel-bar"><span style="width:${ga + gb ? pa : 50}%"></span></div>
+      ${side(B, gb, gb > ga, true)}
+    </div>`;
+  }).join("");
+}
+
+function renderBadges() {
+  const el = document.getElementById("badges"), aw = S.insights?.awards;
+  if (!aw) { el.innerHTML = `<div class="card empty">${esc(t("noInsights"))}</div>`; return; }
+  const cards = [];
+  if (aw.goldenPick) cards.push(["🌟", t("goldenPick"), aw.goldenPick, t("goldenSub", { n: aw.goldenPick.points, k: aw.goldenPick.owners })]);
+  if (aw.iceAnchor) cards.push(["🧊", t("iceAnchor"), aw.iceAnchor, t("anchorSub", { n: aw.iceAnchor.dry, k: aw.iceAnchor.owners })]);
+  if (aw.snub) cards.push(["🤦", t("snub"), aw.snub, t("snubSub", { n: aw.snub.points, g: aw.snub.group })]);
+  el.innerHTML = cards.map(([icon, label, p, sub]) => `
+    <div class="card award">${mug(p, "mug")}
+      <div><div class="label">${icon} ${esc(label)}</div><div class="value">${esc(p.name)} ${logo(p.team)}</div><div class="sub">${esc(sub)}</div></div>
+    </div>`).join("");
+}
+
+function renderMilestones() {
+  const el = document.getElementById("milestones"), st = S.board.standings, rows = [];
+  // Pool races: close gaps to the team just above
+  for (let i = 1; i < st.length; i++) {
+    const gap = st[i - 1].totalPoints - st[i].totalPoints;
+    if (gap > 0 && gap <= 3) rows.push({ icon: "🏁", sort: gap, html: esc(t("chaseAbove", { team: st[i].teamName, n: gap, other: st[i - 1].teamName, rank: st[i - 1].rank })) });
+  }
+  // Player milestones from insights
+  for (const m of S.insights?.milestones || []) {
+    const left = m.target - m.value;
+    rows.push({ icon: { goals: "🚨", points: "🎯", wins: "🥅" }[m.stat], sort: left + 0.5,
+      html: `${esc(t(`ms_${m.stat}`, { name: m.name, n: left, target: m.target }))} <span class="muted">· ${esc(t("ownedBy", { n: m.owners }))}</span>` });
+  }
+  rows.sort((a, b) => a.sort - b.sort);
+  el.innerHTML = rows.length
+    ? `<ul class="ms-list">${rows.slice(0, 12).map(r => `<li><span class="ms-icon">${r.icon}</span><span>${r.html}</span></li>`).join("")}</ul>`
+    : `<div class="empty" style="padding:8px">${esc(t("noMilestones"))}</div>`;
 }

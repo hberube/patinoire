@@ -1,0 +1,65 @@
+name: Set Team Image (face or logo)
+
+on:
+  workflow_dispatch:
+    inputs:
+      participant_id:
+        description: 'Participant (e.g. usr_eve)'
+        required: true
+      kind:
+        description: 'Which image'
+        type: choice
+        options: [logo, face]
+        default: logo
+      image:
+        description: 'Image as base64 (sent by the admin page; max ~45 KB)'
+        required: false
+      remove:
+        description: 'Remove the image instead'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pool-data
+  cancel-in-progress: false
+
+jobs:
+  set-logo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Publish image
+        env:
+          PARTICIPANT: ${{ inputs.participant_id }}
+          KIND: ${{ inputs.kind }}
+          LOGO_B64: ${{ inputs.image }}
+          REMOVE: ${{ inputs.remove }}
+        run: |
+          if [ "$REMOVE" = "true" ]; then
+            python scripts/set_logo.py "$PARTICIPANT" "$KIND" --remove
+          else
+            python scripts/set_logo.py "$PARTICIPANT" "$KIND" --b64
+          fi
+
+      - name: Commit & Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A img/teams data/logos.json
+          git diff --staged --quiet && exit 0
+          git commit -m "Update team image"
+          git pull --rebase
+          git push

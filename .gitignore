@@ -6,3 +6,6 @@ la-patinoire-claude-spec.zip
 *:Zone.Identifier
 __pycache__/
 .venv/
+
+# Form export contains participants' emails: never publish
+roster_2027.txt

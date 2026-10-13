@@ -37,7 +37,20 @@
       </section>
 
       <section>
-        <div class="section-head"><h2>2. Jeton GitHub</h2></div>
+        <div class="section-head"><h2>2. Contacts (privé)</h2><span id="contacts-count" class="muted"></span></div>
+        <div class="card card-pad grid">
+          <p class="hint">Chargez l'export du formulaire (<code>roster_2027.txt</code>) pour voir l'adresse attendue de chaque échange.
+            Les courriels restent <b>seulement dans ce navigateur</b>, jamais sur GitHub.</p>
+          <div class="form-row">
+            <input class="input" type="file" id="contacts-file" accept=".txt,.tsv,.csv">
+            <button class="btn btn-ghost" id="contacts-forget">Oublier les contacts</button>
+          </div>
+          <p class="status-line" id="contacts-status"></p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head"><h2>3. Jeton GitHub</h2></div>
         <div class="card card-pad grid">
           <p class="hint">Un jeton <b>fine-grained</b> limité au dépôt <code>hberube/la-patinoire</code>, permission
             <b>Actions: Read and write</b>. Il reste seulement dans ce navigateur.
@@ -56,7 +69,7 @@
       </section>
 
       <section>
-        <div class="section-head"><h2>3. NIP d'un participant</h2></div>
+        <div class="section-head"><h2>4. NIP d'un participant</h2></div>
         <div class="card card-pad grid">
           <p class="hint">Génère l'entrée à coller dans <code>data/users.json</code> (remplace l'ancienne entrée de cette personne).
             Ou en ligne de commande : <code>python scripts/make_pins.py usr_… 1234</code>.</p>
@@ -70,7 +83,31 @@
       </section>
 
       <section>
-        <div class="section-head"><h2>4. Configuration</h2>
+        <div class="section-head"><h2>5. Images d'équipe</h2></div>
+        <div class="card card-pad grid">
+          <p class="hint">Publiez le logo d'équipe ou la photo qu'un participant vous a envoyé. Elle est recadrée et
+            convertie automatiquement, puis apparaît sur le site 2-3 minutes après.</p>
+          <div class="form-row">
+            <select class="input" id="logo-user"></select>
+            <select class="input" id="logo-kind" style="max-width:200px">
+              <option value="logo">Logo d'équipe</option>
+              <option value="face">Photo (visage)</option>
+            </select>
+            <label class="btn">Choisir l'image…<input type="file" id="logo-file" accept="image/*" class="hidden"></label>
+          </div>
+          <div class="form-row">
+            <span id="logo-current"></span><span class="arrow">➜</span><span id="logo-new" class="muted">—</span>
+          </div>
+          <div class="form-row">
+            <button class="btn btn-primary" id="logo-publish" disabled>Publier l'image</button>
+            <button class="btn btn-ghost" id="logo-remove">Retirer l'image actuelle</button>
+          </div>
+          <p class="status-line" id="logo-status"></p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head"><h2>6. Configuration</h2>
           <a class="btn btn-sm" id="edit-config" target="_blank" rel="noopener">Modifier config.json ↗</a></div>
         <div class="card card-pad"><pre id="config-view" class="config-view"></pre></div>
       </section>

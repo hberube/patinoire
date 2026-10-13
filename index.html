@@ -24,6 +24,7 @@
       <span class="mobile-updated muted"><span data-i18n="updated"></span> <span id="last-updated-m">—</span></span>
       <div class="tabs" role="tablist">
         <button class="tab" role="tab" data-tab="standings"><span class="ico">🏆</span><span data-i18n="standings"></span></button>
+        <button class="tab" role="tab" data-tab="gazette"><span class="ico">📰</span><span data-i18n="gazette"></span></button>
         <button class="tab" role="tab" data-tab="teams"><span class="ico">🧊</span><span data-i18n="teams"></span></button>
         <button class="tab" role="tab" data-tab="chart"><span class="ico">📈</span><span data-i18n="trajectory"></span></button>
         <button class="tab" role="tab" data-tab="tonight"><span class="ico">🏒</span><span data-i18n="tonight"></span></button>
@@ -45,7 +46,19 @@
       <div class="card table-wrap"><table id="standings-table"></table></div>
     </section>
 
+    <section class="panel" id="panel-gazette">
+      <div class="section-head"><h2 data-i18n="poolGoals"></h2><span class="muted" id="hl-day"></span></div>
+      <div id="highlights" class="hl-strip"></div>
+      <div class="section-head"><h2 data-i18n="duels"></h2><span class="muted" id="duel-week"></span></div>
+      <div id="duels" class="grid duels"></div>
+      <div class="section-head"><h2 data-i18n="bustsSteals"></h2></div>
+      <div id="badges" class="awards"></div>
+      <div class="section-head"><h2 data-i18n="milestones"></h2></div>
+      <div id="milestones" class="card card-pad"></div>
+    </section>
+
     <section class="panel" id="panel-teams">
+      <div id="my-team"></div>
       <div class="section-head"><h2 data-i18n="teams"></h2></div>
       <div id="teams-grid" class="grid teams"></div>
     </section>
@@ -74,6 +87,7 @@
   <footer><span data-i18n="footer"></span> · <a href="https://www.nhl.com" rel="noopener">NHL.com</a></footer>
 
   <dialog id="team-modal"></dialog>
+  <dialog id="image-modal"></dialog>
   <dialog id="login-modal">
     <form class="login-form" id="login-form" method="dialog">
       <h2 data-i18n="login"></h2>

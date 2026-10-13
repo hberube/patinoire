@@ -2,7 +2,7 @@
 """One-time import of the draft.
 
 1. scripts/form_rounds_2026-27.txt (the 21 rounds of the Google Form) -> data/groups.json
-2. roster_2027.txt (participant, team name, one pick per group) -> data/rosters.json
+2. roster_2027.txt (Google Form export: one pick per round) -> data/rosters.json
 
 Players are written "Name (TEAM)" and resolved to NHL player IDs.
 Unresolvable names go in scripts/roster_overrides.json as {"Name (TEAM)": player_id}.
@@ -57,6 +57,20 @@ def parse_sheet():
         else:
             current["cells"].append(line)
     return groups
+
+
+def read_submissions():
+    """Yields (participant, team name, 21 picks) from roster_2027.txt.
+
+    Accepts the Google Form export (timestamp, name, club, email, 21 picks, pot answer)
+    or the older sheet (name, club, 21 picks). Emails are never read into the output.
+    """
+    for line in (ROOT / "roster_2027.txt").read_text(encoding="utf-8").splitlines():
+        cells = [c.strip() for c in line.split("\t")]
+        if re.match(r"^\d{1,2}/\d{1,2}/\d{4}", cells[0]) and len(cells) >= 25:
+            yield cells[1], cells[2], cells[4:25]
+        elif len(cells) >= 23 and all("(" in c for c in cells[2:23]):
+            yield cells[0], cells[1], cells[2:23]
 
 
 def search_player(name, pos, team):
@@ -128,12 +142,7 @@ def main():
 
     # 2. Participant picks, matched by name to the sheet
     rosters = []
-    lines = (ROOT / "roster_2027.txt").read_text(encoding="utf-8").splitlines()
-    for line in lines[1:]:
-        if not line.strip():
-            continue
-        cells = [c.strip() for c in line.split("\t")]
-        participant, team_name, picks = cells[0], cells[1], cells[2:]
+    for participant, team_name, picks in read_submissions():
         players = []
         for cell in picks:
             match = cell_to_player.get(norm(parse_cell(cell)[0]))
