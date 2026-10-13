@@ -6,8 +6,11 @@ import { esc, fetchJson, headshot } from "../js/util.js";
 import { parseContacts } from "./contacts.js";
 import { prepareImage, blobToBase64 } from "../js/image.js";
 
-const OWNER = "hberube";
-const REPO = "la-patinoire";
+// On GitHub Pages the address is https://<owner>.github.io/<repo>/admin/, so the repo the
+// workflows live in is read from it; the fallback is for local testing.
+const onPages = location.hostname.endsWith(".github.io");
+const OWNER = onPages ? location.hostname.split(".")[0] : "hberube";
+const REPO = onPages ? location.pathname.split("/")[1] : "patinoire";
 const TOKEN_KEY = "admin_gh_token";
 const CONTACTS_KEY = "admin_contacts";
 const ACTIONS_URL = `https://github.com/${OWNER}/${REPO}/actions`;
@@ -36,6 +39,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   document.getElementById("config-view").textContent = JSON.stringify(D.config, null, 2);
   document.getElementById("edit-config").href = `https://github.com/${OWNER}/${REPO}/edit/main/data/config.json`;
   document.getElementById("actions-link").href = ACTIONS_URL;
+  document.getElementById("repo-name").textContent = `${OWNER}/${REPO}`;
   setupToken();
   setupContacts();
   setupTradeReview();
