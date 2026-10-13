@@ -4,13 +4,14 @@ import { getSession, login, logout } from "./auth.js";
 import { windowOpen, tradesLeft, roundOptions, encodeTrade } from "./trade.js";
 import { renderChart } from "./chart.js";
 import { prepareImage } from "./image.js";
+import { faqContent } from "./faq.js";
 
 const S = {
   tab: "standings",
   chartPicks: null,
   trade: { outId: null, inId: null, code: null },
 };
-const TABS = ["standings", "gazette", "teams", "chart", "tonight", "trades"];
+const TABS = ["standings", "gazette", "teams", "chart", "tonight", "trades", "faq"];
 const POS_ICON = { F: "🏒", D: "🛡️", G: "🥅" };
 
 // ---------- Boot ----------
@@ -43,6 +44,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 function bindChrome() {
   document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () => showTab(b.dataset.tab)));
+  document.querySelector(".tabs").addEventListener("scroll", updateTabFade, { passive: true });
   window.addEventListener("hashchange", () => showTab(location.hash.slice(1)));
   document.getElementById("btn-lang").addEventListener("click", () => {
     setLang(getLang() === "fr" ? "en" : "fr");
@@ -66,6 +68,12 @@ function bindChrome() {
   }
 }
 
+// The fade on the tab bar's right edge hints "more tabs"; drop it once scrolled to the end
+function updateTabFade() {
+  const bar = document.querySelector(".tabs");
+  if (bar) bar.classList.toggle("at-end", bar.scrollLeft + bar.clientWidth >= bar.scrollWidth - 4);
+}
+
 function showTab(tab) {
   S.tab = TABS.includes(tab) ? tab : "standings";
   if (location.hash.slice(1) !== S.tab) history.replaceState(null, "", `#${S.tab}`);
@@ -75,6 +83,7 @@ function showTab(tab) {
   requestAnimationFrame(() => {
     const tab = document.querySelector(`.tab[data-tab="${S.tab}"]`), bar = tab?.parentElement;
     if (bar) bar.scrollLeft = tab.offsetLeft - (bar.clientWidth - tab.offsetWidth) / 2;
+    updateTabFade();
   });
   document.querySelectorAll(".panel").forEach(p => p.classList.toggle("active", p.id === `panel-${S.tab}`));
   if (S.tab === "chart" && S.board) renderTrajectory();
@@ -96,6 +105,7 @@ function renderAll() {
   if (S.tab === "chart") renderTrajectory();
   renderTonight();
   renderGazette();
+  renderFaq();
   renderTrades();
 }
 
@@ -425,7 +435,7 @@ function openTeam(id) {
 
 // ---------- Trajectory ----------
 function renderTrajectory() {
-  const el = document.getElementById("chart"), h = S.history;
+  const el = document.getElementById("traj-chart"), h = S.history;
   if (!h || h.dates.length < 2) { el.innerHTML = `<div class="empty">${esc(t("noHistory"))}</div>`; return; }
   const series = S.board.standings.map(s => ({ id: s.participantId, label: s.teamName, who: s.participantName, values: h.series[s.participantId] || [] }));
   if (!S.chartPicks) {
@@ -782,4 +792,40 @@ function renderMilestones() {
   el.innerHTML = rows.length
     ? `<ul class="ms-list">${rows.slice(0, 12).map(r => `<li><span class="ms-icon">${r.icon}</span><span>${r.html}</span></li>`).join("")}</ul>`
     : `<div class="empty" style="padding:8px">${esc(t("noMilestones"))}</div>`;
+}
+
+// ---------- FAQ ----------
+function renderFaq() {
+  const cfg = S.config, fr = getLang() === "fr";
+  const labels = fr
+    ? { goals: "But", assists: "Passe", wins: "Victoire d'un gardien", shutouts: "Blanchissage", otl: "Défaite en prolongation (gardien)", soGoals: "But en fusillade" }
+    : { goals: "Goal", assists: "Assist", wins: "Goalie win", shutouts: "Shutout", otl: "Overtime loss (goalie)", soGoals: "Shootout goal" };
+  const pts = n => fr ? `${n} point${n > 1 ? "s" : ""}` : `${n} point${n > 1 ? "s" : ""}`;
+  const lines = [];
+  for (const [k, v] of Object.entries(cfg.scoring.skater)) if (v) lines.push(`${labels[k] || k} : ${pts(v)}`);
+  for (const [k, v] of Object.entries(cfg.scoring.goalie)) {
+    if (!v || k in cfg.scoring.skater) continue;
+    lines.push(`${labels[k] || k} : ${k === "shutouts" && cfg.scoring.goalie.wins ? "+" : ""}${pts(v)}`);
+  }
+  if (["goals", "assists"].every(k => cfg.scoring.goalie[k])) {
+    lines.push(fr ? "Les gardiens reçoivent aussi les points de leurs buts et passes" : "Goalies also get points for their goals and assists");
+  }
+  const vars = {
+    f: esc(cfg.maxTrades.F), d: esc(cfg.maxTrades.D), g: esc(cfg.maxTrades.G),
+    opens: esc(fmtDate(cfg.tradeWindowStart)),
+    scoring: lines.map(l => `<li>${esc(fr ? l : l.replace(" : ", ": "))}</li>`).join(""),
+    teamsButton: `<a class="btn btn-sm" href="#teams">${esc(t("teams"))} →</a>`,
+    tradesButton: `<a class="btn btn-sm" href="#trades">${esc(t("trades"))} →</a>`,
+  };
+  // Keep answers open across re-renders; ?q=<section>-<question> opens one from a shared link
+  const open = new Set([...document.querySelectorAll("#faq-root details[open]")].map(d => d.dataset.key));
+  const linked = new URLSearchParams(location.search).get("q");
+  if (linked && !S.faqLinkDone) { open.add(linked); S.faqLinkDone = true; }
+  document.getElementById("faq-root").innerHTML = faqContent(getLang(), vars).map((sec, i) => `
+    <h3 class="faq-section">${esc(sec.section)}</h3>
+    <div class="card faq-list">${sec.items.map((it, j) => `
+      <details data-key="${i}-${j}" ${open.has(`${i}-${j}`) ? "open" : ""}>
+        <summary>${esc(it.q)}</summary>
+        <div class="faq-a">${it.a}</div>
+      </details>`).join("")}</div>`).join("");
 }

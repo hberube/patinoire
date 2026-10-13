@@ -12,6 +12,7 @@ A static site on GitHub Pages, with no server and no database. The data lives in
 | Trajectoire | Points per day; compare up to 3 teams |
 | Ce soir | Tonight's games, the pool players in each one, who has the most at stake, and live goals/assists |
 | Échanges | Rules, approved trades, and the trade builder (requires login) |
+| FAQ | Step-by-step help for participants: changing their photo or team logo, proposing a trade, login/PIN, scoring, update times |
 
 ## Rules (in `data/config.json`)
 
@@ -61,6 +62,16 @@ python3 -m http.server 8000            # then open http://localhost:8000
 ```
 
 Opening `index.html` straight from the file explorer won't work, because browsers block the data files that way. If you ran the scripts by hand and want the result online, commit and push the `data/` folder.
+
+## Sharing a FAQ answer
+
+Send a link that opens a specific question in the FAQ tab: add `?q=<section>-<question>` (counting from 0), for example:
+
+- How to change a photo or logo: https://hberube.github.io/patinoire/?q=0-0#faq
+- How to propose a trade: https://hberube.github.io/patinoire/?q=1-1#faq
+- Trade rules: https://hberube.github.io/patinoire/?q=1-0#faq
+
+The FAQ text lives in `js/faq.js` (French and English). Trade limits, the trade window date and the scoring are filled in from `data/config.json`.
 
 ## Approving a trade
 

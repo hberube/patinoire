@@ -1,0 +1,208 @@
+// FAQ content (FR/EN). Answers are trusted static HTML; values coming from config are
+// passed through esc() by the caller. {{key}} placeholders are filled from `vars`.
+
+const FAQ = {
+  fr: [
+    {
+      section: "Votre image",
+      items: [
+        {
+          q: "Comment changer ma photo ou le logo de mon équipe?",
+          a: `<ol>
+            <li>Touchez <b>Connexion</b> en haut, choisissez votre nom et entrez votre NIP.</li>
+            <li>Allez dans l'onglet <b>Équipes</b>. Votre carte <b>Mon équipe</b> est en haut.</li>
+            <li>Touchez <b>Changer mon image</b>, puis choisissez <b>Logo d'équipe</b> ou <b>Ma photo</b>.</li>
+            <li>Touchez <b>Choisir une image…</b> et prenez une image de votre téléphone ou de votre ordinateur. Un aperçu montre le résultat.</li>
+            <li>Touchez <b>Envoyer à Hugo</b>.
+              <ul>
+                <li><b>Sur un téléphone :</b> le menu de partage s'ouvre. Choisissez Messages ou Courriel et envoyez à Hugo.</li>
+                <li><b>Sur un ordinateur :</b> l'image est enregistrée dans vos téléchargements et un courriel s'ouvre. Joignez l'image et envoyez.</li>
+              </ul></li>
+          </ol>
+          <p>Hugo publie l'image; elle apparaît sur le site quelques minutes plus tard.</p>
+          {{teamsButton}}`,
+        },
+        {
+          q: "Quel genre d'image fonctionne le mieux?",
+          a: `<ul>
+            <li><b>Photo :</b> un portrait où l'on voit bien votre visage. Elle est recadrée en carré au centre et affichée dans un cercle.</li>
+            <li><b>Logo :</b> une image carrée, idéalement un PNG avec fond transparent. Le logo est gardé en entier.</li>
+            <li>JPG, PNG, WebP ou GIF. Pas besoin de réduire la taille : le site s'en occupe.</li>
+          </ul>`,
+        },
+        {
+          q: "Où apparaissent ma photo et mon logo?",
+          a: `<p>Votre <b>logo</b> apparaît dans le classement, sur votre carte d'équipe et dans la Gazette. Votre <b>photo</b> apparaît en grand sur le podium, dans la fiche de votre équipe et dans « Ce soir ». Sans image, vos initiales sont affichées.</p>`,
+        },
+      ],
+    },
+    {
+      section: "Les échanges",
+      items: [
+        {
+          q: "Quelles sont les règles des échanges?",
+          a: `<ul>
+            <li>Chaque équipe a droit à <b>{{f}} échange d'attaquant</b>, <b>{{d}} de défenseur</b> et <b>{{g}} de gardien</b> pour la saison.</li>
+            <li>Un joueur ne peut être échangé que contre un autre joueur <b>de la même ronde</b> du formulaire.</li>
+            <li>Les échanges sont permis à partir du <b>{{opens}}</b>.</li>
+            <li>Les points que votre ancien joueur a déjà accumulés <b>restent dans votre total</b>. Le nouveau joueur compte seulement à partir de l'approbation.</li>
+          </ul>`,
+        },
+        {
+          q: "Comment proposer un échange?",
+          a: `<ol>
+            <li>Touchez <b>Connexion</b> et entrez votre NIP.</li>
+            <li>Allez dans l'onglet <b>Échanges</b>.</li>
+            <li><b>1. Joueur qui sort :</b> touchez le joueur que vous voulez échanger. Le « R » indique sa ronde.</li>
+            <li><b>2. Joueur qui entre :</b> les autres joueurs de la même ronde s'affichent, avec leurs points cette saison. Touchez votre choix.</li>
+            <li>Touchez <b>Générer le code d'échange</b>.</li>
+            <li>Envoyez le message à Hugo avec <b>Copier</b>, <b>Partager</b> ou <b>Courriel</b>. Envoyez-le de <b>votre</b> téléphone ou de <b>votre</b> courriel : Hugo vérifie qui l'envoie.</li>
+          </ol>
+          {{tradesButton}}`,
+        },
+        {
+          q: "Quand mon échange compte-t-il?",
+          a: `<p>Dès que Hugo l'approuve. Le classement est mis à jour 2 à 3 minutes après, et l'échange apparaît dans <b>Échanges approuvés</b>. Votre ancien joueur reste visible dans la fiche de votre équipe avec ses points conservés.</p>`,
+        },
+        {
+          q: "Je me suis trompé ou j'ai changé d'idée.",
+          a: `<p>Tant que Hugo n'a pas approuvé, rien n'est fait : écrivez-lui simplement pour annuler, puis envoyez un nouveau code si vous voulez. Une fois approuvé, l'échange est final.</p>`,
+        },
+        {
+          q: "Pourquoi le bouton « Générer le code » est-il gris?",
+          a: `<p>Soit la période d'échanges n'est pas encore ouverte (à partir du {{opens}}), soit vous avez déjà utilisé votre échange à cette position, soit il manque un choix à l'étape 1 ou 2.</p>`,
+        },
+      ],
+    },
+    {
+      section: "Le pool",
+      items: [
+        {
+          q: "Comment me connecter? J'ai oublié mon NIP.",
+          a: `<p>Touchez <b>Connexion</b>, choisissez votre nom et entrez le NIP que Hugo vous a remis. Si vous l'avez oublié, demandez-en un nouveau à Hugo. La connexion sert seulement à voir « Mon équipe » et à proposer des échanges; le classement est visible sans connexion.</p>`,
+        },
+        {
+          q: "Comment les points sont-ils calculés?",
+          a: `<ul>{{scoring}}</ul><p>Un joueur rapporte des points seulement pendant qu'il est dans votre équipe.</p>`,
+        },
+        {
+          q: "Quand le classement est-il mis à jour?",
+          a: `<ul>
+            <li><b>Chaque matin vers 5 h :</b> classement, trajectoire et Gazette, avec les matchs de la veille.</li>
+            <li><b>Pendant les matchs</b> (aux 15 minutes) : l'onglet « Ce soir ».</li>
+            <li><b>Quelques minutes après</b> un échange ou une nouvelle image approuvés par Hugo.</li>
+          </ul>`,
+        },
+        {
+          q: "C'est quoi, la Gazette et les duels?",
+          a: `<p>La <b>Gazette</b> résume la veille : les buts des joueurs du pool (avec la vidéo), le choix en or, l'ancre de glace et le grand oublié. Les <b>duels de la semaine</b> jumellent les équipes au hasard chaque lundi; l'équipe qui fait le plus de points du lundi au dimanche gagne. Juste pour le plaisir : ça ne change pas le classement.</p>`,
+        },
+      ],
+    },
+  ],
+  en: [
+    {
+      section: "Your image",
+      items: [
+        {
+          q: "How do I change my photo or my team logo?",
+          a: `<ol>
+            <li>Tap <b>Log in</b> at the top, pick your name and enter your PIN.</li>
+            <li>Go to the <b>Teams</b> tab. Your <b>My team</b> card is at the top.</li>
+            <li>Tap <b>Change my image</b>, then pick <b>Team logo</b> or <b>My photo</b>.</li>
+            <li>Tap <b>Choose an image…</b> and pick an image from your phone or computer. A preview shows the result.</li>
+            <li>Tap <b>Send to Hugo</b>.
+              <ul>
+                <li><b>On a phone:</b> the share menu opens. Pick Messages or Mail and send it to Hugo.</li>
+                <li><b>On a computer:</b> the image is saved to your downloads and an email opens. Attach the image and send.</li>
+              </ul></li>
+          </ol>
+          <p>Hugo publishes it, and it shows up on the site a few minutes later.</p>
+          {{teamsButton}}`,
+        },
+        {
+          q: "What kind of image works best?",
+          a: `<ul>
+            <li><b>Photo:</b> a portrait where your face is clearly visible. It's cropped to a centered square and shown in a circle.</li>
+            <li><b>Logo:</b> a square image, ideally a PNG with a transparent background. The whole logo is kept.</li>
+            <li>JPG, PNG, WebP or GIF. No need to shrink it: the site does that.</li>
+          </ul>`,
+        },
+        {
+          q: "Where do my photo and logo show up?",
+          a: `<p>Your <b>logo</b> appears in the standings, on your team card and in the Buzz tab. Your <b>photo</b> appears large on the podium, in your team's window and in "Tonight". With no image, your initials are shown.</p>`,
+        },
+      ],
+    },
+    {
+      section: "Trades",
+      items: [
+        {
+          q: "What are the trade rules?",
+          a: `<ul>
+            <li>Each team gets <b>{{f}} forward</b>, <b>{{d}} defense</b> and <b>{{g}} goalie</b> trade for the season.</li>
+            <li>A player can only be swapped for another player <b>from the same round</b> of the form.</li>
+            <li>Trades are allowed starting <b>{{opens}}</b>.</li>
+            <li>Points your old player already earned <b>stay in your total</b>. The new player only counts from approval on.</li>
+          </ul>`,
+        },
+        {
+          q: "How do I propose a trade?",
+          a: `<ol>
+            <li>Tap <b>Log in</b> and enter your PIN.</li>
+            <li>Go to the <b>Trades</b> tab.</li>
+            <li><b>1. Player out:</b> tap the player you want to trade. The "R" shows his round.</li>
+            <li><b>2. Player in:</b> the other players from that round appear, with their points this season. Tap your pick.</li>
+            <li>Tap <b>Generate trade code</b>.</li>
+            <li>Send the message to Hugo with <b>Copy</b>, <b>Share</b> or <b>Email</b>. Send it from <b>your own</b> phone or email: Hugo checks who sent it.</li>
+          </ol>
+          {{tradesButton}}`,
+        },
+        {
+          q: "When does my trade count?",
+          a: `<p>As soon as Hugo approves it. The standings update 2–3 minutes later and the trade shows under <b>Approved trades</b>. Your old player stays visible in your team's window with his points kept.</p>`,
+        },
+        {
+          q: "I made a mistake or changed my mind.",
+          a: `<p>Until Hugo approves it, nothing has happened: just tell him to cancel, then send a new code if you want. Once approved, the trade is final.</p>`,
+        },
+        {
+          q: "Why is the \"Generate\" button greyed out?",
+          a: `<p>Either the trade window isn't open yet (starts {{opens}}), you've already used your trade at that position, or step 1 or 2 is missing a pick.</p>`,
+        },
+      ],
+    },
+    {
+      section: "The pool",
+      items: [
+        {
+          q: "How do I log in? I forgot my PIN.",
+          a: `<p>Tap <b>Log in</b>, pick your name and enter the PIN Hugo gave you. If you forgot it, ask Hugo for a new one. Logging in is only needed for "My team" and trades; anyone can see the standings.</p>`,
+        },
+        {
+          q: "How are points calculated?",
+          a: `<ul>{{scoring}}</ul><p>A player only earns points for you while he's on your team.</p>`,
+        },
+        {
+          q: "When do the standings update?",
+          a: `<ul>
+            <li><b>Every morning around 5 AM:</b> standings, trajectory and Buzz, with the previous night's games.</li>
+            <li><b>During games</b> (every 15 minutes): the "Tonight" tab.</li>
+            <li><b>A few minutes after</b> Hugo approves a trade or a new image.</li>
+          </ul>`,
+        },
+        {
+          q: "What are the Buzz tab and the duels?",
+          a: `<p><b>Buzz</b> recaps the previous night: goals by pool players (with video), the Golden Pick, the Ice Anchor and the Snub. <b>Weekly duels</b> pair teams at random every Monday; whoever scores more from Monday to Sunday wins. Just for fun: it doesn't affect the standings.</p>`,
+        },
+      ],
+    },
+  ],
+};
+
+export function faqContent(lang, vars) {
+  return FAQ[lang].map(sec => ({
+    section: sec.section,
+    items: sec.items.map(it => ({ q: it.q, a: it.a.replace(/\{\{(\w+)\}\}/g, (_, k) => vars[k] ?? "") })),
+  }));
+}

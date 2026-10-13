@@ -29,6 +29,7 @@
         <button class="tab" role="tab" data-tab="chart"><span class="ico">📈</span><span data-i18n="trajectory"></span></button>
         <button class="tab" role="tab" data-tab="tonight"><span class="ico">🏒</span><span data-i18n="tonight"></span></button>
         <button class="tab" role="tab" data-tab="trades"><span class="ico">🔄</span><span data-i18n="trades"></span></button>
+        <button class="tab" role="tab" data-tab="faq"><span class="ico">❓</span><span data-i18n="faq"></span></button>
       </div>
       <div class="actions">
         <span id="live-pill" class="live-pill hidden" data-i18n="live"></span>
@@ -65,7 +66,7 @@
 
     <section class="panel" id="panel-chart">
       <div class="section-head"><h2 data-i18n="trajectory"></h2><span class="muted" data-i18n="chartHint"></span></div>
-      <div class="card chart-card" id="chart"></div>
+      <div class="card chart-card" id="traj-chart"></div>
       <div id="chart-picker" class="picker"></div>
     </section>
 
@@ -81,6 +82,10 @@
       <div class="card card-pad"><ul class="rules" id="rules"></ul></div>
       <div class="section-head"><h2 data-i18n="tradeHistory"></h2></div>
       <div class="card card-pad" id="trade-history"></div>
+    </section>
+    <section class="panel" id="panel-faq">
+      <div class="section-head"><h2 data-i18n="faqTitle"></h2></div>
+      <div id="faq-root"></div>
     </section>
   </main>
 
