@@ -2,8 +2,11 @@ name: Daily Pool Stats Update
 
 on:
   schedule:
-    # 09:00 UTC = 05:00 EDT (04:00 EST in winter)
-    - cron: '0 9 * * *'
+    # The game-night loop (live-scores.yml) normally updates the standings right after the last
+    # game; this is the safety net. GitHub's schedule is best-effort (top-of-hour slots are the
+    # most often delayed or dropped), so try several times: 06:17-10:17 UTC =
+    # 2:17-6:17 AM EDT / 1:17-5:17 AM EST. Extra runs find nothing new and commit nothing.
+    - cron: '17 6-10 * * *'
   workflow_dispatch:
 
 permissions:
@@ -40,7 +43,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/*.json
+          git add -A data
           git diff --staged --quiet && exit 0
           git commit -m "Auto-update pool stats"
           git pull --rebase

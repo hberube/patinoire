@@ -14,6 +14,7 @@ worktree. Keeping live data off `main` avoids a Pages rebuild every 2 minutes; t
 live.json straight from that branch.
 """
 import json
+import os
 import subprocess
 import sys
 import time
@@ -81,7 +82,7 @@ def seconds_to_first_puck(games):
 
 def loop(out_dir):
     out_dir = Path(out_dir)
-    began, last = time.monotonic(), None
+    began, last, saw_live = time.monotonic(), None, False
     while True:
         try:
             live = build_live()
@@ -97,8 +98,13 @@ def loop(out_dir):
             print(f"{now_iso()} published: {len(live['games'])} games, {on} live, {len(live['players'])} pool players scored")
 
         games = live["games"]
+        saw_live = saw_live or any(g["state"] in ("LIVE", "CRIT") for g in games)
         if not games or all(g["state"] in DONE_STATES for g in games):
             print("No games left tonight. Done.")
+            # Tell the workflow to rebuild the standings now rather than wait for the morning job
+            if saw_live and os.environ.get("GITHUB_OUTPUT"):
+                with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+                    f.write("night_over=true\n")
             return
         if time.monotonic() - began > MAX_RUNTIME:
             print("Time limit reached; the next scheduled run takes over.")

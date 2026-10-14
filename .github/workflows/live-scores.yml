@@ -22,6 +22,8 @@ concurrency:
 jobs:
   live:
     runs-on: ubuntu-latest
+    outputs:
+      night_over: ${{ steps.loop.outputs.night_over }}
     timeout-minutes: 350
     steps:
       - name: Checkout Repository
@@ -45,4 +47,43 @@ jobs:
           git rm -rfq . > /dev/null
 
       - name: Game-night loop
+        id: loop
         run: python scripts/update_live.py --loop --out live-out
+
+  # Once the last game is final, make last night's points permanent right away instead of
+  # waiting for the morning job (whose schedule GitHub may delay or skip). Only after
+  # midnight UTC, so the morning job's "since yesterday" movement stays on the right day.
+  standings:
+    needs: live
+    if: needs.live.outputs.night_over == 'true'
+    runs-on: ubuntu-latest
+    concurrency:
+      group: pool-data
+      cancel-in-progress: false
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Update Stats & Leaderboard
+        run: |
+          [ "$(date -u +%H)" -lt 12 ] || { echo "Games ended before midnight UTC; the morning job will do it."; exit 0; }
+          python scripts/update_pool.py
+          python scripts/insights.py || echo "warning: gazette update failed"
+
+      - name: Commit & Push Changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A data
+          git diff --staged --quiet && exit 0
+          git commit -m "Auto-update pool stats (after last game)"
+          git pull --rebase
+          git push
