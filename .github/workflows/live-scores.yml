@@ -7,9 +7,9 @@ name: Live Scores (Ce soir)
 # going wait in line and exit right away once the night is over.
 on:
   schedule:
-    # 16:00-03:30 UTC, every 30 min (noon-11:30 PM EDT / 11 AM-10:30 PM EST)
+    # 16:00-04:30 UTC, every 30 min (noon-12:30 AM EDT / 11 AM-11:30 PM EST)
     - cron: '7,37 16-23 * * *'
-    - cron: '7,37 0-3 * * *'
+    - cron: '7,37 0-4 * * *'
   workflow_dispatch:
 
 permissions:
