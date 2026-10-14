@@ -751,7 +751,7 @@ function renderDuels() {
     const total = Math.max(1, ga + gb), pa = Math.round((ga / total) * 100);
     const side = (s, g, lead, right) => `<div class="duel-side ${lead ? "lead" : ""} ${right ? "right" : ""}">
       ${s ? avatar(s, "av av-md") : `<span class="av av-md av-initials" style="--h:220">👻</span>`}
-      <div style="min-width:0"><div class="duel-name">${esc(s ? s.teamName : t("ghost"))}</div>
+      <div style="min-width:0"><div class="duel-name" title="${esc(s ? s.teamName : t("ghost"))}">${esc(s ? s.teamName : t("ghost"))}</div>
         <div class="muted" style="font-size:12px">${s ? esc(s.participantName) : esc(t("ghostSub"))}${s && record[s.participantId] ? ` · ${record[s.participantId].w}-${record[s.participantId].l}` : ""}</div></div>
       <div class="duel-pts num">${g}</div></div>`;
     return `<div class="card duel ${[a, b].includes(mine) ? "mine" : ""}">

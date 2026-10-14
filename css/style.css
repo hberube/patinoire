@@ -411,12 +411,13 @@ body { overflow-x: hidden; }
 .av-xs { width: 24px; height: 24px; }
 .av-xs.av-initials { font-size: 9px; }
 .duels { grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
-.duel { padding: 12px 14px; display: grid; gap: 8px; }
+.duel { padding: 12px 14px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; min-width: 0; }
+.duel > * { min-width: 0; }
 .duel.mine { box-shadow: 0 0 0 2px var(--red); }
 .duel-side { display: flex; align-items: center; gap: 10px; }
 .duel-side > div:nth-child(2) { flex: 1; min-width: 0; }
 .duel-name { font-weight: 700; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.duel-pts { font: 800 28px/1 var(--ff-display); color: var(--text-3); }
+.duel-pts { font: 800 28px/1 var(--ff-display); color: var(--text-3); flex-shrink: 0; }
 .duel-side.lead .duel-pts { color: var(--text); }
 .duel-bar { height: 6px; border-radius: 999px; background: var(--series-2); overflow: hidden; }
 .duel-bar span { display: block; height: 100%; background: var(--series-1); border-right: 2px solid var(--surface); }
