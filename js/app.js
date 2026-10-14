@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const opt = p => fetchJson(p).catch(() => null);
     [S.config, S.board, S.history, S.live, S.groups, S.trades, S.index, S.logos, S.insights] = await Promise.all([
       fetchJson("data/config.json"), fetchJson("data/leaderboard.json"), opt("data/history.json"),
-      opt("data/live.json"), fetchJson("data/groups.json"), opt("data/trades_history.json"),
+      fetchLive(), fetchJson("data/groups.json"), opt("data/trades_history.json"),
       opt("data/players_index.json"), opt("data/logos.json"), opt("data/insights.json"),
     ]);
   } catch (err) {
@@ -35,12 +35,46 @@ document.addEventListener("DOMContentLoaded", async () => {
   for (const s of S.board.standings) for (const p of s.rosterStats) S.owners.set(p.id, (S.owners.get(p.id) || 0) + 1);
   showTab(location.hash.slice(1));
   renderAll();
+  // Live scores: refresh every 2 minutes while the page is visible
+  setInterval(refreshLive, 120000);
+  document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") refreshLive(); });
   let resizeTimer;
   window.addEventListener("resize", () => {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(() => S.tab === "chart" && renderTrajectory(), 150);
   });
 });
+
+// live.json lives on the `live` branch (updated every 2 min on game nights without rebuilding
+// the site). GitHub's API serves it fresh but allows 60 requests/hour per network; the raw file
+// server has no such limit but can lag up to 5 minutes. Locally, data/live.json is used.
+async function fetchLive() {
+  if (location.hostname.endsWith(".github.io")) {
+    const owner = location.hostname.split(".")[0], repo = location.pathname.split("/")[1];
+    const sources = [
+      [`https://api.github.com/repos/${owner}/${repo}/contents/live.json?ref=live`, { headers: { Accept: "application/vnd.github.raw" } }],
+      [`https://raw.githubusercontent.com/${owner}/${repo}/live/live.json`, {}],
+    ];
+    for (const [url, opts] of sources) {
+      try {
+        const res = await fetch(url, { cache: "no-store", ...opts });
+        if (res.ok) return await res.json();
+      } catch { /* try the next source */ }
+    }
+    return null;
+  }
+  return fetchJson("data/live.json").catch(() => null);
+}
+
+let liveBusy = false;
+async function refreshLive() {
+  if (liveBusy || document.visibilityState !== "visible" || !S.board) return;
+  liveBusy = true;
+  try {
+    const live = await fetchLive();
+    if (live && live.updated !== S.live?.updated) { S.live = live; renderTonight(); }
+  } finally { liveBusy = false; }
+}
 
 function bindChrome() {
   document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () => showTab(b.dataset.tab)));
@@ -506,23 +540,45 @@ function renderTonight() {
     </div>`;
   }).join("");
 
-  // Points tonight per participant (goals/assists only until games are final)
-  const sc = S.config.scoring;
+  // Points tonight per participant (goals/assists only until games are final);
+  // each line opens to show which of their players scored
+  const sc = S.config.scoring, mine = me()?.participantId;
+  const gameOf = new Map(live.games.map(g => [g.id, g]));
   const rows = S.board.standings.map(s => {
-    let pts = 0;
+    const scorers = [];
     for (const p of s.rosterStats) {
       const tl = tonight[String(p.id)];
       if (!tl) continue;
       const w = p.pos === "G" ? sc.goalie : sc.skater;
-      pts += tl.goals * (w.goals || 0) + tl.assists * (w.assists || 0);
+      const pts = tl.goals * (w.goals || 0) + tl.assists * (w.assists || 0);
+      if (pts > 0) scorers.push({ p, tl, pts });
     }
-    return { s, pts };
-  }).filter(r => r.pts > 0).sort((a, b) => b.pts - a.pts);
+    scorers.sort((a, b) => b.pts - a.pts || b.tl.goals - a.tl.goals);
+    return { s, scorers, pts: scorers.reduce((n, x) => n + x.pts, 0) };
+  }).filter(r => r.pts > 0).sort((a, b) => b.pts - a.pts || (b.s.participantId === mine) - (a.s.participantId === mine));
+  const open = new Set([...document.querySelectorAll("#tonight-rank details[open]")].map(d => d.dataset.id));
+  const statLine = tl => [tl.goals && `${tl.goals} ${t("goals")}`, tl.assists && `${tl.assists} ${t("assists")}`].filter(Boolean).join(" · ");
+  const vs = (p, tl) => {
+    const g = gameOf.get(tl.gameId);
+    if (!g) return "";
+    return `${esc(p.team)} ${p.team === g.home.abbrev ? "vs" : "@"} ${esc(p.team === g.home.abbrev ? g.away.abbrev : g.home.abbrev)}`;
+  };
   document.getElementById("tonight-rank").innerHTML = rows.length ? `
     <div class="card card-pad" style="margin-bottom:12px"><h3>${esc(t("tonightPoints"))}</h3>
-      <table class="tonight-rank"><tbody>${rows.map(r => `<tr><td class="l team-cell"><div class="team-flex">${avatar(r.s)}<div><span class="name">${esc(r.s.teamName)}</span>
-        <span class="who"> · ${esc(r.s.participantName)}</span></div></div></td><td class="pts-cell num">+${r.pts}</td></tr>`).join("")}</tbody></table>
-      <p class="muted" style="font-size:12px;margin:6px 0 0">${esc(t("tonightNote"))}</p></div>` : "";
+      <div class="tonight-list">${rows.map(r => `
+        <details data-id="${esc(r.s.participantId)}" class="${r.s.participantId === mine ? "me" : ""}" ${open.has(r.s.participantId) ? "open" : ""}>
+          <summary>
+            <span class="team-flex">${avatar(r.s, "av", "logo")}<span style="min-width:0"><span class="name">${esc(r.s.teamName)}</span>
+              <span class="who"> · ${esc(r.s.participantName)}</span></span></span>
+            <span class="muted tl-count">${esc(t("scorersCount", { n: r.scorers.length }))}</span>
+            <span class="pts-cell num">+${r.pts}</span>
+          </summary>
+          <ul class="tl-scorers">${r.scorers.map(x => `
+            <li>${mug(x.p, "mug mug-sm")}<span class="grow"><b>${esc(x.p.name)}</b>
+              <span class="muted">${vs(x.p, x.tl)}</span></span>
+              <span class="tl-line">${esc(statLine(x.tl))}</span><b class="num">+${x.pts}</b></li>`).join("")}</ul>
+        </details>`).join("")}</div>
+      <p class="muted" style="font-size:12px;margin:8px 0 0">${esc(t("tonightNote"))}</p></div>` : "";
 }
 
 // ---------- Trades ----------

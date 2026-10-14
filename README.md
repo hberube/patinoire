@@ -37,7 +37,7 @@ Visitors see the new numbers the next time they open or reload the page.
 | When | Workflow | What changes on the site |
 |---|---|---|
 | Every morning at 05:00 EDT (04:00 EST in winter) | `daily-stats-update.yml` | Standings, points, rank arrows, trajectory, Gazette (last night's goals, badges, milestones). Pulls season stats (3 NHL API calls), rebuilds `leaderboard.json`, adds a day to `history.json`, then writes `insights.json` (about 75 paced game-log calls, ~1 min; if this last step fails, the standings still update). |
-| Every 15 min, noon–2 AM ET | `live-scores.yml` | "Ce soir": scores and live goals/assists (`live.json`). Commits only when something changed. |
+| Game nights, from noon ET | `live-scores.yml` | "Ce soir": scores, live goals/assists and points tonight, **every 2 minutes**. A run starts every 30 min from noon to 11:30 PM ET (GitHub's schedule is best-effort, so it gets many chances); once one is running it stays up until the last game is final. It publishes `live.json` on the separate `live` branch, so it doesn't rebuild the site each time. The page re-reads it every 2 minutes. |
 | When you click **Approuver** on a trade | `process-trade.yml` | Checks the trade, swaps the player, banks the points, rebuilds the standings (~2–3 min). |
 | When you click **Publier** on a team image | `set-logo.yml` | Converts the image to 256px WebP in `img/teams/` and updates `data/logos.json` (~2–3 min). |
 | When you click **Renommer** on a team | `rename-team.yml` | Updates the team (and/or participant) name everywhere on the site (~2–3 min). |
@@ -53,7 +53,7 @@ cd ~/workspace/agentic-workspace/agentic_hockey_pool
 pip install -r requirements.txt        # once
 python3 scripts/update_pool.py         # standings + history
 python3 scripts/insights.py            # Gazette (~1 min)
-python3 scripts/update_live.py         # "Ce soir" scores
+python3 scripts/update_live.py         # "Ce soir" scores (writes data/live.json, used when testing locally)
 ```
 
 To view the site on your computer:

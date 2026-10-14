@@ -479,3 +479,25 @@ body { overflow-x: hidden; }
 .faq-a p { margin: 0 0 10px; }
 .faq-a b { color: var(--text); }
 @media (max-width: 720px) { .tabs.at-end { -webkit-mask-image: none; mask-image: none; } }
+
+/* ---------- Points tonight (expandable) ---------- */
+.tonight-list details { border-bottom: 1px solid var(--border); }
+.tonight-list details:last-child { border-bottom: 0; }
+.tonight-list details.me > summary { background: var(--ice-soft); border-radius: 10px; }
+.tonight-list summary { display: flex; align-items: center; gap: 10px; padding: 8px 6px; cursor: pointer; list-style: none; }
+.tonight-list summary::-webkit-details-marker { display: none; }
+.tonight-list summary::before { content: "▸"; color: var(--text-3); width: 10px; flex-shrink: 0; transition: transform .15s; }
+.tonight-list details[open] > summary::before { transform: rotate(90deg); }
+.tonight-list summary .team-flex { flex: 1; min-width: 0; }
+.tonight-list .name { font-weight: 700; }
+.tonight-list .who { font-size: 13px; color: var(--text-3); }
+.tonight-list .tl-count { font-size: 12px; white-space: nowrap; }
+.tonight-list .pts-cell { font: 800 22px/1 var(--ff-display); min-width: 44px; text-align: right; }
+.tl-scorers { list-style: none; margin: 0 0 10px; padding: 0 0 0 26px; display: grid; gap: 6px; }
+.tl-scorers li { display: flex; align-items: center; gap: 10px; font-size: 14px; }
+.tl-scorers .grow { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.tl-scorers .grow .muted { font-size: 12px; }
+.tl-scorers .tl-line { color: var(--text-2); font-size: 13px; white-space: nowrap; }
+@media (max-width: 560px) { .tonight-list .tl-count { display: none; } }
+/* Mid-size screens: drop the tab icons so all tabs fit next to the live badge */
+@media (min-width: 721px) and (max-width: 1180px) { .tab .ico { display: none; } .tab { padding-left: 10px; padding-right: 10px; } }

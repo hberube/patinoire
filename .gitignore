@@ -13,3 +13,6 @@ roster_2027.txt
 # Private PIN list (symlink to ~/pool_patinoire_pins.txt): never publish
 pool_patinoire_pins.txt
 *pins*.txt
+
+# Live scores are published on the `live` branch; data/live.json is for local testing only
+data/live.json

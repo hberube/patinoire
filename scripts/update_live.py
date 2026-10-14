@@ -1,12 +1,32 @@
 #!/usr/bin/env python3
-"""Tonight's games for the "Ce soir" tab: data/live.json
+"""Tonight's games for the "Ce soir" tab (live.json).
 
-Run every ~15 min during game hours by .github/workflows/live-scores.yml.
-The NHL score API has no CORS headers, so the browser can't call it directly.
-Only writes the file when something changed, so quiet runs make no commit.
+The NHL score API has no CORS headers, so the browser can't call it directly; this script
+relays it. GitHub's scheduled runs are best-effort (often hours late), so on game nights
+live-scores.yml starts this once and it keeps running:
+
+  python scripts/update_live.py                       # one update -> data/live.json (local testing)
+  python scripts/update_live.py --loop --out live-out # game-night loop used by live-scores.yml
+
+In loop mode it refreshes every 2 minutes until every game of the night is final (or ~5.5 h),
+and publishes each change by force-pushing a single-commit `live` branch from the --out
+worktree. Keeping live data off `main` avoids a Pages rebuild every 2 minutes; the site reads
+live.json straight from that branch.
 """
+import json
+import subprocess
+import sys
+import time
+from datetime import datetime, timezone
+from pathlib import Path
+
 from history import game_day_now
-from pool_lib import get_json, load, now_iso, save
+from pool_lib import DATA_DIR, get_json, load, now_iso
+
+REFRESH = 120            # seconds between updates while games are on
+IDLE_WAIT = 300          # seconds between checks before the first puck drop
+MAX_RUNTIME = 5.5 * 3600  # GitHub jobs stop at 6 h
+DONE_STATES = {"OFF", "FINAL"}
 
 
 def build_live():
@@ -36,15 +56,68 @@ def build_live():
                 if pid in pool_ids:
                     line = players.setdefault(str(pid), {"goals": 0, "assists": 0, "gameId": g["id"]})
                     line[kind] += 1
+    return {"gameDay": day, "games": games, "players": players}
 
-    live = {"gameDay": day, "games": games, "players": players}
-    old = load("live.json", {}) or {}
-    if {k: old.get(k) for k in live} == live:
-        print("No change.")
+
+def write(path, live):
+    path.write_text(json.dumps({"updated": now_iso(), **live}, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
+def publish(out_dir):
+    """Replace the `live` branch with a single commit holding the new live.json."""
+    git = lambda *args: subprocess.run(["git", "-C", str(out_dir), *args], check=True, capture_output=True)
+    git("add", "live.json")
+    has_commit = subprocess.run(["git", "-C", str(out_dir), "rev-parse", "--verify", "HEAD"],
+                                capture_output=True).returncode == 0
+    git("commit", "-q", "-m", "Live scores", *(["--amend"] if has_commit else []))
+    git("push", "-q", "-f", "origin", "HEAD:live")
+
+
+def seconds_to_first_puck(games):
+    now = datetime.now(timezone.utc)
+    starts = [datetime.fromisoformat(g["start"].replace("Z", "+00:00")) for g in games if g["state"] in ("FUT", "PRE")]
+    return min((s - now).total_seconds() for s in starts) if starts else 0
+
+
+def loop(out_dir):
+    out_dir = Path(out_dir)
+    began, last = time.monotonic(), None
+    while True:
+        try:
+            live = build_live()
+        except Exception as e:  # a hiccup at the NHL API shouldn't end the night
+            print(f"warning: {e}")
+            time.sleep(REFRESH)
+            continue
+        if live != last:
+            write(out_dir / "live.json", live)
+            publish(out_dir)
+            last = live
+            on = sum(g["state"] in ("LIVE", "CRIT") for g in live["games"])
+            print(f"{now_iso()} published: {len(live['games'])} games, {on} live, {len(live['players'])} pool players scored")
+
+        games = live["games"]
+        if not games or all(g["state"] in DONE_STATES for g in games):
+            print("No games left tonight. Done.")
+            return
+        if time.monotonic() - began > MAX_RUNTIME:
+            print("Time limit reached; the next scheduled run takes over.")
+            return
+        wait_first = seconds_to_first_puck(games)
+        if not any(g["state"] in ("LIVE", "CRIT") for g in games) and wait_first > 3 * 3600:
+            print("First game is more than 3 h away; a later scheduled run will pick it up.")
+            return
+        time.sleep(IDLE_WAIT if wait_first > 15 * 60 and not any(g["state"] in ("LIVE", "CRIT") for g in games) else REFRESH)
+
+
+def main(args):
+    if "--loop" in args:
+        loop(args[args.index("--out") + 1] if "--out" in args else "live-out")
         return
-    save("live.json", {"updated": now_iso(), **live})
-    print(f"live.json: {len(games)} games, {len(players)} pool players with points.")
+    live = build_live()
+    write(DATA_DIR / "live.json", live)
+    print(f"live.json: {len(live['games'])} games, {len(live['players'])} pool players with points.")
 
 
 if __name__ == "__main__":
-    build_live()
+    main(sys.argv[1:])
