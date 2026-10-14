@@ -103,5 +103,19 @@
     "role": "participant",
     "salt": "ff57a592e92385fb16df9893b11195a2",
     "pinHash": "a1e1dfd5e4c64d66f13394ab1ff7b4458b0f83c7a70e296b8fa63bb6a54a8d0f"
+  },
+  {
+    "participantId": "usr_vicky",
+    "displayName": "Vicky",
+    "role": "participant",
+    "salt": "7988bb05ad9dd8f4b63f8bdf3aa19d05",
+    "pinHash": "4368912a2ef794c8a955072152673e1fd37d3805cb4964988564156da0a3f742"
+  },
+  {
+    "participantId": "usr_elrick",
+    "displayName": "Elrick",
+    "role": "participant",
+    "salt": "96f61fbb872a281657637b487dcffb83",
+    "pinHash": "3ed4198441d9869f302c409c1d21583095d75a4a55c327d22b5233acb46741d9"
   }
 ]

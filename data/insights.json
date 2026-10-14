@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-13T21:04:55Z",
+  "lastUpdated": "2026-10-14T01:46:39Z",
   "gameDay": "2026-10-12",
   "highlights": [
     {
@@ -18,7 +18,7 @@
         "T. Thompson"
       ],
       "scorerOwned": true,
-      "owners": 8,
+      "owners": 9,
       "ownerIds": [
         "usr_alexandre_comeau",
         "usr_simon",
@@ -27,7 +27,8 @@
         "usr_jolyne_brossard",
         "usr_jackson_gagnon",
         "usr_guillaume_brossard",
-        "usr_michel_bry"
+        "usr_michel_bry",
+        "usr_elrick"
       ],
       "clipEn": "https://nhl.com/video/fla-buf-dahlin-scores-ppg-against-rasmus-dahlin-6406707433112",
       "clipFr": "https://nhl.com/fr/video/fla-buf-markstrom-marque-un-but-en-a-n-contre-rasmus-dahlin-6406709373112",
@@ -49,14 +50,15 @@
         "M. Tkachuk"
       ],
       "scorerOwned": true,
-      "owners": 6,
+      "owners": 7,
       "ownerIds": [
         "usr_simon",
         "usr_etienne",
         "usr_florence",
         "usr_julien_berube",
         "usr_jolyne_brossard",
-        "usr_jackson_gagnon"
+        "usr_jackson_gagnon",
+        "usr_elrick"
       ],
       "clipEn": "https://nhl.com/video/fla-buf-reinhart-scores-ppg-against-colten-ellis-6406710592112",
       "clipFr": "https://nhl.com/fr/video/fla-buf-reinhart-marque-un-but-en-a-n-contre-colten-ellis-6406709026112",
@@ -78,14 +80,15 @@
         "B. Tkachuk"
       ],
       "scorerOwned": true,
-      "owners": 6,
+      "owners": 7,
       "ownerIds": [
         "usr_simon",
         "usr_etienne",
         "usr_florence",
         "usr_julien_berube",
         "usr_jolyne_brossard",
-        "usr_jackson_gagnon"
+        "usr_jackson_gagnon",
+        "usr_elrick"
       ],
       "clipEn": "https://nhl.com/video/fla-buf-reinhart-scores-ppg-against-ukko-pekka-luukkonen-6406708138112",
       "clipFr": "https://nhl.com/fr/video/fla-buf-reinhart-marque-un-but-en-a-n-contre-ukko-pekka-luukkonen-6406711489112",
@@ -130,9 +133,10 @@
         "Q. Hughes"
       ],
       "scorerOwned": true,
-      "owners": 1,
+      "owners": 2,
       "ownerIds": [
-        "usr_guillaume_brossard"
+        "usr_guillaume_brossard",
+        "usr_elrick"
       ],
       "clipEn": "https://nhl.com/video/vgk-min-boldy-scores-goal-against-carter-hart-6406723388112",
       "clipFr": "https://nhl.com/fr/video/vgk-min-boldy-marque-un-but-contre-carter-hart-6406723576112",
@@ -254,6 +258,11 @@
       "games": 7,
       "dry": 1
     },
+    "8476459": {
+      "last5": 5,
+      "games": 7,
+      "dry": 0
+    },
     "8476883": {
       "last5": 3,
       "games": 4,
@@ -285,8 +294,8 @@
       "dry": 2
     },
     "8477933": {
-      "last5": 2,
-      "games": 6,
+      "last5": 5,
+      "games": 7,
       "dry": 0
     },
     "8477934": {
@@ -306,8 +315,8 @@
     },
     "8477946": {
       "last5": 2,
-      "games": 3,
-      "dry": 2
+      "games": 4,
+      "dry": 3
     },
     "8477949": {
       "last5": 3,
@@ -321,6 +330,11 @@
     },
     "8477960": {
       "last5": 3,
+      "games": 4,
+      "dry": 0
+    },
+    "8478009": {
+      "last5": 4,
       "games": 4,
       "dry": 0
     },
@@ -360,8 +374,8 @@
       "dry": 0
     },
     "8479314": {
-      "last5": 5,
-      "games": 6,
+      "last5": 9,
+      "games": 7,
       "dry": 0
     },
     "8479325": {
@@ -375,14 +389,14 @@
       "dry": 3
     },
     "8479407": {
-      "last5": 4,
-      "games": 5,
-      "dry": 1
-    },
-    "8479420": {
-      "last5": 7,
+      "last5": 6,
       "games": 6,
       "dry": 0
+    },
+    "8479420": {
+      "last5": 5,
+      "games": 7,
+      "dry": 1
     },
     "8479542": {
       "last5": 8,
@@ -405,9 +419,9 @@
       "dry": 2
     },
     "8480018": {
-      "last5": 7,
-      "games": 5,
-      "dry": 1
+      "last5": 8,
+      "games": 6,
+      "dry": 0
     },
     "8480023": {
       "last5": 1,
@@ -440,8 +454,8 @@
       "dry": 0
     },
     "8480801": {
-      "last5": 1,
-      "games": 6,
+      "last5": 5,
+      "games": 7,
       "dry": 0
     },
     "8480803": {
@@ -475,14 +489,14 @@
       "dry": 2
     },
     "8481540": {
-      "last5": 2,
-      "games": 5,
-      "dry": 3
+      "last5": 4,
+      "games": 6,
+      "dry": 0
     },
     "8481542": {
-      "last5": 2,
-      "games": 5,
-      "dry": 1
+      "last5": 3,
+      "games": 6,
+      "dry": 0
     },
     "8481557": {
       "last5": 3,
@@ -490,8 +504,8 @@
       "dry": 0
     },
     "8481559": {
-      "last5": 5,
-      "games": 5,
+      "last5": 7,
+      "games": 6,
       "dry": 0
     },
     "8482093": {
@@ -511,8 +525,8 @@
     },
     "8482720": {
       "last5": 4,
-      "games": 4,
-      "dry": 2
+      "games": 5,
+      "dry": 3
     },
     "8482740": {
       "last5": 4,
@@ -525,14 +539,14 @@
       "dry": 3
     },
     "8483457": {
-      "last5": 4,
-      "games": 5,
-      "dry": 2
+      "last5": 6,
+      "games": 6,
+      "dry": 0
     },
     "8483515": {
-      "last5": 1,
-      "games": 5,
-      "dry": 2
+      "last5": 3,
+      "games": 6,
+      "dry": 0
     },
     "8483548": {
       "last5": 2,
@@ -567,12 +581,12 @@
   },
   "awards": {
     "goldenPick": {
-      "id": 8478427,
-      "name": "Sebastian Aho",
-      "team": "CAR",
+      "id": 8479407,
+      "name": "Jesper Bratt",
+      "team": "NJD",
       "pos": "F",
-      "points": 11,
-      "owners": 2
+      "points": 7,
+      "owners": 1
     },
     "iceAnchor": {
       "id": 8471675,
@@ -580,7 +594,7 @@
       "team": "PIT",
       "pos": "F",
       "points": 2,
-      "owners": 5,
+      "owners": 6,
       "dry": 4
     },
     "snub": {
@@ -595,6 +609,17 @@
   },
   "milestones": [
     {
+      "id": 8477934,
+      "name": "Leon Draisaitl",
+      "team": "EDM",
+      "pos": "F",
+      "points": 9,
+      "owners": 9,
+      "stat": "points",
+      "value": 9,
+      "target": 10
+    },
+    {
       "id": 8480830,
       "name": "Andrei Svechnikov",
       "team": "CAR",
@@ -606,26 +631,26 @@
       "target": 5
     },
     {
-      "id": 8477934,
-      "name": "Leon Draisaitl",
-      "team": "EDM",
-      "pos": "F",
-      "points": 9,
-      "owners": 8,
-      "stat": "points",
-      "value": 9,
-      "target": 10
-    },
-    {
       "id": 8480280,
       "name": "Jeremy Swayman",
       "team": "BOS",
       "pos": "G",
       "points": 6,
-      "owners": 7,
+      "owners": 8,
       "stat": "wins",
       "value": 4,
       "target": 5
+    },
+    {
+      "id": 8480800,
+      "name": "Quinn Hughes",
+      "team": "MIN",
+      "pos": "D",
+      "points": 9,
+      "owners": 5,
+      "stat": "points",
+      "value": 9,
+      "target": 10
     },
     {
       "id": 8479542,
@@ -639,17 +664,6 @@
       "target": 5
     },
     {
-      "id": 8480800,
-      "name": "Quinn Hughes",
-      "team": "MIN",
-      "pos": "D",
-      "points": 9,
-      "owners": 4,
-      "stat": "points",
-      "value": 9,
-      "target": 10
-    },
-    {
       "id": 8479420,
       "name": "Tage Thompson",
       "team": "BUF",
@@ -661,12 +675,34 @@
       "target": 5
     },
     {
+      "id": 8481559,
+      "name": "Jack Hughes",
+      "team": "NJD",
+      "pos": "F",
+      "points": 8,
+      "owners": 10,
+      "stat": "points",
+      "value": 8,
+      "target": 10
+    },
+    {
       "id": 8480830,
       "name": "Andrei Svechnikov",
       "team": "CAR",
       "pos": "F",
       "points": 8,
       "owners": 8,
+      "stat": "points",
+      "value": 8,
+      "target": 10
+    },
+    {
+      "id": 8480018,
+      "name": "Nick Suzuki",
+      "team": "MTL",
+      "pos": "F",
+      "points": 8,
+      "owners": 5,
       "stat": "points",
       "value": 8,
       "target": 10

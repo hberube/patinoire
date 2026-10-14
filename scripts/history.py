@@ -28,6 +28,11 @@ def last_completed_day():
 
 
 def record(standings, day=None):
+    # Only the morning (all of last night's games final, today's not started) gives a clean
+    # end-of-day total. Afternoon/evening runs (trade approvals, manual updates) would mix in
+    # tonight's games, so they leave the history alone; the next morning run catches up.
+    if day is None and not 3 <= datetime.now(EASTERN).hour < 12:
+        return
     day = day or last_completed_day()
     hist = load("history.json", {"dates": [], "series": {}})
     if day not in hist["dates"]:
