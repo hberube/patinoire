@@ -9,3 +9,7 @@ __pycache__/
 
 # Form export contains participants' emails: never publish
 roster_2027.txt
+
+# Private PIN list (symlink to ~/pool_patinoire_pins.txt): never publish
+pool_patinoire_pins.txt
+*pins*.txt
