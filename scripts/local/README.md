@@ -1,0 +1,20 @@
+# Local backup jobs (Windows Task Scheduler → WSL)
+
+GitHub's schedule skips runs for hours at a time, so Hugo's PC runs the same jobs as a backup.
+Both are harmless when GitHub does run: they produce the same data, and a duplicate copy of a job exits right away.
+
+| Task | When (Eastern) | Does |
+|---|---|---|
+| `Patinoire - Ce soir` | daily 12:05 PM | `pool_job.sh night`: keeps "Ce soir" live until the last game, then rebuilds the standings |
+| `Patinoire - Classement` | daily 4:30 AM, wakes the PC | `pool_job.sh morning`: rebuilds the standings and records the history chart |
+
+The tasks run `~/.local/bin/patinoire_job.sh`, a copy of `pool_job.sh` (a copy, so the job never reads a file it is updating).
+It works in its own clone, `~/patinoire-bot`, and logs to `~/patinoire-bot-night.log` / `~/patinoire-bot-morning.log`.
+
+After changing `pool_job.sh`, re-copy it:
+
+```bash
+install -m 755 scripts/local/pool_job.sh ~/.local/bin/patinoire_job.sh
+```
+
+Pushes use Git Credential Manager, so the PC must be on with Hugo logged in (sleeping is fine for the morning task).
