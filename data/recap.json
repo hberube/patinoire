@@ -1,34 +1,34 @@
 {
-  "gameDay": "2026-10-13",
-  "generatedAt": "2026-10-15T01:52:46Z",
+  "gameDay": "2026-10-14",
+  "generatedAt": "2026-10-15T13:04:18Z",
   "fr": {
-    "title": "Hugo bondit au 2e rang, Michel tient son trône",
+    "title": "Tuch en double, Michel file en tête avec les Ducks",
     "bullets": [
-      "Hugo ramasse 30 points et grimpe de deux rangs au 2e échelon. Michel mène encore avec 159.",
-      "Marjolaine signe la meilleure soirée: 34 points et un gain d'un rang, au 12e.",
-      "Alexandre dégringole de quatre rangs, au 10e. Les Éperviers de Sorel ont perdu des plumes.",
-      "Caufield et Hutson marquent, et le CH bat Buffalo 4-3 en tirs de barrage.",
-      "Zegras a marqué, mais seuls Hugo et Jackson l'avaient. Flair de génie, messieurs!"
+      "Alex Tuch marque deux fois à Washington, et Michel (Les Ducks) est le seul à l'avoir. Il passe à 164 points, +5 hier.",
+      "Maddox (+5) grimpe au 14e rang, avec un but de Brock Nelson dans son jeu. Pas fou, le SK|MADDOXG!",
+      "Ève et Vicky ramassent 4 points chacune et montent d'un cran. Jolyne, elle, recule de deux places, aïe.",
+      "Nick Suzuki marque et en est à 4 buts, à un du cinq. Lane Hutson aussi a marqué, et 8 participants le comptaient. 🏒",
+      "Washington bat Montréal 5-4, et Dallas gagne 3-2 en fusillade à Colorado."
     ]
   },
   "en": {
-    "title": "Hugo leaps to 2nd, Michel clings to the throne",
+    "title": "Tuch scores twice, Michel cruises on top with the Ducks",
     "bullets": [
-      "Hugo piled up 30 points and climbed two spots to 2nd. Michel still leads with 159.",
-      "Marjolaine had the best night: 34 points and a one-spot climb to 12th.",
-      "Alexandre tumbled four spots to 10th. The Sorel Sparrowhawks lost some feathers.",
-      "Caufield and Hutson both scored as Montreal edged Buffalo 4-3 in a shootout.",
-      "Zegras scored, but only Hugo and Jackson owned him. Genius picks, gentlemen!"
+      "Alex Tuch scored twice in Washington, and Michel (Les Ducks) is the only one who owns him. He's at 164 points, +5 last night.",
+      "Maddox (+5) climbs to 14th with a Brock Nelson goal on the roster. Not bad, SK|MADDOXG!",
+      "Ève and Vicky each pick up 4 points and move up a spot. Jolyne slides two places, ouch.",
+      "Nick Suzuki scored and sits at 4 goals, one shy of five. Lane Hutson scored too, and 8 participants own him. 🏒",
+      "Washington beat Montreal 5-4, and Dallas won 3-2 in a shootout in Colorado."
     ]
   },
   "image": {
     "fr": {
       "src": "data/recap-fr.png",
-      "alt": "ZEGRAS MARQUE. 2 PERSONNES DANS LE POOL / HUGO ET JACKSON: GÉNIES. LES 15 AUTRES: « QUI ÇA? »"
+      "alt": "MICHEL EST LE SEUL À AVOIR ALEX TUCH / TUCH MARQUE DEUX FOIS, LES DUCKS FONT LA FÊTE"
     },
     "en": {
       "src": "data/recap-en.png",
-      "alt": "ZEGRAS SCORES. ONLY 2 POOLERS OWN HIM / HUGO & JACKSON: GENIUSES. THE OTHER 15: \"WHO?\""
+      "alt": "MICHEL IS THE ONLY ONE WHO OWNS TUCH / TUCH SCORES TWICE. MICHEL: 'I KNEW IT.'"
     }
   }
 }
