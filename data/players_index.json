@@ -329,6 +329,13 @@
     "points": 7
   },
   {
+    "id": 8478420,
+    "name": "Mikko Rantanen",
+    "pos": "F",
+    "team": "DAL",
+    "points": 7
+  },
+  {
     "id": 8478483,
     "name": "Mitch Marner",
     "pos": "F",
@@ -382,6 +389,20 @@
     "name": "Anton Frondell",
     "pos": "F",
     "team": "CHI",
+    "points": 6
+  },
+  {
+    "id": 8477476,
+    "name": "Artturi Lehkonen",
+    "pos": "F",
+    "team": "COL",
+    "points": 6
+  },
+  {
+    "id": 8475754,
+    "name": "Brock Nelson",
+    "pos": "F",
+    "team": "COL",
     "points": 6
   },
   {
@@ -504,9 +525,9 @@
     "points": 6
   },
   {
-    "id": 8478420,
-    "name": "Mikko Rantanen",
-    "pos": "F",
+    "id": 8480036,
+    "name": "Miro Heiskanen",
+    "pos": "D",
     "team": "DAL",
     "points": 6
   },
@@ -595,13 +616,6 @@
     "points": 5
   },
   {
-    "id": 8477476,
-    "name": "Artturi Lehkonen",
-    "pos": "F",
-    "team": "COL",
-    "points": 5
-  },
-  {
     "id": 8481668,
     "name": "Arturs Silovs",
     "pos": "G",
@@ -662,13 +676,6 @@
     "name": "Brock Boeser",
     "pos": "F",
     "team": "VAN",
-    "points": 5
-  },
-  {
-    "id": 8475754,
-    "name": "Brock Nelson",
-    "pos": "F",
-    "team": "COL",
     "points": 5
   },
   {
@@ -875,10 +882,10 @@
     "points": 5
   },
   {
-    "id": 8480036,
-    "name": "Miro Heiskanen",
-    "pos": "D",
-    "team": "DAL",
+    "id": 8475172,
+    "name": "Nazem Kadri",
+    "pos": "F",
+    "team": "COL",
     "points": 5
   },
   {
@@ -1145,6 +1152,13 @@
     "name": "Eric Robinson",
     "pos": "F",
     "team": "CAR",
+    "points": 4
+  },
+  {
+    "id": 8476455,
+    "name": "Gabriel Landeskog",
+    "pos": "F",
+    "team": "COL",
     "points": 4
   },
   {
@@ -1694,13 +1708,6 @@
     "points": 3
   },
   {
-    "id": 8476455,
-    "name": "Gabriel Landeskog",
-    "pos": "F",
-    "team": "COL",
-    "points": 3
-  },
-  {
     "id": 8480014,
     "name": "Gabriel Vilardi",
     "pos": "F",
@@ -1950,13 +1957,6 @@
     "name": "Moritz Seider",
     "pos": "D",
     "team": "DET",
-    "points": 3
-  },
-  {
-    "id": 8475172,
-    "name": "Nazem Kadri",
-    "pos": "F",
-    "team": "COL",
     "points": 3
   },
   {
@@ -2919,6 +2919,13 @@
     "points": 2
   },
   {
+    "id": 8481581,
+    "name": "Thomas Harley",
+    "pos": "D",
+    "team": "DAL",
+    "points": 2
+  },
+  {
     "id": 8477950,
     "name": "Tony DeAngelo",
     "pos": "D",
@@ -3094,6 +3101,13 @@
     "points": 1
   },
   {
+    "id": 8484938,
+    "name": "Arttu Hyry",
+    "pos": "F",
+    "team": "DAL",
+    "points": 1
+  },
+  {
     "id": 8484223,
     "name": "Axel Sandin-Pellikka",
     "pos": "D",
@@ -3182,6 +3196,13 @@
     "name": "Carter Mazur",
     "pos": "F",
     "team": "DET",
+    "points": 1
+  },
+  {
+    "id": 8479193,
+    "name": "Casey DeSmith",
+    "pos": "G",
+    "team": "DAL",
     "points": 1
   },
   {
@@ -3843,6 +3864,13 @@
     "points": 1
   },
   {
+    "id": 8484258,
+    "name": "Sam Malinski",
+    "pos": "D",
+    "team": "COL",
+    "points": 1
+  },
+  {
     "id": 8483771,
     "name": "Sandis Vilmanis",
     "pos": "F",
@@ -3903,13 +3931,6 @@
     "name": "Theo Lindstein",
     "pos": "D",
     "team": "STL",
-    "points": 1
-  },
-  {
-    "id": 8481581,
-    "name": "Thomas Harley",
-    "pos": "D",
-    "team": "DAL",
     "points": 1
   },
   {
@@ -4137,13 +4158,6 @@
     "points": 0
   },
   {
-    "id": 8484938,
-    "name": "Arttu Hyry",
-    "pos": "F",
-    "team": "DAL",
-    "points": 0
-  },
-  {
     "id": 8482821,
     "name": "Arvid Soderblom",
     "pos": "G",
@@ -4232,13 +4246,6 @@
     "name": "Carl Grundstrom",
     "pos": "F",
     "team": "PHI",
-    "points": 0
-  },
-  {
-    "id": 8479193,
-    "name": "Casey DeSmith",
-    "pos": "G",
-    "team": "DAL",
     "points": 0
   },
   {
@@ -4435,6 +4442,13 @@
     "name": "Garrett Wilson",
     "pos": "F",
     "team": "PHI",
+    "points": 0
+  },
+  {
+    "id": 8484149,
+    "name": "Gavin Brindley",
+    "pos": "F",
+    "team": "COL",
     "points": 0
   },
   {
@@ -4974,13 +4988,6 @@
     "name": "Sam Lafferty",
     "pos": "F",
     "team": "FLA",
-    "points": 0
-  },
-  {
-    "id": 8484258,
-    "name": "Sam Malinski",
-    "pos": "D",
-    "team": "COL",
     "points": 0
   },
   {
