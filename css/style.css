@@ -130,6 +130,12 @@ img { display: block; }
 .tab[aria-selected="true"] { color: var(--text); border-bottom-color: var(--red); }
 .tab .ico { margin-right: 6px; }
 .actions { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+/* Computers, crowded bar (js fitTopbar): first drop icons and the name chip, then wrap the tabs */
+.topbar.compact .tab .ico, .topbar.compact .user-chip { display: none; }
+.topbar.compact .tab { padding-left: 9px; padding-right: 9px; }
+.topbar.wrap .topbar-inner { flex-wrap: wrap; gap: 0 12px; padding-top: 6px; }
+.topbar.wrap .actions { order: 1; margin-left: auto; }
+.topbar.wrap .tabs { order: 2; flex-basis: 100%; flex-wrap: wrap; overflow: visible; }
 .live-pill {
   display: inline-flex; align-items: center; gap: 6px;
   font-size: 12px; font-weight: 700; color: var(--red);

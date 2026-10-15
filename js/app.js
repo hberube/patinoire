@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   let resizeTimer;
   window.addEventListener("resize", () => {
     clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(() => S.tab === "chart" && renderTrajectory(), 150);
+    resizeTimer = setTimeout(() => { fitTopbar(); if (S.tab === "chart") renderTrajectory(); }, 150);
   });
 });
 
@@ -102,6 +102,20 @@ function bindChrome() {
   }
 }
 
+// On computers nothing in the top bar may hide off-screen (a mouse can't swipe the tab row):
+// if the tabs don't fit beside the buttons (e.g. logged in as admin), drop the icons and the
+// name chip, and if that's still not enough, let the tabs wrap onto a second line.
+// Phones keep their own swipeable tab row (see the 720px rules in style.css).
+function fitTopbar() {
+  const bar = document.querySelector(".topbar"), tabs = document.querySelector(".tabs");
+  if (!bar || !tabs) return;
+  bar.classList.remove("compact", "wrap");
+  if (window.matchMedia("(max-width: 720px)").matches) return;
+  const overflows = () => tabs.scrollWidth > tabs.clientWidth + 1;
+  if (overflows()) bar.classList.add("compact");
+  if (overflows()) bar.classList.add("wrap");
+}
+
 // The fade on the tab bar's right edge hints "more tabs"; drop it once scrolled to the end
 function updateTabFade() {
   const bar = document.querySelector(".tabs");
@@ -134,6 +148,8 @@ function renderAll() {
     if (el) el.textContent = stamp;  // tolerate a cached older index.html right after a deploy
   }
   renderAuth();
+  fitTopbar();
+  document.fonts?.ready.then(fitTopbar);  // widths change once the web font arrives
   renderRecap();
   renderStandings();
   renderTeams();
