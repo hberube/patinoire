@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-14T18:21:47Z",
+  "lastUpdated": "2026-10-15T03:25:57Z",
   "gameDay": "2026-10-13",
   "highlights": [
     {
@@ -1216,9 +1216,9 @@
   ],
   "form": {
     "8471214": {
-      "last5": 1,
-      "games": 6,
-      "dry": 1
+      "last5": 2,
+      "games": 7,
+      "dry": 0
     },
     "8471215": {
       "last5": 1,
@@ -1326,9 +1326,9 @@
       "dry": 3
     },
     "8477949": {
-      "last5": 1,
-      "games": 6,
-      "dry": 3
+      "last5": 4,
+      "games": 7,
+      "dry": 0
     },
     "8477956": {
       "last5": 6,
@@ -1391,9 +1391,9 @@
       "dry": 0
     },
     "8479345": {
-      "last5": 1,
-      "games": 6,
-      "dry": 4
+      "last5": 0,
+      "games": 7,
+      "dry": 5
     },
     "8479407": {
       "last5": 6,
@@ -1426,8 +1426,8 @@
       "dry": 0
     },
     "8480018": {
-      "last5": 8,
-      "games": 6,
+      "last5": 5,
+      "games": 7,
       "dry": 0
     },
     "8480023": {
@@ -1496,9 +1496,9 @@
       "dry": 0
     },
     "8481540": {
-      "last5": 4,
-      "games": 6,
-      "dry": 0
+      "last5": 2,
+      "games": 7,
+      "dry": 1
     },
     "8481542": {
       "last5": 3,
@@ -1522,7 +1522,7 @@
     },
     "8482487": {
       "last5": 1,
-      "games": 3,
+      "games": 4,
       "dry": 0
     },
     "8482699": {
@@ -1546,14 +1546,14 @@
       "dry": 3
     },
     "8483457": {
-      "last5": 6,
-      "games": 6,
+      "last5": 5,
+      "games": 7,
       "dry": 0
     },
     "8483515": {
       "last5": 3,
-      "games": 6,
-      "dry": 0
+      "games": 7,
+      "dry": 1
     },
     "8483548": {
       "last5": 2,
@@ -1602,7 +1602,7 @@
       "pos": "D",
       "points": 3,
       "owners": 1,
-      "dry": 4
+      "dry": 5
     },
     "snub": {
       "id": 8478403,
@@ -1658,6 +1658,28 @@
       "stat": "goals",
       "value": 4,
       "target": 5
+    },
+    {
+      "id": 8480018,
+      "name": "Nick Suzuki",
+      "team": "MTL",
+      "pos": "F",
+      "points": 9,
+      "owners": 5,
+      "stat": "goals",
+      "value": 4,
+      "target": 5
+    },
+    {
+      "id": 8480018,
+      "name": "Nick Suzuki",
+      "team": "MTL",
+      "pos": "F",
+      "points": 9,
+      "owners": 5,
+      "stat": "points",
+      "value": 9,
+      "target": 10
     },
     {
       "id": 8484153,
@@ -1724,28 +1746,6 @@
       "stat": "goals",
       "value": 4,
       "target": 5
-    },
-    {
-      "id": 8481559,
-      "name": "Jack Hughes",
-      "team": "NJD",
-      "pos": "F",
-      "points": 8,
-      "owners": 10,
-      "stat": "points",
-      "value": 8,
-      "target": 10
-    },
-    {
-      "id": 8475913,
-      "name": "Mark Stone",
-      "team": "VGK",
-      "pos": "F",
-      "points": 8,
-      "owners": 7,
-      "stat": "points",
-      "value": 8,
-      "target": 10
     }
   ]
 }

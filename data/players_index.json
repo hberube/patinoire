@@ -140,6 +140,13 @@
     "points": 9
   },
   {
+    "id": 8480018,
+    "name": "Nick Suzuki",
+    "pos": "F",
+    "team": "MTL",
+    "points": 9
+  },
+  {
     "id": 8481617,
     "name": "Vasily Podkolzin",
     "pos": "F",
@@ -203,6 +210,13 @@
     "points": 8
   },
   {
+    "id": 8483457,
+    "name": "Lane Hutson",
+    "pos": "D",
+    "team": "MTL",
+    "points": 8
+  },
+  {
     "id": 8484801,
     "name": "Macklin Celebrini",
     "pos": "F",
@@ -228,13 +242,6 @@
     "name": "Mikael Granlund",
     "pos": "F",
     "team": "ANA",
-    "points": 8
-  },
-  {
-    "id": 8480018,
-    "name": "Nick Suzuki",
-    "pos": "F",
-    "team": "MTL",
     "points": 8
   },
   {
@@ -364,6 +371,13 @@
     "points": 7
   },
   {
+    "id": 8477949,
+    "name": "Alex Tuch",
+    "pos": "F",
+    "team": "WSH",
+    "points": 6
+  },
+  {
     "id": 8485391,
     "name": "Anton Frondell",
     "pos": "F",
@@ -434,6 +448,13 @@
     "points": 6
   },
   {
+    "id": 8476981,
+    "name": "Josh Anderson",
+    "pos": "F",
+    "team": "MTL",
+    "points": 6
+  },
+  {
     "id": 8481554,
     "name": "Kaapo Kakko",
     "pos": "F",
@@ -452,13 +473,6 @@
     "name": "Kirill Marchenko",
     "pos": "F",
     "team": "TOR",
-    "points": 6
-  },
-  {
-    "id": 8483457,
-    "name": "Lane Hutson",
-    "pos": "D",
-    "team": "MTL",
     "points": 6
   },
   {
@@ -966,6 +980,20 @@
     "points": 5
   },
   {
+    "id": 8482737,
+    "name": "Zachary Bolduc",
+    "pos": "F",
+    "team": "MTL",
+    "points": 5
+  },
+  {
+    "id": 8481618,
+    "name": "Alex Newhook",
+    "pos": "F",
+    "team": "MTL",
+    "points": 4
+  },
+  {
     "id": 8477021,
     "name": "Alexander Kerfoot",
     "pos": "F",
@@ -1057,6 +1085,13 @@
     "points": 4
   },
   {
+    "id": 8484873,
+    "name": "Cole Hutson",
+    "pos": "D",
+    "team": "WSH",
+    "points": 4
+  },
+  {
     "id": 8483445,
     "name": "Cutter Gauthier",
     "pos": "F",
@@ -1117,6 +1152,13 @@
     "name": "Hampus Lindholm",
     "pos": "D",
     "team": "BOS",
+    "points": 4
+  },
+  {
+    "id": 8484999,
+    "name": "Ilya Protas",
+    "pos": "F",
+    "team": "WSH",
     "points": 4
   },
   {
@@ -1183,13 +1225,6 @@
     "points": 4
   },
   {
-    "id": 8480797,
-    "name": "Joel Farabee",
-    "pos": "F",
-    "team": "CGY",
-    "points": 4
-  },
-  {
     "id": 8478916,
     "name": "Joey Daccord",
     "pos": "G",
@@ -1204,10 +1239,10 @@
     "points": 4
   },
   {
-    "id": 8476981,
-    "name": "Josh Anderson",
+    "id": 8479385,
+    "name": "Jordan Kyrou",
     "pos": "F",
-    "team": "MTL",
+    "team": "WSH",
     "points": 4
   },
   {
@@ -1449,13 +1484,6 @@
     "points": 4
   },
   {
-    "id": 8482737,
-    "name": "Zachary Bolduc",
-    "pos": "F",
-    "team": "MTL",
-    "points": 4
-  },
-  {
     "id": 8481726,
     "name": "Adam Edstrom",
     "pos": "F",
@@ -1498,8 +1526,8 @@
     "points": 3
   },
   {
-    "id": 8477949,
-    "name": "Alex Tuch",
+    "id": 8471214,
+    "name": "Alex Ovechkin",
     "pos": "F",
     "team": "WSH",
     "points": 3
@@ -1586,13 +1614,6 @@
     "name": "Christian Dvorak",
     "pos": "F",
     "team": "PHI",
-    "points": 3
-  },
-  {
-    "id": 8484873,
-    "name": "Cole Hutson",
-    "pos": "D",
-    "team": "WSH",
     "points": 3
   },
   {
@@ -1754,6 +1775,13 @@
     "name": "Joel Eriksson Ek",
     "pos": "F",
     "team": "MIN",
+    "points": 3
+  },
+  {
+    "id": 8480797,
+    "name": "Joel Farabee",
+    "pos": "F",
+    "team": "CGY",
     "points": 3
   },
   {
@@ -2065,6 +2093,13 @@
     "points": 3
   },
   {
+    "id": 8483495,
+    "name": "Simon Nemec",
+    "pos": "D",
+    "team": "CGY",
+    "points": 3
+  },
+  {
     "id": 8483676,
     "name": "Stephen Halliday",
     "pos": "F",
@@ -2209,20 +2244,6 @@
     "name": "Alex Killorn",
     "pos": "F",
     "team": "ANA",
-    "points": 2
-  },
-  {
-    "id": 8481618,
-    "name": "Alex Newhook",
-    "pos": "F",
-    "team": "MTL",
-    "points": 2
-  },
-  {
-    "id": 8471214,
-    "name": "Alex Ovechkin",
-    "pos": "F",
-    "team": "WSH",
     "points": 2
   },
   {
@@ -2464,13 +2485,6 @@
     "points": 2
   },
   {
-    "id": 8484999,
-    "name": "Ilya Protas",
-    "pos": "F",
-    "team": "WSH",
-    "points": 2
-  },
-  {
     "id": 8483455,
     "name": "Isaac Howard",
     "pos": "F",
@@ -2534,13 +2548,6 @@
     "points": 2
   },
   {
-    "id": 8479385,
-    "name": "Jordan Kyrou",
-    "pos": "F",
-    "team": "WSH",
-    "points": 2
-  },
-  {
     "id": 8479372,
     "name": "Josh Mahura",
     "pos": "D",
@@ -2552,6 +2559,13 @@
     "name": "Josh Norris",
     "pos": "F",
     "team": "BUF",
+    "points": 2
+  },
+  {
+    "id": 8475718,
+    "name": "Justin Holl",
+    "pos": "D",
+    "team": "WSH",
     "points": 2
   },
   {
@@ -2737,6 +2751,13 @@
     "points": 2
   },
   {
+    "id": 8480865,
+    "name": "Noah Dobson",
+    "pos": "D",
+    "team": "MTL",
+    "points": 2
+  },
+  {
     "id": 8478396,
     "name": "Noah Hanifin",
     "pos": "D",
@@ -2888,13 +2909,6 @@
     "name": "Simon Holmstrom",
     "pos": "F",
     "team": "NYI",
-    "points": 2
-  },
-  {
-    "id": 8483495,
-    "name": "Simon Nemec",
-    "pos": "D",
-    "team": "CGY",
     "points": 2
   },
   {
@@ -3178,6 +3192,13 @@
     "points": 1
   },
   {
+    "id": 8479292,
+    "name": "Charlie Lindgren",
+    "pos": "G",
+    "team": "WSH",
+    "points": 1
+  },
+  {
     "id": 8479325,
     "name": "Charlie McAvoy",
     "pos": "D",
@@ -3409,6 +3430,13 @@
     "points": 1
   },
   {
+    "id": 8483491,
+    "name": "Ivan Miroshnichenko",
+    "pos": "F",
+    "team": "WSH",
+    "points": 1
+  },
+  {
     "id": 8482072,
     "name": "Jack Ahcan",
     "pos": "D",
@@ -3532,13 +3560,6 @@
     "name": "Justin Barron",
     "pos": "D",
     "team": "STL",
-    "points": 1
-  },
-  {
-    "id": 8475718,
-    "name": "Justin Holl",
-    "pos": "D",
-    "team": "WSH",
     "points": 1
   },
   {
@@ -3707,13 +3728,6 @@
     "name": "Nils Lundkvist",
     "pos": "D",
     "team": "DAL",
-    "points": 1
-  },
-  {
-    "id": 8480865,
-    "name": "Noah Dobson",
-    "pos": "D",
-    "team": "MTL",
     "points": 1
   },
   {
@@ -4232,13 +4246,6 @@
     "name": "Charles Alexis Legault",
     "pos": "D",
     "team": "CAR",
-    "points": 0
-  },
-  {
-    "id": 8479292,
-    "name": "Charlie Lindgren",
-    "pos": "G",
-    "team": "WSH",
     "points": 0
   },
   {
