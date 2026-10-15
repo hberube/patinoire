@@ -3075,5 +3075,186 @@
       }
     ],
     "formerPlayers": []
+  },
+  {
+    "participantId": "usr_vincent",
+    "participantName": "Vincent",
+    "teamName": "Les HabsRoller",
+    "tradesUsed": {
+      "F": 0,
+      "D": 0,
+      "G": 0
+    },
+    "players": [
+      {
+        "id": 8478402,
+        "name": "Connor McDavid",
+        "pos": "F",
+        "team": "EDM",
+        "group": 1,
+        "baseline": null
+      },
+      {
+        "id": 8484144,
+        "name": "Connor Bedard",
+        "pos": "F",
+        "team": "CHI",
+        "group": 2,
+        "baseline": null
+      },
+      {
+        "id": 8478864,
+        "name": "Kirill Kaprizov",
+        "pos": "F",
+        "team": "MIN",
+        "group": 3,
+        "baseline": null
+      },
+      {
+        "id": 8480018,
+        "name": "Nick Suzuki",
+        "pos": "F",
+        "team": "MTL",
+        "group": 4,
+        "baseline": null
+      },
+      {
+        "id": 8471675,
+        "name": "Sidney Crosby",
+        "pos": "F",
+        "team": "PIT",
+        "group": 5,
+        "baseline": null
+      },
+      {
+        "id": 8482740,
+        "name": "Wyatt Johnston",
+        "pos": "F",
+        "team": "DAL",
+        "group": 6,
+        "baseline": null
+      },
+      {
+        "id": 8481540,
+        "name": "Cole Caufield",
+        "pos": "F",
+        "team": "MTL",
+        "group": 7,
+        "baseline": null
+      },
+      {
+        "id": 8477939,
+        "name": "William Nylander",
+        "pos": "F",
+        "team": "TOR",
+        "group": 8,
+        "baseline": null
+      },
+      {
+        "id": 8479542,
+        "name": "Brandon Hagel",
+        "pos": "F",
+        "team": "TBL",
+        "group": 9,
+        "baseline": null
+      },
+      {
+        "id": 8483515,
+        "name": "Juraj Slafkovský",
+        "pos": "F",
+        "team": "MTL",
+        "group": 10,
+        "baseline": null
+      },
+      {
+        "id": 8482699,
+        "name": "Dylan Guenther",
+        "pos": "F",
+        "team": "UTA",
+        "group": 11,
+        "baseline": null
+      },
+      {
+        "id": 8484153,
+        "name": "Leo Carlsson",
+        "pos": "F",
+        "team": "ANA",
+        "group": 12,
+        "baseline": null
+      },
+      {
+        "id": 8480012,
+        "name": "Elias Pettersson",
+        "pos": "F",
+        "team": "VAN",
+        "group": 13,
+        "baseline": null
+      },
+      {
+        "id": 8481533,
+        "name": "Trevor Zegras",
+        "pos": "F",
+        "team": "PHI",
+        "group": 14,
+        "baseline": null
+      },
+      {
+        "id": 8484984,
+        "name": "Ivan Demidov",
+        "pos": "F",
+        "team": "MTL",
+        "group": 15,
+        "baseline": null
+      },
+      {
+        "id": 8480800,
+        "name": "Quinn Hughes",
+        "pos": "D",
+        "team": "MIN",
+        "group": 16,
+        "baseline": null
+      },
+      {
+        "id": 8480069,
+        "name": "Cale Makar",
+        "pos": "D",
+        "team": "COL",
+        "group": 17,
+        "baseline": null
+      },
+      {
+        "id": 8479325,
+        "name": "Charlie McAvoy",
+        "pos": "D",
+        "team": "BOS",
+        "group": 18,
+        "baseline": null
+      },
+      {
+        "id": 8479979,
+        "name": "Jake Oettinger",
+        "pos": "G",
+        "team": "DAL",
+        "group": 19,
+        "baseline": null
+      },
+      {
+        "id": 8480313,
+        "name": "Logan Thompson",
+        "pos": "G",
+        "team": "WSH",
+        "group": 20,
+        "baseline": null
+      },
+      {
+        "id": 8476999,
+        "name": "Linus Ullmark",
+        "pos": "G",
+        "team": "OTT",
+        "group": 21,
+        "baseline": null
+      }
+    ],
+    "formerPlayers": []
   }
 ]

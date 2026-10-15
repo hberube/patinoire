@@ -117,5 +117,12 @@
     "role": "participant",
     "salt": "96f61fbb872a281657637b487dcffb83",
     "pinHash": "3ed4198441d9869f302c409c1d21583095d75a4a55c327d22b5233acb46741d9"
+  },
+  {
+    "participantId": "usr_vincent",
+    "displayName": "Vincent",
+    "role": "participant",
+    "salt": "f959eb7d920deb3a6e5540859fdb03be",
+    "pinHash": "a247e416d673965fd2d64be16a19dfa3a6a963d6c2274cde14f70af33f3f1293"
   }
 ]
