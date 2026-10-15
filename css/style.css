@@ -181,6 +181,15 @@ h3 { margin: 0 0 8px; font-size: 16px; }
 .grid { display: grid; gap: 12px; }
 .empty { padding: 28px 16px; text-align: center; color: var(--text-3); }
 
+/* ---------- Morning recap ("La une") ---------- */
+.recap { position: relative; padding: 16px 48px 14px 18px; margin-bottom: 16px; border-left: 4px solid var(--red); }
+.recap-kicker { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--text-3); }
+.recap-title { margin: 4px 0 8px; font-size: 24px; line-height: 1.15; overflow-wrap: anywhere; }
+.recap-list { margin: 0; padding-left: 18px; color: var(--text-2); line-height: 1.45; }
+.recap-list li + li { margin-top: 4px; }
+.recap-close { position: absolute; top: 8px; right: 8px; min-width: 36px; min-height: 36px; color: var(--text-3); }
+@media (max-width: 560px) { .recap { padding: 14px 44px 12px 14px; } .recap-title { font-size: 21px; } }
+
 /* ---------- Podium ---------- */
 .podium { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; align-items: end; }
 .podium .step { padding: 14px; text-align: center; position: relative; cursor: pointer; }

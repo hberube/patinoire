@@ -19,10 +19,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   bindChrome();
   try {
     const opt = p => fetchJson(p).catch(() => null);
-    [S.config, S.board, S.history, S.live, S.groups, S.trades, S.index, S.logos, S.insights] = await Promise.all([
+    [S.config, S.board, S.history, S.live, S.groups, S.trades, S.index, S.logos, S.insights, S.recap] = await Promise.all([
       fetchJson("data/config.json"), fetchJson("data/leaderboard.json"), opt("data/history.json"),
       fetchLive(), fetchJson("data/groups.json"), opt("data/trades_history.json"),
-      opt("data/players_index.json"), opt("data/logos.json"), opt("data/insights.json"),
+      opt("data/players_index.json"), opt("data/logos.json"), opt("data/insights.json"), opt("data/recap.json"),
     ]);
   } catch (err) {
     document.querySelector("main").innerHTML = `<div class="card empty">${esc(t("loadError"))}</div>`;
@@ -134,6 +134,7 @@ function renderAll() {
     if (el) el.textContent = stamp;  // tolerate a cached older index.html right after a deploy
   }
   renderAuth();
+  renderRecap();
   renderStandings();
   renderTeams();
   if (S.tab === "chart") renderTrajectory();
@@ -228,6 +229,30 @@ function openLogin() {
   document.getElementById("login-pin").value = "";
   document.getElementById("login-error").textContent = "";
   document.getElementById("login-modal").showModal();
+}
+
+// ---------- Morning recap ("La une", written by scripts/recap.py) ----------
+const RECAP_KEY = "patinoire_recap_closed";
+
+function renderRecap() {
+  const el = document.getElementById("recap"), r = S.recap, text = r?.[getLang()];
+  if (!el) return;  // tolerate a cached older index.html right after a deploy
+  let closed = null;
+  try { closed = localStorage.getItem(RECAP_KEY); } catch { /* private mode */ }
+  // Only last night's recap: hide it once the evening after is over (~36 h after the game day's noon)
+  const fresh = r && Date.now() - new Date(`${r.gameDay}T12:00:00`).getTime() < 36 * 3600 * 1000;
+  if (!text || !fresh || closed === r.gameDay) { el.innerHTML = ""; return; }
+  el.innerHTML = `
+    <article class="card recap">
+      <button class="btn btn-sm btn-ghost recap-close" aria-label="${esc(t("close"))}" title="${esc(t("close"))}">✕</button>
+      <div class="recap-kicker">📰 ${esc(t("recapTitle"))} · ${esc(fmtDay(r.gameDay, true))}</div>
+      <h2 class="recap-title">${esc(text.title)}</h2>
+      <ul class="recap-list">${text.bullets.map(b => `<li>${esc(b)}</li>`).join("")}</ul>
+    </article>`;
+  el.querySelector(".recap-close").addEventListener("click", () => {
+    try { localStorage.setItem(RECAP_KEY, r.gameDay); } catch { /* private mode */ }
+    el.innerHTML = "";
+  });
 }
 
 // ---------- Standings ----------

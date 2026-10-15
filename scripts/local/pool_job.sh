@@ -1,7 +1,8 @@
 #!/bin/bash
 # Backup for GitHub's unreliable schedule, started by Windows Task Scheduler (see README.md here).
 #   pool_job.sh night    from noon: keep "Ce soir" live until the last game, then rebuild the standings
-#   pool_job.sh morning  early morning: rebuild the standings (and the history chart) if still needed
+#   pool_job.sh morning  early morning: rebuild the standings (and the history chart) if still needed,
+#                        then have Claude write the front-page recap (needs ~/.local/bin/claude, logged in)
 # Runs in its own clone so it never touches a working copy. Safe to run alongside the GitHub
 # workflows: they all produce the same data, and a second copy of the same job exits right away.
 set -u
@@ -18,15 +19,18 @@ echo "=== $(date) $MODE"
 cd "$BOT" || exit 1
 sync_main() { git fetch -q origin main && git checkout -q -B main origin/main && git reset -q --hard origin/main; }
 
+push_data() {  # push_data "<commit message>": commit data/ changes, if any, and push them
+  git add -A data
+  git diff --staged --quiet && { echo "$1: nothing new"; return 0; }
+  git -c user.name="patinoire-bot" -c user.email="patinoire-bot@users.noreply.github.com" commit -qm "$1"
+  for _ in 1 2 3; do git pull -q --rebase origin main && git push -q origin main && { echo "$1: pushed"; return 0; }; sleep 30; done
+  echo "$1: push failed"; return 1
+}
+
 standings() {
   sync_main || return 1
   python3 scripts/update_pool.py && { python3 scripts/insights.py || echo "warning: gazette update failed"; }
-  git add -A data
-  git diff --staged --quiet && { echo "standings: nothing new"; return 0; }
-  git -c user.name="patinoire-bot" -c user.email="patinoire-bot@users.noreply.github.com" \
-    commit -qm "Auto-update pool stats ($MODE, local backup)"
-  for _ in 1 2 3; do git pull -q --rebase origin main && git push -q origin main && { echo "standings pushed"; return 0; }; sleep 30; done
-  echo "standings: push failed"; return 1
+  push_data "Auto-update pool stats ($MODE, local backup)"
 }
 
 if [ "$MODE" = night ]; then
@@ -48,5 +52,7 @@ if [ "$MODE" = night ]; then
   done
 else
   standings
+  # Claude's front-page recap of last night (scripts/recap.py); a failure only skips the recap
+  python3 scripts/recap.py && push_data "Morning recap"
 fi
 echo "=== $(date) $MODE done"
