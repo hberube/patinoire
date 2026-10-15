@@ -53,6 +53,8 @@ if [ "$MODE" = night ]; then
 else
   standings
   # Claude's front-page recap of last night (scripts/recap.py); a failure only skips the recap
-  python3 scripts/recap.py && push_data "Morning recap"
+  # (through uv for Pillow, which draws the meme card; WSL's python3 has no pip)
+  "$HOME/.local/bin/uv" run -q --no-project --with pillow --with requests python3 scripts/recap.py \
+    && push_data "Morning recap"
 fi
 echo "=== $(date) $MODE done"

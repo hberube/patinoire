@@ -188,7 +188,15 @@ h3 { margin: 0 0 8px; font-size: 16px; }
 .recap-list { margin: 0; padding-left: 18px; color: var(--text-2); line-height: 1.45; }
 .recap-list li + li { margin-top: 4px; }
 .recap-close { position: absolute; top: 8px; right: 8px; min-width: 36px; min-height: 36px; color: var(--text-3); }
-@media (max-width: 560px) { .recap { padding: 14px 44px 12px 14px; } .recap-title { font-size: 21px; } }
+.recap.has-img { display: grid; grid-template-columns: 1fr 230px; gap: 18px; align-items: center; }
+.recap-img img { display: block; width: 100%; height: auto; border-radius: 10px; }
+@media (max-width: 560px) {
+  .recap { padding: 14px 44px 12px 14px; }
+  .recap-title { font-size: 21px; }
+  .recap.has-img { grid-template-columns: 1fr; gap: 12px; padding-right: 14px; }
+  .recap.has-img .recap-title { padding-right: 30px; }
+  .recap-img { justify-self: center; width: min(100%, 360px); }
+}
 
 /* ---------- Podium ---------- */
 .podium { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; align-items: end; }

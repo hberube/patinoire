@@ -1,24 +1,34 @@
 {
   "gameDay": "2026-10-13",
-  "generatedAt": "2026-10-15T01:41:24Z",
+  "generatedAt": "2026-10-15T01:52:46Z",
   "fr": {
-    "title": "Hugo bondit au 2e rang, Alexandre perd 4 places",
+    "title": "Hugo bondit au 2e rang, Michel tient son trône",
     "bullets": [
-      "Michel (Les Ducks) garde la barre avec 159 points, mais Hugo (Crazy Blue Heelers) saute au 2e rang avec 30 points hier. 🏆",
-      "Marjolaine (mchb) signe la plus grosse soirée : 34 points. Alexandre (Éperviers de Sorel), lui, perd 4 rangs. Aïe.",
-      "Le CH bat Buffalo 4-3 en fusillade; Caufield (13 preneurs) marque, Hutson aussi. 🔥",
-      "McDavid, Draisaitl et Reinhart sont tous à un but de la barre des 5. Surveillez ça!",
-      "Pastrnak, choix en or d'un seul participant; Eichel (13 points) n'a aucun preneur; Chychrun file 4 matchs sans point. 🧊"
+      "Hugo ramasse 30 points et grimpe de deux rangs au 2e échelon. Michel mène encore avec 159.",
+      "Marjolaine signe la meilleure soirée: 34 points et un gain d'un rang, au 12e.",
+      "Alexandre dégringole de quatre rangs, au 10e. Les Éperviers de Sorel ont perdu des plumes.",
+      "Caufield et Hutson marquent, et le CH bat Buffalo 4-3 en tirs de barrage.",
+      "Zegras a marqué, mais seuls Hugo et Jackson l'avaient. Flair de génie, messieurs!"
     ]
   },
   "en": {
-    "title": "Hugo leaps to 2nd, Alexandre drops four spots",
+    "title": "Hugo leaps to 2nd, Michel clings to the throne",
     "bullets": [
-      "Michel (Les Ducks) holds the lead at 159 points, but Hugo (Crazy Blue Heelers) jumps to 2nd with 30 points last night. 🏆",
-      "Marjolaine (mchb) had the biggest night: 34 points. Alexandre (Éperviers de Sorel) slid four spots. Ouch.",
-      "Montreal beat Buffalo 4-3 in a shootout; Caufield (13 owners) scored, and so did Hutson. 🔥",
-      "McDavid, Draisaitl and Reinhart are each one goal away from 5. Keep an eye on them!",
-      "Pastrnak is a golden pick for just one participant; Eichel (13 points) has no owners; Chychrun is 4 games without a point. 🧊"
+      "Hugo piled up 30 points and climbed two spots to 2nd. Michel still leads with 159.",
+      "Marjolaine had the best night: 34 points and a one-spot climb to 12th.",
+      "Alexandre tumbled four spots to 10th. The Sorel Sparrowhawks lost some feathers.",
+      "Caufield and Hutson both scored as Montreal edged Buffalo 4-3 in a shootout.",
+      "Zegras scored, but only Hugo and Jackson owned him. Genius picks, gentlemen!"
     ]
+  },
+  "image": {
+    "fr": {
+      "src": "data/recap-fr.png",
+      "alt": "ZEGRAS MARQUE. 2 PERSONNES DANS LE POOL / HUGO ET JACKSON: GÉNIES. LES 15 AUTRES: « QUI ÇA? »"
+    },
+    "en": {
+      "src": "data/recap-en.png",
+      "alt": "ZEGRAS SCORES. ONLY 2 POOLERS OWN HIM / HUGO & JACKSON: GENIUSES. THE OTHER 15: \"WHO?\""
+    }
   }
 }

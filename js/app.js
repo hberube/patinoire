@@ -242,12 +242,18 @@ function renderRecap() {
   // Only last night's recap: hide it once the evening after is over (~36 h after the game day's noon)
   const fresh = r && Date.now() - new Date(`${r.gameDay}T12:00:00`).getTime() < 36 * 3600 * 1000;
   if (!text || !fresh || closed === r.gameDay) { el.innerHTML = ""; return; }
+  const img = r.image?.[getLang()];
+  const src = img && `${img.src}?v=${encodeURIComponent(r.generatedAt)}`;  // same file name every day
   el.innerHTML = `
-    <article class="card recap">
+    <article class="card recap${img ? " has-img" : ""}">
       <button class="btn btn-sm btn-ghost recap-close" aria-label="${esc(t("close"))}" title="${esc(t("close"))}">✕</button>
-      <div class="recap-kicker">📰 ${esc(t("recapTitle"))} · ${esc(fmtDay(r.gameDay, true))}</div>
-      <h2 class="recap-title">${esc(text.title)}</h2>
-      <ul class="recap-list">${text.bullets.map(b => `<li>${esc(b)}</li>`).join("")}</ul>
+      <div class="recap-text">
+        <div class="recap-kicker">📰 ${esc(t("recapTitle"))} · ${esc(fmtDay(r.gameDay, true))}</div>
+        <h2 class="recap-title">${esc(text.title)}</h2>
+        <ul class="recap-list">${text.bullets.map(b => `<li>${esc(b)}</li>`).join("")}</ul>
+      </div>
+      ${img ? `<a class="recap-img" href="${esc(src)}" target="_blank" rel="noopener">
+        <img src="${esc(src)}" alt="${esc(img.alt)}" width="720" height="720" onerror="this.parentElement.remove()"></a>` : ""}
     </article>`;
   el.querySelector(".recap-close").addEventListener("click", () => {
     try { localStorage.setItem(RECAP_KEY, r.gameDay); } catch { /* private mode */ }
