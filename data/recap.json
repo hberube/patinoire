@@ -1,34 +1,34 @@
 {
-  "gameDay": "2026-10-14",
-  "generatedAt": "2026-10-15T13:04:18Z",
+  "gameDay": "2026-10-15",
+  "generatedAt": "2026-10-16T08:31:05Z",
   "fr": {
-    "title": "Tuch en double, Michel file en tête avec les Ducks",
+    "title": "Stone, Boldy et Draisaitl mettent le feu au pool",
     "bullets": [
-      "Alex Tuch marque deux fois à Washington, et Michel (Les Ducks) est le seul à l'avoir. Il passe à 164 points, +5 hier.",
-      "Maddox (+5) grimpe au 14e rang, avec un but de Brock Nelson dans son jeu. Pas fou, le SK|MADDOXG!",
-      "Ève et Vicky ramassent 4 points chacune et montent d'un cran. Jolyne, elle, recule de deux places, aïe.",
-      "Nick Suzuki marque et en est à 4 buts, à un du cinq. Lane Hutson aussi a marqué, et 8 participants le comptaient. 🏒",
-      "Washington bat Montréal 5-4, et Dallas gagne 3-2 en fusillade à Colorado."
+      "Mark Stone a marqué trois buts contre Calgary: sept participants applaudissent, onze autres prennent des notes. 🎩",
+      "Matt Boldy en a planté trois à Minnesota. Guillaume (Laser Kiwis) et Elrick (Michael Scofield) se partagent le butin.",
+      "Michel (Les Ducks) reste au sommet avec 165 points, 18 de plus que Hugo (Crazy Blue Heelers).",
+      "Alexandre (Éperviers de Sorel) grimpe de deux rangs au 9e, pendant que Louise (Les huards) en perd deux, au 10e. 📉",
+      "Jack Eichel: 13 points et zéro propriétaire. Personne n'a osé!"
     ]
   },
   "en": {
-    "title": "Tuch scores twice, Michel cruises on top with the Ducks",
+    "title": "Stone, Boldy and Draisaitl Light Up the Pool",
     "bullets": [
-      "Alex Tuch scored twice in Washington, and Michel (Les Ducks) is the only one who owns him. He's at 164 points, +5 last night.",
-      "Maddox (+5) climbs to 14th with a Brock Nelson goal on the roster. Not bad, SK|MADDOXG!",
-      "Ève and Vicky each pick up 4 points and move up a spot. Jolyne slides two places, ouch.",
-      "Nick Suzuki scored and sits at 4 goals, one shy of five. Lane Hutson scored too, and 8 participants own him. 🏒",
-      "Washington beat Montreal 5-4, and Dallas won 3-2 in a shootout in Colorado."
+      "Mark Stone scored three against Calgary: seven participants cheer, eleven others take notes. 🎩",
+      "Matt Boldy potted three in Minnesota. Guillaume (Laser Kiwis) and Elrick (Michael Scofield) split the spoils.",
+      "Michel (Les Ducks) stays on top at 165 points, 18 clear of Hugo (Crazy Blue Heelers).",
+      "Alexandre (Éperviers de Sorel) climbs two spots to 9th while Louise (Les huards) drops two, to 10th. 📉",
+      "Jack Eichel: 13 points and zero owners. Nobody dared!"
     ]
   },
   "image": {
     "fr": {
       "src": "data/recap-fr.png",
-      "alt": "MICHEL EST LE SEUL À AVOIR ALEX TUCH / TUCH MARQUE DEUX FOIS, LES DUCKS FONT LA FÊTE"
+      "alt": "MARK STONE SCORE TROIS FOIS EN UN SOIR / LES 11 AUTRES PARTICIPANTS: «ON LE SAVAIT, PAS VRAI?»"
     },
     "en": {
       "src": "data/recap-en.png",
-      "alt": "MICHEL IS THE ONLY ONE WHO OWNS TUCH / TUCH SCORES TWICE. MICHEL: 'I KNEW IT.'"
+      "alt": "MARK STONE SCORES A HAT TRICK / THE OTHER 11 PARTICIPANTS: 'WE TOTALLY KNEW THAT'"
     }
   }
 }
