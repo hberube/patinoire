@@ -1,4 +1,4 @@
-// « L'Aréna »: a full-screen jumbotron for the TV on game nights (opened from "Ce soir" or #arena).
+// « L'Aréna »: a full-screen jumbotron for the TV on game nights (the "Télé" tab, or the site at #tv).
 // Live standings that re-rank as goals go in, a goal celebration, a rotating side panel and a
 // score ticker, all from the data the page already loads (refreshed every 2 minutes by app.js).
 // Self-contained so it can be removed in one go; off switch: "features": {"arena": false}.
@@ -177,5 +177,5 @@ export function closeArena() {
   root.remove(); root = null;
   document.body.classList.remove("arena-open");
   queue.length = 0; celebrating = false;
-  if (location.hash === "#arena") history.replaceState(null, "", "#tonight");
+  if (location.hash === "#arena") history.replaceState(null, "", "#tv");
 }

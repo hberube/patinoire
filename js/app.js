@@ -14,7 +14,7 @@ const S = {
   chartPicks: null,
   trade: { outId: null, inId: null, code: null },
 };
-const TABS = ["standings", "gazette", "teams", "chart", "tonight", "bingo", "injuries", "trades", "faq"];
+const TABS = ["standings", "gazette", "teams", "chart", "tonight", "tv", "bingo", "injuries", "trades", "faq"];
 const POS_ICON = { F: "🏒", D: "🛡️", G: "🥅" };
 
 // ---------- Boot ----------
@@ -37,10 +37,11 @@ document.addEventListener("DOMContentLoaded", async () => {
   S.pointsById = new Map((S.index || []).map(p => [p.id, p.points]));
   S.owners = new Map();
   for (const s of S.board.standings) for (const p of s.rosterStats) S.owners.set(p.id, (S.owners.get(p.id) || 0) + 1);
-  const arenaLink = location.hash === "#arena";  // feature: arena
-  showTab(location.hash.slice(1));
+  // feature: arena: opening the site at #tv (e.g. on the TV) starts the jumbotron right away
+  const arenaLink = ["#tv", "#arena"].includes(location.hash);
+  showTab(location.hash === "#arena" ? "tv" : location.hash.slice(1));
   renderAll();
-  if (arenaLink && S.config.features?.arena !== false) { showTab("tonight"); startArena(); }
+  if (arenaLink && S.config.features?.arena !== false) startArena();
   // Live scores: refresh every 2 minutes while the page is visible
   setInterval(refreshLive, 120000);
   document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") refreshLive(); });
@@ -165,13 +166,21 @@ function playHorn() {
 // feature: arena: the TV mode (js/arena.js), opened from "Ce soir" or #arena
 const startArena = () => openArena({ S, avatar, playHorn, bingoRace, gameState });
 
-function renderArenaButton() {
-  const btn = document.getElementById("arena-open");
-  if (!btn) return;
-  btn.hidden = S.config.features?.arena === false;
-  btn.textContent = t("arenaOpen");
-  btn.title = t("arenaHint");
-  btn.onclick = startArena;
+// The "Télé" tab: how to put it on the TV, and the button that starts it
+function renderTvTab() {
+  const off = S.config.features?.arena === false;
+  document.querySelector('.tab[data-tab="tv"]')?.classList.toggle("hidden", off);
+  const el = document.getElementById("tv-root");
+  if (!el) return;
+  const link = new URL("#tv", location.href.split("#")[0]).href;
+  el.innerHTML = off ? "" : `<div class="card card-pad tv-launch">
+      <div class="tv-icon" aria-hidden="true">📺</div>
+      <h2>${esc(t("arenaTitle"))}</h2>
+      <p>${esc(t("tvIntro"))}</p>
+      <button class="btn btn-primary tv-go" id="tv-go">▶ ${esc(t("tvStart"))}</button>
+      <ul class="tv-tips"><li>${esc(t("tvTipCast"))}</li><li>${esc(t("tvTipLink"))} <code>${esc(link)}</code></li><li>${esc(t("tvTipKeys"))}</li></ul>
+    </div>`;
+  el.querySelector("#tv-go")?.addEventListener("click", startArena);
 }
 
 function renderHornToggle() {
@@ -284,6 +293,7 @@ function renderAll() {
   if (S.tab === "chart") renderTrajectory();
   renderTonight();
   renderBingo();
+  renderTvTab();  // feature: arena
   renderInjuries();
   renderGazette();
   renderFaq();
@@ -779,7 +789,6 @@ function renderTonight() {
   const anyLive = !!live?.games?.some(g => g.state === "LIVE" || g.state === "CRIT");
   document.getElementById("live-pill").classList.toggle("hidden", !anyLive);
   renderHornToggle();
-  renderArenaButton();
   if (!live || !live.games?.length) {
     gamesEl.innerHTML = `<div class="card empty" style="grid-column:1/-1">${esc(t("noGames"))}</div>`;
     document.getElementById("tonight-rank").innerHTML = "";

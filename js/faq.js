@@ -110,7 +110,7 @@ const FAQ = {
         {
           // feature: arena
           q: "C'est quoi, le mode Aréna?",
-          a: `<p>Un écran géant pour regarder les matchs en famille : dans <b>Ce soir</b>, touchez <b>📺 Aréna</b> (ou ouvrez le lien du site suivi de <code>#arena</code> sur la télé). Le classement se met à jour en direct avec les points de la soirée, chaque but d'un joueur du pool s'affiche en plein écran avec le klaxon, et le bingo et les pointages défilent. Touchez <b>Plein écran</b> pour cacher le reste; l'écran reste allumé.</p>`,
+          a: `<p>Un écran géant pour regarder les matchs en famille : ouvrez l'onglet <b>📺 Télé</b> et touchez <b>Lancer l'Aréna</b> (ou ouvrez le lien du site suivi de <code>#tv</code> sur la télé). Le classement se met à jour en direct avec les points de la soirée, chaque but d'un joueur du pool s'affiche en plein écran avec le klaxon, et le bingo et les pointages défilent. Touchez <b>Plein écran</b> pour cacher le reste; l'écran reste allumé.</p>`,
         },
         {
           q: "Comment marche le bingo?",
@@ -236,7 +236,7 @@ const FAQ = {
         {
           // feature: arena
           q: "What's Arena mode?",
-          a: `<p>A big screen to watch the games together: in <b>Tonight</b>, tap <b>📺 Arena</b> (or open the site's link followed by <code>#arena</code> on the TV). The standings update live with tonight's points, every goal by a pool player fills the screen with the horn, and the bingo and scores roll by. Tap <b>Full screen</b> to hide the rest; the screen stays on.</p>`,
+          a: `<p>A big screen to watch the games together: open the <b>📺 TV</b> tab and tap <b>Start the Arena</b> (or open the site's link followed by <code>#tv</code> on the TV). The standings update live with tonight's points, every goal by a pool player fills the screen with the horn, and the bingo and scores roll by. Tap <b>Full screen</b> to hide the rest; the screen stays on.</p>`,
         },
         {
           q: "How does the bingo work?",

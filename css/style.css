@@ -754,3 +754,11 @@ body.arena-open { overflow: hidden; }
 @media (max-width: 760px) { .ar-main { grid-template-columns: 1fr; } .ar-panel { display: none; } }
 @media (prefers-reduced-motion: reduce) { .ar-row, .ar-track, .ar-goal-card, .ar-goal-word { animation: none !important; transition: none !important; } }
 /* === end feature: arena === */
+/* feature: arena: the Télé tab */
+.tv-launch { display: grid; justify-items: center; text-align: center; gap: 10px; max-width: 640px; margin: 10px auto; padding: 28px 22px; }
+.tv-launch h2 { margin: 0; font: 800 28px/1.1 var(--ff-display); }
+.tv-launch p { margin: 0; color: var(--text-2); }
+.tv-icon { font-size: 54px; }
+.tv-go { font-size: 17px; padding: 12px 22px; }
+.tv-tips { text-align: left; font-size: 13px; color: var(--text-2); margin: 8px 0 0; padding-left: 18px; display: grid; gap: 6px; }
+.tv-tips code { word-break: break-all; }
