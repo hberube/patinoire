@@ -46,7 +46,7 @@ while IFS=$'\t' read -r key fix text; do
   esac
   started[$fix]=1
   echo "$(date) repair: pool_job.sh $mode"
-  setsid nohup bash "$JOB" "$mode" >/dev/null 2>&1 &
+  setsid nohup bash "$JOB" "$mode" </dev/null >/dev/null 2>&1 &
 done <<<"$problems"
 
 # Alerts: a problem seen on the last check too (the repair had its chance), or one with no repair
