@@ -85,14 +85,15 @@ def eleven(lines, path):
     voices = ((load("config.json", {}) or {}).get("radio") or {}).get("voices") or {}
     if not all(voices.get(h) for h in HOSTS):
         raise RuntimeError('no ElevenLabs voices in config.json ("radio": {"voices": {...}})')
-    res = requests.post(f"{ELEVEN}/text-to-dialogue", params={"output_format": "mp3_44100_128"},
+    # 32 kbit/s is plenty for voices and keeps each day's file (and the repo's history) small
+    res = requests.post(f"{ELEVEN}/text-to-dialogue", params={"output_format": "mp3_22050_32"},
                         headers={"xi-api-key": key}, timeout=600,
                         json={"model_id": "eleven_v3",
                               "inputs": [{"text": x["line"], "voice_id": voices[x["host"]]} for x in lines]})
     if not res.ok:
         raise RuntimeError(f"ElevenLabs {res.status_code}: {res.text[:300]}")
     Path(path).write_bytes(res.content)
-    return 128000
+    return 32000
 
 
 async def edge(lines, path):

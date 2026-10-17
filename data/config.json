@@ -33,8 +33,12 @@
   },
   "radio": {
     "voices": {
-      "sylvie": "",
-      "jean": ""
+      "sylvie": "WW0JfNPk5DgcQdM0d6X6",
+      "jean": "JtIwrj5lfRwnEmUwGlhB"
+    },
+    "voiceNames": {
+      "sylvie": "Claudia (ElevenLabs)",
+      "jean": "Sébastien (ElevenLabs)"
     }
   }
 }

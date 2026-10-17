@@ -16,3 +16,7 @@ pool_patinoire_pins.txt
 
 # Live scores are published on the `live` branch; data/live.json is for local testing only
 data/live.json
+
+# Private API keys (ElevenLabs, ntfy topic): kept in ~ only, never publish
+*elevenlabs*.txt
+*ntfy*.txt
