@@ -25,5 +25,16 @@
     "fr": "Une carte-cadeau Amazon offerte par Hugo, la couronne 🎱👑 du champion du bingo à côté de son équipe toute la saison prochaine, et le choix de la case du centre de toutes les cartes de bingo la saison prochaine.",
     "en": "An Amazon gift card from Hugo, the 🎱👑 bingo champion's crown next to their team all next season, and the pick of the centre square on every bingo card next season."
   },
-  "bingoFree": ""
+  "bingoFree": "",
+  "features": {
+    "radio": true,
+    "arena": true,
+    "cards": true
+  },
+  "radio": {
+    "voices": {
+      "sylvie": "",
+      "jean": ""
+    }
+  }
 }

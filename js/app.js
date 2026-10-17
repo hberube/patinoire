@@ -6,6 +6,7 @@ import { renderChart } from "./chart.js";
 import { prepareImage } from "./image.js";
 import { faqContent } from "./faq.js";
 import { seededShuffle, makeCard, evaluate, race } from "./bingo.js";
+import { renderRadio } from "./radio.js";  // feature: radio (config.features.radio)
 
 const S = {
   tab: "standings",
@@ -20,11 +21,11 @@ document.addEventListener("DOMContentLoaded", async () => {
   bindChrome();
   try {
     const opt = p => fetchJson(p).catch(() => null);
-    [S.config, S.board, S.history, S.live, S.groups, S.trades, S.index, S.logos, S.insights, S.recap, S.bingoArchive, S.injuries, S.palmares] = await Promise.all([
+    [S.config, S.board, S.history, S.live, S.groups, S.trades, S.index, S.logos, S.insights, S.recap, S.bingoArchive, S.injuries, S.palmares, S.radio] = await Promise.all([
       fetchJson("data/config.json"), fetchJson("data/leaderboard.json"), opt("data/history.json"),
       fetchLive(), fetchJson("data/groups.json"), opt("data/trades_history.json"),
       opt("data/players_index.json"), opt("data/logos.json"), opt("data/insights.json"), opt("data/recap.json"),
-      opt("data/bingo.json"), opt("data/injuries.json"), opt("data/palmares.json"),
+      opt("data/bingo.json"), opt("data/injuries.json"), opt("data/palmares.json"), opt("data/radio.json"),
     ]);
   } catch (err) {
     document.querySelector("main").innerHTML = `<div class="card empty">${esc(t("loadError"))}</div>`;
@@ -259,6 +260,9 @@ function renderAll() {
   fitTopbar();
   document.fonts?.ready.then(fitTopbar);  // widths change once the web font arrives
   renderRecap();
+  // feature: radio
+  const radioEl = document.getElementById("radio");
+  if (radioEl) S.config.features?.radio === false ? (radioEl.innerHTML = "") : renderRadio(radioEl, S.radio, { fmtDay, playHorn });
   renderStandings();
   renderTeams();
   if (S.tab === "chart") renderTrajectory();

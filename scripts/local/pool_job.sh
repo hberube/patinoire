@@ -76,6 +76,11 @@ recap() {
   hold_clone
   "$HOME/.local/bin/uv" run -q --no-project --with pillow --with requests python3 scripts/recap.py \
     && push_data "Morning recap"
+  # « Les Ondes de la Patinoire »: Claude's radio show of last night (scripts/radio.py), voiced by
+  # ElevenLabs (key in ~/pool_patinoire_elevenlabs.txt) or the free voices; skipped when switched off
+  python3 -c 'import json,sys; sys.exit(json.load(open("data/config.json")).get("features",{}).get("radio") is False)' \
+    && "$HOME/.local/bin/uv" run -q --no-project --with edge-tts --with requests python3 scripts/radio.py \
+    && push_data "Morning radio show"
   free_clone
 }
 
