@@ -100,7 +100,7 @@ const FAQ = {
         {
           q: "D'où viennent les trophées et les chances de gagner?",
           a: `<ul>
-            <li><b>Vitrine des trophées</b> (Gazette) : 🏆 champion du mois (le plus de points dans le mois), 🥊 duel de la semaine gagné, ⭐ meilleure soirée du pool, 👑 chaque jour passé au 1er rang. Les <b>records du pool</b> sont juste en dessous.</li>
+            <li><b>Vitrine des trophées</b> (Gazette) : 🏆 champion du mois (le plus de points dans le mois), 🥊 duel de la semaine gagné, 🎱 bingo gagné, ⭐ meilleure soirée du pool, 👑 chaque jour passé au 1er rang. Les <b>records du pool</b> sont juste en dessous.</li>
             <li><b>Chances</b> (Classement) : chaque matin, le site simule 5000 fois le reste de la saison, selon le rythme de chaque joueur et les matchs qui restent à son équipe. Le pourcentage, c'est la part des saisons simulées que votre équipe gagne. Les échanges à venir ne sont pas prévus.</li>
             <li>Pendant les matchs, l'onglet <b>Ce soir</b> affiche une alerte quand un joueur du pool marque. Touchez <b>🔕 Klaxon</b> pour l'entendre aussi.</li>
           </ul>
@@ -113,6 +113,7 @@ const FAQ = {
             <li>Les cases viennent des matchs du soir : des joueurs de votre équipe (« Suzuki marque »), des équipes de la LNH (« MTL gagne ») et des moments de la soirée (« Un but en avantage numérique »).</li>
             <li>Rien à faire : les cases se cochent toutes seules pendant les matchs. ✗ veut dire que la case ne peut plus arriver ce soir.</li>
             <li>Une ligne = 3 cases cochées en ligne, en colonne ou en diagonale. À la fin de la soirée, le plus de lignes gagne (puis le plus de cases).</li>
+            <li>Le gagnant reste affiché le lendemain (« Bingo d'hier »), et chaque bingo gagné vaut un trophée 🎱 dans la Vitrine des trophées.</li>
             <li>Touchez un nom dans <b>La course</b> pour voir la carte de quelqu'un d'autre.</li>
           </ul>`,
         },
@@ -217,7 +218,7 @@ const FAQ = {
         {
           q: "Where do the trophies and the odds come from?",
           a: `<ul>
-            <li><b>Trophy case</b> (Buzz): 🏆 champion of the month (most points that month), 🥊 weekly duel won, ⭐ best night in the pool, 👑 each day spent in 1st place. The <b>pool records</b> are right below.</li>
+            <li><b>Trophy case</b> (Buzz): 🏆 champion of the month (most points that month), 🥊 weekly duel won, 🎱 bingo won, ⭐ best night in the pool, 👑 each day spent in 1st place. The <b>pool records</b> are right below.</li>
             <li><b>Odds</b> (Standings): every morning, the site simulates the rest of the season 5,000 times, from each player's pace and his team's remaining games. The percentage is the share of simulated seasons your team wins. Future trades aren't predicted.</li>
             <li>During games, the <b>Tonight</b> tab shows an alert when a pool player scores. Tap <b>🔕 Horn</b> to hear it too.</li>
           </ul>
@@ -230,6 +231,7 @@ const FAQ = {
             <li>Squares come from tonight's games: players on your team ("Suzuki scores"), NHL teams ("MTL wins") and moments of the night ("A power-play goal").</li>
             <li>Nothing to do: squares tick themselves during the games. ✗ means the square can't happen tonight anymore.</li>
             <li>A line = 3 ticked squares in a row, a column or a diagonal. At the end of the night, the most lines wins (then the most squares).</li>
+            <li>The winner stays up the next day ("Last night's bingo"), and every bingo won earns a 🎱 trophy in the Trophy case.</li>
             <li>Tap a name in <b>The race</b> to see someone else's card.</li>
           </ul>`,
         },

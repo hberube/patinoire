@@ -20,10 +20,11 @@ document.addEventListener("DOMContentLoaded", async () => {
   bindChrome();
   try {
     const opt = p => fetchJson(p).catch(() => null);
-    [S.config, S.board, S.history, S.live, S.groups, S.trades, S.index, S.logos, S.insights, S.recap] = await Promise.all([
+    [S.config, S.board, S.history, S.live, S.groups, S.trades, S.index, S.logos, S.insights, S.recap, S.bingoArchive] = await Promise.all([
       fetchJson("data/config.json"), fetchJson("data/leaderboard.json"), opt("data/history.json"),
       fetchLive(), fetchJson("data/groups.json"), opt("data/trades_history.json"),
       opt("data/players_index.json"), opt("data/logos.json"), opt("data/insights.json"), opt("data/recap.json"),
+      opt("data/bingo.json"),
     ]);
   } catch (err) {
     document.querySelector("main").innerHTML = `<div class="card empty">${esc(t("loadError"))}</div>`;
@@ -422,6 +423,9 @@ function renderStandings() {
   if (hot && hot[1] > 0) {
     awards.push(["📈", t("awardHot"), standingOf(hot[0]).teamName, t("ptsLast7", { n: hot[1] })]);
   }
+  const lb = lastBingo();
+  if (lb) awards.push(["🎱", t("bingoYesterday"), lb.winners.map(id => standingOf(id)?.teamName).filter(Boolean).join(", "),
+    t("bingoScore", { lines: lb.lines, squares: lb.squares })]);
   const mvp = st.flatMap(s => s.rosterStats).sort((a, b) => b.stats.points - a.stats.points)[0];
   if (mvp) awards.push(["⭐", t("awardMvp"), mvp.name, t("mvpSub", { n: mvp.stats.points, k: S.owners.get(mvp.id) })]);
   document.getElementById("awards").innerHTML = awards.map(([icon, label, value, sub]) => `
@@ -796,6 +800,39 @@ function bingoCard(row) {
 
 const bingoScore = res => t("bingoScore", { lines: res.lines.length, squares: res.done });
 
+// Finished nights (data/bingo.json, saved by scripts/bingo_archive.py), replayed with the same
+// bingo.js code and the rosters of that night: [{ day, winners: [ids], lines, squares }], oldest first
+function bingoHistory() {
+  if (S.bingoHist) return S.bingoHist;
+  const out = [];
+  let rosters = null;
+  for (const n of S.bingoArchive?.nights || []) {
+    rosters = n.rosters || rosters;
+    if (!rosters) continue;
+    const standings = Object.entries(rosters).map(([participantId, list]) => ({
+      participantId, rank: standingOf(participantId)?.rank ?? 99,
+      rosterStats: list.map(([id, name, pos, team]) => ({ id, name, pos, team })),
+    }));
+    const live = { gameDay: n.day, games: n.games, goals: n.goals.map(([gameId, team, playerId, assistIds, period, periodType, time, strength, emptyNet]) =>
+      ({ gameId, team, playerId, assistIds, period, periodType, time, strength, emptyNet })) };
+    const rows = race(standings, live, new Set(standings.flatMap(s => s.rosterStats.map(p => p.id))));
+    const top = rows[0]?.res;
+    if (!top) continue;
+    out.push({ day: n.day, lines: top.lines.length, squares: top.done,
+      winners: rows.filter(r => r.res.lines.length === top.lines.length && r.res.done === top.done).map(r => r.s.participantId) });
+  }
+  return (S.bingoHist = out);
+}
+
+// The latest finished night, while it's still "last night" (until the evening after)
+function lastBingo() {
+  const last = bingoHistory().at(-1);
+  return last && Date.now() - new Date(`${last.day}T12:00:00`).getTime() < 36 * 3600 * 1000 ? last : null;
+}
+
+const bingoWinnerText = night => t(night.winners.length > 1 ? "bingoWinners" : "bingoWinner", {
+  teams: night.winners.map(id => standingOf(id)?.teamName).filter(Boolean).join(", "), lines: night.lines, squares: night.squares });
+
 function renderBingo() {
   const el = document.getElementById("bingo-root");
   if (!el) return;  // tolerate a cached older index.html right after a deploy
@@ -803,6 +840,7 @@ function renderBingo() {
   if (!rows.length) { el.innerHTML = `<div class="card empty">${esc(t("bingoNone"))}</div>`; return; }
   const over = rows[0].res.over, top = rows[0].res;
   const winners = over ? rows.filter(r => r.res.lines.length === top.lines.length && r.res.done === top.done) : [];
+  const prev = lastBingo()?.day !== live.gameDay ? lastBingo() : null;  // last night's winner, once tonight's cards are out
   S.bingoPick = rows.some(r => r.s.participantId === S.bingoPick) ? S.bingoPick : mine || rows[0].s.participantId;
   const shown = rows.find(r => r.s.participantId === S.bingoPick);
   const myRank = rows.findIndex(r => r.s.participantId === mine) + 1;
@@ -811,7 +849,8 @@ function renderBingo() {
     <div class="section-head"><h2>${esc(t(over ? "bingoOf" : "bingoTonight", { date: fmtDay(live.gameDay, true) }))}</h2>
       <span class="muted">${esc(t("bingoHow"))}</span></div>
     ${winners.length ? `<div class="card card-pad bingo-winner">🏆 ${esc(t(winners.length > 1 ? "bingoWinners" : "bingoWinner",
-      { teams: winners.map(r => r.s.teamName).join(", "), lines: top.lines.length, squares: top.done }))}</div>` : ""}
+      { teams: winners.map(r => r.s.teamName).join(", "), lines: top.lines.length, squares: top.done }))}</div>`
+      : prev ? `<div class="card card-pad bingo-winner">🏆 ${esc(fmtDay(prev.day, true))} · ${esc(bingoWinnerText(prev))}</div>` : ""}
     <div class="bingo-layout">
       <div class="card card-pad">
         ${!mine ? `<p class="bingo-login muted">${esc(t("bingoLogin"))} <button class="btn btn-sm btn-primary" id="bingo-login">${esc(t("login"))}</button></p>` : ""}
@@ -1080,7 +1119,7 @@ function renderDuels() {
 }
 
 // ---------- Trophy case and pool records (all from history.json: points after each game day) ----------
-const TROPHIES = [["month", "🏆"], ["duel", "🥊"], ["star", "⭐"], ["crown", "👑"]];
+const TROPHIES = [["month", "🏆"], ["duel", "🥊"], ["bingo", "🎱"], ["star", "⭐"], ["crown", "👑"]];
 
 function trophies() {
   const h = S.history;
@@ -1088,7 +1127,8 @@ function trophies() {
   if (S.trophies?.of === h) return S.trophies;
   const ids = S.board.standings.map(s => s.participantId).filter(id => h.series[id]);
   const at = (id, i) => (i < 0 ? 0 : h.series[id][i] ?? 0);
-  const won = Object.fromEntries(ids.map(id => [id, { month: 0, duel: 0, star: 0, crown: 0 }]));
+  const won = Object.fromEntries(ids.map(id => [id, { month: 0, duel: 0, bingo: 0, star: 0, crown: 0 }]));
+  for (const night of bingoHistory()) for (const id of night.winners) if (won[id]) won[id].bingo++;
   const records = [];
   const best = (rows, key) => rows.reduce((top, r) => (!top || r[key] > top[key] ? r : top), null);  // earliest wins ties
 
@@ -1170,7 +1210,7 @@ function renderTrophies() {
   const el = document.getElementById("trophies"), recEl = document.getElementById("records");
   if (!el || !recEl) return;  // tolerate a cached older index.html right after a deploy
   const tr = trophies(), mine = me()?.participantId;
-  const weight = w => w.month * 100 + w.duel * 10 + w.star * 3 + w.crown;
+  const weight = w => w.month * 100 + w.duel * 10 + w.bingo * 5 + w.star * 3 + w.crown;
   const rows = tr ? S.board.standings.filter(s => tr.won[s.participantId] && weight(tr.won[s.participantId]) > 0)
     .sort((a, b) => weight(tr.won[b.participantId]) - weight(tr.won[a.participantId]) || a.rank - b.rank) : [];
   el.innerHTML = rows.length ? `<div class="trophy-grid">${rows.map(s => `
