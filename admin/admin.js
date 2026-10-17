@@ -301,6 +301,32 @@ ${site}?q=1-1#faq
 Envoyez-moi le message généré par le site à partir de votre propre courriel ou téléphone.
 
 Hugo` },
+    { id: "bingo", label: "Nouveau : le Bingo du soir",
+      subject: "Le Pool à Hugo — nouveau : le Bingo du soir! 🎱",
+      body: `Bonjour à tous!
+
+Nouveau sur le site : le Bingo du soir.
+
+Chaque soir de match, vous recevez votre propre carte de bingo (9 cases, le centre est gratuit). Les cases viennent des matchs du soir :
+- vos propres joueurs (« Suzuki marque », « Hutson obtient un point »)
+- des équipes de la LNH (« MTL gagne », « BOS marque 3 buts ou + »)
+- des moments de la soirée (« 2 matchs en prolongation », « Un but dans un filet désert »)
+
+Rien à faire : les cases se cochent toutes seules pendant les matchs. Si le site est ouvert, une alerte apparaît quand une de vos cases se coche ou que vous complétez une ligne. À la fin de la soirée, le plus de lignes gagne (puis le plus de cases).
+
+Votre carte arrive vers midi les jours de match. Connectez-vous pour voir la vôtre, et touchez un nom dans « La course » pour voir celle des autres :
+${site}#bingo
+
+Les règles en détail :
+${site}?q=2-5#faq
+
+Aussi nouveau sur le site :
+- une alerte « BUT! » quand un joueur du pool marque, avec un klaxon à activer dans « Ce soir »
+- les chances de chaque équipe de gagner le pool, dans le classement
+- la vitrine des trophées et les records du pool, dans la Gazette
+
+Bonne soirée de hockey!
+Hugo` },
     { id: "blank", label: "Message libre", subject: "Le Pool à Hugo", body: `Bonjour à tous!\n\n\n\nHugo\n${site}` },
   ];
 }
