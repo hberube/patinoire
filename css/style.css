@@ -767,3 +767,57 @@ body.arena-open { overflow: hidden; }
 .tv-go { font-size: 17px; padding: 12px 22px; }
 .tv-tips { text-align: left; font-size: 13px; color: var(--text-2); margin: 8px 0 0; padding-left: 18px; display: grid; gap: 6px; }
 .tv-tips code { word-break: break-all; }
+
+/* === feature: cards (js/cards.js) === */
+.hcard { --rx: 0deg; --ry: 0deg; --mx: 50%; --my: 50%; --c1: #e2e8f0; --c2: #64748b;
+  position: relative; width: 280px; aspect-ratio: 5 / 7; border-radius: 18px; padding: 8px; cursor: grab;
+  background: linear-gradient(145deg, var(--c1), var(--c2)); box-shadow: 0 10px 30px rgba(0,0,0,.35);
+  transform: perspective(900px) rotateX(var(--rx)) rotateY(var(--ry)); transition: transform .15s ease-out; touch-action: pan-y; }
+.hcard.small { width: 170px; padding: 5px; border-radius: 12px; }
+.hcard.r-legend { --c1: #fde68a; --c2: #b7791f; }
+.hcard.r-epic { --c1: #d8b4fe; --c2: #6d28d9; }
+.hcard.r-rare { --c1: #93c5fd; --c2: #1d4ed8; }
+.hc-inner { height: 100%; border-radius: 12px; background: #0d1b2a; color: #eef4fa; display: grid; justify-items: center;
+  align-content: start; gap: 4px; padding: 12px 10px; text-align: center; overflow: hidden; }
+.hcard.small .hc-inner { border-radius: 8px; padding: 7px 6px; gap: 2px; }
+.hc-top { width: 100%; display: flex; justify-content: space-between; font: 800 13px/1 var(--ff-display); letter-spacing: .04em; color: var(--c1); text-transform: uppercase; }
+.hcard.small .hc-top { font-size: 9px; }
+.hc-img { margin: 8px 0 4px; }
+.hc-av { width: 120px; height: 120px; box-shadow: 0 0 0 4px var(--c1); border-radius: 50%; }
+.hcard.small .hc-av { width: 64px; height: 64px; box-shadow: 0 0 0 3px var(--c1); }
+.hcard.small .hc-img { margin: 3px 0 1px; }
+.hc-name { font: 800 22px/1.05 var(--ff-display); }
+.hcard.small .hc-name { font-size: 14px; }
+.hc-who { font-size: 12px; opacity: .7; }
+.hcard.small .hc-who { font-size: 9px; }
+.hc-stats { width: 100%; display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 8px; padding-top: 8px; border-top: 1px solid rgba(255,255,255,.12); }
+.hcard.small .hc-stats { margin-top: 3px; padding-top: 3px; }
+.hc-stats b { display: block; font: 800 24px/1 var(--ff-display); color: var(--c1); }
+.hcard.small .hc-stats b { font-size: 15px; }
+.hc-stats small { font-size: 10px; opacity: .7; }
+.hcard.small .hc-stats small { font-size: 7px; }
+.hc-star { font-size: 12px; margin-top: 6px; opacity: .9; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
+.hcard.small .hc-star { font-size: 8px; margin-top: 2px; }
+.hc-foot { margin-top: auto; font-size: 10px; opacity: .5; }
+.hcard.small .hc-foot { font-size: 7px; }
+.hc-shine { position: absolute; inset: 0; border-radius: inherit; pointer-events: none; mix-blend-mode: color-dodge; opacity: .35;
+  background: radial-gradient(circle at var(--mx) var(--my), rgba(255,255,255,.75), transparent 45%); }
+.hcard.r-legend .hc-shine, .hcard.r-epic .hc-shine { opacity: .6;
+  background: radial-gradient(circle at var(--mx) var(--my), rgba(255,255,255,.8), transparent 40%),
+    linear-gradient(115deg, transparent 20%, rgba(255,0,150,.35) 35%, rgba(0,220,255,.35) 50%, rgba(255,230,0,.35) 65%, transparent 80%) var(--mx) var(--my) / 250% 250%; }
+.hcard.locked { background: var(--surface-2); box-shadow: none; cursor: default; }
+.hcard.locked .hc-inner { background: transparent; color: var(--text-3); place-content: center; font-size: 26px; border: 2px dashed var(--border); }
+.hcard.locked small { font-size: 12px; }
+.cards-hero { display: flex; gap: 22px; align-items: center; flex-wrap: wrap; margin-bottom: 8px; }
+.cards-side { display: grid; gap: 10px; max-width: 340px; font-size: 14px; }
+.album { padding: 18px; }
+.album-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; }
+.album-head h2 { margin: 0; }
+.album-counts { display: flex; gap: 6px; flex-wrap: wrap; }
+.album-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 16px; justify-items: center; }
+.album-slot { display: grid; gap: 8px; justify-items: center; }
+.tag.r-legend { background: #fde68a; color: #6b4410; } .tag.r-epic { background: #e9d5ff; color: #4c1d95; }
+.tag.r-rare { background: #dbeafe; color: #1e3a8a; } .tag.r-common { background: var(--surface-2); }
+#cards-modal { max-width: min(900px, calc(100vw - 24px)); }
+@media (prefers-reduced-motion: reduce) { .hcard { transform: none !important; } }
+/* === end feature: cards === */

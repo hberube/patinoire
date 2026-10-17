@@ -108,6 +108,16 @@ const FAQ = {
           <p>Tout ça, c'est pour le plaisir : seuls les points comptent au classement.</p>`,
         },
         {
+          // feature: cards
+          q: "C'est quoi, les cartes de hockey?",
+          a: `<p>Chaque équipe reçoit une carte de hockey par semaine (onglet <b>Équipes</b>), avec ses points de la semaine, son rang et son total. Sa rareté dépend du rang de la semaine : 1er <b>légendaire</b>, 2e-3e <b>épique</b>, 4e-8e <b>rare</b>, les autres <b>commune</b>. Bougez la carte (ou votre téléphone) pour voir le reflet, gardez-la avec <b>Enregistrer l'image</b>, et retrouvez toutes vos cartes dans <b>Mon album</b>.</p>`,
+        },
+        {
+          // feature: radio
+          q: "C'est quoi, Les Ondes de la Patinoire?",
+          a: `<p>Une petite émission de radio de 2-3 minutes sur la soirée d'hier, chaque matin de match : deux animateurs québécois commentent le pool et taquinent les participants. Touchez ▶ sur la page d'accueil; l'émission continue de jouer pendant que vous visitez le reste du site. Le texte est écrit par Claude à partir des vrais résultats, et les voix sont générées par ElevenLabs.</p>`,
+        },
+        {
           // feature: arena
           q: "C'est quoi, le mode Aréna?",
           a: `<p>Un écran géant pour regarder les matchs en famille : ouvrez l'onglet <b>📺 Télé</b> et touchez <b>Lancer l'Aréna</b> (ou ouvrez le lien du site suivi de <code>#tv</code> sur la télé). Le classement se met à jour en direct avec les points de la soirée, chaque but d'un joueur du pool s'affiche en plein écran avec le klaxon, et le bingo et les pointages défilent. Touchez <b>Plein écran</b> pour cacher le reste; l'écran reste allumé.</p>`,
@@ -232,6 +242,16 @@ const FAQ = {
             <li>During games, the <b>Tonight</b> tab shows an alert when a pool player scores. Tap <b>🔕 Horn</b> to hear it too.</li>
           </ul>
           <p>It's all for fun: only points count in the standings.</p>`,
+        },
+        {
+          // feature: cards
+          q: "What are the hockey cards?",
+          a: `<p>Every team gets a hockey card each week (<b>Teams</b> tab), with its points that week, its rank and its total. Rarity comes from the week's rank: 1st <b>legendary</b>, 2nd-3rd <b>epic</b>, 4th-8th <b>rare</b>, the rest <b>common</b>. Move the card (or tilt your phone) to see the shine, keep it with <b>Save image</b>, and find all your cards in <b>My album</b>.</p>`,
+        },
+        {
+          // feature: radio
+          q: "What's Les Ondes de la Patinoire?",
+          a: `<p>A 2-3 minute radio show about last night, every morning after games: two Quebecois hosts talk about the pool and tease the participants (in French). Tap ▶ on the front page; the show keeps playing while you browse the rest of the site. Claude writes it from the real results, and ElevenLabs makes the voices.</p>`,
         },
         {
           // feature: arena

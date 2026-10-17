@@ -8,6 +8,7 @@ import { faqContent } from "./faq.js";
 import { seededShuffle, makeCard, evaluate, race } from "./bingo.js";
 import { renderRadio } from "./radio.js";  // feature: radio (config.features.radio)
 import { openArena, arenaUpdate } from "./arena.js";  // feature: arena (config.features.arena)
+import { renderCards, openAlbum } from "./cards.js";  // feature: cards (config.features.cards)
 
 const S = {
   tab: "standings",
@@ -537,8 +538,14 @@ function bindTeamOpeners(root) {
 }
 
 // ---------- Teams ----------
+// feature: cards: collectible weekly hockey cards (js/cards.js)
+const cardsOn = () => S.config.features?.cards !== false;
+const cardDeps = () => ({ S, avatar, standingOf, weekStart, weekScores, fmtDay, me });
+
 function renderTeams() {
   const mine = me()?.participantId;
+  const cardsEl = document.getElementById("cards-root");
+  if (cardsEl) cardsOn() ? renderCards(cardsEl, cardDeps()) : (cardsEl.innerHTML = "");
   renderMyTeam();
   const list = [...S.board.standings].sort((a, b) => (b.participantId === mine) - (a.participantId === mine) || a.rank - b.rank);
   document.getElementById("teams-grid").innerHTML = list.map(s => {
@@ -682,7 +689,8 @@ function openTeam(id) {
     <div class="modal-body">
       ${extras ? `<div class="team-extras">${extras}</div>` : ""}
       <div class="view-toggle" role="group">${["table", "rink"].map(v => `
-        <button class="btn btn-sm" data-view="${v}" aria-pressed="${(S.teamView || "table") === v}">${esc(t(v === "rink" ? "viewRink" : "viewTable"))}</button>`).join("")}</div>
+        <button class="btn btn-sm" data-view="${v}" aria-pressed="${(S.teamView || "table") === v}">${esc(t(v === "rink" ? "viewRink" : "viewTable"))}</button>`).join("")}
+        ${cardsOn() ? `<button class="btn btn-sm" id="team-cards">🃏 ${esc(t("cardsButton"))}</button>` : ""}</div>
       <div id="team-view"></div>
       ${former ? `<h3>${esc(t("former"))}</h3>${former}` : ""}
       <p class="muted" style="font-size:13px;margin:14px 0 0">${esc(t("pointsRule"))}</p>
@@ -695,6 +703,7 @@ function openTeam(id) {
     modal.querySelector("#team-view").innerHTML = view === "rink" ? rinkView(s.rosterStats) : tables;
   };
   modal.querySelectorAll("[data-view]").forEach(b => b.addEventListener("click", () => { S.teamView = b.dataset.view; showView(); }));
+  modal.querySelector("#team-cards")?.addEventListener("click", () => openAlbum(id, cardDeps()));  // feature: cards
   showView();
   modal.querySelector("#close-team").addEventListener("click", () => modal.close());
   modal.showModal();
