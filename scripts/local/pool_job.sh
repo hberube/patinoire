@@ -17,13 +17,23 @@ echo "=== $(date) $MODE"
 
 [ -d "$BOT/.git" ] || git clone -q "$REPO" "$BOT" || exit 1
 cd "$BOT" || exit 1
-sync_main() { git fetch -q origin main && git checkout -q -B main origin/main && git reset -q --hard origin/main; }
+sync_main() {  # also clears a rebase or merge an earlier run left half done
+  git rebase --abort 2>/dev/null; git merge --abort 2>/dev/null
+  git fetch -q origin main && git checkout -q -f -B main origin/main && git reset -q --hard origin/main
+}
 
 push_data() {  # push_data "<commit message>": commit data/ changes, if any, and push them
   git add -A data
   git diff --staged --quiet && { echo "$1: nothing new"; return 0; }
   git -c user.name="patinoire-bot" -c user.email="patinoire-bot@users.noreply.github.com" commit -qm "$1"
-  for _ in 1 2 3; do git pull -q --rebase origin main && git push -q origin main && { echo "$1: pushed"; return 0; }; sleep 30; done
+  for _ in 1 2 3; do
+    git pull -q --rebase origin main && git push -q origin main && { echo "$1: pushed"; return 0; }
+    # A conflict means a GitHub job just pushed the same files from the same NHL data: keep theirs
+    if [ -d .git/rebase-merge ] || [ -d .git/rebase-apply ]; then
+      sync_main; echo "$1: another job published the same update first, kept theirs"; return 0
+    fi
+    sleep 30
+  done
   echo "$1: push failed"; return 1
 }
 
