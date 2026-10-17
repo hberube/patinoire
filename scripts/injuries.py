@@ -4,7 +4,8 @@
 The NHL's public API has no injury list, so this reads ESPN's public NHL injury feed and keeps the
 players of the pool (every player of the draft rounds, picked or not), matched by name. Statuses:
   ir    injured reserve        out   ruled out
-  susp  suspended              dtd   day-to-day (often plays: still drawn in the bingo)
+  susp  suspended              dtd   day-to-day
+Every injured player is left off the bingo cards, day-to-day included.
 
 Run by insights.py (each morning and after the last game). update_live.py also calls out_ids()
 for a game day's first live.json, so that day's bingo cards leave out players who won't play.
@@ -16,7 +17,6 @@ from pool_lib import get_json, load, now_iso, save
 
 URL = "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/injuries"
 STATUS = {"Injured Reserve": "ir", "Out": "out", "Day-To-Day": "dtd"}
-NOT_PLAYING = {"ir", "out", "susp"}
 
 
 def pool_players():
@@ -49,13 +49,14 @@ def fetch():
 
 
 def out_ids(injured):
-    return sorted(x["id"] for x in injured if x["status"] in NOT_PLAYING)
+    """Ids left off the bingo cards: every injured or suspended player."""
+    return sorted(x["id"] for x in injured)
 
 
 def build():
     injured = fetch()
     save("injuries.json", {"updated": now_iso(), "source": "ESPN", "players": injured})
-    print(f"injuries.json: {len(injured)} pool players injured ({len(out_ids(injured))} not playing)")
+    print(f"injuries.json: {len(injured)} pool players injured or suspended")
 
 
 if __name__ == "__main__":

@@ -33,8 +33,8 @@ DONE_STATES = {"OFF", "FINAL"}
 
 
 def build_live(day=None, previous=None):
-    """`previous` is the live.json already published, if any: a game day keeps the injury list of its
-    first live.json (the "out" ids, left off the bingo cards) so cards never change during the day."""
+    """`previous` is the live.json already published, if any: once the day's first game has started,
+    its injury list (the "out" ids, left off the bingo cards) stays as it was."""
     day = day or game_day_now()
     data = get_json(f"https://api-web.nhle.com/v1/score/{day}") or {"games": []}
     pool_ids = {p["id"] for g in load("groups.json", []) for p in g["players"]}
@@ -71,15 +71,18 @@ def build_live(day=None, previous=None):
                     line = players.setdefault(str(pid), {"goals": 0, "assists": 0, "gameId": g["id"]})
                     line[kind] += 1
     live = {"gameDay": day, "games": games, "players": players, "goals": goals}
-    if previous and previous.get("gameDay") == day:
-        if "out" in previous:
-            live["out"] = previous["out"]
+    # Injured players are left off the bingo cards: the list follows the news until the day's
+    # first puck drop, then stays as it was so cards never change once games are on
+    kept = previous.get("out") if previous and previous.get("gameDay") == day else None
+    started = any(g["state"] not in ("FUT", "PRE") for g in games)
+    if kept is not None and started:
+        live["out"] = kept
     else:
         try:
             live["out"] = injuries.out_ids(injuries.fetch())
-        except Exception as e:  # noqa: BLE001 - no injury list: that day's cards just keep everyone
+        except Exception as e:  # noqa: BLE001 - keep the last list, or nobody left off
             print(f"warning: injuries unavailable ({e})")
-            live["out"] = []
+            live["out"] = kept or []
     return live
 
 

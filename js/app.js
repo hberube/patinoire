@@ -902,7 +902,7 @@ function renderInjuries() {
         <div class="pname">${esc(x.name)} ${logo(x.team)}</div>
         <div class="muted" style="font-size:13px">${esc([injType(x.type), x.returnDate && t("injReturn", { date: fmtDay(x.returnDate) })].filter(Boolean).join(" · "))}</div></div>
         <span class="inj-status ${x.status}">${esc(t(`st_${x.status}`))}</span></div>
-      <div class="hl-foot">${ownerStack(x.owners)}<span class="muted" style="font-size:12px">${esc(t("ownedBy", { n: x.owners.length }))}${x.status !== "dtd" ? ` · ${esc(t("injBingo"))}` : ""}</span></div>
+      <div class="hl-foot">${ownerStack(x.owners)}<span class="muted" style="font-size:12px">${esc(t("ownedBy", { n: x.owners.length }))} · ${esc(t("injBingo"))}</span></div>
       ${x.note ? `<details class="inj-note"><summary>${esc(t("injNews", { date: fmtDay(x.noteDate || x.returnDate) }))}</summary><p>${esc(x.note)}</p></details>` : ""}
     </div>`;
   const mineList = list.filter(x => mine.has(x.id));

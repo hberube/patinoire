@@ -82,13 +82,15 @@ export function makeCard(standing, live, poolIds) {
   const teams = games.flatMap(g => [g.away.abbrev, g.home.abbrev]);
 
   // Personal: the participant's skaters playing tonight (forwards: goal or point, defence: point),
-  // minus the injured and suspended (live.out, frozen with the day's first live.json)
+  // never an injured or suspended one (live.out). They're skipped after the draw, with the same
+  // random numbers used, so leaving a player off only replaces his square: the rest of the card
+  // stays as it was (cards drawn before the injury list existed keep everything else)
   const out = new Set(live.out || []);
-  const mine = standing.rosterStats.filter(p => p.pos !== "G" && teams.includes(p.team) && !out.has(p.id));
+  const mine = standing.rosterStats.filter(p => p.pos !== "G" && teams.includes(p.team));
   const personal = [];
   for (const p of seededShuffle(mine, `${standing.participantId}|${live.gameDay}|p`)) {
     const kind = p.pos === "F" && rand() < 0.5 ? "goal" : "point";
-    personal.push({ kind, vars: { id: p.id, name: lastName(p.name), team: p.team } });
+    if (!out.has(p.id)) personal.push({ kind, vars: { id: p.id, name: lastName(p.name), team: p.team } });
   }
   const teamSq = seededShuffle(teams, `${standing.participantId}|${live.gameDay}|t`)
     .map((team, i) => ({ kind: i % 2 ? "three" : "win", vars: { team } }));
