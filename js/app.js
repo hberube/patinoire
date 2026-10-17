@@ -5,13 +5,14 @@ import { windowOpen, tradesLeft, roundOptions, encodeTrade } from "./trade.js";
 import { renderChart } from "./chart.js";
 import { prepareImage } from "./image.js";
 import { faqContent } from "./faq.js";
+import { seededShuffle, makeCard, evaluate, race } from "./bingo.js";
 
 const S = {
   tab: "standings",
   chartPicks: null,
   trade: { outId: null, inId: null, code: null },
 };
-const TABS = ["standings", "gazette", "teams", "chart", "tonight", "trades", "faq"];
+const TABS = ["standings", "gazette", "teams", "chart", "tonight", "bingo", "trades", "faq"];
 const POS_ICON = { F: "🏒", D: "🛡️", G: "🥅" };
 
 // ---------- Boot ----------
@@ -73,10 +74,13 @@ async function refreshLive() {
   try {
     const live = await fetchLive();
     if (live && live.updated !== S.live?.updated) {
-      const goals = newPoolGoals(S.live, live);
+      const goals = newPoolGoals(S.live, live), bingo = bingoNews(S.live, live);
       S.live = live;
       renderTonight();
-      if (goals.length) goalAlert(goals);
+      renderBingo();
+      // Bingo news first (it's yours), then the goals; one tap opens the matching tab
+      const parts = [bingo, goals.length && goalRows(goals)].filter(Boolean);
+      if (parts.length) showToast(parts.join(""), bingo ? "bingo" : "tonight");
     }
   } finally { liveBusy = false; }
 }
@@ -95,13 +99,21 @@ function newPoolGoals(before, after) {
   return out;
 }
 
-function goalAlert(goals) {
+function showToast(html, tab) {
   let box = document.getElementById("goal-toast");
   if (!box) {
     box = Object.assign(document.createElement("div"), { id: "goal-toast", role: "status" });
     box.setAttribute("aria-live", "polite");
     document.body.append(box);
   }
+  box.innerHTML = `<button class="goal-toast" title="${esc(t(tab))}">${html}</button>`;
+  box.querySelector("button").addEventListener("click", () => { box.innerHTML = ""; showTab(tab); });
+  clearTimeout(box.timer);
+  box.timer = setTimeout(() => { box.innerHTML = ""; }, 15000);
+  if (hornOn()) playHorn();
+}
+
+function goalRows(goals) {
   const mine = me()?.participantId, N = S.board.standings.length;
   const playerOf = id => S.board.standings.flatMap(s => s.rosterStats).find(p => p.id === id);
   const ownersOf = id => S.board.standings.filter(s => s.rosterStats.some(p => p.id === id));
@@ -109,8 +121,7 @@ function goalAlert(goals) {
   goals.sort((a, b) => ownersOf(b.id).some(s => s.participantId === mine) - ownersOf(a.id).some(s => s.participantId === mine)
     || ownersOf(b.id).length - ownersOf(a.id).length);
   const shown = goals.slice(0, 3);
-  box.innerHTML = `<button class="goal-toast" title="${esc(t("tonight"))}">
-    ${shown.map(g => {
+  return `${shown.map(g => {
       const p = playerOf(g.id), owners = ownersOf(g.id), isMine = owners.some(s => s.participantId === mine);
       const names = owners.map(s => s.teamName);
       const who = owners.length === N ? t("goalForAll", { n: g.n })
@@ -120,12 +131,7 @@ function goalAlert(goals) {
         <span class="grow"><b>🚨 ${esc(t("goalAlert", { name: p.name, team: p.team }))}${g.n > 1 ? ` ×${g.n}` : ""}</b>
           <span class="gt-sub">${isMine ? `<b>${esc(t("goalMine"))}</b> ` : ""}${esc(who)}</span></span></span>`;
     }).join("")}
-    ${goals.length > 3 ? `<span class="gt-sub">${esc(t("moreGoals", { n: goals.length - 3 }))}</span>` : ""}
-  </button>`;
-  box.querySelector("button").addEventListener("click", () => { box.innerHTML = ""; showTab("tonight"); });
-  clearTimeout(box.timer);
-  box.timer = setTimeout(() => { box.innerHTML = ""; }, 15000);
-  if (hornOn()) playHorn();
+    ${goals.length > 3 ? `<span class="gt-sub">${esc(t("moreGoals", { n: goals.length - 3 }))}</span>` : ""}`;
 }
 
 // A short goal horn made on the fly (no sound file); browsers only allow it after a tap on the page,
@@ -243,6 +249,7 @@ function renderAll() {
   renderTeams();
   if (S.tab === "chart") renderTrajectory();
   renderTonight();
+  renderBingo();
   renderGazette();
   renderFaq();
   renderTrades();
@@ -735,7 +742,11 @@ function renderTonight() {
     if (!g) return "";
     return `${esc(p.team)} ${p.team === g.home.abbrev ? "vs" : "@"} ${esc(p.team === g.home.abbrev ? g.away.abbrev : g.home.abbrev)}`;
   };
-  document.getElementById("tonight-rank").innerHTML = rows.length ? `
+  // Link to the bingo with the signed-in participant's score
+  const myBingo = bingoRace(live).find(r => r.s.participantId === mine);
+  const bingoLink = myBingo ? `<a class="card bingo-link" href="#bingo">🎱 <span class="grow">${esc(t("bingoMine"))}</span>
+    <span class="muted">${esc(bingoScore(myBingo.res))}</span> →</a>` : "";
+  document.getElementById("tonight-rank").innerHTML = bingoLink + (rows.length ? `
     <div class="card card-pad" style="margin-bottom:12px"><h3>${esc(t("tonightPoints"))}</h3>
       <div class="tonight-list">${rows.map(r => `
         <details data-id="${esc(r.s.participantId)}" class="${r.s.participantId === mine ? "me" : ""}" ${open.has(r.s.participantId) ? "open" : ""}>
@@ -750,7 +761,80 @@ function renderTonight() {
               <span class="muted">${vs(x.p, x.tl)}</span></span>
               <span class="tl-line">${esc(statLine(x.tl))}</span><b class="num">+${x.pts}</b></li>`).join("")}</ul>
         </details>`).join("")}</div>
-      <p class="muted" style="font-size:12px;margin:8px 0 0">${esc(t("tonightNote"))}</p></div>` : "";
+      <p class="muted" style="font-size:12px;margin:8px 0 0">${esc(t("tonightNote"))}</p></div>` : "");
+}
+
+// ---------- Bingo du soir (cards and scoring in bingo.js) ----------
+const poolIds = () => (S.poolIds ||= new Set(S.board.standings.flatMap(s => s.rosterStats.map(p => p.id))));
+const bingoRace = live => (live?.games?.length ? race(S.board.standings, live, poolIds()) : []);
+const squareLabel = sq => t(`bingo_${sq.kind}${sq.vars.n > 1 && sq.kind !== "pool" ? "_n" : ""}`, sq.vars);
+
+// What a refresh changed on the signed-in participant's card: newly ticked squares and new lines
+function bingoNews(before, after) {
+  const s = standingOf(me()?.participantId);
+  if (!s || !before || before.gameDay !== after.gameDay) return "";
+  const card = makeCard(s, after, poolIds());
+  if (!card) return "";
+  const a = evaluate(card, before), b = evaluate(card, after);
+  const ticked = card.squares.filter((sq, i) => b.states[i] === true && a.states[i] !== true);
+  if (!ticked.length) return "";
+  const lines = b.lines.length - a.lines.length;
+  return `<span class="gt-row mine"><span class="bingo-ball" aria-hidden="true">🎱</span><span class="grow">
+    <b>${esc(lines > 0 ? t("bingoLine", { n: b.lines.length }) : t("bingoTicked"))}</b>
+    <span class="gt-sub">${esc(ticked.map(squareLabel).join(" · "))}</span></span></span>`;
+}
+
+function bingoCard(row) {
+  const { card, res } = row, inLine = new Set(res.lines.flat());
+  return `<div class="bingo-card" role="grid" aria-label="${esc(t("bingo"))}">${card.squares.map((sq, i) => {
+    const st = res.states[i], cls = sq.kind === "free" ? "free" : st === true ? "done" : st === false ? "dead" : "open";
+    const mark = sq.kind === "free" ? "⭐" : st === true ? "✅" : st === false ? "✗" : "";
+    return `<div class="bsq ${cls} ${inLine.has(i) ? "line" : ""}" role="gridcell">
+      ${mark ? `<span class="bmark" aria-hidden="true">${mark}</span>` : ""}<span>${esc(sq.kind === "free" ? t("bingoFree") : squareLabel(sq))}</span></div>`;
+  }).join("")}</div>`;
+}
+
+const bingoScore = res => t("bingoScore", { lines: res.lines.length, squares: res.done });
+
+function renderBingo() {
+  const el = document.getElementById("bingo-root");
+  if (!el) return;  // tolerate a cached older index.html right after a deploy
+  const live = S.live, rows = bingoRace(live), mine = me()?.participantId;
+  if (!rows.length) { el.innerHTML = `<div class="card empty">${esc(t("bingoNone"))}</div>`; return; }
+  const over = rows[0].res.over, top = rows[0].res;
+  const winners = over ? rows.filter(r => r.res.lines.length === top.lines.length && r.res.done === top.done) : [];
+  S.bingoPick = rows.some(r => r.s.participantId === S.bingoPick) ? S.bingoPick : mine || rows[0].s.participantId;
+  const shown = rows.find(r => r.s.participantId === S.bingoPick);
+  const myRank = rows.findIndex(r => r.s.participantId === mine) + 1;
+
+  el.innerHTML = `
+    <div class="section-head"><h2>${esc(t(over ? "bingoOf" : "bingoTonight", { date: fmtDay(live.gameDay, true) }))}</h2>
+      <span class="muted">${esc(t("bingoHow"))}</span></div>
+    ${winners.length ? `<div class="card card-pad bingo-winner">🏆 ${esc(t(winners.length > 1 ? "bingoWinners" : "bingoWinner",
+      { teams: winners.map(r => r.s.teamName).join(", "), lines: top.lines.length, squares: top.done }))}</div>` : ""}
+    <div class="bingo-layout">
+      <div class="card card-pad">
+        ${!mine ? `<p class="bingo-login muted">${esc(t("bingoLogin"))} <button class="btn btn-sm btn-primary" id="bingo-login">${esc(t("login"))}</button></p>` : ""}
+        ${shown ? `<div class="bingo-head">${avatar(shown.s, "av av-md")}<div style="min-width:0;flex:1">
+            <div class="duel-name">${esc(shown.s.participantId === mine ? t("bingoMine") : shown.s.teamName)}</div>
+            <div class="muted" style="font-size:13px">${esc(bingoScore(shown.res))}${shown.s.participantId === mine && myRank ? ` · ${esc(t("bingoRank", { n: myRank, k: rows.length }))}` : ""}</div></div></div>
+          ${bingoCard(shown)}` : ""}
+      </div>
+      <div class="card card-pad"><h3>${esc(t("bingoRace"))}</h3>
+        <div class="bingo-race">${rows.map((r, i) => `
+          <button class="brow ${r.s.participantId === S.bingoPick ? "shown" : ""} ${r.s.participantId === mine ? "me" : ""}" data-pick="${esc(r.s.participantId)}">
+            <span class="num muted brank">${i + 1}</span>${avatar(r.s, "av", "logo")}
+            <span class="grow"><span class="name">${esc(r.s.teamName)}</span><span class="who"> · ${esc(r.s.participantName)}</span></span>
+            <span class="blines num" title="${esc(bingoScore(r.res))}">${r.res.lines.length ? `🎱 ${r.res.lines.length}` : ""}</span>
+            <span class="bsquares num">${r.res.done}/8</span></button>`).join("")}</div>
+      </div>
+    </div>`;
+  el.querySelector("#bingo-login")?.addEventListener("click", openLogin);
+  el.querySelectorAll("[data-pick]").forEach(b => b.addEventListener("click", () => {
+    S.bingoPick = b.dataset.pick;
+    renderBingo();
+    if (matchMedia("(max-width: 720px)").matches) el.querySelector(".bingo-card")?.scrollIntoView({ behavior: "smooth", block: "center" });
+  }));
 }
 
 // ---------- Trades ----------
@@ -917,15 +1001,6 @@ function weekStart(iso) {
   const d = new Date(`${iso}T12:00:00`);
   d.setDate(d.getDate() - ((d.getDay() + 6) % 7));
   return d.toISOString().slice(0, 10);
-}
-
-function seededShuffle(items, seedText) {
-  let seed = 0;
-  for (const ch of seedText) seed = (seed * 31 + ch.charCodeAt(0)) >>> 0;
-  const rand = () => { seed = (seed + 0x6D2B79F5) >>> 0; let x = seed; x = Math.imul(x ^ (x >>> 15), x | 1); x ^= x + Math.imul(x ^ (x >>> 7), x | 61); return ((x ^ (x >>> 14)) >>> 0) / 4294967296; };
-  const a = [...items];
-  for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(rand() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
-  return a;
 }
 
 function weekScores(monday) {

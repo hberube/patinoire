@@ -7,6 +7,7 @@ live-scores.yml starts this once and it keeps running:
 
   python scripts/update_live.py                       # one update -> data/live.json (local testing)
   python scripts/update_live.py --loop --out live-out # game-night loop used by live-scores.yml
+  python scripts/update_live.py --day 2026-10-16      # a past night (testing the bingo, see js/bingo.js)
 
 In loop mode it refreshes every 2 minutes until every game of the night is final (or ~5.5 h),
 and publishes each change by force-pushing a single-commit `live` branch from the --out
@@ -30,13 +31,13 @@ MAX_RUNTIME = 5.5 * 3600  # GitHub jobs stop at 6 h
 DONE_STATES = {"OFF", "FINAL"}
 
 
-def build_live():
-    day = game_day_now()
+def build_live(day=None):
+    day = day or game_day_now()
     data = get_json(f"https://api-web.nhle.com/v1/score/{day}") or {"games": []}
     pool_ids = {p["id"] for g in load("groups.json", []) for p in g["players"]}
     pool_ids |= {p["id"] for r in load("rosters.json", []) for p in r["players"]}
 
-    games, players = [], {}
+    games, players, goals = [], {}, []
     for g in data.get("games", []):
         games.append({
             "id": g["id"],
@@ -52,12 +53,21 @@ def build_live():
         for goal in g.get("goals", []):
             if goal.get("periodDescriptor", {}).get("periodType") == "SO":
                 continue  # shootout goals don't count as goals
+            # Every goal of the night, for the bingo squares
+            goals.append({
+                "gameId": g["id"], "team": goal.get("teamAbbrev"), "playerId": goal["playerId"],
+                "assistIds": [a["playerId"] for a in goal.get("assists", [])],
+                "period": goal.get("periodDescriptor", {}).get("number"),
+                "periodType": goal.get("periodDescriptor", {}).get("periodType"),
+                "time": goal.get("timeInPeriod"), "strength": goal.get("strength"),
+                "emptyNet": goal.get("goalModifier") == "empty-net",
+            })
             involved = [(goal["playerId"], "goals")] + [(a["playerId"], "assists") for a in goal.get("assists", [])]
             for pid, kind in involved:
                 if pid in pool_ids:
                     line = players.setdefault(str(pid), {"goals": 0, "assists": 0, "gameId": g["id"]})
                     line[kind] += 1
-    return {"gameDay": day, "games": games, "players": players}
+    return {"gameDay": day, "games": games, "players": players, "goals": goals}
 
 
 def write(path, live):
@@ -120,7 +130,7 @@ def main(args):
     if "--loop" in args:
         loop(args[args.index("--out") + 1] if "--out" in args else "live-out")
         return
-    live = build_live()
+    live = build_live(args[args.index("--day") + 1] if "--day" in args else None)
     write(DATA_DIR / "live.json", live)
     print(f"live.json: {len(live['games'])} games, {len(live['players'])} pool players with points.")
 

@@ -106,6 +106,16 @@ const FAQ = {
           </ul>
           <p>Tout ça, c'est pour le plaisir : seuls les points comptent au classement.</p>`,
         },
+        {
+          q: "Comment marche le bingo?",
+          a: `<ul>
+            <li>Chaque soir de match, chaque participant reçoit sa propre carte de 9 cases (le centre est libre). La carte arrive l'après-midi.</li>
+            <li>Les cases viennent des matchs du soir : des joueurs de votre équipe (« Suzuki marque »), des équipes de la LNH (« MTL gagne ») et des moments de la soirée (« Un but en avantage numérique »).</li>
+            <li>Rien à faire : les cases se cochent toutes seules pendant les matchs. ✗ veut dire que la case ne peut plus arriver ce soir.</li>
+            <li>Une ligne = 3 cases cochées en ligne, en colonne ou en diagonale. À la fin de la soirée, le plus de lignes gagne (puis le plus de cases).</li>
+            <li>Touchez un nom dans <b>La course</b> pour voir la carte de quelqu'un d'autre.</li>
+          </ul>`,
+        },
       ],
     },
   ],
@@ -212,6 +222,16 @@ const FAQ = {
             <li>During games, the <b>Tonight</b> tab shows an alert when a pool player scores. Tap <b>🔕 Horn</b> to hear it too.</li>
           </ul>
           <p>It's all for fun: only points count in the standings.</p>`,
+        },
+        {
+          q: "How does the bingo work?",
+          a: `<ul>
+            <li>Every game night, each participant gets their own card of 9 squares (the centre is free). Cards show up in the afternoon.</li>
+            <li>Squares come from tonight's games: players on your team ("Suzuki scores"), NHL teams ("MTL wins") and moments of the night ("A power-play goal").</li>
+            <li>Nothing to do: squares tick themselves during the games. ✗ means the square can't happen tonight anymore.</li>
+            <li>A line = 3 ticked squares in a row, a column or a diagonal. At the end of the night, the most lines wins (then the most squares).</li>
+            <li>Tap a name in <b>The race</b> to see someone else's card.</li>
+          </ul>`,
         },
       ],
     },
