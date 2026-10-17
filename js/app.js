@@ -7,6 +7,7 @@ import { prepareImage } from "./image.js";
 import { faqContent } from "./faq.js";
 import { seededShuffle, makeCard, evaluate, race } from "./bingo.js";
 import { renderRadio } from "./radio.js";  // feature: radio (config.features.radio)
+import { openArena, arenaUpdate } from "./arena.js";  // feature: arena (config.features.arena)
 
 const S = {
   tab: "standings",
@@ -36,8 +37,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   S.pointsById = new Map((S.index || []).map(p => [p.id, p.points]));
   S.owners = new Map();
   for (const s of S.board.standings) for (const p of s.rosterStats) S.owners.set(p.id, (S.owners.get(p.id) || 0) + 1);
+  const arenaLink = location.hash === "#arena";  // feature: arena
   showTab(location.hash.slice(1));
   renderAll();
+  if (arenaLink && S.config.features?.arena !== false) { showTab("tonight"); startArena(); }
   // Live scores: refresh every 2 minutes while the page is visible
   setInterval(refreshLive, 120000);
   document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") refreshLive(); });
@@ -80,6 +83,7 @@ async function refreshLive() {
       S.live = live;
       renderTonight();
       renderBingo();
+      if (S.config.features?.arena !== false) arenaUpdate(goals);  // feature: arena
       // Bingo news first (it's yours), then the goals; one tap opens the matching tab
       const parts = [bingo, goals.length && goalRows(goals)].filter(Boolean);
       if (parts.length) showToast(parts.join(""), bingo ? "bingo" : "tonight");
@@ -156,6 +160,18 @@ function playHorn() {
       o.connect(lp); o.start(now); o.stop(now + 2.3);
     }
   } catch { /* no Web Audio: banner only */ }
+}
+
+// feature: arena: the TV mode (js/arena.js), opened from "Ce soir" or #arena
+const startArena = () => openArena({ S, avatar, playHorn, bingoRace, gameState });
+
+function renderArenaButton() {
+  const btn = document.getElementById("arena-open");
+  if (!btn) return;
+  btn.hidden = S.config.features?.arena === false;
+  btn.textContent = t("arenaOpen");
+  btn.title = t("arenaHint");
+  btn.onclick = startArena;
 }
 
 function renderHornToggle() {
@@ -763,6 +779,7 @@ function renderTonight() {
   const anyLive = !!live?.games?.some(g => g.state === "LIVE" || g.state === "CRIT");
   document.getElementById("live-pill").classList.toggle("hidden", !anyLive);
   renderHornToggle();
+  renderArenaButton();
   if (!live || !live.games?.length) {
     gamesEl.innerHTML = `<div class="card empty" style="grid-column:1/-1">${esc(t("noGames"))}</div>`;
     document.getElementById("tonight-rank").innerHTML = "";

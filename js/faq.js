@@ -108,6 +108,11 @@ const FAQ = {
           <p>Tout ça, c'est pour le plaisir : seuls les points comptent au classement.</p>`,
         },
         {
+          // feature: arena
+          q: "C'est quoi, le mode Aréna?",
+          a: `<p>Un écran géant pour regarder les matchs en famille : dans <b>Ce soir</b>, touchez <b>📺 Aréna</b> (ou ouvrez le lien du site suivi de <code>#arena</code> sur la télé). Le classement se met à jour en direct avec les points de la soirée, chaque but d'un joueur du pool s'affiche en plein écran avec le klaxon, et le bingo et les pointages défilent. Touchez <b>Plein écran</b> pour cacher le reste; l'écran reste allumé.</p>`,
+        },
+        {
           q: "Comment marche le bingo?",
           a: `<ul>
             <li>Chaque soir de match, chaque participant reçoit sa propre carte de 9 cases (le centre est libre). La carte arrive l'après-midi.</li>
@@ -227,6 +232,11 @@ const FAQ = {
             <li>During games, the <b>Tonight</b> tab shows an alert when a pool player scores. Tap <b>🔕 Horn</b> to hear it too.</li>
           </ul>
           <p>It's all for fun: only points count in the standings.</p>`,
+        },
+        {
+          // feature: arena
+          q: "What's Arena mode?",
+          a: `<p>A big screen to watch the games together: in <b>Tonight</b>, tap <b>📺 Arena</b> (or open the site's link followed by <code>#arena</code> on the TV). The standings update live with tonight's points, every goal by a pool player fills the screen with the horn, and the bingo and scores roll by. Tap <b>Full screen</b> to hide the rest; the screen stays on.</p>`,
         },
         {
           q: "How does the bingo work?",
