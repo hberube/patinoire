@@ -637,17 +637,71 @@ function openTeam(id) {
     </div>
     <div class="modal-body">
       ${extras ? `<div class="team-extras">${extras}</div>` : ""}
-      ${section(t("forwards"), byPos("F"))}${section(t("defense"), byPos("D"))}${section(t("goalies"), byPos("G"))}
+      <div class="view-toggle" role="group">${["table", "rink"].map(v => `
+        <button class="btn btn-sm" data-view="${v}" aria-pressed="${(S.teamView || "table") === v}">${esc(t(v === "rink" ? "viewRink" : "viewTable"))}</button>`).join("")}</div>
+      <div id="team-view"></div>
       ${former ? `<h3>${esc(t("former"))}</h3>${former}` : ""}
       <p class="muted" style="font-size:13px;margin:14px 0 0">${esc(t("pointsRule"))}</p>
       <div style="text-align:right;margin-top:12px"><button class="btn" id="close-team">${esc(t("close"))}</button></div>
     </div>`;
+  const tables = section(t("forwards"), byPos("F")) + section(t("defense"), byPos("D")) + section(t("goalies"), byPos("G"));
+  const showView = () => {
+    const view = S.teamView || "table";
+    modal.querySelectorAll("[data-view]").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.view === view)));
+    modal.querySelector("#team-view").innerHTML = view === "rink" ? rinkView(s.rosterStats) : tables;
+  };
+  modal.querySelectorAll("[data-view]").forEach(b => b.addEventListener("click", () => { S.teamView = b.dataset.view; showView(); }));
+  showView();
   modal.querySelector("#close-team").addEventListener("click", () => modal.close());
   modal.showModal();
-  // showModal focuses the Close button at the bottom; open at the top instead
-  modal.querySelector("#close-team").blur();
+  // showModal focuses the first button; open at the top with nothing focused instead
+  document.activeElement?.blur();
   modal.scrollTop = 0;
   modal.querySelector(".modal-body").scrollTop = 0;
+}
+
+// ---------- Rink view of a team (team window) ----------
+// Goalies in the crease, defence on the blue line, forwards in the offensive zone (most points
+// nearest the net). Rings show recent form like formBadge(): orange = hot, blue = cold; injured
+// players are greyed out. Horizontal on computers, standing up on phones so names stay readable.
+function playerForm(p) {
+  const f = S.insights?.form?.[String(p.id)];
+  if (injuryOf(p.id)) return "inj";
+  if (!f) return "";
+  if (f.dry >= 4) return "cold";
+  return f.last5 >= (p.pos === "G" ? 6 : 5) ? "hot" : "";
+}
+
+function rinkView(players) {
+  const portrait = matchMedia("(max-width: 560px)").matches;
+  const VW = portrait ? 320 : 600, VH = portrait ? 600 : 300;
+  const at = (u, v) => (portrait ? [v * VW, (1 - u) * VH] : [u * VW, v * VH]);  // u: along the ice, v: across
+  const line = (u1, v1, u2, v2, cls) => { const [a, b] = at(u1, v1), [c, d] = at(u2, v2); return `<line class="${cls}" x1="${a}" y1="${b}" x2="${c}" y2="${d}"/>`; };
+  const circle = (u, v, r, cls) => { const [x, y] = at(u, v); return `<circle class="${cls}" cx="${x}" cy="${y}" r="${r}"/>`; };
+  const boards = `x="2" y="2" width="${VW - 4}" height="${VH - 4}" rx="${portrait ? 70 : 60}"`;
+  const ice = `<clipPath id="rk-clip"><rect ${boards}/></clipPath><rect class="rk-ice" ${boards}/><g clip-path="url(#rk-clip)">
+    ${line(0.06, 0, 0.06, 1, "rk-goal")}${line(0.94, 0, 0.94, 1, "rk-goal")}
+    ${line(0.375, 0, 0.375, 1, "rk-blue")}${line(0.625, 0, 0.625, 1, "rk-blue")}${line(0.5, 0, 0.5, 1, "rk-red")}
+    ${circle(0.5, 0.5, 30, "rk-circle")}${[0.19, 0.81].flatMap(u => [0.27, 0.73].map(v => circle(u, v, 26, "rk-circle"))).join("")}
+    ${circle(0.06, 0.5, 20, "rk-crease")}${circle(0.94, 0.5, 20, "rk-crease")}</g><rect class="rk-boards" ${boards}/>`;
+  const byPts = pos => players.filter(p => p.pos === pos).sort((a, b) => b.stats.points - a.stats.points);
+  const spots = [];
+  byPts("G").forEach((p, i) => spots.push([p, 0.12, [0.5, 0.2, 0.8][i % 3]]));
+  byPts("D").forEach((p, i) => spots.push([p, 0.3, [0.5, 0.18, 0.82][i % 3]]));
+  byPts("F").forEach((p, i) => spots.push([p, 0.9 - Math.floor(i / 3) * 0.1, [0.5, 0.18, 0.82][i % 3]]));
+  const node = ([p, u, v]) => {
+    const [x, y] = at(u, v), form = playerForm(p), inj = injuryOf(p.id), f = S.insights?.form?.[String(p.id)];
+    const tip = [p.name, `${p.stats.points} ${t("pts")}`, f && t("rinkLast5", { n: f.last5 }), inj && `🚑 ${t(`st_${inj.status}`)} · ${injType(inj.type)}`].filter(Boolean).join(" · ");
+    return `<g class="rp ${form}" transform="translate(${x.toFixed(1)} ${y.toFixed(1)})"><title>${esc(tip)}</title>
+      <circle class="rp-ring" r="21"/><clipPath id="rc${p.id}"><circle r="18"/></clipPath>
+      <image href="${headshot(p.id)}" x="-18" y="-18" width="36" height="36" clip-path="url(#rc${p.id})"/>
+      <circle class="rp-badge" cx="16" cy="-15" r="9"/><text class="rp-pts" x="16" y="-11.5">${p.stats.points}</text>
+      ${inj ? `<text class="rp-inj" x="-17" y="-11">🚑</text>` : form === "hot" ? `<text class="rp-inj" x="-17" y="-11">🔥</text>` : form === "cold" ? `<text class="rp-inj" x="-17" y="-11">🧊</text>` : ""}
+      <text class="rp-name" y="34">${esc(p.name.split(" ").slice(1).join(" ") || p.name)}</text></g>`;
+  };
+  return `<div class="rink-wrap"><svg class="rink" viewBox="0 0 ${VW} ${VH}" role="img" aria-label="${esc(t("viewRink"))}">
+      ${ice}${spots.map(node).join("")}</svg>
+    <p class="muted rink-legend">${esc(t("rinkLegend"))}</p></div>`;
 }
 
 // ---------- Trajectory ----------

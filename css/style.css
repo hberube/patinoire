@@ -639,3 +639,25 @@ body { overflow-x: hidden; }
 .ny-row .name { font-weight: 700; }
 .ny-row .who { font-size: 13px; color: var(--text-3); }
 #bottom-race .section-head, #newyear-cup .section-head, #palmares .section-head { margin-top: 26px; }
+
+/* Rink view (team window) */
+.view-toggle { display: flex; gap: 6px; margin: 4px 0 6px; }
+.view-toggle .btn[aria-pressed="true"] { border-color: var(--red); color: var(--red); }
+.rink-wrap { margin-top: 8px; }
+.rink { width: 100%; height: auto; display: block; max-height: 78vh; }
+.rk-ice { fill: var(--surface-2); }
+.rk-boards { fill: none; stroke: var(--text-3); stroke-width: 3; }
+.rk-red { stroke: var(--red); stroke-width: 4; opacity: .7; }
+.rk-blue { stroke: var(--series-1); stroke-width: 5; opacity: .6; }
+.rk-goal { stroke: var(--red); stroke-width: 1.5; opacity: .5; }
+.rk-circle { fill: none; stroke: var(--red); stroke-width: 1.5; opacity: .35; }
+.rk-crease { fill: var(--ice-soft); stroke: var(--red); stroke-width: 1.5; opacity: .8; }
+.rp-ring { fill: var(--surface); stroke: var(--border); stroke-width: 3; }
+.rp.hot .rp-ring { stroke: #f97316; stroke-width: 4; filter: drop-shadow(0 0 5px #f97316); }
+.rp.cold .rp-ring { stroke: #38bdf8; stroke-width: 4; filter: drop-shadow(0 0 4px #38bdf8); }
+.rp.inj { opacity: .5; }
+.rp-badge { fill: var(--navy); stroke: var(--surface); stroke-width: 1.5; }
+.rp-pts { fill: #fff; font: 700 10px var(--ff); text-anchor: middle; }
+.rp-inj { font-size: 11px; text-anchor: middle; }
+.rp-name { fill: var(--text); font: 600 11px var(--ff); text-anchor: middle; paint-order: stroke; stroke: var(--surface-2); stroke-width: 3px; }
+.rink-legend { font-size: 12px; margin: 8px 0 0; }
