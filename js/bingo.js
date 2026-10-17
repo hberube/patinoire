@@ -81,8 +81,10 @@ export function makeCard(standing, live, poolIds) {
   const pick = list => list.splice(Math.floor(rand() * list.length), 1)[0];
   const teams = games.flatMap(g => [g.away.abbrev, g.home.abbrev]);
 
-  // Personal: the participant's skaters playing tonight (forwards: goal or point, defence: point)
-  const mine = standing.rosterStats.filter(p => p.pos !== "G" && teams.includes(p.team));
+  // Personal: the participant's skaters playing tonight (forwards: goal or point, defence: point),
+  // minus the injured and suspended (live.out, frozen with the day's first live.json)
+  const out = new Set(live.out || []);
+  const mine = standing.rosterStats.filter(p => p.pos !== "G" && teams.includes(p.team) && !out.has(p.id));
   const personal = [];
   for (const p of seededShuffle(mine, `${standing.participantId}|${live.gameDay}|p`)) {
     const kind = p.pos === "F" && rand() < 0.5 ? "goal" : "point";

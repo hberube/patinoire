@@ -6,7 +6,8 @@
 - awards:     Golden Pick, Ice Anchor, Snub ("Busts & Steals")
 - milestones: rostered players close to a round number this season
 - odds:       each team's chances of winning the pool and finishing top 3 (odds.py)
-Also saves last night's bingo for good once its games are final (bingo_archive.py -> bingo.json).
+Also saves last night's bingo for good once its games are final (bingo_archive.py -> bingo.json)
+and refreshes the injured pool players (injuries.py -> injuries.json).
 
 Run after update_pool.py by the daily workflow. Pool-level milestones and the weekly
 duels are computed in the browser from leaderboard.json and history.json.
@@ -14,6 +15,7 @@ duels are computed in the browser from leaderboard.json and history.json.
 from collections import Counter
 
 import bingo_archive
+import injuries
 import odds
 from history import last_completed_day
 from pool_lib import fetch_game_logs, game_line, get_json, load, now_iso, save, score
@@ -117,6 +119,11 @@ def build():
                 "thumb": goal.get("mugshot") or goal.get("headshot"),
             })
     highlights.sort(key=lambda h: (not h["scorerOwned"], -h["owners"]))
+
+    try:  # never lose the Gazette over the injury list
+        injuries.build()
+    except Exception as e:  # noqa: BLE001
+        print(f"warning: injuries unavailable ({e})")
 
     try:  # never lose the Gazette over the bingo archive
         bingo_archive.archive(day)

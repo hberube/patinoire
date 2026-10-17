@@ -1,0 +1,116 @@
+{
+  "updated": "2026-10-17T16:49:41Z",
+  "source": "ESPN",
+  "players": [
+    {
+      "id": 8476945,
+      "name": "Connor Hellebuyck",
+      "team": "WPG",
+      "pos": "G",
+      "status": "susp",
+      "type": "Suspension",
+      "returnDate": "2026-11-14",
+      "noteDate": "2026-10-02",
+      "note": "ir-nr"
+    },
+    {
+      "id": 8479406,
+      "name": "Filip Gustavsson",
+      "team": "MIN",
+      "pos": "G",
+      "status": "ir",
+      "type": "Hip",
+      "returnDate": "2026-11-01",
+      "noteDate": "2026-10-09",
+      "note": "Gustavsson (hip) was placed on long-term injured reserve Friday."
+    },
+    {
+      "id": 8484984,
+      "name": "Ivan Demidov",
+      "team": "MTL",
+      "pos": "F",
+      "status": "ir",
+      "type": "Lower Body",
+      "returnDate": "2026-10-31",
+      "noteDate": "2026-10-06",
+      "note": "Demidov (lower body) was placed on injured reserve by the Canadiens on Tuesday, per the NHL media site."
+    },
+    {
+      "id": 8478445,
+      "name": "Mathew Barzal",
+      "team": "NYI",
+      "pos": "F",
+      "status": "ir",
+      "type": "Knee",
+      "returnDate": "2026-10-20",
+      "noteDate": "2026-10-15",
+      "note": "Barzal (knee) will not join the Islanders for their two-game road trip, Andrew Gross of Newsday reports Thursday."
+    },
+    {
+      "id": 8482093,
+      "name": "Seth Jarvis",
+      "team": "CAR",
+      "pos": "F",
+      "status": "ir",
+      "type": "Shoulder",
+      "returnDate": "2026-10-20",
+      "noteDate": "2026-10-16",
+      "note": "Jarvis (shoulder) said Friday that he plans to travel with the Hurricanes during their upcoming five-game road trip, Ryan Henkel of The Hockey News reports."
+    },
+    {
+      "id": 8478439,
+      "name": "Travis Konecny",
+      "team": "PHI",
+      "pos": "F",
+      "status": "ir",
+      "type": "Lower Body",
+      "returnDate": "2026-10-19",
+      "noteDate": "2026-10-11",
+      "note": "Konecny (lower body) was placed on injured reserve Sunday, according to the NHL media site."
+    },
+    {
+      "id": 8475166,
+      "name": "John Tavares",
+      "team": "TOR",
+      "pos": "F",
+      "status": "out",
+      "type": "Lower Body",
+      "returnDate": "2026-10-31",
+      "noteDate": "2026-10-17",
+      "note": "out"
+    },
+    {
+      "id": 8480839,
+      "name": "Rasmus Dahlin",
+      "team": "BUF",
+      "pos": "D",
+      "status": "out",
+      "type": "Upper Body",
+      "returnDate": "2026-10-21",
+      "noteDate": "2026-10-16",
+      "note": "out"
+    },
+    {
+      "id": 8478864,
+      "name": "Kirill Kaprizov",
+      "team": "MIN",
+      "pos": "F",
+      "status": "dtd",
+      "type": "Undisclosed",
+      "returnDate": "2026-10-18",
+      "noteDate": "2026-10-16",
+      "note": "day-to-day"
+    },
+    {
+      "id": 8478401,
+      "name": "Pavel Zacha",
+      "team": "BOS",
+      "pos": "F",
+      "status": "dtd",
+      "type": "Undisclosed",
+      "returnDate": "2026-10-17",
+      "noteDate": "2026-10-17",
+      "note": "Zacha (undisclosed) left Friday's game versus the Ducks in the third period after taking a hit, and there was no update on his status after the contest, Scott McLaughlin of WEEI reports."
+    }
+  ]
+}

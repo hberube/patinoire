@@ -12,7 +12,7 @@ const S = {
   chartPicks: null,
   trade: { outId: null, inId: null, code: null },
 };
-const TABS = ["standings", "gazette", "teams", "chart", "tonight", "bingo", "trades", "faq"];
+const TABS = ["standings", "gazette", "teams", "chart", "tonight", "bingo", "injuries", "trades", "faq"];
 const POS_ICON = { F: "🏒", D: "🛡️", G: "🥅" };
 
 // ---------- Boot ----------
@@ -20,11 +20,11 @@ document.addEventListener("DOMContentLoaded", async () => {
   bindChrome();
   try {
     const opt = p => fetchJson(p).catch(() => null);
-    [S.config, S.board, S.history, S.live, S.groups, S.trades, S.index, S.logos, S.insights, S.recap, S.bingoArchive] = await Promise.all([
+    [S.config, S.board, S.history, S.live, S.groups, S.trades, S.index, S.logos, S.insights, S.recap, S.bingoArchive, S.injuries] = await Promise.all([
       fetchJson("data/config.json"), fetchJson("data/leaderboard.json"), opt("data/history.json"),
       fetchLive(), fetchJson("data/groups.json"), opt("data/trades_history.json"),
       opt("data/players_index.json"), opt("data/logos.json"), opt("data/insights.json"), opt("data/recap.json"),
-      opt("data/bingo.json"),
+      opt("data/bingo.json"), opt("data/injuries.json"),
     ]);
   } catch (err) {
     document.querySelector("main").innerHTML = `<div class="card empty">${esc(t("loadError"))}</div>`;
@@ -251,6 +251,7 @@ function renderAll() {
   if (S.tab === "chart") renderTrajectory();
   renderTonight();
   renderBingo();
+  renderInjuries();
   renderGazette();
   renderFaq();
   renderTrades();
@@ -607,7 +608,7 @@ function openTeam(id) {
   const goalieCols = Object.keys(sc.goalie).includes("wins");
   const row = p => `<tr>
     <td class="rd num">${p.group ?? ""}</td>
-    <td class="l"><div class="player">${mug(p, "mug mug-sm")}<div style="min-width:0"><div class="pname">${esc(p.name)}${formBadge(p)}</div>
+    <td class="l"><div class="player">${mug(p, "mug mug-sm")}<div style="min-width:0"><div class="pname">${esc(p.name)}${injuryBadge(p)}${formBadge(p)}</div>
       <div class="pmeta">${logo(p.team)}${S.owners.get(p.id) === 1
         ? `<span class="tag unique" title="${esc(t("uniqueHint"))}">★ ${esc(t("uniquePick"))}</span>`
         : `<span title="${esc(t("ownedBy", { n: S.owners.get(p.id) }))}">×${S.owners.get(p.id)}</span>`}</div></div></div></td>
@@ -813,7 +814,7 @@ function bingoHistory() {
       participantId, rank: standingOf(participantId)?.rank ?? 99,
       rosterStats: list.map(([id, name, pos, team]) => ({ id, name, pos, team })),
     }));
-    const live = { gameDay: n.day, games: n.games, goals: n.goals.map(([gameId, team, playerId, assistIds, period, periodType, time, strength, emptyNet]) =>
+    const live = { gameDay: n.day, games: n.games, out: n.out, goals: n.goals.map(([gameId, team, playerId, assistIds, period, periodType, time, strength, emptyNet]) =>
       ({ gameId, team, playerId, assistIds, period, periodType, time, strength, emptyNet })) };
     const rows = race(standings, live, new Set(standings.flatMap(s => s.rosterStats.map(p => p.id))));
     const top = rows[0]?.res;
@@ -874,6 +875,43 @@ function renderBingo() {
     renderBingo();
     if (matchMedia("(max-width: 720px)").matches) el.querySelector(".bingo-card")?.scrollIntoView({ behavior: "smooth", block: "center" });
   }));
+}
+
+// ---------- Injuries (data/injuries.json, from ESPN through scripts/injuries.py) ----------
+const INJ_FR = { "Lower Body": "Bas du corps", "Upper Body": "Haut du corps", Knee: "Genou", Shoulder: "Épaule", Head: "Tête",
+  Concussion: "Commotion cérébrale", Ankle: "Cheville", Hand: "Main", Foot: "Pied", Back: "Dos", Groin: "Aine", Hip: "Hanche",
+  Wrist: "Poignet", Illness: "Maladie", Undisclosed: "Non dévoilée", Suspension: "Suspension", Personal: "Raisons personnelles",
+  Leg: "Jambe", Arm: "Bras", Elbow: "Coude", Finger: "Doigt", Neck: "Cou", Face: "Visage", Eye: "Œil", Thumb: "Pouce",
+  Achilles: "Achille", Hamstring: "Ischio-jambiers", Ribs: "Côtes", Abdomen: "Abdomen", Chest: "Poitrine", "Not Specified": "Non précisée" };
+const injType = type => (getLang() === "fr" ? INJ_FR[type] || type : type) || "";
+const injuryOf = id => S.injuries?.players?.find(x => x.id === id);
+
+function injuryBadge(p) {
+  const x = injuryOf(p.id);
+  return x ? ` <span class="inj-badge ${x.status}" title="${esc(`${t(`st_${x.status}`)} · ${injType(x.type)}`)}">🚑</span>` : "";
+}
+
+function renderInjuries() {
+  const el = document.getElementById("injuries-root");
+  if (!el) return;  // tolerate a cached older index.html right after a deploy
+  const mine = new Set(standingOf(me()?.participantId)?.rosterStats.map(p => p.id) || []);
+  const ownersOf = id => S.board.standings.filter(s => s.rosterStats.some(p => p.id === id)).map(s => s.participantId);
+  const list = (S.injuries?.players || []).map(x => ({ ...x, owners: ownersOf(x.id) })).filter(x => x.owners.length);
+  const card = x => `<div class="card inj ${mine.has(x.id) ? "mine" : ""}">
+      <div class="team-flex">${mug(x, "mug")}<div style="min-width:0;flex:1">
+        <div class="pname">${esc(x.name)} ${logo(x.team)}</div>
+        <div class="muted" style="font-size:13px">${esc([injType(x.type), x.returnDate && t("injReturn", { date: fmtDay(x.returnDate) })].filter(Boolean).join(" · "))}</div></div>
+        <span class="inj-status ${x.status}">${esc(t(`st_${x.status}`))}</span></div>
+      <div class="hl-foot">${ownerStack(x.owners)}<span class="muted" style="font-size:12px">${esc(t("ownedBy", { n: x.owners.length }))}${x.status !== "dtd" ? ` · ${esc(t("injBingo"))}` : ""}</span></div>
+      ${x.note ? `<details class="inj-note"><summary>${esc(t("injNews", { date: fmtDay(x.noteDate || x.returnDate) }))}</summary><p>${esc(x.note)}</p></details>` : ""}
+    </div>`;
+  const mineList = list.filter(x => mine.has(x.id));
+  const head = (title, sub) => `<div class="section-head"><h2>${esc(title)}</h2>${sub ? `<span class="muted">${esc(sub)}</span>` : ""}</div>`;
+  el.innerHTML = !S.injuries ? `<div class="card empty">${esc(t("injNone"))}</div>`
+    : `${mineList.length ? `${head(t("injMine"))}<div class="grid inj-grid">${mineList.map(card).join("")}</div>` : ""}
+      ${head(t("injAll"), S.injuries.updated ? t("injSource", { date: fmtDate(S.injuries.updated, { dateStyle: "medium", timeStyle: "short" }) }) : "")}
+      ${list.length ? `<div class="grid inj-grid">${list.sort((a, b) => b.owners.length - a.owners.length).map(card).join("")}</div>`
+        : `<div class="card empty">${esc(t("injNone"))}</div>`}`;
 }
 
 // ---------- Trades ----------

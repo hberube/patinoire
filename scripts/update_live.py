@@ -22,6 +22,7 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
+import injuries
 from history import game_day_now
 from pool_lib import DATA_DIR, get_json, load, now_iso
 
@@ -31,7 +32,9 @@ MAX_RUNTIME = 5.5 * 3600  # GitHub jobs stop at 6 h
 DONE_STATES = {"OFF", "FINAL"}
 
 
-def build_live(day=None):
+def build_live(day=None, previous=None):
+    """`previous` is the live.json already published, if any: a game day keeps the injury list of its
+    first live.json (the "out" ids, left off the bingo cards) so cards never change during the day."""
     day = day or game_day_now()
     data = get_json(f"https://api-web.nhle.com/v1/score/{day}") or {"games": []}
     pool_ids = {p["id"] for g in load("groups.json", []) for p in g["players"]}
@@ -67,7 +70,17 @@ def build_live(day=None):
                 if pid in pool_ids:
                     line = players.setdefault(str(pid), {"goals": 0, "assists": 0, "gameId": g["id"]})
                     line[kind] += 1
-    return {"gameDay": day, "games": games, "players": players, "goals": goals}
+    live = {"gameDay": day, "games": games, "players": players, "goals": goals}
+    if previous and previous.get("gameDay") == day:
+        if "out" in previous:
+            live["out"] = previous["out"]
+    else:
+        try:
+            live["out"] = injuries.out_ids(injuries.fetch())
+        except Exception as e:  # noqa: BLE001 - no injury list: that day's cards just keep everyone
+            print(f"warning: injuries unavailable ({e})")
+            live["out"] = []
+    return live
 
 
 def write(path, live):
@@ -93,14 +106,16 @@ def seconds_to_first_puck(games):
 def loop(out_dir):
     out_dir = Path(out_dir)
     began, last, saw_live = time.monotonic(), None, False
+    published = out_dir / "live.json"
+    last = json.loads(published.read_text(encoding="utf-8")) if published.exists() else None
     while True:
         try:
-            live = build_live()
+            live = build_live(previous=last)
         except Exception as e:  # a hiccup at the NHL API shouldn't end the night
             print(f"warning: {e}")
             time.sleep(REFRESH)
             continue
-        if live != last:
+        if {**live, "updated": None} != {**(last or {}), "updated": None}:
             write(out_dir / "live.json", live)
             publish(out_dir)
             last = live
@@ -130,7 +145,9 @@ def main(args):
     if "--loop" in args:
         loop(args[args.index("--out") + 1] if "--out" in args else "live-out")
         return
-    live = build_live(args[args.index("--day") + 1] if "--day" in args else None)
+    path = DATA_DIR / "live.json"
+    previous = json.loads(path.read_text(encoding="utf-8")) if path.exists() else None
+    live = build_live(args[args.index("--day") + 1] if "--day" in args else None, previous)
     write(DATA_DIR / "live.json", live)
     print(f"live.json: {len(live['games'])} games, {len(live['players'])} pool players with points.")
 

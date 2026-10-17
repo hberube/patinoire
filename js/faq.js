@@ -112,6 +112,7 @@ const FAQ = {
             <li>Chaque soir de match, chaque participant reçoit sa propre carte de 9 cases (le centre est libre). La carte arrive l'après-midi.</li>
             <li>Les cases viennent des matchs du soir : des joueurs de votre équipe (« Suzuki marque »), des équipes de la LNH (« MTL gagne ») et des moments de la soirée (« Un but en avantage numérique »).</li>
             <li>Rien à faire : les cases se cochent toutes seules pendant les matchs. ✗ veut dire que la case ne peut plus arriver ce soir.</li>
+            <li>Les joueurs blessés ou suspendus (onglet <b>Blessés</b>) ne sont pas dans les cartes. La liste est prise vers midi, quand les cartes arrivent, et ne change plus de la journée.</li>
             <li>Une ligne = 3 cases cochées en ligne, en colonne ou en diagonale. À la fin de la soirée, le plus de lignes gagne (puis le plus de cases).</li>
             <li>Le gagnant reste affiché le lendemain (« Bingo d'hier »), et chaque bingo gagné vaut un trophée 🎱 dans la Vitrine des trophées.</li>
             <li>Touchez un nom dans <b>La course</b> pour voir la carte de quelqu'un d'autre.</li>
@@ -230,6 +231,7 @@ const FAQ = {
             <li>Every game night, each participant gets their own card of 9 squares (the centre is free). Cards show up in the afternoon.</li>
             <li>Squares come from tonight's games: players on your team ("Suzuki scores"), NHL teams ("MTL wins") and moments of the night ("A power-play goal").</li>
             <li>Nothing to do: squares tick themselves during the games. ✗ means the square can't happen tonight anymore.</li>
+            <li>Injured or suspended players (<b>Injuries</b> tab) aren't on the cards. The list is taken around noon, when cards come out, and doesn't change for the day.</li>
             <li>A line = 3 ticked squares in a row, a column or a diagonal. At the end of the night, the most lines wins (then the most squares).</li>
             <li>The winner stays up the next day ("Last night's bingo"), and every bingo won earns a 🎱 trophy in the Trophy case.</li>
             <li>Tap a name in <b>The race</b> to see someone else's card.</li>

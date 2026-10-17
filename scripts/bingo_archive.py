@@ -14,10 +14,11 @@ Run by insights.py after each standings rebuild (it's a no-op until the night is
 import json
 import sys
 
-from pool_lib import DATA_DIR, load
+from pool_lib import DATA_DIR, get_json, load
 from update_live import build_live
 
 FIRST_NIGHT = "2026-10-17"  # the bingo's first night: earlier nights were never played
+LIVE = "https://raw.githubusercontent.com/hberube/patinoire/live/live.json"
 FINAL = {"OFF", "FINAL"}
 
 
@@ -48,6 +49,10 @@ def archive(day):
         "goals": [[x["gameId"], x["team"], x["playerId"], x["assistIds"], x["period"], x["periodType"],
                    x["time"], x["strength"], x["emptyNet"]] for x in live["goals"]],
     }
+    # The injured players left off that night's cards, frozen in its live.json (update_live.py)
+    published = get_json(LIVE) or {}
+    if published.get("gameDay") == day and published.get("out"):
+        entry["out"] = published["out"]
     if rosters != rosters_on(nights, day):
         entry["rosters"] = rosters
     nights = sorted([*nights, entry], key=lambda n: n["day"])
