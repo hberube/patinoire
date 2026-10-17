@@ -10,7 +10,8 @@ NHL schedule, and compares them with what should be true at this hour, Eastern t
              and shows the final scores once they're over
   site       GitHub Pages serves what's on main (a stuck deploy)
 
-Each problem names the job that fixes it (standings, recap or live), for scripts/local/overseer.sh.
+Each problem names the job that fixes it (standings, recap or live; site and nhl have no repair),
+for scripts/local/overseer.sh.
 
   python scripts/healthcheck.py           # readable report; exit code 1 if anything is wrong
   python scripts/healthcheck.py --json    # for the overseer
@@ -44,9 +45,9 @@ def when(iso):
 
 
 def schedule(day):
-    """[(start, state)] for a game day, from the NHL."""
-    data = fetch(f"https://api-web.nhle.com/v1/score/{day}") or {}
-    return [(when(g["startTimeUTC"]), g["gameState"]) for g in data.get("games", [])]
+    """[(start, state)] for a game day, from the NHL; None if the NHL can't be reached."""
+    data = fetch(f"https://api-web.nhle.com/v1/score/{day}")
+    return None if data is None else [(when(g["startTimeUTC"]), g["gameState"]) for g in data.get("games", [])]
 
 
 def check(now=None):
@@ -65,6 +66,9 @@ def check(now=None):
     # --- Last night: standings, history, Gazette, recap ---
     day = last_completed_day()
     games = schedule(day)
+    if games is None:  # never report "all good" without having seen the schedule
+        problem("nhl", "nhl-unreachable", "Can't reach the NHL schedule (api-web.nhle.com) to check the site")
+        return problems, notes
     if games and all(state in FINAL for _, state in games):
         last_start = max(start for start, _ in games)
         done_by = last_start + timedelta(hours=3, minutes=30)  # last game over, plus margin
@@ -86,7 +90,7 @@ def check(now=None):
 
     # --- Tonight: live scores ("Ce soir" and the bingo) ---
     today = game_day_now()
-    tonight = schedule(today) if today != day else games
+    tonight = (schedule(today) or []) if today != day else games
     live = fetch(f"{RAW}/live/live.json")
     if tonight:
         live_day, live_age = (live or {}).get("gameDay"), now - (when((live or {}).get("updated")) or now - timedelta(days=9))
