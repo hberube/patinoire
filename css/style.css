@@ -821,3 +821,6 @@ body.arena-open { overflow: hidden; }
 #cards-modal { max-width: min(900px, calc(100vw - 24px)); }
 @media (prefers-reduced-motion: reduce) { .hcard { transform: none !important; } }
 /* === end feature: cards === */
+/* Classement: the team logo leads, the participant's face is a smaller bubble on it */
+.podium .avs .badge, #standings-table .avs .badge { width: 42%; height: 42%; right: -8%; bottom: -8%; }
+#standings-table .team-flex { gap: 14px; }

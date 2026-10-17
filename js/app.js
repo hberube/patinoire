@@ -452,7 +452,7 @@ function renderStandings() {
   const order = podium.length === 3 ? [podium[1], podium[0], podium[2]] : podium;
   document.getElementById("podium").innerHTML = order.map(({ s, i }) => `
     <button class="card step ${cls[i]}" data-team="${esc(s.participantId)}">
-      <div class="av-wrap">${avatar(s, "av av-xl", "face")}<span class="medal">${medals[i]}</span></div>
+      <div class="av-wrap">${avatar(s, "av av-xl", "team")}<span class="medal">${medals[i]}</span></div>
       <div><div class="team">${esc(s.teamName)}</div><div class="who">${esc(s.participantName)}</div></div>
       <div class="pts num" data-count="${s.totalPoints}">${s.totalPoints}</div>
     </button>`).join("");
@@ -492,7 +492,7 @@ function renderStandings() {
       const d = deltas[s.participantId];
       return `<tr class="clickable ${s.participantId === mine ? "me" : ""}" data-team="${esc(s.participantId)}" tabindex="0">
         <td class="l rank num">${s.rank}${mv ? `<span class="move ${mv > 0 ? "up" : "down"}">${mv > 0 ? "▲" : "▼"}${Math.abs(mv)}</span>` : ""}</td>
-        <td class="l team-cell"><div class="team-flex">${avatar(s, "av av-row", "logo")}<div><div class="name">${esc(s.teamName)}${crown(s.participantId)}</div><div class="who">${esc(s.participantName)}</div></div></div></td>
+        <td class="l team-cell"><div class="team-flex">${avatar(s, "av av-row", "team")}<div><div class="name">${esc(s.teamName)}${crown(s.participantId)}</div><div class="who">${esc(s.participantName)}</div></div></div></td>
         <td class="opt num">${s.totalGoals}</td><td class="opt num">${s.totalAssists}</td><td class="opt num">${s.goalieWins}</td>
         <td class="opt spark-col">${sparkline(S.history?.series[s.participantId])}</td>
         <td class="opt num muted">${s.rank === 1 ? "—" : `−${st[0].totalPoints - s.totalPoints}`}</td>
