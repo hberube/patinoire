@@ -1106,6 +1106,8 @@ function formBadge(p) {
 function renderGazette() {
   renderHighlights();
   renderDuels();
+  renderBottomRace();
+  renderNewYearCup();
   renderTrophies();
   renderBadges();
   renderMilestones();
@@ -1220,7 +1222,7 @@ function renderDuels() {
 }
 
 // ---------- Trophy case and pool records (all from history.json: points after each game day) ----------
-const TROPHIES = [["month", "🏆"], ["duel", "🥊"], ["bingo", "🎱"], ["star", "⭐"], ["crown", "👑"]];
+const TROPHIES = [["cup", "🎆"], ["month", "🏆"], ["duel", "🥊"], ["bingo", "🎱"], ["star", "⭐"], ["crown", "👑"]];
 
 function trophies() {
   const h = S.history;
@@ -1228,7 +1230,8 @@ function trophies() {
   if (S.trophies?.of === h) return S.trophies;
   const ids = S.board.standings.map(s => s.participantId).filter(id => h.series[id]);
   const at = (id, i) => (i < 0 ? 0 : h.series[id][i] ?? 0);
-  const won = Object.fromEntries(ids.map(id => [id, { month: 0, duel: 0, bingo: 0, star: 0, crown: 0 }]));
+  const won = Object.fromEntries(ids.map(id => [id, { cup: 0, month: 0, duel: 0, bingo: 0, star: 0, crown: 0 }]));
+  for (const id of newYearCup()?.winners || []) if (won[id]) won[id].cup++;
   for (const night of bingoHistory()) for (const id of night.winners) if (won[id]) won[id].bingo++;
   const records = [];
   const best = (rows, key) => rows.reduce((top, r) => (!top || r[key] > top[key] ? r : top), null);  // earliest wins ties
@@ -1311,7 +1314,7 @@ function renderTrophies() {
   const el = document.getElementById("trophies"), recEl = document.getElementById("records");
   if (!el || !recEl) return;  // tolerate a cached older index.html right after a deploy
   const tr = trophies(), mine = me()?.participantId;
-  const weight = w => w.month * 100 + w.duel * 10 + w.bingo * 5 + w.star * 3 + w.crown;
+  const weight = w => w.cup * 200 + w.month * 100 + w.duel * 10 + w.bingo * 5 + w.star * 3 + w.crown;
   const rows = tr ? S.board.standings.filter(s => tr.won[s.participantId] && weight(tr.won[s.participantId]) > 0)
     .sort((a, b) => weight(tr.won[b.participantId]) - weight(tr.won[a.participantId]) || a.rank - b.rank) : [];
   el.innerHTML = rows.length ? `<div class="trophy-grid">${rows.map(s => `
@@ -1329,6 +1332,71 @@ function renderTrophies() {
     items.unshift(`<li><span class="ms-icon">🏆</span><span>${esc(t("monthRace", { month, team: standingOf(tr.race.id)?.teamName, n: tr.race.n }))}</span></li>`);
   }
   recEl.innerHTML = items.length ? `<ul class="ms-list">${items.join("")}</ul>` : `<div class="empty" style="padding:8px">${esc(t("noTrophies"))}</div>`;
+}
+
+// ---------- 🏮 La lanterne rouge: the race to stay out of last place ----------
+function renderBottomRace() {
+  const el = document.getElementById("bottom-race");
+  if (!el) return;
+  const st = S.board.standings, h = S.history;
+  if (st.length < 3) { el.innerHTML = ""; return; }
+  const low = st.at(-1).totalPoints, last = st.filter(s => s.totalPoints === low);
+  const above = st.filter(s => s.totalPoints > low).at(-1);  // the team just above last place
+  // Days in last place this season, from the chart history (ties share it)
+  const days = {};
+  for (let i = 0; h && i < h.dates.length; i++) {
+    const vals = st.map(s => h.series[s.participantId]?.[i]).filter(v => v != null);
+    const min = Math.min(...vals);
+    for (const s of st) if (h.series[s.participantId]?.[i] === min) days[s.participantId] = (days[s.participantId] || 0) + 1;
+  }
+  const danger = st.filter(s => s.totalPoints > low && s.totalPoints - low <= 5);
+  const mostDays = Object.entries(days).sort((a, b) => b[1] - a[1])[0];
+  el.innerHTML = `
+    <div class="section-head"><h2>🏮 ${esc(t("lanterne"))}</h2><span class="muted">${esc(t("lanterneSub"))}</span></div>
+    <div class="card card-pad lanterne">
+      <div class="team-flex">${last.map(s => avatar(s, "av av-lg", "face")).join("")}
+        <div style="min-width:0;flex:1"><div class="value">${esc(last.map(s => s.teamName).join(", "))}</div>
+          <div class="muted" style="font-size:13px">${esc([above && t("lanterneGap", { n: above.totalPoints - low, team: above.teamName }),
+            last.length === 1 && days[last[0].participantId] && t("lanterneDays", { n: days[last[0].participantId] })].filter(Boolean).join(" · "))}</div></div></div>
+      ${danger.length ? `<div class="lanterne-danger"><span class="muted">${esc(t("lanterneDanger"))}</span>
+        ${danger.map(s => `<span class="tag">${esc(s.teamName)} <b class="num">+${s.totalPoints - low}</b></span>`).join("")}</div>` : ""}
+      ${mostDays && mostDays[1] > 1 ? `<div class="muted" style="font-size:12px">${esc(t("lanterneRecord", { team: standingOf(mostDays[0])?.teamName, n: mostDays[1] }))}</div>` : ""}
+    </div>`;
+}
+
+// ---------- 🎆 Coupe du Nouvel An: points from January 1 only ----------
+// Everyone restarts at zero on January 1 of the season's second year; won at the end of the
+// regular season (config.seasonEnd), with a 🎆 trophy in the trophy case.
+const newYearStart = () => `${String(S.config.season || "").slice(4, 8)}-01-01`;
+
+function newYearCup() {
+  const h = S.history, start = newYearStart(), end = S.config.seasonEnd;
+  if (!h?.dates?.length || h.dates.at(-1) < start) return null;
+  const before = h.dates.filter(d => d < start).length - 1;
+  const last = h.dates.filter(d => !end || d <= end).length - 1;
+  const rows = S.board.standings.map(s => {
+    const v = h.series[s.participantId] || [];
+    return { s, n: (v[last] ?? 0) - (before >= 0 ? v[before] ?? 0 : 0) };
+  }).sort((a, b) => b.n - a.n || a.s.rank - b.s.rank);
+  const over = !!end && h.dates.includes(end);
+  return { rows, over, winners: over ? rows.filter(r => r.n === rows[0].n).map(r => r.s.participantId) : [] };
+}
+
+function renderNewYearCup() {
+  const el = document.getElementById("newyear-cup");
+  if (!el) return;
+  const cup = newYearCup(), mine = me()?.participantId, start = newYearStart();
+  const head = `<div class="section-head"><h2>🎆 ${esc(t("nyCup"))}</h2><span class="muted">${esc(t("nyRule", { date: fmtDay(start, true) }))}</span></div>`;
+  if (!cup) {
+    el.innerHTML = `${head}<div class="card card-pad">${esc(t("nyBefore", { date: fmtDay(start, true), end: fmtDay(S.config.seasonEnd, true) }))}</div>`;
+    return;
+  }
+  el.innerHTML = `${head}${cup.winners.length ? `<div class="card card-pad bingo-winner">🎆 ${esc(t("nyWinner", { teams: cup.winners.map(id => standingOf(id)?.teamName).join(", ") }))}</div>` : ""}
+    <div class="card card-pad"><div class="tonight-list">${cup.rows.slice(0, 10).map((r, i) => `
+      <div class="ny-row ${r.s.participantId === mine ? "me" : ""}"><span class="num muted brank">${i + 1}</span>${avatar(r.s, "av", "logo")}
+        <span class="grow"><span class="name">${esc(r.s.teamName)}</span><span class="who"> · ${esc(r.s.participantName)}</span></span>
+        <span class="pts-cell num">${r.n}</span></div>`).join("")}</div>
+      <p class="muted" style="font-size:12px;margin:8px 0 0">${esc(t("nyNote"))}</p></div>`;
 }
 
 function renderBadges() {

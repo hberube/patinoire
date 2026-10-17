@@ -626,3 +626,16 @@ body { overflow-x: hidden; }
 .bingo-prize .bp-status { font-size: 13px; color: var(--text-2); font-weight: 600; }
 .bingo-prize.final { background: var(--gold-soft); }
 .crown { font-size: 13px; margin-left: 4px; cursor: help; white-space: nowrap; }
+
+/* Lanterne rouge and New Year Cup */
+.lanterne { display: grid; gap: 10px; border-left: 4px solid var(--red); }
+.lanterne .value { font-weight: 800; font-size: 17px; }
+.lanterne .team-flex .av + .av { margin-left: -10px; }
+.lanterne-danger { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; font-size: 13px; }
+.ny-row { display: flex; gap: 10px; align-items: center; padding: 7px 4px; border-bottom: 1px solid var(--border); min-width: 0; }
+.ny-row:last-child { border-bottom: 0; }
+.ny-row.me { background: var(--ice-soft); border-radius: 8px; }
+.ny-row .grow { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ny-row .name { font-weight: 700; }
+.ny-row .who { font-size: 13px; color: var(--text-3); }
+#bottom-race .section-head, #newyear-cup .section-head, #palmares .section-head { margin-top: 26px; }
