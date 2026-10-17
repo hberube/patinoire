@@ -101,7 +101,7 @@ const FAQ = {
           q: "D'où viennent les trophées et les chances de gagner?",
           a: `<ul>
             <li><b>Vitrine des trophées</b> (Gazette) : 🏆 champion du mois (le plus de points dans le mois), 🥊 duel de la semaine gagné, 🎱 bingo gagné, ⭐ meilleure soirée du pool, 👑 chaque jour passé au 1er rang. Les <b>records du pool</b> sont juste en dessous.</li>
-            <li><b>🎆 Coupe du Nouvel An</b> (Gazette) : le 1er janvier, tout le monde repart à zéro; seuls les points marqués à partir de cette date comptent, jusqu'à la fin de la saison régulière. Juste au-dessus, <b>🏮 la lanterne rouge</b> suit la course pour ne pas finir dernier.</li>
+            <li><b>🎆 Coupe du Nouvel An</b> (Gazette) : le 1er janvier, tout le monde repart à zéro; seuls les points marqués à partir de cette date comptent, jusqu'à la fin de la saison régulière. Sous le classement, <b>🏮 la lanterne rouge</b> suit la course pour ne pas finir dernier.</li>
             <li><b>Chances</b> (Classement) : chaque matin, le site simule 5000 fois le reste de la saison, selon le rythme de chaque joueur et les matchs qui restent à son équipe. Le pourcentage, c'est la part des saisons simulées que votre équipe gagne. Les échanges à venir ne sont pas prévus.</li>
             <li>Pendant les matchs, l'onglet <b>Ce soir</b> affiche une alerte quand un joueur du pool marque. Touchez <b>🔕 Klaxon</b> pour l'entendre aussi.</li>
           </ul>
@@ -222,7 +222,7 @@ const FAQ = {
           q: "Where do the trophies and the odds come from?",
           a: `<ul>
             <li><b>Trophy case</b> (Buzz): 🏆 champion of the month (most points that month), 🥊 weekly duel won, 🎱 bingo won, ⭐ best night in the pool, 👑 each day spent in 1st place. The <b>pool records</b> are right below.</li>
-            <li><b>🎆 New Year Cup</b> (Buzz): on January 1, everyone restarts at zero; only points scored from then until the end of the regular season count. Right above it, <b>🏮 the red lantern</b> follows the race to stay out of last place.</li>
+            <li><b>🎆 New Year Cup</b> (Buzz): on January 1, everyone restarts at zero; only points scored from then until the end of the regular season count. Under the standings, <b>🏮 the red lantern</b> follows the race to stay out of last place.</li>
             <li><b>Odds</b> (Standings): every morning, the site simulates the rest of the season 5,000 times, from each player's pace and his team's remaining games. The percentage is the share of simulated seasons your team wins. Future trades aren't predicted.</li>
             <li>During games, the <b>Tonight</b> tab shows an alert when a pool player scores. Tap <b>🔕 Horn</b> to hear it too.</li>
           </ul>

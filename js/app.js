@@ -171,8 +171,21 @@ function renderHornToggle() {
   };
 }
 
+// Gazette sub-tabs (Hier / Les courses / Le palmarès); the visitor's last choice is remembered
+const SUB_KEY = "patinoire_gazette_sub";
+function showSub(sub) {
+  let current = sub;
+  if (!current) { try { current = localStorage.getItem(SUB_KEY); } catch { /* private mode */ } }
+  if (!["hier", "courses", "palmares"].includes(current)) current = "hier";
+  if (sub) { try { localStorage.setItem(SUB_KEY, sub); } catch { /* private mode */ } }
+  document.querySelectorAll(".subtabs [data-sub]").forEach(b => b.setAttribute("aria-selected", String(b.dataset.sub === current)));
+  document.querySelectorAll(".subpanel").forEach(p => p.classList.toggle("active", p.dataset.sub === current));
+}
+
 function bindChrome() {
   document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () => showTab(b.dataset.tab)));
+  document.querySelectorAll(".subtabs [data-sub]").forEach(b => b.addEventListener("click", () => showSub(b.dataset.sub)));
+  showSub();
   document.querySelector(".tabs").addEventListener("scroll", updateTabFade, { passive: true });
   window.addEventListener("hashchange", () => showTab(location.hash.slice(1)));
   document.getElementById("btn-lang").addEventListener("click", () => {
@@ -458,6 +471,7 @@ function renderStandings() {
           ? `<span class="odds-sub" title="${esc(t("oddsLong"))}">🏆 ${fmtPct(odds.teams[s.participantId].win)}</span>` : ""}</td>
       </tr>`;
     }).join("")}</tbody>`;
+  renderBottomRace();
   bindTeamOpeners(document.getElementById("panel-standings"));
   if (!S.counted) { S.counted = true; countUp(document.getElementById("panel-standings")); }
 }
@@ -1160,7 +1174,6 @@ function formBadge(p) {
 function renderGazette() {
   renderHighlights();
   renderDuels();
-  renderBottomRace();
   renderNewYearCup();
   renderTrophies();
   renderBadges();
@@ -1177,7 +1190,9 @@ function renderHighlights() {
   const el = document.getElementById("highlights"), ins = S.insights;
   document.getElementById("hl-day").textContent = ins ? fmtDay(ins.gameDay, true) : "";
   if (!ins?.highlights?.length) { el.innerHTML = `<div class="card empty">${esc(t("noHighlights"))}</div>`; return; }
-  el.innerHTML = ins.highlights.map(h => {
+  // 8 goals at first (the most-owned scorers come first), the rest behind "voir tout"
+  const list = S.hlAll ? ins.highlights : ins.highlights.slice(0, 8);
+  el.innerHTML = list.map(h => {
     const clip = getLang() === "fr" ? (h.clipFr || h.clipEn) : (h.clipEn || h.clipFr);
     const strength = h.strength === "pp" ? ` · ${t("ppGoal")}` : h.strength === "sh" ? ` · ${t("shGoal")}` : "";
     return `<div class="card hl">
@@ -1188,7 +1203,9 @@ function renderHighlights() {
       <div class="hl-foot">${h.scorerOwned ? ownerStack(h.ownerIds) : `<span class="muted" style="font-size:12px">${esc(t("assistOnly"))}</span>`}
         ${clip ? `<a class="btn btn-sm" href="${esc(clip)}" target="_blank" rel="noopener">▶ ${esc(t("watchGoal"))}</a>` : ""}</div>
     </div>`;
-  }).join("");
+  }).join("") + (list.length < ins.highlights.length
+    ? `<button class="card hl hl-more" id="hl-more">${esc(t("seeAll", { n: ins.highlights.length }))} →</button>` : "");
+  el.querySelector("#hl-more")?.addEventListener("click", () => { S.hlAll = true; renderHighlights(); });
 }
 
 // Weekly duels: pairs drawn from the week's date (same for everyone), scored on points
@@ -1371,13 +1388,17 @@ function renderTrophies() {
   const weight = w => w.cup * 200 + w.month * 100 + w.duel * 10 + w.bingo * 5 + w.star * 3 + w.crown;
   const rows = tr ? S.board.standings.filter(s => tr.won[s.participantId] && weight(tr.won[s.participantId]) > 0)
     .sort((a, b) => weight(tr.won[b.participantId]) - weight(tr.won[a.participantId]) || a.rank - b.rank) : [];
-  el.innerHTML = rows.length ? `<div class="trophy-grid">${rows.map(s => `
+  // Top 6 (plus your own team) at first; the rest behind "Voir les N"
+  const shown = S.trophyAll ? rows : rows.filter((s, i) => i < 6 || s.participantId === mine);
+  el.innerHTML = rows.length ? `<div class="trophy-grid">${shown.map(s => `
       <button class="card trophy-card ${s.participantId === mine ? "mine" : ""}" data-team="${esc(s.participantId)}">
         ${avatar(s, "av av-md")}<span class="grow"><span class="duel-name">${esc(s.teamName)}</span>
         <span class="trophies">${trophyChips(tr.won[s.participantId])}</span></span></button>`).join("")}</div>
+      ${shown.length < rows.length ? `<button class="btn btn-sm see-all" id="trophy-more">${esc(t("seeAll", { n: rows.length }))}</button>` : ""}
       <p class="muted" style="font-size:12px;margin:8px 0 0">${esc(t("trophyLegend"))}</p>`
     : `<div class="card empty">${esc(t("noTrophies"))}</div>`;
   bindTeamOpeners(el);
+  el.querySelector("#trophy-more")?.addEventListener("click", () => { S.trophyAll = true; renderTrophies(); });
 
   const items = (tr?.records || []).map(r => `<li><span class="ms-icon">${r.icon}</span><span>${esc(t(r.key, {
     team: standingOf(r.id)?.teamName, n: r.n, date: r.date ? fmtDay(r.date) : "" }))}</span></li>`);
@@ -1397,25 +1418,18 @@ function renderBottomRace() {
   const low = st.at(-1).totalPoints, last = st.filter(s => s.totalPoints === low);
   const above = st.filter(s => s.totalPoints > low).at(-1);  // the team just above last place
   // Days in last place this season, from the chart history (ties share it)
-  const days = {};
-  for (let i = 0; h && i < h.dates.length; i++) {
+  let days = 0;
+  for (let i = 0; last.length === 1 && h && i < h.dates.length; i++) {
     const vals = st.map(s => h.series[s.participantId]?.[i]).filter(v => v != null);
-    const min = Math.min(...vals);
-    for (const s of st) if (h.series[s.participantId]?.[i] === min) days[s.participantId] = (days[s.participantId] || 0) + 1;
+    if (h.series[last[0].participantId]?.[i] === Math.min(...vals)) days++;
   }
   const danger = st.filter(s => s.totalPoints > low && s.totalPoints - low <= 5);
-  const mostDays = Object.entries(days).sort((a, b) => b[1] - a[1])[0];
-  el.innerHTML = `
-    <div class="section-head"><h2>🏮 ${esc(t("lanterne"))}</h2><span class="muted">${esc(t("lanterneSub"))}</span></div>
-    <div class="card card-pad lanterne">
-      <div class="team-flex">${last.map(s => avatar(s, "av av-lg", "face")).join("")}
-        <div style="min-width:0;flex:1"><div class="value">${esc(last.map(s => s.teamName).join(", "))}</div>
-          <div class="muted" style="font-size:13px">${esc([above && t("lanterneGap", { n: above.totalPoints - low, team: above.teamName }),
-            last.length === 1 && days[last[0].participantId] && t("lanterneDays", { n: days[last[0].participantId] })].filter(Boolean).join(" · "))}</div></div></div>
-      ${danger.length ? `<div class="lanterne-danger"><span class="muted">${esc(t("lanterneDanger"))}</span>
-        ${danger.map(s => `<span class="tag">${esc(s.teamName)} <b class="num">+${s.totalPoints - low}</b></span>`).join("")}</div>` : ""}
-      ${mostDays && mostDays[1] > 1 ? `<div class="muted" style="font-size:12px">${esc(t("lanterneRecord", { team: standingOf(mostDays[0])?.teamName, n: mostDays[1] }))}</div>` : ""}
-    </div>`;
+  el.innerHTML = `<div class="card lanterne-line" title="${esc(t("lanterneSub"))}">
+    <span class="lt-icon" aria-hidden="true">🏮</span>
+    <span class="grow"><b>${esc(t("lanterne"))} :</b> ${esc(last.map(s => s.teamName).join(", "))}
+      <span class="muted">· ${esc([above && t("lanterneGap", { n: above.totalPoints - low, team: above.teamName }),
+        days > 1 && t("lanterneDays", { n: days })].filter(Boolean).join(" · "))}${danger.length > 1
+        ? ` · ${esc(t("lanterneDangerN", { n: danger.length }))}` : ""}</span></span></div>`;
 }
 
 // ---------- 🎆 Coupe du Nouvel An: points from January 1 only ----------
@@ -1441,8 +1455,8 @@ function renderNewYearCup() {
   if (!el) return;
   const cup = newYearCup(), mine = me()?.participantId, start = newYearStart();
   const head = `<div class="section-head"><h2>🎆 ${esc(t("nyCup"))}</h2><span class="muted">${esc(t("nyRule", { date: fmtDay(start, true) }))}</span></div>`;
-  if (!cup) {
-    el.innerHTML = `${head}<div class="card card-pad">${esc(t("nyBefore", { date: fmtDay(start, true), end: fmtDay(S.config.seasonEnd, true) }))}</div>`;
+  if (!cup) {  // until January 1: one line, not a whole section
+    el.innerHTML = `<div class="card teaser">🎆 <span><b>${esc(t("nyCup"))}</b> · ${esc(t("nyTeaser", { date: fmtDay(start, true) }))}</span></div>`;
     return;
   }
   el.innerHTML = `${head}${cup.winners.length ? `<div class="card card-pad bingo-winner">🎆 ${esc(t("nyWinner", { teams: cup.winners.map(id => standingOf(id)?.teamName).join(", ") }))}</div>` : ""}
@@ -1491,7 +1505,7 @@ function renderMilestones() {
   }
   rows.sort((a, b) => a.sort - b.sort);
   el.innerHTML = rows.length
-    ? `<ul class="ms-list">${rows.slice(0, 12).map(r => `<li><span class="ms-icon">${r.icon}</span><span>${r.html}</span></li>`).join("")}</ul>`
+    ? `<ul class="ms-list">${rows.slice(0, 5).map(r => `<li><span class="ms-icon">${r.icon}</span><span>${r.html}</span></li>`).join("")}</ul>`
     : `<div class="empty" style="padding:8px">${esc(t("noMilestones"))}</div>`;
 }
 

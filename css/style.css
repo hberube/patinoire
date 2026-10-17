@@ -627,18 +627,14 @@ body { overflow-x: hidden; }
 .bingo-prize.final { background: var(--gold-soft); }
 .crown { font-size: 13px; margin-left: 4px; cursor: help; white-space: nowrap; }
 
-/* Lanterne rouge and New Year Cup */
-.lanterne { display: grid; gap: 10px; border-left: 4px solid var(--red); }
-.lanterne .value { font-weight: 800; font-size: 17px; }
-.lanterne .team-flex .av + .av { margin-left: -10px; }
-.lanterne-danger { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; font-size: 13px; }
+/* New Year Cup */
 .ny-row { display: flex; gap: 10px; align-items: center; padding: 7px 4px; border-bottom: 1px solid var(--border); min-width: 0; }
 .ny-row:last-child { border-bottom: 0; }
 .ny-row.me { background: var(--ice-soft); border-radius: 8px; }
 .ny-row .grow { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .ny-row .name { font-weight: 700; }
 .ny-row .who { font-size: 13px; color: var(--text-3); }
-#bottom-race .section-head, #newyear-cup .section-head, #palmares .section-head { margin-top: 26px; }
+#newyear-cup .section-head, #palmares .section-head { margin-top: 26px; }
 
 /* Rink view (team window) */
 .view-toggle { display: flex; gap: 6px; margin: 4px 0 6px; }
@@ -661,3 +657,16 @@ body { overflow-x: hidden; }
 .rp-inj { font-size: 11px; text-anchor: middle; }
 .rp-name { fill: var(--text); font: 600 11px var(--ff); text-anchor: middle; paint-order: stroke; stroke: var(--surface-2); stroke-width: 3px; }
 .rink-legend { font-size: 12px; margin: 8px 0 0; }
+
+/* Gazette sub-tabs */
+.subtabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 4px; }
+.subtabs .chip[aria-selected="true"] { border-color: var(--red); color: var(--red); background: var(--red-soft); }
+.subpanel { display: none; }
+.subpanel.active { display: block; }
+.subpanel > .section-head:first-child { margin-top: 18px; }
+.hl-more { display: grid; place-items: center; font-weight: 700; cursor: pointer; color: var(--text-2); border: 1px dashed var(--border); }
+.see-all { margin-top: 10px; }
+.teaser { display: flex; gap: 10px; align-items: center; padding: 12px 14px; margin-top: 18px; font-size: 14px; }
+.lanterne-line { display: flex; gap: 10px; align-items: center; padding: 10px 14px; margin-top: 10px; font-size: 14px; border-left: 4px solid var(--red); }
+.lanterne-line .grow { flex: 1; min-width: 0; }
+.lt-icon { font-size: 18px; }
