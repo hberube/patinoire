@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   document.getElementById("edit-config").href = `https://github.com/${OWNER}/${REPO}/edit/main/data/config.json`;
   document.getElementById("actions-link").href = ACTIONS_URL;
   document.getElementById("repo-name").textContent = `${OWNER}/${REPO}`;
+  bingoChampionReminder();
   setupToken();
   setupContacts();
   setupMail();
@@ -48,6 +49,25 @@ document.addEventListener("DOMContentLoaded", async () => {
   setupLogos();
   setupRename();
 });
+
+// After the regular season: the bingo champion (Bingo tab) goes into data/palmares.json, which gives
+// them the 🎱👑 crown next season; the site's own card code decides it, so it's entered by hand once
+async function bingoChampionReminder() {
+  const end = D.config.seasonEnd, y = String(D.config.season || "");
+  const season = y.length === 8 ? `${y.slice(0, 4)}-${y.slice(6)}` : y;
+  if (!end || Date.now() < new Date(`${end}T12:00:00`).getTime() + 3 * 864e5) return;
+  const palmares = await fetchJson("data/palmares.json", "../").catch(() => ({}));
+  if (palmares[season]?.bingo?.length) return;
+  const box = document.createElement("div");
+  box.className = "card card-pad";
+  box.style.cssText = "margin-bottom:16px;border-left:4px solid var(--gold)";
+  box.innerHTML = `🎱👑 La saison ${season} est terminée : le champion du bingo est affiché dans l'onglet
+    <a href="../index.html#bingo">Bingo</a>. Ajoutez-le à <code>data/palmares.json</code>
+    (<code>{"${season}": {"bingo": ["usr_…"]}}</code>) pour sa couronne la saison prochaine,
+    et mettez sa case du centre dans <code>bingoFree</code> (section Configuration).
+    <a href="https://github.com/${OWNER}/${REPO}/edit/main/data/palmares.json" target="_blank" rel="noopener">Modifier palmares.json</a>`;
+  document.getElementById("admin").prepend(box);
+}
 
 // ---------- GitHub token & dispatch ----------
 function setupToken() {
@@ -313,6 +333,8 @@ Chaque soir de match, vous recevez votre propre carte de bingo (9 cases, le cent
 - des moments de la soirée (« 2 matchs en prolongation », « Un but dans un filet désert »)
 
 Rien à faire : les cases se cochent toutes seules pendant les matchs. Si le site est ouvert, une alerte apparaît quand une de vos cases se coche ou que vous complétez une ligne. À la fin de la soirée, le plus de lignes gagne (puis le plus de cases).
+
+Chaque bingo gagné compte pour le classement de la saison : à la fin de la saison régulière, le champion du bingo gagne une carte-cadeau Amazon, la couronne 🎱👑 à côté de son équipe toute la saison prochaine et le choix de la case du centre de toutes les cartes l'an prochain.
 
 Votre carte arrive vers midi les jours de match. Connectez-vous pour voir la vôtre, et touchez un nom dans « La course » pour voir celle des autres :
 ${site}#bingo

@@ -20,11 +20,11 @@ document.addEventListener("DOMContentLoaded", async () => {
   bindChrome();
   try {
     const opt = p => fetchJson(p).catch(() => null);
-    [S.config, S.board, S.history, S.live, S.groups, S.trades, S.index, S.logos, S.insights, S.recap, S.bingoArchive, S.injuries] = await Promise.all([
+    [S.config, S.board, S.history, S.live, S.groups, S.trades, S.index, S.logos, S.insights, S.recap, S.bingoArchive, S.injuries, S.palmares] = await Promise.all([
       fetchJson("data/config.json"), fetchJson("data/leaderboard.json"), opt("data/history.json"),
       fetchLive(), fetchJson("data/groups.json"), opt("data/trades_history.json"),
       opt("data/players_index.json"), opt("data/logos.json"), opt("data/insights.json"), opt("data/recap.json"),
-      opt("data/bingo.json"), opt("data/injuries.json"),
+      opt("data/bingo.json"), opt("data/injuries.json"), opt("data/palmares.json"),
     ]);
   } catch (err) {
     document.querySelector("main").innerHTML = `<div class="card empty">${esc(t("loadError"))}</div>`;
@@ -448,7 +448,7 @@ function renderStandings() {
       const d = deltas[s.participantId];
       return `<tr class="clickable ${s.participantId === mine ? "me" : ""}" data-team="${esc(s.participantId)}" tabindex="0">
         <td class="l rank num">${s.rank}${mv ? `<span class="move ${mv > 0 ? "up" : "down"}">${mv > 0 ? "▲" : "▼"}${Math.abs(mv)}</span>` : ""}</td>
-        <td class="l team-cell"><div class="team-flex">${avatar(s, "av av-row", "logo")}<div><div class="name">${esc(s.teamName)}</div><div class="who">${esc(s.participantName)}</div></div></div></td>
+        <td class="l team-cell"><div class="team-flex">${avatar(s, "av av-row", "logo")}<div><div class="name">${esc(s.teamName)}${crown(s.participantId)}</div><div class="who">${esc(s.participantName)}</div></div></div></td>
         <td class="opt num">${s.totalGoals}</td><td class="opt num">${s.totalAssists}</td><td class="opt num">${s.goalieWins}</td>
         <td class="opt spark-col">${sparkline(S.history?.series[s.participantId])}</td>
         <td class="opt num muted">${s.rank === 1 ? "—" : `−${st[0].totalPoints - s.totalPoints}`}</td>
@@ -632,7 +632,7 @@ function openTeam(id) {
   modal.innerHTML = `
     <div class="modal-head">
       <div class="team-flex">${avatar(s, "av av-xl", "face")}<div><div class="muted" style="font-size:13px">#${s.rank} · ${esc(s.participantName)}</div>
-        <div style="font-weight:800;font-size:20px;line-height:1.2">${esc(s.teamName)}</div></div></div>
+        <div style="font-weight:800;font-size:20px;line-height:1.2">${esc(s.teamName)}${crown(s.participantId)}</div></div></div>
       <div style="text-align:right"><div class="big num">${s.totalPoints}</div><div class="muted" style="font-size:12px">${esc(t("pts"))}</div></div>
     </div>
     <div class="modal-body">
@@ -795,14 +795,15 @@ function bingoCard(row) {
     const st = res.states[i], cls = sq.kind === "free" ? "free" : st === true ? "done" : st === false ? "dead" : "open";
     const mark = sq.kind === "free" ? "⭐" : st === true ? "✅" : st === false ? "✗" : "";
     return `<div class="bsq ${cls} ${inLine.has(i) ? "line" : ""}" role="gridcell">
-      ${mark ? `<span class="bmark" aria-hidden="true">${mark}</span>` : ""}<span>${esc(sq.kind === "free" ? t("bingoFree") : squareLabel(sq))}</span></div>`;
+      ${mark ? `<span class="bmark" aria-hidden="true">${mark}</span>` : ""}<span>${esc(sq.kind === "free" ? S.config.bingoFree || t("bingoFree") : squareLabel(sq))}</span></div>`;
   }).join("")}</div>`;
 }
 
 const bingoScore = res => t("bingoScore", { lines: res.lines.length, squares: res.done });
 
 // Finished nights (data/bingo.json, saved by scripts/bingo_archive.py), replayed with the same
-// bingo.js code and the rosters of that night: [{ day, winners: [ids], lines, squares }], oldest first
+// bingo.js code and the rosters of that night, oldest first:
+// [{ day, winners: [ids], lines, squares (the winners'), results: [{ id, lines, squares }] }]
 function bingoHistory() {
   if (S.bingoHist) return S.bingoHist;
   const out = [];
@@ -820,7 +821,8 @@ function bingoHistory() {
     const top = rows[0]?.res;
     if (!top) continue;
     out.push({ day: n.day, lines: top.lines.length, squares: top.done,
-      winners: rows.filter(r => r.res.lines.length === top.lines.length && r.res.done === top.done).map(r => r.s.participantId) });
+      winners: rows.filter(r => r.res.lines.length === top.lines.length && r.res.done === top.done).map(r => r.s.participantId),
+      results: rows.map(r => ({ id: r.s.participantId, lines: r.res.lines.length, squares: r.res.done })) });
   }
   return (S.bingoHist = out);
 }
@@ -831,6 +833,60 @@ function lastBingo() {
   return last && Date.now() - new Date(`${last.day}T12:00:00`).getTime() < 36 * 3600 * 1000 ? last : null;
 }
 
+// The season's bingo ranking, regular season only (config.seasonEnd). Champion rule (Hugo's):
+// most nights won (a shared night counts for each winner), then most lines, then most squares;
+// still tied = shared title.
+function bingoSeason() {
+  const end = S.config.seasonEnd, nights = bingoHistory().filter(n => !end || n.day <= end);
+  const tally = new Map();
+  for (const n of nights) for (const r of n.results) {
+    const x = tally.get(r.id) || { id: r.id, wins: 0, lines: 0, squares: 0, nights: 0, best: 0 };
+    x.nights++; x.lines += r.lines; x.squares += r.squares; x.best = Math.max(x.best, r.lines);
+    if (n.winners.includes(r.id)) x.wins++;
+    tally.set(r.id, x);
+  }
+  const key = x => [x.wins, x.lines, x.squares];
+  const cmp = (a, b) => b.wins - a.wins || b.lines - a.lines || b.squares - a.squares;
+  const rows = [...tally.values()].filter(x => standingOf(x.id)).sort((a, b) => cmp(a, b) || standingOf(a.id).rank - standingOf(b.id).rank);
+  // Places with ties shown as equal ranks
+  rows.forEach((x, i) => { x.place = i && !cmp(rows[i - 1], x) ? rows[i - 1].place : i + 1; });
+  const over = !!end && (nights.some(n => n.day === end) || Date.now() > new Date(`${end}T12:00:00`).getTime() + 3 * 864e5);
+  const champions = over && rows.length && rows[0].wins ? rows.filter(x => key(x).join() === key(rows[0]).join()).map(x => x.id) : [];
+  return { rows, nights: nights.length, over, champions };
+}
+
+const seasonLabel = () => { const y = String(S.config.season || ""); return y.length === 8 ? `${y.slice(0, 4)}-${y.slice(6)}` : y; };
+
+// 🎱👑 for past bingo champions (data/palmares.json: { "2026-27": { "bingo": [participant ids] } })
+function crown(id) {
+  const won = Object.entries(S.palmares || {}).filter(([, p]) => p.bingo?.includes(id)).map(([season]) => season);
+  return won.length ? ` <span class="crown" title="${esc(t("crownTitle", { seasons: won.join(", ") }))}">🎱👑</span>` : "";
+}
+
+function bingoSeasonSection() {
+  const { rows, nights, over, champions } = bingoSeason(), mine = me()?.participantId;
+  const prize = S.config.bingoPrize?.[getLang()] || S.config.bingoPrize?.fr || "";
+  const status = champions.length ? t(champions.length > 1 ? "bsChampions" : "bsChampion", { teams: champions.map(id => standingOf(id)?.teamName).join(", ") })
+    : t("bsDecided", { date: fmtDay(S.config.seasonEnd, true) });
+  return `
+    <div class="section-head"><h2>${esc(t("bsTitle", { season: seasonLabel() }))}</h2><span class="muted">${esc(t("bsRule"))}</span></div>
+    <div class="card card-pad bingo-prize${champions.length ? " final" : ""}">
+      <div class="bp-head">🏆 <b>${esc(t("bsPrize"))}</b></div>
+      ${prize ? `<p>${esc(prize)}</p>` : ""}
+      <p class="bp-status">${esc(status)}</p>
+    </div>
+    ${rows.length ? `<div class="card table-wrap"><table class="bingo-season">
+      <thead><tr><th class="l">${esc(t("rank"))}</th><th class="l">${esc(t("team"))}</th><th title="${esc(t("bsWinsLong"))}">🎱</th>
+        <th>${esc(t("bsLines"))}</th><th class="opt">${esc(t("bsSquares"))}</th><th class="opt">${esc(t("bsBest"))}</th></tr></thead>
+      <tbody>${rows.map(x => { const s = standingOf(x.id); return `<tr class="clickable ${x.id === mine ? "me" : ""}" data-team="${esc(x.id)}" tabindex="0">
+        <td class="l rank num">${x.place}</td>
+        <td class="l team-cell"><div class="team-flex">${avatar(s, "av av-row", "logo")}<div><div class="name">${esc(s.teamName)}${crown(x.id)}</div><div class="who">${esc(s.participantName)}</div></div></div></td>
+        <td class="pts-cell num">${x.wins}</td><td class="num">${x.lines}</td><td class="num opt">${x.squares}</td><td class="num opt">${x.best}</td></tr>`; }).join("")}</tbody>
+    </table></div>
+    <p class="muted" style="font-size:12px;margin:8px 0 0">${esc(t("bsNights", { n: nights }))}</p>`
+    : `<div class="card empty">${esc(t("bsEmpty"))}</div>`}`;
+}
+
 const bingoWinnerText = night => t(night.winners.length > 1 ? "bingoWinners" : "bingoWinner", {
   teams: night.winners.map(id => standingOf(id)?.teamName).filter(Boolean).join(", "), lines: night.lines, squares: night.squares });
 
@@ -838,7 +894,11 @@ function renderBingo() {
   const el = document.getElementById("bingo-root");
   if (!el) return;  // tolerate a cached older index.html right after a deploy
   const live = S.live, rows = bingoRace(live), mine = me()?.participantId;
-  if (!rows.length) { el.innerHTML = `<div class="card empty">${esc(t("bingoNone"))}</div>`; return; }
+  if (!rows.length) {
+    el.innerHTML = `<div class="card empty">${esc(t("bingoNone"))}</div>${bingoSeasonSection()}`;
+    bindTeamOpeners(el.querySelector(".bingo-season") || document.createElement("div"));
+    return;
+  }
   const over = rows[0].res.over, top = rows[0].res;
   const winners = over ? rows.filter(r => r.res.lines.length === top.lines.length && r.res.done === top.done) : [];
   const prev = lastBingo()?.day !== live.gameDay ? lastBingo() : null;  // last night's winner, once tonight's cards are out
@@ -864,11 +924,13 @@ function renderBingo() {
         <div class="bingo-race">${rows.map((r, i) => `
           <button class="brow ${r.s.participantId === S.bingoPick ? "shown" : ""} ${r.s.participantId === mine ? "me" : ""}" data-pick="${esc(r.s.participantId)}">
             <span class="num muted brank">${i + 1}</span>${avatar(r.s, "av", "logo")}
-            <span class="grow"><span class="name">${esc(r.s.teamName)}</span><span class="who"> · ${esc(r.s.participantName)}</span></span>
+            <span class="grow"><span class="name">${esc(r.s.teamName)}${crown(r.s.participantId)}</span><span class="who"> · ${esc(r.s.participantName)}</span></span>
             <span class="blines num" title="${esc(bingoScore(r.res))}">${r.res.lines.length ? `🎱 ${r.res.lines.length}` : ""}</span>
             <span class="bsquares num">${r.res.done}/8</span></button>`).join("")}</div>
       </div>
-    </div>`;
+    </div>
+    ${bingoSeasonSection()}`;
+  bindTeamOpeners(el.querySelector(".bingo-season") || document.createElement("div"));
   el.querySelector("#bingo-login")?.addEventListener("click", openLogin);
   el.querySelectorAll("[data-pick]").forEach(b => b.addEventListener("click", () => {
     S.bingoPick = b.dataset.pick;
@@ -1047,6 +1109,7 @@ function renderGazette() {
   renderTrophies();
   renderBadges();
   renderMilestones();
+  renderPalmares();
 }
 
 function ownerStack(ids, max = 5) {
@@ -1279,6 +1342,16 @@ function renderBadges() {
     <div class="card award">${mug(p, "mug")}
       <div><div class="label">${icon} ${esc(label)}</div><div class="value">${esc(p.name)} ${logo(p.team)}</div><div class="sub">${esc(sub)}</div></div>
     </div>`).join("");
+}
+
+// Past champions (data/palmares.json, filled in at each season's end): hidden until there is one
+function renderPalmares() {
+  const el = document.getElementById("palmares");
+  if (!el) return;
+  const seasons = Object.entries(S.palmares || {}).filter(([, p]) => p.bingo?.length).sort((a, b) => b[0].localeCompare(a[0]));
+  el.innerHTML = seasons.length ? `<div class="section-head"><h2>${esc(t("palmares"))}</h2></div>
+    <div class="card card-pad"><ul class="ms-list">${seasons.map(([season, p]) => `<li><span class="ms-icon">🎱👑</span><span>
+      <b>${esc(t("palmaresBingo", { season }))}</b> : ${esc(p.bingo.map(id => standingOf(id)?.teamName || p.names?.[id] || id).join(", "))}</span></li>`).join("")}</ul></div>` : "";
 }
 
 function renderMilestones() {

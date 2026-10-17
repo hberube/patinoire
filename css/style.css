@@ -619,3 +619,10 @@ body { overflow-x: hidden; }
 .inj-note p { margin: 6px 0 0; font-size: 13px; color: var(--text-2); }
 .inj-badge { font-size: 13px; cursor: help; }
 .inj-badge.dtd { opacity: .55; }
+
+/* Bingo season standings and champion */
+.bingo-prize { border-left: 4px solid var(--gold); display: grid; gap: 6px; }
+.bingo-prize p { margin: 0; }
+.bingo-prize .bp-status { font-size: 13px; color: var(--text-2); font-weight: 600; }
+.bingo-prize.final { background: var(--gold-soft); }
+.crown { font-size: 13px; margin-left: 4px; cursor: help; white-space: nowrap; }

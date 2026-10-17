@@ -115,6 +115,7 @@ const FAQ = {
             <li>Les joueurs blessés ou suspendus (onglet <b>Blessés</b>) ne sont pas dans les cartes. La liste suit les nouvelles jusqu'au premier match de la journée, puis ne change plus.</li>
             <li>Une ligne = 3 cases cochées en ligne, en colonne ou en diagonale. À la fin de la soirée, le plus de lignes gagne (puis le plus de cases).</li>
             <li>Le gagnant reste affiché le lendemain (« Bingo d'hier »), et chaque bingo gagné vaut un trophée 🎱 dans la Vitrine des trophées.</li>
+            <li><b>Le bingo de la saison :</b> le <b>Classement du bingo</b> (onglet Bingo) compte les bingos gagnés toute la saison. À la fin de la saison régulière, le plus de bingos gagnés est champion (égalité : le plus de lignes, puis de cases). Son prix : une carte-cadeau Amazon offerte par Hugo, la couronne 🎱👑 à côté de son équipe toute la saison prochaine, et le choix de la case du centre de toutes les cartes l'an prochain.</li>
             <li>Touchez un nom dans <b>La course</b> pour voir la carte de quelqu'un d'autre.</li>
           </ul>`,
         },
@@ -234,6 +235,7 @@ const FAQ = {
             <li>Injured or suspended players (<b>Injuries</b> tab) aren't on the cards. The list follows the news until the day's first game starts, then stays put.</li>
             <li>A line = 3 ticked squares in a row, a column or a diagonal. At the end of the night, the most lines wins (then the most squares).</li>
             <li>The winner stays up the next day ("Last night's bingo"), and every bingo won earns a 🎱 trophy in the Trophy case.</li>
+            <li><b>The season's bingo:</b> the <b>Bingo standings</b> (Bingo tab) count bingos won all season. At the end of the regular season, the most bingos won is champion (tie: most lines, then squares). The prize: an Amazon gift card from Hugo, the 🎱👑 crown next to their team all next season, and the pick of the centre square on every card next year.</li>
             <li>Tap a name in <b>The race</b> to see someone else's card.</li>
           </ul>`,
         },
