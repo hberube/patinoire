@@ -97,6 +97,15 @@ const FAQ = {
           q: "C'est quoi, la Gazette et les duels?",
           a: `<p>La <b>Gazette</b> résume la veille : les buts des joueurs du pool (avec la vidéo), le choix en or, l'ancre de glace et le grand oublié. Les <b>duels de la semaine</b> jumellent les équipes au hasard chaque lundi; l'équipe qui fait le plus de points du lundi au dimanche gagne. Juste pour le plaisir : ça ne change pas le classement.</p>`,
         },
+        {
+          q: "D'où viennent les trophées et les chances de gagner?",
+          a: `<ul>
+            <li><b>Vitrine des trophées</b> (Gazette) : 🏆 champion du mois (le plus de points dans le mois), 🥊 duel de la semaine gagné, ⭐ meilleure soirée du pool, 👑 chaque jour passé au 1er rang. Les <b>records du pool</b> sont juste en dessous.</li>
+            <li><b>Chances</b> (Classement) : chaque matin, le site simule 5000 fois le reste de la saison, selon le rythme de chaque joueur et les matchs qui restent à son équipe. Le pourcentage, c'est la part des saisons simulées que votre équipe gagne. Les échanges à venir ne sont pas prévus.</li>
+            <li>Pendant les matchs, l'onglet <b>Ce soir</b> affiche une alerte quand un joueur du pool marque. Touchez <b>🔕 Klaxon</b> pour l'entendre aussi.</li>
+          </ul>
+          <p>Tout ça, c'est pour le plaisir : seuls les points comptent au classement.</p>`,
+        },
       ],
     },
   ],
@@ -194,6 +203,15 @@ const FAQ = {
         {
           q: "What are the Buzz tab and the duels?",
           a: `<p><b>Buzz</b> recaps the previous night: goals by pool players (with video), the Golden Pick, the Ice Anchor and the Snub. <b>Weekly duels</b> pair teams at random every Monday; whoever scores more from Monday to Sunday wins. Just for fun: it doesn't affect the standings.</p>`,
+        },
+        {
+          q: "Where do the trophies and the odds come from?",
+          a: `<ul>
+            <li><b>Trophy case</b> (Buzz): 🏆 champion of the month (most points that month), 🥊 weekly duel won, ⭐ best night in the pool, 👑 each day spent in 1st place. The <b>pool records</b> are right below.</li>
+            <li><b>Odds</b> (Standings): every morning, the site simulates the rest of the season 5,000 times, from each player's pace and his team's remaining games. The percentage is the share of simulated seasons your team wins. Future trades aren't predicted.</li>
+            <li>During games, the <b>Tonight</b> tab shows an alert when a pool player scores. Tap <b>🔕 Horn</b> to hear it too.</li>
+          </ul>
+          <p>It's all for fun: only points count in the standings.</p>`,
         },
       ],
     },

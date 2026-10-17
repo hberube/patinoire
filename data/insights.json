@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-17T12:46:23Z",
+  "lastUpdated": "2026-10-17T15:34:06Z",
   "gameDay": "2026-10-16",
   "highlights": [
     {
@@ -816,5 +816,102 @@
       "value": 4,
       "target": 5
     }
-  ]
+  ],
+  "odds": {
+    "asOf": "2026-10-16",
+    "sims": 5000,
+    "teams": {
+      "usr_michel_bry": {
+        "win": 33.7,
+        "podium": 63.4,
+        "projected": 1702
+      },
+      "usr_guillaume_brossard": {
+        "win": 9.5,
+        "podium": 32.4,
+        "projected": 1622
+      },
+      "usr_elrick": {
+        "win": 8.9,
+        "podium": 27.5,
+        "projected": 1610
+      },
+      "usr_sylvianne": {
+        "win": 10.6,
+        "podium": 31.0,
+        "projected": 1624
+      },
+      "usr_hugo_berube": {
+        "win": 2.2,
+        "podium": 17.0,
+        "projected": 1592
+      },
+      "usr_simon": {
+        "win": 5.2,
+        "podium": 21.1,
+        "projected": 1604
+      },
+      "usr_etienne": {
+        "win": 3.8,
+        "podium": 15.9,
+        "projected": 1583
+      },
+      "usr_louise_trottier": {
+        "win": 3.4,
+        "podium": 13.9,
+        "projected": 1554
+      },
+      "usr_jackson_gagnon": {
+        "win": 2.5,
+        "podium": 9.7,
+        "projected": 1544
+      },
+      "usr_marjolaine_comeau": {
+        "win": 2.6,
+        "podium": 10.4,
+        "projected": 1531
+      },
+      "usr_alexandre_comeau": {
+        "win": 2.1,
+        "podium": 11.6,
+        "projected": 1571
+      },
+      "usr_vincent": {
+        "win": 5.4,
+        "podium": 14.5,
+        "projected": 1530
+      },
+      "usr_eve": {
+        "win": 1.8,
+        "podium": 7.3,
+        "projected": 1518
+      },
+      "usr_julien_berube": {
+        "win": 2.9,
+        "podium": 8.9,
+        "projected": 1518
+      },
+      "usr_florence": {
+        "win": 0.9,
+        "podium": 3.6,
+        "projected": 1446
+      },
+      "usr_jolyne_brossard": {
+        "win": 0.6,
+        "podium": 2.6,
+        "projected": 1467
+      },
+      "usr_maddox_gagnon": {
+        "win": 2.9,
+        "podium": 6.6,
+        "projected": 1448
+      },
+      "usr_vicky": {
+        "win": 1.3,
+        "podium": 4.5,
+        "projected": 1432
+      }
+    },
+    "before": {}
+  }
 }

@@ -72,8 +72,96 @@ async function refreshLive() {
   liveBusy = true;
   try {
     const live = await fetchLive();
-    if (live && live.updated !== S.live?.updated) { S.live = live; renderTonight(); }
+    if (live && live.updated !== S.live?.updated) {
+      const goals = newPoolGoals(S.live, live);
+      S.live = live;
+      renderTonight();
+      if (goals.length) goalAlert(goals);
+    }
   } finally { liveBusy = false; }
+}
+
+// ---------- Goal alert: banner (and optional horn) when a refresh brings new pool goals ----------
+const HORN_KEY = "patinoire_goal_horn";
+const hornOn = () => { try { return localStorage.getItem(HORN_KEY) === "on"; } catch { return false; } };
+
+function newPoolGoals(before, after) {
+  if (!before || before.gameDay !== after.gameDay) return [];  // first load or a new night: nothing is "new"
+  const out = [];
+  for (const [id, line] of Object.entries(after.players || {})) {
+    const n = line.goals - (before.players?.[id]?.goals || 0);
+    if (n > 0 && S.owners.has(Number(id))) out.push({ id: Number(id), n });
+  }
+  return out;
+}
+
+function goalAlert(goals) {
+  let box = document.getElementById("goal-toast");
+  if (!box) {
+    box = Object.assign(document.createElement("div"), { id: "goal-toast", role: "status" });
+    box.setAttribute("aria-live", "polite");
+    document.body.append(box);
+  }
+  const mine = me()?.participantId, N = S.board.standings.length;
+  const playerOf = id => S.board.standings.flatMap(s => s.rosterStats).find(p => p.id === id);
+  const ownersOf = id => S.board.standings.filter(s => s.rosterStats.some(p => p.id === id));
+  // Your players first, then the most-owned
+  goals.sort((a, b) => ownersOf(b.id).some(s => s.participantId === mine) - ownersOf(a.id).some(s => s.participantId === mine)
+    || ownersOf(b.id).length - ownersOf(a.id).length);
+  const shown = goals.slice(0, 3);
+  box.innerHTML = `<button class="goal-toast" title="${esc(t("tonight"))}">
+    ${shown.map(g => {
+      const p = playerOf(g.id), owners = ownersOf(g.id), isMine = owners.some(s => s.participantId === mine);
+      const names = owners.map(s => s.teamName);
+      const who = owners.length === N ? t("goalForAll", { n: g.n })
+        : owners.length > 4 ? t("goalForMany", { n: g.n, k: owners.length })
+        : t("goalFor", { n: g.n, teams: names.length > 3 ? t("andMore", { list: names.slice(0, 2).join(", "), n: names.length - 2 }) : names.join(", ") });
+      return `<span class="gt-row ${isMine ? "mine" : ""}">${mug(p, "mug mug-sm")}
+        <span class="grow"><b>🚨 ${esc(t("goalAlert", { name: p.name, team: p.team }))}${g.n > 1 ? ` ×${g.n}` : ""}</b>
+          <span class="gt-sub">${isMine ? `<b>${esc(t("goalMine"))}</b> ` : ""}${esc(who)}</span></span></span>`;
+    }).join("")}
+    ${goals.length > 3 ? `<span class="gt-sub">${esc(t("moreGoals", { n: goals.length - 3 }))}</span>` : ""}
+  </button>`;
+  box.querySelector("button").addEventListener("click", () => { box.innerHTML = ""; showTab("tonight"); });
+  clearTimeout(box.timer);
+  box.timer = setTimeout(() => { box.innerHTML = ""; }, 15000);
+  if (hornOn()) playHorn();
+}
+
+// A short goal horn made on the fly (no sound file); browsers only allow it after a tap on the page,
+// which turning the horn on provides
+let audio;
+function playHorn() {
+  try {
+    audio ||= new AudioContext();
+    audio.resume();
+    const now = audio.currentTime, out = audio.createGain(), lp = audio.createBiquadFilter();
+    lp.type = "lowpass"; lp.frequency.value = 1400;
+    out.gain.setValueAtTime(0.0001, now);
+    out.gain.exponentialRampToValueAtTime(0.25, now + 0.08);
+    out.gain.setValueAtTime(0.25, now + 1.5);
+    out.gain.exponentialRampToValueAtTime(0.0001, now + 2.2);
+    lp.connect(out).connect(audio.destination);
+    for (const f of [174.6, 220, 261.6]) {  // F major chord, like an arena horn
+      const o = audio.createOscillator();
+      o.type = "sawtooth"; o.frequency.value = f;
+      o.connect(lp); o.start(now); o.stop(now + 2.3);
+    }
+  } catch { /* no Web Audio: banner only */ }
+}
+
+function renderHornToggle() {
+  const btn = document.getElementById("horn-toggle");
+  if (!btn) return;  // tolerate a cached older index.html right after a deploy
+  btn.hidden = false;
+  btn.textContent = t(hornOn() ? "hornOn" : "hornOff");
+  btn.title = t("hornHint");
+  btn.setAttribute("aria-pressed", String(hornOn()));
+  btn.onclick = () => {
+    try { localStorage.setItem(HORN_KEY, hornOn() ? "off" : "on"); } catch { /* private mode */ }
+    if (hornOn()) playHorn();  // a sample, and unlocks audio for later alerts
+    renderHornToggle();
+  };
 }
 
 function bindChrome() {
@@ -290,8 +378,21 @@ function renderRecap() {
 }
 
 // ---------- Standings ----------
+// Chances of winning (insights.json, from scripts/odds.py)
+const pct = v => v >= 99.5 ? ">99" : v >= 1 ? String(Math.round(v)) : v > 0 ? "<1" : "0";
+const fmtPct = v => `${pct(v)}${getLang() === "fr" ? "\u00a0%" : "%"}`;
+
+function oddsCell(id) {
+  const o = S.insights.odds.teams[id], before = S.insights.odds.before?.[id];
+  if (!o) return "—";
+  const move = before == null ? 0 : Math.round(o.win - before);
+  return `<span class="odds">${fmtPct(o.win)}</span>${move ? `<span class="move ${move > 0 ? "up" : "down"}" title="${esc(t("oddsMove",
+    { d: `${move > 0 ? "+" : "−"}${Math.abs(move)}` }))}">${move > 0 ? "▲" : "▼"}${Math.abs(move)}</span>` : ""}`;
+}
+
 function renderStandings() {
   const st = S.board.standings, deltas = dayDeltas(), mine = me()?.participantId;
+  const odds = S.insights?.odds?.teams && Object.keys(S.insights.odds.teams).length ? S.insights.odds : null;
   const medals = ["🥇", "🥈", "🥉"], cls = ["first", "second", "third"];
   const podium = st.slice(0, 3).map((s, i) => ({ s, i }));
   // Visual podium order on wide screens: 2nd, 1st, 3rd
@@ -327,7 +428,8 @@ function renderStandings() {
       <th class="opt" title="${esc(t("goalsLong"))}">${esc(t("goals"))}</th>
       <th class="opt" title="${esc(t("assistsLong"))}">${esc(t("assists"))}</th>
       <th class="opt" title="${esc(t("winsLong"))}">${esc(t("wins"))}</th>
-      <th class="opt spark-col">${esc(t("trend"))}</th><th class="opt">${esc(t("gapLeader"))}</th><th>${esc(t("yesterdayShort"))}</th><th>${esc(t("pts"))}</th>
+      <th class="opt spark-col">${esc(t("trend"))}</th><th class="opt">${esc(t("gapLeader"))}</th><th>${esc(t("yesterdayShort"))}</th>
+      ${odds ? `<th class="odds-col" title="${esc(t("oddsLong"))}">${esc(t("oddsShort"))}</th>` : ""}<th>${esc(t("pts"))}</th>
     </tr></thead>
     <tbody>${st.map(s => {
       const mv = s.previousRank ? s.previousRank - s.rank : 0;
@@ -339,7 +441,9 @@ function renderStandings() {
         <td class="opt spark-col">${sparkline(S.history?.series[s.participantId])}</td>
         <td class="opt num muted">${s.rank === 1 ? "—" : `−${st[0].totalPoints - s.totalPoints}`}</td>
         <td class="num"><span class="delta ${d ? "" : "zero"}">${d == null ? "—" : d > 0 ? `+${d}` : d}</span></td>
-        <td class="pts-cell num" data-count="${s.totalPoints}">${s.totalPoints}</td>
+        ${odds ? `<td class="num odds-col">${oddsCell(s.participantId)}</td>` : ""}
+        <td class="pts-cell num"><span data-count="${s.totalPoints}">${s.totalPoints}</span>${odds?.teams[s.participantId]
+          ? `<span class="odds-sub" title="${esc(t("oddsLong"))}">🏆 ${fmtPct(odds.teams[s.participantId].win)}</span>` : ""}</td>
       </tr>`;
     }).join("")}</tbody>`;
   bindTeamOpeners(document.getElementById("panel-standings"));
@@ -509,6 +613,9 @@ function openTeam(id) {
   const former = (s.formerStats || []).map(p => `<div class="trade-row">${mug(p, "mug mug-sm")}<div style="flex:1"><b>${esc(p.name)}</b>
     <div class="muted" style="font-size:12px">${esc(t("droppedOn", { date: fmtDate(p.droppedOn) }))}</div></div><b class="num">${p.stats.points} ${esc(t("pts"))}</b></div>`).join("");
 
+  const won = trophies()?.won[id], o = S.insights?.odds?.teams?.[id];
+  const extras = [won && trophyChips(won) && `<span class="trophies">${trophyChips(won)}</span>`,
+    o && `<span class="muted">${esc(t("oddsLine", { win: fmtPct(o.win), podium: fmtPct(o.podium), proj: o.projected }))}</span>`].filter(Boolean).join("");
   const modal = document.getElementById("team-modal");
   modal.innerHTML = `
     <div class="modal-head">
@@ -517,6 +624,7 @@ function openTeam(id) {
       <div style="text-align:right"><div class="big num">${s.totalPoints}</div><div class="muted" style="font-size:12px">${esc(t("pts"))}</div></div>
     </div>
     <div class="modal-body">
+      ${extras ? `<div class="team-extras">${extras}</div>` : ""}
       ${section(t("forwards"), byPos("F"))}${section(t("defense"), byPos("D"))}${section(t("goalies"), byPos("G"))}
       ${former ? `<h3>${esc(t("former"))}</h3>${former}` : ""}
       <p class="muted" style="font-size:13px;margin:14px 0 0">${esc(t("pointsRule"))}</p>
@@ -524,6 +632,10 @@ function openTeam(id) {
     </div>`;
   modal.querySelector("#close-team").addEventListener("click", () => modal.close());
   modal.showModal();
+  // showModal focuses the Close button at the bottom; open at the top instead
+  modal.querySelector("#close-team").blur();
+  modal.scrollTop = 0;
+  modal.querySelector(".modal-body").scrollTop = 0;
 }
 
 // ---------- Trajectory ----------
@@ -566,6 +678,7 @@ function renderTonight() {
   const live = S.live, gamesEl = document.getElementById("games");
   const anyLive = !!live?.games?.some(g => g.state === "LIVE" || g.state === "CRIT");
   document.getElementById("live-pill").classList.toggle("hidden", !anyLive);
+  renderHornToggle();
   if (!live || !live.games?.length) {
     gamesEl.innerHTML = `<div class="card empty" style="grid-column:1/-1">${esc(t("noGames"))}</div>`;
     document.getElementById("tonight-rank").innerHTML = "";
@@ -770,6 +883,7 @@ function formBadge(p) {
 function renderGazette() {
   renderHighlights();
   renderDuels();
+  renderTrophies();
   renderBadges();
   renderMilestones();
 }
@@ -836,6 +950,25 @@ function weekDuels(monday) {
   return { duels, gain, avg };
 }
 
+const addDays = (iso, n) => { const d = new Date(`${iso}T12:00:00`); d.setDate(d.getDate() + n); return d.toISOString().slice(0, 10); };
+
+// Every completed week (before the current one), oldest first: { monday, results: {id: 1 won, -1 lost, 0 tie} }
+function pastDuelWeeks() {
+  const h = S.history, weeks = [];
+  if (!h?.dates?.length) return weeks;
+  const current = weekStart(h.dates.at(-1));
+  for (let m = weekStart(h.dates[0]); m < current; m = addDays(m, 7)) {
+    const { duels, gain, avg } = weekDuels(m), results = {};
+    for (const [a, b] of duels) {
+      const ga = gain[a], gb = b ? gain[b] : avg;
+      results[a] = Math.sign(ga - gb);
+      if (b) results[b] = Math.sign(gb - ga);
+    }
+    weeks.push({ monday: m, results });
+  }
+  return weeks;
+}
+
 function renderDuels() {
   const el = document.getElementById("duels"), h = S.history;
   if (!h?.dates?.length) { el.innerHTML = `<div class="card empty">${esc(t("noHistory"))}</div>`; return; }
@@ -845,17 +978,11 @@ function renderDuels() {
 
   // Season record from every completed week before this one
   const record = {};
-  for (let m = weekStart(h.dates[0]); m < monday; ) {
-    const { duels, gain, avg } = weekDuels(m);
-    for (const [a, b] of duels) {
-      const ga = gain[a], gb = b ? gain[b] : avg;
-      for (const [id, mine, theirs] of [[a, ga, gb], [b, gb, ga]]) {
-        if (!id) continue;
-        record[id] ||= { w: 0, l: 0 };
-        if (mine > theirs) record[id].w++; else if (mine < theirs) record[id].l++;
-      }
+  for (const { results } of pastDuelWeeks()) {
+    for (const [id, r] of Object.entries(results)) {
+      record[id] ||= { w: 0, l: 0 };
+      if (r > 0) record[id].w++; else if (r < 0) record[id].l++;
     }
-    const d = new Date(`${m}T12:00:00`); d.setDate(d.getDate() + 7); m = d.toISOString().slice(0, 10);
   }
 
   const { duels, gain, avg } = weekDuels(monday), mine = me()?.participantId;
@@ -875,6 +1002,117 @@ function renderDuels() {
       ${side(B, gb, gb > ga, true)}
     </div>`;
   }).join("");
+}
+
+// ---------- Trophy case and pool records (all from history.json: points after each game day) ----------
+const TROPHIES = [["month", "🏆"], ["duel", "🥊"], ["star", "⭐"], ["crown", "👑"]];
+
+function trophies() {
+  const h = S.history;
+  if (!h?.dates?.length) return null;
+  if (S.trophies?.of === h) return S.trophies;
+  const ids = S.board.standings.map(s => s.participantId).filter(id => h.series[id]);
+  const at = (id, i) => (i < 0 ? 0 : h.series[id][i] ?? 0);
+  const won = Object.fromEntries(ids.map(id => [id, { month: 0, duel: 0, star: 0, crown: 0 }]));
+  const records = [];
+  const best = (rows, key) => rows.reduce((top, r) => (!top || r[key] > top[key] ? r : top), null);  // earliest wins ties
+
+  // Each night: ⭐ to the biggest gain, 👑 to whoever is first; ranks for the biggest climb
+  const nights = [], climbs = [], reign = {};
+  let longest = null;
+  h.dates.forEach((date, i) => {
+    const gains = ids.map(id => ({ id, date, n: at(id, i) - at(id, i - 1) }));
+    const top = Math.max(...gains.map(g => g.n));
+    if (top > 0) for (const g of gains) if (g.n === top) won[g.id].star++;
+    nights.push(best(gains, "n"));
+    const lead = Math.max(...ids.map(id => at(id, i)));
+    for (const id of ids) {
+      if (at(id, i) === lead) {
+        won[id].crown++;
+        reign[id] = (reign[id] || 0) + 1;
+        if (!longest || reign[id] > longest.n) longest = { id, n: reign[id], now: i === h.dates.length - 1 };
+      } else reign[id] = 0;
+    }
+    if (i > 0) {
+      const rank = (id, k) => 1 + ids.filter(o => at(o, k) > at(id, k)).length;
+      climbs.push(best(ids.map(id => ({ id, date, n: rank(id, i - 1) - rank(id, i) })), "n"));
+    }
+  });
+
+  // 🏆 Each finished calendar month, to the biggest gain over the month; the current month is a race.
+  // A stub of fewer than 10 game days (the season's last days of September) joins the next month.
+  const months = [];
+  for (const m of new Set(h.dates.map(d => d.slice(0, 7)))) {
+    const first = h.dates.findIndex(d => d.startsWith(m)), last = h.dates.findLastIndex(d => d.startsWith(m));
+    const stub = months.at(-1)?.short;
+    months.push({ m, first: stub ? months.pop().first : first, last, short: last - first + 1 < 10 });
+  }
+  const latest = h.dates.at(-1);
+  let race = null;
+  for (const { m, first, last } of months) {
+    const gains = ids.map(id => ({ id, n: at(id, last) - at(id, first - 1) }));
+    const [y, mo] = m.split("-").map(Number);
+    const monthEnd = new Date(Date.UTC(y, mo, 0)).toISOString().slice(0, 10);
+    const top = Math.max(...gains.map(g => g.n));
+    if (latest >= monthEnd) { for (const g of gains) if (g.n === top && top > 0) won[g.id].month++; }
+    else if (top > 0) race = { ...best(gains, "n"), month: m };
+  }
+
+  // 🥊 Duels from completed weeks, with the longest winning streak
+  let streak = null;
+  const run = {};
+  for (const { results } of pastDuelWeeks()) {
+    for (const id of ids) {
+      if (results[id] > 0) {
+        won[id].duel++;
+        run[id] = (run[id] || 0) + 1;
+        if (!streak || run[id] > streak.n) streak = { id, n: run[id] };
+      } else run[id] = 0;
+    }
+  }
+  const weeks = [];
+  for (let m = weekStart(h.dates[0]); m <= latest; m = addDays(m, 7)) {
+    const gain = weekScores(m);
+    weeks.push(best(ids.map(id => ({ id, n: gain[id], date: m })), "n"));
+  }
+
+  const night = best(nights.filter(Boolean), "n"), climb = best(climbs.filter(Boolean), "n"), week = best(weeks.filter(Boolean), "n");
+  if (night?.n > 0) records.push({ icon: "🔥", key: "rec_night", ...night });
+  if (week?.n > 0) records.push({ icon: "📅", key: "rec_week", ...week });
+  if (climb?.n > 1) records.push({ icon: "🚀", key: "rec_climb", ...climb });
+  if (streak?.n > 1) records.push({ icon: "🥊", key: "rec_streak", ...streak });
+  if (longest?.n > 1) records.push({ icon: "👑", key: longest.now ? "rec_reignNow" : "rec_reign", ...longest });
+  S.trophies = { of: h, won, records, race };
+  return S.trophies;
+}
+
+function trophyChips(won) {
+  return TROPHIES.filter(([k]) => won[k]).map(([k, icon]) =>
+    `<span class="trophy" title="${esc(`${t(`tr_${k}`)} (${won[k]})`)}">${icon}<b class="num">${won[k]}</b></span>`).join("");
+}
+
+function renderTrophies() {
+  const el = document.getElementById("trophies"), recEl = document.getElementById("records");
+  if (!el || !recEl) return;  // tolerate a cached older index.html right after a deploy
+  const tr = trophies(), mine = me()?.participantId;
+  const weight = w => w.month * 100 + w.duel * 10 + w.star * 3 + w.crown;
+  const rows = tr ? S.board.standings.filter(s => tr.won[s.participantId] && weight(tr.won[s.participantId]) > 0)
+    .sort((a, b) => weight(tr.won[b.participantId]) - weight(tr.won[a.participantId]) || a.rank - b.rank) : [];
+  el.innerHTML = rows.length ? `<div class="trophy-grid">${rows.map(s => `
+      <button class="card trophy-card ${s.participantId === mine ? "mine" : ""}" data-team="${esc(s.participantId)}">
+        ${avatar(s, "av av-md")}<span class="grow"><span class="duel-name">${esc(s.teamName)}</span>
+        <span class="trophies">${trophyChips(tr.won[s.participantId])}</span></span></button>`).join("")}</div>
+      <p class="muted" style="font-size:12px;margin:8px 0 0">${esc(t("trophyLegend"))}</p>`
+    : `<div class="card empty">${esc(t("noTrophies"))}</div>`;
+  bindTeamOpeners(el);
+
+  const items = (tr?.records || []).map(r => `<li><span class="ms-icon">${r.icon}</span><span>${esc(t(r.key, {
+    team: standingOf(r.id)?.teamName, n: r.n, date: r.date ? fmtDay(r.date) : "" }))}</span></li>`);
+  if (tr?.race) {
+    const month = new Date(`${tr.race.month}-15T12:00:00`).toLocaleDateString(locale(), { month: "long" });
+    items.unshift(`<li><span class="ms-icon">🏆</span><span>${esc(t("monthRace", { month, team: standingOf(tr.race.id)?.teamName, n: tr.race.n }))}</span></li>`);
+  }
+  recEl.innerHTML = items.length ? `<ul class="ms-list">${items.join("")}</ul>` : `<div class="empty" style="padding:8px">${esc(t("noTrophies"))}</div>`;
 }
 
 function renderBadges() {

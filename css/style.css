@@ -538,3 +538,38 @@ body { overflow-x: hidden; }
 @media (max-width: 560px) { .tonight-list .tl-count { display: none; } }
 /* Mid-size screens: drop the tab icons so all tabs fit next to the live badge */
 @media (min-width: 721px) and (max-width: 1180px) { .tab .ico { display: none; } .tab { padding-left: 10px; padding-right: 10px; } }
+
+/* Goal alert banner (refreshes that bring new pool goals) */
+#goal-toast { position: fixed; top: 12px; left: 50%; transform: translateX(-50%); z-index: 50; width: min(440px, calc(100vw - 32px)); }
+.goal-toast { all: unset; box-sizing: border-box; width: 100%; display: grid; gap: 8px; cursor: pointer; padding: 12px 14px;
+  background: var(--surface); color: var(--text); border-radius: var(--radius); border-left: 5px solid var(--red);
+  box-shadow: var(--shadow-lg); animation: goal-in .35s cubic-bezier(.2, 1.4, .4, 1); }
+.gt-row { display: flex; gap: 10px; align-items: center; min-width: 0; }
+.gt-row .grow { display: grid; min-width: 0; }
+.gt-row.mine b:first-child { color: var(--red); }
+.gt-sub { font-size: 13px; color: var(--text-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+@keyframes goal-in { from { opacity: 0; transform: translateY(-16px) scale(.96); } }
+@media (prefers-reduced-motion: reduce) { .goal-toast { animation: none; } }
+.head-right { display: inline-flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+#horn-toggle[aria-pressed="true"] { border-color: var(--red); color: var(--red); }
+
+/* Trophy case and records (Gazette) */
+.trophy-grid { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr)); }
+.trophy-card { all: unset; box-sizing: border-box; display: flex; gap: 10px; align-items: center; padding: 10px 12px; cursor: pointer;
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); min-width: 0; }
+.trophy-card:hover, .trophy-card:focus-visible { border-color: var(--ice); }
+.trophy-card.mine { box-shadow: 0 0 0 2px var(--red); }
+.trophy-card .grow { display: grid; gap: 4px; min-width: 0; flex: 1; }
+.trophies { display: flex; gap: 6px; flex-wrap: wrap; }
+.trophy { display: inline-flex; gap: 3px; align-items: center; font-size: 14px; padding: 1px 8px; border-radius: 999px; background: var(--gold-soft); }
+.trophy b { font-size: 13px; }
+
+/* Chances of winning */
+.odds { font-weight: 600; white-space: nowrap; }
+.team-extras { display: grid; gap: 8px; font-size: 13px; margin-bottom: 4px; }
+/* Phones: no room for an extra column, so the odds sit under the points */
+.odds-sub { display: none; font: 600 11px/1.2 var(--ff); color: var(--text-3); margin-top: 3px; white-space: nowrap; }
+@media (max-width: 640px) {
+  th.odds-col, td.odds-col { display: none; }
+  .odds-sub { display: block; }
+}
