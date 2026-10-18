@@ -83,7 +83,7 @@ const FAQ = {
         },
         {
           q: "Comment les points sont-ils calculés?",
-          a: `<ul>{{scoring}}</ul><p>Un joueur rapporte des points seulement pendant qu'il est dans votre équipe.</p>`,
+          a: `<ul>{{scoring}}</ul><p>Un joueur rapporte des points seulement pendant qu'il est dans votre équipe.</p><p><b>Égalité de points?</b> Le plus de lignes de bingo cette saison (colonne 🎱 du classement) passe devant, puis le plus de buts; si tout est égal, les équipes partagent le rang.</p>`,
         },
         {
           q: "Quand le classement est-il mis à jour?",
@@ -219,7 +219,7 @@ const FAQ = {
         },
         {
           q: "How are points calculated?",
-          a: `<ul>{{scoring}}</ul><p>A player only earns points for you while he's on your team.</p>`,
+          a: `<ul>{{scoring}}</ul><p>A player only earns points for you while he's on your team.</p><p><b>Tied on points?</b> The most bingo lines this season (🎱 column in the standings) goes ahead, then the most goals; if everything is equal, the teams share the rank.</p>`,
         },
         {
           q: "When do the standings update?",

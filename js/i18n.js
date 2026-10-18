@@ -130,6 +130,8 @@ const STRINGS = {
     seeAll: "Voir les {n}",
     lanterneDangerN: "{n} équipes à 5 pts ou moins",
     nyTeaser: "tout le monde repart à zéro le {date}",
+    bingoColLong: "Lignes de bingo cette saison · départagent les égalités de points",
+    bingoColBreak: "Égalité de points : les lignes de bingo départagent",
     // feature: arena
     tv: "Télé",
     tvIntro: "Le mode télé pour regarder les matchs en famille : le classement bouge en direct avec les points de la soirée, chaque but d'un joueur du pool s'affiche en plein écran avec le klaxon, et le bingo et les pointages défilent.",
@@ -438,6 +440,8 @@ const STRINGS = {
     seeAll: "See all {n}",
     lanterneDangerN: "{n} teams within 5 pts",
     nyTeaser: "everyone restarts at zero on {date}",
+    bingoColLong: "Bingo lines this season · they break ties on points",
+    bingoColBreak: "Tied on points: bingo lines break the tie",
     // feature: arena
     tv: "TV",
     tvIntro: "TV mode to watch the games together: the standings move live with tonight's points, every goal by a pool player fills the screen with the horn, and the bingo and scores roll by.",

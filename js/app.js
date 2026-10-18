@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   S.pointsById = new Map((S.index || []).map(p => [p.id, p.points]));
   S.owners = new Map();
   for (const s of S.board.standings) for (const p of s.rosterStats) S.owners.set(p.id, (S.owners.get(p.id) || 0) + 1);
+  applyBingoTiebreak();
   // feature: arena: opening the site at #tv (e.g. on the TV) starts the jumbotron right away
   const arenaLink = ["#tv", "#arena"].includes(location.hash);
   showTab(location.hash === "#arena" ? "tv" : location.hash.slice(1));
@@ -443,6 +444,24 @@ function oddsCell(id) {
     { d: `${move > 0 ? "+" : "−"}${Math.abs(move)}` }))}">${move > 0 ? "▲" : "▼"}${Math.abs(move)}</span>` : ""}`;
 }
 
+// Hugo's rule: equal PTS are split by the season's bingo lines, then by goals (then a shared rank).
+// The lines only exist in the browser (every saved night replayed with bingo.js), so the ranks
+// from update_pool.py (points, then goals) are adjusted here, once, before anything is drawn.
+function applyBingoTiebreak() {
+  const lines = new Map(bingoSeason().rows.map(x => [x.id, x.lines]));
+  const st = S.board.standings;
+  for (const s of st) s.bingoLines = lines.get(s.participantId) || 0;
+  const key = s => [s.totalPoints, s.bingoLines, s.totalGoals];
+  st.sort((a, b) => b.totalPoints - a.totalPoints || b.bingoLines - a.bingoLines || b.totalGoals - a.totalGoals
+    || a.participantName.localeCompare(b.participantName, "fr"));
+  st.forEach((s, i) => {
+    const prev = st[i - 1];
+    s.rank = prev && key(prev).join() === key(s).join() ? prev.rank : i + 1;
+    // Lines decided this place: same points as a neighbour, different lines
+    s.bingoBreak = st.some(o => o !== s && o.totalPoints === s.totalPoints && o.bingoLines !== s.bingoLines);
+  });
+}
+
 function renderStandings() {
   const st = S.board.standings, deltas = dayDeltas(), mine = me()?.participantId;
   const odds = S.insights?.odds?.teams && Object.keys(S.insights.odds.teams).length ? S.insights.odds : null;
@@ -486,6 +505,7 @@ function renderStandings() {
       <th class="opt" title="${esc(t("winsLong"))}">${esc(t("wins"))}</th>
       <th class="opt spark-col">${esc(t("trend"))}</th><th class="opt">${esc(t("gapLeader"))}</th><th>${esc(t("yesterdayShort"))}</th>
       ${odds ? `<th class="odds-col" title="${esc(t("oddsLong"))}">${esc(t("oddsShort"))}</th>` : ""}<th>${esc(t("pts"))}</th>
+      <th class="bingo-col" title="${esc(t("bingoColLong"))}">🎱</th>
     </tr></thead>
     <tbody>${st.map(s => {
       const mv = s.previousRank ? s.previousRank - s.rank : 0;
@@ -498,8 +518,9 @@ function renderStandings() {
         <td class="opt num muted">${s.rank === 1 ? "—" : `−${st[0].totalPoints - s.totalPoints}`}</td>
         <td class="num"><span class="delta ${d ? "" : "zero"}">${d == null ? "—" : d > 0 ? `+${d}` : d}</span></td>
         ${odds ? `<td class="num odds-col">${oddsCell(s.participantId)}</td>` : ""}
-        <td class="pts-cell num"><span data-count="${s.totalPoints}">${s.totalPoints}</span>${odds?.teams[s.participantId]
-          ? `<span class="odds-sub" title="${esc(t("oddsLong"))}">🏆 ${fmtPct(odds.teams[s.participantId].win)}</span>` : ""}</td>
+        <td class="pts-cell num"><span data-count="${s.totalPoints}">${s.totalPoints}</span><span class="odds-sub">${odds?.teams[s.participantId]
+          ? `<span title="${esc(t("oddsLong"))}">🏆 ${fmtPct(odds.teams[s.participantId].win)}</span> · ` : ""}<span title="${esc(t("bingoColLong"))}">🎱 ${s.bingoLines}</span></span></td>
+        <td class="num bingo-col ${s.bingoLines ? "" : "zero"} ${s.bingoBreak ? "breaks" : ""}" title="${esc(s.bingoBreak ? t("bingoColBreak") : t("bingoColLong"))}">${s.bingoLines}</td>
       </tr>`;
     }).join("")}</tbody>`;
   renderBottomRace();
