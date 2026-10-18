@@ -199,21 +199,8 @@ function renderHornToggle() {
   };
 }
 
-// Gazette sub-tabs (Hier / Les courses / Le palmarès); the visitor's last choice is remembered
-const SUB_KEY = "patinoire_gazette_sub";
-function showSub(sub) {
-  let current = sub;
-  if (!current) { try { current = localStorage.getItem(SUB_KEY); } catch { /* private mode */ } }
-  if (!["hier", "courses", "palmares"].includes(current)) current = "hier";
-  if (sub) { try { localStorage.setItem(SUB_KEY, sub); } catch { /* private mode */ } }
-  document.querySelectorAll(".subtabs [data-sub]").forEach(b => b.setAttribute("aria-selected", String(b.dataset.sub === current)));
-  document.querySelectorAll(".subpanel").forEach(p => p.classList.toggle("active", p.dataset.sub === current));
-}
-
 function bindChrome() {
   document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () => showTab(b.dataset.tab)));
-  document.querySelectorAll(".subtabs [data-sub]").forEach(b => b.addEventListener("click", () => showSub(b.dataset.sub)));
-  showSub();
   document.querySelector(".tabs").addEventListener("scroll", updateTabFade, { passive: true });
   window.addEventListener("hashchange", () => showTab(location.hash.slice(1)));
   document.getElementById("btn-lang").addEventListener("click", () => {
@@ -258,8 +245,24 @@ function updateTabFade() {
   if (bar) bar.classList.toggle("at-end", bar.scrollLeft + bar.clientWidth >= bar.scrollWidth - 4);
 }
 
+// "NOUVEAU" on the Gazette tab for the newspaper look: until each visitor's first look, and only for a week
+const GAZETTE_NEW_KEY = "patinoire_gazette_paper_seen", GAZETTE_NEW_UNTIL = "2026-10-25";
+function markGazetteNew() {
+  const tab = document.querySelector('.tab[data-tab="gazette"]');
+  let seen = false;
+  try { seen = !!localStorage.getItem(GAZETTE_NEW_KEY); } catch { /* private mode */ }
+  tab?.querySelector(".np-new")?.remove();
+  if (tab && !seen && new Date().toISOString().slice(0, 10) <= GAZETTE_NEW_UNTIL && S.tab !== "gazette") {
+    tab.insertAdjacentHTML("beforeend", `<span class="np-new">${esc(t("npNew"))}</span>`);
+  }
+}
+
 function showTab(tab) {
   S.tab = TABS.includes(tab) ? tab : "standings";
+  if (S.tab === "gazette") {
+    try { localStorage.setItem(GAZETTE_NEW_KEY, "1"); } catch { /* private mode */ }
+    document.querySelector('.tab[data-tab="gazette"] .np-new')?.remove();
+  }
   if (location.hash.slice(1) !== S.tab) history.replaceState(null, "", `#${S.tab}`);
   document.querySelectorAll(".tab").forEach(b => b.setAttribute("aria-selected", b.dataset.tab === S.tab));
   // Keep the active tab visible in the sideways-scrolling tab bar on phones
@@ -284,6 +287,7 @@ function renderAll() {
     if (el) el.textContent = stamp;  // tolerate a cached older index.html right after a deploy
   }
   renderAuth();
+  markGazetteNew();
   fitTopbar();
   document.fonts?.ready.then(fitTopbar);  // widths change once the web font arrives
   renderRecap();
@@ -1234,7 +1238,11 @@ function formBadge(p) {
 }
 
 // ---------- Gazette ----------
+// ---------- La Gazette: laid out like a newspaper front page ----------
 function renderGazette() {
+  renderMasthead();
+  renderLead();
+  renderInfirmaryBox();
   renderHighlights();
   renderDuels();
   renderNewYearCup();
@@ -1242,6 +1250,66 @@ function renderGazette() {
   renderBadges();
   renderMilestones();
   renderPalmares();
+}
+
+const ordinalPeriod = (n, type) => type === "OT" || n > 3 ? t("npOT") : getLang() === "fr" ? `${n}${n === 1 ? "re" : "e"} ${t("npPeriod")}` : `${["1st", "2nd", "3rd"][n - 1]} ${t("npPeriod")}`;
+
+function renderMasthead() {
+  const el = document.getElementById("np-mast");
+  if (!el) return;
+  const today = new Date().toISOString().slice(0, 10), first = S.history?.dates?.[0];
+  const issue = first ? Math.max(1, Math.round((new Date(`${today}T12:00:00`) - new Date(`${first}T12:00:00`)) / 864e5) + 1) : 1;
+  const st = S.board.standings, lead = st[0], last = st.at(-1), bingo = lastBingo();
+  const weather = [t("npWeatherTop", { team: lead.teamName, n: lead.totalPoints }), t("npWeatherLast", { team: last.teamName }),
+    bingo?.winners.length ? t("npWeatherBingo", { team: standingOf(bingo.winners[0])?.teamName }) : ""].filter(Boolean).join(" · ");
+  el.innerHTML = `<div class="np-ears"><span>${esc(t("npEarLeft"))}</span><span>${esc(t("npEarRight"))}</span></div>
+    <h1 class="np-title">${esc(t("npTitle"))}</h1>
+    <div class="np-dateline"><span>${esc(t("npEdition", { date: fmtDate(`${today}T12:00:00`, { dateStyle: "full" }) }))}</span>
+      <span>${esc(t("npIssue", { n: issue }))}</span><span>${esc(t("npPrice"))}</span></div>
+    <div class="np-weather">${esc(weather)}</div>`;
+}
+
+// The front-page story: last night's most telling pool goal (a rare pick that paid, else the most-owned scorer)
+function leadGoal() {
+  const goals = (S.insights?.highlights || []).filter(h => h.scorerOwned);
+  return goals.find(h => h.owners <= 2) || goals[0] || null;
+}
+
+function renderLead() {
+  const el = document.getElementById("np-lead"), ins = S.insights;
+  if (!el) return;
+  const h = leadGoal();
+  if (!h) { el.innerHTML = `<p class="np-quiet">${esc(t("npQuiet"))}</p>`; return; }
+  const rare = h.owners <= 2;
+  const owners = h.ownerIds.map(standingOf).filter(Boolean), names = owners.map(s => s.participantName.split(" ")[0]);
+  const who = names.length > 3 ? t("npManyOwners", { n: names.length }) : names.join(getLang() === "fr" ? " et " : " and ");
+  const headline = rare ? t(h.owners === 1 ? "npLeadOne" : "npLeadRare", { name: h.name, who })
+    : t("npLeadMany", { name: h.name, k: h.owners });
+  const clip = getLang() === "fr" ? (h.clipFr || h.clipEn) : (h.clipEn || h.clipFr);
+  const body = [t("npLeadBody", { name: h.name, team: h.team, opp: h.opp, per: ordinalPeriod(h.period), time: h.time || "" }),
+    h.assists?.length ? t("npLeadAssists", { names: h.assists.join(", ") }) : "",
+    rare ? t(names.length > 1 ? "npLeadRareBodyMany" : "npLeadRareBody", { who }) : t("npLeadOwners", { k: h.owners })].filter(Boolean).join(" ");
+  el.innerHTML = `<div class="np-kicker">${esc(t("npLeadKicker"))} · ${esc(fmtDay(ins.gameDay, true))}</div>
+    <h2 class="np-headline">${esc(headline)}</h2>
+    <div class="np-lead-body">
+      <figure class="np-photo"><img src="${headshot(h.playerId)}" alt="${esc(h.name)}" loading="lazy">
+        <figcaption>${esc(h.name)} (${esc(h.team)}) · ${esc(t("npPhoto"))}</figcaption></figure>
+      <div><p class="np-dropcap">${esc(body)}</p>
+        <div class="np-owners">${ownerStack(h.ownerIds, 8)}</div>
+        ${clip ? `<a class="np-link" href="${esc(clip)}" target="_blank" rel="noopener">▶ ${esc(t("watchGoal"))}</a>` : ""}</div>
+    </div>`;
+}
+
+// A small boxed column: the pool's injured players, most-owned first, with a link to the full bulletin
+function renderInfirmaryBox() {
+  const el = document.getElementById("infirmary-box");
+  if (!el) return;
+  const owned = (S.injuries?.players || []).map(x => ({ ...x, k: S.owners.get(x.id) || 0 })).filter(x => x.k).sort((a, b) => b.k - a.k);
+  if (!owned.length) { el.innerHTML = ""; el.hidden = true; return; }
+  el.hidden = false;
+  el.innerHTML = `<div class="np-box-title">🚑 ${esc(t("npInfirm"))}</div>
+    <ul>${owned.slice(0, 5).map(x => `<li><b>${esc(x.name)}</b> (${esc(x.team)}) — ${esc(t(`st_${x.status}`).toLowerCase())}${x.returnDate ? `, ${esc(t("injReturn", { date: fmtDay(x.returnDate) }))}` : ""} · <i>${esc(t("ownedBy", { n: x.k }))}</i></li>`).join("")}</ul>
+    <a class="np-link" href="#injuries">${esc(t("npInfirmMore"))}</a>`;
 }
 
 function ownerStack(ids, max = 5) {
@@ -1252,22 +1320,18 @@ function ownerStack(ids, max = 5) {
 function renderHighlights() {
   const el = document.getElementById("highlights"), ins = S.insights;
   document.getElementById("hl-day").textContent = ins ? fmtDay(ins.gameDay, true) : "";
-  if (!ins?.highlights?.length) { el.innerHTML = `<div class="card empty">${esc(t("noHighlights"))}</div>`; return; }
-  // 8 goals at first (the most-owned scorers come first), the rest behind "voir tout"
-  const list = S.hlAll ? ins.highlights : ins.highlights.slice(0, 8);
-  el.innerHTML = list.map(h => {
+  const lead = leadGoal(), rest = (ins?.highlights || []).filter(h => h !== lead);
+  if (!rest.length) { el.innerHTML = `<p class="np-quiet">${esc(t(lead ? "npNoMore" : "noHighlights"))}</p>`; return; }
+  // Short briefs, like a newspaper's "en bref" column; 8 at first, the rest behind "voir tout"
+  const list = S.hlAll ? rest : rest.slice(0, 8);
+  el.innerHTML = `<ul class="np-briefs">${list.map(h => {
     const clip = getLang() === "fr" ? (h.clipFr || h.clipEn) : (h.clipEn || h.clipFr);
     const strength = h.strength === "pp" ? ` · ${t("ppGoal")}` : h.strength === "sh" ? ` · ${t("shGoal")}` : "";
-    return `<div class="card hl">
-      <div class="team-flex">${mug({ id: h.playerId }, "mug")}
-        <div style="min-width:0"><div class="pname">${esc(h.name)}</div>
-          <div class="muted" style="font-size:12px">${logo(h.team)} vs ${esc(h.opp)} · P${h.period} ${esc(h.time || "")}${esc(strength)}</div></div></div>
-      ${h.poolAssists.length ? `<div class="muted" style="font-size:12px">${esc(t("assistBy", { names: h.poolAssists.join(", ") }))}</div>` : ""}
-      <div class="hl-foot">${h.scorerOwned ? ownerStack(h.ownerIds) : `<span class="muted" style="font-size:12px">${esc(t("assistOnly"))}</span>`}
-        ${clip ? `<a class="btn btn-sm" href="${esc(clip)}" target="_blank" rel="noopener">▶ ${esc(t("watchGoal"))}</a>` : ""}</div>
-    </div>`;
-  }).join("") + (list.length < ins.highlights.length
-    ? `<button class="card hl hl-more" id="hl-more">${esc(t("seeAll", { n: ins.highlights.length }))} →</button>` : "");
+    const who = h.scorerOwned ? t("ownedBy", { n: h.owners }) : t("assistOnly");
+    return `<li><b>${esc(h.name.toUpperCase())}</b> (${esc(h.team)}) ${esc(t("npVs", { opp: h.opp, per: ordinalPeriod(h.period) }))}${esc(strength)}.
+      ${h.poolAssists.length ? `${esc(t("assistBy", { names: h.poolAssists.join(", ") }))}. ` : ""}<i>${esc(who)}</i>
+      ${clip ? ` <a class="np-link" href="${esc(clip)}" target="_blank" rel="noopener">▶</a>` : ""}</li>`;
+  }).join("")}</ul>${list.length < rest.length ? `<button class="np-more" id="hl-more">${esc(t("seeAll", { n: rest.length }))} →</button>` : ""}`;
   el.querySelector("#hl-more")?.addEventListener("click", () => { S.hlAll = true; renderHighlights(); });
 }
 
@@ -1338,21 +1402,14 @@ function renderDuels() {
 
   const { duels, gain, avg } = weekDuels(monday), mine = me()?.participantId;
   duels.sort((x, y) => (y.includes(mine)) - (x.includes(mine)));
-  el.innerHTML = duels.map(([a, b]) => {
+  // A box score, like the sports pages: team, record, points this week; the leader in bold
+  const rec = s => s && record[s.participantId] ? ` <small>(${record[s.participantId].w}-${record[s.participantId].l})</small>` : "";
+  el.innerHTML = `<table class="np-box-score">${duels.map(([a, b]) => {
     const A = standingOf(a), B = b ? standingOf(b) : null;
     const ga = gain[a], gb = b ? gain[b] : avg;
-    const total = Math.max(1, ga + gb), pa = Math.round((ga / total) * 100);
-    const side = (s, g, lead, right) => `<div class="duel-side ${lead ? "lead" : ""} ${right ? "right" : ""}">
-      ${s ? avatar(s, "av av-md") : `<span class="av av-md av-initials" style="--h:220">👻</span>`}
-      <div style="min-width:0"><div class="duel-name" title="${esc(s ? s.teamName : t("ghost"))}">${esc(s ? s.teamName : t("ghost"))}</div>
-        <div class="muted" style="font-size:12px">${s ? esc(s.participantName) : esc(t("ghostSub"))}${s && record[s.participantId] ? ` · ${record[s.participantId].w}-${record[s.participantId].l}` : ""}</div></div>
-      <div class="duel-pts num">${g}</div></div>`;
-    return `<div class="card duel ${[a, b].includes(mine) ? "mine" : ""}">
-      ${side(A, ga, ga > gb, false)}
-      <div class="duel-bar"><span style="width:${ga + gb ? pa : 50}%"></span></div>
-      ${side(B, gb, gb > ga, true)}
-    </div>`;
-  }).join("");
+    const row = (s, g, lead) => `<tr class="${lead ? "lead" : ""}"><td>${esc(s ? s.teamName : t("ghost"))}${rec(s)}</td><td class="num">${g}</td></tr>`;
+    return `<tbody class="${[a, b].includes(mine) ? "mine" : ""}">${row(A, ga, ga > gb)}${row(B, gb, gb > ga)}</tbody>`;
+  }).join("")}</table>`;
 }
 
 // ---------- Trophy case and pool records (all from history.json: points after each game day) ----------
@@ -1453,13 +1510,14 @@ function renderTrophies() {
     .sort((a, b) => weight(tr.won[b.participantId]) - weight(tr.won[a.participantId]) || a.rank - b.rank) : [];
   // Top 6 (plus your own team) at first; the rest behind "Voir les N"
   const shown = S.trophyAll ? rows : rows.filter((s, i) => i < 6 || s.participantId === mine);
-  el.innerHTML = rows.length ? `<div class="trophy-grid">${shown.map(s => `
-      <button class="card trophy-card ${s.participantId === mine ? "mine" : ""}" data-team="${esc(s.participantId)}">
-        ${avatar(s, "av av-md")}<span class="grow"><span class="duel-name">${esc(s.teamName)}</span>
-        <span class="trophies">${trophyChips(tr.won[s.participantId])}</span></span></button>`).join("")}</div>
-      ${shown.length < rows.length ? `<button class="btn btn-sm see-all" id="trophy-more">${esc(t("seeAll", { n: rows.length }))}</button>` : ""}
-      <p class="muted" style="font-size:12px;margin:8px 0 0">${esc(t("trophyLegend"))}</p>`
-    : `<div class="card empty">${esc(t("noTrophies"))}</div>`;
+  // A society column: each team, dotted leaders, its trophies
+  el.innerHTML = rows.length ? `<ul class="np-carnet">${shown.map(s => `
+      <li class="${s.participantId === mine ? "mine" : ""}" data-team="${esc(s.participantId)}" tabindex="0">
+        <span class="np-carnet-team">${esc(s.teamName)}</span><span class="np-leader"></span>
+        <span class="trophies">${trophyChips(tr.won[s.participantId])}</span></li>`).join("")}</ul>
+      ${shown.length < rows.length ? `<button class="np-more" id="trophy-more">${esc(t("seeAll", { n: rows.length }))} →</button>` : ""}
+      <p class="np-legend">${esc(t("trophyLegend"))}</p>`
+    : `<p class="np-quiet">${esc(t("noTrophies"))}</p>`;
   bindTeamOpeners(el);
   el.querySelector("#trophy-more")?.addEventListener("click", () => { S.trophyAll = true; renderTrophies(); });
 
@@ -1532,15 +1590,14 @@ function renderNewYearCup() {
 
 function renderBadges() {
   const el = document.getElementById("badges"), aw = S.insights?.awards;
-  if (!aw) { el.innerHTML = `<div class="card empty">${esc(t("noInsights"))}</div>`; return; }
-  const cards = [];
-  if (aw.goldenPick) cards.push(["🌟", t("goldenPick"), aw.goldenPick, t("goldenSub", { n: aw.goldenPick.points, k: aw.goldenPick.owners })]);
-  if (aw.iceAnchor) cards.push(["🧊", t("iceAnchor"), aw.iceAnchor, t("anchorSub", { n: aw.iceAnchor.dry, k: aw.iceAnchor.owners })]);
-  if (aw.snub) cards.push(["🤦", t("snub"), aw.snub, t("snubSub", { n: aw.snub.points, g: aw.snub.group })]);
-  el.innerHTML = cards.map(([icon, label, p, sub]) => `
-    <div class="card award">${mug(p, "mug")}
-      <div><div class="label">${icon} ${esc(label)}</div><div class="value">${esc(p.name)} ${logo(p.team)}</div><div class="sub">${esc(sub)}</div></div>
-    </div>`).join("");
+  if (!aw) { el.innerHTML = `<p class="np-quiet">${esc(t("noInsights"))}</p>`; return; }
+  // Short columnist blurbs with a small portrait
+  const items = [];
+  if (aw.goldenPick) items.push([t("goldenPick"), aw.goldenPick, t("goldenSub", { n: aw.goldenPick.points, k: aw.goldenPick.owners })]);
+  if (aw.iceAnchor) items.push([t("iceAnchor"), aw.iceAnchor, t("anchorSub", { n: aw.iceAnchor.dry, k: aw.iceAnchor.owners })]);
+  if (aw.snub) items.push([t("snub"), aw.snub, t("snubSub", { n: aw.snub.points, g: aw.snub.group })]);
+  el.innerHTML = items.map(([label, p, sub]) => `<div class="np-chron">${mug(p, "np-portrait")}
+    <p><b class="np-chron-title">${esc(label)}.</b> <b>${esc(p.name)}</b> (${esc(p.team)}) : ${esc(sub)}.</p></div>`).join("");
 }
 
 // Past champions (data/palmares.json, filled in at each season's end): hidden until there is one
@@ -1555,21 +1612,19 @@ function renderPalmares() {
 
 function renderMilestones() {
   const el = document.getElementById("milestones"), st = S.board.standings, rows = [];
-  // Pool races: close gaps to the team just above
+  // Classified ads: races in the standings ("AVIS") and players close to a round number ("RECHERCHÉ")
   for (let i = 1; i < st.length; i++) {
     const gap = st[i - 1].totalPoints - st[i].totalPoints;
-    if (gap > 0 && gap <= 3) rows.push({ icon: "🏁", sort: gap, html: esc(t("chaseAbove", { team: st[i].teamName, n: gap, other: st[i - 1].teamName, rank: st[i - 1].rank })) });
+    if (gap > 0 && gap <= 3) rows.push({ tag: t("npNotice"), sort: gap, text: t("chaseAbove", { team: st[i].teamName, n: gap, other: st[i - 1].teamName, rank: st[i - 1].rank }) });
   }
-  // Player milestones from insights
   for (const m of S.insights?.milestones || []) {
     const left = m.target - m.value;
-    rows.push({ icon: { goals: "🚨", points: "🎯", wins: "🥅" }[m.stat], sort: left + 0.5,
-      html: `${esc(t(`ms_${m.stat}`, { name: m.name, n: left, target: m.target }))} <span class="muted">· ${esc(t("ownedBy", { n: m.owners }))}</span>` });
+    rows.push({ tag: t("npWanted"), sort: left + 0.5, text: `${t(`ms_${m.stat}`, { name: m.name, n: left, target: m.target })} · ${t("ownedBy", { n: m.owners })}` });
   }
   rows.sort((a, b) => a.sort - b.sort);
   el.innerHTML = rows.length
-    ? `<ul class="ms-list">${rows.slice(0, 5).map(r => `<li><span class="ms-icon">${r.icon}</span><span>${r.html}</span></li>`).join("")}</ul>`
-    : `<div class="empty" style="padding:8px">${esc(t("noMilestones"))}</div>`;
+    ? rows.slice(0, 5).map(r => `<div class="np-ad"><b>${esc(r.tag)} :</b> ${esc(r.text)}</div>`).join("")
+    : `<p class="np-quiet">${esc(t("noMilestones"))}</p>`;
 }
 
 // ---------- FAQ ----------

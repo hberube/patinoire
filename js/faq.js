@@ -95,7 +95,7 @@ const FAQ = {
         },
         {
           q: "C'est quoi, la Gazette et les duels?",
-          a: `<p>La <b>Gazette</b> résume la veille : les buts des joueurs du pool (avec la vidéo), le choix en or, l'ancre de glace et le grand oublié. Les <b>duels de la semaine</b> jumellent les équipes au hasard chaque lundi; l'équipe qui fait le plus de points du lundi au dimanche gagne. Juste pour le plaisir : ça ne change pas le classement.</p>`,
+          a: `<p>La <b>Gazette</b> est le journal du pool, mis à jour chaque matin : la manchette (le but marquant d'hier, avec la vidéo), les autres buts en bref, les duels dans la page des sports, l'infirmerie, la chronique (choix en or, ancre de glace, grand oublié), les petites annonces (à surveiller) et le carnet mondain (trophées et records). Les <b>duels de la semaine</b> jumellent les équipes au hasard chaque lundi; l'équipe qui fait le plus de points du lundi au dimanche gagne. Juste pour le plaisir : ça ne change pas le classement.</p>`,
         },
         {
           q: "D'où viennent les trophées et les chances de gagner?",
@@ -168,7 +168,7 @@ const FAQ = {
         },
         {
           q: "Where do my photo and logo show up?",
-          a: `<p>Your <b>logo</b> appears in the standings, on your team card and in the Buzz tab. Your <b>photo</b> appears large on the podium, in your team's window and in "Tonight". With no image, your initials are shown.</p>`,
+          a: `<p>Your <b>logo</b> appears in the standings, on your team card and in the Gazette tab. Your <b>photo</b> appears large on the podium, in your team's window and in "Tonight". With no image, your initials are shown.</p>`,
         },
       ],
     },
@@ -224,20 +224,20 @@ const FAQ = {
         {
           q: "When do the standings update?",
           a: `<ul>
-            <li><b>Every morning around 5 AM:</b> standings, trajectory and Buzz, with the previous night's games.</li>
+            <li><b>Every morning around 5 AM:</b> standings, trajectory and Gazette, with the previous night's games.</li>
             <li><b>During games</b> (every 15 minutes): the "Tonight" tab.</li>
             <li><b>A few minutes after</b> Hugo approves a trade or a new image.</li>
           </ul>`,
         },
         {
-          q: "What are the Buzz tab and the duels?",
-          a: `<p><b>Buzz</b> recaps the previous night: goals by pool players (with video), the Golden Pick, the Ice Anchor and the Snub. <b>Weekly duels</b> pair teams at random every Monday; whoever scores more from Monday to Sunday wins. Just for fun: it doesn't affect the standings.</p>`,
+          q: "What are the Gazette and the duels?",
+          a: `<p>The <b>Gazette</b> is the pool's newspaper, updated every morning: the top story (last night's key goal, with video), the other goals in brief, the duels on the sports page, the infirmary, the column (Golden Pick, Ice Anchor, Snub), the classifieds (watch list) and the society pages (trophies and records). <b>Weekly duels</b> pair teams at random every Monday; whoever scores more from Monday to Sunday wins. Just for fun: it doesn't affect the standings.</p>`,
         },
         {
           q: "Where do the trophies and the odds come from?",
           a: `<ul>
-            <li><b>Trophy case</b> (Buzz): 🏆 champion of the month (most points that month), 🥊 weekly duel won, 🎱 bingo won, ⭐ best night in the pool, 👑 each day spent in 1st place. The <b>pool records</b> are right below.</li>
-            <li><b>🎆 New Year Cup</b> (Buzz): on January 1, everyone restarts at zero; only points scored from then until the end of the regular season count. Under the standings, <b>🏮 the red lantern</b> follows the race to stay out of last place.</li>
+            <li><b>Trophy case</b> (Gazette): 🏆 champion of the month (most points that month), 🥊 weekly duel won, 🎱 bingo won, ⭐ best night in the pool, 👑 each day spent in 1st place. The <b>pool records</b> are right below.</li>
+            <li><b>🎆 New Year Cup</b> (Gazette): on January 1, everyone restarts at zero; only points scored from then until the end of the regular season count. Under the standings, <b>🏮 the red lantern</b> follows the race to stay out of last place.</li>
             <li><b>Odds</b> (Standings): every morning, the site simulates the rest of the season 5,000 times, from each player's pace and his team's remaining games. The percentage is the share of simulated seasons your team wins. Future trades aren't predicted.</li>
             <li>During games, the <b>Tonight</b> tab shows an alert when a pool player scores. Tap <b>🔕 Horn</b> to hear it too.</li>
           </ul>
