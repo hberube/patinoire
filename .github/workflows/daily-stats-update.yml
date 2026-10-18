@@ -2,11 +2,11 @@ name: Daily Pool Stats Update
 
 on:
   schedule:
-    # The game-night loop (live-scores.yml) normally updates the standings right after the last
-    # game; this is the safety net. GitHub's schedule is best-effort (top-of-hour slots are the
-    # most often delayed or dropped), so try several times: 06:17-10:17 UTC =
-    # 2:17-6:17 AM EDT / 1:17-5:17 AM EST. Extra runs find nothing new and commit nothing.
-    - cron: '17 6-10 * * *'
+    # Hugo's PC does the nightly and morning work (scripts/local: night loop, morning job,
+    # overseer). This single late-morning run is only a safety net for a night the PC missed
+    # (off, or restarted by Windows Update): it does nothing when the standings already include
+    # last night. 12:17 UTC = 8:17 AM EDT / 7:17 AM EST.
+    - cron: '17 12 * * *'
   workflow_dispatch:
 
 permissions:
@@ -31,20 +31,33 @@ jobs:
       - name: Install Dependencies
         run: pip install -r requirements.txt
 
+      - name: Did the PC miss last night?
+        id: need
+        # The overseer's checklist (scripts/healthcheck.py); started by hand, it always runs
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then echo "run=yes" >> "$GITHUB_OUTPUT"; exit 0; fi
+          python scripts/healthcheck.py --json > health.json || true
+          cat health.json
+          python -c "import json; p=json.load(open('health.json'))['problems']; print('run=' + ('yes' if any(x['fix'] == 'standings' for x in p) else 'no'))" >> "$GITHUB_OUTPUT"
+
       - name: Update Stats & Leaderboard
+        if: steps.need.outputs.run == 'yes'
         run: python scripts/update_pool.py
 
       - name: Gazette (highlights, awards, milestones)
+        if: steps.need.outputs.run == 'yes'
         # Extras only: never block the standings update if the NHL API hiccups here
         continue-on-error: true
         run: python scripts/insights.py
 
       - name: Commit & Push Changes
+        if: steps.need.outputs.run == 'yes'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -A data
           git diff --staged --quiet && exit 0
-          git commit -m "Auto-update pool stats"
-          git pull --rebase
-          git push
+          git commit -m "Auto-update pool stats (safety net: the PC missed last night)"
+          # If Hugo's PC published in the meantime, its update stands: no error
+          git pull --rebase || { git rebase --abort; echo "The PC published first; keeping its update."; exit 0; }
+          git push || echo "The PC published first; keeping its update."

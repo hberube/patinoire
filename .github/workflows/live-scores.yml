@@ -1,15 +1,11 @@
 name: Live Scores (Ce soir)
 
-# GitHub's schedule is best-effort and can skip or delay runs by hours, so instead of one
-# short run every 15 minutes, a run that starts on a game night stays up and refreshes
-# every 2 minutes until the last game is final (scripts/update_live.py --loop).
-# Several start times give it many chances to start; runs that find the loop already
-# going wait in line and exit right away once the night is over.
+# Hugo's PC runs the game-night loop (scripts/local/pool_job.sh night, from Task Scheduler and
+# the overseer). This workflow no longer runs on a timer: two copies publishing the same live
+# scores and standings kept colliding. It stays here to start by hand (Actions -> Run workflow)
+# if the PC is away for a night: it refreshes every 2 minutes until the last game is final
+# (scripts/update_live.py --loop), then rebuilds the standings.
 on:
-  schedule:
-    # 16:00-04:30 UTC, every 30 min (noon-12:30 AM EDT / 11 AM-11:30 PM EST)
-    - cron: '7,37 16-23 * * *'
-    - cron: '7,37 0-4 * * *'
   workflow_dispatch:
 
 permissions:
@@ -85,5 +81,5 @@ jobs:
           git add -A data
           git diff --staged --quiet && exit 0
           git commit -m "Auto-update pool stats (after last game)"
-          git pull --rebase
-          git push
+          git pull --rebase || { git rebase --abort; echo "The PC published first; keeping its update."; exit 0; }
+          git push || echo "The PC published first; keeping its update."
