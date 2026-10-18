@@ -1,80 +1,96 @@
 {
   "gameDay": "2026-10-17",
-  "generatedAt": "2026-10-18T08:32:23Z",
-  "duration": 137,
+  "generatedAt": "2026-10-18T13:20:42Z",
+  "duration": 168,
   "engine": "elevenlabs",
   "lines": [
     {
-      "host": "sylvie",
-      "line": "Bonjour la famille! Bienvenue aux Ondes de la Patinoire, l'émission du Pool à Hugo. Moi c'est Sylvie, pis avec moi, comme toujours, Jean."
-    },
-    {
       "host": "jean",
-      "line": "Bonjour tout le monde! Hier soir, 14 matchs au programme, pis le Canadien a battu Buffalo 4 à 3 en prolongation. [excited] Je dis ça de même, là."
+      "line": "[excited] Bonjour la famille! Bulletin spécial aux Ondes de la Patinoire: 14 matchs hier soir! C'est historique!"
     },
     {
       "host": "sylvie",
-      "line": "Ben oui Jean, on avait compris. Parlons du pool. La grosse soirée, c'est Ève avec 27 points!"
+      "line": "Jean, c'est un samedi d'octobre. Ça arrive chaque semaine. Bonjour quand même, moi c'est Sylvie."
     },
     {
       "host": "jean",
-      "line": "27 points, mets-en! Elle grimpe de 4 places pis se retrouve au 9e rang."
+      "line": "Michel et ses Ducks ajoutent 20 points, 202 au total! Pis derrière, égalité à 184 entre Guillaume pis... Hugo!"
     },
     {
       "host": "sylvie",
-      "line": "Juste derrière, Marjolaine avec 24 points. Elle monte de 2 places, au 8e rang. Simon aussi monte de 2 places, avec 21 points, pour le 4e rang."
+      "line": "Hugo gagne 22 points pis 2 places, au 3e rang. Les Crazy Blue Heelers ont retrouvé leur flair. Mais à 18 points de Michel, les canards volent encore pas mal haut."
     },
     {
       "host": "jean",
-      "line": "Pis en tête, Michel reste solide avec 202 points. Il a ajouté 20 points hier, pis personne l'a rattrapé."
+      "line": "[gasps] Pis la soirée d'Eve! 27 points, 4 places, la voilà 9e! Marjolaine, 24 points, monte au 8e rang."
     },
     {
       "host": "sylvie",
-      "line": "Mais ça se rapproche en arrière. Hugo a ramassé 22 points, il grimpe de 3 places pis se retrouve deuxième avec 184. [chuckles] C'est bon d'être le patron du pool."
+      "line": "Louise, la reine de la remontée à la dernière émission, redescend de 5 places, au 13e rang. [sighs] L'ascenseur marche dans les deux sens."
     },
     {
       "host": "jean",
-      "line": "Guillaume est aussi à 184, mais il recule d'une place avec 15 points seulement. Aïe."
+      "line": "Elrick pis Sylvianne glissent de 2 places, 5e pis 6e. En bas, Vicky reste lanterne rouge à 149, 3 points derrière Maddox."
     },
     {
       "host": "sylvie",
-      "line": "Côté glissades, Louise perd 5 places avec 17 points. [sighs] Elle tombe au 13e rang."
+      "line": "Le bingo maintenant! 18 cartes, pis le gagnant, c'est Jackson avec 6 lignes."
     },
     {
       "host": "jean",
-      "line": "Sylvianne recule de 3 places, pis Elrick de 2. Ça brasse dans le milieu du classement!"
+      "line": "Les Anglers! Évidemment! [chuckles] Un pêcheur qui lance ses lignes, ça mord!"
     },
     {
       "host": "sylvie",
-      "line": "Pis tout au fond, la lanterne rouge, c'est Vicky avec 149 points. Maddox la précède de peu, à 152."
+      "line": "Eve suit avec 5 lignes, Guillaume avec 4. Simon a coché 4 cases sans faire une seule ligne, pis Elrick ferme la marche avec 3 cases."
     },
     {
       "host": "jean",
-      "line": "Courage Vicky! Elle avait Celebrini, Forsberg pis Malkin qui ont marqué hier. Ça s'en vient."
+      "line": "[sarcastic] Une belle carte de décoration, Elrick. Après 1 soirée, Jackson mène la course au prix de fin d'année!"
     },
     {
       "host": "sylvie",
-      "line": "Passons aux beaux buts. Connor McDavid a marqué, pis il est dans 15 équipes! Draisaitl a marqué aussi, pis Edmonton a gagné 6 à 2 à Utah."
+      "line": "Infirmerie. Pauvre Marjolaine. John Tavares, de Toronto, passe d'absent à la liste des blessés, bas du corps, retour prévu le 27 novembre."
     },
     {
       "host": "jean",
-      "line": "Cole Caufield a marqué pour Montréal, avec Slafkovský à la passe. [excited] Il est dans 14 équipes, ça fait du monde content ce matin!"
+      "line": "Pis Pavel Zacha, de Boston, passe d'incertain à absent, haut du corps, retour prévu le 20 octobre. Pis elle monte quand même de 2 places!"
     },
     {
       "host": "sylvie",
-      "line": "Hugo, Jackson pis Vincent avaient Trevor Zegras à Philadelphie. Ève, Sylvianne pis Maddox avaient Jake Guentzel, à Tampa."
+      "line": "Bonne nouvelle: Kirill Kaprizov, du Minnesota, est de retour au jeu. Bon retour, Kirill."
     },
     {
       "host": "jean",
-      "line": "Pis une dernière: Jack Eichel a 18 points, pis personne l'a choisi dans le pool. [sarcastic] Belle flair, la gang."
+      "line": "Les beaux buts! Mon Canadien bat Buffalo 4 à 3 en prolongation, pis Cole Caufield en marque 2! 14 d'entre vous l'avaient!"
     },
     {
       "host": "sylvie",
-      "line": "Ben là, on s'est tous trompés un peu. Rendez-vous ce soir pour la suite, la famille!"
+      "line": "Pis Tage Thompson a marqué pour Buffalo. Sylvianne pis Louise ont applaudi en cachette."
     },
     {
       "host": "jean",
-      "line": "Bonne journée à tous, pis allez le Canadien!"
+      "line": "Connor McDavid, 2 buts dans le 6 à 2 contre Utah, pis Leon Draisaitl aussi! On vous avait dit de surveiller les 5 buts. Il les a dépassés!"
+    },
+    {
+      "host": "sylvie",
+      "line": "Vicky, elle, a vu marquer Celebrini, Forsberg, pis encore Malkin. 3 buts, pis toujours dernière. [laughs] Une vraie thèse sur la malchance."
+    },
+    {
+      "host": "jean",
+      "line": "Trevor Zegras a marqué pour Philadelphie. Hugo, Jackson pis Vincent l'avaient."
+    },
+    {
+      "host": "sylvie",
+      "line": "Pis Nick Suzuki est à 4 buts. Jean, retiens-toi avant d'appeler ça historique."
+    },
+    {
+      "host": "jean",
+      "line": "[whispers] C'est historique. Bonne journée, la famille! On se retrouve demain!"
+    },
+    {
+      "host": "sylvie",
+      "line": "Demain, avec un Jean un peu plus calme. Peut-être."
     }
   ]
 }
