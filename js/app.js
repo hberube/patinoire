@@ -488,8 +488,8 @@ function renderStandings() {
     awards.push(["📈", t("awardHot"), standingOf(hot[0]).teamName, t("ptsLast7", { n: hot[1] })]);
   }
   const lb = lastBingo();
-  if (lb) awards.push(["🎱", t("bingoYesterday"), lb.winners.map(id => standingOf(id)?.teamName).filter(Boolean).join(", "),
-    t("bingoScore", { lines: lb.lines, squares: lb.squares })]);
+  if (lb) awards.push(["🎱", t("bingoYesterday"), lb.winners.length ? lb.winners.map(id => standingOf(id)?.teamName).filter(Boolean).join(", ") : t("bingoNobody"),
+    lb.winners.length ? t("bingoScore", { lines: lb.lines, squares: lb.squares }) : t("bingoNoLine")]);
   const mvp = st.flatMap(s => s.rosterStats).sort((a, b) => b.stats.points - a.stats.points)[0];
   if (mvp) awards.push(["⭐", t("awardMvp"), mvp.name, t("mvpSub", { n: mvp.stats.points, k: S.owners.get(mvp.id) })]);
   document.getElementById("awards").innerHTML = awards.map(([icon, label, value, sub]) => `
@@ -949,7 +949,8 @@ function bingoHistory() {
     const top = rows[0]?.res;
     if (!top) continue;
     out.push({ day: n.day, lines: top.lines.length, squares: top.done,
-      winners: rows.filter(r => r.res.lines.length === top.lines.length && r.res.done === top.done).map(r => r.s.participantId),
+      // Hugo's rule: no line, no winner (and no trophy or season win)
+      winners: top.lines.length ? rows.filter(r => r.res.lines.length === top.lines.length && r.res.done === top.done).map(r => r.s.participantId) : [],
       results: rows.map(r => ({ id: r.s.participantId, lines: r.res.lines.length, squares: r.res.done })) });
   }
   return (S.bingoHist = out);
@@ -1015,7 +1016,7 @@ function bingoSeasonSection() {
     : `<div class="card empty">${esc(t("bsEmpty"))}</div>`}`;
 }
 
-const bingoWinnerText = night => t(night.winners.length > 1 ? "bingoWinners" : "bingoWinner", {
+const bingoWinnerText = night => !night.winners.length ? t("bingoNoWinner") : t(night.winners.length > 1 ? "bingoWinners" : "bingoWinner", {
   teams: night.winners.map(id => standingOf(id)?.teamName).filter(Boolean).join(", "), lines: night.lines, squares: night.squares });
 
 function renderBingo() {
@@ -1028,7 +1029,8 @@ function renderBingo() {
     return;
   }
   const over = rows[0].res.over, top = rows[0].res;
-  const winners = over ? rows.filter(r => r.res.lines.length === top.lines.length && r.res.done === top.done) : [];
+  // No line, no winner: a finished night where nobody completed a line has no winner
+  const winners = over && top.lines.length ? rows.filter(r => r.res.lines.length === top.lines.length && r.res.done === top.done) : [];
   const prev = lastBingo()?.day !== live.gameDay ? lastBingo() : null;  // last night's winner, once tonight's cards are out
   S.bingoPick = rows.some(r => r.s.participantId === S.bingoPick) ? S.bingoPick : mine || rows[0].s.participantId;
   const shown = rows.find(r => r.s.participantId === S.bingoPick);
@@ -1039,7 +1041,8 @@ function renderBingo() {
       <span class="muted">${esc(t("bingoHow"))}</span></div>
     ${winners.length ? `<div class="card card-pad bingo-winner">🏆 ${esc(t(winners.length > 1 ? "bingoWinners" : "bingoWinner",
       { teams: winners.map(r => r.s.teamName).join(", "), lines: top.lines.length, squares: top.done }))}</div>`
-      : prev ? `<div class="card card-pad bingo-winner">🏆 ${esc(fmtDay(prev.day, true))} · ${esc(bingoWinnerText(prev))}</div>` : ""}
+      : over ? `<div class="card card-pad bingo-winner">🎱 ${esc(t("bingoNoWinner"))}</div>`
+      : prev ? `<div class="card card-pad bingo-winner">${prev.winners.length ? "🏆" : "🎱"} ${esc(fmtDay(prev.day, true))} · ${esc(bingoWinnerText(prev))}</div>` : ""}
     <div class="bingo-layout">
       <div class="card card-pad">
         ${!mine ? `<p class="bingo-login muted">${esc(t("bingoLogin"))} <button class="btn btn-sm btn-primary" id="bingo-login">${esc(t("login"))}</button></p>` : ""}

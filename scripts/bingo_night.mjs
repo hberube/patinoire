@@ -31,7 +31,8 @@ for (const n of nights) {
   const rows = race(standings, live, new Set(standings.flatMap(s => s.rosterStats.map(p => p.id))));
   const top = rows[0]?.res;
   if (!top) continue;
-  const winners = rows.filter(r => r.res.lines.length === top.lines.length && r.res.done === top.done);
+  // Hugo's rule: no line, no winner (same as bingoHistory() in js/app.js)
+  const winners = top.lines.length ? rows.filter(r => r.res.lines.length === top.lines.length && r.res.done === top.done) : [];
   for (const r of rows) {
     const x = season[r.s.participantId] ||= { wins: 0, lines: 0 };
     x.lines += r.res.lines.length;
@@ -42,6 +43,7 @@ for (const n of nights) {
     const nearMiss = rows.filter(r => !r.res.lines.length).sort((a, b) => b.res.done - a.res.done)[0];
     tonight = {
       winners: winners.map(line),
+      noWinner: !winners.length,  // nobody completed a line: no winner, no trophy
       top3: rows.slice(0, 3).map(line),
       last: line(rows.at(-1)),
       nearMiss: nearMiss && nearMiss.res.done >= 4 ? line(nearMiss) : null,
