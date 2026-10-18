@@ -126,7 +126,7 @@ const FAQ = {
           q: "Comment marche le bingo?",
           a: `<ul>
             <li>Chaque soir de match, chaque participant reçoit sa propre carte de 9 cases (le centre est libre). La carte arrive l'après-midi.</li>
-            <li>Les cases viennent des matchs du soir, le plus possible de <b>vos propres joueurs</b> (« Suzuki marque », « Hutson obtient un point »). Si vous n'avez pas assez de joueurs en action, des cases d'équipes LNH (« MTL gagne ») et de moments de la soirée (« Un but en avantage numérique ») complètent la carte : tout le monde joue dès qu'il y a un match.</li>
+            <li>Les cases viennent des matchs du soir : des joueurs de votre équipe (« Suzuki marque »), des équipes de la LNH (« MTL gagne ») et des moments de la soirée (« Un but en avantage numérique »).</li>
             <li>Rien à faire : les cases se cochent toutes seules pendant les matchs. ✗ veut dire que la case ne peut plus arriver ce soir.</li>
             <li>Les joueurs blessés ou suspendus (onglet <b>Blessés</b>) ne sont pas dans les cartes. La liste suit les nouvelles jusqu'au premier match de la journée, puis ne change plus.</li>
             <li>Une ligne = 3 cases cochées en ligne, en colonne ou en diagonale. À la fin de la soirée, le plus de lignes gagne (puis le plus de cases). Il faut au moins une ligne pour gagner : sans ligne, pas de gagnant.</li>
@@ -262,7 +262,7 @@ const FAQ = {
           q: "How does the bingo work?",
           a: `<ul>
             <li>Every game night, each participant gets their own card of 9 squares (the centre is free). Cards show up in the afternoon.</li>
-            <li>Squares come from tonight's games, as many as possible from <b>your own players</b> ("Suzuki scores", "Hutson gets a point"). If you don't have enough players in action, NHL team squares ("MTL wins") and moments of the night ("A power-play goal") fill the card: everyone plays as soon as there's a game.</li>
+            <li>Squares come from tonight's games: players on your team ("Suzuki scores"), NHL teams ("MTL wins") and moments of the night ("A power-play goal").</li>
             <li>Nothing to do: squares tick themselves during the games. ✗ means the square can't happen tonight anymore.</li>
             <li>Injured or suspended players (<b>Injuries</b> tab) aren't on the cards. The list follows the news until the day's first game starts, then stays put.</li>
             <li>A line = 3 ticked squares in a row, a column or a diagonal. At the end of the night, the most lines wins (then the most squares). It takes at least one line to win: no line, no winner.</li>

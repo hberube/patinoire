@@ -4,7 +4,6 @@
 // (scripts/update_live.py). No page code here: app.js renders cards and labels them with t().
 
 const FREE = 4;  // centre square
-const MORE_PERSONAL_FROM = "2026-10-18";  // first game day with mostly personal squares (see makeCard)
 const LINES = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]];
 const FINAL = new Set(["OFF", "FINAL"]);
 
@@ -99,14 +98,8 @@ export function makeCard(standing, live, poolIds) {
     .sort((a, b) => (games.length >= b[1]) - (games.length >= a[1]))  // drawable tonight first
     .map(([id, , rate]) => ({ kind: id, vars: { n: needed(rate, games.length) } }));
 
-  // From 2026-10-18 (Hugo's choice): as many squares as possible from the participant's own players,
-  // then 2 NHL team squares, then night squares, so everyone gets a full card whenever there are games.
-  // Earlier nights keep the mix they were played with (3 personal, 2 team, 3 night): saved nights are
-  // replayed with this code, so an old card must never change.
-  const chosen = live.gameDay >= MORE_PERSONAL_FROM
-    ? [...personal.splice(0, 8)]
-    : [...personal.splice(0, 3), ...teamSq.splice(0, 2)];
-  chosen.push(...teamSq.splice(0, Math.min(teamSq.length, 8 - chosen.length, live.gameDay >= MORE_PERSONAL_FROM ? 2 : 0)));
+  // 3 personal, 2 team, 3 night; whatever runs short is filled from the others
+  const chosen = [...personal.splice(0, 3), ...teamSq.splice(0, 2)];
   chosen.push(...nightSq.splice(0, 8 - chosen.length));
   for (const extra of [personal, teamSq, nightSq]) while (chosen.length < 8 && extra.length) chosen.push(extra.shift());
   const squares = [];
