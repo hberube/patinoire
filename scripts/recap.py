@@ -3,14 +3,17 @@
 
 Python gathers last night's facts (standings moves, pool goals, milestones, final scores);
 Claude only turns them into a short, playful bulletin in French and English.
-Claude also picks one highlight for a meme card (scripts/meme.py → data/recap-fr.png and
-data/recap-en.png); set "recapMeme": false in data/config.json to turn the image off.
+A second Claude call makes the meme card (scripts/meme.py → data/recap-fr.png and data/recap-en.png):
+its topic rotates between an NHL player, a participant, the bingo and an injury, in three formats
+(classic, versus, breaking news), and it sees the last memes (data/meme_history.json) so it never
+repeats a subject or a joke. Set "recapMeme": false in data/config.json to turn the image off.
 Runs on Hugo's PC (scripts/local/pool_job.sh morning) through the `claude` CLI, so the
 GitHub workflows never need a key. Any failure leaves the previous recap in place, and a
 failed image only drops the image.
 
   python scripts/recap.py            write the recap for last night (skips if already done)
   python scripts/recap.py --force    rewrite it anyway
+  python scripts/recap.py --meme     redo only today's meme (keeps the recap text)
   python scripts/recap.py --dry-run  print the facts sent to Claude, call nothing
 """
 import json
@@ -22,6 +25,7 @@ from pathlib import Path
 
 from history import last_completed_day
 from pool_lib import DATA_DIR, get_json, load, now_iso, save
+from showfacts import bingo_facts, injury_facts, site_order
 
 CLAUDE = os.environ.get("CLAUDE_BIN", str(Path.home() / ".local/bin/claude"))
 
@@ -43,13 +47,45 @@ FAITS :
 """
 
 
-MEME_RULES = """
-- Mème : choisis UN fait saillant drôle D'HIER SOIR lié à un joueur des faits (champ "id"). Priorité aux
-  buts d'hier (poolGoals), surtout ceux qui font bouger le classement ou un choix rare; milestonesNear ou awards
-  seulement si rien d'hier soir ne s'y prête. Texte de mème classique, haut + bas, en majuscules implicites : "top" max 45
-  caractères (la mise en place), "bottom" max 70 caractères (la chute). Les faits restent vrais; l'exagération
-  comique est permise seulement si elle est évidemment une blague. Peut taquiner les participants concernés."""
-MEME_SHAPE = ', "meme": {"playerId": 0, "fr": {"top": "...", "bottom": "..."}, "en": {"top": "...", "bottom": "..."}}'
+MEME_PROMPT = """Tu fais le mème du matin pour la page d'accueil du « Pool à Hugo », un pool de hockey LNH
+entre amis et famille au Québec. Le but : faire rire la famille. Un seul mème, à partir des FAITS d'hier soir.
+
+LE SUJET tourne entre 4 catégories :
+- "player" : un joueur LNH (un but marquant, un choix rare qui paie, un jalon, une disette);
+- "participant" : un participant (grosse soirée, glissade, lanterne rouge, égalité, remontée);
+- "bingo" : les cartes de bingo d'hier (le gagnant, celui qui fait chou blanc, le presque-bingo);
+- "injury" : une blessure malchanceuse ou ironique pour ceux qui ont le joueur (section injuries).
+Choisis la catégorie la plus drôle AUJOURD'HUI, mais JAMAIS la même que le dernier mème de l'HISTORIQUE.
+
+LE FORMAT, différent du dernier mème :
+- "classic" : une image, texte en haut (la mise en place, max 45 car.) et en bas (la chute, max 70 car.);
+- "versus" : deux panneaux, « NON » en haut (ce qu'on rejette) et « OUI » en bas (ce qu'on adore), une
+  image chacun (max 70 car. chacun); parfait pour comparer deux choix, deux participants, deux joueurs;
+- "breaking" : écran de nouvelles télé « BULLETIN SPÉCIAL » : un titre (max 50 car.) et un bandeau
+  défilant (max 60 car.) avec un détail drôle.
+
+L'IMAGE (subject, et subject2 pour versus) : {"kind": "player", "id": <id d'un joueur des faits>} ou
+{"kind": "team", "id": <participantId de la liste participants avec hasPicture: true>}.
+Pour bingo et participant, l'image est en général l'équipe du participant.
+
+RÈGLES
+- Faits vrais seulement; l'exagération comique est permise si c'est clairement une blague. Jamais méchant,
+  pas de moquerie sur une blessure elle-même (on rit de la malchance du participant, pas du joueur).
+- Ne réutilise PAS un sujet (joueur ou participant) des 3 derniers mèmes, ni une structure de blague
+  déjà vue dans l'HISTORIQUE. Interdit : « X marque. N participants l'ont. Les autres : ... » (déjà usé).
+- Pense référence culturelle, jeu de mots, ironie, contraste, fausse solennité. Court et punché.
+- Texte en français québécois, puis une version anglaise drôle aussi (pas une traduction mot à mot).
+
+Réponds avec SEULEMENT ce JSON, sans texte autour ni bloc de code :
+{"category": "player|participant|bingo|injury", "format": "classic|versus|breaking",
+ "subject": {"kind": "player|team", "id": ...}, "subject2": {"kind": "...", "id": ...},
+ "fr": {...}, "en": {...}}
+où fr et en contiennent selon le format : classic {"top", "bottom"}; versus {"no", "yes"};
+breaking {"headline", "ticker"}. Omets subject2 sauf pour versus.
+
+"""
+MEME_FIELDS = {"classic": {"top": 60, "bottom": 90}, "versus": {"no": 90, "yes": 90}, "breaking": {"headline": 70, "ticker": 90}}
+MEME_HISTORY = 10
 
 
 def first_name(full):
@@ -115,26 +151,8 @@ def valid(text):
     return True
 
 
-def meme_players(f):
-    """playerId -> team for every player Claude may put on the meme card."""
-    found = {}
-    for g in f["poolGoals"]:
-        found[g["id"]] = g["scorer"].split("(")[1].split(" ")[0]
-    for p in f["milestonesNear"] + list(f["awards"].values()):
-        found.setdefault(p["id"], p["team"])
-    return found
-
-
-def valid_meme(m, players):
-    return (isinstance(m, dict) and m.get("playerId") in players
-            and all(isinstance(m.get(lang), dict)
-                    and isinstance(m[lang].get("top"), str) and 0 < len(m[lang]["top"]) <= 60
-                    and isinstance(m[lang].get("bottom"), str) and 0 < len(m[lang]["bottom"]) <= 90
-                    for lang in ("fr", "en")))
-
-
 def write(f, meme):
-    prompt = PROMPT.format(meme_rules=MEME_RULES if meme else "", meme_shape=MEME_SHAPE if meme else "")
+    prompt = PROMPT.format(meme_rules="", meme_shape="")  # the meme has its own call (write_meme)
     with tempfile.TemporaryDirectory() as tmp:  # empty cwd: no project instructions or memory
         run = subprocess.run(
             [CLAUDE, "-p", "--model", "sonnet", "--output-format", "json", "--tools", "",
@@ -151,24 +169,112 @@ def write(f, meme):
     return text
 
 
+def meme_facts(f):
+    """The recap's facts plus what the meme may also joke about: the bingo, the injuries, the participants."""
+    out = dict(f)
+    try:
+        bingo = bingo_facts(f["night"])
+        out["standings"] = site_order(f["standings"], bingo.pop("linesById", {}))
+        out["bingo"] = bingo
+    except Exception as e:  # noqa: BLE001
+        print(f"warning: meme without bingo facts ({e})")
+    shows = [h for h in (load("radio_history.json", {}) or {}).get("shows", []) if h["gameDay"] < f["night"]]
+    before = shows[-1].get("injured") if shows else None
+    out["injuries"], _ = injury_facts(before if isinstance(before, dict) else None)
+    logos = load("logos.json", {}) or {}
+    out["participants"] = [{"id": s["participantId"], "who": f'{first_name(s["participantName"])} ({s["teamName"]})',
+                            "hasPicture": bool(logos.get(s["participantId"]))} for s in load("leaderboard.json")["standings"]]
+    return out
+
+
+def meme_subjects(f):
+    """{("player", id): NHL team} and {("team", participantId): None} that the meme may picture."""
+    found = {}
+    for g in f.get("poolGoals", []):
+        found[("player", g["id"])] = g["scorer"].split("(")[1].split(" ")[0]
+    for p in f.get("milestonesNear", []) + list(f.get("awards", {}).values()):
+        if p:
+            found.setdefault(("player", p["id"]), p["team"])
+    for x in (f.get("injuries") or {}).get("new", []) + (f.get("injuries") or {}).get("statusChanged", []):
+        found.setdefault(("player", x["id"]), x["nhlTeam"])
+    for p in f.get("participants", []):
+        if p["hasPicture"]:
+            found[("team", p["id"])] = None
+    return found
+
+
+def valid_meme(m, subjects):
+    if not isinstance(m, dict) or m.get("format") not in MEME_FIELDS:
+        return False
+    key = lambda s: (s.get("kind"), s.get("id")) if isinstance(s, dict) else None
+    if key(m.get("subject")) not in subjects or (m["format"] == "versus" and key(m.get("subject2")) not in subjects):
+        return False
+    return all(isinstance(m.get(lang), dict) and all(isinstance(m[lang].get(k), str) and 0 < len(m[lang][k]) <= n
+               for k, n in MEME_FIELDS[m["format"]].items()) for lang in ("fr", "en"))
+
+
+def write_meme(f, history):
+    prompt = MEME_PROMPT + "HISTORIQUE (les derniers mèmes, le plus récent en dernier) :\n" + (
+        json.dumps(history[-MEME_HISTORY:], ensure_ascii=False) if history else "(aucun)") + "\n\nFAITS :\n"
+    with tempfile.TemporaryDirectory() as tmp:  # empty cwd: no project instructions or memory
+        run = subprocess.run(
+            [CLAUDE, "-p", "--model", "opus", "--output-format", "json", "--tools", "",
+             "--strict-mcp-config", "--no-session-persistence"],
+            input=prompt + json.dumps(f, ensure_ascii=False, indent=1),
+            capture_output=True, text=True, timeout=400, cwd=tmp)
+    if run.returncode != 0:
+        raise RuntimeError(f"claude exited {run.returncode}: {(run.stderr or run.stdout)[-400:]}")
+    reply = json.loads(run.stdout).get("result", "").strip()
+    return json.loads(reply[reply.find("{"):reply.rfind("}") + 1])
+
+
 def draw_meme(f, m):
     """Render both languages' cards; returns the recap's "image" entry, or None."""
-    players = meme_players(f)
-    if not valid_meme(m, players):
-        print(f"warning: no meme image, unexpected meme: {json.dumps(m, ensure_ascii=False)[:200]}")
+    subjects = meme_subjects(f)
+    if not valid_meme(m, subjects):
+        print(f"warning: no meme image, unexpected meme: {json.dumps(m, ensure_ascii=False)[:300]}")
         return None
     try:
-        from meme import render  # needs Pillow (uv run --with pillow on the PC)
+        import meme  # needs Pillow (uv run --with pillow on the PC)
+        sub = m["subject"]
+        team = subjects[(sub["kind"], sub["id"])] or "XXX"
         image = {}
         for lang in ("fr", "en"):
-            path = f"data/recap-{lang}.png"
-            render(m["playerId"], players[m["playerId"]], m[lang]["top"], m[lang]["bottom"],
-                   DATA_DIR / f"recap-{lang}.png")
-            image[lang] = {"src": path, "alt": f'{m[lang]["top"]} / {m[lang]["bottom"]}'}
+            t, out = m[lang], DATA_DIR / f"recap-{lang}.png"
+            if m["format"] == "classic":
+                meme.render_classic(sub, team, t["top"], t["bottom"], out)
+                alt = f'{t["top"]} / {t["bottom"]}'
+            elif m["format"] == "versus":
+                meme.render_versus(sub, t["no"], m["subject2"], t["yes"], out, ("NON", "OUI") if lang == "fr" else ("NOPE", "YES"))
+                alt = f'{t["no"]} / {t["yes"]}'
+            else:
+                meme.render_breaking(sub, team, "Bulletin spécial" if lang == "fr" else "Breaking news", t["headline"], t["ticker"], out)
+                alt = f'{t["headline"]} — {t["ticker"]}'
+            image[lang] = {"src": f"data/recap-{lang}.png", "alt": alt}
         return image
     except Exception as e:
         print(f"warning: no meme image: {e}")
         return None
+
+
+def make_meme(f):
+    """A new meme for f's night, remembered in data/meme_history.json. Returns the image entry or None."""
+    history = (load("meme_history.json", {}) or {}).get("memes", [])
+    earlier = [h for h in history if h["gameDay"] < f["night"]]
+    mf = meme_facts(f)
+    try:
+        m = write_meme(mf, earlier)
+    except Exception as e:  # noqa: BLE001 - the recap stands without its image
+        print(f"warning: no meme ({e})")
+        return None
+    image = draw_meme(mf, m)
+    if image:
+        entry = {"gameDay": f["night"], "category": m.get("category"), "format": m["format"],
+                 "subject": m["subject"], **({"subject2": m["subject2"]} if m["format"] == "versus" else {}), "fr": m["fr"]}
+        memes = [h for h in history if h["gameDay"] != f["night"]] + [entry]
+        save("meme_history.json", {"memes": sorted(memes, key=lambda h: h["gameDay"])[-MEME_HISTORY:]})
+        print(f"meme: {m.get('category')} / {m['format']}")
+    return image
 
 
 def main(args):
@@ -180,17 +286,25 @@ def main(args):
         print(f"recap: no games on {f['night']}, nothing to write")
         return
     old = load("recap.json", {}) or {}
+    if "--meme" in args:  # redo only the meme: keep the recap text as it is
+        if old.get("gameDay") != f["night"]:
+            print(f"recap: no recap for {f['night']} yet; run without --meme")
+            return
+        image = make_meme(f)
+        if image:
+            save("recap.json", {**old, "generatedAt": now_iso(), "image": image})
+        return
     if old.get("gameDay") == f["night"] and "--force" not in args:
         print(f"recap: already written for {f['night']}")
         return
     want_meme = (load("config.json", {}) or {}).get("recapMeme", True)
     try:
-        text = write(f, want_meme)
+        text = write(f, False)
     except Exception as e:  # never block the morning job; the old recap simply ages out
         print(f"warning: recap not written: {e}")
         return
     recap = {"gameDay": f["night"], "generatedAt": now_iso(), "fr": text["fr"], "en": text["en"]}
-    image = draw_meme(f, text.get("meme")) if want_meme else None
+    image = make_meme(f) if want_meme else None
     if image:
         recap["image"] = image
     save("recap.json", recap)

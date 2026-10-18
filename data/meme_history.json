@@ -1,0 +1,57 @@
+{
+  "memes": [
+    {
+      "gameDay": "2026-10-13",
+      "category": "player",
+      "format": "classic",
+      "subjectName": "Trevor Zegras",
+      "fr": {
+        "top": "ZEGRAS MARQUE. 2 PERSONNES DANS LE POOL",
+        "bottom": "HUGO ET JACKSON: GÉNIES. LES 15 AUTRES: « QUI ÇA? »"
+      }
+    },
+    {
+      "gameDay": "2026-10-14",
+      "category": "player",
+      "format": "classic",
+      "subjectName": "Alex Tuch",
+      "fr": {
+        "top": "MICHEL EST LE SEUL À AVOIR ALEX TUCH",
+        "bottom": "TUCH MARQUE DEUX FOIS, LES DUCKS FONT LA FÊTE"
+      }
+    },
+    {
+      "gameDay": "2026-10-15",
+      "category": "player",
+      "format": "classic",
+      "subjectName": "Mark Stone",
+      "fr": {
+        "top": "MARK STONE SCORE TROIS FOIS EN UN SOIR",
+        "bottom": "LES 11 AUTRES PARTICIPANTS: «ON LE SAVAIT, PAS VRAI?»"
+      }
+    },
+    {
+      "gameDay": "2026-10-16",
+      "category": "player",
+      "format": "classic",
+      "subjectName": "Nathan MacKinnon",
+      "fr": {
+        "top": "MACKINNON MARQUE POUR COLORADO",
+        "bottom": "17 PARTICIPANTS: « C'EST MOI QUI L'AI PICKÉ! »"
+      }
+    },
+    {
+      "gameDay": "2026-10-17",
+      "category": "bingo",
+      "format": "breaking",
+      "subject": {
+        "kind": "team",
+        "id": "usr_elrick"
+      },
+      "fr": {
+        "headline": "ÉVASION RATÉE : MICHAEL SCOFIELD BLANCHI AU BINGO",
+        "ticker": "ELRICK : 3 CASES, 0 LIGNE. LE PLAN ÉTAIT TATOUÉ À L'ENVERS"
+      }
+    }
+  ]
+}
