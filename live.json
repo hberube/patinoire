@@ -1,0 +1,346 @@
+{
+  "updated": "2026-11-14T20:15:26Z",
+  "gameDay": "2026-11-14",
+  "games": [
+    {
+      "id": 2026020321,
+      "state": "LIVE",
+      "start": "2026-11-14T18:00:00Z",
+      "away": {
+        "abbrev": "SEA",
+        "score": 1
+      },
+      "home": {
+        "abbrev": "CAR",
+        "score": 4
+      },
+      "period": 3,
+      "periodType": "REG",
+      "clock": "13:49",
+      "intermission": false
+    },
+    {
+      "id": 2026020312,
+      "state": "PRE",
+      "start": "2026-11-14T20:30:00Z",
+      "away": {
+        "abbrev": "WPG",
+        "score": null
+      },
+      "home": {
+        "abbrev": "CHI",
+        "score": null
+      },
+      "period": null,
+      "periodType": null,
+      "clock": null,
+      "intermission": false
+    },
+    {
+      "id": 2026020313,
+      "state": "FUT",
+      "start": "2026-11-15T00:00:00Z",
+      "away": {
+        "abbrev": "MIN",
+        "score": null
+      },
+      "home": {
+        "abbrev": "BOS",
+        "score": null
+      },
+      "period": null,
+      "periodType": null,
+      "clock": null,
+      "intermission": false
+    },
+    {
+      "id": 2026020314,
+      "state": "FUT",
+      "start": "2026-11-15T00:00:00Z",
+      "away": {
+        "abbrev": "EDM",
+        "score": null
+      },
+      "home": {
+        "abbrev": "TOR",
+        "score": null
+      },
+      "period": null,
+      "periodType": null,
+      "clock": null,
+      "intermission": false
+    },
+    {
+      "id": 2026020315,
+      "state": "FUT",
+      "start": "2026-11-15T00:00:00Z",
+      "away": {
+        "abbrev": "COL",
+        "score": null
+      },
+      "home": {
+        "abbrev": "MTL",
+        "score": null
+      },
+      "period": null,
+      "periodType": null,
+      "clock": null,
+      "intermission": false
+    },
+    {
+      "id": 2026020316,
+      "state": "FUT",
+      "start": "2026-11-15T00:00:00Z",
+      "away": {
+        "abbrev": "DET",
+        "score": null
+      },
+      "home": {
+        "abbrev": "TBL",
+        "score": null
+      },
+      "period": null,
+      "periodType": null,
+      "clock": null,
+      "intermission": false
+    },
+    {
+      "id": 2026020317,
+      "state": "FUT",
+      "start": "2026-11-15T00:00:00Z",
+      "away": {
+        "abbrev": "OTT",
+        "score": null
+      },
+      "home": {
+        "abbrev": "PIT",
+        "score": null
+      },
+      "period": null,
+      "periodType": null,
+      "clock": null,
+      "intermission": false
+    },
+    {
+      "id": 2026020318,
+      "state": "FUT",
+      "start": "2026-11-15T00:00:00Z",
+      "away": {
+        "abbrev": "NJD",
+        "score": null
+      },
+      "home": {
+        "abbrev": "WSH",
+        "score": null
+      },
+      "period": null,
+      "periodType": null,
+      "clock": null,
+      "intermission": false
+    },
+    {
+      "id": 2026020319,
+      "state": "FUT",
+      "start": "2026-11-15T00:00:00Z",
+      "away": {
+        "abbrev": "PHI",
+        "score": null
+      },
+      "home": {
+        "abbrev": "CBJ",
+        "score": null
+      },
+      "period": null,
+      "periodType": null,
+      "clock": null,
+      "intermission": false
+    },
+    {
+      "id": 2026020320,
+      "state": "FUT",
+      "start": "2026-11-15T00:00:00Z",
+      "away": {
+        "abbrev": "FLA",
+        "score": null
+      },
+      "home": {
+        "abbrev": "STL",
+        "score": null
+      },
+      "period": null,
+      "periodType": null,
+      "clock": null,
+      "intermission": false
+    },
+    {
+      "id": 2026020322,
+      "state": "FUT",
+      "start": "2026-11-15T01:00:00Z",
+      "away": {
+        "abbrev": "BUF",
+        "score": null
+      },
+      "home": {
+        "abbrev": "DAL",
+        "score": null
+      },
+      "period": null,
+      "periodType": null,
+      "clock": null,
+      "intermission": false
+    },
+    {
+      "id": 2026020323,
+      "state": "FUT",
+      "start": "2026-11-15T02:00:00Z",
+      "away": {
+        "abbrev": "SJS",
+        "score": null
+      },
+      "home": {
+        "abbrev": "UTA",
+        "score": null
+      },
+      "period": null,
+      "periodType": null,
+      "clock": null,
+      "intermission": false
+    },
+    {
+      "id": 2026020324,
+      "state": "FUT",
+      "start": "2026-11-15T03:00:00Z",
+      "away": {
+        "abbrev": "NYI",
+        "score": null
+      },
+      "home": {
+        "abbrev": "ANA",
+        "score": null
+      },
+      "period": null,
+      "periodType": null,
+      "clock": null,
+      "intermission": false
+    },
+    {
+      "id": 2026020325,
+      "state": "FUT",
+      "start": "2026-11-15T03:00:00Z",
+      "away": {
+        "abbrev": "CGY",
+        "score": null
+      },
+      "home": {
+        "abbrev": "LAK",
+        "score": null
+      },
+      "period": null,
+      "periodType": null,
+      "clock": null,
+      "intermission": false
+    }
+  ],
+  "players": {
+    "8478427": {
+      "goals": 0,
+      "assists": 1,
+      "gameId": 2026020321
+    },
+    "8477940": {
+      "goals": 0,
+      "assists": 3,
+      "gameId": 2026020321
+    },
+    "8480830": {
+      "goals": 2,
+      "assists": 0,
+      "gameId": 2026020321
+    }
+  },
+  "goals": [
+    {
+      "gameId": 2026020321,
+      "team": "CAR",
+      "playerId": 8482809,
+      "assistIds": [
+        8478427,
+        8477940
+      ],
+      "period": 1,
+      "periodType": "REG",
+      "time": "11:12",
+      "strength": "pp",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020321,
+      "team": "CAR",
+      "playerId": 8476873,
+      "assistIds": [
+        8480829,
+        8480336
+      ],
+      "period": 1,
+      "periodType": "REG",
+      "time": "17:30",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020321,
+      "team": "CAR",
+      "playerId": 8480830,
+      "assistIds": [
+        8477940,
+        8476906
+      ],
+      "period": 2,
+      "periodType": "REG",
+      "time": "02:03",
+      "strength": "pp",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020321,
+      "team": "SEA",
+      "playerId": 8482665,
+      "assistIds": [
+        8474586,
+        8482259
+      ],
+      "period": 2,
+      "periodType": "REG",
+      "time": "06:06",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020321,
+      "team": "CAR",
+      "playerId": 8480830,
+      "assistIds": [
+        8476906,
+        8477940
+      ],
+      "period": 2,
+      "periodType": "REG",
+      "time": "10:05",
+      "strength": "pp",
+      "emptyNet": false
+    }
+  ],
+  "out": [
+    8475810,
+    8477492,
+    8477946,
+    8477951,
+    8478445,
+    8479406,
+    8480036,
+    8480069,
+    8480893,
+    8482699,
+    8484984
+  ]
+}
