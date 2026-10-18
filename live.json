@@ -1,0 +1,1769 @@
+{
+  "updated": "2026-11-28T03:55:08Z",
+  "gameDay": "2026-11-27",
+  "games": [
+    {
+      "id": 2026020400,
+      "state": "OFF",
+      "start": "2026-11-27T18:00:00Z",
+      "away": {
+        "abbrev": "TOR",
+        "score": 3
+      },
+      "home": {
+        "abbrev": "BOS",
+        "score": 1
+      },
+      "period": 3,
+      "periodType": "REG",
+      "clock": "00:00",
+      "intermission": false
+    },
+    {
+      "id": 2026020401,
+      "state": "OFF",
+      "start": "2026-11-27T18:00:00Z",
+      "away": {
+        "abbrev": "CGY",
+        "score": 3
+      },
+      "home": {
+        "abbrev": "NJD",
+        "score": 5
+      },
+      "period": 3,
+      "periodType": "REG",
+      "clock": "00:00",
+      "intermission": false
+    },
+    {
+      "id": 2026020402,
+      "state": "OFF",
+      "start": "2026-11-27T18:00:00Z",
+      "away": {
+        "abbrev": "UTA",
+        "score": 6
+      },
+      "home": {
+        "abbrev": "NSH",
+        "score": 5
+      },
+      "period": 5,
+      "periodType": "SO",
+      "clock": "00:00",
+      "intermission": false
+    },
+    {
+      "id": 2026020403,
+      "state": "OFF",
+      "start": "2026-11-27T19:00:00Z",
+      "away": {
+        "abbrev": "DAL",
+        "score": 3
+      },
+      "home": {
+        "abbrev": "STL",
+        "score": 5
+      },
+      "period": 3,
+      "periodType": "REG",
+      "clock": "00:00",
+      "intermission": false
+    },
+    {
+      "id": 2026020404,
+      "state": "OFF",
+      "start": "2026-11-27T20:00:00Z",
+      "away": {
+        "abbrev": "OTT",
+        "score": 6
+      },
+      "home": {
+        "abbrev": "TBL",
+        "score": 2
+      },
+      "period": 3,
+      "periodType": "REG",
+      "clock": "00:00",
+      "intermission": false
+    },
+    {
+      "id": 2026020405,
+      "state": "OFF",
+      "start": "2026-11-27T20:00:00Z",
+      "away": {
+        "abbrev": "VAN",
+        "score": 2
+      },
+      "home": {
+        "abbrev": "PHI",
+        "score": 5
+      },
+      "period": 3,
+      "periodType": "REG",
+      "clock": "00:00",
+      "intermission": false
+    },
+    {
+      "id": 2026020406,
+      "state": "OFF",
+      "start": "2026-11-27T20:00:00Z",
+      "away": {
+        "abbrev": "FLA",
+        "score": 3
+      },
+      "home": {
+        "abbrev": "WSH",
+        "score": 2
+      },
+      "period": 3,
+      "periodType": "REG",
+      "clock": "00:00",
+      "intermission": false
+    },
+    {
+      "id": 2026020407,
+      "state": "OFF",
+      "start": "2026-11-27T20:00:00Z",
+      "away": {
+        "abbrev": "DET",
+        "score": 2
+      },
+      "home": {
+        "abbrev": "CBJ",
+        "score": 0
+      },
+      "period": 3,
+      "periodType": "REG",
+      "clock": "00:00",
+      "intermission": false
+    },
+    {
+      "id": 2026020408,
+      "state": "OFF",
+      "start": "2026-11-27T21:00:00Z",
+      "away": {
+        "abbrev": "COL",
+        "score": 4
+      },
+      "home": {
+        "abbrev": "MIN",
+        "score": 3
+      },
+      "period": 5,
+      "periodType": "SO",
+      "clock": "00:00",
+      "intermission": false
+    },
+    {
+      "id": 2026020409,
+      "state": "OFF",
+      "start": "2026-11-27T21:00:00Z",
+      "away": {
+        "abbrev": "LAK",
+        "score": 5
+      },
+      "home": {
+        "abbrev": "ANA",
+        "score": 3
+      },
+      "period": 3,
+      "periodType": "REG",
+      "clock": "00:00",
+      "intermission": false
+    },
+    {
+      "id": 2026020410,
+      "state": "OFF",
+      "start": "2026-11-27T21:00:00Z",
+      "away": {
+        "abbrev": "VGK",
+        "score": 1
+      },
+      "home": {
+        "abbrev": "SJS",
+        "score": 4
+      },
+      "period": 3,
+      "periodType": "REG",
+      "clock": "00:00",
+      "intermission": false
+    },
+    {
+      "id": 2026020411,
+      "state": "OFF",
+      "start": "2026-11-27T22:30:00Z",
+      "away": {
+        "abbrev": "NYR",
+        "score": 1
+      },
+      "home": {
+        "abbrev": "CHI",
+        "score": 2
+      },
+      "period": 3,
+      "periodType": "REG",
+      "clock": "00:00",
+      "intermission": false
+    },
+    {
+      "id": 2026020412,
+      "state": "OFF",
+      "start": "2026-11-28T00:30:00Z",
+      "away": {
+        "abbrev": "WPG",
+        "score": 3
+      },
+      "home": {
+        "abbrev": "NYI",
+        "score": 1
+      },
+      "period": 3,
+      "periodType": "REG",
+      "clock": "00:00",
+      "intermission": false
+    },
+    {
+      "id": 2026020413,
+      "state": "FINAL",
+      "start": "2026-11-28T01:00:00Z",
+      "away": {
+        "abbrev": "PIT",
+        "score": 6
+      },
+      "home": {
+        "abbrev": "BUF",
+        "score": 3
+      },
+      "period": 3,
+      "periodType": "REG",
+      "clock": "00:00",
+      "intermission": false
+    },
+    {
+      "id": 2026020414,
+      "state": "FINAL",
+      "start": "2026-11-28T01:00:00Z",
+      "away": {
+        "abbrev": "SEA",
+        "score": 4
+      },
+      "home": {
+        "abbrev": "EDM",
+        "score": 2
+      },
+      "period": 3,
+      "periodType": "REG",
+      "clock": "00:00",
+      "intermission": false
+    }
+  ],
+  "players": {
+    "8486067": {
+      "goals": 0,
+      "assists": 1,
+      "gameId": 2026020400
+    },
+    "8481559": {
+      "goals": 1,
+      "assists": 3,
+      "gameId": 2026020401
+    },
+    "8480002": {
+      "goals": 0,
+      "assists": 1,
+      "gameId": 2026020401
+    },
+    "8476887": {
+      "goals": 1,
+      "assists": 0,
+      "gameId": 2026020402
+    },
+    "8479343": {
+      "goals": 1,
+      "assists": 1,
+      "gameId": 2026020402
+    },
+    "8479410": {
+      "goals": 1,
+      "assists": 1,
+      "gameId": 2026020402
+    },
+    "8475158": {
+      "goals": 0,
+      "assists": 1,
+      "gameId": 2026020402
+    },
+    "8482699": {
+      "goals": 0,
+      "assists": 1,
+      "gameId": 2026020402
+    },
+    "8480023": {
+      "goals": 1,
+      "assists": 2,
+      "gameId": 2026020403
+    },
+    "8478449": {
+      "goals": 1,
+      "assists": 1,
+      "gameId": 2026020403
+    },
+    "8480027": {
+      "goals": 2,
+      "assists": 1,
+      "gameId": 2026020403
+    },
+    "8478420": {
+      "goals": 0,
+      "assists": 1,
+      "gameId": 2026020403
+    },
+    "8482740": {
+      "goals": 0,
+      "assists": 1,
+      "gameId": 2026020403
+    },
+    "8480036": {
+      "goals": 0,
+      "assists": 1,
+      "gameId": 2026020403
+    },
+    "8482116": {
+      "goals": 2,
+      "assists": 0,
+      "gameId": 2026020404
+    },
+    "8477404": {
+      "goals": 2,
+      "assists": 0,
+      "gameId": 2026020404
+    },
+    "8479542": {
+      "goals": 0,
+      "assists": 1,
+      "gameId": 2026020404
+    },
+    "8478439": {
+      "goals": 1,
+      "assists": 1,
+      "gameId": 2026020405
+    },
+    "8485406": {
+      "goals": 1,
+      "assists": 0,
+      "gameId": 2026020405
+    },
+    "8480801": {
+      "goals": 0,
+      "assists": 2,
+      "gameId": 2026020406
+    },
+    "8479314": {
+      "goals": 0,
+      "assists": 2,
+      "gameId": 2026020406
+    },
+    "8481542": {
+      "goals": 0,
+      "assists": 1,
+      "gameId": 2026020407
+    },
+    "8479337": {
+      "goals": 1,
+      "assists": 0,
+      "gameId": 2026020407
+    },
+    "8482078": {
+      "goals": 0,
+      "assists": 1,
+      "gameId": 2026020407
+    },
+    "8481557": {
+      "goals": 0,
+      "assists": 1,
+      "gameId": 2026020408
+    },
+    "8475754": {
+      "goals": 0,
+      "assists": 1,
+      "gameId": 2026020408
+    },
+    "8480069": {
+      "goals": 0,
+      "assists": 1,
+      "gameId": 2026020408
+    },
+    "8477960": {
+      "goals": 1,
+      "assists": 0,
+      "gameId": 2026020409
+    },
+    "8478550": {
+      "goals": 0,
+      "assists": 1,
+      "gameId": 2026020409
+    },
+    "8484801": {
+      "goals": 1,
+      "assists": 1,
+      "gameId": 2026020410
+    },
+    "8478403": {
+      "goals": 1,
+      "assists": 0,
+      "gameId": 2026020410
+    },
+    "8478483": {
+      "goals": 0,
+      "assists": 1,
+      "gameId": 2026020410
+    },
+    "8476459": {
+      "goals": 1,
+      "assists": 0,
+      "gameId": 2026020411
+    },
+    "8478398": {
+      "goals": 2,
+      "assists": 1,
+      "gameId": 2026020412
+    },
+    "8480014": {
+      "goals": 1,
+      "assists": 1,
+      "gameId": 2026020412
+    },
+    "8476460": {
+      "goals": 0,
+      "assists": 1,
+      "gameId": 2026020412
+    },
+    "8480839": {
+      "goals": 1,
+      "assists": 1,
+      "gameId": 2026020413
+    },
+    "8479420": {
+      "goals": 0,
+      "assists": 1,
+      "gameId": 2026020413
+    },
+    "8471215": {
+      "goals": 1,
+      "assists": 1,
+      "gameId": 2026020413
+    },
+    "8474578": {
+      "goals": 0,
+      "assists": 1,
+      "gameId": 2026020413
+    },
+    "8478402": {
+      "goals": 1,
+      "assists": 0,
+      "gameId": 2026020414
+    },
+    "8480803": {
+      "goals": 0,
+      "assists": 1,
+      "gameId": 2026020414
+    },
+    "8477934": {
+      "goals": 1,
+      "assists": 0,
+      "gameId": 2026020414
+    }
+  },
+  "goals": [
+    {
+      "gameId": 2026020400,
+      "team": "BOS",
+      "playerId": 8479999,
+      "assistIds": [
+        8482511,
+        8482175
+      ],
+      "period": 1,
+      "periodType": "REG",
+      "time": "06:31",
+      "strength": "pp",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020400,
+      "team": "TOR",
+      "playerId": 8476853,
+      "assistIds": [
+        8479442,
+        8479520
+      ],
+      "period": 1,
+      "periodType": "REG",
+      "time": "16:53",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020400,
+      "team": "TOR",
+      "playerId": 8476853,
+      "assistIds": [
+        8484158,
+        8476925
+      ],
+      "period": 2,
+      "periodType": "REG",
+      "time": "17:56",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020400,
+      "team": "TOR",
+      "playerId": 8476925,
+      "assistIds": [
+        8486067
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "07:24",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020401,
+      "team": "CGY",
+      "playerId": 8477810,
+      "assistIds": [
+        8483495,
+        8481068
+      ],
+      "period": 1,
+      "periodType": "REG",
+      "time": "16:37",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020401,
+      "team": "NJD",
+      "playerId": 8482684,
+      "assistIds": [
+        8476462,
+        8481559
+      ],
+      "period": 2,
+      "periodType": "REG",
+      "time": "00:56",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020401,
+      "team": "NJD",
+      "playerId": 8478414,
+      "assistIds": [
+        8481559
+      ],
+      "period": 2,
+      "periodType": "REG",
+      "time": "01:08",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020401,
+      "team": "CGY",
+      "playerId": 8482679,
+      "assistIds": [
+        8480028,
+        8484234
+      ],
+      "period": 2,
+      "periodType": "REG",
+      "time": "12:24",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020401,
+      "team": "CGY",
+      "playerId": 8480727,
+      "assistIds": [
+        8481068,
+        8483495
+      ],
+      "period": 2,
+      "periodType": "REG",
+      "time": "18:06",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020401,
+      "team": "NJD",
+      "playerId": 8481559,
+      "assistIds": [
+        8481721,
+        8476462
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "07:35",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020401,
+      "team": "NJD",
+      "playerId": 8477015,
+      "assistIds": [
+        8478414,
+        8481559
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "16:02",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020401,
+      "team": "NJD",
+      "playerId": 8482684,
+      "assistIds": [
+        8480002
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "19:49",
+      "strength": "ev",
+      "emptyNet": true
+    },
+    {
+      "gameId": 2026020402,
+      "team": "NSH",
+      "playerId": 8476887,
+      "assistIds": [
+        8481535,
+        8483524
+      ],
+      "period": 1,
+      "periodType": "REG",
+      "time": "00:52",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020402,
+      "team": "NSH",
+      "playerId": 8474600,
+      "assistIds": [
+        8481726,
+        8480835
+      ],
+      "period": 1,
+      "periodType": "REG",
+      "time": "16:43",
+      "strength": "sh",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020402,
+      "team": "UTA",
+      "playerId": 8479343,
+      "assistIds": [
+        8477346,
+        8476389
+      ],
+      "period": 1,
+      "periodType": "REG",
+      "time": "18:33",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020402,
+      "team": "UTA",
+      "playerId": 8479410,
+      "assistIds": [
+        8477346,
+        8479343
+      ],
+      "period": 1,
+      "periodType": "REG",
+      "time": "19:54",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020402,
+      "team": "UTA",
+      "playerId": 8475314,
+      "assistIds": [
+        8484386,
+        8479410
+      ],
+      "period": 2,
+      "periodType": "REG",
+      "time": "18:19",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020402,
+      "team": "NSH",
+      "playerId": 8477021,
+      "assistIds": [],
+      "period": 3,
+      "periodType": "REG",
+      "time": "02:40",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020402,
+      "team": "UTA",
+      "playerId": 8478474,
+      "assistIds": [
+        8483431,
+        8477346
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "06:58",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020402,
+      "team": "NSH",
+      "playerId": 8479525,
+      "assistIds": [
+        8482482
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "07:47",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020402,
+      "team": "NSH",
+      "playerId": 8482145,
+      "assistIds": [
+        8475158,
+        8479980
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "11:46",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020402,
+      "team": "UTA",
+      "playerId": 8475314,
+      "assistIds": [
+        8482699
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "16:05",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020403,
+      "team": "STL",
+      "playerId": 8481598,
+      "assistIds": [
+        8483463,
+        8477402
+      ],
+      "period": 1,
+      "periodType": "REG",
+      "time": "00:26",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020403,
+      "team": "STL",
+      "playerId": 8480023,
+      "assistIds": [
+        8482089,
+        8482077
+      ],
+      "period": 1,
+      "periodType": "REG",
+      "time": "12:19",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020403,
+      "team": "DAL",
+      "playerId": 8478449,
+      "assistIds": [
+        8480027,
+        8478420
+      ],
+      "period": 2,
+      "periodType": "REG",
+      "time": "08:38",
+      "strength": "pp",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020403,
+      "team": "DAL",
+      "playerId": 8480027,
+      "assistIds": [
+        8482740,
+        8480036
+      ],
+      "period": 2,
+      "periodType": "REG",
+      "time": "09:44",
+      "strength": "pp",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020403,
+      "team": "DAL",
+      "playerId": 8480027,
+      "assistIds": [
+        8484938,
+        8478449
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "01:06",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020403,
+      "team": "STL",
+      "playerId": 8482077,
+      "assistIds": [
+        8480023,
+        8482089
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "06:18",
+      "strength": "pp",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020403,
+      "team": "STL",
+      "playerId": 8483463,
+      "assistIds": [
+        8477402,
+        8481013
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "09:47",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020403,
+      "team": "STL",
+      "playerId": 8482077,
+      "assistIds": [
+        8482089,
+        8480023
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "19:05",
+      "strength": "ev",
+      "emptyNet": true
+    },
+    {
+      "gameId": 2026020404,
+      "team": "OTT",
+      "playerId": 8482092,
+      "assistIds": [
+        8478469
+      ],
+      "period": 1,
+      "periodType": "REG",
+      "time": "03:37",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020404,
+      "team": "OTT",
+      "playerId": 8482116,
+      "assistIds": [
+        8478020
+      ],
+      "period": 1,
+      "periodType": "REG",
+      "time": "12:47",
+      "strength": "sh",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020404,
+      "team": "OTT",
+      "playerId": 8478020,
+      "assistIds": [
+        8473512,
+        8482092
+      ],
+      "period": 2,
+      "periodType": "REG",
+      "time": "06:20",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020404,
+      "team": "OTT",
+      "playerId": 8482116,
+      "assistIds": [
+        8480188,
+        8481528
+      ],
+      "period": 2,
+      "periodType": "REG",
+      "time": "17:37",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020404,
+      "team": "OTT",
+      "playerId": 8482245,
+      "assistIds": [
+        8482105,
+        8476393
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "06:17",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020404,
+      "team": "OTT",
+      "playerId": 8473512,
+      "assistIds": [
+        8478020,
+        8482095
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "07:55",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020404,
+      "team": "TBL",
+      "playerId": 8477404,
+      "assistIds": [
+        8479542
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "09:04",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020404,
+      "team": "TBL",
+      "playerId": 8477404,
+      "assistIds": [
+        8481719
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "13:49",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020405,
+      "team": "PHI",
+      "playerId": 8482159,
+      "assistIds": [
+        8478439,
+        8483460
+      ],
+      "period": 1,
+      "periodType": "REG",
+      "time": "04:55",
+      "strength": "pp",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020405,
+      "team": "PHI",
+      "playerId": 8480220,
+      "assistIds": [
+        8481122,
+        8476372
+      ],
+      "period": 2,
+      "periodType": "REG",
+      "time": "03:45",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020405,
+      "team": "PHI",
+      "playerId": 8485406,
+      "assistIds": [
+        8484142,
+        8482142
+      ],
+      "period": 2,
+      "periodType": "REG",
+      "time": "10:37",
+      "strength": "pp",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020405,
+      "team": "VAN",
+      "playerId": 8479425,
+      "assistIds": [
+        8483499,
+        8484798
+      ],
+      "period": 2,
+      "periodType": "REG",
+      "time": "12:05",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020405,
+      "team": "VAN",
+      "playerId": 8478498,
+      "assistIds": [
+        8483476,
+        8474568
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "02:22",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020405,
+      "team": "PHI",
+      "playerId": 8478439,
+      "assistIds": [
+        8477989,
+        8482159
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "06:02",
+      "strength": "pp",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020405,
+      "team": "PHI",
+      "playerId": 8476461,
+      "assistIds": [
+        8477499
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "18:40",
+      "strength": "ev",
+      "emptyNet": true
+    },
+    {
+      "gameId": 2026020406,
+      "team": "WSH",
+      "playerId": 8484873,
+      "assistIds": [
+        8484186,
+        8479400
+      ],
+      "period": 1,
+      "periodType": "REG",
+      "time": "10:26",
+      "strength": "pp",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020406,
+      "team": "FLA",
+      "playerId": 8477932,
+      "assistIds": [
+        8480801,
+        8479314
+      ],
+      "period": 2,
+      "periodType": "REG",
+      "time": "04:51",
+      "strength": "pp",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020406,
+      "team": "WSH",
+      "playerId": 8484873,
+      "assistIds": [
+        8483491,
+        8482088
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "13:06",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020406,
+      "team": "FLA",
+      "playerId": 8480185,
+      "assistIds": [
+        8473419,
+        8482113
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "15:42",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020406,
+      "team": "FLA",
+      "playerId": 8477935,
+      "assistIds": [
+        8479314,
+        8480801
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "19:36",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020407,
+      "team": "DET",
+      "playerId": 8477456,
+      "assistIds": [
+        8475279,
+        8481542
+      ],
+      "period": 1,
+      "periodType": "REG",
+      "time": "11:51",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020407,
+      "team": "DET",
+      "playerId": 8479337,
+      "assistIds": [
+        8482078,
+        8481607
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "04:37",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020408,
+      "team": "MIN",
+      "playerId": 8478493,
+      "assistIds": [
+        8481557
+      ],
+      "period": 1,
+      "periodType": "REG",
+      "time": "07:49",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020408,
+      "team": "MIN",
+      "playerId": 8476399,
+      "assistIds": [
+        8476463,
+        8474567
+      ],
+      "period": 1,
+      "periodType": "REG",
+      "time": "12:36",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020408,
+      "team": "MIN",
+      "playerId": 8478493,
+      "assistIds": [
+        8482122,
+        8476399
+      ],
+      "period": 2,
+      "periodType": "REG",
+      "time": "19:16",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020408,
+      "team": "COL",
+      "playerId": 8478038,
+      "assistIds": [
+        8475754,
+        8486171
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "13:37",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020408,
+      "team": "COL",
+      "playerId": 8477476,
+      "assistIds": [
+        8480069,
+        8475172
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "16:01",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020408,
+      "team": "COL",
+      "playerId": 8486171,
+      "assistIds": [
+        8477476
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "19:00",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020409,
+      "team": "ANA",
+      "playerId": 8484859,
+      "assistIds": [
+        8475798,
+        8473986
+      ],
+      "period": 1,
+      "periodType": "REG",
+      "time": "14:20",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020409,
+      "team": "ANA",
+      "playerId": 8484859,
+      "assistIds": [
+        8483482,
+        8478366
+      ],
+      "period": 1,
+      "periodType": "REG",
+      "time": "15:36",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020409,
+      "team": "LAK",
+      "playerId": 8475692,
+      "assistIds": [
+        8477942,
+        8475208
+      ],
+      "period": 2,
+      "periodType": "REG",
+      "time": "01:18",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020409,
+      "team": "LAK",
+      "playerId": 8475692,
+      "assistIds": [
+        8477942,
+        8474563
+      ],
+      "period": 2,
+      "periodType": "REG",
+      "time": "05:30",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020409,
+      "team": "LAK",
+      "playerId": 8477960,
+      "assistIds": [
+        8476441,
+        8478550
+      ],
+      "period": 2,
+      "periodType": "REG",
+      "time": "08:49",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020409,
+      "team": "ANA",
+      "playerId": 8484762,
+      "assistIds": [
+        8475798,
+        8481605
+      ],
+      "period": 2,
+      "periodType": "REG",
+      "time": "12:32",
+      "strength": "pp",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020409,
+      "team": "LAK",
+      "playerId": 8481732,
+      "assistIds": [
+        8475208,
+        8481532
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "02:16",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020409,
+      "team": "LAK",
+      "playerId": 8479675,
+      "assistIds": [
+        8475287,
+        8474563
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "18:39",
+      "strength": "ev",
+      "emptyNet": true
+    },
+    {
+      "gameId": 2026020410,
+      "team": "SJS",
+      "playerId": 8485402,
+      "assistIds": [
+        8477505,
+        8475726
+      ],
+      "period": 2,
+      "periodType": "REG",
+      "time": "15:51",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020410,
+      "team": "SJS",
+      "playerId": 8478874,
+      "assistIds": [
+        8475200,
+        8484801
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "05:22",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020410,
+      "team": "VGK",
+      "playerId": 8478403,
+      "assistIds": [
+        8478483,
+        8476881
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "10:35",
+      "strength": "pp",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020410,
+      "team": "SJS",
+      "playerId": 8482859,
+      "assistIds": [
+        8484911,
+        8476624
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "14:04",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020410,
+      "team": "SJS",
+      "playerId": 8484801,
+      "assistIds": [
+        8486103,
+        8478874
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "17:49",
+      "strength": "ev",
+      "emptyNet": true
+    },
+    {
+      "gameId": 2026020411,
+      "team": "CHI",
+      "playerId": 8478233,
+      "assistIds": [
+        8484197
+      ],
+      "period": 1,
+      "periodType": "REG",
+      "time": "04:23",
+      "strength": "pp",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020411,
+      "team": "NYR",
+      "playerId": 8476459,
+      "assistIds": [
+        8476468,
+        8479323
+      ],
+      "period": 1,
+      "periodType": "REG",
+      "time": "17:41",
+      "strength": "pp",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020411,
+      "team": "CHI",
+      "playerId": 8478233,
+      "assistIds": [
+        8477987,
+        8484197
+      ],
+      "period": 1,
+      "periodType": "REG",
+      "time": "19:07",
+      "strength": "pp",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020412,
+      "team": "WPG",
+      "playerId": 8478398,
+      "assistIds": [
+        8477504,
+        8480049
+      ],
+      "period": 1,
+      "periodType": "REG",
+      "time": "17:04",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020412,
+      "team": "WPG",
+      "playerId": 8480014,
+      "assistIds": [
+        8476460,
+        8478398
+      ],
+      "period": 2,
+      "periodType": "REG",
+      "time": "01:16",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020412,
+      "team": "WPG",
+      "playerId": 8478398,
+      "assistIds": [
+        8477504,
+        8480014
+      ],
+      "period": 2,
+      "periodType": "REG",
+      "time": "15:36",
+      "strength": "pp",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020412,
+      "team": "NYI",
+      "playerId": 8479378,
+      "assistIds": [
+        8477407,
+        8475170
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "05:07",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020413,
+      "team": "BUF",
+      "playerId": 8483468,
+      "assistIds": [
+        8480839,
+        8482659
+      ],
+      "period": 1,
+      "periodType": "REG",
+      "time": "00:31",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020413,
+      "team": "PIT",
+      "playerId": 8485414,
+      "assistIds": [],
+      "period": 1,
+      "periodType": "REG",
+      "time": "07:42",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020413,
+      "team": "BUF",
+      "playerId": 8480839,
+      "assistIds": [
+        8482097,
+        8479420
+      ],
+      "period": 1,
+      "periodType": "REG",
+      "time": "09:19",
+      "strength": "pp",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020413,
+      "team": "PIT",
+      "playerId": 8471724,
+      "assistIds": [
+        8471215,
+        8485414
+      ],
+      "period": 1,
+      "periodType": "REG",
+      "time": "19:20",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020413,
+      "team": "PIT",
+      "playerId": 8483487,
+      "assistIds": [
+        8482758,
+        8481527
+      ],
+      "period": 2,
+      "periodType": "REG",
+      "time": "00:30",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020413,
+      "team": "PIT",
+      "playerId": 8481481,
+      "assistIds": [
+        8474578,
+        8480980
+      ],
+      "period": 2,
+      "periodType": "REG",
+      "time": "03:15",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020413,
+      "team": "BUF",
+      "playerId": 8480064,
+      "assistIds": [
+        8480807,
+        8480802
+      ],
+      "period": 2,
+      "periodType": "REG",
+      "time": "12:11",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020413,
+      "team": "PIT",
+      "playerId": 8482758,
+      "assistIds": [
+        8483487
+      ],
+      "period": 2,
+      "periodType": "REG",
+      "time": "18:44",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020413,
+      "team": "PIT",
+      "playerId": 8471215,
+      "assistIds": [
+        8483398
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "17:59",
+      "strength": "ev",
+      "emptyNet": true
+    },
+    {
+      "gameId": 2026020414,
+      "team": "SEA",
+      "playerId": 8474586,
+      "assistIds": [],
+      "period": 1,
+      "periodType": "REG",
+      "time": "11:21",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020414,
+      "team": "EDM",
+      "playerId": 8478402,
+      "assistIds": [
+        8480803,
+        8476454
+      ],
+      "period": 2,
+      "periodType": "REG",
+      "time": "04:57",
+      "strength": "pp",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020414,
+      "team": "EDM",
+      "playerId": 8477934,
+      "assistIds": [
+        8481617,
+        8475218
+      ],
+      "period": 2,
+      "periodType": "REG",
+      "time": "13:07",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020414,
+      "team": "SEA",
+      "playerId": 8481554,
+      "assistIds": [
+        8482713,
+        8482665
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "12:48",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020414,
+      "team": "SEA",
+      "playerId": 8481554,
+      "assistIds": [
+        8482665
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "14:48",
+      "strength": "ev",
+      "emptyNet": false
+    },
+    {
+      "gameId": 2026020414,
+      "team": "SEA",
+      "playerId": 8478407,
+      "assistIds": [
+        8477919,
+        8476905
+      ],
+      "period": 3,
+      "periodType": "REG",
+      "time": "18:38",
+      "strength": "ev",
+      "emptyNet": true
+    }
+  ],
+  "out": [
+    8475810,
+    8477492,
+    8477940,
+    8477951,
+    8480012,
+    8480800,
+    8481604,
+    8484144,
+    8484153,
+    8484984
+  ]
+}
