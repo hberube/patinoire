@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-18T04:43:11Z",
+  "lastUpdated": "2026-10-18T08:30:46Z",
   "gameDay": "2026-10-17",
   "highlights": [
     {
@@ -429,8 +429,8 @@
         "usr_eve",
         "usr_vicky"
       ],
-      "clipEn": "https://nhl.com/video/ville-koivunen-with-a-goal-vs-vegas-golden-knights-6407037205112",
-      "clipFr": "https://nhl.com/fr/video/pit-vgk-koivunen-marque-un-but-contre-adin-hill-6407038270112",
+      "clipEn": "https://nhl.com/video/pit-vgk-malkin-scores-goal-against-adin-hill-6407038874112",
+      "clipFr": "https://nhl.com/fr/video/pit-vgk-malkin-marque-un-but-contre-adin-hill-6407039092112",
       "thumb": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8471215.png"
     },
     {
@@ -1015,13 +1015,13 @@
       "dry": 0
     },
     "8471215": {
-      "last5": 2,
-      "games": 8,
+      "last5": 3,
+      "games": 9,
       "dry": 0
     },
     "8471675": {
-      "last5": 3,
-      "games": 8,
+      "last5": 4,
+      "games": 9,
       "dry": 0
     },
     "8474564": {
@@ -1030,8 +1030,8 @@
       "dry": 0
     },
     "8474578": {
-      "last5": 4,
-      "games": 8,
+      "last5": 5,
+      "games": 9,
       "dry": 0
     },
     "8475158": {
@@ -1055,8 +1055,8 @@
       "dry": 0
     },
     "8475913": {
-      "last5": 7,
-      "games": 9,
+      "last5": 9,
+      "games": 10,
       "dry": 0
     },
     "8476459": {
@@ -1105,8 +1105,8 @@
       "dry": 0
     },
     "8477934": {
-      "last5": 8,
-      "games": 7,
+      "last5": 9,
+      "games": 8,
       "dry": 0
     },
     "8477939": {
@@ -1150,8 +1150,8 @@
       "dry": 0
     },
     "8478402": {
-      "last5": 11,
-      "games": 7,
+      "last5": 14,
+      "games": 8,
       "dry": 0
     },
     "8478420": {
@@ -1170,8 +1170,8 @@
       "dry": 0
     },
     "8478483": {
-      "last5": 7,
-      "games": 9,
+      "last5": 8,
+      "games": 10,
       "dry": 0
     },
     "8478864": {
@@ -1180,8 +1180,8 @@
       "dry": 0
     },
     "8478872": {
-      "last5": 4,
-      "games": 7,
+      "last5": 3,
+      "games": 8,
       "dry": 0
     },
     "8479314": {
@@ -1270,8 +1270,8 @@
       "dry": 0
     },
     "8480803": {
-      "last5": 7,
-      "games": 7,
+      "last5": 8,
+      "games": 8,
       "dry": 0
     },
     "8480830": {
@@ -1330,9 +1330,9 @@
       "dry": 0
     },
     "8482699": {
-      "last5": 4,
-      "games": 8,
-      "dry": 0
+      "last5": 3,
+      "games": 9,
+      "dry": 1
     },
     "8482720": {
       "last5": 1,
@@ -1413,23 +1413,12 @@
       "name": "Jack Eichel",
       "team": "VGK",
       "pos": "F",
-      "points": 16,
+      "points": 18,
       "owners": 0,
       "group": 3
     }
   },
   "milestones": [
-    {
-      "id": 8478402,
-      "name": "Connor McDavid",
-      "team": "EDM",
-      "pos": "F",
-      "points": 18,
-      "owners": 15,
-      "stat": "goals",
-      "value": 4,
-      "target": 5
-    },
     {
       "id": 8481559,
       "name": "Jack Hughes",
@@ -1459,17 +1448,6 @@
       "pos": "D",
       "points": 9,
       "owners": 10,
-      "stat": "points",
-      "value": 9,
-      "target": 10
-    },
-    {
-      "id": 8478483,
-      "name": "Mitch Marner",
-      "team": "VGK",
-      "pos": "F",
-      "points": 9,
-      "owners": 8,
       "stat": "points",
       "value": 9,
       "target": 10
@@ -1550,6 +1528,28 @@
       "stat": "goals",
       "value": 4,
       "target": 5
+    },
+    {
+      "id": 8477404,
+      "name": "Jake Guentzel",
+      "team": "TBL",
+      "pos": "F",
+      "points": 9,
+      "owners": 3,
+      "stat": "goals",
+      "value": 4,
+      "target": 5
+    },
+    {
+      "id": 8477404,
+      "name": "Jake Guentzel",
+      "team": "TBL",
+      "pos": "F",
+      "points": 9,
+      "owners": 3,
+      "stat": "points",
+      "value": 9,
+      "target": 10
     }
   ],
   "odds": {
@@ -1557,94 +1557,94 @@
     "sims": 5000,
     "teams": {
       "usr_michel_bry": {
-        "win": 28.0,
-        "podium": 57.2,
-        "projected": 1677
-      },
-      "usr_guillaume_brossard": {
-        "win": 9.4,
-        "podium": 29.4,
-        "projected": 1608
-      },
-      "usr_elrick": {
-        "win": 10.1,
-        "podium": 30.1,
-        "projected": 1609
-      },
-      "usr_simon": {
-        "win": 7.4,
-        "podium": 26.3,
-        "projected": 1611
-      },
-      "usr_sylvianne": {
-        "win": 11.9,
-        "podium": 34.0,
-        "projected": 1627
+        "win": 31.7,
+        "podium": 60.2,
+        "projected": 1717
       },
       "usr_hugo_berube": {
-        "win": 1.6,
-        "podium": 13.5,
-        "projected": 1572
+        "win": 2.2,
+        "podium": 16.9,
+        "projected": 1618
+      },
+      "usr_guillaume_brossard": {
+        "win": 9.1,
+        "podium": 29.4,
+        "projected": 1637
+      },
+      "usr_simon": {
+        "win": 6.0,
+        "podium": 23.8,
+        "projected": 1631
+      },
+      "usr_elrick": {
+        "win": 8.7,
+        "podium": 27.8,
+        "projected": 1630
       },
       "usr_etienne": {
-        "win": 3.0,
-        "podium": 12.8,
-        "projected": 1560
+        "win": 4.0,
+        "podium": 15.5,
+        "projected": 1602
+      },
+      "usr_sylvianne": {
+        "win": 10.5,
+        "podium": 29.1,
+        "projected": 1640
       },
       "usr_marjolaine_comeau": {
-        "win": 2.4,
-        "podium": 9.5,
-        "projected": 1531
-      },
-      "usr_jackson_gagnon": {
-        "win": 2.6,
-        "podium": 10.4,
-        "projected": 1542
-      },
-      "usr_vincent": {
-        "win": 7.4,
-        "podium": 17.9,
-        "projected": 1539
+        "win": 2.9,
+        "podium": 11.6,
+        "projected": 1570
       },
       "usr_eve": {
-        "win": 2.0,
-        "podium": 7.9,
-        "projected": 1521
+        "win": 2.9,
+        "podium": 11.3,
+        "projected": 1568
+      },
+      "usr_jackson_gagnon": {
+        "win": 2.5,
+        "podium": 10.4,
+        "projected": 1570
       },
       "usr_alexandre_comeau": {
-        "win": 1.6,
-        "podium": 10.7,
-        "projected": 1560
+        "win": 2.0,
+        "podium": 10.8,
+        "projected": 1587
+      },
+      "usr_vincent": {
+        "win": 6.0,
+        "podium": 15.8,
+        "projected": 1564
       },
       "usr_louise_trottier": {
-        "win": 2.6,
-        "podium": 11.5,
-        "projected": 1534
+        "win": 1.9,
+        "podium": 9.8,
+        "projected": 1558
       },
       "usr_julien_berube": {
-        "win": 3.4,
-        "podium": 9.4,
-        "projected": 1517
+        "win": 3.5,
+        "podium": 9.8,
+        "projected": 1541
       },
       "usr_florence": {
         "win": 1.6,
-        "podium": 5.3,
-        "projected": 1447
-      },
-      "usr_maddox_gagnon": {
-        "win": 2.8,
-        "podium": 7.6,
-        "projected": 1449
+        "podium": 5.5,
+        "projected": 1479
       },
       "usr_jolyne_brossard": {
-        "win": 0.8,
-        "podium": 3.8,
-        "projected": 1470
+        "win": 0.5,
+        "podium": 3.4,
+        "projected": 1493
+      },
+      "usr_maddox_gagnon": {
+        "win": 2.5,
+        "podium": 6.5,
+        "projected": 1465
       },
       "usr_vicky": {
-        "win": 1.3,
-        "podium": 4.6,
-        "projected": 1418
+        "win": 1.4,
+        "podium": 4.2,
+        "projected": 1440
       }
     },
     "before": {
