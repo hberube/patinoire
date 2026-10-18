@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-17T16:58:29Z",
+  "updated": "2026-10-18T04:43:10Z",
   "source": "ESPN",
   "players": [
     {
@@ -36,6 +36,17 @@
       "note": "Demidov (lower body) was placed on injured reserve by the Canadiens on Tuesday, per the NHL media site."
     },
     {
+      "id": 8475166,
+      "name": "John Tavares",
+      "team": "TOR",
+      "pos": "F",
+      "status": "ir",
+      "type": "Lower Body",
+      "returnDate": "2026-11-27",
+      "noteDate": "2026-10-17",
+      "note": "ir"
+    },
+    {
       "id": 8478445,
       "name": "Mathew Barzal",
       "team": "NYI",
@@ -69,13 +80,13 @@
       "note": "Konecny (lower body) was placed on injured reserve Sunday, according to the NHL media site."
     },
     {
-      "id": 8475166,
-      "name": "John Tavares",
-      "team": "TOR",
+      "id": 8478401,
+      "name": "Pavel Zacha",
+      "team": "BOS",
       "pos": "F",
       "status": "out",
-      "type": "Lower Body",
-      "returnDate": "2026-10-31",
+      "type": "Upper Body",
+      "returnDate": "2026-10-20",
       "noteDate": "2026-10-17",
       "note": "out"
     },
@@ -91,26 +102,15 @@
       "note": "out"
     },
     {
-      "id": 8478864,
-      "name": "Kirill Kaprizov",
-      "team": "MIN",
+      "id": 8478449,
+      "name": "Roope Hintz",
+      "team": "DAL",
       "pos": "F",
       "status": "dtd",
       "type": "Undisclosed",
-      "returnDate": "2026-10-18",
-      "noteDate": "2026-10-16",
+      "returnDate": "2026-10-20",
+      "noteDate": "2026-10-18",
       "note": "day-to-day"
-    },
-    {
-      "id": 8478401,
-      "name": "Pavel Zacha",
-      "team": "BOS",
-      "pos": "F",
-      "status": "dtd",
-      "type": "Undisclosed",
-      "returnDate": "2026-10-17",
-      "noteDate": "2026-10-17",
-      "note": "Zacha (undisclosed) left Friday's game versus the Ducks in the third period after taking a hit, and there was no update on his status after the contest, Scott McLaughlin of WEEI reports."
     }
   ]
 }
