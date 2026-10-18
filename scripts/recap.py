@@ -14,6 +14,7 @@ failed image only drops the image.
   python scripts/recap.py            write the recap for last night (skips if already done)
   python scripts/recap.py --force    rewrite it anyway
   python scripts/recap.py --meme     redo only today's meme (keeps the recap text)
+  python scripts/recap.py --text     redo only today's text (keeps the meme)
   python scripts/recap.py --dry-run  print the facts sent to Claude, call nothing
 """
 import json
@@ -36,7 +37,11 @@ Règles :
 - Utilise UNIQUEMENT les faits fournis. N'invente aucune statistique, aucun score, aucun nom.
 - Ton : chroniqueur sportif enjoué. Taquineries légères des participants (prénom ou nom d'équipe), jeux de mots bienvenus, jamais méchant.
 - Mélange les faits saillants des joueurs LNH (buts de joueurs du pool, jalons) et ceux des participants (gros gains de la soirée, remontées, glissades, la course en tête).
-- Titre accrocheur (max 70 caractères) + 3 à 5 puces courtes. Max 120 mots par langue.
+- Une puce sur le bingo d'hier soir (section « bingo » : le gagnant et ses lignes, ou un chou blanc mémorable).
+- Une puce sur l'infirmerie s'il y a du nouveau (section « injuries » : nouveaux blessés, état qui change ou retour
+  au jeu), avec l'équipe LNH du joueur et qui l'a dans le pool. Pas de nouvelle à l'infirmerie : pas de puce.
+- Au classement, les égalités de points sont départagées par les lignes de bingo de la saison (bingoLinesSeason).
+- Titre accrocheur (max 70 caractères) + 4 à 6 puces courtes. Max 140 mots par langue.
 - Français québécois naturel d'abord, puis une version anglaise fidèle (même contenu, pas une traduction mot à mot).
 - Pas d'émojis dans le titre; au plus un émoji par puce.{meme_rules}
 
@@ -145,7 +150,7 @@ def valid(text):
     for lang in ("fr", "en"):
         part = text.get(lang)
         if not (isinstance(part, dict) and isinstance(part.get("title"), str) and 0 < len(part["title"]) <= 120
-                and isinstance(part.get("bullets"), list) and 2 <= len(part["bullets"]) <= 6
+                and isinstance(part.get("bullets"), list) and 2 <= len(part["bullets"]) <= 7
                 and all(isinstance(b, str) and 0 < len(b) <= 300 for b in part["bullets"])):
             return False
     return True
@@ -184,6 +189,16 @@ def meme_facts(f):
     logos = load("logos.json", {}) or {}
     out["participants"] = [{"id": s["participantId"], "who": f'{first_name(s["participantName"])} ({s["teamName"]})',
                             "hasPicture": bool(logos.get(s["participantId"]))} for s in load("leaderboard.json")["standings"]]
+    return out
+
+
+def text_facts(f):
+    """The recap text's facts: the night's facts plus the bingo, the injury news and the site's order."""
+    out = meme_facts(f)
+    out.pop("participants", None)
+    out["notes"] += (" bingo = last night's bingo cards (tonight) and the season race for the year-end prize. "
+                     "injuries: new = hurt since yesterday; statusChanged = worse or better (was = old status); "
+                     "backInLineup = healthy again. standings: ties on points split by bingoLinesSeason, then goals.")
     return out
 
 
@@ -286,6 +301,18 @@ def main(args):
         print(f"recap: no games on {f['night']}, nothing to write")
         return
     old = load("recap.json", {}) or {}
+    if "--text" in args:  # redo only the text: keep today's meme
+        if old.get("gameDay") != f["night"]:
+            print(f"recap: no recap for {f['night']} yet; run without --text")
+            return
+        try:
+            text = write(text_facts(f), False)
+        except Exception as e:
+            print(f"warning: recap not written: {e}")
+            return
+        save("recap.json", {**old, "generatedAt": now_iso(), "fr": text["fr"], "en": text["en"]})
+        print(f"recap.json: {text['fr']['title']}")
+        return
     if "--meme" in args:  # redo only the meme: keep the recap text as it is
         if old.get("gameDay") != f["night"]:
             print(f"recap: no recap for {f['night']} yet; run without --meme")
@@ -299,7 +326,7 @@ def main(args):
         return
     want_meme = (load("config.json", {}) or {}).get("recapMeme", True)
     try:
-        text = write(f, False)
+        text = write(text_facts(f), False)
     except Exception as e:  # never block the morning job; the old recap simply ages out
         print(f"warning: recap not written: {e}")
         return
