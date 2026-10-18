@@ -1,34 +1,34 @@
 {
-  "gameDay": "2026-10-16",
-  "generatedAt": "2026-10-17T12:46:40Z",
+  "gameDay": "2026-10-17",
+  "generatedAt": "2026-10-18T08:31:04Z",
   "fr": {
-    "title": "Michel plane, Vincent plonge: la soirée de MacKinnon",
+    "title": "Ève bondit de 4 rangs, Michel garde la couronne",
     "bullets": [
-      "Nathan MacKinnon a marqué dans le gain de 5-2 du Colorado face à Pittsburgh, et 17 participants l'ont dans leur alignement. Mets-en!",
-      "Michel (Les Ducks) garde la tête avec 182 points. Guillaume (Laser Kiwis) le suit à 169 après une soirée de 10 points.",
-      "Elrick grimpe au 3e rang avec 11 points, la meilleure soirée du pool. Louise gagne trois places.",
-      "Vincent (Les HabsRoller) recule de quatre rangs avec 3 petits points. Hugo perd deux places avec 4 points: le chroniqueur préfère ne pas commenter.",
-      "Pastrnak a marqué pour Maddox, et Malkin a fait sourire Eve et Vicky."
+      "Ève sort la soirée du pool : 27 points et un saut au 9e rang. Ça, c'est de la remontée!",
+      "Hugo (+22) grimpe de 3 places au 2e rang, à 18 points de Michel. Les Ducks gardent la tête avec 202.",
+      "Louise dégringole de 5 rangs au 13e, et Sylvianne recule de 3. Aïe.",
+      "McDavid et Draisaitl allument Utah, et McDavid est dans 15 alignements. Ça fait des sourires.",
+      "Caufield marque dans la victoire en prolongation du CH contre Buffalo, avec Slafkovský à la passe. 🏒"
     ]
   },
   "en": {
-    "title": "Michel soars, Vincent sinks: MacKinnon's big night",
+    "title": "Ève leaps 4 spots, Michel keeps the crown",
     "bullets": [
-      "Nathan MacKinnon scored in Colorado's 5-2 win over Pittsburgh, and 17 participants have him on their roster. Lucky them!",
-      "Michel (Les Ducks) holds the lead at 182 points. Guillaume (Laser Kiwis) trails at 169 after a 10-point night.",
-      "Elrick climbs to 3rd with 11 points, the best night in the pool. Louise jumps three spots.",
-      "Vincent (Les HabsRoller) drops four ranks with just 3 points. Hugo slips two spots with 4 points: your columnist has no comment.",
-      "Pastrnak scored for Maddox, and Malkin brought smiles to Eve and Vicky."
+      "Ève had the pool's best night: 27 points and a jump to 9th. What a comeback!",
+      "Hugo (+22) climbs 3 spots to 2nd, 18 points behind Michel. Les Ducks stay on top with 202.",
+      "Louise tumbles 5 places to 13th, and Sylvianne slips 3. Ouch.",
+      "McDavid and Draisaitl light up Utah, and McDavid sits on 15 rosters. Lots of smiles.",
+      "Caufield scores in Montreal's overtime win over Buffalo, with Slafkovský on the assist. 🏒"
     ]
   },
   "image": {
     "fr": {
       "src": "data/recap-fr.png",
-      "alt": "MACKINNON MARQUE POUR COLORADO / 17 PARTICIPANTS: « C'EST MOI QUI L'AI PICKÉ! »"
+      "alt": "McDavid marque. 15 pooleurs sur 18 l'ont. / Les 3 autres : « C'était un choix de contrarian »"
     },
     "en": {
       "src": "data/recap-en.png",
-      "alt": "MACKINNON SCORES FOR COLORADO / 17 PARTICIPANTS: \"I'M THE ONE WHO PICKED HIM!\""
+      "alt": "McDavid scores. 15 of 18 poolers own him. / The other 3: \"It was a contrarian pick\""
     }
   }
 }
