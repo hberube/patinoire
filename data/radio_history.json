@@ -196,6 +196,125 @@
         "iceAnchor": 8482720,
         "snub": 8478403
       }
+    },
+    {
+      "gameDay": "2026-10-18",
+      "lines": [
+        {
+          "host": "sylvie",
+          "line": "Bonjour tout le monde, ici les Ondes de la Patinoire! Hier, Jean m'a promis d'être plus calme. [chuckles] La LNH l'a aidé: 2 matchs seulement."
+        },
+        {
+          "host": "jean",
+          "line": "2 matchs, Sylvie, mais quels matchs! Le Minnesota bat Columbus 2 à 1, pis Calgary bat la Caroline 3 à 2. Du suspense jusqu'à la fin!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Pendant ce temps, le pool au complet a ramassé 4 points. Le Wild a été plus sauvage que nous autres."
+        },
+        {
+          "host": "jean",
+          "line": "[sighs] Michel pis ses Ducks, zéro point. Les canards ont fait la grasse matinée, pis ils sont encore premiers à 202!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Guillaume, lui, monte au 2e rang sans lever le petit doigt. Hugo pis lui sont à égalité à 184, mais c'est Guillaume qui prend la place."
+        },
+        {
+          "host": "jean",
+          "line": "Voyons donc! L'organisateur du pool se fait dépasser par un kiwi qui a pas bougé!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Même affaire pour Sylvianne, qui passe 6e devant Étienne, les 2 à 180. Le classement bouge, même quand personne bouge."
+        },
+        {
+          "host": "jean",
+          "line": "Pis mon Vincent! 1 point, 1 place de gagnée, 11e rang! Les HabsRoller, c'est la remontée du siècle!"
+        },
+        {
+          "host": "sylvie",
+          "line": "1 place, Jean. Ton siècle est pas mal court. Alexandre recule au 12e. Julien, Maddox pis Vicky prennent 1 point chacun, mais rien change en bas."
+        },
+        {
+          "host": "jean",
+          "line": "Le bingo! 18 cartes, pis le gagnant, c'est Vincent, avec 1 ligne pis 3 cases!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Simon aussi a fait 1 ligne, mais avec 2 cases. Battu par une case, comme un but refusé à la reprise vidéo."
+        },
+        {
+          "host": "jean",
+          "line": "[excited] Michel coche 1 case. Pis Alexandre... zéro case!"
+        },
+        {
+          "host": "sylvie",
+          "line": "[laughs] Alexandre, ta carte est encore neuve. Tu peux la revendre."
+        },
+        {
+          "host": "jean",
+          "line": "La course de la saison, après 2 soirées: Jackson mène avec 4 lignes, Vincent suit à 3, avec 1 victoire chacun. Sylvianne a 3 lignes, mais pas de victoire."
+        },
+        {
+          "host": "sylvie",
+          "line": "Le prix de fin d'année attend. L'infirmerie maintenant. Bonne nouvelle pour Marjolaine: Pavel Zacha, de Boston, passe d'absent à incertain, retour prévu le 20 octobre."
+        },
+        {
+          "host": "jean",
+          "line": "Pis Rasmus Dahlin, de Buffalo, passe lui aussi d'absent à incertain, retour prévu le 21. 9 participants retiennent leur souffle!"
+        },
+        {
+          "host": "sylvie",
+          "line": "[whispers] 9 sur 18. La moitié du pool envoie des bonnes ondes au haut du corps de Rasmus."
+        },
+        {
+          "host": "jean",
+          "line": "Les beaux buts! Kirill Kaprizov marque pour le Minnesota, pis un seul participant l'a: Vincent!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Vincent gagne le bingo pis il a le buteur. Il devrait s'acheter un billet de loterie ce matin."
+        },
+        {
+          "host": "jean",
+          "line": "Jalen Chatfield marque pour la Caroline dans la défaite, personne l'a. Mais Aho a une passe sur le but!"
+        },
+        {
+          "host": "sylvie",
+          "line": "[sarcastic] Aho! Ça sonne comme quelqu'un qui se réveille. Le pool en avait ben besoin."
+        },
+        {
+          "host": "jean",
+          "line": "Pis Nick Suzuki est encore à 4 buts. J'avais préparé le mot « historique » pour rien!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Garde-le au chaud. Jack Hughes pis Cale Makar sont à 9 points, à 1 de 10, pis 10 d'entre vous les ont."
+        },
+        {
+          "host": "jean",
+          "line": "On se revoit demain matin, la gang!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Avec plus de 2 matchs, j'espère. Un Jean calme 2 jours de suite, ça m'inquiète. [chuckles]"
+        }
+      ],
+      "injured": {
+        "8476945": "susp",
+        "8484984": "ir",
+        "8475166": "ir",
+        "8478445": "ir",
+        "8482093": "ir",
+        "8478401": "dtd",
+        "8480839": "dtd"
+      },
+      "awards": {
+        "goldenPick": 8478864,
+        "iceAnchor": 8482720,
+        "snub": 8478403
+      }
     }
   ]
 }

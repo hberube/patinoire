@@ -1,96 +1,108 @@
 {
-  "gameDay": "2026-10-17",
-  "generatedAt": "2026-10-18T13:20:42Z",
+  "gameDay": "2026-10-18",
+  "generatedAt": "2026-10-19T08:33:16Z",
   "duration": 168,
   "engine": "elevenlabs",
   "lines": [
     {
-      "host": "jean",
-      "line": "[excited] Bonjour la famille! Bulletin spécial aux Ondes de la Patinoire: 14 matchs hier soir! C'est historique!"
-    },
-    {
       "host": "sylvie",
-      "line": "Jean, c'est un samedi d'octobre. Ça arrive chaque semaine. Bonjour quand même, moi c'est Sylvie."
+      "line": "Bonjour tout le monde, ici les Ondes de la Patinoire! Hier, Jean m'a promis d'être plus calme. [chuckles] La LNH l'a aidé: 2 matchs seulement."
     },
     {
       "host": "jean",
-      "line": "Michel et ses Ducks ajoutent 20 points, 202 au total! Pis derrière, égalité à 184 entre Guillaume pis... Hugo!"
+      "line": "2 matchs, Sylvie, mais quels matchs! Le Minnesota bat Columbus 2 à 1, pis Calgary bat la Caroline 3 à 2. Du suspense jusqu'à la fin!"
     },
     {
       "host": "sylvie",
-      "line": "Hugo gagne 22 points pis 2 places, au 3e rang. Les Crazy Blue Heelers ont retrouvé leur flair. Mais à 18 points de Michel, les canards volent encore pas mal haut."
+      "line": "Pendant ce temps, le pool au complet a ramassé 4 points. Le Wild a été plus sauvage que nous autres."
     },
     {
       "host": "jean",
-      "line": "[gasps] Pis la soirée d'Eve! 27 points, 4 places, la voilà 9e! Marjolaine, 24 points, monte au 8e rang."
+      "line": "[sighs] Michel pis ses Ducks, zéro point. Les canards ont fait la grasse matinée, pis ils sont encore premiers à 202!"
     },
     {
       "host": "sylvie",
-      "line": "Louise, la reine de la remontée à la dernière émission, redescend de 5 places, au 13e rang. [sighs] L'ascenseur marche dans les deux sens."
+      "line": "Guillaume, lui, monte au 2e rang sans lever le petit doigt. Hugo pis lui sont à égalité à 184, mais c'est Guillaume qui prend la place."
     },
     {
       "host": "jean",
-      "line": "Elrick pis Sylvianne glissent de 2 places, 5e pis 6e. En bas, Vicky reste lanterne rouge à 149, 3 points derrière Maddox."
+      "line": "Voyons donc! L'organisateur du pool se fait dépasser par un kiwi qui a pas bougé!"
     },
     {
       "host": "sylvie",
-      "line": "Le bingo maintenant! 18 cartes, pis le gagnant, c'est Jackson avec 6 lignes."
+      "line": "Même affaire pour Sylvianne, qui passe 6e devant Étienne, les 2 à 180. Le classement bouge, même quand personne bouge."
     },
     {
       "host": "jean",
-      "line": "Les Anglers! Évidemment! [chuckles] Un pêcheur qui lance ses lignes, ça mord!"
+      "line": "Pis mon Vincent! 1 point, 1 place de gagnée, 11e rang! Les HabsRoller, c'est la remontée du siècle!"
     },
     {
       "host": "sylvie",
-      "line": "Eve suit avec 5 lignes, Guillaume avec 4. Simon a coché 4 cases sans faire une seule ligne, pis Elrick ferme la marche avec 3 cases."
+      "line": "1 place, Jean. Ton siècle est pas mal court. Alexandre recule au 12e. Julien, Maddox pis Vicky prennent 1 point chacun, mais rien change en bas."
     },
     {
       "host": "jean",
-      "line": "[sarcastic] Une belle carte de décoration, Elrick. Après 1 soirée, Jackson mène la course au prix de fin d'année!"
+      "line": "Le bingo! 18 cartes, pis le gagnant, c'est Vincent, avec 1 ligne pis 3 cases!"
     },
     {
       "host": "sylvie",
-      "line": "Infirmerie. Pauvre Marjolaine. John Tavares, de Toronto, passe d'absent à la liste des blessés, bas du corps, retour prévu le 27 novembre."
+      "line": "Simon aussi a fait 1 ligne, mais avec 2 cases. Battu par une case, comme un but refusé à la reprise vidéo."
     },
     {
       "host": "jean",
-      "line": "Pis Pavel Zacha, de Boston, passe d'incertain à absent, haut du corps, retour prévu le 20 octobre. Pis elle monte quand même de 2 places!"
+      "line": "[excited] Michel coche 1 case. Pis Alexandre... zéro case!"
     },
     {
       "host": "sylvie",
-      "line": "Bonne nouvelle: Kirill Kaprizov, du Minnesota, est de retour au jeu. Bon retour, Kirill."
+      "line": "[laughs] Alexandre, ta carte est encore neuve. Tu peux la revendre."
     },
     {
       "host": "jean",
-      "line": "Les beaux buts! Mon Canadien bat Buffalo 4 à 3 en prolongation, pis Cole Caufield en marque 2! 14 d'entre vous l'avaient!"
+      "line": "La course de la saison, après 2 soirées: Jackson mène avec 4 lignes, Vincent suit à 3, avec 1 victoire chacun. Sylvianne a 3 lignes, mais pas de victoire."
     },
     {
       "host": "sylvie",
-      "line": "Pis Tage Thompson a marqué pour Buffalo. Sylvianne pis Louise ont applaudi en cachette."
+      "line": "Le prix de fin d'année attend. L'infirmerie maintenant. Bonne nouvelle pour Marjolaine: Pavel Zacha, de Boston, passe d'absent à incertain, retour prévu le 20 octobre."
     },
     {
       "host": "jean",
-      "line": "Connor McDavid, 2 buts dans le 6 à 2 contre Utah, pis Leon Draisaitl aussi! On vous avait dit de surveiller les 5 buts. Il les a dépassés!"
+      "line": "Pis Rasmus Dahlin, de Buffalo, passe lui aussi d'absent à incertain, retour prévu le 21. 9 participants retiennent leur souffle!"
     },
     {
       "host": "sylvie",
-      "line": "Vicky, elle, a vu marquer Celebrini, Forsberg, pis encore Malkin. 3 buts, pis toujours dernière. [laughs] Une vraie thèse sur la malchance."
+      "line": "[whispers] 9 sur 18. La moitié du pool envoie des bonnes ondes au haut du corps de Rasmus."
     },
     {
       "host": "jean",
-      "line": "Trevor Zegras a marqué pour Philadelphie. Hugo, Jackson pis Vincent l'avaient."
+      "line": "Les beaux buts! Kirill Kaprizov marque pour le Minnesota, pis un seul participant l'a: Vincent!"
     },
     {
       "host": "sylvie",
-      "line": "Pis Nick Suzuki est à 4 buts. Jean, retiens-toi avant d'appeler ça historique."
+      "line": "Vincent gagne le bingo pis il a le buteur. Il devrait s'acheter un billet de loterie ce matin."
     },
     {
       "host": "jean",
-      "line": "[whispers] C'est historique. Bonne journée, la famille! On se retrouve demain!"
+      "line": "Jalen Chatfield marque pour la Caroline dans la défaite, personne l'a. Mais Aho a une passe sur le but!"
     },
     {
       "host": "sylvie",
-      "line": "Demain, avec un Jean un peu plus calme. Peut-être."
+      "line": "[sarcastic] Aho! Ça sonne comme quelqu'un qui se réveille. Le pool en avait ben besoin."
+    },
+    {
+      "host": "jean",
+      "line": "Pis Nick Suzuki est encore à 4 buts. J'avais préparé le mot « historique » pour rien!"
+    },
+    {
+      "host": "sylvie",
+      "line": "Garde-le au chaud. Jack Hughes pis Cale Makar sont à 9 points, à 1 de 10, pis 10 d'entre vous les ont."
+    },
+    {
+      "host": "jean",
+      "line": "On se revoit demain matin, la gang!"
+    },
+    {
+      "host": "sylvie",
+      "line": "Avec plus de 2 matchs, j'espère. Un Jean calme 2 jours de suite, ça m'inquiète. [chuckles]"
     }
   ]
 }
