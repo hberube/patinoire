@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18T08:30:45Z",
+  "updated": "2026-10-19T02:41:05Z",
   "source": "ESPN",
   "players": [
     {
@@ -9,7 +9,7 @@
       "pos": "G",
       "status": "susp",
       "type": "Suspension",
-      "returnDate": "2026-11-14",
+      "returnDate": "2026-10-25",
       "noteDate": "2026-10-02",
       "note": "ir-nr"
     },
@@ -20,9 +20,9 @@
       "pos": "G",
       "status": "ir",
       "type": "Hip",
-      "returnDate": "2026-11-01",
-      "noteDate": "2026-10-09",
-      "note": "Gustavsson (hip) was placed on long-term injured reserve Friday."
+      "returnDate": "2026-11-19",
+      "noteDate": "2026-10-18",
+      "note": "Head coach John Hynes said Sunday that Gustavsson (hip) is slated to miss at least another month, Dylan Loucks of The Hockey News reports."
     },
     {
       "id": 8484984,
@@ -84,22 +84,22 @@
       "name": "Pavel Zacha",
       "team": "BOS",
       "pos": "F",
-      "status": "out",
+      "status": "dtd",
       "type": "Upper Body",
       "returnDate": "2026-10-20",
-      "noteDate": "2026-10-17",
-      "note": "out"
+      "noteDate": "2026-10-18",
+      "note": "day-to-day"
     },
     {
       "id": 8480839,
       "name": "Rasmus Dahlin",
       "team": "BUF",
       "pos": "D",
-      "status": "out",
+      "status": "dtd",
       "type": "Upper Body",
       "returnDate": "2026-10-21",
-      "noteDate": "2026-10-16",
-      "note": "out"
+      "noteDate": "2026-10-18",
+      "note": "day-to-day"
     },
     {
       "id": 8478449,

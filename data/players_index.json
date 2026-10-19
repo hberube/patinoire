@@ -32,7 +32,7 @@
     "name": "Kirill Kaprizov",
     "pos": "F",
     "team": "MIN",
-    "points": 14
+    "points": 15
   },
   {
     "id": 8477934,
@@ -819,6 +819,20 @@
     "points": 6
   },
   {
+    "id": 8482661,
+    "name": "Jesper Wallstedt",
+    "pos": "G",
+    "team": "MIN",
+    "points": 6
+  },
+  {
+    "id": 8478493,
+    "name": "Joel Eriksson Ek",
+    "pos": "F",
+    "team": "MIN",
+    "points": 6
+  },
+  {
     "id": 8483476,
     "name": "Jonathan Lekkerimaki",
     "pos": "F",
@@ -851,6 +865,13 @@
     "name": "Matias Maccelli",
     "pos": "F",
     "team": "NYI",
+    "points": 6
+  },
+  {
+    "id": 8485702,
+    "name": "Maxim Shabanov",
+    "pos": "F",
+    "team": "MIN",
     "points": 6
   },
   {
@@ -966,11 +987,25 @@
     "points": 6
   },
   {
+    "id": 8478460,
+    "name": "Zach Werenski",
+    "pos": "D",
+    "team": "CBJ",
+    "points": 6
+  },
+  {
     "id": 8482737,
     "name": "Zachary Bolduc",
     "pos": "F",
     "team": "MTL",
     "points": 6
+  },
+  {
+    "id": 8482482,
+    "name": "Adam Wilsby",
+    "pos": "D",
+    "team": "NSH",
+    "points": 5
   },
   {
     "id": 8475314,
@@ -1040,6 +1075,13 @@
     "name": "Cutter Gauthier",
     "pos": "F",
     "team": "ANA",
+    "points": 5
+  },
+  {
+    "id": 8483525,
+    "name": "Danila Yurov",
+    "pos": "F",
+    "team": "MIN",
     "points": 5
   },
   {
@@ -1120,24 +1162,10 @@
     "points": 5
   },
   {
-    "id": 8482661,
-    "name": "Jesper Wallstedt",
-    "pos": "G",
-    "team": "MIN",
-    "points": 5
-  },
-  {
     "id": 8483516,
     "name": "Jimmy Snuggerud",
     "pos": "F",
     "team": "STL",
-    "points": 5
-  },
-  {
-    "id": 8478493,
-    "name": "Joel Eriksson Ek",
-    "pos": "F",
-    "team": "MIN",
     "points": 5
   },
   {
@@ -1236,13 +1264,6 @@
     "name": "Matvei Michkov",
     "pos": "F",
     "team": "PHI",
-    "points": 5
-  },
-  {
-    "id": 8485702,
-    "name": "Maxim Shabanov",
-    "pos": "F",
-    "team": "MIN",
     "points": 5
   },
   {
@@ -1386,13 +1407,6 @@
     "points": 5
   },
   {
-    "id": 8478460,
-    "name": "Zach Werenski",
-    "pos": "D",
-    "team": "CBJ",
-    "points": 5
-  },
-  {
     "id": 8481726,
     "name": "Adam Edstrom",
     "pos": "F",
@@ -1404,13 +1418,6 @@
     "name": "Adam Lowry",
     "pos": "F",
     "team": "WPG",
-    "points": 4
-  },
-  {
-    "id": 8482482,
-    "name": "Adam Wilsby",
-    "pos": "D",
-    "team": "NSH",
     "points": 4
   },
   {
@@ -1565,13 +1572,6 @@
     "name": "Damon Severson",
     "pos": "D",
     "team": "CBJ",
-    "points": 4
-  },
-  {
-    "id": 8483525,
-    "name": "Danila Yurov",
-    "pos": "F",
-    "team": "MIN",
     "points": 4
   },
   {
@@ -1740,6 +1740,13 @@
     "name": "Kasperi Kapanen",
     "pos": "F",
     "team": "EDM",
+    "points": 4
+  },
+  {
+    "id": 8471724,
+    "name": "Kris Letang",
+    "pos": "D",
+    "team": "PIT",
     "points": 4
   },
   {
@@ -1967,13 +1974,6 @@
     "points": 4
   },
   {
-    "id": 8482758,
-    "name": "Ville Koivunen",
-    "pos": "F",
-    "team": "PIT",
-    "points": 4
-  },
-  {
     "id": 8476389,
     "name": "Vincent Trocheck",
     "pos": "F",
@@ -1992,6 +1992,13 @@
     "name": "Aaron Ekblad",
     "pos": "D",
     "team": "FLA",
+    "points": 3
+  },
+  {
+    "id": 8484166,
+    "name": "Adam Fantilli",
+    "pos": "F",
+    "team": "CBJ",
     "points": 3
   },
   {
@@ -2324,13 +2331,6 @@
     "points": 3
   },
   {
-    "id": 8471724,
-    "name": "Kris Letang",
-    "pos": "D",
-    "team": "PIT",
-    "points": 3
-  },
-  {
     "id": 8475151,
     "name": "Kyle Palmieri",
     "pos": "F",
@@ -2499,6 +2499,13 @@
     "points": 3
   },
   {
+    "id": 8477497,
+    "name": "Sean Monahan",
+    "pos": "F",
+    "team": "CBJ",
+    "points": 3
+  },
+  {
     "id": 8483495,
     "name": "Simon Nemec",
     "pos": "D",
@@ -2583,6 +2590,13 @@
     "points": 3
   },
   {
+    "id": 8482758,
+    "name": "Ville Koivunen",
+    "pos": "F",
+    "team": "PIT",
+    "points": 3
+  },
+  {
     "id": 8479576,
     "name": "Vincent Desharnais",
     "pos": "D",
@@ -2609,13 +2623,6 @@
     "pos": "F",
     "team": "CGY",
     "points": 3
-  },
-  {
-    "id": 8484166,
-    "name": "Adam Fantilli",
-    "pos": "F",
-    "team": "CBJ",
-    "points": 2
   },
   {
     "id": 8483609,
@@ -3248,13 +3255,6 @@
     "points": 2
   },
   {
-    "id": 8477497,
-    "name": "Sean Monahan",
-    "pos": "F",
-    "team": "CBJ",
-    "points": 2
-  },
-  {
     "id": 8486171,
     "name": "T.J. Hughes",
     "pos": "F",
@@ -3322,6 +3322,13 @@
     "name": "William Wallinder",
     "pos": "D",
     "team": "DET",
+    "points": 2
+  },
+  {
+    "id": 8478508,
+    "name": "Yakov Trenin",
+    "pos": "F",
+    "team": "MIN",
     "points": 2
   },
   {
@@ -4169,13 +4176,6 @@
     "name": "Vladislav Namestnikov",
     "pos": "F",
     "team": "WPG",
-    "points": 1
-  },
-  {
-    "id": 8478508,
-    "name": "Yakov Trenin",
-    "pos": "F",
-    "team": "MIN",
     "points": 1
   },
   {

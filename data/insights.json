@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-18T08:30:46Z",
+  "lastUpdated": "2026-10-19T02:41:06Z",
   "gameDay": "2026-10-17",
   "highlights": [
     {
@@ -420,7 +420,7 @@
       "strength": "ev",
       "assists": [
         "T. Novak",
-        "V. Koivunen"
+        "K. Letang"
       ],
       "poolAssists": [],
       "scorerOwned": true,
@@ -1176,7 +1176,7 @@
     },
     "8478864": {
       "last5": 11,
-      "games": 8,
+      "games": 9,
       "dry": 0
     },
     "8478872": {
@@ -1260,9 +1260,9 @@
       "dry": 0
     },
     "8480800": {
-      "last5": 8,
-      "games": 8,
-      "dry": 0
+      "last5": 6,
+      "games": 9,
+      "dry": 1
     },
     "8480801": {
       "last5": 10,
@@ -1311,8 +1311,8 @@
     },
     "8481557": {
       "last5": 7,
-      "games": 8,
-      "dry": 0
+      "games": 9,
+      "dry": 1
     },
     "8481559": {
       "last5": 7,
@@ -1335,9 +1335,9 @@
       "dry": 1
     },
     "8482720": {
-      "last5": 1,
-      "games": 6,
-      "dry": 4
+      "last5": 0,
+      "games": 7,
+      "dry": 5
     },
     "8482740": {
       "last5": 4,
@@ -1396,7 +1396,7 @@
       "name": "Kirill Kaprizov",
       "team": "MIN",
       "pos": "F",
-      "points": 14,
+      "points": 15,
       "owners": 1
     },
     "iceAnchor": {
@@ -1406,7 +1406,7 @@
       "pos": "F",
       "points": 4,
       "owners": 3,
-      "dry": 4
+      "dry": 5
     },
     "snub": {
       "id": 8478403,
@@ -1557,94 +1557,94 @@
     "sims": 5000,
     "teams": {
       "usr_michel_bry": {
-        "win": 31.7,
-        "podium": 60.2,
-        "projected": 1717
+        "win": 32.2,
+        "podium": 61.9,
+        "projected": 1705
       },
       "usr_hugo_berube": {
-        "win": 2.2,
+        "win": 1.9,
         "podium": 16.9,
-        "projected": 1618
+        "projected": 1603
       },
       "usr_guillaume_brossard": {
-        "win": 9.1,
-        "podium": 29.4,
-        "projected": 1637
+        "win": 8.5,
+        "podium": 29.9,
+        "projected": 1623
       },
       "usr_simon": {
-        "win": 6.0,
-        "podium": 23.8,
-        "projected": 1631
+        "win": 6.4,
+        "podium": 24.6,
+        "projected": 1625
       },
       "usr_elrick": {
-        "win": 8.7,
-        "podium": 27.8,
-        "projected": 1630
+        "win": 9.2,
+        "podium": 28.1,
+        "projected": 1621
       },
       "usr_etienne": {
-        "win": 4.0,
-        "podium": 15.5,
-        "projected": 1602
+        "win": 3.8,
+        "podium": 15.1,
+        "projected": 1592
       },
       "usr_sylvianne": {
-        "win": 10.5,
-        "podium": 29.1,
-        "projected": 1640
+        "win": 11.7,
+        "podium": 32.5,
+        "projected": 1638
       },
       "usr_marjolaine_comeau": {
-        "win": 2.9,
-        "podium": 11.6,
-        "projected": 1570
+        "win": 3.2,
+        "podium": 12.3,
+        "projected": 1560
       },
       "usr_eve": {
-        "win": 2.9,
-        "podium": 11.3,
-        "projected": 1568
+        "win": 3.1,
+        "podium": 11.1,
+        "projected": 1553
       },
       "usr_jackson_gagnon": {
-        "win": 2.5,
-        "podium": 10.4,
-        "projected": 1570
-      },
-      "usr_alexandre_comeau": {
-        "win": 2.0,
-        "podium": 10.8,
-        "projected": 1587
+        "win": 2.1,
+        "podium": 9.1,
+        "projected": 1554
       },
       "usr_vincent": {
-        "win": 6.0,
-        "podium": 15.8,
-        "projected": 1564
+        "win": 6.8,
+        "podium": 15.2,
+        "projected": 1547
+      },
+      "usr_alexandre_comeau": {
+        "win": 1.2,
+        "podium": 9.8,
+        "projected": 1575
       },
       "usr_louise_trottier": {
         "win": 1.9,
-        "podium": 9.8,
-        "projected": 1558
+        "podium": 9.7,
+        "projected": 1549
       },
       "usr_julien_berube": {
-        "win": 3.5,
-        "podium": 9.8,
-        "projected": 1541
+        "win": 2.6,
+        "podium": 8.1,
+        "projected": 1524
       },
       "usr_florence": {
         "win": 1.6,
-        "podium": 5.5,
-        "projected": 1479
+        "podium": 4.8,
+        "projected": 1465
       },
       "usr_jolyne_brossard": {
-        "win": 0.5,
+        "win": 0.6,
         "podium": 3.4,
-        "projected": 1493
+        "projected": 1483
       },
       "usr_maddox_gagnon": {
-        "win": 2.5,
-        "podium": 6.5,
-        "projected": 1465
+        "win": 1.8,
+        "podium": 5.4,
+        "projected": 1445
       },
       "usr_vicky": {
         "win": 1.4,
         "podium": 4.2,
-        "projected": 1440
+        "projected": 1424
       }
     },
     "before": {
