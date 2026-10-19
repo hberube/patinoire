@@ -1,34 +1,34 @@
 {
-  "gameDay": "2026-10-17",
-  "generatedAt": "2026-10-18T13:27:13Z",
+  "gameDay": "2026-10-18",
+  "generatedAt": "2026-10-19T08:31:07Z",
   "fr": {
-    "title": "Michel tient bon, Ève explose avec 27 points!",
+    "title": "Kaprizov sourit à Vincent, roi du bingo",
     "bullets": [
-      "McDavid marque deux fois à Utah et Caufield deux fois face à Buffalo: les vedettes populaires paient! 🏒",
-      "Michel reste en tête avec 202 points. Guillaume et Hugo sont égaux à 184, mais les lignes de bingo donnent le 2e rang à Guillaume.",
-      "Ève ramasse 27 points, le gros total de la soirée, et grimpe de quatre rangs au 9e. Louise recule de cinq.",
-      "Bingo: Jackson (Les Anglers) gagne avec 6 lignes, devant Ève (5) et Guillaume (4). Elrick? Zéro ligne, trois cases.",
-      "Infirmerie: Tavares (TOR) passe à la liste des blessés, retour prévu le 27 novembre, et Zacha (BOS) est absent. Les deux sont chez Marjolaine. Kaprizov (MIN) revient au jeu."
+      "Kaprizov marque pour le Wild et Vincent (Les HabsRoller) est le seul à l'avoir : +1 au pool et un cran de gagné. 🎯",
+      "Bingo : Vincent rafle la soirée avec une ligne et 3 cases. Simon suit avec une ligne; Alexandre, lui, repart avec zéro case.",
+      "Michel (Les Ducks) reste premier à 202. Guillaume devance Hugo à 184 grâce à ses 3 lignes de bingo contre 2.",
+      "Infirmerie : Pavel Zacha (BOS, chez Marjolaine) et Rasmus Dahlin (BUF, chez 9 participants) passent d'absents à incertains. 🩹",
+      "Jack Hughes et Cale Makar sont à un point des 10 : 10 proprios chacun, ça va applaudir."
     ]
   },
   "en": {
-    "title": "Michel holds on, Ève erupts for 27 points",
+    "title": "Kaprizov smiles on Vincent, the bingo king",
     "bullets": [
-      "McDavid scores twice in Utah and Caufield twice against Buffalo: the popular stars deliver! 🏒",
-      "Michel stays on top with 202 points. Guillaume and Hugo are tied at 184, but bingo lines give 2nd place to Guillaume.",
-      "Ève banks 27 points, the night's biggest haul, and climbs four spots to 9th. Louise slips five.",
-      "Bingo: Jackson (Les Anglers) wins with 6 lines, ahead of Ève (5) and Guillaume (4). Elrick? Zero lines, three squares.",
-      "Infirmary: Tavares (TOR) moves to injured reserve, expected back November 27, and Zacha (BOS) is out. Both are on Marjolaine's team. Kaprizov (MIN) is back in the lineup."
+      "Kaprizov scored for the Wild and Vincent (Les HabsRoller) is the only one who owns him: +1 in the pool and a spot climbed. 🎯",
+      "Bingo: Vincent takes the night with one line and 3 squares. Simon follows with one line; Alexandre goes home with zero squares.",
+      "Michel (Les Ducks) stays first at 202. Guillaume edges Hugo at 184 thanks to 3 bingo lines versus 2.",
+      "Infirmary: Pavel Zacha (BOS, owned by Marjolaine) and Rasmus Dahlin (BUF, owned by 9 participants) go from out to day-to-day. 🩹",
+      "Jack Hughes and Cale Makar are one point from 10, with 10 owners each. Cue the applause."
     ]
   },
   "image": {
     "fr": {
       "src": "data/recap-fr.png",
-      "alt": "ÉVASION RATÉE : MICHAEL SCOFIELD BLANCHI AU BINGO — ELRICK : 3 CASES, 0 LIGNE. LE PLAN ÉTAIT TATOUÉ À L'ENVERS"
+      "alt": "VINCENT A EU LA SOIRÉE DE SA VIE / 1 POINT, 1 BINGO, +1 RANG : LE TOUR DU CHAPEAU DU PAUVRE"
     },
     "en": {
       "src": "data/recap-en.png",
-      "alt": "PRISON BREAK FAILS: SCOFIELD SHUT OUT AT BINGO — ELRICK: 3 SQUARES, 0 LINES. TATTOO MAP WAS UPSIDE DOWN"
+      "alt": "VINCENT JUST HAD A CAREER NIGHT / 1 POINT, 1 BINGO, UP 1 SPOT. THE DOLLAR STORE HAT TRICK"
     }
   }
 }

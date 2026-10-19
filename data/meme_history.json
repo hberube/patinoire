@@ -52,6 +52,19 @@
         "headline": "ÉVASION RATÉE : MICHAEL SCOFIELD BLANCHI AU BINGO",
         "ticker": "ELRICK : 3 CASES, 0 LIGNE. LE PLAN ÉTAIT TATOUÉ À L'ENVERS"
       }
+    },
+    {
+      "gameDay": "2026-10-18",
+      "category": "participant",
+      "format": "classic",
+      "subject": {
+        "kind": "team",
+        "id": "usr_vincent"
+      },
+      "fr": {
+        "top": "VINCENT A EU LA SOIRÉE DE SA VIE",
+        "bottom": "1 POINT, 1 BINGO, +1 RANG : LE TOUR DU CHAPEAU DU PAUVRE"
+      }
     }
   ]
 }
