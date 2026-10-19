@@ -56,17 +56,17 @@
     "points": 14
   },
   {
-    "id": 8479318,
-    "name": "Auston Matthews",
-    "pos": "F",
-    "team": "TOR",
-    "points": 13
-  },
-  {
     "id": 8478427,
     "name": "Sebastian Aho",
     "pos": "F",
     "team": "CAR",
+    "points": 14
+  },
+  {
+    "id": 8479318,
+    "name": "Auston Matthews",
+    "pos": "F",
+    "team": "TOR",
     "points": 13
   },
   {
@@ -749,6 +749,13 @@
     "points": 6
   },
   {
+    "id": 8480762,
+    "name": "Eric Robinson",
+    "pos": "F",
+    "team": "CAR",
+    "points": 6
+  },
+  {
     "id": 8479425,
     "name": "Filip Hronek",
     "pos": "D",
@@ -1099,13 +1106,6 @@
     "points": 5
   },
   {
-    "id": 8480762,
-    "name": "Eric Robinson",
-    "pos": "F",
-    "team": "CAR",
-    "points": 5
-  },
-  {
     "id": 8476455,
     "name": "Gabriel Landeskog",
     "pos": "F",
@@ -1166,6 +1166,13 @@
     "name": "Jimmy Snuggerud",
     "pos": "F",
     "team": "STL",
+    "points": 5
+  },
+  {
+    "id": 8480797,
+    "name": "Joel Farabee",
+    "pos": "F",
+    "team": "CGY",
     "points": 5
   },
   {
@@ -1253,6 +1260,13 @@
     "points": 5
   },
   {
+    "id": 8482679,
+    "name": "Matt Coronato",
+    "pos": "F",
+    "team": "CGY",
+    "points": 5
+  },
+  {
     "id": 8483505,
     "name": "Matthew Poitras",
     "pos": "F",
@@ -1264,6 +1278,13 @@
     "name": "Matvei Michkov",
     "pos": "F",
     "team": "PHI",
+    "points": 5
+  },
+  {
+    "id": 8480028,
+    "name": "Morgan Frost",
+    "pos": "F",
+    "team": "CGY",
     "points": 5
   },
   {
@@ -1680,17 +1701,17 @@
     "points": 4
   },
   {
+    "id": 8480829,
+    "name": "Jesperi Kotkaniemi",
+    "pos": "F",
+    "team": "CAR",
+    "points": 4
+  },
+  {
     "id": 8482982,
     "name": "Jet Greaves",
     "pos": "G",
     "team": "CBJ",
-    "points": 4
-  },
-  {
-    "id": 8480797,
-    "name": "Joel Farabee",
-    "pos": "F",
-    "team": "CGY",
     "points": 4
   },
   {
@@ -1796,13 +1817,6 @@
     "name": "Mathieu Joseph",
     "pos": "F",
     "team": "EDM",
-    "points": 4
-  },
-  {
-    "id": 8482679,
-    "name": "Matt Coronato",
-    "pos": "F",
-    "team": "CGY",
     "points": 4
   },
   {
@@ -1985,6 +1999,13 @@
     "name": "Wyatt Johnston",
     "pos": "F",
     "team": "DAL",
+    "points": 4
+  },
+  {
+    "id": 8481068,
+    "name": "Yegor Sharangovich",
+    "pos": "F",
+    "team": "CGY",
     "points": 4
   },
   {
@@ -2233,6 +2254,13 @@
     "points": 3
   },
   {
+    "id": 8476958,
+    "name": "Jaccob Slavin",
+    "pos": "D",
+    "team": "CAR",
+    "points": 3
+  },
+  {
     "id": 8476885,
     "name": "Jacob Trouba",
     "pos": "D",
@@ -2247,6 +2275,13 @@
     "points": 3
   },
   {
+    "id": 8478970,
+    "name": "Jalen Chatfield",
+    "pos": "D",
+    "team": "CAR",
+    "points": 3
+  },
+  {
     "id": 8482408,
     "name": "Jeff Malott",
     "pos": "F",
@@ -2258,13 +2293,6 @@
     "name": "Jesper Boqvist",
     "pos": "F",
     "team": "NJD",
-    "points": 3
-  },
-  {
-    "id": 8480829,
-    "name": "Jesperi Kotkaniemi",
-    "pos": "F",
-    "team": "CAR",
     "points": 3
   },
   {
@@ -2366,6 +2394,13 @@
     "points": 3
   },
   {
+    "id": 8484860,
+    "name": "Matvei Gridin",
+    "pos": "F",
+    "team": "CGY",
+    "points": 3
+  },
+  {
     "id": 8484136,
     "name": "Max Sasson",
     "pos": "F",
@@ -2377,13 +2412,6 @@
     "name": "Michael Misa",
     "pos": "F",
     "team": "SJS",
-    "points": 3
-  },
-  {
-    "id": 8480028,
-    "name": "Morgan Frost",
-    "pos": "F",
-    "team": "CGY",
     "points": 3
   },
   {
@@ -2615,13 +2643,6 @@
     "name": "Wyatt Kaiser",
     "pos": "D",
     "team": "CHI",
-    "points": 3
-  },
-  {
-    "id": 8481068,
-    "name": "Yegor Sharangovich",
-    "pos": "F",
-    "team": "CGY",
     "points": 3
   },
   {
@@ -2905,13 +2926,6 @@
     "points": 2
   },
   {
-    "id": 8476958,
-    "name": "Jaccob Slavin",
-    "pos": "D",
-    "team": "CAR",
-    "points": 2
-  },
-  {
     "id": 8480835,
     "name": "Jack Drury",
     "pos": "F",
@@ -2926,10 +2940,10 @@
     "points": 2
   },
   {
-    "id": 8478970,
-    "name": "Jalen Chatfield",
+    "id": 8478136,
+    "name": "Jacob Middleton",
     "pos": "D",
-    "team": "CAR",
+    "team": "CGY",
     "points": 2
   },
   {
@@ -3042,13 +3056,6 @@
     "name": "Matthew Wood",
     "pos": "F",
     "team": "NSH",
-    "points": 2
-  },
-  {
-    "id": 8484860,
-    "name": "Matvei Gridin",
-    "pos": "F",
-    "team": "CGY",
     "points": 2
   },
   {
@@ -3346,6 +3353,13 @@
     "points": 2
   },
   {
+    "id": 8484768,
+    "name": "Zayne Parekh",
+    "pos": "D",
+    "team": "CGY",
+    "points": 2
+  },
+  {
     "id": 8476878,
     "name": "Zemgus Girgensons",
     "pos": "F",
@@ -3605,6 +3619,13 @@
     "points": 1
   },
   {
+    "id": 8482445,
+    "name": "Devin Cooley",
+    "pos": "G",
+    "team": "CGY",
+    "points": 1
+  },
+  {
     "id": 8479346,
     "name": "Dillon Dube",
     "pos": "F",
@@ -3700,13 +3721,6 @@
     "name": "Jack Ahcan",
     "pos": "D",
     "team": "NSH",
-    "points": 1
-  },
-  {
-    "id": 8478136,
-    "name": "Jacob Middleton",
-    "pos": "D",
-    "team": "CGY",
     "points": 1
   },
   {
@@ -3938,6 +3952,13 @@
     "name": "Nico Daws",
     "pos": "G",
     "team": "NJD",
+    "points": 1
+  },
+  {
+    "id": 8475235,
+    "name": "Nicolas Deslauriers",
+    "pos": "F",
+    "team": "CAR",
     "points": 1
   },
   {
@@ -4197,13 +4218,6 @@
     "name": "Zachary L'Heureux",
     "pos": "F",
     "team": "COL",
-    "points": 1
-  },
-  {
-    "id": 8484768,
-    "name": "Zayne Parekh",
-    "pos": "D",
-    "team": "CGY",
     "points": 1
   },
   {
@@ -4477,13 +4491,6 @@
     "name": "David Spacek",
     "pos": "D",
     "team": "MIN",
-    "points": 0
-  },
-  {
-    "id": 8482445,
-    "name": "Devin Cooley",
-    "pos": "G",
-    "team": "CGY",
     "points": 0
   },
   {
@@ -4967,13 +4974,6 @@
     "name": "Nico Sturm",
     "pos": "F",
     "team": "MIN",
-    "points": 0
-  },
-  {
-    "id": 8475235,
-    "name": "Nicolas Deslauriers",
-    "pos": "F",
-    "team": "CAR",
     "points": 0
   },
   {
