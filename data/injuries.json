@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-19T08:30:45Z",
+  "updated": "2026-10-20T03:45:43Z",
   "source": "ESPN",
   "players": [
     {
@@ -53,7 +53,7 @@
       "pos": "F",
       "status": "ir",
       "type": "Knee",
-      "returnDate": "2026-10-20",
+      "returnDate": "2026-11-07",
       "noteDate": "2026-10-15",
       "note": "Barzal (knee) will not join the Islanders for their two-game road trip, Andrew Gross of Newsday reports Thursday."
     },
@@ -64,7 +64,7 @@
       "pos": "F",
       "status": "ir",
       "type": "Shoulder",
-      "returnDate": "2026-10-20",
+      "returnDate": "2026-10-24",
       "noteDate": "2026-10-16",
       "note": "Jarvis (shoulder) said Friday that he plans to travel with the Hurricanes during their upcoming five-game road trip, Ryan Henkel of The Hockey News reports."
     },
@@ -75,9 +75,20 @@
       "pos": "F",
       "status": "ir",
       "type": "Lower Body",
-      "returnDate": "2026-10-19",
+      "returnDate": "2026-10-24",
       "noteDate": "2026-10-11",
       "note": "Konecny (lower body) was placed on injured reserve Sunday, according to the NHL media site."
+    },
+    {
+      "id": 8475810,
+      "name": "Bryan Rust",
+      "team": "PIT",
+      "pos": "F",
+      "status": "out",
+      "type": "Lower Body",
+      "returnDate": "2026-10-22",
+      "noteDate": "2026-10-20",
+      "note": "out"
     },
     {
       "id": 8478401,
@@ -87,8 +98,8 @@
       "status": "dtd",
       "type": "Upper Body",
       "returnDate": "2026-10-20",
-      "noteDate": "2026-10-18",
-      "note": "day-to-day"
+      "noteDate": "2026-10-19",
+      "note": "Zacha (upper body) is considered a game-time decision for Tuesday's matchup against Dallas, Adam Pellerin of NESN reports."
     },
     {
       "id": 8480839,
@@ -98,19 +109,8 @@
       "status": "dtd",
       "type": "Upper Body",
       "returnDate": "2026-10-21",
-      "noteDate": "2026-10-18",
-      "note": "day-to-day"
-    },
-    {
-      "id": 8478449,
-      "name": "Roope Hintz",
-      "team": "DAL",
-      "pos": "F",
-      "status": "dtd",
-      "type": "Undisclosed",
-      "returnDate": "2026-10-20",
-      "noteDate": "2026-10-18",
-      "note": "day-to-day"
+      "noteDate": "2026-10-19",
+      "note": "Dahlin (upper body) told reporters he \"thinks he'll be ready\" for Wednesday's clash with Philadelphia."
     }
   ]
 }
