@@ -1,50 +1,213 @@
 {
-  "lastUpdated": "2026-10-20T03:45:44Z",
-  "gameDay": "2026-10-18",
+  "lastUpdated": "2026-10-20T08:30:49Z",
+  "gameDay": "2026-10-19",
   "highlights": [
     {
-      "playerId": 8478864,
-      "name": "Kirill Kaprizov",
-      "team": "MIN",
-      "opp": "CBJ",
+      "playerId": 8480039,
+      "name": "Martin Necas",
+      "team": "COL",
+      "opp": "PHI",
       "period": 2,
-      "time": "03:06",
-      "strength": "pp",
+      "time": "17:52",
+      "strength": "ev",
       "assists": [
-        "M. Shabanov",
-        "J. Eriksson Ek"
+        "A. Lehkonen",
+        "D. Toews"
       ],
       "poolAssists": [],
       "scorerOwned": true,
-      "owners": 1,
+      "owners": 6,
       "ownerIds": [
-        "usr_vincent"
+        "usr_simon",
+        "usr_sylvianne",
+        "usr_louise_trottier",
+        "usr_guillaume_brossard",
+        "usr_michel_bry",
+        "usr_elrick"
       ],
-      "clipEn": "https://nhl.com/video/cbj-min-kaprizov-scores-ppg-against-cam-talbot-6407060679112",
-      "clipFr": "https://nhl.com/fr/video/cbj-min-kaprizov-marque-un-but-en-a-n-contre-cam-talbot-6407060388112",
-      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8478864.png"
+      "clipEn": "https://nhl.com/video/martin-necas-with-a-goal-vs-philadelphia-flyers-6407110640112",
+      "clipFr": "https://nhl.com/fr/video/martin-necas-with-a-but-vs-les-flyers-de-philadelphie-6407109267112",
+      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/COL/8480039.png"
     },
     {
-      "playerId": 8478970,
-      "name": "Jalen Chatfield",
-      "team": "CAR",
-      "opp": "CGY",
-      "period": 2,
-      "time": "19:56",
-      "strength": "ev",
+      "playerId": 8486067,
+      "name": "Gavin McKenna",
+      "team": "TOR",
+      "opp": "SJS",
+      "period": 3,
+      "time": "04:56",
+      "strength": "pp",
       "assists": [
-        "J. Slavin",
-        "S. Aho"
+        "A. Matthews",
+        "W. Nylander"
       ],
       "poolAssists": [
-        "S. Aho"
+        "W. Nylander"
+      ],
+      "scorerOwned": true,
+      "owners": 2,
+      "ownerIds": [
+        "usr_guillaume_brossard",
+        "usr_michel_bry"
+      ],
+      "clipEn": "https://nhl.com/video/sjs-tor-mckenna-scores-ppg-against-yaroslav-askarov-6407111794112",
+      "clipFr": "https://nhl.com/fr/video/sjs-tor-mckenna-marque-un-but-en-a-n-contre-yaroslav-askarov-6407110131112",
+      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8486067.png"
+    },
+    {
+      "playerId": 8474578,
+      "name": "Erik Karlsson",
+      "team": "PIT",
+      "opp": "UTA",
+      "period": 1,
+      "time": "01:11",
+      "strength": "pp",
+      "assists": [
+        "B. Rust",
+        "T. Novak"
+      ],
+      "poolAssists": [],
+      "scorerOwned": true,
+      "owners": 2,
+      "ownerIds": [
+        "usr_maddox_gagnon",
+        "usr_vicky"
+      ],
+      "clipEn": "https://nhl.com/video/pit-uta-karlsson-scores-ppg-against-sebastian-cossa-6407111256112",
+      "clipFr": "https://nhl.com/fr/video/pit-uta-karlsson-marque-un-but-en-a-n-contre-sebastian-cossa-6407109605112",
+      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8474578.png"
+    },
+    {
+      "playerId": 8484210,
+      "name": "Gabe Perreault",
+      "team": "NYR",
+      "opp": "ANA",
+      "period": 2,
+      "time": "10:17",
+      "strength": "ev",
+      "assists": [
+        "M. Zibanejad",
+        "A. Lafrenière"
+      ],
+      "poolAssists": [
+        "M. Zibanejad"
       ],
       "scorerOwned": false,
       "owners": 0,
       "ownerIds": [],
-      "clipEn": "https://nhl.com/video/car-cgy-chatfield-scores-goal-against-devin-cooley-6407065212112",
-      "clipFr": "https://nhl.com/fr/video/car-cgy-chatfield-marque-un-but-contre-devin-cooley-6407065290112",
-      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/CAR/8478970.png"
+      "clipEn": "https://nhl.com/video/ana-nyr-perreault-scores-goal-against-ville-husso-6407108175112",
+      "clipFr": "https://nhl.com/fr/video/ana-nyr-perreault-marque-un-but-contre-ville-husso-6407108583112",
+      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8484210.png"
+    },
+    {
+      "playerId": 8484387,
+      "name": "Matvei Michkov",
+      "team": "PHI",
+      "opp": "COL",
+      "period": 1,
+      "time": "07:41",
+      "strength": "pp",
+      "assists": [
+        "D. Barkey",
+        "T. Zegras"
+      ],
+      "poolAssists": [
+        "T. Zegras"
+      ],
+      "scorerOwned": false,
+      "owners": 0,
+      "ownerIds": [],
+      "clipEn": "https://nhl.com/video/col-phi-michkov-scores-ppg-against-mackenzie-blackwood-6407107237112",
+      "clipFr": "https://nhl.com/fr/video/col-phi-michkov-marque-un-but-en-a-n-contre-mackenzie-blackwood-6407107236112",
+      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8484387.png"
+    },
+    {
+      "playerId": 8484387,
+      "name": "Matvei Michkov",
+      "team": "PHI",
+      "opp": "COL",
+      "period": 2,
+      "time": "12:23",
+      "strength": "ev",
+      "assists": [
+        "T. Zegras",
+        "N. Cates"
+      ],
+      "poolAssists": [
+        "T. Zegras"
+      ],
+      "scorerOwned": false,
+      "owners": 0,
+      "ownerIds": [],
+      "clipEn": "https://nhl.com/video/col-phi-michkov-scores-goal-against-mackenzie-blackwood-6407109550112",
+      "clipFr": "https://nhl.com/fr/video/col-phi-michkov-marque-un-but-contre-mackenzie-blackwood-6407109551112",
+      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8484387.png"
+    },
+    {
+      "playerId": 8478569,
+      "name": "Noel Acciari",
+      "team": "PHI",
+      "opp": "COL",
+      "period": 3,
+      "time": "06:34",
+      "strength": "ev",
+      "assists": [
+        "O. Bonk",
+        "T. Zegras"
+      ],
+      "poolAssists": [
+        "T. Zegras"
+      ],
+      "scorerOwned": false,
+      "owners": 0,
+      "ownerIds": [],
+      "clipEn": "https://nhl.com/video/col-phi-acciari-scores-goal-against-mackenzie-blackwood-6407109109112",
+      "clipFr": "https://nhl.com/fr/video/col-phi-acciari-marque-un-but-contre-mackenzie-blackwood-6407109712112",
+      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/PHI/8478569.png"
+    },
+    {
+      "playerId": 8479318,
+      "name": "Auston Matthews",
+      "team": "TOR",
+      "opp": "SJS",
+      "period": 2,
+      "time": "19:48",
+      "strength": "pp",
+      "assists": [
+        "K. Marchenko",
+        "D. Raddysh"
+      ],
+      "poolAssists": [
+        "K. Marchenko"
+      ],
+      "scorerOwned": false,
+      "owners": 0,
+      "ownerIds": [],
+      "clipEn": "https://nhl.com/video/sjs-tor-matthews-scores-ppg-against-yaroslav-askarov-6407111761112",
+      "clipFr": "https://nhl.com/fr/video/sjs-tor-matthews-marque-un-but-en-a-n-contre-yaroslav-askarov-6407110870112",
+      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8479318.png"
+    },
+    {
+      "playerId": 8476483,
+      "name": "Rickard Rakell",
+      "team": "PIT",
+      "opp": "UTA",
+      "period": 2,
+      "time": "07:01",
+      "strength": "pp",
+      "assists": [
+        "B. Rust",
+        "E. Karlsson"
+      ],
+      "poolAssists": [
+        "E. Karlsson"
+      ],
+      "scorerOwned": false,
+      "owners": 0,
+      "ownerIds": [],
+      "clipEn": "https://nhl.com/video/pit-uta-rakell-scores-ppg-against-sebastian-cossa-6407112597112",
+      "clipFr": "https://nhl.com/fr/video/pit-uta-rakell-marque-un-but-en-a-n-contre-sebastian-cossa-6407113093112",
+      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/PIT/8476483.png"
     }
   ],
   "form": {
@@ -54,14 +217,14 @@
       "dry": 0
     },
     "8471215": {
-      "last5": 3,
-      "games": 9,
-      "dry": 0
+      "last5": 2,
+      "games": 10,
+      "dry": 1
     },
     "8471675": {
       "last5": 4,
-      "games": 9,
-      "dry": 0
+      "games": 10,
+      "dry": 1
     },
     "8474564": {
       "last5": 6,
@@ -69,8 +232,8 @@
       "dry": 0
     },
     "8474578": {
-      "last5": 5,
-      "games": 9,
+      "last5": 6,
+      "games": 10,
       "dry": 0
     },
     "8475158": {
@@ -370,8 +533,8 @@
     },
     "8482699": {
       "last5": 3,
-      "games": 9,
-      "dry": 1
+      "games": 10,
+      "dry": 2
     },
     "8482720": {
       "last5": 0,
@@ -592,33 +755,33 @@
     }
   ],
   "odds": {
-    "asOf": "2026-10-18",
+    "asOf": "2026-10-19",
     "sims": 5000,
     "teams": {
       "usr_michel_bry": {
-        "win": 33.2,
-        "podium": 61.8,
-        "projected": 1692
+        "win": 33.3,
+        "podium": 62.5,
+        "projected": 1698
       },
       "usr_hugo_berube": {
-        "win": 2.9,
-        "podium": 20.1,
-        "projected": 1600
+        "win": 3.5,
+        "podium": 22.3,
+        "projected": 1607
       },
       "usr_guillaume_brossard": {
-        "win": 6.9,
-        "podium": 26.5,
-        "projected": 1603
+        "win": 7.6,
+        "podium": 26.7,
+        "projected": 1604
       },
       "usr_elrick": {
-        "win": 9.1,
-        "podium": 26.5,
-        "projected": 1596
+        "win": 7.3,
+        "podium": 23.1,
+        "projected": 1591
       },
       "usr_simon": {
-        "win": 6.4,
-        "podium": 25.2,
-        "projected": 1608
+        "win": 5.2,
+        "podium": 21.9,
+        "projected": 1604
       },
       "usr_etienne": {
         "win": 3.8,
@@ -626,85 +789,85 @@
         "projected": 1580
       },
       "usr_sylvianne": {
-        "win": 9.6,
-        "podium": 27.4,
-        "projected": 1612
+        "win": 9.8,
+        "podium": 28.2,
+        "projected": 1613
       },
       "usr_marjolaine_comeau": {
-        "win": 3.1,
-        "podium": 12.6,
-        "projected": 1552
+        "win": 3.4,
+        "podium": 12.7,
+        "projected": 1549
       },
       "usr_jackson_gagnon": {
-        "win": 3.0,
-        "podium": 11.1,
-        "projected": 1553
+        "win": 3.3,
+        "podium": 11.9,
+        "projected": 1554
       },
       "usr_vincent": {
-        "win": 7.5,
-        "podium": 18.0,
-        "projected": 1548
+        "win": 7.2,
+        "podium": 16.8,
+        "projected": 1539
       },
       "usr_eve": {
-        "win": 3.0,
-        "podium": 11.7,
-        "projected": 1540
+        "win": 3.4,
+        "podium": 11.8,
+        "projected": 1544
       },
       "usr_louise_trottier": {
-        "win": 2.2,
-        "podium": 10.7,
+        "win": 1.9,
+        "podium": 10.5,
         "projected": 1535
       },
       "usr_alexandre_comeau": {
-        "win": 1.6,
-        "podium": 9.3,
-        "projected": 1558
+        "win": 1.3,
+        "podium": 10.1,
+        "projected": 1563
       },
       "usr_julien_berube": {
-        "win": 2.6,
-        "podium": 8.6,
-        "projected": 1513
+        "win": 3.1,
+        "podium": 9.1,
+        "projected": 1510
       },
       "usr_florence": {
-        "win": 1.1,
-        "podium": 4.0,
-        "projected": 1443
-      },
-      "usr_jolyne_brossard": {
-        "win": 0.5,
-        "podium": 3.0,
-        "projected": 1468
+        "win": 1.3,
+        "podium": 4.4,
+        "projected": 1445
       },
       "usr_maddox_gagnon": {
-        "win": 2.4,
-        "podium": 6.3,
-        "projected": 1437
+        "win": 2.8,
+        "podium": 7.5,
+        "projected": 1441
+      },
+      "usr_jolyne_brossard": {
+        "win": 0.8,
+        "podium": 3.3,
+        "projected": 1468
       },
       "usr_vicky": {
         "win": 1.1,
-        "podium": 3.3,
-        "projected": 1408
+        "podium": 3.4,
+        "projected": 1410
       }
     },
     "before": {
-      "usr_michel_bry": 32.2,
-      "usr_hugo_berube": 1.9,
-      "usr_guillaume_brossard": 8.5,
+      "usr_michel_bry": 33.2,
+      "usr_hugo_berube": 2.9,
+      "usr_guillaume_brossard": 6.9,
+      "usr_elrick": 9.1,
       "usr_simon": 6.4,
-      "usr_elrick": 9.2,
       "usr_etienne": 3.8,
-      "usr_sylvianne": 11.7,
-      "usr_marjolaine_comeau": 3.2,
-      "usr_eve": 3.1,
-      "usr_jackson_gagnon": 2.1,
-      "usr_vincent": 6.8,
-      "usr_alexandre_comeau": 1.2,
-      "usr_louise_trottier": 1.9,
+      "usr_sylvianne": 9.6,
+      "usr_marjolaine_comeau": 3.1,
+      "usr_jackson_gagnon": 3.0,
+      "usr_vincent": 7.5,
+      "usr_eve": 3.0,
+      "usr_louise_trottier": 2.2,
+      "usr_alexandre_comeau": 1.6,
       "usr_julien_berube": 2.6,
-      "usr_florence": 1.6,
-      "usr_jolyne_brossard": 0.6,
-      "usr_maddox_gagnon": 1.8,
-      "usr_vicky": 1.4
+      "usr_florence": 1.1,
+      "usr_jolyne_brossard": 0.5,
+      "usr_maddox_gagnon": 2.4,
+      "usr_vicky": 1.1
     }
   }
 }
