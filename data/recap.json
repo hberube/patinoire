@@ -1,34 +1,36 @@
 {
-  "gameDay": "2026-10-18",
-  "generatedAt": "2026-10-19T08:31:07Z",
+  "gameDay": "2026-10-19",
+  "generatedAt": "2026-10-20T08:31:08Z",
   "fr": {
-    "title": "Kaprizov sourit à Vincent, roi du bingo",
+    "title": "Michel tient bon, Guillaume souffle Hugo à l'égalité",
     "bullets": [
-      "Kaprizov marque pour le Wild et Vincent (Les HabsRoller) est le seul à l'avoir : +1 au pool et un cran de gagné. 🎯",
-      "Bingo : Vincent rafle la soirée avec une ligne et 3 cases. Simon suit avec une ligne; Alexandre, lui, repart avec zéro case.",
-      "Michel (Les Ducks) reste premier à 202. Guillaume devance Hugo à 184 grâce à ses 3 lignes de bingo contre 2.",
-      "Infirmerie : Pavel Zacha (BOS, chez Marjolaine) et Rasmus Dahlin (BUF, chez 9 participants) passent d'absents à incertains. 🩹",
-      "Jack Hughes et Cale Makar sont à un point des 10 : 10 proprios chacun, ça va applaudir."
+      "Michel (Les Ducks) reste en tête avec 205 points, 17 de plus que Guillaume. Le trône est solide.",
+      "Égalité à 188 : Guillaume (Laser Kiwis) double Hugo (Crazy Blue Heelers) grâce à ses 3 lignes de bingo contre 2. Hugo, on a un bingo à te rappeler!",
+      "Gavin McKenna a marqué à Toronto, avec une passe de W. Nylander, pour Guillaume et Michel. Martin Necas a aussi allumé la lampe, et 6 participants l'avaient.",
+      "Maddox et Vicky ont savouré le but d'Erik Karlsson à Pittsburgh. Chacun a ramassé 3 points.",
+      "Bingo : Louise (Les huards) gagne avec 2 lignes et 5 cases! Florence ferme la marche avec 2 cases.",
+      "Jackson et Vincent, 4 points chacun, montent d'un rang. Ève, zéro point, recule de deux."
     ]
   },
   "en": {
-    "title": "Kaprizov smiles on Vincent, the bingo king",
+    "title": "Michel holds the throne as Guillaume edges past Hugo",
     "bullets": [
-      "Kaprizov scored for the Wild and Vincent (Les HabsRoller) is the only one who owns him: +1 in the pool and a spot climbed. 🎯",
-      "Bingo: Vincent takes the night with one line and 3 squares. Simon follows with one line; Alexandre goes home with zero squares.",
-      "Michel (Les Ducks) stays first at 202. Guillaume edges Hugo at 184 thanks to 3 bingo lines versus 2.",
-      "Infirmary: Pavel Zacha (BOS, owned by Marjolaine) and Rasmus Dahlin (BUF, owned by 9 participants) go from out to day-to-day. 🩹",
-      "Jack Hughes and Cale Makar are one point from 10, with 10 owners each. Cue the applause."
+      "Michel (Les Ducks) stays on top with 205 points, 17 clear of Guillaume. That throne looks sturdy.",
+      "Tied at 188, Guillaume (Laser Kiwis) leapfrogs Hugo (Crazy Blue Heelers) on bingo lines, 3 to 2. Hugo, time to hit the bingo cards!",
+      "Gavin McKenna scored in Toronto, with a W. Nylander assist, for Guillaume and Michel. Martin Necas lit the lamp too, and 6 participants had him.",
+      "Maddox and Vicky enjoyed Erik Karlsson's goal in Pittsburgh, picking up 3 points each.",
+      "Bingo: Louise (Les huards) wins with 2 lines and 5 squares! Florence brings up the rear with 2 squares.",
+      "Jackson and Vincent, 4 points each, climb a spot. Ève, with zero points, slides two."
     ]
   },
   "image": {
     "fr": {
       "src": "data/recap-fr.png",
-      "alt": "VINCENT A EU LA SOIRÉE DE SA VIE / 1 POINT, 1 BINGO, +1 RANG : LE TOUR DU CHAPEAU DU PAUVRE"
+      "alt": "VICKY : 4 CASES, 0 LIGNE. UNE THÈSE SANS CONCLUSION / LOUISE : 5 CASES, 2 LIGNES. DES HUARDS BIEN PLACÉS"
     },
     "en": {
       "src": "data/recap-en.png",
-      "alt": "VINCENT JUST HAD A CAREER NIGHT / 1 POINT, 1 BINGO, UP 1 SPOT. THE DOLLAR STORE HAT TRICK"
+      "alt": "VICKY: 4 SQUARES, 0 LINES. ALL RESEARCH, NO RESULTS / LOUISE: 5 SQUARES, 2 LINES. THE LOONIES ARE PAYING DIVIDENDS"
     }
   }
 }

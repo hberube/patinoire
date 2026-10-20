@@ -65,6 +65,23 @@
         "top": "VINCENT A EU LA SOIRÉE DE SA VIE",
         "bottom": "1 POINT, 1 BINGO, +1 RANG : LE TOUR DU CHAPEAU DU PAUVRE"
       }
+    },
+    {
+      "gameDay": "2026-10-19",
+      "category": "bingo",
+      "format": "versus",
+      "subject": {
+        "kind": "team",
+        "id": "usr_vicky"
+      },
+      "subject2": {
+        "kind": "team",
+        "id": "usr_louise_trottier"
+      },
+      "fr": {
+        "no": "VICKY : 4 CASES, 0 LIGNE. UNE THÈSE SANS CONCLUSION",
+        "yes": "LOUISE : 5 CASES, 2 LIGNES. DES HUARDS BIEN PLACÉS"
+      }
     }
   ]
 }
