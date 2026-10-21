@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-20T08:30:47Z",
+  "updated": "2026-10-21T05:21:53Z",
   "source": "ESPN",
   "players": [
     {
@@ -84,22 +84,11 @@
       "name": "Bryan Rust",
       "team": "PIT",
       "pos": "F",
-      "status": "out",
+      "status": "dtd",
       "type": "Lower Body",
       "returnDate": "2026-10-22",
       "noteDate": "2026-10-20",
-      "note": "out"
-    },
-    {
-      "id": 8478401,
-      "name": "Pavel Zacha",
-      "team": "BOS",
-      "pos": "F",
-      "status": "dtd",
-      "type": "Upper Body",
-      "returnDate": "2026-10-20",
-      "noteDate": "2026-10-19",
-      "note": "Zacha (upper body) is considered a game-time decision for Tuesday's matchup against Dallas, Adam Pellerin of NESN reports."
+      "note": "day-to-day"
     },
     {
       "id": 8480839,
