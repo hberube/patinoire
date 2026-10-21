@@ -82,6 +82,19 @@
         "no": "VICKY : 4 CASES, 0 LIGNE. UNE THÈSE SANS CONCLUSION",
         "yes": "LOUISE : 5 CASES, 2 LIGNES. DES HUARDS BIEN PLACÉS"
       }
+    },
+    {
+      "gameDay": "2026-10-20",
+      "category": "participant",
+      "format": "breaking",
+      "subject": {
+        "kind": "team",
+        "id": "usr_sylvianne"
+      },
+      "fr": {
+        "headline": "ALERTE ZOO : UNE GIRAFE GRIMPE AU 4E RANG",
+        "ticker": "SYLVIANNE : 22 PTS, +3 RANGS. LE COU TENDU VERS LE PODIUM"
+      }
     }
   ]
 }

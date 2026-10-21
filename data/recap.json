@@ -1,36 +1,36 @@
 {
-  "gameDay": "2026-10-19",
-  "generatedAt": "2026-10-20T08:31:08Z",
+  "gameDay": "2026-10-20",
+  "generatedAt": "2026-10-21T08:31:08Z",
   "fr": {
-    "title": "Michel tient bon, Guillaume souffle Hugo à l'égalité",
+    "title": "Rantanen fait le tour du chapeau, Sylvianne grimpe au 4e rang",
     "bullets": [
-      "Michel (Les Ducks) reste en tête avec 205 points, 17 de plus que Guillaume. Le trône est solide.",
-      "Égalité à 188 : Guillaume (Laser Kiwis) double Hugo (Crazy Blue Heelers) grâce à ses 3 lignes de bingo contre 2. Hugo, on a un bingo à te rappeler!",
-      "Gavin McKenna a marqué à Toronto, avec une passe de W. Nylander, pour Guillaume et Michel. Martin Necas a aussi allumé la lampe, et 6 participants l'avaient.",
-      "Maddox et Vicky ont savouré le but d'Erik Karlsson à Pittsburgh. Chacun a ramassé 3 points.",
-      "Bingo : Louise (Les huards) gagne avec 2 lignes et 5 cases! Florence ferme la marche avec 2 cases.",
-      "Jackson et Vincent, 4 points chacun, montent d'un rang. Ève, zéro point, recule de deux."
+      "Tour du chapeau de Rantanen (DAL) dans le gain de 3-2 en prolongation contre Boston: dix participants dansent. 🎩",
+      "Sylvianne (Maman Girafe) a eu la meilleure soirée, 22 points, et grimpe de trois rangs au 4e. Alexandre aussi, jusqu'au 10e. Marjolaine, elle, chute de quatre.",
+      "Michel (Les Ducks) reste en tête avec 225 points; Hugo suit à 16 points, Guillaume à 17.",
+      "Draisaitl a doublé à Edmonton, Celebrini aussi à San Jose: Florence et Vicky sourient malgré la défaite.",
+      "Bingo: Étienne (The titi master) gagne avec 6 lignes. Jolyne ferme la marche avec une seule. 🎯",
+      "Infirmerie: Pavel Zacha (BOS) est de retour au jeu."
     ]
   },
   "en": {
-    "title": "Michel holds the throne as Guillaume edges past Hugo",
+    "title": "Rantanen's hat trick, Sylvianne climbs to 4th place",
     "bullets": [
-      "Michel (Les Ducks) stays on top with 205 points, 17 clear of Guillaume. That throne looks sturdy.",
-      "Tied at 188, Guillaume (Laser Kiwis) leapfrogs Hugo (Crazy Blue Heelers) on bingo lines, 3 to 2. Hugo, time to hit the bingo cards!",
-      "Gavin McKenna scored in Toronto, with a W. Nylander assist, for Guillaume and Michel. Martin Necas lit the lamp too, and 6 participants had him.",
-      "Maddox and Vicky enjoyed Erik Karlsson's goal in Pittsburgh, picking up 3 points each.",
-      "Bingo: Louise (Les huards) wins with 2 lines and 5 squares! Florence brings up the rear with 2 squares.",
-      "Jackson and Vincent, 4 points each, climb a spot. Ève, with zero points, slides two."
+      "Rantanen (DAL) scored a hat trick in the 3-2 overtime win over Boston, and ten participants are celebrating. 🎩",
+      "Sylvianne (Maman Girafe) had the best night with 22 points and jumps three spots to 4th. Alexandre also rises three, to 10th. Marjolaine drops four.",
+      "Michel (Les Ducks) stays on top with 225 points; Hugo is 16 back, Guillaume 17.",
+      "Draisaitl scored twice in Edmonton and Celebrini twice in San Jose: Florence and Vicky smile despite the loss.",
+      "Bingo: Étienne (The titi master) wins with 6 lines. Jolyne brings up the rear with just one. 🎯",
+      "Infirmary: Pavel Zacha (BOS) is back in the lineup."
     ]
   },
   "image": {
     "fr": {
       "src": "data/recap-fr.png",
-      "alt": "VICKY : 4 CASES, 0 LIGNE. UNE THÈSE SANS CONCLUSION / LOUISE : 5 CASES, 2 LIGNES. DES HUARDS BIEN PLACÉS"
+      "alt": "ALERTE ZOO : UNE GIRAFE GRIMPE AU 4E RANG — SYLVIANNE : 22 PTS, +3 RANGS. LE COU TENDU VERS LE PODIUM"
     },
     "en": {
       "src": "data/recap-en.png",
-      "alt": "VICKY: 4 SQUARES, 0 LINES. ALL RESEARCH, NO RESULTS / LOUISE: 5 SQUARES, 2 LINES. THE LOONIES ARE PAYING DIVIDENDS"
+      "alt": "ZOO ALERT: GIRAFFE SPOTTED CLIMBING TO 4TH — TOP NIGHT IN THE POOL, 22 PTS. PODIUM WITHIN NECK'S REACH"
     }
   }
 }
