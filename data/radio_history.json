@@ -426,6 +426,116 @@
         "iceAnchor": 8482720,
         "snub": 8478403
       }
+    },
+    {
+      "gameDay": "2026-10-20",
+      "lines": [
+        {
+          "host": "jean",
+          "line": "[excited] Bonjour la famille! Ici les Ondes de la Patinoire! 11 matchs hier soir, pis le Canadien est revenu! Je vous l'avais dit!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Bonjour, ici Sylvie. Oui, Jean, 4 à 3 en prolongation contre San Jose. On a eu le temps de faire le café pendant que tu criais."
+        },
+        {
+          "host": "jean",
+          "line": "Michel pis ses Ducks ajoutent 20 points, 225 au total. Toujours en tête!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Pis enfin, l'égalité est brisée! Hugo 2e à 209, Guillaume 3e à 208. [chuckles] Hugo gagne par 1 point, pas besoin de relire les règlements."
+        },
+        {
+          "host": "jean",
+          "line": "La plus grosse soirée, c'est Sylvianne! 22 points, 3 places, 4e rang! Maman Girafe voit loin!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Pis la colocation est finie: Étienne glisse au 7e, 5 points derrière elle. Elrick recule de 2 places, au 6e."
+        },
+        {
+          "host": "jean",
+          "line": "Mes HabsRoller! Vincent monte de 2 places, 8e! Pis Alexandre en gagne 3, 10e!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Marjolaine dégringole de 4 places, 12e. En bas, Vicky reste lanterne rouge à 166, 2 points derrière Maddox."
+        },
+        {
+          "host": "jean",
+          "line": "Le bingo! 18 cartes, pis le gagnant, c'est Étienne! 6 lignes, 7 cases!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Le titi master se console de sa séparation. [laughs] Sylvianne pis Vincent suivent à 4 lignes. Jolyne ferme la marche avec 1 ligne."
+        },
+        {
+          "host": "jean",
+          "line": "La course de la saison, après 4 soirées: Jackson, Vincent pis Étienne, 7 lignes pis 1 victoire chacun!"
+        },
+        {
+          "host": "sylvie",
+          "line": "[sarcastic] Pis Sylvianne a 8 lignes, le plus haut total, mais zéro victoire. Une collectionneuse de lignes sans trophée."
+        },
+        {
+          "host": "jean",
+          "line": "Infirmerie! Aucun nouveau blessé, pis Pavel Zacha, de Boston, est de retour au jeu!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Bon retour, Pavel. Marjolaine avait ben besoin d'une bonne nouvelle ce matin."
+        },
+        {
+          "host": "jean",
+          "line": "Les beaux buts! Dallas bat Boston 3 à 2 en prolongation, pis Mikko Rantanen marque les 3 buts! 10 d'entre vous l'ont!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Un tour du chapeau au Texas. J'imagine que c'est un chapeau de cowboy."
+        },
+        {
+          "host": "jean",
+          "line": "Mon Canadien! Cole Caufield marque, passe de Suzuki, pis Juraj Slafkovský marque, passe de Caufield!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Macklin Celebrini en met 2 dans la défaite de San Jose. Florence pis Vicky l'ont. [laughs] Vicky, ta thèse a un 3e chapitre."
+        },
+        {
+          "host": "jean",
+          "line": "Edmonton bat le Minnesota 4 à 3 en prolongation: 2 buts de Draisaitl, 1 de Bouchard, pis McDavid a une passe sur les 3!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Kaprizov marque encore pour le Minnesota, pis encore pour Vincent tout seul. Ehlers, 2 buts pour la Caroline, pis juste Maddox l'a."
+        },
+        {
+          "host": "jean",
+          "line": "[gasps] Lane Hutson, du Canadien, est à 9 points! Un de plus, pis c'est historique!"
+        },
+        {
+          "host": "sylvie",
+          "line": "[sighs] C'est un 10e point, Jean, pas un défilé. 8 d'entre vous l'ont. Bonne journée, la famille!"
+        },
+        {
+          "host": "jean",
+          "line": "On se retrouve demain matin! Sylvie, prépare les confettis."
+        }
+      ],
+      "injured": {
+        "8476945": "susp",
+        "8484984": "ir",
+        "8475166": "ir",
+        "8478445": "ir",
+        "8482093": "ir",
+        "8480839": "dtd"
+      },
+      "awards": {
+        "goldenPick": 8478864,
+        "iceAnchor": 8482720,
+        "snub": 8478403
+      }
     }
   ]
 }
