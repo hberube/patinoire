@@ -536,6 +536,120 @@
         "iceAnchor": 8482720,
         "snub": 8478403
       }
+    },
+    {
+      "gameDay": "2026-10-21",
+      "lines": [
+        {
+          "host": "jean",
+          "line": "[excited] Bon matin, les amateurs! Les Ondes de la Patinoire sont en ondes! 2 matchs hier soir, pis Ottawa en a mis 5 à la Floride!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Bonjour, ici Sylvie. Ottawa gagne 5 à 1, Philadelphie gagne 3 à 1 à Buffalo. Le pool au complet a ramassé 12 points. Pas de quoi réveiller les voisins."
+        },
+        {
+          "host": "jean",
+          "line": "Michel pis ses Ducks, zéro point, mais toujours premiers à 225!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Hugo prend 1 petit point, 210. L'écart avec Michel passe de 16 à 15. [chuckles] À ce rythme-là, il le rattrape au printemps."
+        },
+        {
+          "host": "jean",
+          "line": "Guillaume reste 3e à 208. Sylvianne 4e, pis Simon 5e, juste 1 point derrière elle!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Pis Étienne s'est trouvé un nouveau coloc. Vincent pis lui sont collés à 199, Étienne 7e, Vincent 8e."
+        },
+        {
+          "host": "jean",
+          "line": "Mes HabsRoller! 2 points hier, le plus gros total de la soirée, à égalité avec Florence!"
+        },
+        {
+          "host": "sylvie",
+          "line": "[sarcastic] 2 points, Jean. Range le char allégorique. Marjolaine remonte de 2 places, 10e, à égalité avec Alexandre à 193. Eve glisse au 12e."
+        },
+        {
+          "host": "jean",
+          "line": "En bas, Maddox pis Vicky, zéro point chacun. Le sous-sol a pas bougé."
+        },
+        {
+          "host": "sylvie",
+          "line": "Le bingo! Hier soir, pas 1 gagnant, mais 3: Hugo, Simon pis Étienne, 1 ligne pis 3 cases chacun."
+        },
+        {
+          "host": "jean",
+          "line": "[gasps] Hugo a gagné une égalité! Hugo, encadre ça!"
+        },
+        {
+          "host": "sylvie",
+          "line": "[laughs] Pis Vicky ferme la marche: 2 cases, zéro ligne. Sa carte pis son équipe suivent le même plan de match."
+        },
+        {
+          "host": "jean",
+          "line": "La course de la saison, après 5 soirées: Étienne prend les devants, 2 victoires, 8 lignes! Jackson pis Vincent suivent avec 1 victoire pis 7 lignes!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Le titi master a autant de lignes que Sylvianne, mais lui, il a des victoires pour aller avec. Le prix de fin d'année commence à le regarder."
+        },
+        {
+          "host": "jean",
+          "line": "L'infirmerie! Linus Ullmark, d'Ottawa, est incertain, au jour le jour, blessé au bas du corps. Retour prévu aujourd'hui. Vincent est le seul à l'avoir."
+        },
+        {
+          "host": "sylvie",
+          "line": "Prompt rétablissement, Linus. Vincent, t'auras même pas le temps de t'inquiéter avant le dîner."
+        },
+        {
+          "host": "jean",
+          "line": "[sighs] Logan Thompson, de Washington, lui aussi incertain, bas du corps, retour prévu le 24. 6 d'entre vous l'ont, pis il était à 1 victoire de 5!"
+        },
+        {
+          "host": "sylvie",
+          "line": "La 5e victoire attendra. Bonne nouvelle par contre: Seth Jarvis, de la Caroline, pis Rasmus Dahlin, de Buffalo, sont de retour au jeu. Le pool peut recommencer à respirer."
+        },
+        {
+          "host": "jean",
+          "line": "Les beaux buts! Brady Tkachuk marque dans le match Floride-Ottawa, pis M. Tkachuk a une passe! 5 d'entre vous ont le buteur!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Un Tkachuk qui sert un Tkachuk. Les soupers de famille chez eux doivent être intenses."
+        },
+        {
+          "host": "jean",
+          "line": "Pis Trevor Zegras marque pour Philadelphie! Hugo, Jackson pis Vincent l'ont!"
+        },
+        {
+          "host": "sylvie",
+          "line": "L'autre soir, il leur donnait des passes. Hier, un vrai but. Zegras livre maintenant à domicile."
+        },
+        {
+          "host": "jean",
+          "line": "[excited] Pis Lane Hutson est encore à 9 points, comme Jack Hughes. Les confettis sont toujours dans ma poche, Sylvie!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Laisse-les là, Jean, ça va finir dans la sécheuse. On se retrouve demain matin, la famille!"
+        }
+      ],
+      "injured": {
+        "8476945": "susp",
+        "8484984": "ir",
+        "8475166": "ir",
+        "8478445": "ir",
+        "8476999": "dtd",
+        "8480313": "dtd"
+      },
+      "awards": {
+        "goldenPick": 8478864,
+        "iceAnchor": 8482720,
+        "snub": 8478403
+      }
     }
   ]
 }
