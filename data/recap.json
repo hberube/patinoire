@@ -1,36 +1,36 @@
 {
-  "gameDay": "2026-10-20",
-  "generatedAt": "2026-10-21T08:31:08Z",
+  "gameDay": "2026-10-21",
+  "generatedAt": "2026-10-22T08:31:07Z",
   "fr": {
-    "title": "Rantanen fait le tour du chapeau, Sylvianne grimpe au 4e rang",
+    "title": "Zegras et les Tkachuk allument la soirée, Michel tient bon",
     "bullets": [
-      "Tour du chapeau de Rantanen (DAL) dans le gain de 3-2 en prolongation contre Boston: dix participants dansent. 🎩",
-      "Sylvianne (Maman Girafe) a eu la meilleure soirée, 22 points, et grimpe de trois rangs au 4e. Alexandre aussi, jusqu'au 10e. Marjolaine, elle, chute de quatre.",
-      "Michel (Les Ducks) reste en tête avec 225 points; Hugo suit à 16 points, Guillaume à 17.",
-      "Draisaitl a doublé à Edmonton, Celebrini aussi à San Jose: Florence et Vicky sourient malgré la défaite.",
-      "Bingo: Étienne (The titi master) gagne avec 6 lignes. Jolyne ferme la marche avec une seule. 🎯",
-      "Infirmerie: Pavel Zacha (BOS) est de retour au jeu."
+      "Michel (Les Ducks) reste au sommet avec 225 points, malgré une soirée blanche. Hugo suit à 15 points. 🦆",
+      "Trevor Zegras a marqué pour PHI à Buffalo : Hugo, Jackson et Vincent se régalent. 🏒",
+      "Brady Tkachuk a marqué à Ottawa, avec une passe de M. Tkachuk. Cinq participants applaudissent.",
+      "Marjolaine (mchb) bondit de deux rangs au 10e, devant Alexandre à 193 points grâce au bingo (5 lignes contre 3).",
+      "Bingo : Hugo, Simon et Étienne gagnent chacun une ligne; Vicky ferme la marche avec 2 cases.",
+      "Infirmerie : Linus Ullmark (OTT, à Vincent) et Logan Thompson (WSH, à 6 participants) sont incertains. 🤕"
     ]
   },
   "en": {
-    "title": "Rantanen's hat trick, Sylvianne climbs to 4th place",
+    "title": "Zegras and the Tkachuks light it up, Michel holds the lead",
     "bullets": [
-      "Rantanen (DAL) scored a hat trick in the 3-2 overtime win over Boston, and ten participants are celebrating. 🎩",
-      "Sylvianne (Maman Girafe) had the best night with 22 points and jumps three spots to 4th. Alexandre also rises three, to 10th. Marjolaine drops four.",
-      "Michel (Les Ducks) stays on top with 225 points; Hugo is 16 back, Guillaume 17.",
-      "Draisaitl scored twice in Edmonton and Celebrini twice in San Jose: Florence and Vicky smile despite the loss.",
-      "Bingo: Étienne (The titi master) wins with 6 lines. Jolyne brings up the rear with just one. 🎯",
-      "Infirmary: Pavel Zacha (BOS) is back in the lineup."
+      "Michel (Les Ducks) stays on top with 225 points despite a scoreless night. Hugo trails by 15. 🦆",
+      "Trevor Zegras scored for PHI in Buffalo: Hugo, Jackson and Vincent are feasting. 🏒",
+      "Brady Tkachuk scored in Ottawa with an assist from M. Tkachuk. Five participants are cheering.",
+      "Marjolaine (mchb) jumps two spots to 10th, ahead of Alexandre at 193 points thanks to bingo lines (5 to 3).",
+      "Bingo: Hugo, Simon and Étienne each won a line; Vicky brings up the rear with 2 squares.",
+      "Infirmary: Linus Ullmark (OTT, owned by Vincent) and Logan Thompson (WSH, owned by 6 participants) are day-to-day. 🤕"
     ]
   },
   "image": {
     "fr": {
       "src": "data/recap-fr.png",
-      "alt": "ALERTE ZOO : UNE GIRAFE GRIMPE AU 4E RANG — SYLVIANNE : 22 PTS, +3 RANGS. LE COU TENDU VERS LE PODIUM"
+      "alt": "LES FRÈRES TKACHUK COMBINENT POUR UN BUT / LE SOUPER DE FAMILLE EST RÉUSSI. LE MATCH : 5-1 OTTAWA"
     },
     "en": {
       "src": "data/recap-en.png",
-      "alt": "ZOO ALERT: GIRAFFE SPOTTED CLIMBING TO 4TH — TOP NIGHT IN THE POOL, 22 PTS. PODIUM WITHIN NECK'S REACH"
+      "alt": "TKACHUK TO TKACHUK: A FAMILY GOAL / THE FAMILY GROUP CHAT IS THRILLED. FLORIDA STILL LOST 5-1"
     }
   }
 }

@@ -95,6 +95,19 @@
         "headline": "ALERTE ZOO : UNE GIRAFE GRIMPE AU 4E RANG",
         "ticker": "SYLVIANNE : 22 PTS, +3 RANGS. LE COU TENDU VERS LE PODIUM"
       }
+    },
+    {
+      "gameDay": "2026-10-21",
+      "category": "player",
+      "format": "classic",
+      "subject": {
+        "kind": "player",
+        "id": 8480801
+      },
+      "fr": {
+        "top": "LES FRÈRES TKACHUK COMBINENT POUR UN BUT",
+        "bottom": "LE SOUPER DE FAMILLE EST RÉUSSI. LE MATCH : 5-1 OTTAWA"
+      }
     }
   ]
 }
