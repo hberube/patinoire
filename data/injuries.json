@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21T08:30:44Z",
+  "updated": "2026-10-22T02:27:32Z",
   "source": "ESPN",
   "players": [
     {
@@ -58,17 +58,6 @@
       "note": "Barzal (knee) will not join the Islanders for their two-game road trip, Andrew Gross of Newsday reports Thursday."
     },
     {
-      "id": 8482093,
-      "name": "Seth Jarvis",
-      "team": "CAR",
-      "pos": "F",
-      "status": "ir",
-      "type": "Shoulder",
-      "returnDate": "2026-10-24",
-      "noteDate": "2026-10-16",
-      "note": "Jarvis (shoulder) said Friday that he plans to travel with the Hurricanes during their upcoming five-game road trip, Ryan Henkel of The Hockey News reports."
-    },
-    {
       "id": 8478439,
       "name": "Travis Konecny",
       "team": "PHI",
@@ -91,15 +80,15 @@
       "note": "day-to-day"
     },
     {
-      "id": 8480839,
-      "name": "Rasmus Dahlin",
-      "team": "BUF",
-      "pos": "D",
+      "id": 8480313,
+      "name": "Logan Thompson",
+      "team": "WSH",
+      "pos": "G",
       "status": "dtd",
-      "type": "Upper Body",
-      "returnDate": "2026-10-21",
-      "noteDate": "2026-10-19",
-      "note": "Dahlin (upper body) told reporters he \"thinks he'll be ready\" for Wednesday's clash with Philadelphia."
+      "type": "Lower Body",
+      "returnDate": "2026-10-24",
+      "noteDate": "2026-10-21",
+      "note": "Thompson won't practice Wednesday and is considered day-to-day with a lower-body injury ahead of Saturday's clash with the Sabres, Sammi Silber of The Hockey News reports."
     }
   ]
 }

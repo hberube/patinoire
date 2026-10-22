@@ -903,6 +903,13 @@
     "points": 6
   },
   {
+    "id": 8475170,
+    "name": "Brayden Schenn",
+    "pos": "F",
+    "team": "NYI",
+    "points": 6
+  },
+  {
     "id": 8473512,
     "name": "Claude Giroux",
     "pos": "F",
@@ -1264,13 +1271,6 @@
     "name": "Brandt Clarke",
     "pos": "D",
     "team": "LAK",
-    "points": 5
-  },
-  {
-    "id": 8475170,
-    "name": "Brayden Schenn",
-    "pos": "F",
-    "team": "NYI",
     "points": 5
   },
   {
@@ -1754,6 +1754,13 @@
     "name": "Alexandre Carrier",
     "pos": "D",
     "team": "MTL",
+    "points": 4
+  },
+  {
+    "id": 8483395,
+    "name": "Arshdeep Bains",
+    "pos": "F",
+    "team": "VAN",
     "points": 4
   },
   {
@@ -2286,13 +2293,6 @@
     "name": "Anton Lundell",
     "pos": "F",
     "team": "FLA",
-    "points": 3
-  },
-  {
-    "id": 8483395,
-    "name": "Arshdeep Bains",
-    "pos": "F",
-    "team": "VAN",
     "points": 3
   },
   {
@@ -2891,13 +2891,6 @@
     "points": 2
   },
   {
-    "id": 8475848,
-    "name": "Brendan Gallagher",
-    "pos": "F",
-    "team": "VAN",
-    "points": 2
-  },
-  {
     "id": 8477488,
     "name": "Brett Pesce",
     "pos": "D",
@@ -3189,13 +3182,6 @@
     "name": "Mathieu Olivier",
     "pos": "F",
     "team": "CBJ",
-    "points": 2
-  },
-  {
-    "id": 8482516,
-    "name": "Matthew Kessel",
-    "pos": "D",
-    "team": "NYI",
     "points": 2
   },
   {
@@ -3626,6 +3612,13 @@
     "points": 1
   },
   {
+    "id": 8475848,
+    "name": "Brendan Gallagher",
+    "pos": "F",
+    "team": "VAN",
+    "points": 1
+  },
+  {
     "id": 8475208,
     "name": "Brian Dumoulin",
     "pos": "D",
@@ -4036,6 +4029,13 @@
     "name": "Mats Zuccarello",
     "pos": "F",
     "team": "LAK",
+    "points": 1
+  },
+  {
+    "id": 8482516,
+    "name": "Matthew Kessel",
+    "pos": "D",
+    "team": "NYI",
     "points": 1
   },
   {
@@ -5019,6 +5019,13 @@
     "points": 0
   },
   {
+    "id": 8476891,
+    "name": "Matt Grzelcyk",
+    "pos": "D",
+    "team": "BUF",
+    "points": 0
+  },
+  {
     "id": 8482641,
     "name": "Matt Kiersted",
     "pos": "D",
@@ -5044,13 +5051,6 @@
     "name": "Matt Roy",
     "pos": "D",
     "team": "WSH",
-    "points": 0
-  },
-  {
-    "id": 8476891,
-    "name": "Matthew Grzelcyk",
-    "pos": "D",
-    "team": "BUF",
     "points": 0
   },
   {
