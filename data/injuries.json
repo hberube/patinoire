@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22T08:30:44Z",
+  "updated": "2026-10-23T04:56:01Z",
   "source": "ESPN",
   "players": [
     {
@@ -9,9 +9,20 @@
       "pos": "G",
       "status": "susp",
       "type": "Suspension",
-      "returnDate": "2026-10-25",
+      "returnDate": "2026-10-27",
       "noteDate": "2026-10-02",
       "note": "ir-nr"
+    },
+    {
+      "id": 8475810,
+      "name": "Bryan Rust",
+      "team": "PIT",
+      "pos": "F",
+      "status": "ir",
+      "type": "Lower Body",
+      "returnDate": "2026-12-05",
+      "noteDate": "2026-10-22",
+      "note": "Rust (lower body) will be re-evaluated in six weeks, Michelle Crechiolo of the Penguins' official site reports Thursday."
     },
     {
       "id": 8479406,
@@ -47,6 +58,17 @@
       "note": "ir"
     },
     {
+      "id": 8476999,
+      "name": "Linus Ullmark",
+      "team": "OTT",
+      "pos": "G",
+      "status": "ir",
+      "type": "Lower Body",
+      "returnDate": "2026-10-29",
+      "noteDate": "2026-10-22",
+      "note": "Ullmark (lower body) is expected to miss the next 1-2 weeks, Claire Hanna of TSN reports Thursday."
+    },
+    {
       "id": 8478445,
       "name": "Mathew Barzal",
       "team": "NYI",
@@ -69,26 +91,37 @@
       "note": "Konecny (lower body) was placed on injured reserve Sunday, according to the NHL media site."
     },
     {
-      "id": 8475810,
-      "name": "Bryan Rust",
-      "team": "PIT",
+      "id": 8478483,
+      "name": "Mitch Marner",
+      "team": "VGK",
       "pos": "F",
-      "status": "dtd",
-      "type": "Lower Body",
-      "returnDate": "2026-10-22",
-      "noteDate": "2026-10-20",
-      "note": "day-to-day"
+      "status": "out",
+      "type": "Personal",
+      "returnDate": "2026-10-24",
+      "noteDate": "2026-10-22",
+      "note": "out"
     },
     {
-      "id": 8476999,
-      "name": "Linus Ullmark",
-      "team": "OTT",
+      "id": 8480018,
+      "name": "Nick Suzuki",
+      "team": "MTL",
+      "pos": "F",
+      "status": "out",
+      "type": "Upper Body",
+      "returnDate": "2026-11-18",
+      "noteDate": "2026-10-22",
+      "note": "out"
+    },
+    {
+      "id": 8476434,
+      "name": "John Gibson",
+      "team": "DET",
       "pos": "G",
       "status": "dtd",
-      "type": "Lower Body",
-      "returnDate": "2026-10-22",
-      "noteDate": "2026-10-22",
-      "note": "day-to-day"
+      "type": "Upper Body",
+      "returnDate": "2026-10-24",
+      "noteDate": "2026-10-23",
+      "note": "Gibson sustained an upper-body injury versus the Canucks on Thursday and is questionable to return to the game."
     },
     {
       "id": 8480313,
