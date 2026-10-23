@@ -650,6 +650,130 @@
         "iceAnchor": 8482720,
         "snub": 8478403
       }
+    },
+    {
+      "gameDay": "2026-10-22",
+      "lines": [
+        {
+          "host": "jean",
+          "line": "[excited] Bonjour la famille! Les Ondes de la Patinoire sont en ondes! 12 matchs hier soir!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Bonjour, ici Sylvie. 12 matchs, pis aucun pour le Canadien. Jean les a regardés pareil, au cas où."
+        },
+        {
+          "host": "jean",
+          "line": "Michel pis ses Ducks ajoutent 16 points, 241 au total. Toujours premiers!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Mais la plus grosse soirée, c'est Hugo: 21 points. [chuckles] L'écart passe de 15 à 10. Le printemps arrive plus vite que prévu."
+        },
+        {
+          "host": "jean",
+          "line": "Guillaume reste 3e. Pis Simon dépasse Sylvianne par 1 point, 4e!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Étienne est juste derrière, 6e. Jackson monte au 7e, collé à Elrick. Le peloton est plus serré qu'un banc des punitions."
+        },
+        {
+          "host": "jean",
+          "line": "[sighs] Pis mes HabsRoller reculent au 9e."
+        },
+        {
+          "host": "sylvie",
+          "line": "Bulletin spécial du sous-sol: Vicky laisse enfin la lanterne rouge! C'est Maddox qui hérite du fanal, à 177."
+        },
+        {
+          "host": "jean",
+          "line": "Le bingo! 18 cartes, pis Alexandre gagne avec 8 lignes, 8 cases!"
+        },
+        {
+          "host": "sylvie",
+          "line": "L'Épervier a survolé les cartes. Michel pis Guillaume suivent, 6 lignes chacun. Ces deux-là sont partout."
+        },
+        {
+          "host": "jean",
+          "line": "[laughs] Pis Jackson ferme la marche: 2 cases, zéro ligne!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Le pêcheur monte au classement, mais au bingo, ça mord pas."
+        },
+        {
+          "host": "jean",
+          "line": "La course de la saison, après 6 soirées: Étienne mène, 2 victoires. Alexandre suit avec 1 victoire, mais 1 ligne de plus que lui!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Vincent est 3e, 1 victoire. L'infirmerie, maintenant. Jean, assieds-toi."
+        },
+        {
+          "host": "jean",
+          "line": "[gasps] Nick Suzuki, du Canadien, blessé au haut du corps, retour prévu le 18 novembre! 6 d'entre vous l'ont. C'est un deuil national!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Prompt rétablissement, Nick. Mitch Marner, de Vegas, est absent pour raisons personnelles, retour prévu le 24. 8 d'entre vous l'ont, pis on lui souhaite le meilleur."
+        },
+        {
+          "host": "jean",
+          "line": "Linus Ullmark, d'Ottawa, passe d'incertain à la liste des blessés, retour prévu le 29. Vincent est encore le seul à l'avoir."
+        },
+        {
+          "host": "sylvie",
+          "line": "Vincent, je t'avais dit de pas t'inquiéter avant le dîner. Finalement, prévois la semaine."
+        },
+        {
+          "host": "jean",
+          "line": "Les beaux buts! Edmonton gagne 6 à 5 en tirs de barrage contre la Caroline! McDavid 2 buts, Draisaitl 2 buts, toujours sur des passes de l'autre!"
+        },
+        {
+          "host": "sylvie",
+          "line": "15 d'entre vous ont McDavid. Ces deux-là s'échangent des cadeaux en plein mois d'octobre."
+        },
+        {
+          "host": "jean",
+          "line": "Vicky a Aho, qui marque pour la Caroline, pis Zibanejad, qui marque dans la défaite des Rangers! La thèse continue!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Pas si vite: Malkin marque dans le 4 à 0 de Pittsburgh. Vicky l'a avec Eve. La thèse a sa première note de bas de page."
+        },
+        {
+          "host": "jean",
+          "line": "Pis David Pastrnak, 2 buts dans le 6 à 0 de Boston! Juste Maddox l'a!"
+        },
+        {
+          "host": "sylvie",
+          "line": "[chuckles] Le fanal du sous-sol éclaire enfin. Pis Evan Bouchard, d'Edmonton, est à 19 points, 10 d'entre vous attendent le 20e."
+        },
+        {
+          "host": "jean",
+          "line": "[excited] Pis Lane Hutson attend toujours son 10e! Quand le Canadien rejoue, on fête!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Avec Suzuki à l'infirmerie, fête doucement, Jean. On se retrouve demain matin, la famille!"
+        }
+      ],
+      "injured": {
+        "8476945": "susp",
+        "8484984": "ir",
+        "8475166": "ir",
+        "8476999": "ir",
+        "8478445": "ir",
+        "8478483": "out",
+        "8480018": "out",
+        "8480313": "dtd"
+      },
+      "awards": {
+        "goldenPick": 8478864,
+        "iceAnchor": 8482720,
+        "snub": 8478403
+      }
     }
   ]
 }
