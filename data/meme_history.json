@@ -108,6 +108,19 @@
         "top": "LES FRÈRES TKACHUK COMBINENT POUR UN BUT",
         "bottom": "LE SOUPER DE FAMILLE EST RÉUSSI. LE MATCH : 5-1 OTTAWA"
       }
+    },
+    {
+      "gameDay": "2026-10-22",
+      "category": "injury",
+      "format": "breaking",
+      "subject": {
+        "kind": "player",
+        "id": 8476999
+      },
+      "fr": {
+        "headline": "CRISE DU LOGEMENT : LE FILET DE VINCENT À LOUER",
+        "ticker": "ULLMARK BLESSÉ JUSQU'AU 29 · BAIL COURT, FILET NON CHAUFFÉ"
+      }
     }
   ]
 }

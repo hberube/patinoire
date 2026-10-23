@@ -1,36 +1,34 @@
 {
-  "gameDay": "2026-10-21",
-  "generatedAt": "2026-10-22T08:31:07Z",
+  "gameDay": "2026-10-22",
+  "generatedAt": "2026-10-23T08:31:06Z",
   "fr": {
-    "title": "Zegras et les Tkachuk allument la soirée, Michel tient bon",
+    "title": "Hugo coupe l'écart, Alexandre fait bingo",
     "bullets": [
-      "Michel (Les Ducks) reste au sommet avec 225 points, malgré une soirée blanche. Hugo suit à 15 points. 🦆",
-      "Trevor Zegras a marqué pour PHI à Buffalo : Hugo, Jackson et Vincent se régalent. 🏒",
-      "Brady Tkachuk a marqué à Ottawa, avec une passe de M. Tkachuk. Cinq participants applaudissent.",
-      "Marjolaine (mchb) bondit de deux rangs au 10e, devant Alexandre à 193 points grâce au bingo (5 lignes contre 3).",
-      "Bingo : Hugo, Simon et Étienne gagnent chacun une ligne; Vicky ferme la marche avec 2 cases.",
-      "Infirmerie : Linus Ullmark (OTT, à Vincent) et Logan Thompson (WSH, à 6 participants) sont incertains. 🤕"
+      "Hugo (Crazy Blue Heelers) ramasse 21 points, la meilleure soirée, et se retrouve à 10 points de Michel (Les Ducks), toujours en tête avec 241. 🏒",
+      "McDavid et Draisaitl ont allumé la lampe dans la victoire d'Edmonton en tirs de barrage contre Carolina. McDavid est chez 15 participants: facile, ça.",
+      "Jackson (Les Anglers) grimpe de deux places au 7e rang, à égalité avec Elrick, qui en perd deux. Les lignes de bingo les départagent.",
+      "Bingo: Alexandre (Éperviers de Sorel) rafle tout avec 8 lignes. Jackson ferme la marche: 0 ligne, 2 cases. 🎯",
+      "Infirmerie: Marner (VGK) absent, de retour demain (8 le possèdent); Suzuki (MTL) out jusqu'au 18 nov. (6 participants); Ullmark (OTT), chez Vincent, passe à la liste des blessés. 🚑"
     ]
   },
   "en": {
-    "title": "Zegras and the Tkachuks light it up, Michel holds the lead",
+    "title": "Hugo closes the gap, Alexandre rules bingo",
     "bullets": [
-      "Michel (Les Ducks) stays on top with 225 points despite a scoreless night. Hugo trails by 15. 🦆",
-      "Trevor Zegras scored for PHI in Buffalo: Hugo, Jackson and Vincent are feasting. 🏒",
-      "Brady Tkachuk scored in Ottawa with an assist from M. Tkachuk. Five participants are cheering.",
-      "Marjolaine (mchb) jumps two spots to 10th, ahead of Alexandre at 193 points thanks to bingo lines (5 to 3).",
-      "Bingo: Hugo, Simon and Étienne each won a line; Vicky brings up the rear with 2 squares.",
-      "Infirmary: Linus Ullmark (OTT, owned by Vincent) and Logan Thompson (WSH, owned by 6 participants) are day-to-day. 🤕"
+      "Hugo (Crazy Blue Heelers) piles up 21 points, the night's best, and sits 10 back of Michel (Les Ducks), still leading with 241. 🏒",
+      "McDavid and Draisaitl lit the lamp in Edmonton's shootout win over Carolina. McDavid is on 15 rosters: easy money.",
+      "Jackson (Les Anglers) climbs two spots to 7th, tied with Elrick, who drops two. Season bingo lines break the tie.",
+      "Bingo: Alexandre (Éperviers de Sorel) sweeps it with 8 lines. Jackson brings up the rear: 0 lines, 2 squares. 🎯",
+      "Infirmary: Marner (VGK) out, back tomorrow (8 owners); Suzuki (MTL) out until Nov. 18 (6 owners); Ullmark (OTT), Vincent's goalie, moves to injured reserve. 🚑"
     ]
   },
   "image": {
     "fr": {
       "src": "data/recap-fr.png",
-      "alt": "LES FRÈRES TKACHUK COMBINENT POUR UN BUT / LE SOUPER DE FAMILLE EST RÉUSSI. LE MATCH : 5-1 OTTAWA"
+      "alt": "CRISE DU LOGEMENT : LE FILET DE VINCENT À LOUER — ULLMARK BLESSÉ JUSQU'AU 29 · BAIL COURT, FILET NON CHAUFFÉ"
     },
     "en": {
       "src": "data/recap-en.png",
-      "alt": "TKACHUK TO TKACHUK: A FAMILY GOAL / THE FAMILY GROUP CHAT IS THRILLED. FLORIDA STILL LOST 5-1"
+      "alt": "HOUSING CRISIS: VINCENT'S NET NOW FOR RENT — ULLMARK ON IR TILL OCT. 29 · GOALIE NOT INCLUDED"
     }
   }
 }
