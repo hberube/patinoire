@@ -902,7 +902,15 @@ td.bingo-col.breaks { color: var(--gold); box-shadow: inset 0 -2px 0 var(--gold)
 
 /* ---------- Signed-in features (js/me/) ---------- */
 .me-card { padding: 14px 16px; margin-bottom: 16px; border-left: 4px solid var(--me-acc, var(--red)); display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; }
-.me-head { display: flex; gap: 12px; align-items: center; }
+.me-head { display: flex; gap: 12px; align-items: center; width: 100%; border: 0; background: none; padding: 0; text-align: left; color: inherit; cursor: pointer; font: inherit; }
+.me-head:focus-visible { outline: 2px solid var(--ice); outline-offset: 4px; border-radius: 6px; }
+.me-head:hover .recap-toggle { color: var(--text); }
+.me-head-text { flex: 1; min-width: 0; display: grid; gap: 2px; }
+.me-sum { display: none; font-size: 13px; color: var(--text-2); }
+.me-body { display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; }
+.me-card.folded .me-body { display: none; }
+.me-card.folded .me-sum { display: block; }
+.me-card.folded .recap-toggle::before { transform: translateY(-2px) rotate(45deg); }
 .me-kicker { font: 700 11px/1 var(--ff); text-transform: uppercase; letter-spacing: .12em; color: var(--me-acc, var(--red)); }
 .me-team { font: 800 20px/1.15 var(--ff-display); }
 .me-rows { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }

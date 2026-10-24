@@ -12,7 +12,7 @@ import { lookHtml, bindLook } from "./look.js";  // feature: look
 
 const on = (D, name) => D.S.config.features?.[name] !== false;
 const rivalKey = id => `patinoire_rival_${id}`;
-const NOTIFY_KEY = "patinoire_notify_mine";
+const NOTIFY_KEY = "patinoire_notify_mine", FOLD_KEY = "patinoire_pourtoi_folded";
 const store = {
   get(k) { try { return localStorage.getItem(k); } catch { return null; } },
   set(k, v) { try { v == null ? localStorage.removeItem(k) : localStorage.setItem(k, v); } catch { /* private mode */ } },
@@ -129,13 +129,20 @@ export function renderPourToi(el, D) {
     bingo && [`🎱`, t("meBingo", { lines: bingo.res.lines.length, squares: bingo.res.done }), "bingo"],
     hurt.length && [`🚑`, t("meHurt", { names: hurt.map(x => x.name.split(" ").slice(1).join(" ")).join(", ") }), "injuries"],
   ].filter(Boolean);
-  el.innerHTML = `<section class="card me-card">
-    <div class="me-head">${D.avatar(s, "av av-md", "team")}<div><div class="me-kicker">${esc(t("meTitle"))}</div><div class="me-team">${esc(s.teamName)}</div></div></div>
+  const folded = store.get(FOLD_KEY) === "1";
+  el.innerHTML = `<section class="card me-card${folded ? " folded" : ""}">
+    <button type="button" class="me-head" aria-expanded="${!folded}" title="${esc(t(folded ? "expand" : "collapse"))}">${D.avatar(s, "av av-md", "team")}
+      <span class="me-head-text"><span class="me-kicker">${esc(t("meTitle"))}</span><span class="me-team">${esc(s.teamName)}</span>
+        <span class="me-sum">${esc(rows[0][1])}</span></span>
+      <span class="recap-toggle" aria-hidden="true"></span></button>
+    <div class="me-body">
     <ul class="me-rows">${rows.map(([icon, text, tab, raw]) => `<li><a href="#${tab}"><span>${icon}</span><span>${raw ? text : esc(text)}</span></a></li>`).join("")}</ul>
     ${on(D, "pourtoi") ? chaseLine(D, s) : ""}
     ${on(D, "rival") ? rivalPanel(D, s) : ""}
     ${lookHtml(D)}
+    </div>
   </section>`;
+  el.querySelector(".me-head").addEventListener("click", () => { store.set(FOLD_KEY, folded ? null : "1"); renderPourToi(el, D); });
   bindLook(el, D, D.playHorn);
   el.querySelector(".me-rival-pick")?.addEventListener("change", e => { store.set(rivalKey(s.participantId), e.target.value || null); renderPourToi(el, D); });
   const chartEl = el.querySelector("#me-rival-chart"), r = D.standingOf(rivalOf(s.participantId));
