@@ -40,7 +40,7 @@
     "whatif": true,
     "horoscope": true,
     "wrapped": true,
-    "segments": false
+    "segments": true
   },
   "radio": {
     "voices": {
