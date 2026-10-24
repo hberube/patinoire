@@ -962,3 +962,21 @@ html.me-tinted[data-theme="dark"] { --me-acc: hsl(var(--me-h) var(--me-s) 66%); 
 .bdg-new { display: grid; gap: 4px; width: 100%; text-align: left; font: inherit; color: inherit; cursor: pointer;
   padding: 10px 12px; border-radius: 10px; border: 1px solid var(--gold); background: var(--gold-soft); font-weight: 700; }
 .bdg-new-icons { display: flex; flex-wrap: wrap; gap: 4px 12px; font-weight: 500; font-size: 14px; }
+/* feature: advisor (js/me/advisor.js) */
+.me-adv { margin-bottom: 16px; border-left: 4px solid var(--me-acc, var(--red)); display: grid; gap: 8px; }
+.me-adv h3 { margin: 0; }
+.adv-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.adv-list > li { display: grid; gap: 8px; padding: 10px; border-radius: 10px; background: var(--surface-2); }
+.adv-swap { display: grid; grid-template-columns: auto minmax(0, 1fr) auto minmax(0, 1fr); gap: 8px; align-items: center; }
+.adv-p { display: flex; gap: 8px; align-items: center; min-width: 0; }
+.adv-p b, .adv-p small { display: block; }
+.adv-p small { font-size: 12px; color: var(--text-3); }
+.adv-swap .arrow { color: var(--text-3); }
+.adv-foot { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; }
+.adv-gain { font-weight: 700; color: var(--up); }
+.inj-tag { font-size: 11px; }
+@media (max-width: 560px) {
+  .adv-swap { grid-template-columns: auto minmax(0, 1fr); }
+  .adv-swap .arrow { grid-column: 1; text-align: center; }
+  .adv-swap .adv-p:last-child { grid-column: 2; }
+}

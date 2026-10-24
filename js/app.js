@@ -12,6 +12,7 @@ import { renderCards, openAlbum } from "./cards.js";  // feature: cards (config.
 import { renderPourToi, renderMyGames, notifyMyGoals, regretsHtml } from "./me/me.js";  // signed-in features (phase 1)
 import { applyLook, celebrate, hornSound } from "./me/look.js";  // feature: look (config.features.look)
 import { badgesHtml } from "./me/badges.js";  // feature: badges (config.features.badges)
+import { renderAdvisor } from "./me/advisor.js";  // feature: advisor (config.features.advisor)
 
 const S = {
   tab: "standings",
@@ -1138,6 +1139,12 @@ function renderTrades() {
     }).join("")
     : `<div class="empty" style="padding:8px">${esc(t("noTrades"))}</div>`;
   renderTradeBuilder();
+  // feature: advisor: its suggestion fills the form below
+  renderAdvisor(document.getElementById("trade-advisor"), meDeps(), (outId, inId) => {
+    S.trade = { outId, inId, code: null };
+    renderTradeBuilder();
+    document.getElementById("trade-builder").scrollIntoView({ behavior: "smooth", block: "start" });
+  });
 }
 
 function renderTradeBuilder() {
