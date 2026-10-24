@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-24T04:00:32Z",
+  "lastUpdated": "2026-10-24T08:30:47Z",
   "gameDay": "2026-10-23",
   "highlights": [
     {
@@ -92,8 +92,8 @@
         "usr_michel_bry",
         "usr_elrick"
       ],
-      "clipEn": null,
-      "clipFr": null,
+      "clipEn": "https://nhl.com/video/martin-necas-with-a-goal-vs-tampa-bay-lightning-6407322738112",
+      "clipFr": "https://nhl.com/fr/video/tbl-col-necas-col-marque-un-but-dans-un-filet-desert-6407324071112",
       "thumb": "https://assets.nhle.com/mugs/nhl/20262027/COL/8480039.png"
     },
     {
@@ -257,8 +257,8 @@
     },
     "8475754": {
       "last5": 3,
-      "games": 10,
-      "dry": 0
+      "games": 11,
+      "dry": 1
     },
     "8475913": {
       "last5": 8,
@@ -271,8 +271,8 @@
       "dry": 0
     },
     "8476883": {
-      "last5": 4,
-      "games": 7,
+      "last5": 3,
+      "games": 8,
       "dry": 0
     },
     "8476887": {
@@ -292,13 +292,13 @@
     },
     "8477404": {
       "last5": 5,
-      "games": 9,
-      "dry": 1
+      "games": 10,
+      "dry": 0
     },
     "8477492": {
-      "last5": 6,
-      "games": 10,
-      "dry": 2
+      "last5": 8,
+      "games": 11,
+      "dry": 0
     },
     "8477493": {
       "last5": 0,
@@ -416,8 +416,8 @@
       "dry": 1
     },
     "8479542": {
-      "last5": 8,
-      "games": 9,
+      "last5": 5,
+      "games": 10,
       "dry": 0
     },
     "8479979": {
@@ -446,14 +446,14 @@
       "dry": 0
     },
     "8480039": {
-      "last5": 6,
-      "games": 10,
-      "dry": 1
+      "last5": 7,
+      "games": 11,
+      "dry": 0
     },
     "8480069": {
-      "last5": 5,
-      "games": 9,
-      "dry": 0
+      "last5": 4,
+      "games": 10,
+      "dry": 1
     },
     "8480280": {
       "last5": 4,
@@ -703,28 +703,6 @@
       "target": 5
     },
     {
-      "id": 8477404,
-      "name": "Jake Guentzel",
-      "team": "TBL",
-      "pos": "F",
-      "points": 9,
-      "owners": 3,
-      "stat": "goals",
-      "value": 4,
-      "target": 5
-    },
-    {
-      "id": 8477404,
-      "name": "Jake Guentzel",
-      "team": "TBL",
-      "pos": "F",
-      "points": 9,
-      "owners": 3,
-      "stat": "points",
-      "value": 9,
-      "target": 10
-    },
-    {
       "id": 8471215,
       "name": "Evgeni Malkin",
       "team": "PIT",
@@ -756,6 +734,28 @@
       "stat": "points",
       "value": 9,
       "target": 10
+    },
+    {
+      "id": 8479407,
+      "name": "Jesper Bratt",
+      "team": "NJD",
+      "pos": "F",
+      "points": 9,
+      "owners": 1,
+      "stat": "points",
+      "value": 9,
+      "target": 10
+    },
+    {
+      "id": 8475158,
+      "name": "Ryan O'Reilly",
+      "team": "NSH",
+      "pos": "F",
+      "points": 7,
+      "owners": 1,
+      "stat": "goals",
+      "value": 4,
+      "target": 5
     }
   ],
   "odds": {
@@ -763,94 +763,94 @@
     "sims": 5000,
     "teams": {
       "usr_michel_bry": {
-        "win": 29.2,
-        "podium": 58.6,
-        "projected": 1701
+        "win": 31.1,
+        "podium": 60.1,
+        "projected": 1718
       },
       "usr_hugo_berube": {
-        "win": 7.5,
-        "podium": 32.9,
-        "projected": 1648
+        "win": 6.6,
+        "podium": 31.8,
+        "projected": 1658
       },
       "usr_guillaume_brossard": {
-        "win": 8.2,
-        "podium": 26.2,
-        "projected": 1619
+        "win": 8.8,
+        "podium": 28.6,
+        "projected": 1638
       },
       "usr_simon": {
-        "win": 7.6,
-        "podium": 25.6,
-        "projected": 1630
-      },
-      "usr_etienne": {
-        "win": 4.3,
-        "podium": 18.4,
-        "projected": 1605
+        "win": 7.8,
+        "podium": 26.2,
+        "projected": 1644
       },
       "usr_sylvianne": {
-        "win": 12.3,
-        "podium": 34.0,
-        "projected": 1643
+        "win": 12.5,
+        "podium": 34.5,
+        "projected": 1661
       },
-      "usr_jackson_gagnon": {
-        "win": 4.2,
-        "podium": 14.1,
-        "projected": 1588
+      "usr_etienne": {
+        "win": 3.6,
+        "podium": 15.1,
+        "projected": 1609
       },
       "usr_elrick": {
-        "win": 4.8,
-        "podium": 18.3,
-        "projected": 1584
-      },
-      "usr_vincent": {
-        "win": 8.8,
+        "win": 5.3,
         "podium": 19.1,
-        "projected": 1565
+        "projected": 1607
+      },
+      "usr_jackson_gagnon": {
+        "win": 3.7,
+        "podium": 13.4,
+        "projected": 1596
       },
       "usr_alexandre_comeau": {
-        "win": 2.1,
-        "podium": 12.1,
-        "projected": 1598
-      },
-      "usr_marjolaine_comeau": {
-        "win": 2.2,
-        "podium": 9.4,
-        "projected": 1548
+        "win": 1.9,
+        "podium": 12.4,
+        "projected": 1607
       },
       "usr_eve": {
-        "win": 3.2,
-        "podium": 10.7,
-        "projected": 1556
+        "win": 3.3,
+        "podium": 11.6,
+        "projected": 1577
+      },
+      "usr_vincent": {
+        "win": 6.9,
+        "podium": 17.3,
+        "projected": 1569
+      },
+      "usr_marjolaine_comeau": {
+        "win": 2.5,
+        "podium": 9.4,
+        "projected": 1566
       },
       "usr_louise_trottier": {
-        "win": 1.0,
-        "podium": 6.7,
-        "projected": 1529
+        "win": 1.2,
+        "podium": 7.2,
+        "projected": 1548
       },
       "usr_julien_berube": {
         "win": 1.6,
-        "podium": 5.7,
-        "projected": 1504
+        "podium": 4.8,
+        "projected": 1511
       },
       "usr_florence": {
-        "win": 0.6,
-        "podium": 2.0,
-        "projected": 1427
+        "win": 0.7,
+        "podium": 2.6,
+        "projected": 1435
+      },
+      "usr_maddox_gagnon": {
+        "win": 1.3,
+        "podium": 3.8,
+        "projected": 1425
       },
       "usr_jolyne_brossard": {
-        "win": 0.2,
+        "win": 0.3,
         "podium": 1.1,
-        "projected": 1441
+        "projected": 1447
       },
       "usr_vicky": {
         "win": 0.8,
-        "podium": 2.6,
-        "projected": 1395
-      },
-      "usr_maddox_gagnon": {
-        "win": 1.2,
-        "podium": 4.1,
-        "projected": 1412
+        "podium": 2.7,
+        "projected": 1408
       }
     },
     "before": {
