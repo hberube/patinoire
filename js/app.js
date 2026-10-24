@@ -926,8 +926,11 @@ function bingoCard(row) {
   return `<div class="bingo-card" role="grid" aria-label="${esc(t("bingo"))}">${card.squares.map((sq, i) => {
     const st = res.states[i], cls = sq.kind === "free" ? "free" : st === true ? "done" : st === false ? "dead" : "open";
     const mark = sq.kind === "free" ? "⭐" : st === true ? "✅" : st === false ? "✗" : "";
+    // "(2/3)" under a counting square still in play (or missed), so people can follow the suspense
+    const p = res.progress?.[i];
+    const prog = p && st !== true && (p.need > 1 || sq.kind === "three") ? `<span class="bprog">(${Math.min(p.have, p.need)}/${p.need})</span>` : "";
     return `<div class="bsq ${cls} ${inLine.has(i) ? "line" : ""}" role="gridcell">
-      ${mark ? `<span class="bmark" aria-hidden="true">${mark}</span>` : ""}<span>${esc(sq.kind === "free" ? S.config.bingoFree || t("bingoFree") : squareLabel(sq))}</span></div>`;
+      ${mark ? `<span class="bmark" aria-hidden="true">${mark}</span>` : ""}<span>${esc(sq.kind === "free" ? S.config.bingoFree || t("bingoFree") : squareLabel(sq))}${prog}</span></div>`;
   }).join("")}</div>`;
 }
 

@@ -69,6 +69,13 @@ const CHECKS = {
   ...Object.fromEntries(NIGHT.map(([id, , , count]) => [id, (n, v) => settle(count(n, v.ids) >= v.n, n.allFinal)])),
 };
 
+// How far along a counting square is ({ have, need }), from the same counts as its tick, so the
+// "(2/3)" shown on the card can never disagree with the ✅. Yes/no squares (goal, point, win) have none.
+const PROGRESS = {
+  three: (n, v) => { const g = n.gameOf(v.team); return { have: g ? n.teamGoals(g, v.team) : 0, need: 3 }; },
+  ...Object.fromEntries(NIGHT.map(([id, , , count]) => [id, (n, v) => ({ have: count(n, v.ids), need: v.n })])),
+};
+
 /**
  * The participant's card for live.gameDay: 9 squares, centre free.
  * standing: a leaderboard row (participantId, rosterStats); poolIds: every rostered player id.
@@ -108,14 +115,16 @@ export function makeCard(standing, live, poolIds) {
   return { participantId: standing.participantId, gameDay: live.gameDay, squares, poolIds };
 }
 
-/** States (true/false/null per square), completed lines, squares done, and lines still possible. */
+/** States (true/false/null per square), progress of counting squares, completed lines, squares done,
+ *  and lines still possible. */
 export function evaluate(card, live) {
   const n = night(live);
   const states = card.squares.map(sq => (sq.kind === "free" ? true
     : CHECKS[sq.kind](n, { ...sq.vars, ids: card.poolIds })));
   const lines = LINES.filter(l => l.every(i => states[i] === true));
+  const progress = card.squares.map(sq => PROGRESS[sq.kind]?.(n, { ...sq.vars, ids: card.poolIds }) ?? null);
   return {
-    states, lines,
+    states, lines, progress,
     done: states.filter((s, i) => s === true && i !== FREE).length,
     alive: LINES.filter(l => l.every(i => states[i] !== false)).length,
     over: n.allFinal,

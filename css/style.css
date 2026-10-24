@@ -896,3 +896,6 @@ td.bingo-col.breaks { color: var(--gold); box-shadow: inset 0 -2px 0 var(--gold)
   .np-photo { max-width: 260px; }
   .np-ears { display: none; }
 }
+/* Bingo: progress of counting squares, e.g. "(2/3)" */
+.bprog { display: block; margin-top: 3px; font: 600 11px/1 var(--ff); color: var(--text-3); text-decoration: none; }
+.bsq.dead .bprog { text-decoration: none; }
