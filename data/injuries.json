@@ -1,18 +1,7 @@
 {
-  "updated": "2026-10-23T08:30:46Z",
+  "updated": "2026-10-24T04:00:30Z",
   "source": "ESPN",
   "players": [
-    {
-      "id": 8476945,
-      "name": "Connor Hellebuyck",
-      "team": "WPG",
-      "pos": "G",
-      "status": "susp",
-      "type": "Suspension",
-      "returnDate": "2026-10-27",
-      "noteDate": "2026-10-02",
-      "note": "ir-nr"
-    },
     {
       "id": 8475810,
       "name": "Bryan Rust",
@@ -86,20 +75,9 @@
       "pos": "F",
       "status": "ir",
       "type": "Lower Body",
-      "returnDate": "2026-10-24",
+      "returnDate": "2026-10-27",
       "noteDate": "2026-10-11",
       "note": "Konecny (lower body) was placed on injured reserve Sunday, according to the NHL media site."
-    },
-    {
-      "id": 8478483,
-      "name": "Mitch Marner",
-      "team": "VGK",
-      "pos": "F",
-      "status": "out",
-      "type": "Personal",
-      "returnDate": "2026-10-24",
-      "noteDate": "2026-10-22",
-      "note": "out"
     },
     {
       "id": 8480018,
@@ -111,6 +89,28 @@
       "returnDate": "2026-11-18",
       "noteDate": "2026-10-22",
       "note": "out"
+    },
+    {
+      "id": 8476945,
+      "name": "Connor Hellebuyck",
+      "team": "WPG",
+      "pos": "G",
+      "status": "dtd",
+      "type": "Not Injury Related",
+      "returnDate": "2026-10-24",
+      "noteDate": "2026-10-23",
+      "note": "Hellebuyck was traded to the Devils from the Jets on Friday, Darren Dreger of TSN reports."
+    },
+    {
+      "id": 8471215,
+      "name": "Evgeni Malkin",
+      "team": "PIT",
+      "pos": "F",
+      "status": "dtd",
+      "type": "Illness",
+      "returnDate": "2026-10-24",
+      "noteDate": "2026-10-23",
+      "note": "Malkin didn't participate in Friday's practice session due to an illness."
     },
     {
       "id": 8476434,
@@ -133,6 +133,17 @@
       "returnDate": "2026-10-24",
       "noteDate": "2026-10-21",
       "note": "Thompson won't practice Wednesday and is considered day-to-day with a lower-body injury ahead of Saturday's clash with the Sabres, Sammi Silber of The Hockey News reports."
+    },
+    {
+      "id": 8478483,
+      "name": "Mitch Marner",
+      "team": "VGK",
+      "pos": "F",
+      "status": "dtd",
+      "type": "Personal",
+      "returnDate": "2026-10-24",
+      "noteDate": "2026-10-23",
+      "note": "day-to-day"
     }
   ]
 }

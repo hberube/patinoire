@@ -1120,6 +1120,13 @@
     "points": 6
   },
   {
+    "id": 8484170,
+    "name": "Jacob Fowler",
+    "pos": "G",
+    "team": "MTL",
+    "points": 6
+  },
+  {
     "id": 8476885,
     "name": "Jacob Trouba",
     "pos": "D",
@@ -1236,6 +1243,13 @@
     "name": "Oliver Bjorkstrand",
     "pos": "F",
     "team": "NYR",
+    "points": 6
+  },
+  {
+    "id": 8474141,
+    "name": "Patrick Kane",
+    "pos": "F",
+    "team": "CHI",
     "points": 6
   },
   {
@@ -1369,6 +1383,13 @@
     "name": "Alex Iafallo",
     "pos": "F",
     "team": "WPG",
+    "points": 5
+  },
+  {
+    "id": 8478851,
+    "name": "Alexandre Carrier",
+    "pos": "D",
+    "team": "MTL",
     "points": 5
   },
   {
@@ -1530,13 +1551,6 @@
     "name": "Ilya Protas",
     "pos": "F",
     "team": "WSH",
-    "points": 5
-  },
-  {
-    "id": 8484170,
-    "name": "Jacob Fowler",
-    "pos": "G",
-    "team": "MTL",
     "points": 5
   },
   {
@@ -1757,13 +1771,6 @@
     "points": 5
   },
   {
-    "id": 8474141,
-    "name": "Patrick Kane",
-    "pos": "F",
-    "team": "CHI",
-    "points": 5
-  },
-  {
     "id": 8480995,
     "name": "Pontus Holmberg",
     "pos": "F",
@@ -1904,13 +1911,6 @@
     "points": 4
   },
   {
-    "id": 8478851,
-    "name": "Alexandre Carrier",
-    "pos": "D",
-    "team": "MTL",
-    "points": 4
-  },
-  {
     "id": 8483679,
     "name": "Anton Johansson",
     "pos": "D",
@@ -1992,6 +1992,13 @@
     "name": "Colton Parayko",
     "pos": "D",
     "team": "STL",
+    "points": 4
+  },
+  {
+    "id": 8484144,
+    "name": "Connor Bedard",
+    "pos": "F",
+    "team": "CHI",
     "points": 4
   },
   {
@@ -2506,13 +2513,6 @@
     "points": 3
   },
   {
-    "id": 8484144,
-    "name": "Connor Bedard",
-    "pos": "F",
-    "team": "CHI",
-    "points": 3
-  },
-  {
     "id": 8484164,
     "name": "Dalibor Dvorsky",
     "pos": "F",
@@ -2611,6 +2611,13 @@
     "points": 3
   },
   {
+    "id": 8478133,
+    "name": "Jake Evans",
+    "pos": "F",
+    "team": "MTL",
+    "points": 3
+  },
+  {
     "id": 8478970,
     "name": "Jalen Chatfield",
     "pos": "D",
@@ -2678,6 +2685,13 @@
     "name": "Juuse Saros",
     "pos": "G",
     "team": "NSH",
+    "points": 3
+  },
+  {
+    "id": 8482087,
+    "name": "Kaiden Guhle",
+    "pos": "D",
+    "team": "MTL",
     "points": 3
   },
   {
@@ -2783,6 +2797,13 @@
     "name": "Ondrej Palat",
     "pos": "F",
     "team": "NYI",
+    "points": 3
+  },
+  {
+    "id": 8476479,
+    "name": "Phillip Danault",
+    "pos": "F",
+    "team": "MTL",
     "points": 3
   },
   {
@@ -3283,6 +3304,13 @@
     "points": 2
   },
   {
+    "id": 8481523,
+    "name": "Kirby Dach",
+    "pos": "F",
+    "team": "MTL",
+    "points": 2
+  },
+  {
     "id": 8484797,
     "name": "Konsta Helenius",
     "pos": "F",
@@ -3364,6 +3392,13 @@
     "name": "Mikael Backlund",
     "pos": "F",
     "team": "CGY",
+    "points": 2
+  },
+  {
+    "id": 8476875,
+    "name": "Mike Matheson",
+    "pos": "D",
+    "team": "MTL",
     "points": 2
   },
   {
@@ -3483,13 +3518,6 @@
     "name": "Pavel Mintyukov",
     "pos": "D",
     "team": "ANA",
-    "points": 2
-  },
-  {
-    "id": 8476479,
-    "name": "Phillip Danault",
-    "pos": "F",
-    "team": "MTL",
     "points": 2
   },
   {
@@ -4123,13 +4151,6 @@
     "points": 1
   },
   {
-    "id": 8482087,
-    "name": "Kaiden Guhle",
-    "pos": "D",
-    "team": "MTL",
-    "points": 1
-  },
-  {
     "id": 8480860,
     "name": "Kevin Bahl",
     "pos": "D",
@@ -4141,13 +4162,6 @@
     "name": "Kevin Lankinen",
     "pos": "G",
     "team": "VAN",
-    "points": 1
-  },
-  {
-    "id": 8481523,
-    "name": "Kirby Dach",
-    "pos": "F",
-    "team": "MTL",
     "points": 1
   },
   {
@@ -4218,13 +4232,6 @@
     "name": "Michael Bunting",
     "pos": "F",
     "team": "PHI",
-    "points": 1
-  },
-  {
-    "id": 8476875,
-    "name": "Mike Matheson",
-    "pos": "D",
-    "team": "MTL",
     "points": 1
   },
   {
@@ -4309,6 +4316,13 @@
     "name": "Otto Stenberg",
     "pos": "F",
     "team": "STL",
+    "points": 1
+  },
+  {
+    "id": 8483424,
+    "name": "Owen Beck",
+    "pos": "F",
+    "team": "MTL",
     "points": 1
   },
   {
@@ -4956,13 +4970,6 @@
     "points": 0
   },
   {
-    "id": 8478133,
-    "name": "Jake Evans",
-    "pos": "F",
-    "team": "MTL",
-    "points": 0
-  },
-  {
     "id": 8478424,
     "name": "Jansen Harkins",
     "pos": "F",
@@ -5231,13 +5238,6 @@
   {
     "id": 8482775,
     "name": "Oliver Kapanen",
-    "pos": "F",
-    "team": "MTL",
-    "points": 0
-  },
-  {
-    "id": 8483424,
-    "name": "Owen Beck",
     "pos": "F",
     "team": "MTL",
     "points": 0
