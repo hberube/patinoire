@@ -37,7 +37,8 @@
     "look": true,
     "badges": true,
     "advisor": true,
-    "whatif": true
+    "whatif": true,
+    "horoscope": false
   },
   "radio": {
     "voices": {

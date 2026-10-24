@@ -1,6 +1,7 @@
 #!/bin/bash
 # Backup for GitHub's unreliable schedule, started by Windows Task Scheduler (see README.md here).
-#   pool_job.sh night      from noon: keep "Ce soir" live until the last game, then rebuild the standings
+#   pool_job.sh night      from noon: the pool horoscope, then keep "Ce soir" live until the last game,
+#                          then rebuild the standings
 #   pool_job.sh morning    early morning: rebuild the standings (and the history chart) if still needed,
 #                          then have Claude write the front-page recap (needs ~/.local/bin/claude, logged in)
 #   pool_job.sh standings  rebuild the standings and Gazette only     } what overseer.sh runs
@@ -84,8 +85,18 @@ recap() {
   free_clone
 }
 
+horoscope() {
+  # L'horoscope du pool (scripts/horoscope.py): Claude, at noon before the games; skipped when switched
+  # off, and a failure only skips today's horoscope
+  hold_clone
+  sync_main && "$HOME/.local/bin/uv" run -q --no-project --with requests python3 scripts/horoscope.py \
+    && push_data "Horoscope du pool"
+  free_clone
+}
+
 case "$MODE" in
   night)
+    horoscope
     # Give up at 4 AM; the morning job takes it from there
     until [ "$(date +%H)" -ge 4 ] && [ "$(date +%H)" -lt 12 ]; do
       live_pass && break

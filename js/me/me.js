@@ -102,6 +102,19 @@ function chaseLine(D, s) {
   return lines.length ? `<div class="me-sec"><div class="me-h">🎯 ${esc(t("meChaseTitle"))}</div>${lines.map(l => `<p class="me-small">${esc(l)}</p>`).join("")}</div>` : "";
 }
 
+// ---------- L'horoscope du pool (scripts/horoscope.py, written at noon): today's only ----------
+function horoscopeHtml(D, s) {
+  const h = D.S.horoscope, mine = h?.signs?.[s.participantId];
+  if (!mine || !on(D, "horoscope")) return "";
+  const today = new Date().toLocaleDateString("en-CA", { timeZone: "America/Toronto" });
+  if (h.day !== today) return "";
+  const lang = getLang() === "en" ? "en" : "fr";
+  return `<div class="me-sec me-horo"><div class="me-h">🔮 ${esc(t("meHoro"))}
+      <span class="me-pucks" title="${esc(t("meHoroPucks", { n: mine.pucks }))}">${"●".repeat(mine.pucks)}<span>${"●".repeat(5 - mine.pucks)}</span></span></div>
+    <p class="me-small">${esc(mine[lang])}</p>
+    ${mine.lucky ? `<p class="me-small">🍀 ${esc(t("meHoroLucky", { name: mine.lucky }))}</p>` : ""}</div>`;
+}
+
 // ---------- Pour toi: the personal card ----------
 export function renderPourToi(el, D) {
   const s = D.standingOf(D.me()?.participantId);
@@ -140,6 +153,7 @@ export function renderPourToi(el, D) {
     <div class="me-body">
     ${freshHtml(badges?.fresh)}
     <ul class="me-rows">${rows.map(([icon, text, tab, raw]) => `<li><a href="#${tab}"><span>${icon}</span><span>${raw ? text : esc(text)}</span></a></li>`).join("")}</ul>
+    ${horoscopeHtml(D, s)}
     ${on(D, "pourtoi") ? chaseLine(D, s) : ""}
     ${on(D, "rival") ? rivalPanel(D, s) : ""}
     ${lookHtml(D)}
