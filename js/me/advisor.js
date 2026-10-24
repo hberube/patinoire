@@ -9,7 +9,8 @@ import { tradesLeft, roundOptions } from "../trade.js";
 
 const SEASON_GAMES = 82, GAMES_PER_DAY = 0.45;
 
-function model(D) {
+// Rest-of-season projection for any player (also used by the "Et si?" simulator, js/me/whatif.js)
+export function projector(D) {
   const S = D.S, teamGp = {};
   for (const s of S.board.standings) for (const p of s.rosterStats) teamGp[p.team] = Math.max(teamGp[p.team] || 0, p.gp || 0);
   const known = Object.values(teamGp).sort((a, b) => a - b), typical = known[Math.floor(known.length / 2)] || 1;
@@ -23,11 +24,11 @@ function model(D) {
       : inj.status === "dtd" ? 1 : 10;  // no date: a day-to-day costs ~1 game, anything else ~10
     return { pace, proj: pace * Math.max(0, left - missed), inj, missed: Math.round(missed) };
   };
-  return { project };
+  return project;
 }
 
 export function advice(s, D) {
-  const { project } = model(D), cfg = D.S.config, out = [];
+  const project = projector(D), cfg = D.S.config, out = [];
   for (const p of s.rosterStats) {
     if (tradesLeft(s, cfg, p.pos) <= 0) continue;
     const mine = project(p);

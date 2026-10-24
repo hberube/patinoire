@@ -36,7 +36,8 @@
     "regrets": true,
     "look": true,
     "badges": true,
-    "advisor": true
+    "advisor": true,
+    "whatif": true
   },
   "radio": {
     "voices": {

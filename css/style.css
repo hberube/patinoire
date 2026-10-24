@@ -980,3 +980,11 @@ html.me-tinted[data-theme="dark"] { --me-acc: hsl(var(--me-h) var(--me-s) 66%); 
   .adv-swap .arrow { grid-column: 1; text-align: center; }
   .adv-swap .adv-p:last-child { grid-column: 2; }
 }
+/* feature: whatif (js/me/whatif.js) */
+.wi-pick { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 8px; align-items: center; margin-top: 8px; }
+.wi-pick .arrow { color: var(--text-3); }
+.wi-result { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; text-align: center; margin: 12px 0 6px; padding: 10px; border-radius: 10px; background: var(--surface-2); }
+.wi-result b { display: block; font: 800 22px/1 var(--ff-display); }
+.wi-result small { display: block; margin-top: 4px; font-size: 11px; line-height: 1.3; color: var(--text-3); }
+.wi-result .up { color: var(--up); } .wi-result .down { color: var(--down); }
+@media (max-width: 560px) { .wi-pick { grid-template-columns: minmax(0, 1fr); } .wi-pick .arrow { display: none; } }

@@ -13,6 +13,7 @@ import { renderPourToi, renderMyGames, notifyMyGoals, regretsHtml } from "./me/m
 import { applyLook, celebrate, hornSound } from "./me/look.js";  // feature: look (config.features.look)
 import { badgesHtml } from "./me/badges.js";  // feature: badges (config.features.badges)
 import { renderAdvisor } from "./me/advisor.js";  // feature: advisor (config.features.advisor)
+import { whatIfHtml, renderWhatIf } from "./me/whatif.js";  // feature: whatif (config.features.whatif)
 
 const S = {
   tab: "standings",
@@ -720,6 +721,7 @@ function openTeam(id) {
       <div id="team-view"></div>
       ${former ? `<h3>${esc(t("former"))}</h3>${former}` : ""}
       ${regretsHtml(s, meDeps())}
+      ${whatIfHtml(s, meDeps())}
       ${badgesHtml(s, meDeps())}
       <p class="muted" style="font-size:13px;margin:14px 0 0">${esc(t("pointsRule"))}</p>
       <div style="text-align:right;margin-top:12px"><button class="btn" id="close-team">${esc(t("close"))}</button></div>
@@ -733,6 +735,7 @@ function openTeam(id) {
   modal.querySelectorAll("[data-view]").forEach(b => b.addEventListener("click", () => { S.teamView = b.dataset.view; showView(); }));
   modal.querySelector("#team-cards")?.addEventListener("click", () => openAlbum(id, cardDeps()));  // feature: cards
   showView();
+  renderWhatIf(modal.querySelector("#me-whatif"), s, meDeps());  // feature: whatif
   modal.querySelector("#close-team").addEventListener("click", () => modal.close());
   modal.showModal();
   // showModal focuses the first button; open at the top with nothing focused instead
