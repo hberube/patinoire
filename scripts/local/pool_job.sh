@@ -82,6 +82,10 @@ recap() {
   python3 -c 'import json,sys; sys.exit(json.load(open("data/config.json")).get("features",{}).get("radio") is False)' \
     && "$HOME/.local/bin/uv" run -q --no-project --with edge-tts --with requests python3 scripts/radio.py \
     && push_data "Morning radio show"
+  # « Ton segment de la semaine »: on Sundays, 25 seconds per participant (scripts/segments.py; it checks
+  # the day and its switch itself)
+  "$HOME/.local/bin/uv" run -q --no-project --with edge-tts --with requests python3 scripts/segments.py \
+    && push_data "Weekly personal radio segments"
   free_clone
 }
 

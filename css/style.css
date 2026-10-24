@@ -1032,3 +1032,5 @@ body.wr-open { overflow: hidden; }
 .wr-actions, .wr-months { position: relative; z-index: 2; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
 .wr-overlay .btn { background: rgba(255,255,255,.12); color: #fff; border-color: rgba(255,255,255,.3); }
 .wr-overlay .btn[aria-pressed="true"] { background: #fff; color: #0a1420; }
+/* feature: segments */
+.me-seg audio { width: 100%; height: 36px; }

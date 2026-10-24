@@ -39,7 +39,8 @@
     "advisor": true,
     "whatif": true,
     "horoscope": true,
-    "wrapped": true
+    "wrapped": true,
+    "segments": false
   },
   "radio": {
     "voices": {

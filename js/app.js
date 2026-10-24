@@ -28,13 +28,14 @@ document.addEventListener("DOMContentLoaded", async () => {
   bindChrome();
   try {
     const opt = p => fetchJson(p).catch(() => null);
-    [S.config, S.board, S.history, S.live, S.groups, S.trades, S.index, S.logos, S.insights, S.recap, S.bingoArchive, S.injuries, S.palmares, S.radio, S.horoscope, S.months] = await Promise.all([
+    [S.config, S.board, S.history, S.live, S.groups, S.trades, S.index, S.logos, S.insights, S.recap, S.bingoArchive, S.injuries, S.palmares, S.radio, S.horoscope, S.months, S.segments] = await Promise.all([
       fetchJson("data/config.json"), fetchJson("data/leaderboard.json"), opt("data/history.json"),
       fetchLive(), fetchJson("data/groups.json"), opt("data/trades_history.json"),
       opt("data/players_index.json"), opt("data/logos.json"), opt("data/insights.json"), opt("data/recap.json"),
       opt("data/bingo.json"), opt("data/injuries.json"), opt("data/palmares.json"), opt("data/radio.json"),
       opt("data/horoscope.json"),  // feature: horoscope
       opt("data/months.json"),  // feature: wrapped
+      opt("data/segments.json"),  // feature: segments
     ]);
   } catch (err) {
     document.querySelector("main").innerHTML = `<div class="card empty">${esc(t("loadError"))}</div>`;

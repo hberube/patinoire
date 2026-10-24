@@ -116,6 +116,15 @@ function horoscopeHtml(D, s) {
     ${mine.lucky ? `<p class="me-small">🍀 ${esc(t("meHoroLucky", { name: mine.lucky }))}</p>` : ""}</div>`;
 }
 
+// ---------- Ton segment de la semaine (scripts/segments.py, Sunday mornings): for 7 days ----------
+function segmentHtml(D, s) {
+  const seg = D.S.segments, mine = seg?.segments?.[s.participantId];
+  if (!mine || !on(D, "segments") || Date.now() - new Date(`${seg.week}T12:00:00`).getTime() > 14 * 864e5) return "";
+  const src = `data/segments/${encodeURIComponent(s.participantId)}.mp3?v=${encodeURIComponent(seg.generatedAt)}`;
+  return `<div class="me-sec me-seg"><div class="me-h">🎙️ ${esc(t("meSegment"))} <span class="muted">· ${mine.duration} s</span></div>
+    <audio controls preload="none" src="${esc(src)}"></audio></div>`;
+}
+
 // ---------- Pour toi: the personal card ----------
 export function renderPourToi(el, D) {
   const s = D.standingOf(D.me()?.participantId);
@@ -155,6 +164,7 @@ export function renderPourToi(el, D) {
     ${freshHtml(badges?.fresh)}
     <ul class="me-rows">${rows.map(([icon, text, tab, raw]) => `<li><a href="#${tab}"><span>${icon}</span><span>${raw ? text : esc(text)}</span></a></li>`).join("")}</ul>
     ${wrappedButton(D)}
+    ${segmentHtml(D, s)}
     ${horoscopeHtml(D, s)}
     ${on(D, "pourtoi") ? chaseLine(D, s) : ""}
     ${on(D, "rival") ? rivalPanel(D, s) : ""}
