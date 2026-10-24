@@ -29,7 +29,12 @@
   "features": {
     "radio": true,
     "arena": true,
-    "cards": true
+    "cards": true,
+    "pourtoi": true,
+    "myGames": true,
+    "rival": true,
+    "regrets": true,
+    "look": true
   },
   "radio": {
     "voices": {

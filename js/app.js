@@ -9,6 +9,8 @@ import { seededShuffle, makeCard, evaluate, race } from "./bingo.js";
 import { renderRadio } from "./radio.js";  // feature: radio (config.features.radio)
 import { openArena, arenaUpdate } from "./arena.js";  // feature: arena (config.features.arena)
 import { renderCards, openAlbum } from "./cards.js";  // feature: cards (config.features.cards)
+import { renderPourToi, renderMyGames, notifyMyGoals, regretsHtml } from "./me/me.js";  // signed-in features (phase 1)
+import { applyLook, celebrate, hornSound } from "./me/look.js";  // feature: look (config.features.look)
 
 const S = {
   tab: "standings",
@@ -87,6 +89,9 @@ async function refreshLive() {
       renderTonight();
       renderBingo();
       if (S.config.features?.arena !== false) arenaUpdate(goals);  // feature: arena
+      renderPourToi(document.getElementById("pour-toi"), meDeps());  // signed-in: tonight's numbers move
+      notifyMyGoals(goals, meDeps());
+      celebrate(goals, meDeps());  // feature: look
       // Bingo news first (it's yours), then the goals; one tap opens the matching tab
       const parts = [bingo, goals.length && goalRows(goals)].filter(Boolean);
       if (parts.length) showToast(parts.join(""), bingo ? "bingo" : "tonight");
@@ -146,22 +151,11 @@ function goalRows(goals) {
 // A short goal horn made on the fly (no sound file); browsers only allow it after a tap on the page,
 // which turning the horn on provides
 let audio;
-function playHorn() {
+function playHorn(kind) {
   try {
     audio ||= new AudioContext();
     audio.resume();
-    const now = audio.currentTime, out = audio.createGain(), lp = audio.createBiquadFilter();
-    lp.type = "lowpass"; lp.frequency.value = 1400;
-    out.gain.setValueAtTime(0.0001, now);
-    out.gain.exponentialRampToValueAtTime(0.25, now + 0.08);
-    out.gain.setValueAtTime(0.25, now + 1.5);
-    out.gain.exponentialRampToValueAtTime(0.0001, now + 2.2);
-    lp.connect(out).connect(audio.destination);
-    for (const f of [174.6, 220, 261.6]) {  // F major chord, like an arena horn
-      const o = audio.createOscillator();
-      o.type = "sawtooth"; o.frequency.value = f;
-      o.connect(lp); o.start(now); o.stop(now + 2.3);
-    }
+    hornSound(audio, kind);  // feature: look: the horn chosen in "Mon look" (the classic one by default)
   } catch { /* no Web Audio: banner only */ }
 }
 
@@ -287,9 +281,11 @@ function renderAll() {
     if (el) el.textContent = stamp;  // tolerate a cached older index.html right after a deploy
   }
   renderAuth();
+  applyLook(meDeps());  // feature: look: your logo's colour on everything that's yours
   markGazetteNew();
   fitTopbar();
   document.fonts?.ready.then(fitTopbar);  // widths change once the web font arrives
+  renderPourToi(document.getElementById("pour-toi"), meDeps());  // signed-in: Pour toi
   renderRecap();
   // feature: radio
   const radioEl = document.getElementById("radio");
@@ -308,6 +304,9 @@ function renderAll() {
 
 // ---------- Helpers ----------
 const me = () => getSession();
+// Helpers handed to the signed-in features (js/me/), so they reuse the site's own logic
+const meDeps = () => ({ S, me, playHorn, standingOf, dayDeltas, gainOver, weekStart, weekDuels, weekScores, pastDuelWeeks,
+  bingoRace, gameState, avatar, mug, fmtDay, fmtPct, renderChart });
 const standingOf = id => S.board.standings.find(s => s.participantId === id);
 const fmtDay = (iso, long) => new Date(`${iso}T12:00:00`).toLocaleDateString(locale(),
   long ? { weekday: "short", day: "numeric", month: "long" } : { day: "numeric", month: "short" });
@@ -718,6 +717,7 @@ function openTeam(id) {
         ${cardsOn() ? `<button class="btn btn-sm" id="team-cards">🃏 ${esc(t("cardsButton"))}</button>` : ""}</div>
       <div id="team-view"></div>
       ${former ? `<h3>${esc(t("former"))}</h3>${former}` : ""}
+      ${regretsHtml(s, meDeps())}
       <p class="muted" style="font-size:13px;margin:14px 0 0">${esc(t("pointsRule"))}</p>
       <div style="text-align:right;margin-top:12px"><button class="btn" id="close-team">${esc(t("close"))}</button></div>
     </div>`;
@@ -826,6 +826,7 @@ function renderTonight() {
   if (!live || !live.games?.length) {
     gamesEl.innerHTML = `<div class="card empty" style="grid-column:1/-1">${esc(t("noGames"))}</div>`;
     document.getElementById("tonight-rank").innerHTML = "";
+    renderMyGames(document.getElementById("my-games"), meDeps());
     return;
   }
   document.getElementById("tonight-title").textContent = `${t("tonight")} · ${fmtDay(live.gameDay, true)}`;
@@ -899,6 +900,7 @@ function renderTonight() {
               <span class="tl-line">${esc(statLine(x.tl))}</span><b class="num">+${x.pts}</b></li>`).join("")}</ul>
         </details>`).join("")}</div>
       <p class="muted" style="font-size:12px;margin:8px 0 0">${esc(t("tonightNote"))}</p></div>` : "");
+  renderMyGames(document.getElementById("my-games"), meDeps());  // signed-in: Mes joueurs ce soir
 }
 
 // ---------- Bingo du soir (cards and scoring in bingo.js) ----------
