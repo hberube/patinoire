@@ -11,6 +11,7 @@ import { openArena, arenaUpdate } from "./arena.js";  // feature: arena (config.
 import { renderCards, openAlbum } from "./cards.js";  // feature: cards (config.features.cards)
 import { renderPourToi, renderMyGames, notifyMyGoals, regretsHtml } from "./me/me.js";  // signed-in features (phase 1)
 import { applyLook, celebrate, hornSound } from "./me/look.js";  // feature: look (config.features.look)
+import { badgesHtml } from "./me/badges.js";  // feature: badges (config.features.badges)
 
 const S = {
   tab: "standings",
@@ -306,7 +307,7 @@ function renderAll() {
 const me = () => getSession();
 // Helpers handed to the signed-in features (js/me/), so they reuse the site's own logic
 const meDeps = () => ({ S, me, playHorn, standingOf, dayDeltas, gainOver, weekStart, weekDuels, weekScores, pastDuelWeeks,
-  bingoRace, gameState, avatar, mug, fmtDay, fmtPct, renderChart });
+  bingoRace, gameState, avatar, mug, fmtDay, fmtPct, renderChart, bingoHistory, trophies });
 const standingOf = id => S.board.standings.find(s => s.participantId === id);
 const fmtDay = (iso, long) => new Date(`${iso}T12:00:00`).toLocaleDateString(locale(),
   long ? { weekday: "short", day: "numeric", month: "long" } : { day: "numeric", month: "short" });
@@ -718,6 +719,7 @@ function openTeam(id) {
       <div id="team-view"></div>
       ${former ? `<h3>${esc(t("former"))}</h3>${former}` : ""}
       ${regretsHtml(s, meDeps())}
+      ${badgesHtml(s, meDeps())}
       <p class="muted" style="font-size:13px;margin:14px 0 0">${esc(t("pointsRule"))}</p>
       <div style="text-align:right;margin-top:12px"><button class="btn" id="close-team">${esc(t("close"))}</button></div>
     </div>`;

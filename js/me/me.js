@@ -8,7 +8,8 @@
 // module holds no copy of the site's logic. Off switches: config.features.{pourtoi,myGames,rival,regrets}.
 import { t, getLang } from "../i18n.js";
 import { esc } from "../util.js";
-import { lookHtml, bindLook } from "./look.js";  // feature: look
+import { lookHtml, bindLook, confetti, accentColor } from "./look.js";  // feature: look
+import { badgesRow, freshHtml, dismissFresh } from "./badges.js";  // feature: badges
 
 const on = (D, name) => D.S.config.features?.[name] !== false;
 const rivalKey = id => `patinoire_rival_${id}`;
@@ -120,13 +121,14 @@ export function renderPourToi(el, D) {
   }
   const bingo = D.bingoRace(D.S.live).find(r => r.s.participantId === s.participantId);
   const hurt = (D.S.injuries?.players || []).filter(x => s.rosterStats.some(p => p.id === x.id));
-  const watch = gameToWatch(D, s);
+  const watch = gameToWatch(D, s), badges = badgesRow(s, D);
   const rows = [
     [`📊`, t("meRank", { rank: s.rank, move: move > 0 ? `▲${move}` : move < 0 ? `▼${-move}` : "=", pts: last == null ? "—" : (last > 0 ? `+${last}` : last) }), "standings"],
     mine.length && [`🏒`, t("meTonight", { n: mine.length }), "tonight"],
     watch && [`📺`, watchLine(D, watch), "tonight", true],
     duel && [`🥊`, duel, "gazette"],
     bingo && [`🎱`, t("meBingo", { lines: bingo.res.lines.length, squares: bingo.res.done }), "bingo"],
+    badges && [`🏅`, badges.text, "teams"],
     hurt.length && [`🚑`, t("meHurt", { names: hurt.map(x => x.name.split(" ").slice(1).join(" ")).join(", ") }), "injuries"],
   ].filter(Boolean);
   const folded = store.get(FOLD_KEY) === "1";
@@ -136,12 +138,16 @@ export function renderPourToi(el, D) {
         <span class="me-sum">${esc(rows[0][1])}</span></span>
       <span class="recap-toggle" aria-hidden="true"></span></button>
     <div class="me-body">
+    ${freshHtml(badges?.fresh)}
     <ul class="me-rows">${rows.map(([icon, text, tab, raw]) => `<li><a href="#${tab}"><span>${icon}</span><span>${raw ? text : esc(text)}</span></a></li>`).join("")}</ul>
     ${on(D, "pourtoi") ? chaseLine(D, s) : ""}
     ${on(D, "rival") ? rivalPanel(D, s) : ""}
     ${lookHtml(D)}
     </div>
   </section>`;
+  el.querySelector("#bdg-new")?.addEventListener("click", () => { dismissFresh(); renderPourToi(el, D); });
+  // A moment later, once your logo's colour has loaded
+  if (badges?.burst && !folded) setTimeout(() => confetti([accentColor(), "#ffffff", "#f5b301", accentColor()]), 700);
   el.querySelector(".me-head").addEventListener("click", () => { store.set(FOLD_KEY, folded ? null : "1"); renderPourToi(el, D); });
   bindLook(el, D, D.playHorn);
   el.querySelector(".me-rival-pick")?.addEventListener("change", e => { store.set(rivalKey(s.participantId), e.target.value || null); renderPourToi(el, D); });

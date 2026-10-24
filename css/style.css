@@ -949,3 +949,16 @@ html.me-tinted[data-theme="dark"] { --me-acc: hsl(var(--me-h) var(--me-s) 66%); 
 .me-confetti { position: fixed; inset: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 1000; }
 .me-more summary { cursor: pointer; color: var(--text-2); }
 .me-more[open] summary { margin-bottom: 6px; }
+/* feature: badges (js/me/badges.js) */
+.bdg-grid { list-style: none; margin: 8px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 8px; }
+.bdg { display: grid; justify-items: center; text-align: center; gap: 2px; padding: 10px 6px; border-radius: 10px; background: var(--surface-2); border: 1px solid var(--border); }
+.bdg .bdg-icon { font-size: 26px; line-height: 1.1; filter: grayscale(1); opacity: .35; }
+.bdg b { font-size: 13px; color: var(--text-3); }
+.bdg small { font-size: 11px; color: var(--text-3); line-height: 1.25; }
+.bdg.got { border-color: var(--me-acc, var(--gold)); background: var(--gold-soft); }
+.bdg.got .bdg-icon { filter: none; opacity: 1; }
+.bdg.got b { color: var(--text); }
+.bdg.got small { color: var(--text-2); }
+.bdg-new { display: grid; gap: 4px; width: 100%; text-align: left; font: inherit; color: inherit; cursor: pointer;
+  padding: 10px 12px; border-radius: 10px; border: 1px solid var(--gold); background: var(--gold-soft); font-weight: 700; }
+.bdg-new-icons { display: flex; flex-wrap: wrap; gap: 4px 12px; font-weight: 500; font-size: 14px; }
