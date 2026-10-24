@@ -10,6 +10,7 @@ import { t, getLang } from "../i18n.js";
 import { esc } from "../util.js";
 import { lookHtml, bindLook, confetti, accentColor } from "./look.js";  // feature: look
 import { badgesRow, freshHtml, dismissFresh } from "./badges.js";  // feature: badges
+import { wrappedButton, openWrapped } from "./wrapped.js";  // feature: wrapped
 
 const on = (D, name) => D.S.config.features?.[name] !== false;
 const rivalKey = id => `patinoire_rival_${id}`;
@@ -153,12 +154,14 @@ export function renderPourToi(el, D) {
     <div class="me-body">
     ${freshHtml(badges?.fresh)}
     <ul class="me-rows">${rows.map(([icon, text, tab, raw]) => `<li><a href="#${tab}"><span>${icon}</span><span>${raw ? text : esc(text)}</span></a></li>`).join("")}</ul>
+    ${wrappedButton(D)}
     ${horoscopeHtml(D, s)}
     ${on(D, "pourtoi") ? chaseLine(D, s) : ""}
     ${on(D, "rival") ? rivalPanel(D, s) : ""}
     ${lookHtml(D)}
     </div>
   </section>`;
+  el.querySelector("[data-wrapped]")?.addEventListener("click", e => openWrapped(s.participantId, e.currentTarget.dataset.wrapped, D));
   el.querySelector("#bdg-new")?.addEventListener("click", () => { dismissFresh(); renderPourToi(el, D); });
   // A moment later, once your logo's colour has loaded
   if (badges?.burst && !folded) setTimeout(() => confetti([accentColor(), "#ffffff", "#f5b301", accentColor()]), 700);

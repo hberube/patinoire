@@ -6,18 +6,19 @@
 - awards:     Golden Pick, Ice Anchor, Snub ("Busts & Steals")
 - milestones: rostered players close to a round number this season
 - odds:       each team's chances of winning the pool and finishing top 3 (odds.py)
-Also saves last night's bingo for good once its games are final (bingo_archive.py -> bingo.json)
+Also saves each month's starting points (months.json, for Pool Wrapped), last night's bingo for good once its games are final (bingo_archive.py -> bingo.json)
 and refreshes the injured pool players (injuries.py -> injuries.json).
 
 Run after update_pool.py by the daily workflow. Pool-level milestones and the weekly
 duels are computed in the browser from leaderboard.json and history.json.
 """
 from collections import Counter
+from datetime import datetime
 
 import bingo_archive
 import injuries
 import odds
-from history import last_completed_day
+from history import EASTERN, last_completed_day
 from pool_lib import fetch_game_logs, game_line, get_json, load, now_iso, save, score
 
 # (stat, step between milestones, how close counts as "near")
@@ -142,5 +143,25 @@ def build():
           f"awards: {', '.join(k for k, v in awards.items() if v)}{', odds' if win_odds else ''}")
 
 
+def month_snapshot():
+    """data/months.json: every player's season pool points on the first run of each month, which is
+    also where the month before ended. Pool Wrapped (js/me/wrapped.js) takes a month's MVP from it."""
+    # Like history.py: only a morning run has last night final and tonight not started
+    now = datetime.now(EASTERN)
+    if not 3 <= now.hour < 12:
+        return
+    months, key = load("months.json", {}) or {}, now.strftime("%Y-%m")
+    if key in months:
+        return
+    index = load("players_index.json", []) or []
+    months[key] = {"taken": now_iso(), "players": {str(p["id"]): p["points"] for p in index}}
+    save("months.json", months)
+    print(f"months.json: {key} snapshot of {len(index)} players")
+
+
 if __name__ == "__main__":
     build()
+    try:
+        month_snapshot()
+    except Exception as e:  # noqa: BLE001
+        print(f"warning: month snapshot failed ({e})")

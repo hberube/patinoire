@@ -993,3 +993,42 @@ html.me-tinted[data-theme="dark"] { --me-acc: hsl(var(--me-h) var(--me-s) 66%); 
 .me-pucks { letter-spacing: 2px; font-size: 12px; color: var(--me-acc, var(--red)); }
 .me-pucks span { color: var(--border); }
 .me-horo p { font-style: italic; }
+/* feature: wrapped (js/me/wrapped.js) */
+.me-wrapped { justify-self: start; }
+body.wr-open { overflow: hidden; }
+.wr-overlay { position: fixed; inset: 0; z-index: 950; color: #fff; overflow: hidden;
+  background: radial-gradient(circle at 20% 10%, color-mix(in srgb, var(--me-acc, var(--red)) 55%, transparent), transparent 55%),
+    radial-gradient(circle at 90% 90%, #1e3a5f, transparent 60%), #0a1420; }
+.wr-bars { position: absolute; top: 12px; left: 16px; right: 56px; display: flex; gap: 4px; z-index: 3; }
+.wr-bars span { flex: 1; height: 4px; border-radius: 2px; background: rgba(255,255,255,.25); overflow: hidden; }
+.wr-bars i { display: block; height: 100%; width: 0; background: #fff; }
+.wr-bars .done i { width: 100%; }
+.wr-bars .now i { animation: wr-fill var(--slide-ms, 6500ms) linear forwards; }
+@keyframes wr-fill { to { width: 100%; } }
+.wr-close { position: absolute; top: 4px; right: 8px; z-index: 4; width: 40px; height: 40px; border: 0; border-radius: 50%;
+  background: rgba(255,255,255,.12); color: #fff; font-size: 18px; cursor: pointer; }
+.wr-tap { position: absolute; top: 60px; bottom: 0; width: 35%; z-index: 1; border: 0; background: none; cursor: pointer; }
+.wr-prev { left: 0; } .wr-next { right: 0; width: 65%; }
+.wr-slide { position: absolute; inset: 0; display: none; flex-direction: column; align-items: center; justify-content: center;
+  gap: 14px; padding: 64px 24px 40px; text-align: center; }
+.wr-slide.on { display: flex; }
+.wr-slide.on > * { animation: wr-in .6s cubic-bezier(.2, .8, .2, 1) both; }
+.wr-slide.on > *:nth-child(2) { animation-delay: .15s; } .wr-slide.on > *:nth-child(3) { animation-delay: .3s; }
+.wr-slide.on > *:nth-child(4) { animation-delay: .45s; } .wr-slide.on > *:nth-child(5) { animation-delay: .6s; }
+@keyframes wr-in { from { opacity: 0; transform: translateY(18px) scale(.96); } }
+@media (prefers-reduced-motion: reduce) { .wr-slide.on > * { animation: none; } .wr-bars .now i { animation: none; width: 100%; } }
+.wr-slide h2 { margin: 0; font: 800 38px/1.1 var(--ff-display); max-width: 560px; }
+.wr-slide p { margin: 0; font-size: 18px; max-width: 520px; color: rgba(255,255,255,.88); }
+.wr-slide .wr-small { font-size: 15px; color: rgba(255,255,255,.7); }
+.wr-kicker { font: 700 13px/1 var(--ff); letter-spacing: .16em; text-transform: uppercase; color: rgba(255,255,255,.75); }
+.wr-big b { display: block; font: 800 112px/1 var(--ff-display); letter-spacing: -1px; }
+.wr-big span { font-size: 16px; color: rgba(255,255,255,.75); }
+.wr-ranks { display: flex; align-items: center; gap: 18px; font: 800 96px/1 var(--ff-display); }
+.wr-ranks span { font-size: 40px; color: rgba(255,255,255,.6); }
+.wr-av { width: 128px; height: 128px; }
+.wr-mug { width: 120px; height: 120px; }
+.wr-sum { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; font-size: 20px; }
+.wr-sum b { font: 800 30px/1 var(--ff-display); }
+.wr-actions, .wr-months { position: relative; z-index: 2; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+.wr-overlay .btn { background: rgba(255,255,255,.12); color: #fff; border-color: rgba(255,255,255,.3); }
+.wr-overlay .btn[aria-pressed="true"] { background: #fff; color: #0a1420; }
