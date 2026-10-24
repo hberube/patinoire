@@ -1,34 +1,36 @@
 {
-  "gameDay": "2026-10-22",
-  "generatedAt": "2026-10-23T08:31:06Z",
+  "gameDay": "2026-10-23",
+  "generatedAt": "2026-10-24T08:31:04Z",
   "fr": {
-    "title": "Hugo coupe l'écart, Alexandre fait bingo",
+    "title": "MacKinnon régale, Sylvianne grimpe, Vincent dégringole",
     "bullets": [
-      "Hugo (Crazy Blue Heelers) ramasse 21 points, la meilleure soirée, et se retrouve à 10 points de Michel (Les Ducks), toujours en tête avec 241. 🏒",
-      "McDavid et Draisaitl ont allumé la lampe dans la victoire d'Edmonton en tirs de barrage contre Carolina. McDavid est chez 15 participants: facile, ça.",
-      "Jackson (Les Anglers) grimpe de deux places au 7e rang, à égalité avec Elrick, qui en perd deux. Les lignes de bingo les départagent.",
-      "Bingo: Alexandre (Éperviers de Sorel) rafle tout avec 8 lignes. Jackson ferme la marche: 0 ligne, 2 cases. 🎯",
-      "Infirmerie: Marner (VGK) absent, de retour demain (8 le possèdent); Suzuki (MTL) out jusqu'au 18 nov. (6 participants); Ullmark (OTT), chez Vincent, passe à la liste des blessés. 🚑"
+      "MacKinnon marque et Necas l'aide: 17 participants applaudissent. Bedard a aussi allumé la lumière à Chicago. 🚨",
+      "Michel garde la tête avec 248 points. Hugo suit à 236, Guillaume à 233.",
+      "Sylvianne a la meilleure soirée (+9) et passe au 4e rang. Égalité à 227 avec Simon, mais ses 13 lignes de bingo contre 8 font la différence.",
+      "Bingo: Sylvianne, Elrick et Florence ont chacun 4 lignes. Alexandre a fini dernier avec 0 ligne. 🎯",
+      "Vincent n'a que 2 points et recule de deux rangs. Eve en gagne deux et monte au 10e.",
+      "Infirmerie: Malkin (PIT) est malade, au jour le jour, chez Eve et Vicky. Marner (VGK) passe d'absent à incertain, chez 8 participants."
     ]
   },
   "en": {
-    "title": "Hugo closes the gap, Alexandre rules bingo",
+    "title": "MacKinnon delivers, Sylvianne climbs, Vincent slides",
     "bullets": [
-      "Hugo (Crazy Blue Heelers) piles up 21 points, the night's best, and sits 10 back of Michel (Les Ducks), still leading with 241. 🏒",
-      "McDavid and Draisaitl lit the lamp in Edmonton's shootout win over Carolina. McDavid is on 15 rosters: easy money.",
-      "Jackson (Les Anglers) climbs two spots to 7th, tied with Elrick, who drops two. Season bingo lines break the tie.",
-      "Bingo: Alexandre (Éperviers de Sorel) sweeps it with 8 lines. Jackson brings up the rear: 0 lines, 2 squares. 🎯",
-      "Infirmary: Marner (VGK) out, back tomorrow (8 owners); Suzuki (MTL) out until Nov. 18 (6 owners); Ullmark (OTT), Vincent's goalie, moves to injured reserve. 🚑"
+      "MacKinnon scored with an assist from Necas, and 17 participants cheered. Bedard also lit the lamp in Chicago. 🚨",
+      "Michel holds the lead with 248 points. Hugo follows at 236, Guillaume at 233.",
+      "Sylvianne had the best night (+9) and moved up to 4th. Tied at 227 with Simon, but 13 bingo lines to 8 settle it.",
+      "Bingo: Sylvianne, Elrick and Florence each got 4 lines. Alexandre finished last with 0 lines. 🎯",
+      "Vincent got just 2 points and fell two spots. Eve gained two and is now 10th.",
+      "Infirmary: Malkin (PIT) is sick, day-to-day, owned by Eve and Vicky. Marner (VGK) goes from out to day-to-day, owned by 8 participants."
     ]
   },
   "image": {
     "fr": {
       "src": "data/recap-fr.png",
-      "alt": "CRISE DU LOGEMENT : LE FILET DE VINCENT À LOUER — ULLMARK BLESSÉ JUSQU'AU 29 · BAIL COURT, FILET NON CHAUFFÉ"
+      "alt": "TRIPLE ÉGALITÉ AU BINGO : 4 LIGNES CHACUN / FLORENCE LANCE DÉJÀ « BINGO (FLORENCE'S VERSION) »"
     },
     "en": {
       "src": "data/recap-en.png",
-      "alt": "HOUSING CRISIS: VINCENT'S NET NOW FOR RENT — ULLMARK ON IR TILL OCT. 29 · GOALIE NOT INCLUDED"
+      "alt": "THREE-WAY BINGO TIE: 4 LINES EACH / FLORENCE IS ALREADY RE-RECORDING IT AS (FLORENCE'S VERSION)"
     }
   }
 }

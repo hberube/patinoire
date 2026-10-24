@@ -1,16 +1,6 @@
 {
   "memes": [
     {
-      "gameDay": "2026-10-13",
-      "category": "player",
-      "format": "classic",
-      "subjectName": "Trevor Zegras",
-      "fr": {
-        "top": "ZEGRAS MARQUE. 2 PERSONNES DANS LE POOL",
-        "bottom": "HUGO ET JACKSON: GÉNIES. LES 15 AUTRES: « QUI ÇA? »"
-      }
-    },
-    {
       "gameDay": "2026-10-14",
       "category": "player",
       "format": "classic",
@@ -120,6 +110,19 @@
       "fr": {
         "headline": "CRISE DU LOGEMENT : LE FILET DE VINCENT À LOUER",
         "ticker": "ULLMARK BLESSÉ JUSQU'AU 29 · BAIL COURT, FILET NON CHAUFFÉ"
+      }
+    },
+    {
+      "gameDay": "2026-10-23",
+      "category": "bingo",
+      "format": "classic",
+      "subject": {
+        "kind": "team",
+        "id": "usr_florence"
+      },
+      "fr": {
+        "top": "TRIPLE ÉGALITÉ AU BINGO : 4 LIGNES CHACUN",
+        "bottom": "FLORENCE LANCE DÉJÀ « BINGO (FLORENCE'S VERSION) »"
       }
     }
   ]
