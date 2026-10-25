@@ -3,7 +3,7 @@
 // Rarity from the week's rank: 1st Légendaire, 2nd-3rd Épique, 4th-8th Rare, the rest Commune.
 // Self-contained so it can be removed in one go; off switch: "features": {"cards": false}.
 import { t, locale } from "./i18n.js";
-import { esc } from "./util.js";
+import { esc, asset } from "./util.js";
 
 let D = null;  // dependencies from app.js: { S, avatar, standingOf, weekStart, weekScores, fmtDay, me }
 
@@ -109,7 +109,7 @@ async function cardImage(c) {
   g.save(); g.beginPath(); g.arc(W / 2, 290, 150, 0, Math.PI * 2); g.closePath(); g.fillStyle = "#1e3a5f"; g.fill(); g.clip();
   if (src) {
     try {
-      const img = await new Promise((ok, no) => { const i = new Image(); i.onload = () => ok(i); i.onerror = no; i.src = src; });
+      const img = await new Promise((ok, no) => { const i = new Image(); i.onload = () => ok(i); i.onerror = no; i.src = asset(src); });
       const k = Math.max(300 / img.width, 300 / img.height);
       g.drawImage(img, W / 2 - (img.width * k) / 2, 290 - (img.height * k) / 2, img.width * k, img.height * k);
     } catch { /* initials below */ }

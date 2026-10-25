@@ -7,7 +7,7 @@
 // Everything is computed from data the page already has. The app passes its helpers in (D), so this
 // module holds no copy of the site's logic. Off switches: config.features.{pourtoi,myGames,rival,regrets}.
 import { t, getLang } from "../i18n.js";
-import { esc } from "../util.js";
+import { esc, asset } from "../util.js";
 import { lookHtml, bindLook, confetti, accentColor } from "./look.js";  // feature: look
 import { badgesRow, freshHtml, dismissFresh } from "./badges.js";  // feature: badges
 import { wrappedButton, openWrapped } from "./wrapped.js";  // feature: wrapped
@@ -120,7 +120,7 @@ function horoscopeHtml(D, s) {
 function segmentHtml(D, s) {
   const seg = D.S.segments, mine = seg?.segments?.[s.participantId];
   if (!mine || !on(D, "segments") || Date.now() - new Date(`${seg.week}T12:00:00`).getTime() > 14 * 864e5) return "";
-  const src = `data/segments/${encodeURIComponent(s.participantId)}.mp3?v=${encodeURIComponent(seg.generatedAt)}`;
+  const src = asset(`data/segments/${encodeURIComponent(s.participantId)}.mp3?v=${encodeURIComponent(seg.generatedAt)}`);
   return `<div class="me-sec me-seg"><div class="me-h">🎙️ ${esc(t("meSegment"))} <span class="muted">· ${mine.duration} s</span></div>
     <audio controls preload="none" src="${esc(src)}"></audio></div>`;
 }
@@ -229,7 +229,7 @@ export function notifyMyGoals(goals, D) {
   for (const g of goals) {
     const p = s.rosterStats.find(x => x.id === g.id);
     if (p) new Notification(t("meNotifyTitle", { name: p.name }), { body: t("meNotifyBody", { team: s.teamName }),
-      icon: (D.S.logos[s.participantId]?.logo || D.S.logos[s.participantId]?.face || "").split("?")[0] || undefined, tag: `goal-${g.id}-${Date.now()}` });
+      icon: asset((D.S.logos[s.participantId]?.logo || D.S.logos[s.participantId]?.face || "").split("?")[0]) || undefined, tag: `goal-${g.id}-${Date.now()}` });
   }
 }
 

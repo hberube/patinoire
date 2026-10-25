@@ -5,7 +5,7 @@
 // front-page player is out of view (another tab, or scrolled away).
 // Self-contained so it can be removed in one go; off switch: "features": {"radio": false}.
 import { t, getLang } from "./i18n.js";
-import { esc } from "./util.js";
+import { esc, asset } from "./util.js";
 
 const HOST = { sylvie: "Sylvie", jean: "Jean" };
 const clean = line => line.replace(/\[[a-z ]+\]\s*/gi, "");  // audio cues are for the voices only
@@ -50,7 +50,7 @@ function toggle() {
 }
 
 function ensureAudio() {
-  const src = `data/radio.mp3?v=${encodeURIComponent(show.generatedAt)}`;  // same file name every day
+  const src = asset(`data/radio.mp3?v=${encodeURIComponent(show.generatedAt)}`);  // same file name every day
   if (!audio) {
     audio = new Audio();
     audio.preload = "none";

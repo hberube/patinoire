@@ -21,7 +21,7 @@ export function newSalt() {
   return Array.from(crypto.getRandomValues(new Uint8Array(16)), b => b.toString(16).padStart(2, "0")).join("");
 }
 
-export async function login(participantId, pin, base = "") {
+export async function login(participantId, pin, base) {
   const users = await fetchJson("data/users.json", base);
   const user = users.find(u => u.participantId === participantId);
   if (!user || (await hashPin(pin, user.salt)) !== user.pinHash) return null;

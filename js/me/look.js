@@ -5,7 +5,7 @@
 //   - confetti in your colours when one of your players scores, while the page is open
 // Off switch: config.features.look. Hook: applyLook() in renderAll(), celebrate() in refreshLive().
 import { t } from "../i18n.js";
-import { esc } from "../util.js";
+import { esc, asset } from "../util.js";
 
 const HORN_KEY = "patinoire_horn_kind", CONFETTI_KEY = "patinoire_confetti";
 const store = {
@@ -63,7 +63,7 @@ export function applyLook(D) {
     root.style.setProperty("--me-s", `${Math.round(accentHs[1] * 100)}%`);
     root.classList.add("me-tinted");
   };
-  img.src = src;
+  img.src = asset(src);
 }
 export const accentColor = () => getComputedStyle(document.documentElement).getPropertyValue("--me-acc").trim() || "#c8102e";
 

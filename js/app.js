@@ -1,5 +1,5 @@
 import { t, getLang, setLang, applyStatic, fmtDate, locale } from "./i18n.js";
-import { esc, fetchJson, headshot, teamLogo } from "./util.js";
+import { esc, fetchJson, headshot, teamLogo, asset } from "./util.js";
 import { getSession, login, logout } from "./auth.js";
 import { windowOpen, tradesLeft, roundOptions, encodeTrade } from "./trade.js";
 import { renderChart } from "./chart.js";
@@ -337,7 +337,7 @@ function avatar(s, cls = "av", mode = "team") {
 }
 
 function avatarFrom(imgs, s, cls, mode = "team") {
-  const { face, logo } = imgs;
+  const [face, logo] = [imgs.face, imgs.logo].map(asset);
   const main = mode === "logo" ? logo : mode === "team" ? logo || face : face || logo;
   if (!main) {
     const initials = s.participantName.split(/\s+/).map(w => w[0]).join("").slice(0, 2).toUpperCase();
@@ -380,7 +380,7 @@ function renderAuth() {
   if (session) {
     box.innerHTML = `
       <span class="user-chip">${esc(session.displayName)}</span>
-      ${session.role === "admin" ? `<a class="btn btn-sm" href="admin/">${esc(t("admin"))}</a>` : ""}
+      ${session.role === "admin" ? `<a class="btn btn-sm" href="${asset("admin/")}">${esc(t("admin"))}</a>` : ""}
       <button class="btn btn-sm" id="btn-logout">${esc(t("logout"))}</button>`;
     box.querySelector("#btn-logout").addEventListener("click", () => { logout(); renderAll(); });
   } else {
@@ -412,7 +412,7 @@ function renderRecap() {
   let collapsed = false;
   try { collapsed = localStorage.getItem(RECAP_KEY) === r.gameDay; } catch { /* private mode */ }
   const img = r.image?.[getLang()];
-  const src = img && `${img.src}?v=${encodeURIComponent(r.generatedAt)}`;  // same file name every day
+  const src = img && asset(`${img.src}?v=${encodeURIComponent(r.generatedAt)}`);  // same file name every day
   el.innerHTML = `
     <article class="card recap${img ? " has-img" : ""}">
       <button class="recap-head" aria-expanded="true">
@@ -1190,7 +1190,7 @@ function renderTradeBuilder() {
     : `<div class="empty">${esc(t("pickOutFirst"))}</div>`;
 
   const message = tr.code && out && inn ? t("tradeMsg", { name: s.participantName, team: s.teamName, pos: posLabel(out.pos), round: out.group, out: out.name, in: inn.name, code: tr.code,
-    link: new URL(`admin/#code=${tr.code}`, location.href.split("#")[0]).href }) : "";
+    link: new URL(asset(`admin/#code=${tr.code}`), location.href.split("#")[0]).href }) : "";
 
   el.innerHTML = `
     <div class="section-head"><h2>${esc(t("proposeTrade"))}</h2><div class="quota">${quota}</div></div>
