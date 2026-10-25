@@ -6,11 +6,11 @@
 //   Mes regrets     in your team window: the best pick of each draft round against yours
 // Everything is computed from data the page already has. The app passes its helpers in (D), so this
 // module holds no copy of the site's logic. Off switches: config.features.{pourtoi,myGames,rival,regrets}.
-import { t, getLang } from "../i18n.js";
-import { esc, asset } from "../util.js";
-import { lookHtml, bindLook, confetti, accentColor } from "./look.js";  // feature: look
-import { badgesRow, freshHtml, dismissFresh } from "./badges.js";  // feature: badges
-import { wrappedButton, openWrapped } from "./wrapped.js";  // feature: wrapped
+import { t, getLang } from "../i18n.js?v=20261025121518";
+import { esc, asset } from "../util.js?v=20261025121518";
+import { lookHtml, bindLook, confetti, accentColor } from "./look.js?v=20261025121518";  // feature: look
+import { badgesRow, freshHtml, dismissFresh } from "./badges.js?v=20261025121518";  // feature: badges
+import { wrappedButton, openWrapped } from "./wrapped.js?v=20261025121518";  // feature: wrapped
 
 const on = (D, name) => D.S.config.features?.[name] !== false;
 const rivalKey = id => `patinoire_rival_${id}`;

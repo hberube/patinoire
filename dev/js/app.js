@@ -1,19 +1,19 @@
-import { t, getLang, setLang, applyStatic, fmtDate, locale } from "./i18n.js";
-import { esc, fetchJson, headshot, teamLogo, asset } from "./util.js";
-import { getSession, login, logout } from "./auth.js";
-import { windowOpen, tradesLeft, roundOptions, encodeTrade } from "./trade.js";
-import { renderChart } from "./chart.js";
-import { prepareImage } from "./image.js";
-import { faqContent } from "./faq.js";
-import { seededShuffle, makeCard, evaluate, race } from "./bingo.js";
-import { renderRadio } from "./radio.js";  // feature: radio (config.features.radio)
-import { openArena, arenaUpdate } from "./arena.js";  // feature: arena (config.features.arena)
-import { renderCards, openAlbum } from "./cards.js";  // feature: cards (config.features.cards)
-import { renderPourToi, renderMyGames, notifyMyGoals, regretsHtml } from "./me/me.js";  // signed-in features (phase 1)
-import { applyLook, celebrate, hornSound } from "./me/look.js";  // feature: look (config.features.look)
-import { badgesHtml } from "./me/badges.js";  // feature: badges (config.features.badges)
-import { renderAdvisor } from "./me/advisor.js";  // feature: advisor (config.features.advisor)
-import { whatIfHtml, renderWhatIf } from "./me/whatif.js";  // feature: whatif (config.features.whatif)
+import { t, getLang, setLang, applyStatic, fmtDate, locale } from "./i18n.js?v=20261025121518";
+import { esc, fetchJson, headshot, teamLogo, asset } from "./util.js?v=20261025121518";
+import { getSession, login, logout } from "./auth.js?v=20261025121518";
+import { windowOpen, tradesLeft, roundOptions, encodeTrade } from "./trade.js?v=20261025121518";
+import { renderChart } from "./chart.js?v=20261025121518";
+import { prepareImage } from "./image.js?v=20261025121518";
+import { faqContent } from "./faq.js?v=20261025121518";
+import { seededShuffle, makeCard, evaluate, race } from "./bingo.js?v=20261025121518";
+import { renderRadio } from "./radio.js?v=20261025121518";  // feature: radio (config.features.radio)
+import { openArena, arenaUpdate } from "./arena.js?v=20261025121518";  // feature: arena (config.features.arena)
+import { renderCards, openAlbum } from "./cards.js?v=20261025121518";  // feature: cards (config.features.cards)
+import { renderPourToi, renderMyGames, notifyMyGoals, regretsHtml } from "./me/me.js?v=20261025121518";  // signed-in features (phase 1)
+import { applyLook, celebrate, hornSound } from "./me/look.js?v=20261025121518";  // feature: look (config.features.look)
+import { badgesHtml } from "./me/badges.js?v=20261025121518";  // feature: badges (config.features.badges)
+import { renderAdvisor } from "./me/advisor.js?v=20261025121518";  // feature: advisor (config.features.advisor)
+import { whatIfHtml, renderWhatIf } from "./me/whatif.js?v=20261025121518";  // feature: whatif (config.features.whatif)
 
 const S = {
   tab: "standings",

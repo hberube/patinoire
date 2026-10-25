@@ -4,8 +4,8 @@
 //   - horn: 3 goal horns made with Web Audio (no sound files); the choice also applies to the TV mode
 //   - confetti in your colours when one of your players scores, while the page is open
 // Off switch: config.features.look. Hook: applyLook() in renderAll(), celebrate() in refreshLive().
-import { t } from "../i18n.js";
-import { esc, asset } from "../util.js";
+import { t } from "../i18n.js?v=20261025121518";
+import { esc, asset } from "../util.js?v=20261025121518";
 
 const HORN_KEY = "patinoire_horn_kind", CONFETTI_KEY = "patinoire_confetti";
 const store = {

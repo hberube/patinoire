@@ -1,6 +1,6 @@
 // Client-side PIN check against data/users.json (salted PBKDF2, see scripts/make_pins.py).
 // This only identifies family members on the site; trades still need Hugo's approval.
-import { fetchJson } from "./util.js";
+import { fetchJson } from "./util.js?v=20261025121518";
 
 const SESSION_KEY = "pool_session";
 const ITERATIONS = 100000;

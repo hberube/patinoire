@@ -1,10 +1,10 @@
 // Commissioner panel: review a participant's trade code and dispatch the trade workflow.
 // The GitHub token never leaves this browser except in the request to api.github.com.
-import { getSession, hashPin, newSalt } from "../js/auth.js";
-import { decodeTrade, validateTrade } from "../js/trade.js";
-import { esc, fetchJson, headshot } from "../js/util.js";
-import { parseContacts } from "./contacts.js";
-import { prepareImage, blobToBase64 } from "../js/image.js";
+import { getSession, hashPin, newSalt } from "../js/auth.js?v=20261025121518";
+import { decodeTrade, validateTrade } from "../js/trade.js?v=20261025121518";
+import { esc, fetchJson, headshot } from "../js/util.js?v=20261025121518";
+import { parseContacts } from "./contacts.js?v=20261025121518";
+import { prepareImage, blobToBase64 } from "../js/image.js?v=20261025121518";
 
 // On GitHub Pages the address is https://<owner>.github.io/<repo>/admin/, so the repo the
 // workflows live in is read from it; the fallback is for local testing.
@@ -292,7 +292,7 @@ function setupLogos() {
 let refreshMail = () => {};
 
 function mailTemplates() {
-  const site = new URL(BASE, location.href).href;
+  const site = new URL("../", location.href).href;  // the site this admin page belongs to (dev/ in the preview)
   const opens = new Date(D.config.tradeWindowStart).toLocaleDateString("fr-CA", { dateStyle: "long" });
   const { F, D: Dq, G } = D.config.maxTrades;
   return [
