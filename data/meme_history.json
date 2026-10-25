@@ -1,16 +1,6 @@
 {
   "memes": [
     {
-      "gameDay": "2026-10-14",
-      "category": "player",
-      "format": "classic",
-      "subjectName": "Alex Tuch",
-      "fr": {
-        "top": "MICHEL EST LE SEUL À AVOIR ALEX TUCH",
-        "bottom": "TUCH MARQUE DEUX FOIS, LES DUCKS FONT LA FÊTE"
-      }
-    },
-    {
       "gameDay": "2026-10-15",
       "category": "player",
       "format": "classic",
@@ -123,6 +113,23 @@
       "fr": {
         "top": "TRIPLE ÉGALITÉ AU BINGO : 4 LIGNES CHACUN",
         "bottom": "FLORENCE LANCE DÉJÀ « BINGO (FLORENCE'S VERSION) »"
+      }
+    },
+    {
+      "gameDay": "2026-10-24",
+      "category": "participant",
+      "format": "versus",
+      "subject": {
+        "kind": "team",
+        "id": "usr_michel_bry"
+      },
+      "subject2": {
+        "kind": "team",
+        "id": "usr_guillaume_brossard"
+      },
+      "fr": {
+        "no": "MICHEL : 18 PTS HIER, 1ER RANG, PETITE SIESTE SUR LE TRÔNE",
+        "yes": "GUILLAUME : 19 PTS + BINGO À 6 LIGNES. LE KIWI EST À 14 DU TRÔNE"
       }
     }
   ]

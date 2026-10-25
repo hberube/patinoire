@@ -1,36 +1,34 @@
 {
-  "gameDay": "2026-10-23",
-  "generatedAt": "2026-10-24T08:31:04Z",
+  "gameDay": "2026-10-24",
+  "generatedAt": "2026-10-25T08:31:16Z",
   "fr": {
-    "title": "MacKinnon régale, Sylvianne grimpe, Vincent dégringole",
+    "title": "Guillaume vole le bingo et file au 2e rang",
     "bullets": [
-      "MacKinnon marque et Necas l'aide: 17 participants applaudissent. Bedard a aussi allumé la lumière à Chicago. 🚨",
-      "Michel garde la tête avec 248 points. Hugo suit à 236, Guillaume à 233.",
-      "Sylvianne a la meilleure soirée (+9) et passe au 4e rang. Égalité à 227 avec Simon, mais ses 13 lignes de bingo contre 8 font la différence.",
-      "Bingo: Sylvianne, Elrick et Florence ont chacun 4 lignes. Alexandre a fini dernier avec 0 ligne. 🎯",
-      "Vincent n'a que 2 points et recule de deux rangs. Eve en gagne deux et monte au 10e.",
-      "Infirmerie: Malkin (PIT) est malade, au jour le jour, chez Eve et Vicky. Marner (VGK) passe d'absent à incertain, chez 8 participants."
+      "Guillaume (Laser Kiwis) a fait 19 points, le meilleur total de la soirée, et dépasse Hugo pour le 2e rang. 🚀",
+      "Michel (Les Ducks) garde la tête avec 266 points, 14 d'avance. Alex Tuch a marqué dans la victoire en prolongation de Washington.",
+      "Bingo : Guillaume l'emporte avec 6 lignes. Michel et Simon suivent à 5, Vicky ferme la marche avec 1 ligne. 🎯",
+      "Draisaitl a marqué chez 9 participants, avec McDavid et Bouchard aux passes. Kaprizov a fait sourire Vincent, le seul à l'avoir.",
+      "Infirmerie : Evgeni Malkin (PIT) est absent pour maladie jusqu'au 29 octobre, mauvaise nouvelle pour Eve et Vicky. Logan Thompson (WSH, 6 participants) passe à la liste des blessés."
     ]
   },
   "en": {
-    "title": "MacKinnon delivers, Sylvianne climbs, Vincent slides",
+    "title": "Guillaume steals the bingo and climbs to 2nd",
     "bullets": [
-      "MacKinnon scored with an assist from Necas, and 17 participants cheered. Bedard also lit the lamp in Chicago. 🚨",
-      "Michel holds the lead with 248 points. Hugo follows at 236, Guillaume at 233.",
-      "Sylvianne had the best night (+9) and moved up to 4th. Tied at 227 with Simon, but 13 bingo lines to 8 settle it.",
-      "Bingo: Sylvianne, Elrick and Florence each got 4 lines. Alexandre finished last with 0 lines. 🎯",
-      "Vincent got just 2 points and fell two spots. Eve gained two and is now 10th.",
-      "Infirmary: Malkin (PIT) is sick, day-to-day, owned by Eve and Vicky. Marner (VGK) goes from out to day-to-day, owned by 8 participants."
+      "Guillaume (Laser Kiwis) racked up 19 points, the night's best, and passes Hugo for 2nd. 🚀",
+      "Michel (Les Ducks) holds the lead with 266 points, 14 ahead. Alex Tuch scored in Washington's OT win.",
+      "Bingo: Guillaume wins with 6 lines. Michel and Simon follow with 5, Vicky brings up the rear with 1. 🎯",
+      "Draisaitl scored for 9 participants, with McDavid and Bouchard on the assists. Kaprizov made Vincent smile, the only owner.",
+      "Infirmary: Evgeni Malkin (PIT) is out with illness until Oct. 29, bad news for Eve and Vicky. Logan Thompson (WSH, 6 participants) moves to injured reserve."
     ]
   },
   "image": {
     "fr": {
       "src": "data/recap-fr.png",
-      "alt": "TRIPLE ÉGALITÉ AU BINGO : 4 LIGNES CHACUN / FLORENCE LANCE DÉJÀ « BINGO (FLORENCE'S VERSION) »"
+      "alt": "MICHEL : 18 PTS HIER, 1ER RANG, PETITE SIESTE SUR LE TRÔNE / GUILLAUME : 19 PTS + BINGO À 6 LIGNES. LE KIWI EST À 14 DU TRÔNE"
     },
     "en": {
       "src": "data/recap-en.png",
-      "alt": "THREE-WAY BINGO TIE: 4 LINES EACH / FLORENCE IS ALREADY RE-RECORDING IT AS (FLORENCE'S VERSION)"
+      "alt": "MICHEL: 18 PTS AND A COMFY NAP ON THE THRONE / GUILLAUME: 19 PTS + 6-LINE BINGO. THE KIWI SMELLS THE CROWN"
     }
   }
 }
