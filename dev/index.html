@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>DEV · Le Pool à Hugo</title>
+  <meta name="description" content="Le pool de hockey de la famille — classement, équipes et échanges.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏒</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="robots" content="noindex">
+  <script>window.POOL_ROOT = "../";</script>
+  <style>body::before{content:"DEV · aperçu";position:fixed;z-index:2000;left:50%;bottom:10px;transform:translateX(-50%);background:#f5b301;color:#111;font:700 12px/1 Inter,sans-serif;padding:7px 12px;border-radius:999px;box-shadow:0 2px 8px rgba(0,0,0,.3);pointer-events:none}</style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <h1 id="pool-name">Le Pool à Hugo</h1>
+      <div class="updated"><span data-i18n="updated"></span> <span id="last-updated">—</span></div>
+    </div>
+  </header>
+
+  <nav class="topbar">
+    <div class="topbar-inner">
+      <span class="mobile-updated muted"><span data-i18n="updated"></span> <span id="last-updated-m">—</span></span>
+      <div class="tabs" role="tablist">
+        <button class="tab" role="tab" data-tab="standings"><span class="ico">🏆</span><span data-i18n="standings"></span></button>
+        <button class="tab" role="tab" data-tab="gazette"><span class="ico">📰</span><span data-i18n="gazette"></span></button>
+        <button class="tab" role="tab" data-tab="teams"><span class="ico">🧊</span><span data-i18n="teams"></span></button>
+        <button class="tab" role="tab" data-tab="chart"><span class="ico">📈</span><span data-i18n="trajectory"></span></button>
+        <button class="tab" role="tab" data-tab="tonight"><span class="ico">🏒</span><span data-i18n="tonight"></span></button>
+        <button class="tab" role="tab" data-tab="tv"><span class="ico">📺</span><span data-i18n="tv"></span></button>
+        <button class="tab" role="tab" data-tab="bingo"><span class="ico">🎱</span><span data-i18n="bingo"></span></button>
+        <button class="tab" role="tab" data-tab="injuries"><span class="ico">🚑</span><span data-i18n="injuries"></span></button>
+        <button class="tab" role="tab" data-tab="trades"><span class="ico">🔄</span><span data-i18n="trades"></span></button>
+        <button class="tab" role="tab" data-tab="faq"><span class="ico">❓</span><span data-i18n="faq"></span></button>
+      </div>
+      <div class="actions">
+        <span id="live-pill" class="live-pill hidden" data-i18n="live"></span>
+        <button id="btn-lang" class="btn btn-sm btn-ghost" aria-label="Language">EN</button>
+        <div id="auth-controls" class="actions"></div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="panel" id="panel-standings">
+      <div id="pour-toi"></div>
+      <div id="recap"></div>
+      <div id="radio"></div>
+      <div id="podium" class="podium"></div>
+      <div id="awards" class="awards"></div>
+      <div class="section-head"><h2 data-i18n="standings"></h2><span class="muted" data-i18n="clickTeam"></span></div>
+      <div class="card table-wrap"><table id="standings-table"></table></div>
+      <div id="bottom-race"></div>
+    </section>
+
+    <section class="panel" id="panel-gazette">
+      <div class="paper">
+        <header class="np-mast" id="np-mast"></header>
+        <article class="np-lead" id="np-lead"></article>
+        <div class="np-cols">
+          <section class="np-sec">
+            <div class="np-kicker" data-i18n="npBriefs"></div>
+            <h2 class="np-h" data-i18n="poolGoals"></h2><div class="np-sub" id="hl-day"></div>
+            <div id="highlights"></div>
+          </section>
+          <section class="np-sec">
+            <div class="np-kicker" data-i18n="npSports"></div>
+            <h2 class="np-h" data-i18n="duels"></h2><div class="np-sub" id="duel-week"></div>
+            <div id="duels"></div>
+          </section>
+          <aside class="np-box" id="infirmary-box"></aside>
+          <section class="np-sec">
+            <div class="np-kicker" data-i18n="npChron"></div>
+            <h2 class="np-h" data-i18n="bustsSteals"></h2>
+            <div id="badges"></div>
+          </section>
+          <section class="np-sec">
+            <div class="np-kicker" data-i18n="npAds"></div>
+            <h2 class="np-h" data-i18n="milestones"></h2>
+            <div id="milestones"></div>
+          </section>
+          <section class="np-sec">
+            <div class="np-kicker" data-i18n="npCarnet"></div>
+            <h2 class="np-h" data-i18n="trophyCase"></h2>
+            <div id="trophies"></div>
+            <h2 class="np-h np-h2" data-i18n="records"></h2>
+            <div id="records"></div>
+          </section>
+          <aside id="newyear-cup"></aside>
+          <aside id="palmares"></aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="panel-teams">
+      <div id="cards-root"></div>
+      <div id="my-team"></div>
+      <div class="section-head"><h2 data-i18n="teams"></h2></div>
+      <div id="teams-grid" class="grid teams"></div>
+    </section>
+
+    <section class="panel" id="panel-chart">
+      <div class="section-head"><h2 data-i18n="trajectory"></h2><span class="muted" data-i18n="chartHint"></span></div>
+      <div class="card chart-card" id="traj-chart"></div>
+      <div id="chart-picker" class="picker"></div>
+    </section>
+
+    <section class="panel" id="panel-tonight">
+      <div class="section-head"><h2 id="tonight-title" data-i18n="tonight"></h2>
+        <span class="head-right"><span class="muted" id="tonight-updated"></span><button class="btn btn-sm" id="horn-toggle" hidden></button></span></div>
+      <div id="my-games"></div>
+      <div id="tonight-rank"></div>
+      <div id="games" class="grid games"></div>
+    </section>
+
+    <section class="panel" id="panel-tv">
+      <div id="tv-root"></div>
+    </section>
+
+    <section class="panel" id="panel-bingo">
+      <div id="bingo-root"></div>
+    </section>
+
+    <section class="panel" id="panel-injuries">
+      <div id="injuries-root"></div>
+    </section>
+
+    <section class="panel" id="panel-trades">
+      <div id="trade-advisor"></div>
+      <div id="trade-builder"></div>
+      <div class="section-head"><h2 data-i18n="rules"></h2><span id="window-status"></span></div>
+      <div class="card card-pad"><ul class="rules" id="rules"></ul></div>
+      <div class="section-head"><h2 data-i18n="tradeHistory"></h2></div>
+      <div class="card card-pad" id="trade-history"></div>
+    </section>
+    <section class="panel" id="panel-faq">
+      <div class="section-head"><h2 data-i18n="faqTitle"></h2></div>
+      <div id="faq-root"></div>
+    </section>
+  </main>
+
+  <footer><span data-i18n="footer"></span> · <a href="https://www.nhl.com" rel="noopener">NHL.com</a></footer>
+
+  <dialog id="team-modal"></dialog>
+  <dialog id="image-modal"></dialog>
+  <dialog id="login-modal">
+    <form class="login-form" id="login-form" method="dialog">
+      <h2 data-i18n="login"></h2>
+      <label class="field"><span data-i18n="who"></span>
+        <select class="input" id="login-user" required></select>
+      </label>
+      <label class="field"><span data-i18n="pin"></span>
+        <input class="input" id="login-pin" type="password" inputmode="numeric" autocomplete="current-password" required>
+      </label>
+      <p class="muted" style="margin:0;font-size:13px" data-i18n="pinHint"></p>
+      <p class="error-text" id="login-error"></p>
+      <div class="actions" style="justify-content:flex-end">
+        <button type="button" class="btn" id="login-cancel" data-i18n="cancel"></button>
+        <button type="submit" class="btn btn-primary" id="login-submit" data-i18n="signIn"></button>
+      </div>
+    </form>
+  </dialog>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
