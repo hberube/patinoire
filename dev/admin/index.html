@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex">
+  <title>DEV · Admin — Le Pool à Hugo</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏒</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="admin.css">
+  <meta name="robots" content="noindex">
+  <script>window.POOL_ROOT = "../../";</script>
+  <style>body::before{content:"DEV · aperçu";position:fixed;z-index:2000;left:50%;bottom:10px;transform:translateX(-50%);background:#f5b301;color:#111;font:700 12px/1 Inter,sans-serif;padding:7px 12px;border-radius:999px;box-shadow:0 2px 8px rgba(0,0,0,.3);pointer-events:none}</style>
+</head>
+<body>
+  <nav class="topbar">
+    <div class="topbar-inner">
+      <strong class="admin-title">🏒 Admin</strong>
+      <div class="actions" style="margin-left:auto">
+        <a class="btn btn-sm" href="../index.html">← Pool</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div id="gate" class="card card-pad hidden">
+      Cette page est réservée à l'administrateur. <a href="../index.html#trades">Connectez-vous</a> avec le NIP admin.
+    </div>
+
+    <div id="admin" class="hidden">
+      <section>
+        <div class="section-head"><h2>1. Approuver un échange</h2><span id="window" class="muted"></span></div>
+        <div class="card card-pad grid">
+          <label class="field">Collez le message ou le code reçu
+            <textarea class="input code-box" id="trade-input" placeholder="Échange — Le Pool à Hugo …"></textarea>
+          </label>
+          <div id="trade-preview"></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head"><h2>2. Contacts (privé)</h2><span id="contacts-count" class="muted"></span></div>
+        <div class="card card-pad grid">
+          <p class="hint">Chargez l'export du formulaire (<code>roster_2027.txt</code>) pour voir l'adresse attendue de chaque échange.
+            Les courriels restent <b>seulement dans ce navigateur</b>, jamais sur GitHub.</p>
+          <div class="form-row">
+            <input class="input" type="file" id="contacts-file" accept=".txt,.tsv,.csv">
+            <button class="btn btn-ghost" id="contacts-forget">Oublier les contacts</button>
+          </div>
+          <p class="status-line" id="contacts-status"></p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head"><h2>3. Courriel à tous</h2><span id="mail-count" class="muted"></span></div>
+        <div class="card card-pad grid">
+          <p class="hint">Prépare un courriel pour tous les participants, en <b>copie cachée (CCI)</b> : personne ne voit
+            l'adresse des autres. Il s'ouvre dans Gmail ou dans votre application de courriel; vous le relisez et l'envoyez vous-même.</p>
+          <label class="field">Modèle
+            <select class="input" id="mail-template"></select>
+          </label>
+          <label class="field">Objet
+            <input class="input" id="mail-subject">
+          </label>
+          <label class="field">Message
+            <textarea class="input mail-body" id="mail-body" rows="12"></textarea>
+          </label>
+          <details class="recipients">
+            <summary id="mail-recipients-summary">Destinataires</summary>
+            <div class="form-row" style="margin:8px 0">
+              <button class="btn btn-sm" id="mail-all">Tous</button>
+              <button class="btn btn-sm btn-ghost" id="mail-none">Aucun</button>
+            </div>
+            <div id="mail-recipients" class="recipient-list"></div>
+          </details>
+          <div class="form-row">
+            <a class="btn btn-primary" id="mail-gmail" target="_blank" rel="noopener">Ouvrir dans Gmail</a>
+            <a class="btn" id="mail-app">Application de courriel</a>
+            <button class="btn btn-ghost" id="mail-copy">Copier les adresses</button>
+          </div>
+          <p class="status-line" id="mail-status"></p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head"><h2>4. Jeton GitHub</h2></div>
+        <div class="card card-pad grid">
+          <p class="hint">Un jeton <b>fine-grained</b> limité au dépôt <code id="repo-name">hberube/patinoire</code>, permission
+            <b>Actions: Read and write</b>. Il reste seulement dans ce navigateur.
+            <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">Créer un jeton</a></p>
+          <div class="form-row">
+            <input class="input" type="password" id="gh-token" placeholder="github_pat_…" autocomplete="off">
+            <button class="btn" id="save-token">Enregistrer</button>
+            <button class="btn btn-ghost" id="forget-token">Oublier</button>
+          </div>
+          <div class="form-row">
+            <button class="btn" id="run-daily">Mettre à jour les stats maintenant</button>
+            <a class="btn btn-ghost" id="actions-link" target="_blank" rel="noopener">Voir les GitHub Actions ↗</a>
+          </div>
+          <p class="status-line" id="token-status"></p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head"><h2>5. NIP d'un participant</h2></div>
+        <div class="card card-pad grid">
+          <p class="hint">Génère l'entrée à coller dans <code>data/users.json</code> (remplace l'ancienne entrée de cette personne).
+            Ou en ligne de commande : <code>python scripts/make_pins.py usr_… 1234</code>.</p>
+          <div class="form-row">
+            <select class="input" id="pin-user"></select>
+            <input class="input" id="pin-value" inputmode="numeric" placeholder="NIP (vide = aléatoire)" style="max-width:200px">
+            <button class="btn" id="pin-make">Générer</button>
+          </div>
+          <textarea class="input code-box hidden" id="pin-output" readonly></textarea>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head"><h2>6. Images d'équipe</h2></div>
+        <div class="card card-pad grid">
+          <p class="hint">Publiez le logo d'équipe ou la photo qu'un participant vous a envoyé. Elle est recadrée et
+            convertie automatiquement, puis apparaît sur le site 2-3 minutes après.</p>
+          <div class="form-row">
+            <select class="input" id="logo-user"></select>
+            <select class="input" id="logo-kind" style="max-width:200px">
+              <option value="logo">Logo d'équipe</option>
+              <option value="face">Photo (visage)</option>
+            </select>
+            <label class="btn">Choisir l'image…<input type="file" id="logo-file" accept="image/*" class="hidden"></label>
+          </div>
+          <div class="form-row">
+            <span id="logo-current"></span><span class="arrow">➜</span><span id="logo-new" class="muted">—</span>
+          </div>
+          <div class="form-row">
+            <button class="btn btn-primary" id="logo-publish" disabled>Publier l'image</button>
+            <button class="btn btn-ghost" id="logo-remove">Retirer l'image actuelle</button>
+          </div>
+          <p class="status-line" id="logo-status"></p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head"><h2>7. Renommer une équipe</h2></div>
+        <div class="card card-pad grid">
+          <p class="hint">Change le nom d'une équipe (ou le nom affiché du participant). Les points, les choix, les échanges
+            et les images ne changent pas. Visible sur le site 2-3 minutes après.</p>
+          <select class="input" id="rename-user"></select>
+          <div class="form-row">
+            <label class="field" style="flex:2;min-width:220px">Nom de l'équipe
+              <input class="input" id="rename-team" maxlength="60"></label>
+            <label class="field" style="flex:1;min-width:160px">Nom du participant
+              <input class="input" id="rename-name" maxlength="60"></label>
+          </div>
+          <div class="form-row">
+            <button class="btn btn-primary" id="rename-go" disabled>Renommer</button>
+          </div>
+          <p class="status-line" id="rename-status"></p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head"><h2>8. Sections du site</h2></div>
+        <div class="card card-pad grid">
+          <p class="hint">Décochez ce que personne ne doit voir. Rien n'est effacé : recochez pour le remettre.
+            Classement reste toujours. Visible sur le site 2-3 minutes après.</p>
+          <h3 class="sec-h">Onglets</h3>
+          <div class="sec-grid" id="sections-tabs"></div>
+          <h3 class="sec-h">Fonctions</h3>
+          <div class="sec-grid" id="sections-features"></div>
+          <div class="form-row"><button class="btn btn-primary" id="sections-go" disabled>Appliquer</button></div>
+          <p class="status-line" id="sections-status"></p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head"><h2>9. Configuration</h2>
+          <a class="btn btn-sm" id="edit-config" target="_blank" rel="noopener">Modifier config.json ↗</a></div>
+        <div class="card card-pad"><pre id="config-view" class="config-view"></pre></div>
+      </section>
+    </div>
+  </main>
+  <script type="module" src="admin.js"></script>
+</body>
+</html>

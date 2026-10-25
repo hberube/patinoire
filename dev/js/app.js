@@ -257,8 +257,16 @@ function markGazetteNew() {
   }
 }
 
+// Tabs the admin hid for everyone (config.hiddenTabs, set from the admin page); Classement always stays
+const tabHidden = tab => tab !== "standings" && ((S.config?.hiddenTabs || []).includes(tab)
+  || (tab === "tv" && S.config?.features?.arena === false));
+function applyHiddenTabs() {
+  document.querySelectorAll(".tab").forEach(b => b.classList.toggle("hidden", tabHidden(b.dataset.tab)));
+  if (tabHidden(S.tab)) showTab("standings");
+}
+
 function showTab(tab) {
-  S.tab = TABS.includes(tab) ? tab : "standings";
+  S.tab = TABS.includes(tab) && !tabHidden(tab) ? tab : "standings";
   if (S.tab === "gazette") {
     try { localStorage.setItem(GAZETTE_NEW_KEY, "1"); } catch { /* private mode */ }
     document.querySelector('.tab[data-tab="gazette"] .np-new')?.remove();
@@ -302,6 +310,7 @@ function renderAll() {
   renderTonight();
   renderBingo();
   renderTvTab();  // feature: arena
+  applyHiddenTabs();
   renderInjuries();
   renderGazette();
   renderFaq();
@@ -380,7 +389,7 @@ function renderAuth() {
   if (session) {
     box.innerHTML = `
       <span class="user-chip">${esc(session.displayName)}</span>
-      ${session.role === "admin" ? `<a class="btn btn-sm" href="${asset("admin/")}">${esc(t("admin"))}</a>` : ""}
+      ${session.role === "admin" ? `<a class="btn btn-sm" href="admin/">${esc(t("admin"))}</a>` : ""}
       <button class="btn btn-sm" id="btn-logout">${esc(t("logout"))}</button>`;
     box.querySelector("#btn-logout").addEventListener("click", () => { logout(); renderAll(); });
   } else {
@@ -1190,7 +1199,7 @@ function renderTradeBuilder() {
     : `<div class="empty">${esc(t("pickOutFirst"))}</div>`;
 
   const message = tr.code && out && inn ? t("tradeMsg", { name: s.participantName, team: s.teamName, pos: posLabel(out.pos), round: out.group, out: out.name, in: inn.name, code: tr.code,
-    link: new URL(asset(`admin/#code=${tr.code}`), location.href.split("#")[0]).href }) : "";
+    link: new URL(`admin/#code=${tr.code}`, location.href.split("#")[0]).href }) : "";
 
   el.innerHTML = `
     <div class="section-head"><h2>${esc(t("proposeTrade"))}</h2><div class="quota">${quota}</div></div>
