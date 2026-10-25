@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-25T04:42:19Z",
+  "lastUpdated": "2026-10-25T08:30:46Z",
   "gameDay": "2026-10-24",
   "highlights": [
     {
@@ -827,8 +827,8 @@
     },
     "8477946": {
       "last5": 3,
-      "games": 8,
-      "dry": 1
+      "games": 9,
+      "dry": 2
     },
     "8477949": {
       "last5": 6,
@@ -882,8 +882,8 @@
     },
     "8478864": {
       "last5": 8,
-      "games": 11,
-      "dry": 1
+      "games": 12,
+      "dry": 0
     },
     "8478872": {
       "last5": 4,
@@ -967,8 +967,8 @@
     },
     "8480800": {
       "last5": 4,
-      "games": 11,
-      "dry": 1
+      "games": 12,
+      "dry": 0
     },
     "8480801": {
       "last5": 10,
@@ -1011,14 +1011,14 @@
       "dry": 1
     },
     "8481542": {
-      "last5": 3,
-      "games": 10,
-      "dry": 2
+      "last5": 2,
+      "games": 11,
+      "dry": 3
     },
     "8481557": {
-      "last5": 6,
-      "games": 11,
-      "dry": 1
+      "last5": 7,
+      "games": 12,
+      "dry": 0
     },
     "8481559": {
       "last5": 4,
@@ -1098,11 +1098,11 @@
   },
   "awards": {
     "goldenPick": {
-      "id": 8477956,
-      "name": "David Pastrnak",
-      "team": "BOS",
+      "id": 8478864,
+      "name": "Kirill Kaprizov",
+      "team": "MIN",
       "pos": "F",
-      "points": 17,
+      "points": 19,
       "owners": 1
     },
     "iceAnchor": {
@@ -1192,17 +1192,6 @@
       "target": 10
     },
     {
-      "id": 8481557,
-      "name": "Matt Boldy",
-      "team": "MIN",
-      "pos": "F",
-      "points": 9,
-      "owners": 2,
-      "stat": "points",
-      "value": 9,
-      "target": 10
-    },
-    {
       "id": 8475158,
       "name": "Ryan O'Reilly",
       "team": "NSH",
@@ -1247,6 +1236,17 @@
       "target": 10
     },
     {
+      "id": 8478864,
+      "name": "Kirill Kaprizov",
+      "team": "MIN",
+      "pos": "F",
+      "points": 19,
+      "owners": 1,
+      "stat": "points",
+      "value": 19,
+      "target": 20
+    },
+    {
       "id": 8481540,
       "name": "Cole Caufield",
       "team": "MTL",
@@ -1263,94 +1263,94 @@
     "sims": 5000,
     "teams": {
       "usr_michel_bry": {
-        "win": 37.0,
-        "podium": 68.3,
-        "projected": 1720
+        "win": 35.4,
+        "podium": 65.4,
+        "projected": 1726
       },
       "usr_guillaume_brossard": {
-        "win": 9.0,
-        "podium": 30.1,
-        "projected": 1635
+        "win": 9.7,
+        "podium": 31.3,
+        "projected": 1648
       },
       "usr_hugo_berube": {
-        "win": 6.0,
-        "podium": 32.2,
+        "win": 5.0,
+        "podium": 29.8,
         "projected": 1648
       },
       "usr_sylvianne": {
-        "win": 12.8,
-        "podium": 37.0,
-        "projected": 1658
+        "win": 13.9,
+        "podium": 37.2,
+        "projected": 1666
       },
       "usr_simon": {
-        "win": 7.3,
-        "podium": 27.9,
-        "projected": 1638
+        "win": 6.9,
+        "podium": 27.0,
+        "projected": 1645
       },
       "usr_elrick": {
-        "win": 5.0,
-        "podium": 18.6,
-        "projected": 1594
+        "win": 5.2,
+        "podium": 20.4,
+        "projected": 1610
       },
       "usr_etienne": {
-        "win": 2.9,
-        "podium": 13.3,
-        "projected": 1592
+        "win": 2.8,
+        "podium": 12.5,
+        "projected": 1595
       },
       "usr_jackson_gagnon": {
-        "win": 3.2,
-        "podium": 12.6,
-        "projected": 1586
+        "win": 3.4,
+        "podium": 13.4,
+        "projected": 1589
       },
       "usr_alexandre_comeau": {
-        "win": 2.0,
+        "win": 1.9,
         "podium": 11.6,
-        "projected": 1596
+        "projected": 1599
       },
       "usr_vincent": {
-        "win": 5.6,
-        "podium": 14.1,
-        "projected": 1548
+        "win": 6.5,
+        "podium": 16.6,
+        "projected": 1559
       },
       "usr_eve": {
-        "win": 2.5,
-        "podium": 8.9,
-        "projected": 1553
+        "win": 2.8,
+        "podium": 9.2,
+        "projected": 1556
       },
       "usr_marjolaine_comeau": {
-        "win": 1.7,
-        "podium": 7.8,
-        "projected": 1544
+        "win": 1.9,
+        "podium": 7.9,
+        "projected": 1548
       },
       "usr_louise_trottier": {
-        "win": 1.1,
-        "podium": 7.2,
-        "projected": 1537
+        "win": 1.3,
+        "podium": 6.9,
+        "projected": 1542
       },
       "usr_julien_berube": {
-        "win": 1.1,
-        "podium": 4.0,
-        "projected": 1494
+        "win": 1.4,
+        "podium": 4.4,
+        "projected": 1496
       },
       "usr_florence": {
-        "win": 0.5,
-        "podium": 2.0,
-        "projected": 1421
+        "win": 0.4,
+        "podium": 1.8,
+        "projected": 1422
       },
       "usr_maddox_gagnon": {
-        "win": 1.5,
-        "podium": 3.4,
-        "projected": 1414
+        "win": 1.2,
+        "podium": 3.5,
+        "projected": 1416
       },
       "usr_jolyne_brossard": {
         "win": 0.1,
         "podium": 0.8,
-        "projected": 1431
+        "projected": 1435
       },
       "usr_vicky": {
-        "win": 0.5,
-        "podium": 2.0,
-        "projected": 1394
+        "win": 0.4,
+        "podium": 1.9,
+        "projected": 1397
       }
     },
     "before": {
