@@ -15,7 +15,13 @@ cp -r index.html js css admin dev/
 # Same CSS, but its images are one folder further up
 sed -i 's#url("\.\./img/#url("../../img/#g' dev/css/style.css
 python3 - <<'PY'
+import re, time
 from pathlib import Path
+STAMP = time.strftime("%Y%m%d%H%M%S")
+# ...and the same for every import between modules (./x.js, ../js/x.js)
+for js in [*Path("dev/js").rglob("*.js"), *Path("dev/admin").glob("*.js")]:
+  t = js.read_text(encoding="utf-8")
+  js.write_text(re.sub(r'((?:from|import)\s*\(?\s*)"(\.{1,2}/[^"?]+\.js)"', rf'\1"\2?v={STAMP}"', t), encoding="utf-8")
 for page, root in (("dev/index.html", "../"), ("dev/admin/index.html", "../../")):
   p = Path(page); s = p.read_text(encoding="utf-8")
   head = ('  <meta name="robots" content="noindex">\n'
@@ -23,6 +29,8 @@ for page, root in (("dev/index.html", "../"), ("dev/admin/index.html", "../../")
         '  <style>body::before{content:"DEV · aperçu";position:fixed;z-index:2000;left:50%;bottom:10px;'
         'transform:translateX(-50%);background:#f5b301;color:#111;font:700 12px/1 Inter,sans-serif;padding:7px 12px;'
         'border-radius:999px;box-shadow:0 2px 8px rgba(0,0,0,.3);pointer-events:none}</style>\n')
+  # A new address for every file at each publish, so browsers never run an older preview from cache
+  s = re.sub(r'(src|href)="((?:\.\./)?(?:js|css)/[^"?]+|admin\.(?:js|css))"', rf'\1="\2?v={STAMP}"', s)
   assert s.count("</head>") == 1 and s.count("<title>") == 1
   s = s.replace("</head>", head + "</head>").replace("<title>", "<title>DEV · ")
   p.write_text(s, encoding="utf-8")
