@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25T08:30:45Z",
+  "updated": "2026-10-26T04:33:02Z",
   "source": "ESPN",
   "players": [
     {
@@ -53,7 +53,7 @@
       "pos": "G",
       "status": "ir",
       "type": "Lower Body",
-      "returnDate": "2026-10-29",
+      "returnDate": "2026-11-07",
       "noteDate": "2026-10-22",
       "note": "Ullmark (lower body) is expected to miss the next 1-2 weeks, Claire Hanna of TSN reports Thursday."
     },
@@ -97,29 +97,7 @@
       "pos": "G",
       "status": "out",
       "type": "Not Injury Related",
-      "returnDate": "2026-10-27",
-      "noteDate": "2026-10-24",
-      "note": "out"
-    },
-    {
-      "id": 8471215,
-      "name": "Evgeni Malkin",
-      "team": "PIT",
-      "pos": "F",
-      "status": "out",
-      "type": "Illness",
-      "returnDate": "2026-10-29",
-      "noteDate": "2026-10-24",
-      "note": "out"
-    },
-    {
-      "id": 8478483,
-      "name": "Mitch Marner",
-      "team": "VGK",
-      "pos": "F",
-      "status": "out",
-      "type": "Personal",
-      "returnDate": "2026-10-27",
+      "returnDate": "2026-10-30",
       "noteDate": "2026-10-24",
       "note": "out"
     },
@@ -133,6 +111,28 @@
       "returnDate": "2026-11-18",
       "noteDate": "2026-10-22",
       "note": "out"
+    },
+    {
+      "id": 8471215,
+      "name": "Evgeni Malkin",
+      "team": "PIT",
+      "pos": "F",
+      "status": "dtd",
+      "type": "Illness",
+      "returnDate": "2026-10-29",
+      "noteDate": "2026-10-25",
+      "note": "day-to-day"
+    },
+    {
+      "id": 8478483,
+      "name": "Mitch Marner",
+      "team": "VGK",
+      "pos": "F",
+      "status": "dtd",
+      "type": "Personal",
+      "returnDate": "2026-10-27",
+      "noteDate": "2026-10-25",
+      "note": "day-to-day"
     }
   ]
 }
