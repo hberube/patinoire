@@ -21,6 +21,13 @@
     "points": 21
   },
   {
+    "id": 8478864,
+    "name": "Kirill Kaprizov",
+    "pos": "F",
+    "team": "MIN",
+    "points": 21
+  },
+  {
     "id": 8477492,
     "name": "Nathan MacKinnon",
     "pos": "F",
@@ -39,13 +46,6 @@
     "name": "Jack Eichel",
     "pos": "F",
     "team": "VGK",
-    "points": 19
-  },
-  {
-    "id": 8478864,
-    "name": "Kirill Kaprizov",
-    "pos": "F",
-    "team": "MIN",
     "points": 19
   },
   {
@@ -88,6 +88,13 @@
     "name": "Matthew Tkachuk",
     "pos": "F",
     "team": "FLA",
+    "points": 16
+  },
+  {
+    "id": 8480800,
+    "name": "Quinn Hughes",
+    "pos": "D",
+    "team": "MIN",
     "points": 16
   },
   {
@@ -161,13 +168,6 @@
     "points": 14
   },
   {
-    "id": 8480800,
-    "name": "Quinn Hughes",
-    "pos": "D",
-    "team": "MIN",
-    "points": 14
-  },
-  {
     "id": 8474564,
     "name": "Steven Stamkos",
     "pos": "F",
@@ -179,6 +179,13 @@
     "name": "Brandon Hagel",
     "pos": "F",
     "team": "TBL",
+    "points": 13
+  },
+  {
+    "id": 8480012,
+    "name": "Elias Pettersson",
+    "pos": "F",
+    "team": "VAN",
     "points": 13
   },
   {
@@ -249,13 +256,6 @@
     "name": "Easton Cowan",
     "pos": "F",
     "team": "TOR",
-    "points": 12
-  },
-  {
-    "id": 8480012,
-    "name": "Elias Pettersson",
-    "pos": "F",
-    "team": "VAN",
     "points": 12
   },
   {
@@ -378,6 +378,13 @@
     "points": 11
   },
   {
+    "id": 8481557,
+    "name": "Matt Boldy",
+    "pos": "F",
+    "team": "MIN",
+    "points": 11
+  },
+  {
     "id": 8476459,
     "name": "Mika Zibanejad",
     "pos": "F",
@@ -434,6 +441,13 @@
     "points": 10
   },
   {
+    "id": 8478493,
+    "name": "Joel Eriksson Ek",
+    "pos": "F",
+    "team": "MIN",
+    "points": 10
+  },
+  {
     "id": 8481554,
     "name": "Kaapo Kakko",
     "pos": "F",
@@ -452,13 +466,6 @@
     "name": "Mason McTavish",
     "pos": "F",
     "team": "STL",
-    "points": 10
-  },
-  {
-    "id": 8481557,
-    "name": "Matt Boldy",
-    "pos": "F",
-    "team": "MIN",
     "points": 10
   },
   {
@@ -553,6 +560,13 @@
     "points": 9
   },
   {
+    "id": 8478444,
+    "name": "Brock Boeser",
+    "pos": "F",
+    "team": "VAN",
+    "points": 9
+  },
+  {
     "id": 8477409,
     "name": "Carter Verhaeghe",
     "pos": "F",
@@ -634,13 +648,6 @@
     "name": "Jeremy Swayman",
     "pos": "G",
     "team": "BOS",
-    "points": 9
-  },
-  {
-    "id": 8478493,
-    "name": "Joel Eriksson Ek",
-    "pos": "F",
-    "team": "MIN",
     "points": 9
   },
   {
@@ -763,13 +770,6 @@
     "points": 8
   },
   {
-    "id": 8478444,
-    "name": "Brock Boeser",
-    "pos": "F",
-    "team": "VAN",
-    "points": 8
-  },
-  {
     "id": 8475754,
     "name": "Brock Nelson",
     "pos": "F",
@@ -791,6 +791,13 @@
     "points": 8
   },
   {
+    "id": 8479425,
+    "name": "Filip Hronek",
+    "pos": "D",
+    "team": "VAN",
+    "points": 8
+  },
+  {
     "id": 8477919,
     "name": "Freddy Gaudreau",
     "pos": "F",
@@ -809,6 +816,13 @@
     "name": "Jacob Trouba",
     "pos": "D",
     "team": "SJS",
+    "points": 8
+  },
+  {
+    "id": 8478498,
+    "name": "Jake DeBrusk",
+    "pos": "F",
+    "team": "VAN",
     "points": 8
   },
   {
@@ -858,6 +872,13 @@
     "name": "Matt Coronato",
     "pos": "F",
     "team": "CGY",
+    "points": 8
+  },
+  {
+    "id": 8485702,
+    "name": "Maxim Shabanov",
+    "pos": "F",
+    "team": "MIN",
     "points": 8
   },
   {
@@ -1008,13 +1029,6 @@
     "points": 7
   },
   {
-    "id": 8479425,
-    "name": "Filip Hronek",
-    "pos": "D",
-    "team": "VAN",
-    "points": 7
-  },
-  {
     "id": 8484210,
     "name": "Gabe Perreault",
     "pos": "F",
@@ -1047,13 +1061,6 @@
     "name": "Jaden Schwartz",
     "pos": "F",
     "team": "COL",
-    "points": 7
-  },
-  {
-    "id": 8478498,
-    "name": "Jake DeBrusk",
-    "pos": "F",
-    "team": "VAN",
     "points": 7
   },
   {
@@ -1260,6 +1267,13 @@
     "points": 6
   },
   {
+    "id": 8481553,
+    "name": "Bobby Brink",
+    "pos": "F",
+    "team": "MIN",
+    "points": 6
+  },
+  {
     "id": 8480426,
     "name": "Charle-Edouard D'Astous",
     "pos": "D",
@@ -1414,17 +1428,17 @@
     "points": 6
   },
   {
-    "id": 8485702,
-    "name": "Maxim Shabanov",
-    "pos": "F",
-    "team": "MIN",
-    "points": 6
-  },
-  {
     "id": 8478020,
     "name": "Michael Amadio",
     "pos": "F",
     "team": "OTT",
+    "points": 6
+  },
+  {
+    "id": 8477446,
+    "name": "Michael McCarron",
+    "pos": "F",
+    "team": "MIN",
     "points": 6
   },
   {
@@ -1584,13 +1598,6 @@
   {
     "id": 8476399,
     "name": "Blake Coleman",
-    "pos": "F",
-    "team": "MIN",
-    "points": 5
-  },
-  {
-    "id": 8481553,
-    "name": "Bobby Brink",
     "pos": "F",
     "team": "MIN",
     "points": 5
@@ -1883,10 +1890,10 @@
     "points": 5
   },
   {
-    "id": 8477446,
-    "name": "Michael McCarron",
+    "id": 8484136,
+    "name": "Max Sasson",
     "pos": "F",
-    "team": "MIN",
+    "team": "VAN",
     "points": 5
   },
   {
@@ -2261,6 +2268,13 @@
     "points": 4
   },
   {
+    "id": 8483678,
+    "name": "Elias Pettersson",
+    "pos": "D",
+    "team": "VAN",
+    "points": 4
+  },
+  {
     "id": 8475287,
     "name": "Erik Haula",
     "pos": "F",
@@ -2412,13 +2426,6 @@
     "name": "Matthew Knies",
     "pos": "F",
     "team": "CBJ",
-    "points": 4
-  },
-  {
-    "id": 8484136,
-    "name": "Max Sasson",
-    "pos": "F",
-    "team": "VAN",
     "points": 4
   },
   {
@@ -2755,13 +2762,6 @@
     "name": "Egor Chinakhov",
     "pos": "F",
     "team": "PIT",
-    "points": 3
-  },
-  {
-    "id": 8483678,
-    "name": "Elias Pettersson",
-    "pos": "D",
-    "team": "VAN",
     "points": 3
   },
   {
@@ -3983,6 +3983,13 @@
     "points": 1
   },
   {
+    "id": 8475717,
+    "name": "Calvin Pickard",
+    "pos": "G",
+    "team": "MIN",
+    "points": 1
+  },
+  {
     "id": 8477369,
     "name": "Carson Soucy",
     "pos": "D",
@@ -4743,13 +4750,6 @@
     "name": "Brennan Othmann",
     "pos": "F",
     "team": "CGY",
-    "points": 0
-  },
-  {
-    "id": 8475717,
-    "name": "Calvin Pickard",
-    "pos": "G",
-    "team": "MIN",
     "points": 0
   },
   {
