@@ -1,34 +1,36 @@
 {
-  "gameDay": "2026-10-24",
-  "generatedAt": "2026-10-25T08:31:16Z",
+  "gameDay": "2026-10-25",
+  "generatedAt": "2026-10-26T08:31:10Z",
   "fr": {
-    "title": "Guillaume vole le bingo et file au 2e rang",
+    "title": "Elrick bondit, Michel garde le trône du Pool",
     "bullets": [
-      "Guillaume (Laser Kiwis) a fait 19 points, le meilleur total de la soirée, et dépasse Hugo pour le 2e rang. 🚀",
-      "Michel (Les Ducks) garde la tête avec 266 points, 14 d'avance. Alex Tuch a marqué dans la victoire en prolongation de Washington.",
-      "Bingo : Guillaume l'emporte avec 6 lignes. Michel et Simon suivent à 5, Vicky ferme la marche avec 1 ligne. 🎯",
-      "Draisaitl a marqué chez 9 participants, avec McDavid et Bouchard aux passes. Kaprizov a fait sourire Vincent, le seul à l'avoir.",
-      "Infirmerie : Evgeni Malkin (PIT) est absent pour maladie jusqu'au 29 octobre, mauvaise nouvelle pour Eve et Vicky. Logan Thompson (WSH, 6 participants) passe à la liste des blessés."
+      "Michel (Les Ducks) reste en tête avec 274 points, devant Guillaume (259) et Hugo (257).",
+      "Elrick fait le plus gros bond de la soirée avec 13 points, mais Simon garde le 5e rang à égalité grâce aux lignes de bingo. 📈",
+      "Kaprizov a marqué pour Vincent, le seul à l'avoir : 12 points et une montée au 9e rang.",
+      "Bingo : Jackson rafle la mise avec 3 lignes et grimpe au 7e rang. Louise, elle, repart bredouille. 🎯",
+      "Rantanen a allumé la lumière pour 10 participants, et Hutson pour 8.",
+      "Infirmerie : Malkin (PIT, chez Eve et Vicky) et Marner (VGK, 8 participants) passent d'absents à incertains au jour le jour. 🩹"
     ]
   },
   "en": {
-    "title": "Guillaume steals the bingo and climbs to 2nd",
+    "title": "Elrick surges, Michel holds the Pool throne",
     "bullets": [
-      "Guillaume (Laser Kiwis) racked up 19 points, the night's best, and passes Hugo for 2nd. 🚀",
-      "Michel (Les Ducks) holds the lead with 266 points, 14 ahead. Alex Tuch scored in Washington's OT win.",
-      "Bingo: Guillaume wins with 6 lines. Michel and Simon follow with 5, Vicky brings up the rear with 1. 🎯",
-      "Draisaitl scored for 9 participants, with McDavid and Bouchard on the assists. Kaprizov made Vincent smile, the only owner.",
-      "Infirmary: Evgeni Malkin (PIT) is out with illness until Oct. 29, bad news for Eve and Vicky. Logan Thompson (WSH, 6 participants) moves to injured reserve."
+      "Michel (Les Ducks) stays on top with 274 points, ahead of Guillaume (259) and Hugo (257).",
+      "Elrick had the night's biggest jump with 13 points, but Simon keeps 5th in their tie thanks to bingo lines. 📈",
+      "Kaprizov scored for Vincent, the only owner: 12 points and a climb to 9th.",
+      "Bingo: Jackson takes it with 3 lines and moves up to 7th. Louise went home empty-handed. 🎯",
+      "Rantanen lit the lamp for 10 participants, and Hutson for 8.",
+      "Infirmary: Malkin (PIT, owned by Eve and Vicky) and Marner (VGK, 8 owners) go from out to day-to-day. 🩹"
     ]
   },
   "image": {
     "fr": {
       "src": "data/recap-fr.png",
-      "alt": "MICHEL : 18 PTS HIER, 1ER RANG, PETITE SIESTE SUR LE TRÔNE / GUILLAUME : 19 PTS + BINGO À 6 LIGNES. LE KIWI EST À 14 DU TRÔNE"
+      "alt": "LES ANGLERS LANCENT 3 LIGNES À L'EAU / JACKSON RAMÈNE LE BINGO. LOUISE : PÊCHE BLANCHE, 1 CASE, 0 LIGNE"
     },
     "en": {
       "src": "data/recap-en.png",
-      "alt": "MICHEL: 18 PTS AND A COMFY NAP ON THE THRONE / GUILLAUME: 19 PTS + 6-LINE BINGO. THE KIWI SMELLS THE CROWN"
+      "alt": "THE ANGLERS CAST 3 LINES / JACKSON REELS IN THE BINGO. LOUISE: ICE FISHING, 1 SQUARE, NO BITES"
     }
   }
 }

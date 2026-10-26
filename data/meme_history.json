@@ -1,16 +1,6 @@
 {
   "memes": [
     {
-      "gameDay": "2026-10-15",
-      "category": "player",
-      "format": "classic",
-      "subjectName": "Mark Stone",
-      "fr": {
-        "top": "MARK STONE SCORE TROIS FOIS EN UN SOIR",
-        "bottom": "LES 11 AUTRES PARTICIPANTS: «ON LE SAVAIT, PAS VRAI?»"
-      }
-    },
-    {
       "gameDay": "2026-10-16",
       "category": "player",
       "format": "classic",
@@ -130,6 +120,19 @@
       "fr": {
         "no": "MICHEL : 18 PTS HIER, 1ER RANG, PETITE SIESTE SUR LE TRÔNE",
         "yes": "GUILLAUME : 19 PTS + BINGO À 6 LIGNES. LE KIWI EST À 14 DU TRÔNE"
+      }
+    },
+    {
+      "gameDay": "2026-10-25",
+      "category": "bingo",
+      "format": "classic",
+      "subject": {
+        "kind": "team",
+        "id": "usr_jackson_gagnon"
+      },
+      "fr": {
+        "top": "LES ANGLERS LANCENT 3 LIGNES À L'EAU",
+        "bottom": "JACKSON RAMÈNE LE BINGO. LOUISE : PÊCHE BLANCHE, 1 CASE, 0 LIGNE"
       }
     }
   ]
