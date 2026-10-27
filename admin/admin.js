@@ -15,6 +15,8 @@ const TOKEN_KEY = "admin_gh_token";
 const CONTACTS_KEY = "admin_contacts";
 const ACTIONS_URL = `https://github.com/${OWNER}/${REPO}/actions`;
 const D = {};
+// data/ and img/ (the dev preview's copy of this page sets window.POOL_ROOT, see scripts/dev_publish.sh)
+const BASE = globalThis.POOL_ROOT || "../";
 
 const store = {
   get: () => { try { return localStorage.getItem(TOKEN_KEY) || ""; } catch { return ""; } },
@@ -28,9 +30,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
   document.getElementById("admin").classList.remove("hidden");
   [D.config, D.rosters, D.groups, D.history, D.index, D.logos] = await Promise.all([
-    fetchJson("data/config.json", "../"), fetchJson("data/rosters.json", "../"),
-    fetchJson("data/groups.json", "../"), fetchJson("data/trades_history.json", "../").catch(() => []),
-    fetchJson("data/players_index.json", "../").catch(() => []), fetchJson("data/logos.json", "../").catch(() => ({})),
+    fetchJson("data/config.json", BASE), fetchJson("data/rosters.json", BASE),
+    fetchJson("data/groups.json", BASE), fetchJson("data/trades_history.json", BASE).catch(() => []),
+    fetchJson("data/players_index.json", BASE).catch(() => []), fetchJson("data/logos.json", BASE).catch(() => ({})),
   ]);
   D.points = new Map(D.index.map(p => [p.id, p.points]));
 
@@ -48,6 +50,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   setupPins();
   setupLogos();
   setupRename();
+  setupSections();
 });
 
 // After the regular season: the bingo champion (Bingo tab) goes into data/palmares.json, which gives
@@ -56,7 +59,7 @@ async function bingoChampionReminder() {
   const end = D.config.seasonEnd, y = String(D.config.season || "");
   const season = y.length === 8 ? `${y.slice(0, 4)}-${y.slice(6)}` : y;
   if (!end || Date.now() < new Date(`${end}T12:00:00`).getTime() + 3 * 864e5) return;
-  const palmares = await fetchJson("data/palmares.json", "../").catch(() => ({}));
+  const palmares = await fetchJson("data/palmares.json", BASE).catch(() => ({}));
   if (palmares[season]?.bingo?.length) return;
   const box = document.createElement("div");
   box.className = "card card-pad";
@@ -249,7 +252,7 @@ function setupLogos() {
   const showCurrent = () => {
     const src = D.logos[select.value]?.[kindSel.value];
     document.getElementById("logo-current").innerHTML = src
-      ? `<img class="av av-lg" style="border-radius:${kindSel.value === "face" ? "50%" : "24%"}" src="../${esc(src)}" alt="">` : `<span class="muted">Aucune image</span>`;
+      ? `<img class="av av-lg" style="border-radius:${kindSel.value === "face" ? "50%" : "24%"}" src="${BASE}${esc(src)}" alt="">` : `<span class="muted">Aucune image</span>`;
   };
   select.addEventListener("change", showCurrent);
   kindSel.addEventListener("change", showCurrent);
@@ -289,7 +292,7 @@ function setupLogos() {
 let refreshMail = () => {};
 
 function mailTemplates() {
-  const site = new URL("../", location.href).href;
+  const site = new URL("../", location.href).href;  // the site this admin page belongs to (dev/ in the preview)
   const opens = new Date(D.config.tradeWindowStart).toLocaleDateString("fr-CA", { dateStyle: "long" });
   const { F, D: Dq, G } = D.config.maxTrades;
   return [
@@ -449,4 +452,39 @@ function setupRename() {
     }
   });
   fill();
+}
+
+// ---------- Site sections: hide a tab or turn off a feature for everyone ----------
+// Saved by the site-sections.yml workflow into data/config.json (hiddenTabs, features)
+const TAB_NAMES = { gazette: "📰 Gazette", teams: "🧊 Équipes", chart: "📈 Trajectoire", tonight: "🏒 Ce soir",
+  bingo: "🎱 Bingo", injuries: "🚑 Blessés", trades: "🔄 Échanges", faq: "❓ FAQ" };
+const FEATURE_NAMES = {
+  radio: "🎙️ L'émission du matin (Les Ondes)", segments: "🎙️ Le segment de la semaine (Pour toi)",
+  arena: "📺 Le mode Télé (et son onglet)", cards: "🃏 Les cartes de hockey", pourtoi: "⭐ Pour toi (les infos perso)",
+  horoscope: "🔮 L'horoscope (Pour toi)", wrapped: "🎁 Pool Wrapped (Pour toi)", badges: "🏅 Les succès",
+  rival: "⚔️ Mon rival (Pour toi)", myGames: "🏒 Mes joueurs ce soir", regrets: "😩 Mes regrets (fenêtre d'équipe)",
+  whatif: "🔮 Et si? (fenêtre d'équipe)", advisor: "🧠 Le conseiller d'échanges", look: "🎨 Mon look (couleur, sirène, confettis)",
+};
+function setupSections() {
+  const $ = id => document.getElementById(id), cfg = D.config;
+  const hidden = new Set(cfg.hiddenTabs || []), off = new Set(Object.entries(cfg.features || {}).filter(([, v]) => v === false).map(([k]) => k));
+  const box = (name, key, checked, label) => `<label class="sec-check"><input type="checkbox" name="${name}" value="${key}" ${checked ? "checked" : ""}> ${esc(label)}</label>`;
+  $("sections-tabs").innerHTML = Object.entries(TAB_NAMES).map(([k, v]) => box("tab", k, !hidden.has(k), v)).join("");
+  $("sections-features").innerHTML = Object.entries(FEATURE_NAMES).map(([k, v]) => box("feature", k, !off.has(k), v)).join("");
+  const unchecked = name => [...document.querySelectorAll(`input[name="${name}"]:not(:checked)`)].map(i => i.value).sort();
+  const same = () => unchecked("tab").join() === [...hidden].sort().join() && unchecked("feature").join() === [...off].sort().join();
+  document.querySelectorAll('input[name="tab"], input[name="feature"]').forEach(i => i.addEventListener("change", () => { $("sections-go").disabled = same(); }));
+  $("sections-go").disabled = true;
+  $("sections-go").addEventListener("click", async () => {
+    const tabs = unchecked("tab"), feats = unchecked("feature"), st = $("sections-status");
+    const lines = [tabs.length ? `Onglets cachés : ${tabs.map(k => TAB_NAMES[k]).join(", ")}` : "Tous les onglets visibles",
+      feats.length ? `Fonctions éteintes : ${feats.map(k => FEATURE_NAMES[k]).join(", ")}` : "Toutes les fonctions allumées"];
+    if (!confirm(`Pour tout le monde :\n${lines.join("\n")}\n\nOn applique?`)) return;
+    $("sections-go").disabled = true;
+    const ok = await dispatch("site-sections.yml", { hidden_tabs: tabs.join(","), features_off: feats.join(",") });
+    st.className = `status-line ${ok ? "ok" : "err"}`;
+    st.textContent = ok ? "C'est parti! Le site sera à jour dans 2-3 minutes." : document.getElementById("token-status").textContent;
+    if (ok) { hidden.clear(); tabs.forEach(k => hidden.add(k)); off.clear(); feats.forEach(k => off.add(k)); }
+    else $("sections-go").disabled = false;
+  });
 }

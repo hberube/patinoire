@@ -9,9 +9,10 @@ import { seededShuffle, makeCard, evaluate, race } from "./bingo.js";
 import { renderRadio } from "./radio.js";  // feature: radio (config.features.radio)
 import { openArena, arenaUpdate } from "./arena.js";  // feature: arena (config.features.arena)
 import { renderCards, openAlbum } from "./cards.js";  // feature: cards (config.features.cards)
-import { renderPourToi, renderMyGames, notifyMyGoals, regretsHtml } from "./me/me.js";  // signed-in features (phase 1)
+import { renderPourToi, renderMyGames, notifyMyGoals, regretsHtml, renderMyCorner } from "./me/me.js";  // signed-in features (phase 1)
 import { applyLook, celebrate, hornSound } from "./me/look.js";  // feature: look (config.features.look)
 import { badgesHtml } from "./me/badges.js";  // feature: badges (config.features.badges)
+import { V2, setupLayout, resolveTab, afterShow, curveShown, sectionHidden, renderLayout } from "./layout.js";  // layout v2 (dev preview)
 import { renderAdvisor } from "./me/advisor.js";  // feature: advisor (config.features.advisor)
 import { whatIfHtml, renderWhatIf } from "./me/whatif.js";  // feature: whatif (config.features.whatif)
 
@@ -25,6 +26,7 @@ const POS_ICON = { F: "🏒", D: "🛡️", G: "🥅" };
 
 // ---------- Boot ----------
 document.addEventListener("DOMContentLoaded", async () => {
+  setupLayout();  // layout v2: rebuilds the panels and tabs first (nothing on the live layout)
   bindChrome();
   try {
     const opt = p => fetchJson(p).catch(() => null);
@@ -58,7 +60,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   let resizeTimer;
   window.addEventListener("resize", () => {
     clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(() => { fitTopbar(); if (S.tab === "chart") renderTrajectory(); }, 150);
+    resizeTimer = setTimeout(() => { fitTopbar(); if (trajectoryShown()) renderTrajectory(); }, 150);
   });
 });
 
@@ -96,6 +98,7 @@ async function refreshLive() {
       renderBingo();
       if (S.config.features?.arena !== false) arenaUpdate(goals);  // feature: arena
       renderPourToi(document.getElementById("pour-toi"), meDeps());  // signed-in: tonight's numbers move
+      renderLayout(meDeps());  // layout v2: Accueil's "Ce soir" box
       notifyMyGoals(goals, meDeps());
       celebrate(goals, meDeps());  // feature: look
       // Bingo news first (it's yours), then the goals; one tap opens the matching tab
@@ -257,8 +260,21 @@ function markGazetteNew() {
   }
 }
 
+// Tabs the admin hid for everyone (config.hiddenTabs, set from the admin page); Classement always stays
+const tabHidden = tab => V2 ? sectionHidden(tab, S.config) : tab !== "standings" && ((S.config?.hiddenTabs || []).includes(tab)
+  || (tab === "tv" && S.config?.features?.arena === false));
+const trajectoryShown = () => (V2 ? S.tab === "standings" && curveShown() : S.tab === "chart");
+function applyHiddenTabs() {
+  document.querySelectorAll(".tab").forEach(b => b.classList.toggle("hidden", tabHidden(b.dataset.tab)));
+  if (tabHidden(S.tab)) showTab(V2 ? "home" : "standings");
+}
+
 function showTab(tab) {
-  S.tab = TABS.includes(tab) ? tab : "standings";
+  let anchor = null;
+  if (V2) {  // layout v2: old tabs map to the section that holds them now
+    ({ tab, anchor } = resolveTab(tab, S.config?.hiddenTabs || []));
+    S.tab = tabHidden(tab) ? "home" : tab;
+  } else S.tab = TABS.includes(tab) && !tabHidden(tab) ? tab : "standings";
   if (S.tab === "gazette") {
     try { localStorage.setItem(GAZETTE_NEW_KEY, "1"); } catch { /* private mode */ }
     document.querySelector('.tab[data-tab="gazette"] .np-new')?.remove();
@@ -273,7 +289,8 @@ function showTab(tab) {
     updateTabFade();
   });
   document.querySelectorAll(".panel").forEach(p => p.classList.toggle("active", p.id === `panel-${S.tab}`));
-  if (S.tab === "chart" && S.board) renderTrajectory();
+  if (V2) afterShow(anchor, () => S.board && renderTrajectory());
+  else if (S.tab === "chart" && S.board) renderTrajectory();
 }
 
 function renderAll() {
@@ -298,10 +315,12 @@ function renderAll() {
   if (radioEl) S.config.features?.radio === false ? (radioEl.innerHTML = "") : renderRadio(radioEl, S.radio, { fmtDay, playHorn });
   renderStandings();
   renderTeams();
-  if (S.tab === "chart") renderTrajectory();
+  if (V2) { renderMyCorner(document.getElementById("me-corner"), meDeps()); renderLayout(meDeps()); }  // layout v2
+  if (trajectoryShown()) renderTrajectory();
   renderTonight();
   renderBingo();
   renderTvTab();  // feature: arena
+  applyHiddenTabs();
   renderInjuries();
   renderGazette();
   renderFaq();
@@ -311,7 +330,7 @@ function renderAll() {
 // ---------- Helpers ----------
 const me = () => getSession();
 // Helpers handed to the signed-in features (js/me/), so they reuse the site's own logic
-const meDeps = () => ({ S, me, playHorn, standingOf, dayDeltas, gainOver, weekStart, weekDuels, weekScores, pastDuelWeeks,
+const meDeps = () => ({ S, me, playHorn, v2: V2, bindTeamOpeners, standingOf, dayDeltas, gainOver, weekStart, weekDuels, weekScores, pastDuelWeeks,
   bingoRace, gameState, avatar, mug, fmtDay, fmtPct, renderChart, bingoHistory, trophies });
 const standingOf = id => S.board.standings.find(s => s.participantId === id);
 const fmtDay = (iso, long) => new Date(`${iso}T12:00:00`).toLocaleDateString(locale(),
@@ -380,7 +399,7 @@ function renderAuth() {
   if (session) {
     box.innerHTML = `
       <span class="user-chip">${esc(session.displayName)}</span>
-      ${session.role === "admin" ? `<a class="btn btn-sm" href="${asset("admin/")}">${esc(t("admin"))}</a>` : ""}
+      ${session.role === "admin" ? `<a class="btn btn-sm" href="admin/">${esc(t("admin"))}</a>` : ""}
       <button class="btn btn-sm" id="btn-logout">${esc(t("logout"))}</button>`;
     box.querySelector("#btn-logout").addEventListener("click", () => { logout(); renderAll(); });
   } else {
@@ -596,7 +615,7 @@ function renderTeams() {
       <div class="card-foot">${unique ? `<span class="tag unique">★ ${esc(t(unique === 1 ? "uniqueOne" : "uniqueCount", { n: unique }))}</span>` : `<span class="muted">${esc(t("noUnique"))}</span>`}</div>
     </button>`;
   }).join("");
-  bindTeamOpeners(document.getElementById("panel-teams"));
+  bindTeamOpeners(document.getElementById(V2 ? "lay-teams" : "panel-teams"));  // layout v2 moved the grid
 }
 
 function renderMyTeam() {
@@ -1190,7 +1209,7 @@ function renderTradeBuilder() {
     : `<div class="empty">${esc(t("pickOutFirst"))}</div>`;
 
   const message = tr.code && out && inn ? t("tradeMsg", { name: s.participantName, team: s.teamName, pos: posLabel(out.pos), round: out.group, out: out.name, in: inn.name, code: tr.code,
-    link: new URL(asset(`admin/#code=${tr.code}`), location.href.split("#")[0]).href }) : "";
+    link: new URL(`admin/#code=${tr.code}`, location.href.split("#")[0]).href }) : "";
 
   el.innerHTML = `
     <div class="section-head"><h2>${esc(t("proposeTrade"))}</h2><div class="quota">${quota}</div></div>
