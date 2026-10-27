@@ -1034,7 +1034,7 @@ body.wr-open { overflow: hidden; }
 .wr-overlay .btn[aria-pressed="true"] { background: #fff; color: #0a1420; }
 /* feature: segments */
 .me-seg audio { width: 100%; height: 36px; }
-/* ---------- Layout v2 (js/layout.js): 5 sections; only on the dev preview for now ---------- */
+/* ---------- Layout v2 (js/layout.js): the 5 sections ---------- */
 body.v2 .v2-bottom { display: none; }
 body.v2 .v2-faq { padding: 6px 12px; font-weight: 800; border-bottom: 0; }
 body.v2 .lay-chips { display: flex; gap: 8px; flex-wrap: wrap; margin: 0 0 14px; }

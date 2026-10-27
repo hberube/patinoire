@@ -1,20 +1,20 @@
-import { t, getLang, setLang, applyStatic, fmtDate, locale } from "./i18n.js?v=20261026212540";
-import { esc, fetchJson, headshot, teamLogo, asset } from "./util.js?v=20261026212540";
-import { getSession, login, logout } from "./auth.js?v=20261026212540";
-import { windowOpen, tradesLeft, roundOptions, encodeTrade } from "./trade.js?v=20261026212540";
-import { renderChart } from "./chart.js?v=20261026212540";
-import { prepareImage } from "./image.js?v=20261026212540";
-import { faqContent } from "./faq.js?v=20261026212540";
-import { seededShuffle, makeCard, evaluate, race } from "./bingo.js?v=20261026212540";
-import { renderRadio } from "./radio.js?v=20261026212540";  // feature: radio (config.features.radio)
-import { openArena, arenaUpdate } from "./arena.js?v=20261026212540";  // feature: arena (config.features.arena)
-import { renderCards, openAlbum } from "./cards.js?v=20261026212540";  // feature: cards (config.features.cards)
-import { renderPourToi, renderMyGames, notifyMyGoals, regretsHtml, renderMyCorner } from "./me/me.js?v=20261026212540";  // signed-in features (phase 1)
-import { applyLook, celebrate, hornSound } from "./me/look.js?v=20261026212540";  // feature: look (config.features.look)
-import { badgesHtml } from "./me/badges.js?v=20261026212540";  // feature: badges (config.features.badges)
-import { V2, setupLayout, resolveTab, afterShow, curveShown, sectionHidden, renderLayout } from "./layout.js?v=20261026212540";  // layout v2 (dev preview)
-import { renderAdvisor } from "./me/advisor.js?v=20261026212540";  // feature: advisor (config.features.advisor)
-import { whatIfHtml, renderWhatIf } from "./me/whatif.js?v=20261026212540";  // feature: whatif (config.features.whatif)
+import { t, getLang, setLang, applyStatic, fmtDate, locale } from "./i18n.js?v=20261026213240";
+import { esc, fetchJson, headshot, teamLogo, asset } from "./util.js?v=20261026213240";
+import { getSession, login, logout } from "./auth.js?v=20261026213240";
+import { windowOpen, tradesLeft, roundOptions, encodeTrade } from "./trade.js?v=20261026213240";
+import { renderChart } from "./chart.js?v=20261026213240";
+import { prepareImage } from "./image.js?v=20261026213240";
+import { faqContent } from "./faq.js?v=20261026213240";
+import { seededShuffle, makeCard, evaluate, race } from "./bingo.js?v=20261026213240";
+import { renderRadio } from "./radio.js?v=20261026213240";  // feature: radio (config.features.radio)
+import { openArena, arenaUpdate } from "./arena.js?v=20261026213240";  // feature: arena (config.features.arena)
+import { renderCards, openAlbum } from "./cards.js?v=20261026213240";  // feature: cards (config.features.cards)
+import { renderPourToi, renderMyGames, notifyMyGoals, regretsHtml, renderMyCorner } from "./me/me.js?v=20261026213240";  // signed-in features (phase 1)
+import { applyLook, celebrate, hornSound } from "./me/look.js?v=20261026213240";  // feature: look (config.features.look)
+import { badgesHtml } from "./me/badges.js?v=20261026213240";  // feature: badges (config.features.badges)
+import { V2, setupLayout, resolveTab, afterShow, curveShown, sectionHidden, renderLayout } from "./layout.js?v=20261026213240";  // layout v2 (dev preview)
+import { renderAdvisor } from "./me/advisor.js?v=20261026213240";  // feature: advisor (config.features.advisor)
+import { whatIfHtml, renderWhatIf } from "./me/whatif.js?v=20261026213240";  // feature: whatif (config.features.whatif)
 
 const S = {
   tab: "standings",

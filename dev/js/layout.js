@@ -1,13 +1,13 @@
 // Layout v2: the site in 5 sections (Accueil · Classement · Ce soir · Gazette · Mon équipe) instead of 10 tabs.
-// Only active when window.POOL_LAYOUT === "v2" (the dev preview sets it, see scripts/dev_publish.sh); otherwise
-// this module does nothing and the live layout is untouched.
+// The default since 2026-10-26 (Hugo approved it on the dev preview). To bring back the old 10 tabs, add
+// <script>window.POOL_LAYOUT = "v1";</script> to index.html: this module then does nothing.
 // It rearranges the page once at start-up by MOVING the existing containers into the new panels, so every
 // render function in app.js keeps finding its element by id. Old links (#bingo, #chart, #trades…) are
 // mapped to the section that now holds them. Styles: the body.v2 block in css/style.css.
-import { t, getLang } from "./i18n.js?v=20261026212540";
-import { esc } from "./util.js?v=20261026212540";
+import { t, getLang } from "./i18n.js?v=20261026213240";
+import { esc } from "./util.js?v=20261026213240";
 
-export const V2 = globalThis.POOL_LAYOUT === "v2";
+export const V2 = globalThis.POOL_LAYOUT !== "v1";
 export const SECTIONS = ["home", "standings", "tonight", "gazette", "team"];
 const NAV = [["home", "🏠", "navHome"], ["standings", "🏆", "standings"], ["tonight", "🏒", "tonight"], ["gazette", "📰", "gazette"], ["team", "🧊", "navTeam"]];
 // Old tab -> [section, element to scroll to]

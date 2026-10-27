@@ -2,8 +2,8 @@
 // Live standings that re-rank as goals go in, a goal celebration, a rotating side panel and a
 // score ticker, all from the data the page already loads (refreshed every 2 minutes by app.js).
 // Self-contained so it can be removed in one go; off switch: "features": {"arena": false}.
-import { t, locale } from "./i18n.js?v=20261026212540";
-import { esc, headshot, teamLogo } from "./util.js?v=20261026212540";
+import { t, locale } from "./i18n.js?v=20261026213240";
+import { esc, headshot, teamLogo } from "./util.js?v=20261026213240";
 
 let D = null;            // dependencies from app.js: { S, avatar, playHorn, bingoRace, gameState }
 let root = null, rotateTimer = null, clockTimer = null, wakeLock = null, panel = 0;
