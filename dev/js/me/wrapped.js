@@ -4,11 +4,11 @@
 // Months follow the trophy case: the season's first few days (late September) count with October.
 // Each player's monthly points come from data/months.json (insights.py snapshots each month's start).
 // Off switch: config.features.wrapped.
-import { t, getLang, locale } from "../i18n.js?v=20261025121518";
-import { esc } from "../util.js?v=20261025121518";
-import { rivalOf } from "./me.js?v=20261025121518";
-import { achievements } from "./badges.js?v=20261025121518";
-import { accentColor } from "./look.js?v=20261025121518";
+import { t, getLang, locale } from "../i18n.js?v=20261026212540";
+import { esc } from "../util.js?v=20261026212540";
+import { rivalOf } from "./me.js?v=20261026212540";
+import { achievements } from "./badges.js?v=20261026212540";
+import { accentColor } from "./look.js?v=20261026212540";
 
 const SLIDE_MS = 6500;
 const on = D => D.S.config.features?.wrapped !== false;

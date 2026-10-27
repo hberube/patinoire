@@ -2,9 +2,9 @@
 // round and see your points as if you'd had him all along, today's rank, and the projected finish
 // (each team's points + its players' rest-of-season projection, js/me/advisor.js). Nothing is saved.
 // Off switch: config.features.whatif.
-import { t, getLang } from "../i18n.js?v=20261025121518";
-import { esc } from "../util.js?v=20261025121518";
-import { projector } from "./advisor.js?v=20261025121518";
+import { t, getLang } from "../i18n.js?v=20261026212540";
+import { esc } from "../util.js?v=20261026212540";
+import { projector } from "./advisor.js?v=20261026212540";
 
 const on = D => D.S.config.features?.whatif !== false;
 const ord = n => (n === 1 && getLang() === "fr" ? "1er" : t("whatRank", { n }));

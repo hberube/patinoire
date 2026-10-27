@@ -1,6 +1,6 @@
 // Points trajectory: every team as a muted context line, up to 3 highlighted teams in
 // series colours with end labels, plus a crosshair tooltip. Plain SVG, no library.
-import { esc } from "./util.js?v=20261025121518";
+import { esc } from "./util.js?v=20261026212540";
 
 const SLOTS = ["var(--series-1)", "var(--series-2)", "var(--series-3)"];
 const NS = "http://www.w3.org/2000/svg";

@@ -3,9 +3,9 @@
 //   pace (season points per team game) × the team's games left, minus the games an injury should cost
 //   (the expected return date in injuries.json, at the league's ~0.45 game per day).
 // "Proposer cet échange" fills the existing trade form. Off switch: config.features.advisor.
-import { t, locale } from "../i18n.js?v=20261025121518";
-import { esc } from "../util.js?v=20261025121518";
-import { tradesLeft, roundOptions } from "../trade.js?v=20261025121518";
+import { t, locale } from "../i18n.js?v=20261026212540";
+import { esc } from "../util.js?v=20261026212540";
+import { tradesLeft, roundOptions } from "../trade.js?v=20261026212540";
 
 const SEASON_GAMES = 82, GAMES_PER_DAY = 0.45;
 

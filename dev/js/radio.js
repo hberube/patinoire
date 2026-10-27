@@ -4,8 +4,8 @@
 // playing while visitors move between tabs; a floating mini player takes over whenever the
 // front-page player is out of view (another tab, or scrolled away).
 // Self-contained so it can be removed in one go; off switch: "features": {"radio": false}.
-import { t, getLang } from "./i18n.js?v=20261025121518";
-import { esc, asset } from "./util.js?v=20261025121518";
+import { t, getLang } from "./i18n.js?v=20261026212540";
+import { esc, asset } from "./util.js?v=20261026212540";
 
 const HOST = { sylvie: "Sylvie", jean: "Jean" };
 const clean = line => line.replace(/\[[a-z ]+\]\s*/gi, "");  // audio cues are for the voices only

@@ -1,19 +1,20 @@
-import { t, getLang, setLang, applyStatic, fmtDate, locale } from "./i18n.js?v=20261025121518";
-import { esc, fetchJson, headshot, teamLogo, asset } from "./util.js?v=20261025121518";
-import { getSession, login, logout } from "./auth.js?v=20261025121518";
-import { windowOpen, tradesLeft, roundOptions, encodeTrade } from "./trade.js?v=20261025121518";
-import { renderChart } from "./chart.js?v=20261025121518";
-import { prepareImage } from "./image.js?v=20261025121518";
-import { faqContent } from "./faq.js?v=20261025121518";
-import { seededShuffle, makeCard, evaluate, race } from "./bingo.js?v=20261025121518";
-import { renderRadio } from "./radio.js?v=20261025121518";  // feature: radio (config.features.radio)
-import { openArena, arenaUpdate } from "./arena.js?v=20261025121518";  // feature: arena (config.features.arena)
-import { renderCards, openAlbum } from "./cards.js?v=20261025121518";  // feature: cards (config.features.cards)
-import { renderPourToi, renderMyGames, notifyMyGoals, regretsHtml } from "./me/me.js?v=20261025121518";  // signed-in features (phase 1)
-import { applyLook, celebrate, hornSound } from "./me/look.js?v=20261025121518";  // feature: look (config.features.look)
-import { badgesHtml } from "./me/badges.js?v=20261025121518";  // feature: badges (config.features.badges)
-import { renderAdvisor } from "./me/advisor.js?v=20261025121518";  // feature: advisor (config.features.advisor)
-import { whatIfHtml, renderWhatIf } from "./me/whatif.js?v=20261025121518";  // feature: whatif (config.features.whatif)
+import { t, getLang, setLang, applyStatic, fmtDate, locale } from "./i18n.js?v=20261026212540";
+import { esc, fetchJson, headshot, teamLogo, asset } from "./util.js?v=20261026212540";
+import { getSession, login, logout } from "./auth.js?v=20261026212540";
+import { windowOpen, tradesLeft, roundOptions, encodeTrade } from "./trade.js?v=20261026212540";
+import { renderChart } from "./chart.js?v=20261026212540";
+import { prepareImage } from "./image.js?v=20261026212540";
+import { faqContent } from "./faq.js?v=20261026212540";
+import { seededShuffle, makeCard, evaluate, race } from "./bingo.js?v=20261026212540";
+import { renderRadio } from "./radio.js?v=20261026212540";  // feature: radio (config.features.radio)
+import { openArena, arenaUpdate } from "./arena.js?v=20261026212540";  // feature: arena (config.features.arena)
+import { renderCards, openAlbum } from "./cards.js?v=20261026212540";  // feature: cards (config.features.cards)
+import { renderPourToi, renderMyGames, notifyMyGoals, regretsHtml, renderMyCorner } from "./me/me.js?v=20261026212540";  // signed-in features (phase 1)
+import { applyLook, celebrate, hornSound } from "./me/look.js?v=20261026212540";  // feature: look (config.features.look)
+import { badgesHtml } from "./me/badges.js?v=20261026212540";  // feature: badges (config.features.badges)
+import { V2, setupLayout, resolveTab, afterShow, curveShown, sectionHidden, renderLayout } from "./layout.js?v=20261026212540";  // layout v2 (dev preview)
+import { renderAdvisor } from "./me/advisor.js?v=20261026212540";  // feature: advisor (config.features.advisor)
+import { whatIfHtml, renderWhatIf } from "./me/whatif.js?v=20261026212540";  // feature: whatif (config.features.whatif)
 
 const S = {
   tab: "standings",
@@ -25,6 +26,7 @@ const POS_ICON = { F: "🏒", D: "🛡️", G: "🥅" };
 
 // ---------- Boot ----------
 document.addEventListener("DOMContentLoaded", async () => {
+  setupLayout();  // layout v2: rebuilds the panels and tabs first (nothing on the live layout)
   bindChrome();
   try {
     const opt = p => fetchJson(p).catch(() => null);
@@ -58,7 +60,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   let resizeTimer;
   window.addEventListener("resize", () => {
     clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(() => { fitTopbar(); if (S.tab === "chart") renderTrajectory(); }, 150);
+    resizeTimer = setTimeout(() => { fitTopbar(); if (trajectoryShown()) renderTrajectory(); }, 150);
   });
 });
 
@@ -96,6 +98,7 @@ async function refreshLive() {
       renderBingo();
       if (S.config.features?.arena !== false) arenaUpdate(goals);  // feature: arena
       renderPourToi(document.getElementById("pour-toi"), meDeps());  // signed-in: tonight's numbers move
+      renderLayout(meDeps());  // layout v2: Accueil's "Ce soir" box
       notifyMyGoals(goals, meDeps());
       celebrate(goals, meDeps());  // feature: look
       // Bingo news first (it's yours), then the goals; one tap opens the matching tab
@@ -258,15 +261,20 @@ function markGazetteNew() {
 }
 
 // Tabs the admin hid for everyone (config.hiddenTabs, set from the admin page); Classement always stays
-const tabHidden = tab => tab !== "standings" && ((S.config?.hiddenTabs || []).includes(tab)
+const tabHidden = tab => V2 ? sectionHidden(tab, S.config) : tab !== "standings" && ((S.config?.hiddenTabs || []).includes(tab)
   || (tab === "tv" && S.config?.features?.arena === false));
+const trajectoryShown = () => (V2 ? S.tab === "standings" && curveShown() : S.tab === "chart");
 function applyHiddenTabs() {
   document.querySelectorAll(".tab").forEach(b => b.classList.toggle("hidden", tabHidden(b.dataset.tab)));
-  if (tabHidden(S.tab)) showTab("standings");
+  if (tabHidden(S.tab)) showTab(V2 ? "home" : "standings");
 }
 
 function showTab(tab) {
-  S.tab = TABS.includes(tab) && !tabHidden(tab) ? tab : "standings";
+  let anchor = null;
+  if (V2) {  // layout v2: old tabs map to the section that holds them now
+    ({ tab, anchor } = resolveTab(tab, S.config?.hiddenTabs || []));
+    S.tab = tabHidden(tab) ? "home" : tab;
+  } else S.tab = TABS.includes(tab) && !tabHidden(tab) ? tab : "standings";
   if (S.tab === "gazette") {
     try { localStorage.setItem(GAZETTE_NEW_KEY, "1"); } catch { /* private mode */ }
     document.querySelector('.tab[data-tab="gazette"] .np-new')?.remove();
@@ -281,7 +289,8 @@ function showTab(tab) {
     updateTabFade();
   });
   document.querySelectorAll(".panel").forEach(p => p.classList.toggle("active", p.id === `panel-${S.tab}`));
-  if (S.tab === "chart" && S.board) renderTrajectory();
+  if (V2) afterShow(anchor, () => S.board && renderTrajectory());
+  else if (S.tab === "chart" && S.board) renderTrajectory();
 }
 
 function renderAll() {
@@ -306,7 +315,8 @@ function renderAll() {
   if (radioEl) S.config.features?.radio === false ? (radioEl.innerHTML = "") : renderRadio(radioEl, S.radio, { fmtDay, playHorn });
   renderStandings();
   renderTeams();
-  if (S.tab === "chart") renderTrajectory();
+  if (V2) { renderMyCorner(document.getElementById("me-corner"), meDeps()); renderLayout(meDeps()); }  // layout v2
+  if (trajectoryShown()) renderTrajectory();
   renderTonight();
   renderBingo();
   renderTvTab();  // feature: arena
@@ -320,7 +330,7 @@ function renderAll() {
 // ---------- Helpers ----------
 const me = () => getSession();
 // Helpers handed to the signed-in features (js/me/), so they reuse the site's own logic
-const meDeps = () => ({ S, me, playHorn, standingOf, dayDeltas, gainOver, weekStart, weekDuels, weekScores, pastDuelWeeks,
+const meDeps = () => ({ S, me, playHorn, v2: V2, bindTeamOpeners, standingOf, dayDeltas, gainOver, weekStart, weekDuels, weekScores, pastDuelWeeks,
   bingoRace, gameState, avatar, mug, fmtDay, fmtPct, renderChart, bingoHistory, trophies });
 const standingOf = id => S.board.standings.find(s => s.participantId === id);
 const fmtDay = (iso, long) => new Date(`${iso}T12:00:00`).toLocaleDateString(locale(),
@@ -605,7 +615,7 @@ function renderTeams() {
       <div class="card-foot">${unique ? `<span class="tag unique">★ ${esc(t(unique === 1 ? "uniqueOne" : "uniqueCount", { n: unique }))}</span>` : `<span class="muted">${esc(t("noUnique"))}</span>`}</div>
     </button>`;
   }).join("");
-  bindTeamOpeners(document.getElementById("panel-teams"));
+  bindTeamOpeners(document.getElementById(V2 ? "lay-teams" : "panel-teams"));  // layout v2 moved the grid
 }
 
 function renderMyTeam() {

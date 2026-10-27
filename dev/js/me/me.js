@@ -6,11 +6,11 @@
 //   Mes regrets     in your team window: the best pick of each draft round against yours
 // Everything is computed from data the page already has. The app passes its helpers in (D), so this
 // module holds no copy of the site's logic. Off switches: config.features.{pourtoi,myGames,rival,regrets}.
-import { t, getLang } from "../i18n.js?v=20261025121518";
-import { esc, asset } from "../util.js?v=20261025121518";
-import { lookHtml, bindLook, confetti, accentColor } from "./look.js?v=20261025121518";  // feature: look
-import { badgesRow, freshHtml, dismissFresh } from "./badges.js?v=20261025121518";  // feature: badges
-import { wrappedButton, openWrapped } from "./wrapped.js?v=20261025121518";  // feature: wrapped
+import { t, getLang } from "../i18n.js?v=20261026212540";
+import { esc, asset } from "../util.js?v=20261026212540";
+import { lookHtml, bindLook, confetti, accentColor } from "./look.js?v=20261026212540";  // feature: look
+import { badgesRow, freshHtml, dismissFresh, badgesHtml } from "./badges.js?v=20261026212540";  // feature: badges
+import { wrappedButton, openWrapped } from "./wrapped.js?v=20261026212540";  // feature: wrapped
 
 const on = (D, name) => D.S.config.features?.[name] !== false;
 const rivalKey = id => `patinoire_rival_${id}`;
@@ -166,9 +166,7 @@ export function renderPourToi(el, D) {
     ${wrappedButton(D)}
     ${segmentHtml(D, s)}
     ${horoscopeHtml(D, s)}
-    ${on(D, "pourtoi") ? chaseLine(D, s) : ""}
-    ${on(D, "rival") ? rivalPanel(D, s) : ""}
-    ${lookHtml(D)}
+    ${D.v2 ? "" : cornerHtml(D, s)}
     </div>
   </section>`;
   el.querySelector("[data-wrapped]")?.addEventListener("click", e => openWrapped(s.participantId, e.currentTarget.dataset.wrapped, D));
@@ -176,8 +174,15 @@ export function renderPourToi(el, D) {
   // A moment later, once your logo's colour has loaded
   if (badges?.burst && !folded) setTimeout(() => confetti([accentColor(), "#ffffff", "#f5b301", accentColor()]), 700);
   el.querySelector(".me-head").addEventListener("click", () => { store.set(FOLD_KEY, folded ? null : "1"); renderPourToi(el, D); });
+  if (!D.v2) bindCorner(el, s, D, () => renderPourToi(el, D));
+}
+
+// What it takes, the rival and Mon look: inside Pour toi, or in Mon équipe with the new layout (js/layout.js)
+const cornerHtml = (D, s) => `${on(D, "pourtoi") ? chaseLine(D, s) : ""}${on(D, "rival") ? rivalPanel(D, s) : ""}${lookHtml(D)}`;
+
+function bindCorner(el, s, D, rerender) {
   bindLook(el, D, D.playHorn);
-  el.querySelector(".me-rival-pick")?.addEventListener("change", e => { store.set(rivalKey(s.participantId), e.target.value || null); renderPourToi(el, D); });
+  el.querySelector(".me-rival-pick")?.addEventListener("change", e => { store.set(rivalKey(s.participantId), e.target.value || null); rerender(); });
   const chartEl = el.querySelector("#me-rival-chart"), r = D.standingOf(rivalOf(s.participantId));
   if (chartEl && r && D.S.history?.dates?.length > 1) {
     const series = [s, r].map(x => ({ id: x.participantId, label: x.teamName, who: x.participantName, values: D.S.history.series[x.participantId] || [] }));
@@ -189,6 +194,15 @@ export function renderPourToi(el, D) {
       D.renderChart(chartEl, { dates: D.S.history.dates, series, highlighted: [s.participantId, r.participantId], fmtDay: D.fmtDay, labelFor: x => x.label });
     }).observe(chartEl);
   }
+}
+
+// Layout v2, Mon équipe: your achievements, then what it takes, the rival and Mon look
+export function renderMyCorner(el, D) {
+  if (!el) return;
+  const s = D.standingOf(D.me()?.participantId);
+  if (!s) { el.innerHTML = ""; return; }
+  el.innerHTML = `<section class="card me-card me-corner"><div class="me-body">${badgesHtml(s, D)}${cornerHtml(D, s)}</div></section>`;
+  bindCorner(el, s, D, () => renderMyCorner(el, D));
 }
 
 // ---------- Mes joueurs ce soir (in "Ce soir") ----------

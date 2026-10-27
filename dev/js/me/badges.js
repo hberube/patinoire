@@ -2,8 +2,8 @@
 // the weekly duels, the trophy case), so everyone sees the same ones in each team window.
 // The signed-in participant also gets a count in Pour toi and a celebration the first time they
 // see a new one (remembered in this browser). Off switch: config.features.badges.
-import { t } from "../i18n.js?v=20261025121518";
-import { esc } from "../util.js?v=20261025121518";
+import { t } from "../i18n.js?v=20261026212540";
+import { esc } from "../util.js?v=20261026212540";
 
 const on = D => D.S.config.features?.badges !== false;
 const seenKey = id => `patinoire_badges_seen_${id}`;

@@ -2,8 +2,8 @@
 // Built entirely from history.json (points gained Monday to Sunday), so the album needs no storage.
 // Rarity from the week's rank: 1st Légendaire, 2nd-3rd Épique, 4th-8th Rare, the rest Commune.
 // Self-contained so it can be removed in one go; off switch: "features": {"cards": false}.
-import { t, locale } from "./i18n.js?v=20261025121518";
-import { esc, asset } from "./util.js?v=20261025121518";
+import { t, locale } from "./i18n.js?v=20261026212540";
+import { esc, asset } from "./util.js?v=20261026212540";
 
 let D = null;  // dependencies from app.js: { S, avatar, standingOf, weekStart, weekScores, fmtDay, me }
 
