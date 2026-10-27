@@ -1,16 +1,6 @@
 {
   "memes": [
     {
-      "gameDay": "2026-10-16",
-      "category": "player",
-      "format": "classic",
-      "subjectName": "Nathan MacKinnon",
-      "fr": {
-        "top": "MACKINNON MARQUE POUR COLORADO",
-        "bottom": "17 PARTICIPANTS: « C'EST MOI QUI L'AI PICKÉ! »"
-      }
-    },
-    {
       "gameDay": "2026-10-17",
       "category": "bingo",
       "format": "breaking",
@@ -133,6 +123,23 @@
       "fr": {
         "top": "LES ANGLERS LANCENT 3 LIGNES À L'EAU",
         "bottom": "JACKSON RAMÈNE LE BINGO. LOUISE : PÊCHE BLANCHE, 1 CASE, 0 LIGNE"
+      }
+    },
+    {
+      "gameDay": "2026-10-26",
+      "category": "player",
+      "format": "versus",
+      "subject": {
+        "kind": "player",
+        "id": 8478403
+      },
+      "subject2": {
+        "kind": "player",
+        "id": 8482720
+      },
+      "fr": {
+        "no": "JACK EICHEL, 19 PTS : 18 PARTICIPANTS « NON MERCI »",
+        "yes": "MATTHEW KNIES, 7 MATCHS SANS POINT : 3 PARTICIPANTS EN AMOUR"
       }
     }
   ]

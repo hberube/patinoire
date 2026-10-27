@@ -1,36 +1,34 @@
 {
-  "gameDay": "2026-10-25",
-  "generatedAt": "2026-10-26T08:31:10Z",
+  "gameDay": "2026-10-26",
+  "generatedAt": "2026-10-27T08:31:13Z",
   "fr": {
-    "title": "Elrick bondit, Michel garde le trône du Pool",
+    "title": "Michel tient la barre, Guillaume colle au train",
     "bullets": [
-      "Michel (Les Ducks) reste en tête avec 274 points, devant Guillaume (259) et Hugo (257).",
-      "Elrick fait le plus gros bond de la soirée avec 13 points, mais Simon garde le 5e rang à égalité grâce aux lignes de bingo. 📈",
-      "Kaprizov a marqué pour Vincent, le seul à l'avoir : 12 points et une montée au 9e rang.",
-      "Bingo : Jackson rafle la mise avec 3 lignes et grimpe au 7e rang. Louise, elle, repart bredouille. 🎯",
-      "Rantanen a allumé la lumière pour 10 participants, et Hutson pour 8.",
-      "Infirmerie : Malkin (PIT, chez Eve et Vicky) et Marner (VGK, 8 participants) passent d'absents à incertains au jour le jour. 🩹"
+      "Bingo : Michel (Les Ducks) rafle la soirée avec 6 lignes et 7 cases, et reste en tête avec 277 points. 🎯",
+      "Guillaume (Laser Kiwis) signe le plus gros gain de la soirée, +4, et garde le 2e rang à 263 points grâce au but de Larkin.",
+      "Nylander a marqué malgré la défaite de Toronto : 9 buts et 19 points, donc à un but et un point de deux jalons. Cinq participants l'ont.",
+      "Elrick grimpe au 5e rang, Simon glisse au 6e. Jackson dépasse Étienne (244 chacun) grâce à ses 18 lignes de bingo contre 14.",
+      "Infirmerie : Marchenko (TOR, bas du corps, retour prévu le 28 octobre) frappe Guillaume. Marner (VGK) est de retour au jeu. 🚑"
     ]
   },
   "en": {
-    "title": "Elrick surges, Michel holds the Pool throne",
+    "title": "Michel holds the wheel, Guillaume close behind",
     "bullets": [
-      "Michel (Les Ducks) stays on top with 274 points, ahead of Guillaume (259) and Hugo (257).",
-      "Elrick had the night's biggest jump with 13 points, but Simon keeps 5th in their tie thanks to bingo lines. 📈",
-      "Kaprizov scored for Vincent, the only owner: 12 points and a climb to 9th.",
-      "Bingo: Jackson takes it with 3 lines and moves up to 7th. Louise went home empty-handed. 🎯",
-      "Rantanen lit the lamp for 10 participants, and Hutson for 8.",
-      "Infirmary: Malkin (PIT, owned by Eve and Vicky) and Marner (VGK, 8 owners) go from out to day-to-day. 🩹"
+      "Bingo: Michel (Les Ducks) wins the night with 6 lines and 7 squares, and stays on top with 277 points. 🎯",
+      "Guillaume (Laser Kiwis) had the biggest gain of the night, +4, and holds 2nd at 263 thanks to Larkin's goal.",
+      "Nylander scored despite Toronto's loss: 9 goals and 19 points, one goal and one point shy of two milestones. Five participants own him.",
+      "Elrick climbs to 5th, Simon slips to 6th. Jackson passes Étienne (244 each) on bingo lines, 18 to 14.",
+      "Infirmary: Marchenko (TOR, lower body, expected back Oct. 28) hurts Guillaume. Marner (VGK) is back in the lineup. 🚑"
     ]
   },
   "image": {
     "fr": {
       "src": "data/recap-fr.png",
-      "alt": "LES ANGLERS LANCENT 3 LIGNES À L'EAU / JACKSON RAMÈNE LE BINGO. LOUISE : PÊCHE BLANCHE, 1 CASE, 0 LIGNE"
+      "alt": "JACK EICHEL, 19 PTS : 18 PARTICIPANTS « NON MERCI » / MATTHEW KNIES, 7 MATCHS SANS POINT : 3 PARTICIPANTS EN AMOUR"
     },
     "en": {
       "src": "data/recap-en.png",
-      "alt": "THE ANGLERS CAST 3 LINES / JACKSON REELS IN THE BINGO. LOUISE: ICE FISHING, 1 SQUARE, NO BITES"
+      "alt": "JACK EICHEL, 19 PTS: NOT ON A SINGLE ROSTER / MATTHEW KNIES, 7 GAMES, 0 POINTS: 3 PROUD OWNERS"
     }
   }
 }
