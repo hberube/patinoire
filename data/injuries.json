@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27T08:30:45Z",
+  "updated": "2026-10-28T05:25:04Z",
   "source": "ESPN",
   "players": [
     {
@@ -86,31 +86,9 @@
       "pos": "F",
       "status": "ir",
       "type": "Lower Body",
-      "returnDate": "2026-10-27",
+      "returnDate": "2026-11-03",
       "noteDate": "2026-10-11",
       "note": "Konecny (lower body) was placed on injured reserve Sunday, according to the NHL media site."
-    },
-    {
-      "id": 8476945,
-      "name": "Connor Hellebuyck",
-      "team": "WPG",
-      "pos": "G",
-      "status": "out",
-      "type": "Not Injury Related",
-      "returnDate": "2026-10-30",
-      "noteDate": "2026-10-26",
-      "note": "Head coach Sheldon Keefe said Monday that Hellebuyck (not injury related) intends to play during the Devils' upcoming three-game road trip, Amanda Stein of the Devils' official site reports."
-    },
-    {
-      "id": 8480893,
-      "name": "Kirill Marchenko",
-      "team": "TOR",
-      "pos": "F",
-      "status": "out",
-      "type": "Lower Body",
-      "returnDate": "2026-10-28",
-      "noteDate": "2026-10-27",
-      "note": "out"
     },
     {
       "id": 8480018,
@@ -132,6 +110,17 @@
       "type": "Illness",
       "returnDate": "2026-10-29",
       "noteDate": "2026-10-25",
+      "note": "day-to-day"
+    },
+    {
+      "id": 8480893,
+      "name": "Kirill Marchenko",
+      "team": "TOR",
+      "pos": "F",
+      "status": "dtd",
+      "type": "Lower Body",
+      "returnDate": "2026-10-28",
+      "noteDate": "2026-10-27",
       "note": "day-to-day"
     }
   ]
