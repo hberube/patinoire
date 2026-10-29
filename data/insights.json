@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-29T04:40:17Z",
+  "lastUpdated": "2026-10-29T08:30:46Z",
   "gameDay": "2026-10-28",
   "highlights": [
     {
@@ -236,8 +236,8 @@
       "scorerOwned": false,
       "owners": 0,
       "ownerIds": [],
-      "clipEn": null,
-      "clipFr": null,
+      "clipEn": "https://nhl.com/video/tor-sea-matthews-scores-goal-against-philipp-grubauer-6407575271112",
+      "clipFr": "https://nhl.com/fr/video/tor-sea-matthews-marque-un-but-contre-philipp-grubauer-6407574981112",
       "thumb": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8479318.png"
     }
   ],
@@ -279,7 +279,7 @@
     },
     "8475683": {
       "last5": 2,
-      "games": 9,
+      "games": 10,
       "dry": 0
     },
     "8475754": {
@@ -343,9 +343,9 @@
       "dry": 1
     },
     "8477939": {
-      "last5": 7,
-      "games": 14,
-      "dry": 0
+      "last5": 6,
+      "games": 15,
+      "dry": 1
     },
     "8477940": {
       "last5": 6,
@@ -618,9 +618,9 @@
       "dry": 0
     },
     "8486067": {
-      "last5": 3,
-      "games": 14,
-      "dry": 1
+      "last5": 5,
+      "games": 15,
+      "dry": 0
     }
   },
   "awards": {
@@ -782,94 +782,94 @@
     "sims": 5000,
     "teams": {
       "usr_michel_bry": {
-        "win": 37.7,
-        "podium": 68.0,
-        "projected": 1688
-      },
-      "usr_hugo_berube": {
-        "win": 5.6,
-        "podium": 31.3,
-        "projected": 1613
+        "win": 39.9,
+        "podium": 71.3,
+        "projected": 1693
       },
       "usr_guillaume_brossard": {
-        "win": 10.1,
-        "podium": 32.4,
-        "projected": 1613
+        "win": 9.4,
+        "podium": 34.1,
+        "projected": 1606
+      },
+      "usr_hugo_berube": {
+        "win": 6.1,
+        "podium": 32.7,
+        "projected": 1611
       },
       "usr_elrick": {
-        "win": 8.0,
-        "podium": 26.2,
-        "projected": 1589
+        "win": 6.4,
+        "podium": 23.6,
+        "projected": 1579
       },
       "usr_sylvianne": {
-        "win": 9.9,
-        "podium": 32.5,
-        "projected": 1615
+        "win": 10.4,
+        "podium": 32.8,
+        "projected": 1610
       },
       "usr_simon": {
-        "win": 4.8,
-        "podium": 20.5,
-        "projected": 1589
+        "win": 5.0,
+        "podium": 19.3,
+        "projected": 1584
       },
       "usr_etienne": {
-        "win": 3.4,
+        "win": 4.2,
         "podium": 16.3,
-        "projected": 1570
+        "projected": 1568
       },
       "usr_jackson_gagnon": {
-        "win": 4.1,
-        "podium": 14.2,
-        "projected": 1564
+        "win": 3.1,
+        "podium": 13.4,
+        "projected": 1554
       },
       "usr_vincent": {
-        "win": 7.7,
-        "podium": 20.1,
-        "projected": 1550
+        "win": 7.9,
+        "podium": 20.0,
+        "projected": 1544
       },
       "usr_alexandre_comeau": {
         "win": 0.8,
-        "podium": 7.8,
+        "podium": 8.1,
         "projected": 1548
       },
       "usr_marjolaine_comeau": {
-        "win": 1.4,
-        "podium": 6.3,
-        "projected": 1509
+        "win": 1.0,
+        "podium": 5.7,
+        "projected": 1504
       },
       "usr_eve": {
-        "win": 1.9,
-        "podium": 6.6,
-        "projected": 1501
+        "win": 1.2,
+        "podium": 6.1,
+        "projected": 1502
       },
       "usr_louise_trottier": {
         "win": 0.5,
-        "podium": 4.7,
-        "projected": 1484
+        "podium": 4.3,
+        "projected": 1481
       },
       "usr_julien_berube": {
-        "win": 1.5,
-        "podium": 5.5,
-        "projected": 1485
+        "win": 1.7,
+        "podium": 5.1,
+        "projected": 1481
       },
       "usr_florence": {
-        "win": 1.0,
-        "podium": 3.3,
-        "projected": 1422
+        "win": 0.9,
+        "podium": 2.9,
+        "projected": 1426
       },
       "usr_jolyne_brossard": {
-        "win": 0.1,
-        "podium": 1.0,
+        "win": 0.2,
+        "podium": 0.8,
         "projected": 1411
       },
       "usr_maddox_gagnon": {
-        "win": 1.3,
-        "podium": 3.8,
-        "projected": 1402
+        "win": 1.1,
+        "podium": 3.9,
+        "projected": 1397
       },
       "usr_vicky": {
-        "win": 0.2,
-        "podium": 1.1,
-        "projected": 1348
+        "win": 0.3,
+        "podium": 1.6,
+        "projected": 1350
       }
     },
     "before": {
