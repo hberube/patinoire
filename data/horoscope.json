@@ -1,140 +1,117 @@
 {
-  "day": "2026-10-28",
-  "generatedAt": "2026-10-28T16:07:11Z",
+  "day": "2026-10-29",
+  "generatedAt": "2026-10-29T16:07:06Z",
   "signs": {
     "usr_michel_bry": {
-      "fr": "Saturne porte ses anneaux comme des bagues de la Coupe : 14 points de coussin et 26 lignes de bingo, la plus grosse pile du pool. Leon Draisaitl reçoit Calgary pour polir ton trône. Conseil : vouvoie ta cafetière jusqu'à midi.",
-      "en": "Saturn wears its rings like Cup rings: a 14-point cushion and 26 bingo lines, the biggest stack in the pool. Leon Draisaitl hosts Calgary to polish your throne. Advice: address your coffee maker formally until noon.",
-      "lucky": "Leon Draisaitl",
-      "pucks": 4
-    },
-    "usr_guillaume_brossard": {
-      "fr": "Mercure entre dans la zone neutre : un seul point te sépare des Crazy Blue Heelers, serré comme une mise au jeu. Martin Necas, en feu, reçoit le New Jersey pour élargir la brèche. Conseil : compte tes marches d'escalier en tchèque.",
-      "en": "Mercury enters the neutral zone: just one point separates you from the Crazy Blue Heelers, tight as a faceoff. Red-hot Martin Necas hosts New Jersey to widen the gap. Advice: count your stairs in Czech.",
-      "lucky": "Martin Necas",
-      "pucks": 4
-    },
-    "usr_hugo_berube": {
-      "fr": "Vénus te fait de l'œil depuis le 2e rang : 1 seul point derrière les Laser Kiwis, après tes 12 points d'hier. Trevor Zegras débarque à Washington avec ses passes en tire-bouchon pour signer le dépassement. Conseil : salue ton grille-pain d'un clin d'œil. 😉",
-      "en": "Venus is winking at you from 2nd place: just 1 point behind the Laser Kiwis after your 12-point night. Trevor Zegras visits Washington with corkscrew passes to complete the overtake. Advice: wink at your toaster. 😉",
-      "lucky": "Trevor Zegras",
+      "fr": "Jupiter fait un double échec à tes poursuivants : 16 points d'avance sur les Laser Kiwis et 27 lignes de bingo dans ta vitrine. Alex Tuch débarque à Nashville pour ajouter une couche de vernis au trophée. Conseil : donne un nom de famille à ta souffleuse.",
+      "en": "Jupiter lays a crushing check on the chasing pack: 16 points clear of the Laser Kiwis and 27 bingo lines in the trophy case. Alex Tuch rolls into Nashville to add another coat of polish. Advice: give your snowblower a last name.",
+      "lucky": "Alex Tuch",
       "pucks": 5
     },
-    "usr_elrick": {
-      "fr": "Mars t'envoie en punition mineure : 10 points derrière les Crazy Blue Heelers, et Maman Girafe souffle à 1 point dans ton cou. Cale Makar reçoit le New Jersey pour scier les barreaux du 4e rang. Conseil : cache une lime dans un gâteau aux carottes.",
-      "en": "Mars sends you to the box for two minutes: 10 points behind the Crazy Blue Heelers, with Maman Girafe breathing 1 point down your neck. Cale Makar hosts New Jersey to saw through the bars of 4th place. Advice: hide a nail file in a carrot cake.",
-      "lucky": "Cale Makar",
+    "usr_guillaume_brossard": {
+      "fr": "Andromède te fait signe, mais les Ducks sont à 16 points, une galaxie plus loin. Le vrai danger rôde derrière : les Crazy Blue Heelers à 3 points. Jake Oettinger reçoit Montréal, garde ta cage barrée à double tour. Conseil : cadenasse ton frigo avec un cadenas en chocolat.",
+      "en": "Andromeda waves at you, but the Ducks are 16 points away, a whole galaxy over. The real danger lurks behind: the Crazy Blue Heelers at 3. Jake Oettinger hosts Montreal, so keep that crease double-locked. Advice: padlock your fridge with a chocolate padlock.",
+      "lucky": "Jake Oettinger",
       "pucks": 3
     },
-    "usr_sylvianne": {
-      "fr": "La Lune joue en désavantage numérique : 5 points hier, mais Michael Scofield n'est qu'à 1 point devant et The titi master à 2 derrière. Evan Bouchard dégaine de la pointe contre Calgary pour te hisser d'un barreau. Conseil : brosse tes cheveux avec une fourchette.",
-      "en": "The Moon is on the penalty kill: 5 points last night, but Michael Scofield is just 1 point ahead and The titi master 2 behind. Evan Bouchard unloads from the point against Calgary to lift you one rung. Advice: brush your hair with a fork.",
-      "lucky": "Evan Bouchard",
+    "usr_hugo_berube": {
+      "fr": "Sirius, l'étoile la plus brillante du ciel, pointe le 2e rang : 3 points derrière les Laser Kiwis, 11 de coussin sur Michael Scofield. Lane Hutson débarque à Dallas pour slalomer entre les défenseurs. Conseil : fais une pirouette avant d'ouvrir ta boîte à lunch. 🌟",
+      "en": "Sirius, the brightest star in the sky, points at 2nd place: 3 points behind the Laser Kiwis, 11 clear of Michael Scofield. Lane Hutson hits Dallas to slalom through defenders. Advice: do a pirouette before opening your lunchbox. 🌟",
+      "lucky": "Lane Hutson",
+      "pucks": 4
+    },
+    "usr_elrick": {
+      "fr": "Pluton, exilé loin du soleil, connaît bien ta cellule : Maman Girafe n'est qu'à 1 point, assez proche pour lire tes plans d'évasion. Dylan Guenther part à Pittsburgh avec la clé cachée dans son bas. Conseil : dessine-toi un tatouage au crayon feutre sur le genou.",
+      "en": "Pluto, banished far from the sun, knows your cell well: Maman Girafe is just 1 point back, close enough to read your escape plans. Dylan Guenther heads to Pittsburgh with the key hidden in his sock. Advice: draw a felt-tip tattoo on your knee.",
+      "lucky": "Dylan Guenther",
       "pucks": 2
     },
-    "usr_etienne": {
-      "fr": "Orion bande son arc : 14 points hier, et Maman Girafe n'est plus qu'à 2 points devant, les Méchants Grisonnants à 1 derrière. Connor Bedard est en feu, et ses braises gardent ton banc au chaud. Conseil : applaudis ton micro-ondes quand il sonne.",
-      "en": "Orion draws his bow: 14 points last night, Maman Girafe just 2 points ahead and Les Méchants Grisonnants 1 behind. Connor Bedard is on fire, and the embers keep your bench toasty. Advice: give your microwave a standing ovation when it beeps.",
-      "lucky": "Jack Hughes",
+    "usr_sylvianne": {
+      "fr": "Cassiopée trône en W tout près de toi : 1 point derrière Michael Scofield, 2 devant les Méchants Grisonnants. Tes 15 joueurs sautent sur la glace, et Tage Thompson débarque à Anaheim pour brouter les feuilles du haut. Conseil : salue les lampadaires d'égal à égal. 🦒",
+      "en": "Cassiopeia sits on her W-shaped throne right next to yours: 1 point behind Michael Scofield, 2 ahead of Les Méchants Grisonnants. Fifteen players dress tonight, and Tage Thompson hits Anaheim to munch the top leaves. Advice: greet streetlights as equals. 🦒",
+      "lucky": "Tage Thompson",
       "pucks": 4
     },
     "usr_simon": {
-      "fr": "Les Gémeaux te jumellent aux Anglers : égalité parfaite à 257, comme deux ailiers sur la même ligne. Jack Hughes débarque au Colorado pour te faire sortir du miroir. Conseil : lis le journal à l'envers en sifflotant.",
-      "en": "Gemini pairs you with Les Anglers: dead even at 257, like two wingers on the same line. Jack Hughes visits Colorado to pull you out of the mirror. Advice: read the paper upside down while whistling.",
-      "lucky": "Jack Hughes",
+      "fr": "Le Bélier fonce tête première, mais The titi master partage ton tabouret : égalité parfaite à 262, et Maman Girafe n'est qu'à 2 points. Jeremy Swayman monte la garde à St. Louis, chaque arrêt compte double. Conseil : peigne ta moustache, même si t'en as pas.",
+      "en": "Aries charges headfirst, but The titi master shares your stool: dead even at 262, with Maman Girafe just 2 points up. Jeremy Swayman guards the net in St. Louis, and every save counts double. Advice: comb your mustache, even if you don't have one.",
+      "lucky": "Jeremy Swayman",
       "pucks": 3
     },
-    "usr_jackson_gagnon": {
-      "fr": "Neptune fait des vagues dans ton seau d'appâts : 13 points hier, et te voilà nez à nez avec les Méchants Grisonnants à 257. Jesper Bratt traverse au Colorado pour ferrer le point qui brise l'égalité. Conseil : offre un ver en jujube à ta plante verte.",
-      "en": "Neptune is making waves in your bait bucket: 13 points last night puts you nose to nose with Les Méchants Grisonnants at 257. Jesper Bratt heads to Colorado to reel in the tiebreaker. Advice: offer your houseplant a gummy worm.",
-      "lucky": "Jesper Bratt",
+    "usr_etienne": {
+      "fr": "Le Lion rugit en stéréo : égalité avec les Méchants Grisonnants, et les Anglers mordillent ton patin à 1 point. Sidney Crosby reçoit l'Utah, et le vieux maître donne encore des cours de mise au jeu. Conseil : fais une révérence à ton bac de recyclage.",
+      "en": "Leo roars in stereo: tied with Les Méchants Grisonnants, with the Anglers nibbling your skate 1 point back. Sidney Crosby hosts Utah, and the old master is still teaching faceoff class. Advice: bow to your recycling bin.",
+      "lucky": "Sidney Crosby",
       "pucks": 4
     },
-    "usr_vincent": {
-      "fr": "Uranus tourne de travers, et toi aussi : seulement 5 joueurs ce soir, mais tes 11 points d'hier prouvent que ta petite brigade a du mordant. William Nylander débarque à Seattle pour gruger les 4 points des Anglers. Conseil : chante l'hymne national à ton aspirateur.",
-      "en": "Uranus spins sideways, and so do you: only 5 players tonight, but 11 points last night says your small squad has teeth. William Nylander lands in Seattle to chip away at the Anglers' 4-point edge. Advice: sing the anthem to your vacuum.",
-      "lucky": "William Nylander",
+    "usr_jackson_gagnon": {
+      "fr": "Les Poissons nagent à contre-courant : 22 lignes de bingo, le 2e plus gros filet du pool, et The titi master à 1 seul point devant. Andrei Svechnikov reçoit Columbus, l'hameçon bien affûté. Conseil : demande la météo à un canard en caoutchouc. 🎣",
+      "en": "Pisces swims upstream: 22 bingo lines, the second-biggest net in the pool, and The titi master just 1 point ahead. Andrei Svechnikov hosts Columbus, hook freshly sharpened. Advice: ask a rubber duck for the weather forecast. 🎣",
+      "lucky": "Andrei Svechnikov",
       "pucks": 3
     },
+    "usr_vincent": {
+      "fr": "La comète de Halley passe aux 76 ans, mais toi, t'as 17 joueurs en uniforme ce soir. Kirill Kaprizov, encore brûlant, reçoit les Islanders pour gruger les 4 points des Anglers. Conseil : fais faire un tour de manège à ta plante verte. ☄️",
+      "en": "Halley's Comet only swings by every 76 years, but you've got 17 players dressed tonight. Kirill Kaprizov, still red-hot, hosts the Islanders to chew through the Anglers' 4-point lead. Advice: take your houseplant on a merry-go-round ride. ☄️",
+      "lucky": "Kirill Kaprizov",
+      "pucks": 4
+    },
     "usr_alexandre_comeau": {
-      "fr": "Le Sagittaire ne tire que 5 flèches ce soir, mais il rate rarement la cible : les HabsRoller planent 6 points plus haut, et mchb rôde 4 points plus bas. Petit carquois, tir précis. Conseil : dis bonjour aux pigeons en les vouvoyant.",
-      "en": "Sagittarius only has 5 arrows tonight, but it rarely misses: Les HabsRoller hover 6 points up, mchb lurks 4 points down. Small quiver, sharp aim. Advice: greet every pigeon formally.",
-      "lucky": "Leon Draisaitl",
+      "fr": "Deneb, sentinelle du Triangle d'été, scrute ton territoire de chasse : les HabsRoller à 6 points devant, mchb à 4 dans ton sillage. Leo Carlsson reçoit Buffalo pour te souffler un vent de dos. Conseil : fais ta sieste perché sur un tabouret de bar.",
+      "en": "Deneb, sentinel of the Summer Triangle, scans your hunting grounds: the HabsRoller 6 points up, mchb 4 behind in your wake. Leo Carlsson hosts Buffalo to give you a tailwind. Advice: take your nap perched on a bar stool.",
+      "lucky": "Leo Carlsson",
       "pucks": 2
     },
     "usr_marjolaine_comeau": {
-      "fr": "Spica salue tes 10 points d'hier : les Éperviers de Sorel ne sont qu'à 4 points devant, et ton coussin de 6 sur l'équipe d'Ève tient comme une bonne paire de jambières. Conseil : remercie ta bouilloire à chaque sifflement.",
-      "en": "Spica salutes your solid 10-point night: Éperviers de Sorel are just 4 points ahead, and your 6-point cushion over Ève's team holds like good goalie pads. Advice: thank your kettle every time it whistles.",
-      "lucky": "Evan Bouchard",
-      "pucks": 3
+      "fr": "La Vierge fait l'inventaire : ton coussin de 5 points sur l'équipe d'Ève tient bon, et les Éperviers de Sorel sont à 4 points devant. Morgan Geekie s'invite à St. Louis pour faire le plein. Conseil : plie tes sacs d'épicerie en grues d'origami.",
+      "en": "Virgo takes inventory: your 5-point cushion over Eve's team is holding, and the Éperviers de Sorel sit 4 points up. Morgan Geekie crashes St. Louis to fill the tank. Advice: fold your grocery bags into origami cranes.",
+      "lucky": "Morgan Geekie",
+      "pucks": 2
     },
     "usr_eve": {
-      "fr": "Le Taureau fonce les cornes baissées : 4 points hier, et No Regretzkys n'est qu'à 1 point dans ton dos. Connor McDavid, toujours en feu, reçoit Calgary pour te sortir du coin de la patinoire. Conseil : écris ta liste d'épicerie en rimes.",
-      "en": "Taurus charges horns down: 4 points last night, and No Regretzkys sits just 1 point behind you. Still-scorching Connor McDavid hosts Calgary to dig you out of the corner. Advice: write your grocery list in rhyme.",
-      "lucky": "Connor McDavid",
+      "fr": "La Balance penche de ton bord : 5 points hier, 16 joueurs ce soir, et les huards à 3 points derrière. Jake Guentzel reçoit Winnipeg avec son talent pour flâner devant le filet. Conseil : joue à la marelle sur ton tapis de salon.",
+      "en": "Libra tilts your way: 5 points last night, 16 players tonight, and the huards 3 points behind. Jake Guentzel hosts Winnipeg with his knack for loitering by the crease. Advice: play hopscotch on your living room rug.",
+      "lucky": "Jake Guentzel",
+      "pucks": 3
+    },
+    "usr_louise_trottier": {
+      "fr": "Les Pléiades, sept sœurs inséparables, te soudent à No Regretzkys : égalité parfaite à 239. Cole Caufield débarque à Dallas pour trancher la chicane de famille, et l'équipe d'Ève n'est qu'à 3 points. Conseil : offre une tisane à ta boîte aux lettres.",
+      "en": "The Pleiades, seven inseparable sisters, weld you to No Regretzkys: dead even at 239. Cole Caufield lands in Dallas to settle the family feud, and Eve's team is just 3 points up. Advice: brew some herbal tea for your mailbox.",
+      "lucky": "Cole Caufield",
       "pucks": 3
     },
     "usr_julien_berube": {
-      "fr": "La Grande Ourse te place pile au milieu d'un sandwich : l'équipe d'Ève à 1 point devant, les huards à 1 point derrière. Sergei Bobrovsky part à Seattle pour garder ta garniture intacte. Conseil : mange ton dessert en premier, une seule fois.",
-      "en": "The Big Dipper sets you in a sandwich: Ève's team 1 point ahead, Les huards 1 point behind. Sergei Bobrovsky heads to Seattle to keep your filling intact. Advice: eat dessert first, just this once.",
-      "lucky": "Sergei Bobrovsky",
+      "fr": "Le Scorpion pique en contre-attaque : égalité avec les huards, et ton coussin de 12 points sur The Eras Tour te sert de bouclier. Sebastian Aho reçoit Columbus avec la mèche qui fume encore. Conseil : fais du yoga avec ta pinte de lait. 🦂",
+      "en": "Scorpio strikes on the counterattack: tied with the huards, and your 12-point cushion over The Eras Tour works like a shield. Sebastian Aho hosts Columbus with his fuse still smoking. Advice: do yoga with your carton of milk. 🦂",
+      "lucky": "Sebastian Aho",
       "pucks": 4
     },
-    "usr_louise_trottier": {
-      "fr": "Une éclipse partielle a voilé ton lac hier : 3 petits points. Mais No Regretzkys n'est qu'à 1 point devant, et ton coussin de 10 sur The Eras Tour flotte comme un huard. Conseil : fais un vœu en éteignant la lumière de ta hotte.",
-      "en": "A partial eclipse dimmed your lake last night: just 3 points. But No Regretzkys is a single point ahead, and your 10-point cushion over The Eras Tour floats like a loon. Advice: make a wish when you switch off the stove light.",
-      "lucky": "Martin Necas",
-      "pucks": 2
-    },
     "usr_florence": {
-      "fr": "Bellatrix t'acclame en coulisses : 17 points hier, la meilleure soirée du pool ! Les huards sont à 10 points, et Jakob Chychrun lance la deuxième partie du spectacle contre Philadelphie. Conseil : salue chaque feu vert comme un rappel. 🎤",
-      "en": "Bellatrix cheers from backstage: 17 points last night, the best night in the pool! Les huards are 10 points away, and Jakob Chychrun opens the second set against Philadelphia. Advice: bow to every green light like it's an encore. 🎤",
-      "lucky": "Jakob Chychrun",
-      "pucks": 5
+      "fr": "Le Verseau déverse 20 lignes de bingo, de quoi remplir un album double, même si hier n'a rapporté que 2 points. Juraj Slafkovský débarque à Dallas pour lancer le prochain acte, et SkiBum reste à 9 points. Conseil : échange un bracelet d'amitié avec ton facteur.",
+      "en": "Aquarius pours out 20 bingo lines, enough for a double album, even if last night only brought 2 points. Juraj Slafkovský lands in Dallas to kick off the next era, with SkiBum still 9 back. Advice: trade friendship bracelets with your mail carrier.",
+      "lucky": "Juraj Slafkovský",
+      "pucks": 2
     },
     "usr_jolyne_brossard": {
-      "fr": "Le Capricorne grimpe la montagne : SK|MADDOXG n'est qu'à 1 point derrière, alors pas de pause au chalet. Alex Ovechkin reçoit Philadelphie avec son canon de l'office, prêt à damer la piste. Conseil : mets tes bottes de ski pour aller chercher le courrier.",
-      "en": "Capricorn climbs the mountain: SK|MADDOXG is just 1 point behind, so no lodge breaks. Alex Ovechkin hosts Philadelphia with his office-spot cannon, ready to groom the slope. Advice: wear ski boots to fetch the mail.",
-      "lucky": "Alex Ovechkin",
-      "pucks": 3
+      "fr": "Une aurore boréale illumine le sommet de ta piste : 5 points hier, et SK|MADDOXG reste 5 points en bas du télésiège. Cutter Gauthier reçoit Buffalo pour tracer les premières lignes dans la poudreuse. Conseil : farte tes pantoufles avant d'aller au salon. ⛷️",
+      "en": "The northern lights glow over your slope: 5 points last night, and SK|MADDOXG stays 5 points down the chairlift. Cutter Gauthier hosts Buffalo to carve first tracks in the powder. Advice: wax your slippers before heading to the living room. ⛷️",
+      "lucky": "Cutter Gauthier",
+      "pucks": 4
     },
     "usr_maddox_gagnon": {
-      "fr": "Charon, le passeur, te fait signe : SkiBum n'est qu'à 1 point, une seule traversée. Brock Nelson reçoit le New Jersey pour ramer jusqu'à l'autre rive. Conseil : donne un surnom de lutteur à ta brosse à dents.",
-      "en": "Charon the ferryman waves you aboard: SkiBum is just 1 point away, one crossing. Brock Nelson hosts New Jersey to row you to the other bank. Advice: give your toothbrush a wrestler nickname.",
-      "lucky": "Brock Nelson",
-      "pucks": 2
+      "fr": "Europe, la lune glacée, cache un océan sous sa croûte : 1 point hier, mais 18 joueurs en uniforme ce soir, la plus grosse armée du pool ex aequo. David Pastrnak débarque à St. Louis avec le moteur qui ronronne. Conseil : salue ton reflet dans une cuillère.",
+      "en": "Europa, the icy moon, hides an ocean under its crust: just 1 point last night, but 18 players dressed tonight, tied for the pool's biggest army. David Pastrnak hits St. Louis with the engine purring. Advice: wave to your reflection in a spoon.",
+      "lucky": "David Pastrnak",
+      "pucks": 3
     },
     "usr_vicky": {
-      "fr": "La Voie lactée concentre toute sa lumière sur un seul homme : Nathan MacKinnon, ton unique joueur ce soir, et il est en feu. SK|MADDOXG est à 8 points, la thèse avance une page à la fois. Conseil : surligne tes céréales en jaune fluo.",
-      "en": "The Milky Way focuses all its light on one man: Nathan MacKinnon, your lone player tonight, and he's on fire. SK|MADDOXG is 8 points up; the thesis advances one page at a time. Advice: highlight your cereal in neon yellow.",
-      "lucky": "Nathan MacKinnon",
-      "pucks": 1
+      "fr": "Mimas, petite lune au cratère géant, prouve qu'on frappe fort même au fond du classement. Avec 18 joueurs en uniforme, Erik Karlsson reçoit l'Utah pour lancer ta remontée de la ligne bleue, et SK|MADDOXG est à 8 points. Conseil : cite ton chat dans ta bibliographie. 📚",
+      "en": "Mimas, a tiny moon with a giant crater, proves you can hit hard from the bottom of the standings. With 18 players dressed, Erik Karlsson hosts Utah to launch your comeback from the blue line, and SK|MADDOXG is 8 back. Advice: cite your cat in your bibliography. 📚",
+      "lucky": "Erik Karlsson",
+      "pucks": 5
     }
   },
   "past": [
-    {
-      "day": "2026-10-26",
-      "fr": {
-        "usr_michel_bry": "L'Étoile polaire ne bouge pas, toi non plus : 15 points de coussin sur les Laser Kiwis, ta zone neutre est verrouillée. Gavin McKenna saute sur la glace à Calgary pour ajouter une brique au mur. Conseil : souhaite bonne nuit à ton boyau d'arrosage.",
-        "usr_guillaume_brossard": "Ophiuchus, le 13e signe oublié, te réclame : 19 lignes de bingo, record du pool, et 6 joueurs en uniforme ce soir. Kirill Marchenko a la rondelle sur la palette, mais les Crazy Blue Heelers rôdent à 2 points. Conseil : appelle ton thermostat « Coach ». 🎯",
-        "usr_hugo_berube": "Bételgeuse clignote comme une lumière de but : les Laser Kiwis ne sont qu'à 2 points, un seul avantage numérique de distance. Leon Draisaitl reçoit Détroit, mais Maman Girafe étire le cou à 5 points derrière. Conseil : fais un salut militaire à ton pot de moutarde.",
-        "usr_sylvianne": "Le Cygne te voit déchirée entre deux rives : tes Oilers reçoivent Détroit, et Dylan Larkin porte le chandail des visiteurs. Tu as un patin dans chaque zone. Les Méchants Grisonnants rôdent à 3 points. Conseil : applaudis des deux mains, mais pas en même temps.",
-        "usr_simon": "Proxima du Centaure te colle comme un ailier sur un 2 contre 1 : égalité parfaite avec Michael Scofield à 249. Evan Bouchard pilote ton jeu de puissance depuis la pointe, et Maman Girafe n'est qu'à 3 points. Conseil : coiffe-toi avec un peigne de poupée.",
-        "usr_elrick": "Une supernova a explosé dans ton enclave : 13 points hier, la meilleure soirée du pool ! Te voilà à égalité avec les Méchants Grisonnants, et Adrian Kempe débarque à New York pour faire sauter l'égalité. Conseil : serre la main de ta poignée de porte. 💥",
-        "usr_etienne": "Pégase te prête ses ailes : 7 points derrière Michael Scofield, et les Anglers partagent ton banc, à égalité parfaite. Connor Bedard est en feu, et ses étincelles retombent dans ton écurie. Conseil : baptise ta lampe de chevet « Gros Bill ».",
-        "usr_jackson_gagnon": "La ceinture de Kuiper resserre ton orbite : égalité parfaite avec The titi master, et tes 11 points d'hier ont fait trembler l'aréna. Sergei Bobrovsky garde le filet à Calgary comme un mur de glace. Conseil : salue chaque borne-fontaine en anglais.",
-        "usr_vincent": "Hercule te confie un travail de forçat : 12 points hier, mais seulement 2 joueurs en uniforme ce soir. William Nylander devra porter la charge à Calgary, avec les Anglers à 2 points devant et les Éperviers à 2 derrière. Conseil : souhaite bonne fête à ton ventilateur.",
-        "usr_alexandre_comeau": "Le Phénix renaît dans l'Ouest : tes 3 joueurs du soir portent tous le chandail des Oilers contre Détroit. Tous tes œufs dans le même panier, mais quel panier ! Les HabsRoller ne sont qu'à 2 points. Conseil : garde un œuf dur dans ta poche, par solidarité. 🥚",
-        "usr_eve": "Véga brille sur ton nom d'équipe : Connor McDavid, la vedette de ton chandail, reçoit Détroit ce soir et il est en feu. Égalité parfaite avec mchb, c'est à toi de trouver le fond du filet. Conseil : chuchote « 97 » à ton café avant la première gorgée.",
-        "usr_marjolaine_comeau": "Le Cancer avance de côté, toi aussi : égalité avec l'équipe d'Ève, et les huards guettent à 2 points derrière. Nathan MacKinnon est en feu et réchauffe tes 9 lignes de bingo. Conseil : fais un câlin à un pot de fleurs vide.",
-        "usr_louise_trottier": "Callisto ouvre le capot de Matthew Knies : 7 matchs sans point, le démarreur tousse, mais le cosmos a des câbles à booster. mchb est à 2 points, à portée de lancer frappé, et ton coussin de 8 tient bon. Conseil : fais une révérence à ta laveuse.",
-        "usr_julien_berube": "Antarès allume la lumière rouge à Edmonton : Moritz Seider débarque chez les Oilers avec Détroit. Les huards sont à 8 points devant, et ton coussin de 14 sur The Eras Tour ne bronche pas. Conseil : dis merci à ton paillasson en sortant.",
-        "usr_florence": "La Lyre joue ta chanson en version acoustique : un seul joueur sur scène ce soir, un gardien en solo. Tes 11 points d'hier prouvent que la tournée a du jus, et SK|MADDOXG attend à 3 points dans les coulisses. Conseil : fais un rappel devant ton cactus. 🎸",
-        "usr_maddox_gagnon": "Persée dégaine son épée : 12 points hier, et Sebastian Aho est en feu dans ta constellation. The Eras Tour est à 3 points devant, SkiBum à 3 derrière : un triangle parfait dans l'enclave. Conseil : lace tes souliers avec de la réglisse.",
-        "usr_jolyne_brossard": "La Licorne galope sur tes pistes : Matthew Tkachuk est en feu et fait fondre la neige. SK|MADDOXG est à 3 points en haut du remonte-pente, les PhD fatiguées à 3 points en bas. Conseil : mets des mitaines pour écrire tes textos.",
-        "usr_vicky": "Céphée t'installe en fond de classement, là où naissent les remontées légendaires. Mika Zibanejad reçoit Los Angeles, seul au front comme en désavantage numérique, et SkiBum n'est qu'à 3 points. Conseil : bois ton jus avec une paille en spirale."
-      }
-    },
     {
       "day": "2026-10-27",
       "fr": {
@@ -179,6 +156,29 @@
         "usr_jolyne_brossard": "Le Capricorne grimpe la montagne : SK|MADDOXG n'est qu'à 1 point derrière, alors pas de pause au chalet. Alex Ovechkin reçoit Philadelphie avec son canon de l'office, prêt à damer la piste. Conseil : mets tes bottes de ski pour aller chercher le courrier.",
         "usr_maddox_gagnon": "Charon, le passeur, te fait signe : SkiBum n'est qu'à 1 point, une seule traversée. Brock Nelson reçoit le New Jersey pour ramer jusqu'à l'autre rive. Conseil : donne un surnom de lutteur à ta brosse à dents.",
         "usr_vicky": "La Voie lactée concentre toute sa lumière sur un seul homme : Nathan MacKinnon, ton unique joueur ce soir, et il est en feu. SK|MADDOXG est à 8 points, la thèse avance une page à la fois. Conseil : surligne tes céréales en jaune fluo."
+      }
+    },
+    {
+      "day": "2026-10-29",
+      "fr": {
+        "usr_michel_bry": "Jupiter fait un double échec à tes poursuivants : 16 points d'avance sur les Laser Kiwis et 27 lignes de bingo dans ta vitrine. Alex Tuch débarque à Nashville pour ajouter une couche de vernis au trophée. Conseil : donne un nom de famille à ta souffleuse.",
+        "usr_guillaume_brossard": "Andromède te fait signe, mais les Ducks sont à 16 points, une galaxie plus loin. Le vrai danger rôde derrière : les Crazy Blue Heelers à 3 points. Jake Oettinger reçoit Montréal, garde ta cage barrée à double tour. Conseil : cadenasse ton frigo avec un cadenas en chocolat.",
+        "usr_hugo_berube": "Sirius, l'étoile la plus brillante du ciel, pointe le 2e rang : 3 points derrière les Laser Kiwis, 11 de coussin sur Michael Scofield. Lane Hutson débarque à Dallas pour slalomer entre les défenseurs. Conseil : fais une pirouette avant d'ouvrir ta boîte à lunch. 🌟",
+        "usr_elrick": "Pluton, exilé loin du soleil, connaît bien ta cellule : Maman Girafe n'est qu'à 1 point, assez proche pour lire tes plans d'évasion. Dylan Guenther part à Pittsburgh avec la clé cachée dans son bas. Conseil : dessine-toi un tatouage au crayon feutre sur le genou.",
+        "usr_sylvianne": "Cassiopée trône en W tout près de toi : 1 point derrière Michael Scofield, 2 devant les Méchants Grisonnants. Tes 15 joueurs sautent sur la glace, et Tage Thompson débarque à Anaheim pour brouter les feuilles du haut. Conseil : salue les lampadaires d'égal à égal. 🦒",
+        "usr_simon": "Le Bélier fonce tête première, mais The titi master partage ton tabouret : égalité parfaite à 262, et Maman Girafe n'est qu'à 2 points. Jeremy Swayman monte la garde à St. Louis, chaque arrêt compte double. Conseil : peigne ta moustache, même si t'en as pas.",
+        "usr_etienne": "Le Lion rugit en stéréo : égalité avec les Méchants Grisonnants, et les Anglers mordillent ton patin à 1 point. Sidney Crosby reçoit l'Utah, et le vieux maître donne encore des cours de mise au jeu. Conseil : fais une révérence à ton bac de recyclage.",
+        "usr_jackson_gagnon": "Les Poissons nagent à contre-courant : 22 lignes de bingo, le 2e plus gros filet du pool, et The titi master à 1 seul point devant. Andrei Svechnikov reçoit Columbus, l'hameçon bien affûté. Conseil : demande la météo à un canard en caoutchouc. 🎣",
+        "usr_vincent": "La comète de Halley passe aux 76 ans, mais toi, t'as 17 joueurs en uniforme ce soir. Kirill Kaprizov, encore brûlant, reçoit les Islanders pour gruger les 4 points des Anglers. Conseil : fais faire un tour de manège à ta plante verte. ☄️",
+        "usr_alexandre_comeau": "Deneb, sentinelle du Triangle d'été, scrute ton territoire de chasse : les HabsRoller à 6 points devant, mchb à 4 dans ton sillage. Leo Carlsson reçoit Buffalo pour te souffler un vent de dos. Conseil : fais ta sieste perché sur un tabouret de bar.",
+        "usr_marjolaine_comeau": "La Vierge fait l'inventaire : ton coussin de 5 points sur l'équipe d'Ève tient bon, et les Éperviers de Sorel sont à 4 points devant. Morgan Geekie s'invite à St. Louis pour faire le plein. Conseil : plie tes sacs d'épicerie en grues d'origami.",
+        "usr_eve": "La Balance penche de ton bord : 5 points hier, 16 joueurs ce soir, et les huards à 3 points derrière. Jake Guentzel reçoit Winnipeg avec son talent pour flâner devant le filet. Conseil : joue à la marelle sur ton tapis de salon.",
+        "usr_louise_trottier": "Les Pléiades, sept sœurs inséparables, te soudent à No Regretzkys : égalité parfaite à 239. Cole Caufield débarque à Dallas pour trancher la chicane de famille, et l'équipe d'Ève n'est qu'à 3 points. Conseil : offre une tisane à ta boîte aux lettres.",
+        "usr_julien_berube": "Le Scorpion pique en contre-attaque : égalité avec les huards, et ton coussin de 12 points sur The Eras Tour te sert de bouclier. Sebastian Aho reçoit Columbus avec la mèche qui fume encore. Conseil : fais du yoga avec ta pinte de lait. 🦂",
+        "usr_florence": "Le Verseau déverse 20 lignes de bingo, de quoi remplir un album double, même si hier n'a rapporté que 2 points. Juraj Slafkovský débarque à Dallas pour lancer le prochain acte, et SkiBum reste à 9 points. Conseil : échange un bracelet d'amitié avec ton facteur.",
+        "usr_jolyne_brossard": "Une aurore boréale illumine le sommet de ta piste : 5 points hier, et SK|MADDOXG reste 5 points en bas du télésiège. Cutter Gauthier reçoit Buffalo pour tracer les premières lignes dans la poudreuse. Conseil : farte tes pantoufles avant d'aller au salon. ⛷️",
+        "usr_maddox_gagnon": "Europe, la lune glacée, cache un océan sous sa croûte : 1 point hier, mais 18 joueurs en uniforme ce soir, la plus grosse armée du pool ex aequo. David Pastrnak débarque à St. Louis avec le moteur qui ronronne. Conseil : salue ton reflet dans une cuillère.",
+        "usr_vicky": "Mimas, petite lune au cratère géant, prouve qu'on frappe fort même au fond du classement. Avec 18 joueurs en uniforme, Erik Karlsson reçoit l'Utah pour lancer ta remontée de la ligne bleue, et SK|MADDOXG est à 8 points. Conseil : cite ton chat dans ta bibliographie. 📚"
       }
     }
   ]
