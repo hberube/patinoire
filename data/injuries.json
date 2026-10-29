@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28T10:00:47Z",
+  "updated": "2026-10-29T04:40:16Z",
   "source": "ESPN",
   "players": [
     {
@@ -58,17 +58,6 @@
       "note": "Ullmark (lower body) is expected to miss the next 1-2 weeks, Claire Hanna of TSN reports Thursday."
     },
     {
-      "id": 8480313,
-      "name": "Logan Thompson",
-      "team": "WSH",
-      "pos": "G",
-      "status": "ir",
-      "type": "Lower Body",
-      "returnDate": "2026-10-28",
-      "noteDate": "2026-10-26",
-      "note": "Thompson (lower body) participated in Monday's practice and remains day-to-day ahead of Wednesday's home matchup against Philadelphia, per Sammi Silber of The District Standard."
-    },
-    {
       "id": 8478445,
       "name": "Mathew Barzal",
       "team": "NYI",
@@ -91,6 +80,17 @@
       "note": "Konecny (lower body) was placed on injured reserve Sunday, according to the NHL media site."
     },
     {
+      "id": 8480893,
+      "name": "Kirill Marchenko",
+      "team": "TOR",
+      "pos": "F",
+      "status": "out",
+      "type": "Lower Body",
+      "returnDate": "2026-11-07",
+      "noteDate": "2026-10-28",
+      "note": "out"
+    },
+    {
       "id": 8480018,
       "name": "Nick Suzuki",
       "team": "MTL",
@@ -102,6 +102,17 @@
       "note": "out"
     },
     {
+      "id": 8479542,
+      "name": "Brandon Hagel",
+      "team": "TBL",
+      "pos": "F",
+      "status": "dtd",
+      "type": "Undisclosed",
+      "returnDate": "2026-10-29",
+      "noteDate": "2026-10-28",
+      "note": "day-to-day"
+    },
+    {
       "id": 8471215,
       "name": "Evgeni Malkin",
       "team": "PIT",
@@ -110,17 +121,6 @@
       "type": "Illness",
       "returnDate": "2026-10-29",
       "noteDate": "2026-10-25",
-      "note": "day-to-day"
-    },
-    {
-      "id": 8480893,
-      "name": "Kirill Marchenko",
-      "team": "TOR",
-      "pos": "F",
-      "status": "dtd",
-      "type": "Lower Body",
-      "returnDate": "2026-10-28",
-      "noteDate": "2026-10-27",
       "note": "day-to-day"
     }
   ]
