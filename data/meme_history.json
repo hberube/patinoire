@@ -1,19 +1,6 @@
 {
   "memes": [
     {
-      "gameDay": "2026-10-17",
-      "category": "bingo",
-      "format": "breaking",
-      "subject": {
-        "kind": "team",
-        "id": "usr_elrick"
-      },
-      "fr": {
-        "headline": "ÉVASION RATÉE : MICHAEL SCOFIELD BLANCHI AU BINGO",
-        "ticker": "ELRICK : 3 CASES, 0 LIGNE. LE PLAN ÉTAIT TATOUÉ À L'ENVERS"
-      }
-    },
-    {
       "gameDay": "2026-10-18",
       "category": "participant",
       "format": "classic",
@@ -140,6 +127,19 @@
       "fr": {
         "no": "JACK EICHEL, 19 PTS : 18 PARTICIPANTS « NON MERCI »",
         "yes": "MATTHEW KNIES, 7 MATCHS SANS POINT : 3 PARTICIPANTS EN AMOUR"
+      }
+    },
+    {
+      "gameDay": "2026-10-29",
+      "category": "bingo",
+      "format": "classic",
+      "subject": {
+        "kind": "team",
+        "id": "usr_louise_trottier"
+      },
+      "fr": {
+        "top": "LOUISE : 8 CASES, 8 LIGNES, 0 GASPILLAGE",
+        "bottom": "HUGO (4 CASES, 0 LIGNE) DEMANDE UNE REPRISE VIDÉO À TORONTO"
       }
     }
   ]

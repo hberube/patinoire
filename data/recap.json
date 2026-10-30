@@ -1,34 +1,36 @@
 {
-  "gameDay": "2026-10-26",
-  "generatedAt": "2026-10-27T08:31:13Z",
+  "gameDay": "2026-10-29",
+  "generatedAt": "2026-10-30T08:31:10Z",
   "fr": {
-    "title": "Michel tient la barre, Guillaume colle au train",
+    "title": "Sylvianne grimpe, Michel tient bon, Louise rafle le bingo",
     "bullets": [
-      "Bingo : Michel (Les Ducks) rafle la soirée avec 6 lignes et 7 cases, et reste en tête avec 277 points. 🎯",
-      "Guillaume (Laser Kiwis) signe le plus gros gain de la soirée, +4, et garde le 2e rang à 263 points grâce au but de Larkin.",
-      "Nylander a marqué malgré la défaite de Toronto : 9 buts et 19 points, donc à un but et un point de deux jalons. Cinq participants l'ont.",
-      "Elrick grimpe au 5e rang, Simon glisse au 6e. Jackson dépasse Étienne (244 chacun) grâce à ses 18 lignes de bingo contre 14.",
-      "Infirmerie : Marchenko (TOR, bas du corps, retour prévu le 28 octobre) frappe Guillaume. Marner (VGK) est de retour au jeu. 🚑"
+      "Michel (Les Ducks) reste en tête avec 307 points, 13 devant Guillaume (Laser Kiwis). 👑",
+      "Sylvianne (Maman Girafe) signe la meilleure soirée avec 21 points et grimpe au 4e rang.",
+      "Jackson (Les Anglers) gagne 3 rangs. Égal à Elrick à 275, il le devance aux lignes de bingo (24 contre 19).",
+      "Cole Caufield a marqué pour 14 participants dans le 5-2 du CH à Dallas. Slafkovský est à un point des 10. 🏒",
+      "Bingo: Louise (Les huards) rafle tout avec 8 lignes. Hugo repart bredouille avec 4 cases. 🎯",
+      "Infirmerie: Larkin (DET) est suspendu jusqu'au 14 nov., aïe pour Guillaume et Sylvianne. Marchenko (TOR), aussi chez Guillaume, passe à la liste des blessés. 🚑"
     ]
   },
   "en": {
-    "title": "Michel holds the wheel, Guillaume close behind",
+    "title": "Sylvianne climbs, Michel holds on, Louise sweeps bingo",
     "bullets": [
-      "Bingo: Michel (Les Ducks) wins the night with 6 lines and 7 squares, and stays on top with 277 points. 🎯",
-      "Guillaume (Laser Kiwis) had the biggest gain of the night, +4, and holds 2nd at 263 thanks to Larkin's goal.",
-      "Nylander scored despite Toronto's loss: 9 goals and 19 points, one goal and one point shy of two milestones. Five participants own him.",
-      "Elrick climbs to 5th, Simon slips to 6th. Jackson passes Étienne (244 each) on bingo lines, 18 to 14.",
-      "Infirmary: Marchenko (TOR, lower body, expected back Oct. 28) hurts Guillaume. Marner (VGK) is back in the lineup. 🚑"
+      "Michel (Les Ducks) stays on top with 307 points, 13 clear of Guillaume (Laser Kiwis). 👑",
+      "Sylvianne (Maman Girafe) had the best night with 21 points and climbs to 4th.",
+      "Jackson (Les Anglers) jumps 3 spots. Tied with Elrick at 275, he holds the edge on season bingo lines (24 to 19).",
+      "Cole Caufield scored for 14 participants in Montreal's 5-2 win in Dallas. Slafkovský is one point from 10. 🏒",
+      "Bingo: Louise (Les huards) cleans up with 8 lines. Hugo comes up empty with 4 squares. 🎯",
+      "Infirmary: Larkin (DET) is suspended until Nov. 14, ouch for Guillaume and Sylvianne. Marchenko (TOR), also on Guillaume's roster, moves to injured reserve. 🚑"
     ]
   },
   "image": {
     "fr": {
       "src": "data/recap-fr.png",
-      "alt": "JACK EICHEL, 19 PTS : 18 PARTICIPANTS « NON MERCI » / MATTHEW KNIES, 7 MATCHS SANS POINT : 3 PARTICIPANTS EN AMOUR"
+      "alt": "LOUISE : 8 CASES, 8 LIGNES, 0 GASPILLAGE / HUGO (4 CASES, 0 LIGNE) DEMANDE UNE REPRISE VIDÉO À TORONTO"
     },
     "en": {
       "src": "data/recap-en.png",
-      "alt": "JACK EICHEL, 19 PTS: NOT ON A SINGLE ROSTER / MATTHEW KNIES, 7 GAMES, 0 POINTS: 3 PROUD OWNERS"
+      "alt": "LOUISE: 8 SQUARES, 8 LINES, ZERO WASTE / HUGO (4 SQUARES, 0 LINES) IS THROWING THE COACH'S CHALLENGE FLAG"
     }
   }
 }
