@@ -1,104 +1,112 @@
 {
-  "gameDay": "2026-10-26",
-  "generatedAt": "2026-10-27T08:33:42Z",
-  "duration": 203,
+  "gameDay": "2026-10-29",
+  "generatedAt": "2026-10-30T08:34:11Z",
+  "duration": 214,
   "engine": "elevenlabs",
   "lines": [
     {
       "host": "jean",
-      "line": "[excited] Bonjour la famille! Les Ondes de la Patinoire sont en ondes! Juste 3 matchs hier soir, pis Detroit gagne 4 à 3 en fusillade à Edmonton!"
+      "line": "[excited] Bonjour, bonjour! Ici Jean, aux Ondes de la Patinoire! 11 matchs hier soir, pis le Canadien gagne 5 à 2 à Dallas! Ça, ça va dans les livres!"
     },
     {
       "host": "sylvie",
-      "line": "Bonjour, ici Sylvie. Le Canadien jouait pas, fait que Jean a regardé la télé éteinte, par respect."
+      "line": "Bonjour, ici Sylvie. Sans Suzuki pis sans Demidov, en plus. Pour une fois, Jean, je te laisse ton livre."
     },
     {
       "host": "jean",
-      "line": "En haut, Michel ajoute 3 points, 277. Mais Guillaume en fait 4, la plus grosse soirée, pis l'écart passe de 15 à 14!"
+      "line": "En haut, Michel fait 12 points, 307. Guillaume en fait 15, pis l'écart passe de 16 à 13!"
     },
     {
       "host": "sylvie",
-      "line": "[sarcastic] 4 points, la plus grosse soirée. Hier, le pool au complet a fait la grasse matinée en plein soir."
+      "line": "Pis Anaheim perd 7 à 6 contre Buffalo. Les Ducks de Michel volent plus haut que les vrais."
     },
     {
       "host": "jean",
-      "line": "Hugo en prend 2, 259. Il est rendu à 4 points de Guillaume, pis Sylvianne est juste 4 points derrière lui!"
+      "line": "Mais la plus grosse soirée, c'est Sylvianne! 21 points, pis elle monte au 4e, à 285!"
     },
     {
       "host": "sylvie",
-      "line": "Hugo, regarde pas en arrière. Maman Girafe a des grandes enjambées."
+      "line": "Hugo est à 288. [whispers] Hugo, la girafe lit déjà ton journal par-dessus ton épaule."
     },
     {
       "host": "jean",
-      "line": "[excited] Pis Elrick dépasse Simon! 252 contre 251, il prend le 5e rang!"
+      "line": "Jackson saute de 3 rangs, 5e à 275, à égalité avec Elrick! Pis mes HabsRoller font 16 points, 8e rang!"
     },
     {
       "host": "sylvie",
-      "line": "Michael Scofield a fini par sortir de la cellule qu'il partageait avec Simon. La plus petite évasion de l'histoire: 1 point."
+      "line": "Alexandre fait 20 points pis rejoint Étienne à 271. Étienne, lui, dégringole de 3 rangs au 10e. L'ascenseur montait pour un pis descendait pour l'autre."
     },
     {
       "host": "jean",
-      "line": "Jackson monte au 7e devant Étienne, les 2 à 244! Pis mes HabsRoller tiennent le 9e!"
+      "line": "En bas, Vicky fait 16 points, mais reste 18e, à 221. Maddox est juste 3 points devant!"
     },
     {
       "host": "sylvie",
-      "line": "En bas, Florence pis Vicky font 0 point. Vicky garde le fanal à 199. Il est resté allumé toute la nuit, pis personne est venu le chercher."
+      "line": "[sighs] 16 points pis le fanal bouge pas. Vicky, à ce stade-là, c'est plus un fanal, c'est un phare."
     },
     {
       "host": "jean",
-      "line": "Le bingo! 18 cartes, pis Michel gagne avec 6 lignes, 7 cases! Florence suit avec 5 lignes, Jackson avec 4!"
+      "line": "Le bingo! 18 cartes, pis Louise gagne avec 8 lignes sur 8 cases! Alexandre suit avec 5, Elrick avec 4!"
     },
     {
       "host": "sylvie",
-      "line": "[chuckles] Florence, 0 point au pool, 5 lignes au bingo. Elle a pas manqué le spectacle, elle a juste changé de scène. Eve ferme la marche, 3 cases, zéro ligne."
+      "line": "[chuckles] L'autre matin, Louise fermait la marche avec 1 case. Hier, 8 cases, 8 lignes. Chaque case a fait du temps double."
     },
     {
       "host": "jean",
-      "line": "La course de la saison, après 10 soirées: Jackson garde la tête, 2 victoires, 18 lignes! Étienne suit, 2 victoires, 14 lignes!"
+      "line": "Maddox ferme la marche, 3 cases, zéro ligne. Pis Hugo a 4 cases, zéro ligne aussi!"
     },
     {
       "host": "sylvie",
-      "line": "Pis Michel a enfin sa première victoire, avec 24 lignes, le plus gros total du pool. Le premier au classement veut le prix de bingo aussi. Il veut-tu toute la maison?"
+      "line": "Hugo, c'est des mots croisés avec des lettres partout pis pas un seul mot."
     },
     {
       "host": "jean",
-      "line": "[sighs] L'infirmerie! Kirill Marchenko, de Toronto, est absent, bas du corps, retour prévu le 28. Juste Guillaume l'a."
+      "line": "La course de la saison, après 13 soirées: Louise prend la tête! 2 victoires, 28 lignes! Jackson suit, 2 victoires, 24 lignes, pis Vicky, 2 victoires, 20!"
     },
     {
       "host": "sylvie",
-      "line": "Prompt rétablissement, Kirill. Guillaume, la vie te donne la plus grosse soirée pis te demande la monnaie."
+      "line": "Vicky, dernière au pool, 3e au bingo. Le prix de fin d'année, elle le voit de la fenêtre du sous-sol."
     },
     {
       "host": "jean",
-      "line": "Bonne nouvelle: Mitch Marner, de Vegas, est de retour au jeu! Pour vrai, cette fois!"
+      "line": "[sighs] L'infirmerie! Dylan Larkin, de Detroit, est suspendu, retour prévu le 14 novembre. Guillaume pis Sylvianne l'ont."
     },
     {
       "host": "sylvie",
-      "line": "Absent, incertain, absent, incertain... Marner a enfin fini de jouer à la marguerite. Suzuki pis Demidov, eux autres, sont encore absents, Jean."
+      "line": "On souhaite à Dylan de revenir le cœur calme. L'autre jour, il leur marquait un but. Là, il leur envoie la facture."
     },
     {
       "host": "jean",
-      "line": "Les beaux buts! Dylan Larkin marque pour Detroit à Edmonton, sur une passe de Seider! Sylvianne pis Guillaume l'ont!"
+      "line": "Kirill Marchenko, de Toronto, passe d'absent à la liste des blessés, retour repoussé au 17 novembre. Juste Guillaume l'a."
     },
     {
       "host": "sylvie",
-      "line": "Pis Vasily Podkolzin marque pour Edmonton, sur des passes de Draisaitl pis McDavid. 2 vedettes du pool qui travaillent pour un gars qui est dans aucune équipe."
+      "line": "Courage, Kirill. Guillaume, 15 points pis 2 joueurs de moins: t'as gagné la soirée pis perdu le vestiaire."
     },
     {
       "host": "jean",
-      "line": "William Nylander marque pour Toronto à Calgary! 5 d'entre vous l'ont! Il est à 9 buts pis 19 points!"
+      "line": "Bonne nouvelle: Logan Thompson, Connor Hellebuyck pis Evgeni Malkin sont de retour au jeu!"
     },
     {
       "host": "sylvie",
-      "line": "Toronto perd 5 à 2, mais Nylander est à 1 but de 10 pis 1 point de 20. [laughs] Jean, prépare des confettis. Un petit sac, c'est Toronto."
+      "line": "Pis Malkin fait déjà une passe sur le but d'Erik Karlsson, que Vicky a aussi. Vicky, ta note de bas de page a écrit le chapitre au complet."
     },
     {
       "host": "jean",
-      "line": "[excited] Pis Sam Reinhart est à 9 points, 7 d'entre vous l'ont! On se retrouve demain matin, la famille!"
+      "line": "[excited] Les beaux buts! Cole Caufield en marque 2 à Dallas, un sur une passe de Slafkovský! 14 d'entre vous ont Caufield!"
     },
     {
       "host": "sylvie",
-      "line": "Michel, savoure ton bingo: au classement, Guillaume vient de te reprendre 1 point. À demain!"
+      "line": "Slafkovský est à 9 points, 12 d'entre vous l'ont. [sarcastic] Jean, retourne au dépanneur, t'as pas fini de lancer des confettis."
+    },
+    {
+      "host": "jean",
+      "line": "Cutter Gauthier en marque 2 pour Anaheim sur des passes de Leo Carlsson, pis Forsberg en marque 2 pour Nashville! On se revoit demain matin!"
+    },
+    {
+      "host": "sylvie",
+      "line": "[laughs] Hugo, la girafe a fini de lire ton journal. Là, elle tourne la page. À demain, la famille!"
     }
   ]
 }
