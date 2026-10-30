@@ -1,7 +1,18 @@
 {
-  "updated": "2026-10-29T10:00:44Z",
+  "updated": "2026-10-30T04:58:21Z",
   "source": "ESPN",
   "players": [
+    {
+      "id": 8477946,
+      "name": "Dylan Larkin",
+      "team": "DET",
+      "pos": "F",
+      "status": "susp",
+      "type": "Suspension",
+      "returnDate": "2026-11-14",
+      "noteDate": "2026-10-29",
+      "note": "ir-nr"
+    },
     {
       "id": 8475810,
       "name": "Bryan Rust",
@@ -47,6 +58,17 @@
       "note": "ir"
     },
     {
+      "id": 8480893,
+      "name": "Kirill Marchenko",
+      "team": "TOR",
+      "pos": "F",
+      "status": "ir",
+      "type": "Lower Body",
+      "returnDate": "2026-11-17",
+      "noteDate": "2026-10-29",
+      "note": "ir"
+    },
+    {
       "id": 8476999,
       "name": "Linus Ullmark",
       "team": "OTT",
@@ -80,17 +102,6 @@
       "note": "Konecny (lower body) was placed on injured reserve Sunday, according to the NHL media site."
     },
     {
-      "id": 8480893,
-      "name": "Kirill Marchenko",
-      "team": "TOR",
-      "pos": "F",
-      "status": "out",
-      "type": "Lower Body",
-      "returnDate": "2026-11-07",
-      "noteDate": "2026-10-28",
-      "note": "out"
-    },
-    {
       "id": 8480018,
       "name": "Nick Suzuki",
       "team": "MTL",
@@ -100,28 +111,6 @@
       "returnDate": "2026-11-18",
       "noteDate": "2026-10-22",
       "note": "out"
-    },
-    {
-      "id": 8479542,
-      "name": "Brandon Hagel",
-      "team": "TBL",
-      "pos": "F",
-      "status": "dtd",
-      "type": "Undisclosed",
-      "returnDate": "2026-10-29",
-      "noteDate": "2026-10-28",
-      "note": "day-to-day"
-    },
-    {
-      "id": 8471215,
-      "name": "Evgeni Malkin",
-      "team": "PIT",
-      "pos": "F",
-      "status": "dtd",
-      "type": "Illness",
-      "returnDate": "2026-10-29",
-      "noteDate": "2026-10-25",
-      "note": "day-to-day"
     }
   ]
 }
