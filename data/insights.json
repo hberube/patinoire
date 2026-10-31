@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-30T08:30:47Z",
+  "lastUpdated": "2026-10-31T02:49:20Z",
   "gameDay": "2026-10-29",
   "highlights": [
     {
@@ -894,8 +894,8 @@
       "dry": 3
     },
     "8475913": {
-      "last5": 5,
-      "games": 14,
+      "last5": 3,
+      "games": 15,
       "dry": 0
     },
     "8476459": {
@@ -914,8 +914,8 @@
       "dry": 0
     },
     "8476945": {
-      "last5": 1,
-      "games": 1,
+      "last5": 2,
+      "games": 2,
       "dry": 0
     },
     "8476999": {
@@ -940,7 +940,7 @@
     },
     "8477933": {
       "last5": 4,
-      "games": 13,
+      "games": 14,
       "dry": 0
     },
     "8477934": {
@@ -1009,8 +1009,8 @@
       "dry": 0
     },
     "8478483": {
-      "last5": 7,
-      "games": 12,
+      "last5": 8,
+      "games": 13,
       "dry": 0
     },
     "8478864": {
@@ -1024,9 +1024,9 @@
       "dry": 0
     },
     "8479314": {
-      "last5": 9,
-      "games": 13,
-      "dry": 0
+      "last5": 6,
+      "games": 14,
+      "dry": 1
     },
     "8479325": {
       "last5": 4,
@@ -1039,9 +1039,9 @@
       "dry": 0
     },
     "8479407": {
-      "last5": 4,
-      "games": 13,
-      "dry": 1
+      "last5": 5,
+      "games": 14,
+      "dry": 0
     },
     "8479420": {
       "last5": 7,
@@ -1104,9 +1104,9 @@
       "dry": 0
     },
     "8480801": {
-      "last5": 7,
-      "games": 13,
-      "dry": 0
+      "last5": 5,
+      "games": 14,
+      "dry": 1
     },
     "8480803": {
       "last5": 6,
@@ -1154,9 +1154,9 @@
       "dry": 0
     },
     "8481559": {
-      "last5": 5,
-      "games": 13,
-      "dry": 1
+      "last5": 7,
+      "games": 14,
+      "dry": 0
     },
     "8482093": {
       "last5": 5,
@@ -1270,15 +1270,15 @@
       "target": 10
     },
     {
-      "id": 8481559,
-      "name": "Jack Hughes",
-      "team": "NJD",
+      "id": 8475913,
+      "name": "Mark Stone",
+      "team": "VGK",
       "pos": "F",
-      "points": 14,
-      "owners": 10,
+      "points": 17,
+      "owners": 7,
       "stat": "goals",
-      "value": 4,
-      "target": 5
+      "value": 9,
+      "target": 10
     },
     {
       "id": 8484153,
@@ -1396,94 +1396,94 @@
     "sims": 5000,
     "teams": {
       "usr_michel_bry": {
-        "win": 37.5,
-        "podium": 70.7,
-        "projected": 1719
+        "win": 38.3,
+        "podium": 70.6,
+        "projected": 1730
       },
       "usr_guillaume_brossard": {
-        "win": 11.1,
-        "podium": 37.4,
-        "projected": 1644
+        "win": 12.0,
+        "podium": 38.6,
+        "projected": 1655
       },
       "usr_hugo_berube": {
-        "win": 5.2,
-        "podium": 28.6,
-        "projected": 1632
+        "win": 5.4,
+        "podium": 31.4,
+        "projected": 1647
       },
       "usr_sylvianne": {
-        "win": 15.5,
-        "podium": 42.0,
-        "projected": 1659
-      },
-      "usr_elrick": {
-        "win": 4.9,
-        "podium": 18.8,
-        "projected": 1590
+        "win": 13.4,
+        "podium": 39.5,
+        "projected": 1662
       },
       "usr_jackson_gagnon": {
-        "win": 3.9,
-        "podium": 14.9,
-        "projected": 1585
+        "win": 5.0,
+        "podium": 17.4,
+        "projected": 1604
       },
       "usr_simon": {
-        "win": 4.4,
-        "podium": 19.5,
-        "projected": 1613
-      },
-      "usr_vincent": {
-        "win": 7.1,
-        "podium": 18.4,
-        "projected": 1564
+        "win": 4.3,
+        "podium": 18.8,
+        "projected": 1622
       },
       "usr_etienne": {
-        "win": 2.9,
-        "podium": 13.0,
-        "projected": 1580
+        "win": 3.6,
+        "podium": 14.2,
+        "projected": 1598
+      },
+      "usr_elrick": {
+        "win": 3.9,
+        "podium": 16.7,
+        "projected": 1590
       },
       "usr_alexandre_comeau": {
-        "win": 2.1,
-        "podium": 13.7,
-        "projected": 1596
+        "win": 2.7,
+        "podium": 14.4,
+        "projected": 1611
+      },
+      "usr_vincent": {
+        "win": 6.3,
+        "podium": 16.1,
+        "projected": 1564
       },
       "usr_eve": {
         "win": 1.2,
-        "podium": 5.0,
-        "projected": 1516
-      },
-      "usr_louise_trottier": {
-        "win": 0.8,
-        "podium": 5.0,
-        "projected": 1509
+        "podium": 5.3,
+        "projected": 1524
       },
       "usr_julien_berube": {
-        "win": 1.3,
-        "podium": 4.9,
-        "projected": 1504
+        "win": 1.2,
+        "podium": 5.1,
+        "projected": 1515
       },
       "usr_marjolaine_comeau": {
         "win": 0.4,
-        "podium": 3.2,
+        "podium": 2.4,
         "projected": 1501
       },
+      "usr_louise_trottier": {
+        "win": 0.4,
+        "podium": 4.3,
+        "projected": 1510
+      },
       "usr_florence": {
-        "win": 0.8,
-        "podium": 3.1,
-        "projected": 1445
+        "win": 0.9,
+        "podium": 2.7,
+        "projected": 1454
       },
       "usr_jolyne_brossard": {
         "win": 0.1,
-        "podium": 0.7,
-        "projected": 1417
+        "podium": 0.6,
+        "projected": 1427
       },
       "usr_maddox_gagnon": {
-        "win": 0.7,
-        "podium": 1.8,
-        "projected": 1393
+        "win": 0.8,
+        "podium": 2.3,
+        "projected": 1392
       },
       "usr_vicky": {
-        "win": 0.3,
-        "podium": 1.2,
-        "projected": 1367
+        "win": 0.4,
+        "podium": 1.3,
+        "projected": 1375
       }
     },
     "before": {
