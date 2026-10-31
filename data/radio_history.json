@@ -1,120 +1,6 @@
 {
   "shows": [
     {
-      "gameDay": "2026-10-21",
-      "lines": [
-        {
-          "host": "jean",
-          "line": "[excited] Bon matin, les amateurs! Les Ondes de la Patinoire sont en ondes! 2 matchs hier soir, pis Ottawa en a mis 5 à la Floride!"
-        },
-        {
-          "host": "sylvie",
-          "line": "Bonjour, ici Sylvie. Ottawa gagne 5 à 1, Philadelphie gagne 3 à 1 à Buffalo. Le pool au complet a ramassé 12 points. Pas de quoi réveiller les voisins."
-        },
-        {
-          "host": "jean",
-          "line": "Michel pis ses Ducks, zéro point, mais toujours premiers à 225!"
-        },
-        {
-          "host": "sylvie",
-          "line": "Hugo prend 1 petit point, 210. L'écart avec Michel passe de 16 à 15. [chuckles] À ce rythme-là, il le rattrape au printemps."
-        },
-        {
-          "host": "jean",
-          "line": "Guillaume reste 3e à 208. Sylvianne 4e, pis Simon 5e, juste 1 point derrière elle!"
-        },
-        {
-          "host": "sylvie",
-          "line": "Pis Étienne s'est trouvé un nouveau coloc. Vincent pis lui sont collés à 199, Étienne 7e, Vincent 8e."
-        },
-        {
-          "host": "jean",
-          "line": "Mes HabsRoller! 2 points hier, le plus gros total de la soirée, à égalité avec Florence!"
-        },
-        {
-          "host": "sylvie",
-          "line": "[sarcastic] 2 points, Jean. Range le char allégorique. Marjolaine remonte de 2 places, 10e, à égalité avec Alexandre à 193. Eve glisse au 12e."
-        },
-        {
-          "host": "jean",
-          "line": "En bas, Maddox pis Vicky, zéro point chacun. Le sous-sol a pas bougé."
-        },
-        {
-          "host": "sylvie",
-          "line": "Le bingo! Hier soir, pas 1 gagnant, mais 3: Hugo, Simon pis Étienne, 1 ligne pis 3 cases chacun."
-        },
-        {
-          "host": "jean",
-          "line": "[gasps] Hugo a gagné une égalité! Hugo, encadre ça!"
-        },
-        {
-          "host": "sylvie",
-          "line": "[laughs] Pis Vicky ferme la marche: 2 cases, zéro ligne. Sa carte pis son équipe suivent le même plan de match."
-        },
-        {
-          "host": "jean",
-          "line": "La course de la saison, après 5 soirées: Étienne prend les devants, 2 victoires, 8 lignes! Jackson pis Vincent suivent avec 1 victoire pis 7 lignes!"
-        },
-        {
-          "host": "sylvie",
-          "line": "Le titi master a autant de lignes que Sylvianne, mais lui, il a des victoires pour aller avec. Le prix de fin d'année commence à le regarder."
-        },
-        {
-          "host": "jean",
-          "line": "L'infirmerie! Linus Ullmark, d'Ottawa, est incertain, au jour le jour, blessé au bas du corps. Retour prévu aujourd'hui. Vincent est le seul à l'avoir."
-        },
-        {
-          "host": "sylvie",
-          "line": "Prompt rétablissement, Linus. Vincent, t'auras même pas le temps de t'inquiéter avant le dîner."
-        },
-        {
-          "host": "jean",
-          "line": "[sighs] Logan Thompson, de Washington, lui aussi incertain, bas du corps, retour prévu le 24. 6 d'entre vous l'ont, pis il était à 1 victoire de 5!"
-        },
-        {
-          "host": "sylvie",
-          "line": "La 5e victoire attendra. Bonne nouvelle par contre: Seth Jarvis, de la Caroline, pis Rasmus Dahlin, de Buffalo, sont de retour au jeu. Le pool peut recommencer à respirer."
-        },
-        {
-          "host": "jean",
-          "line": "Les beaux buts! Brady Tkachuk marque dans le match Floride-Ottawa, pis M. Tkachuk a une passe! 5 d'entre vous ont le buteur!"
-        },
-        {
-          "host": "sylvie",
-          "line": "Un Tkachuk qui sert un Tkachuk. Les soupers de famille chez eux doivent être intenses."
-        },
-        {
-          "host": "jean",
-          "line": "Pis Trevor Zegras marque pour Philadelphie! Hugo, Jackson pis Vincent l'ont!"
-        },
-        {
-          "host": "sylvie",
-          "line": "L'autre soir, il leur donnait des passes. Hier, un vrai but. Zegras livre maintenant à domicile."
-        },
-        {
-          "host": "jean",
-          "line": "[excited] Pis Lane Hutson est encore à 9 points, comme Jack Hughes. Les confettis sont toujours dans ma poche, Sylvie!"
-        },
-        {
-          "host": "sylvie",
-          "line": "Laisse-les là, Jean, ça va finir dans la sécheuse. On se retrouve demain matin, la famille!"
-        }
-      ],
-      "injured": {
-        "8476945": "susp",
-        "8484984": "ir",
-        "8475166": "ir",
-        "8478445": "ir",
-        "8476999": "dtd",
-        "8480313": "dtd"
-      },
-      "awards": {
-        "goldenPick": 8478864,
-        "iceAnchor": 8482720,
-        "snub": 8478403
-      }
-    },
-    {
       "gameDay": "2026-10-22",
       "lines": [
         {
@@ -828,6 +714,121 @@
         {
           "host": "sylvie",
           "line": "[laughs] Hugo, la girafe a fini de lire ton journal. Là, elle tourne la page. À demain, la famille!"
+        }
+      ],
+      "injured": {
+        "8477946": "susp",
+        "8484984": "ir",
+        "8475166": "ir",
+        "8480893": "ir",
+        "8476999": "ir",
+        "8478445": "ir",
+        "8480018": "out"
+      },
+      "awards": {
+        "goldenPick": 8478864,
+        "iceAnchor": 8471214,
+        "snub": 8478403
+      }
+    },
+    {
+      "gameDay": "2026-10-30",
+      "lines": [
+        {
+          "host": "jean",
+          "line": "[excited] Bonjour la famille, pis joyeuse Halloween! Ici Jean, aux Ondes de la Patinoire! 3 matchs hier soir: le New Jersey gagne 5 à 2 à Vegas, la Floride bat Winnipeg 5 à 2, pis Calgary écrase Seattle 6 à 2!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Bonjour, ici Sylvie. 3 matchs pis pas de Canadien. Jean a passé la soirée à fixer le calendrier en espérant qu'il change d'idée."
+        },
+        {
+          "host": "jean",
+          "line": "En haut, Michel fait 5 points, 312. Guillaume en fait 4, pis l'écart remonte de 13 à 14."
+        },
+        {
+          "host": "sylvie",
+          "line": "Hugo en fait 5, 293, à 5 points de Guillaume. Sylvianne, elle, fait 0 point. [chuckles] Hugo, la girafe a fini de lire ton journal. Là, elle fait la sieste dessus."
+        },
+        {
+          "host": "jean",
+          "line": "Jackson monte au 5e, à 281! Pis Étienne fait 6 points pis saute de 2 rangs, au 7e!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Pendant ce temps-là, Elrick dégringole de 3 rangs, 8e, à égalité avec Étienne à 277. Michael Scofield est retourné en dedans, pis il a un nouveau coloc."
+        },
+        {
+          "host": "jean",
+          "line": "[sighs] Pis mes HabsRoller font 0 point pis glissent au 10e. Le Canadien jouait pas, Sylvie! C'est pas juste!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Quand ton équipe s'appelle les HabsRoller, Vincent, les soirs de congé du Canadien, t'as congé aussi."
+        },
+        {
+          "host": "jean",
+          "line": "La plus grosse soirée, c'est Florence, 8 points! Elle reste 15e, à 248."
+        },
+        {
+          "host": "sylvie",
+          "line": "En bas, Maddox fait 0 point, 224, pis Vicky en fait 2, 223. [whispers] Maddox, l'écart est rendu à 1 point. Le phare de Vicky clignote dans ta direction."
+        },
+        {
+          "host": "jean",
+          "line": "Le bingo! 18 cartes, pis c'est une égalité! Étienne pis Alexandre gagnent, 4 lignes, 6 cases chacun! Michel suit avec 3 lignes!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Michel avait 6 cases lui aussi. Il voulait toute la maison, il va se contenter du cabanon. Pis Maddox ferme la marche encore, 3 cases, zéro ligne: 2 fois de suite, ça devient une tradition."
+        },
+        {
+          "host": "jean",
+          "line": "[excited] La course de la saison, après 14 soirées: Étienne reprend la tête! 3 victoires, 20 lignes!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Le titi master a récupéré son trône. Louise a 27 lignes pis Jackson 25, mais juste 2 victoires chacun. Étienne, lui, collectionne pas les lignes, il collectionne les trophées."
+        },
+        {
+          "host": "jean",
+          "line": "L'infirmerie! Aucun nouveau blessé, pis personne qui empire!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Une nuit tranquille. L'infirmière a pu boire son café chaud, une première cette saison."
+        },
+        {
+          "host": "jean",
+          "line": "[excited] Les beaux buts! Jack Hughes en marque 2 pour le New Jersey à Vegas, un sur une passe de Bratt! 10 d'entre vous l'ont!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Pis Mark Stone marque pour Vegas sur une passe de Marner. 7 d'entre vous l'ont, pis il est à 9 buts. Jean, sors les confettis, mais garde le doigt loin du bouton."
+        },
+        {
+          "host": "jean",
+          "line": "Marner fait aussi une passe sur le but de Barbashev! Il est revenu en forme, le Mitch!"
+        },
+        {
+          "host": "sylvie",
+          "line": "[sarcastic] 2 passes, pis un des 2 buteurs, personne l'a choisi. Barbashev a déballé le cadeau, pis le pool a gardé le papier."
+        },
+        {
+          "host": "jean",
+          "line": "Sam Reinhart marque pour la Floride, 7 d'entre vous l'ont! Pis il fait la passe sur le but de Seth Jones!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Un but, une passe. Les 7 qui ont Reinhart, vous lui devez un café. On se retrouve demain matin?"
+        },
+        {
+          "host": "jean",
+          "line": "Demain matin, la famille! Pis attention aux bonbons!"
+        },
+        {
+          "host": "sylvie",
+          "line": "[laughs] Maddox, Vicky arrive avec son fanal pis un costume d'Halloween. Barre ta porte. À demain!"
         }
       ],
       "injured": {
