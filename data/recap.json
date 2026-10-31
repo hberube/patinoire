@@ -1,36 +1,34 @@
 {
-  "gameDay": "2026-10-29",
-  "generatedAt": "2026-10-30T08:31:10Z",
+  "gameDay": "2026-10-30",
+  "generatedAt": "2026-10-31T08:31:00Z",
   "fr": {
-    "title": "Sylvianne grimpe, Michel tient bon, Louise rafle le bingo",
+    "title": "Jack Hughes en double, Étienne grimpe, Michel s'envole",
     "bullets": [
-      "Michel (Les Ducks) reste en tête avec 307 points, 13 devant Guillaume (Laser Kiwis). 👑",
-      "Sylvianne (Maman Girafe) signe la meilleure soirée avec 21 points et grimpe au 4e rang.",
-      "Jackson (Les Anglers) gagne 3 rangs. Égal à Elrick à 275, il le devance aux lignes de bingo (24 contre 19).",
-      "Cole Caufield a marqué pour 14 participants dans le 5-2 du CH à Dallas. Slafkovský est à un point des 10. 🏒",
-      "Bingo: Louise (Les huards) rafle tout avec 8 lignes. Hugo repart bredouille avec 4 cases. 🎯",
-      "Infirmerie: Larkin (DET) est suspendu jusqu'au 14 nov., aïe pour Guillaume et Sylvianne. Marchenko (TOR), aussi chez Guillaume, passe à la liste des blessés. 🚑"
+      "🏒 Jack Hughes a marqué deux fois à Vegas, et 10 participants se frottent les mains.",
+      "Mark Stone a marqué avec une passe de Marner. Il lui manque un but pour atteindre 10. Sept participants l'ont.",
+      "Michel (Les Ducks) mène avec 312 points, 14 de plus que Guillaume (Laser Kiwis). Hugo (Crazy Blue Heelers) est 3e, à 5 points du deuxième.",
+      "Étienne a ramassé 6 points et grimpe de deux rangs au 7e. Elrick recule de trois et le suit, à égalité à 277.",
+      "🎯 Bingo: Étienne et Alexandre se partagent la victoire avec 4 lignes chacun. Maddox ferme la marche avec 0 ligne et 3 cases."
     ]
   },
   "en": {
-    "title": "Sylvianne climbs, Michel holds on, Louise sweeps bingo",
+    "title": "Hughes scores twice, Étienne climbs, Michel pulls away",
     "bullets": [
-      "Michel (Les Ducks) stays on top with 307 points, 13 clear of Guillaume (Laser Kiwis). 👑",
-      "Sylvianne (Maman Girafe) had the best night with 21 points and climbs to 4th.",
-      "Jackson (Les Anglers) jumps 3 spots. Tied with Elrick at 275, he holds the edge on season bingo lines (24 to 19).",
-      "Cole Caufield scored for 14 participants in Montreal's 5-2 win in Dallas. Slafkovský is one point from 10. 🏒",
-      "Bingo: Louise (Les huards) cleans up with 8 lines. Hugo comes up empty with 4 squares. 🎯",
-      "Infirmary: Larkin (DET) is suspended until Nov. 14, ouch for Guillaume and Sylvianne. Marchenko (TOR), also on Guillaume's roster, moves to injured reserve. 🚑"
+      "🏒 Jack Hughes scored twice in Vegas, and 10 participants are smiling.",
+      "Mark Stone scored with a Marner assist. He's one goal shy of 10, and seven participants own him.",
+      "Michel (Les Ducks) leads with 312 points, 14 clear of Guillaume (Laser Kiwis). Hugo (Crazy Blue Heelers) sits 3rd, 5 points back of second.",
+      "Étienne picked up 6 points and climbed two spots to 7th. Elrick fell three and trails him, tied at 277.",
+      "🎯 Bingo: Étienne and Alexandre share the win with 4 lines each. Maddox came last with 0 lines and 3 squares."
     ]
   },
   "image": {
     "fr": {
       "src": "data/recap-fr.png",
-      "alt": "LOUISE : 8 CASES, 8 LIGNES, 0 GASPILLAGE / HUGO (4 CASES, 0 LIGNE) DEMANDE UNE REPRISE VIDÉO À TORONTO"
+      "alt": "ÉVASION : MICHAEL SCOFIELD SORT DU TOP 5 — ELRICK : 2 PTS, −3 RANGS · LE PLAN ÉTAIT TATOUÉ À L'ENVERS"
     },
     "en": {
       "src": "data/recap-en.png",
-      "alt": "LOUISE: 8 SQUARES, 8 LINES, ZERO WASTE / HUGO (4 SQUARES, 0 LINES) IS THROWING THE COACH'S CHALLENGE FLAG"
+      "alt": "PRISON BREAK: SCOFIELD ESCAPES THE TOP 5 — ELRICK: 2 PTS, DOWN 3 SPOTS · WRONG WAY ON THE TATTOO MAP"
     }
   }
 }

@@ -1,19 +1,6 @@
 {
   "memes": [
     {
-      "gameDay": "2026-10-18",
-      "category": "participant",
-      "format": "classic",
-      "subject": {
-        "kind": "team",
-        "id": "usr_vincent"
-      },
-      "fr": {
-        "top": "VINCENT A EU LA SOIRÉE DE SA VIE",
-        "bottom": "1 POINT, 1 BINGO, +1 RANG : LE TOUR DU CHAPEAU DU PAUVRE"
-      }
-    },
-    {
       "gameDay": "2026-10-19",
       "category": "bingo",
       "format": "versus",
@@ -140,6 +127,19 @@
       "fr": {
         "top": "LOUISE : 8 CASES, 8 LIGNES, 0 GASPILLAGE",
         "bottom": "HUGO (4 CASES, 0 LIGNE) DEMANDE UNE REPRISE VIDÉO À TORONTO"
+      }
+    },
+    {
+      "gameDay": "2026-10-30",
+      "category": "participant",
+      "format": "breaking",
+      "subject": {
+        "kind": "team",
+        "id": "usr_elrick"
+      },
+      "fr": {
+        "headline": "ÉVASION : MICHAEL SCOFIELD SORT DU TOP 5",
+        "ticker": "ELRICK : 2 PTS, −3 RANGS · LE PLAN ÉTAIT TATOUÉ À L'ENVERS"
       }
     }
   ]
