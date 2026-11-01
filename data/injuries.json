@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T08:30:42Z",
+  "updated": "2026-11-01T04:39:46Z",
   "source": "ESPN",
   "players": [
     {
@@ -10,7 +10,7 @@
       "status": "susp",
       "type": "Suspension",
       "returnDate": "2026-11-14",
-      "noteDate": "2026-10-29",
+      "noteDate": "2026-10-31",
       "note": "ir-nr"
     },
     {
@@ -42,7 +42,7 @@
       "pos": "F",
       "status": "ir",
       "type": "Lower Body",
-      "returnDate": "2026-10-31",
+      "returnDate": "2026-11-07",
       "noteDate": "2026-10-06",
       "note": "Demidov (lower body) was placed on injured reserve by the Canadiens on Tuesday, per the NHL media site."
     },
@@ -100,6 +100,17 @@
       "returnDate": "2026-11-03",
       "noteDate": "2026-10-11",
       "note": "Konecny (lower body) was placed on injured reserve Sunday, according to the NHL media site."
+    },
+    {
+      "id": 8477960,
+      "name": "Adrian Kempe",
+      "team": "LAK",
+      "pos": "F",
+      "status": "out",
+      "type": "Undisclosed",
+      "returnDate": "2026-11-04",
+      "noteDate": "2026-10-31",
+      "note": "Kempe (undisclosed) won't be in the lineup against Buffalo on Saturday, per Zach Dooley of the Kings' official site."
     },
     {
       "id": 8480018,
