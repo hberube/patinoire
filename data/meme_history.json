@@ -1,23 +1,6 @@
 {
   "memes": [
     {
-      "gameDay": "2026-10-19",
-      "category": "bingo",
-      "format": "versus",
-      "subject": {
-        "kind": "team",
-        "id": "usr_vicky"
-      },
-      "subject2": {
-        "kind": "team",
-        "id": "usr_louise_trottier"
-      },
-      "fr": {
-        "no": "VICKY : 4 CASES, 0 LIGNE. UNE THÈSE SANS CONCLUSION",
-        "yes": "LOUISE : 5 CASES, 2 LIGNES. DES HUARDS BIEN PLACÉS"
-      }
-    },
-    {
       "gameDay": "2026-10-20",
       "category": "participant",
       "format": "breaking",
@@ -140,6 +123,19 @@
       "fr": {
         "headline": "ÉVASION : MICHAEL SCOFIELD SORT DU TOP 5",
         "ticker": "ELRICK : 2 PTS, −3 RANGS · LE PLAN ÉTAIT TATOUÉ À L'ENVERS"
+      }
+    },
+    {
+      "gameDay": "2026-10-31",
+      "category": "bingo",
+      "format": "classic",
+      "subject": {
+        "kind": "team",
+        "id": "usr_florence"
+      },
+      "fr": {
+        "top": "HALLOWEEN : ÉTIENNE ET JOLYNE À 5 LIGNES",
+        "bottom": "FLORENCE : 3 CASES, 0 LIGNE… ET UN SAC DE RAISINS SECS"
       }
     }
   ]

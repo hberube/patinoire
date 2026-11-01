@@ -1,34 +1,36 @@
 {
-  "gameDay": "2026-10-30",
-  "generatedAt": "2026-10-31T08:31:00Z",
+  "gameDay": "2026-10-31",
+  "generatedAt": "2026-11-01T08:31:02Z",
   "fr": {
-    "title": "Jack Hughes en double, Étienne grimpe, Michel s'envole",
+    "title": "Michel tient la barre, Étienne grimpe grâce au bingo",
     "bullets": [
-      "🏒 Jack Hughes a marqué deux fois à Vegas, et 10 participants se frottent les mains.",
-      "Mark Stone a marqué avec une passe de Marner. Il lui manque un but pour atteindre 10. Sept participants l'ont.",
-      "Michel (Les Ducks) mène avec 312 points, 14 de plus que Guillaume (Laser Kiwis). Hugo (Crazy Blue Heelers) est 3e, à 5 points du deuxième.",
-      "Étienne a ramassé 6 points et grimpe de deux rangs au 7e. Elrick recule de trois et le suit, à égalité à 277.",
-      "🎯 Bingo: Étienne et Alexandre se partagent la victoire avec 4 lignes chacun. Maddox ferme la marche avec 0 ligne et 3 cases."
+      "Michel (Les Ducks) reste en tête avec 326 points (+14). Guillaume le suit à 11 points après une soirée de 17.",
+      "Étienne et Elrick bondissent de deux rangs avec 20 points chacun. Égalité à 297, mais les lignes de bingo donnent le 5e rang à Étienne. 🏒",
+      "Bingo: Étienne et Jolyne se partagent la soirée avec 5 lignes chacun. Florence ferme la marche avec 0 ligne.",
+      "Nathan MacKinnon marque, et 17 participants sourient. Un but de plus et il atteint 10.",
+      "Sylvianne (+20) colle Hugo: 305 contre 306. Attention aux girafes, Hugo!",
+      "Infirmerie: Adrian Kempe (LAK), absent, blessure non précisée, retour prévu le 4 novembre. 5 participants l'ont."
     ]
   },
   "en": {
-    "title": "Hughes scores twice, Étienne climbs, Michel pulls away",
+    "title": "Michel holds the lead, Étienne climbs on bingo luck",
     "bullets": [
-      "🏒 Jack Hughes scored twice in Vegas, and 10 participants are smiling.",
-      "Mark Stone scored with a Marner assist. He's one goal shy of 10, and seven participants own him.",
-      "Michel (Les Ducks) leads with 312 points, 14 clear of Guillaume (Laser Kiwis). Hugo (Crazy Blue Heelers) sits 3rd, 5 points back of second.",
-      "Étienne picked up 6 points and climbed two spots to 7th. Elrick fell three and trails him, tied at 277.",
-      "🎯 Bingo: Étienne and Alexandre share the win with 4 lines each. Maddox came last with 0 lines and 3 squares."
+      "Michel (Les Ducks) stays on top with 326 points (+14). Guillaume trails by 11 after a 17-point night.",
+      "Étienne and Elrick each jump two spots with 20 points. They're tied at 297, but bingo lines give Étienne 5th place. 🏒",
+      "Bingo: Étienne and Jolyne share the win with 5 lines each. Florence brings up the rear with 0 lines.",
+      "Nathan MacKinnon scores, and 17 participants cheer. One more goal and he hits 10.",
+      "Sylvianne (+20) is right behind Hugo: 305 to 306. Watch out for the giraffe, Hugo!",
+      "Infirmary: Adrian Kempe (LAK) is out with an undisclosed injury, expected back November 4. 5 participants own him."
     ]
   },
   "image": {
     "fr": {
       "src": "data/recap-fr.png",
-      "alt": "ÉVASION : MICHAEL SCOFIELD SORT DU TOP 5 — ELRICK : 2 PTS, −3 RANGS · LE PLAN ÉTAIT TATOUÉ À L'ENVERS"
+      "alt": "HALLOWEEN : ÉTIENNE ET JOLYNE À 5 LIGNES / FLORENCE : 3 CASES, 0 LIGNE… ET UN SAC DE RAISINS SECS"
     },
     "en": {
       "src": "data/recap-en.png",
-      "alt": "PRISON BREAK: SCOFIELD ESCAPES THE TOP 5 — ELRICK: 2 PTS, DOWN 3 SPOTS · WRONG WAY ON THE TATTOO MAP"
+      "alt": "HALLOWEEN BINGO: ÉTIENNE & JOLYNE GET 5 LINES / FLORENCE: 3 SQUARES, 0 LINES, AND A BAG FULL OF TOOTHBRUSHES"
     }
   }
 }
