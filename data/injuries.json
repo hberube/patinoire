@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T08:30:43Z",
+  "updated": "2026-11-02T03:46:59Z",
   "source": "ESPN",
   "players": [
     {
@@ -91,28 +91,6 @@
       "note": "Barzal (knee) will not join the Islanders for their two-game road trip, Andrew Gross of Newsday reports Thursday."
     },
     {
-      "id": 8478439,
-      "name": "Travis Konecny",
-      "team": "PHI",
-      "pos": "F",
-      "status": "ir",
-      "type": "Lower Body",
-      "returnDate": "2026-11-03",
-      "noteDate": "2026-10-11",
-      "note": "Konecny (lower body) was placed on injured reserve Sunday, according to the NHL media site."
-    },
-    {
-      "id": 8477960,
-      "name": "Adrian Kempe",
-      "team": "LAK",
-      "pos": "F",
-      "status": "out",
-      "type": "Undisclosed",
-      "returnDate": "2026-11-04",
-      "noteDate": "2026-10-31",
-      "note": "Kempe (undisclosed) won't be in the lineup against Buffalo on Saturday, per Zach Dooley of the Kings' official site."
-    },
-    {
       "id": 8480018,
       "name": "Nick Suzuki",
       "team": "MTL",
@@ -122,6 +100,17 @@
       "returnDate": "2026-11-18",
       "noteDate": "2026-10-22",
       "note": "out"
+    },
+    {
+      "id": 8477960,
+      "name": "Adrian Kempe",
+      "team": "LAK",
+      "pos": "F",
+      "status": "dtd",
+      "type": "Undisclosed",
+      "returnDate": "2026-11-04",
+      "noteDate": "2026-11-01",
+      "note": "day-to-day"
     }
   ]
 }
