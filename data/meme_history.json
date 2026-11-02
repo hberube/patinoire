@@ -1,19 +1,6 @@
 {
   "memes": [
     {
-      "gameDay": "2026-10-20",
-      "category": "participant",
-      "format": "breaking",
-      "subject": {
-        "kind": "team",
-        "id": "usr_sylvianne"
-      },
-      "fr": {
-        "headline": "ALERTE ZOO : UNE GIRAFE GRIMPE AU 4E RANG",
-        "ticker": "SYLVIANNE : 22 PTS, +3 RANGS. LE COU TENDU VERS LE PODIUM"
-      }
-    },
-    {
       "gameDay": "2026-10-21",
       "category": "player",
       "format": "classic",
@@ -136,6 +123,19 @@
       "fr": {
         "top": "HALLOWEEN : ÉTIENNE ET JOLYNE À 5 LIGNES",
         "bottom": "FLORENCE : 3 CASES, 0 LIGNE… ET UN SAC DE RAISINS SECS"
+      }
+    },
+    {
+      "gameDay": "2026-11-01",
+      "category": "player",
+      "format": "breaking",
+      "subject": {
+        "kind": "player",
+        "id": 8483445
+      },
+      "fr": {
+        "headline": "CUTTER GAUTHIER COUPE LES SÉNATEURS EN TROIS",
+        "ticker": "3 BUTS À ANAHEIM · MICHEL (LES DUCKS) EXIGE DES REDEVANCES"
       }
     }
   ]

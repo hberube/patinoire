@@ -1,36 +1,34 @@
 {
-  "gameDay": "2026-10-31",
-  "generatedAt": "2026-11-01T08:31:02Z",
+  "gameDay": "2026-11-01",
+  "generatedAt": "2026-11-02T08:31:10Z",
   "fr": {
-    "title": "Michel tient la barre, Étienne grimpe grâce au bingo",
+    "title": "Guillaume talonne Michel, Eve rafle le bingo",
     "bullets": [
-      "Michel (Les Ducks) reste en tête avec 326 points (+14). Guillaume le suit à 11 points après une soirée de 17.",
-      "Étienne et Elrick bondissent de deux rangs avec 20 points chacun. Égalité à 297, mais les lignes de bingo donnent le 5e rang à Étienne. 🏒",
-      "Bingo: Étienne et Jolyne se partagent la soirée avec 5 lignes chacun. Florence ferme la marche avec 0 ligne.",
-      "Nathan MacKinnon marque, et 17 participants sourient. Un but de plus et il atteint 10.",
-      "Sylvianne (+20) colle Hugo: 305 contre 306. Attention aux girafes, Hugo!",
-      "Infirmerie: Adrian Kempe (LAK), absent, blessure non précisée, retour prévu le 4 novembre. 5 participants l'ont."
+      "Michel (Les Ducks) garde la tête avec 336 points, mais Guillaume (Laser Kiwis), meilleur de la soirée avec 14 points, n'est qu'à 7 points. 🦆",
+      "Sylvianne grimpe au 3e rang et pousse Hugo au 4e. Le chroniqueur boude. À peine.",
+      "Bingo : Eve rafle tout avec 5 lignes! Vincent ferme la marche avec 0 ligne, malgré Kaprizov, son pick doré tout seul. 🎯",
+      "McDavid (15 participants) et Bouchard ont brillé à New York. Connor est à un but de 10 et à un point de 40.",
+      "Infirmerie : Adrian Kempe (LAK) passe d'absent à incertain, retour possible le 4 novembre. Ils sont 5 à l'avoir. 🩹"
     ]
   },
   "en": {
-    "title": "Michel holds the lead, Étienne climbs on bingo luck",
+    "title": "Guillaume closes in on Michel, Eve takes the bingo",
     "bullets": [
-      "Michel (Les Ducks) stays on top with 326 points (+14). Guillaume trails by 11 after a 17-point night.",
-      "Étienne and Elrick each jump two spots with 20 points. They're tied at 297, but bingo lines give Étienne 5th place. 🏒",
-      "Bingo: Étienne and Jolyne share the win with 5 lines each. Florence brings up the rear with 0 lines.",
-      "Nathan MacKinnon scores, and 17 participants cheer. One more goal and he hits 10.",
-      "Sylvianne (+20) is right behind Hugo: 305 to 306. Watch out for the giraffe, Hugo!",
-      "Infirmary: Adrian Kempe (LAK) is out with an undisclosed injury, expected back November 4. 5 participants own him."
+      "Michel (Les Ducks) holds the lead at 336 points, but Guillaume (Laser Kiwis), top scorer of the night with 14, sits just 7 back. 🦆",
+      "Sylvianne climbs to 3rd and bumps Hugo down to 4th. Your columnist is not sulking. Much.",
+      "Bingo: Eve sweeps the card with 5 lines! Vincent finishes last with 0 lines, despite owning Kaprizov, his lone golden pick. 🎯",
+      "McDavid (15 owners) and Bouchard shone in New York. Connor is one goal from 10 and one point from 40.",
+      "Infirmary: Adrian Kempe (LAK) goes from out to day-to-day, possibly back November 4. 5 participants own him. 🩹"
     ]
   },
   "image": {
     "fr": {
       "src": "data/recap-fr.png",
-      "alt": "HALLOWEEN : ÉTIENNE ET JOLYNE À 5 LIGNES / FLORENCE : 3 CASES, 0 LIGNE… ET UN SAC DE RAISINS SECS"
+      "alt": "CUTTER GAUTHIER COUPE LES SÉNATEURS EN TROIS — 3 BUTS À ANAHEIM · MICHEL (LES DUCKS) EXIGE DES REDEVANCES"
     },
     "en": {
       "src": "data/recap-en.png",
-      "alt": "HALLOWEEN BINGO: ÉTIENNE & JOLYNE GET 5 LINES / FLORENCE: 3 SQUARES, 0 LINES, AND A BAG FULL OF TOOTHBRUSHES"
+      "alt": "CUTTER GAUTHIER SLICES OTTAWA INTO THIRDS — HAT TRICK IN ANAHEIM · MICHEL (LES DUCKS) WANTS ROYALTIES"
     }
   }
 }
