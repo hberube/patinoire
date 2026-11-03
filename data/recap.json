@@ -1,34 +1,36 @@
 {
-  "gameDay": "2026-11-01",
-  "generatedAt": "2026-11-02T08:31:10Z",
+  "gameDay": "2026-11-02",
+  "generatedAt": "2026-11-03T08:31:05Z",
   "fr": {
-    "title": "Guillaume talonne Michel, Eve rafle le bingo",
+    "title": "Michel tient le fort, Hugo grimpe au podium",
     "bullets": [
-      "Michel (Les Ducks) garde la tête avec 336 points, mais Guillaume (Laser Kiwis), meilleur de la soirée avec 14 points, n'est qu'à 7 points. 🦆",
-      "Sylvianne grimpe au 3e rang et pousse Hugo au 4e. Le chroniqueur boude. À peine.",
-      "Bingo : Eve rafle tout avec 5 lignes! Vincent ferme la marche avec 0 ligne, malgré Kaprizov, son pick doré tout seul. 🎯",
-      "McDavid (15 participants) et Bouchard ont brillé à New York. Connor est à un but de 10 et à un point de 40.",
-      "Infirmerie : Adrian Kempe (LAK) passe d'absent à incertain, retour possible le 4 novembre. Ils sont 5 à l'avoir. 🩹"
+      "Michel (Les Ducks) garde la tête à 341 points, devant Guillaume (334). Hugo monte au 3e rang.",
+      "Étienne grimpe de deux rangs au 5e. À égalité avec Elrick (311), il passe devant grâce aux lignes de bingo (28 à 27).",
+      "Florence a pris 9 points, le meilleur total de la soirée, mais reste 15e. Belle poussée!",
+      "Mark Stone et Sam Reinhart ont marqué, chacun chez 7 participants. Nathan MacKinnon est à un but de 10 (17 propriétaires).",
+      "Bingo: Elrick, Julien et Louise se partagent la victoire avec 4 lignes chacun. Florence ferme la marche avec 0 ligne.",
+      "Infirmerie: Malkin (PIT) est incertain au jour le jour, blessure au bas du corps. Eve et Vicky croisent les doigts."
     ]
   },
   "en": {
-    "title": "Guillaume closes in on Michel, Eve takes the bingo",
+    "title": "Michel holds the fort, Hugo climbs onto the podium",
     "bullets": [
-      "Michel (Les Ducks) holds the lead at 336 points, but Guillaume (Laser Kiwis), top scorer of the night with 14, sits just 7 back. 🦆",
-      "Sylvianne climbs to 3rd and bumps Hugo down to 4th. Your columnist is not sulking. Much.",
-      "Bingo: Eve sweeps the card with 5 lines! Vincent finishes last with 0 lines, despite owning Kaprizov, his lone golden pick. 🎯",
-      "McDavid (15 owners) and Bouchard shone in New York. Connor is one goal from 10 and one point from 40.",
-      "Infirmary: Adrian Kempe (LAK) goes from out to day-to-day, possibly back November 4. 5 participants own him. 🩹"
+      "Michel (Les Ducks) stays on top at 341 points, ahead of Guillaume (334). Hugo moves up to 3rd.",
+      "Étienne jumps two spots to 5th. Tied with Elrick at 311, he edges ahead on season bingo lines (28 to 27).",
+      "Florence earned 9 points, the best haul of the night, yet stays 15th. Nice push!",
+      "Mark Stone and Sam Reinhart scored, each owned by 7 participants. Nathan MacKinnon is one goal shy of 10 (17 owners).",
+      "Bingo: Elrick, Julien and Louise share the win with 4 lines each. Florence finishes last with 0 lines.",
+      "Infirmary: Malkin (PIT) is day-to-day with a lower-body injury. Eve and Vicky are crossing their fingers."
     ]
   },
   "image": {
     "fr": {
       "src": "data/recap-fr.png",
-      "alt": "CUTTER GAUTHIER COUPE LES SÉNATEURS EN TROIS — 3 BUTS À ANAHEIM · MICHEL (LES DUCKS) EXIGE DES REDEVANCES"
+      "alt": "MALKIN INCERTAIN, DEMIDOV TOUJOURS ABSENT / ÈVE NOMMERA SA PROCHAINE ÉQUIPE D'APRÈS LES JOUEURS DE MICHEL"
     },
     "en": {
       "src": "data/recap-en.png",
-      "alt": "CUTTER GAUTHIER SLICES OTTAWA INTO THIRDS — HAT TRICK IN ANAHEIM · MICHEL (LES DUCKS) WANTS ROYALTIES"
+      "alt": "MALKIN DAY-TO-DAY, DEMIDOV STILL OUT / EVE'S NEXT TEAM NAME: 'MICHEL'S WHOLE ROSTER'. JUST IN CASE."
     }
   }
 }

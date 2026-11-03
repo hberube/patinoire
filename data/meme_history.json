@@ -1,19 +1,6 @@
 {
   "memes": [
     {
-      "gameDay": "2026-10-21",
-      "category": "player",
-      "format": "classic",
-      "subject": {
-        "kind": "player",
-        "id": 8480801
-      },
-      "fr": {
-        "top": "LES FRÈRES TKACHUK COMBINENT POUR UN BUT",
-        "bottom": "LE SOUPER DE FAMILLE EST RÉUSSI. LE MATCH : 5-1 OTTAWA"
-      }
-    },
-    {
       "gameDay": "2026-10-22",
       "category": "injury",
       "format": "breaking",
@@ -136,6 +123,19 @@
       "fr": {
         "headline": "CUTTER GAUTHIER COUPE LES SÉNATEURS EN TROIS",
         "ticker": "3 BUTS À ANAHEIM · MICHEL (LES DUCKS) EXIGE DES REDEVANCES"
+      }
+    },
+    {
+      "gameDay": "2026-11-02",
+      "category": "injury",
+      "format": "classic",
+      "subject": {
+        "kind": "team",
+        "id": "usr_eve"
+      },
+      "fr": {
+        "top": "MALKIN INCERTAIN, DEMIDOV TOUJOURS ABSENT",
+        "bottom": "ÈVE NOMMERA SA PROCHAINE ÉQUIPE D'APRÈS LES JOUEURS DE MICHEL"
       }
     }
   ]
