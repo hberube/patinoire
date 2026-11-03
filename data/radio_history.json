@@ -1,123 +1,6 @@
 {
   "shows": [
     {
-      "gameDay": "2026-10-24",
-      "lines": [
-        {
-          "host": "jean",
-          "line": "[excited] Bonjour la famille! Les Ondes de la Patinoire sont en ondes! 12 matchs hier soir, pis les Ducks d'Anaheim gagnent 5 à 4 à Philadelphie!"
-        },
-        {
-          "host": "sylvie",
-          "line": "Bonjour, ici Sylvie. Les Ducks de Michel ajoutent 18 points, 266. Il a dû se réveiller en cancanant."
-        },
-        {
-          "host": "jean",
-          "line": "Mais la plus grosse soirée, c'est Guillaume! 19 points, pis il grimpe au 2e rang à 252!"
-        },
-        {
-          "host": "sylvie",
-          "line": "Hugo glisse au 3e. L'écart avec Michel passe de 12 à 17. [sighs] Le printemps vient de déménager en juillet."
-        },
-        {
-          "host": "jean",
-          "line": "[excited] Pis mes HabsRoller remontent au 10e, sans même que le Canadien joue!"
-        },
-        {
-          "host": "sylvie",
-          "line": "Merci Kaprizov, qui marque pour le Minnesota. Ton pool fait du temps supplémentaire pendant que ton club est en congé, Jean."
-        },
-        {
-          "host": "jean",
-          "line": "En bas, Maddox est 16e, 1 point devant Jolyne pis Vicky, collées à 192."
-        },
-        {
-          "host": "sylvie",
-          "line": "Vicky garde le fanal, mais le sous-sol vient de devenir un duplex."
-        },
-        {
-          "host": "jean",
-          "line": "Le bingo! 18 cartes, pis Guillaume gagne avec 6 lignes, 7 cases! Michel pis Simon suivent avec 5!"
-        },
-        {
-          "host": "sylvie",
-          "line": "[chuckles] L'autre jour, je disais que Guillaume était partout. Hier, il était partout en premier. Vicky ferme la marche, 1 ligne."
-        },
-        {
-          "host": "jean",
-          "line": "La course de la saison, après 8 soirées: Étienne mène, 2 victoires, 13 lignes! Guillaume suit, 1 victoire, 19 lignes, pis Sylvianne, 16!"
-        },
-        {
-          "host": "sylvie",
-          "line": "Étienne a les victoires, Guillaume a les lignes. Le prix de fin d'année va choisir entre la qualité pis la quantité."
-        },
-        {
-          "host": "jean",
-          "line": "[sighs] L'infirmerie! Logan Thompson, de Washington, passe d'incertain à la liste des blessés, bas du corps, retour prévu le 28. 6 d'entre vous l'ont."
-        },
-        {
-          "host": "sylvie",
-          "line": "Prompt rétablissement, Logan. Sa 5e victoire s'est trouvé une chaise dans la salle d'attente."
-        },
-        {
-          "host": "jean",
-          "line": "Evgeni Malkin, de Pittsburgh, passe d'incertain à absent, malade, retour prévu le 29. Eve pis Vicky l'ont."
-        },
-        {
-          "host": "sylvie",
-          "line": "Repose-toi, Evgeni. Vicky, ta note de bas de page est officiellement en congé de maladie."
-        },
-        {
-          "host": "jean",
-          "line": "Mitch Marner, de Vegas, pis Connor Hellebuyck, de Winnipeg, redeviennent absents, pas pour une blessure. Retour prévu le 27."
-        },
-        {
-          "host": "sylvie",
-          "line": "8 d'entre vous ont Marner, 5 ont Hellebuyck. On leur souhaite le meilleur."
-        },
-        {
-          "host": "jean",
-          "line": "Les beaux buts! Leon Draisaitl en marque 2 contre Toronto, sur des passes de McDavid pis Bouchard! 9 d'entre vous l'ont!"
-        },
-        {
-          "host": "sylvie",
-          "line": "Bouchard passe à 21 points. Les 10 qui attendaient son 20e ont eu un bonus."
-        },
-        {
-          "host": "jean",
-          "line": "Maddox a Pastrnak pis Ehlers qui marquent! Pis Alex Tuch, 2 buts pour Washington, juste Michel l'a!"
-        },
-        {
-          "host": "sylvie",
-          "line": "Michkov marque pour Philadelphie sur une passe de Zegras. Personne l'a choisi. [laughs] Zegras livre encore, mais personne était là pour signer."
-        },
-        {
-          "host": "jean",
-          "line": "[excited] Pis Lane Hutson est toujours à 9 points! Le Canadien jouait pas, ça compte pas!"
-        },
-        {
-          "host": "sylvie",
-          "line": "Guillaume, profite de ton 2e rang: Hugo est juste 3 points derrière. On se retrouve demain matin, la famille!"
-        }
-      ],
-      "injured": {
-        "8484984": "ir",
-        "8475166": "ir",
-        "8476999": "ir",
-        "8480313": "ir",
-        "8478445": "ir",
-        "8476945": "out",
-        "8471215": "out",
-        "8478483": "out",
-        "8480018": "out"
-      },
-      "awards": {
-        "goldenPick": 8478864,
-        "iceAnchor": 8482720,
-        "snub": 8478403
-      }
-    },
-    {
       "gameDay": "2026-10-25",
       "lines": [
         {
@@ -822,6 +705,131 @@
         "8478445": "ir",
         "8480018": "out",
         "8477960": "dtd"
+      },
+      "awards": {
+        "goldenPick": 8478864,
+        "iceAnchor": 8471214,
+        "snub": 8482116
+      }
+    },
+    {
+      "gameDay": "2026-11-02",
+      "lines": [
+        {
+          "host": "jean",
+          "line": "[excited] Bonjour la famille! Ici Jean, aux Ondes de la Patinoire! 4 matchs hier soir, pis Boston bat Vegas 3 à 2 en tirs de barrage!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Bonjour, ici Sylvie. Pis Detroit gagne 5 à 3 en Floride. Les Red Wings sont allés chercher du soleil, pis ils ont rapporté les 2 points dans leurs valises."
+        },
+        {
+          "host": "jean",
+          "line": "En haut, Michel pis Guillaume font 5 points chacun. Michel, 341, Guillaume, 334. L'écart reste à 7!"
+        },
+        {
+          "host": "sylvie",
+          "line": "2 soirs que le kiwi grignote, pis là il prend une pause. Même un kiwi, ça doit digérer."
+        },
+        {
+          "host": "jean",
+          "line": "[gasps] Pis Hugo reprend le 3e! 6 points, 323! Sylvianne en fait 3 pis glisse au 4e, à 321!"
+        },
+        {
+          "host": "sylvie",
+          "line": "[chuckles] Hugo a repris son journal à la girafe. Un peu froissé, mais encore lisible. Sylvianne, t'es à 2 points, garde le cou étiré."
+        },
+        {
+          "host": "jean",
+          "line": "Étienne fait 6 points pis monte de 2 rangs, au 5e, à 311! Elrick aussi est à 311, pis Simon à 310!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Alexandre monte au 8e, 307, pis Jackson glisse au 9e, 306. 5 gars dans 5 points. Le dépanneur a ouvert une 2e caisse."
+        },
+        {
+          "host": "jean",
+          "line": "La plus grosse soirée, c'est Florence, 9 points! Pis Marjolaine en fait 7 pis monte au 13e!"
+        },
+        {
+          "host": "sylvie",
+          "line": "En bas, Maddox pis Vicky font 4 points chacun, 250 contre 248. [whispers] Maddox, elle marche au même pas que toi. Arrête-toi pas, elle va te rentrer dedans."
+        },
+        {
+          "host": "jean",
+          "line": "Le bingo! 18 cartes, pis une égalité à 3! Elrick, Julien pis Louise gagnent, 4 lignes, 6 cases chacun!"
+        },
+        {
+          "host": "sylvie",
+          "line": "3 gagnants, 1 trophée. Ils vont le couper en pointes comme une tarte. Pis Florence ferme la marche, 2 cases, zéro ligne."
+        },
+        {
+          "host": "jean",
+          "line": "Florence! La plus grosse soirée du pool pis la pire carte de bingo!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Elle a tout donné sur la glace. Il restait plus d'encre pour la carte."
+        },
+        {
+          "host": "jean",
+          "line": "[excited] La course de la saison, après 17 soirées: Étienne mène toujours, 4 victoires, 28 lignes! Mais Louise a 3 victoires pis 36 lignes!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Louise a enfin sorti un trophée de son armoire à lignes. Étienne, elle est à 1 victoire. Jackson suit, 2 victoires, 30 lignes."
+        },
+        {
+          "host": "jean",
+          "line": "[sighs] L'infirmerie! Evgeni Malkin, de Pittsburgh, est incertain, au jour le jour, blessure au bas du corps. Retour prévu aujourd'hui!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Bon rétablissement, Evgeni. Ève pis Vicky l'ont. Ève, avec Demidov déjà là-bas, ton équipe a sa propre aile à l'infirmerie."
+        },
+        {
+          "host": "jean",
+          "line": "Les beaux buts! Morgan Geekie marque pour Boston, sur des passes de Zacha pis Pastrnak! 4 d'entre vous l'ont!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Pis Marner fait 2 passes pour Vegas, sur les buts de Mark Stone pis Trevor Connelly. Connelly est dans aucune équipe du pool. Marner donne des cadeaux à des inconnus, c'est rendu un passe-temps."
+        },
+        {
+          "host": "jean",
+          "line": "Nazem Kadri marque pour le Colorado sur des passes de Makar pis MacKinnon! Pis Sam Reinhart marque pour la Floride, 7 d'entre vous l'ont!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Kadri, personne l'a dans son alignement non plus. Pis Reinhart marque, mais la Floride perd. Un beau but servi avec une défaite en accompagnement."
+        },
+        {
+          "host": "jean",
+          "line": "[excited] Pis Juraj Slafkovský est à 9 points, à 1 du 10! Moment historique en vue!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Jean, le Canadien jouait même pas hier. Tu fêtes l'anniversaire avant le gâteau. On se retrouve demain matin?"
+        },
+        {
+          "host": "jean",
+          "line": "Demain matin, la famille!"
+        },
+        {
+          "host": "sylvie",
+          "line": "[laughs] Louise, Étienne vient de cacher son trophée. Fouille pas dans son armoire. À demain!"
+        }
+      ],
+      "injured": {
+        "8477946": "susp",
+        "8484984": "ir",
+        "8475166": "ir",
+        "8480893": "ir",
+        "8476999": "ir",
+        "8478445": "ir",
+        "8480018": "out",
+        "8477960": "dtd",
+        "8471215": "dtd"
       },
       "awards": {
         "goldenPick": 8478864,
