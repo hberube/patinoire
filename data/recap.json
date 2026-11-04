@@ -1,36 +1,34 @@
 {
-  "gameDay": "2026-11-02",
-  "generatedAt": "2026-11-03T08:31:05Z",
+  "gameDay": "2026-11-03",
+  "generatedAt": "2026-11-04T08:31:06Z",
   "fr": {
-    "title": "Michel tient le fort, Hugo grimpe au podium",
+    "title": "Jackson bondit de 3 rangs, Eve rafle le bingo",
     "bullets": [
-      "Michel (Les Ducks) garde la tête à 341 points, devant Guillaume (334). Hugo monte au 3e rang.",
-      "Étienne grimpe de deux rangs au 5e. À égalité avec Elrick (311), il passe devant grâce aux lignes de bingo (28 à 27).",
-      "Florence a pris 9 points, le meilleur total de la soirée, mais reste 15e. Belle poussée!",
-      "Mark Stone et Sam Reinhart ont marqué, chacun chez 7 participants. Nathan MacKinnon est à un but de 10 (17 propriétaires).",
-      "Bingo: Elrick, Julien et Louise se partagent la victoire avec 4 lignes chacun. Florence ferme la marche avec 0 ligne.",
-      "Infirmerie: Malkin (PIT) est incertain au jour le jour, blessure au bas du corps. Eve et Vicky croisent les doigts."
+      "🏒 Caufield a marqué pour 14 participants, mais le Tricolore s'est incliné 5-4 en prolongation contre Winnipeg. Aïe!",
+      "Jackson (Les Anglers) grimpe de trois rangs au 6e avec 21 points et passe devant Elrick, à égalité à 327, grâce aux lignes de bingo (30 contre 29).",
+      "Michel mène avec 361, devant Guillaume (352). Hugo (Crazy Blue Heelers) est 3e avec 345 après 22 points hier, la meilleure soirée du pool.",
+      "Bingo : Eve gagne avec 5 lignes et 7 cases. Jackson ferme la marche avec une seule case, quelle soirée en montagnes russes!",
+      "Infirmerie : Malkin (PIT) passe d'incertain à absent, retour prévu le 5 novembre (Eve et Vicky l'ont). Tavares (TOR) est absent aussi, ce qui touche Marjolaine."
     ]
   },
   "en": {
-    "title": "Michel holds the fort, Hugo climbs onto the podium",
+    "title": "Jackson leaps 3 spots, Eve takes bingo",
     "bullets": [
-      "Michel (Les Ducks) stays on top at 341 points, ahead of Guillaume (334). Hugo moves up to 3rd.",
-      "Étienne jumps two spots to 5th. Tied with Elrick at 311, he edges ahead on season bingo lines (28 to 27).",
-      "Florence earned 9 points, the best haul of the night, yet stays 15th. Nice push!",
-      "Mark Stone and Sam Reinhart scored, each owned by 7 participants. Nathan MacKinnon is one goal shy of 10 (17 owners).",
-      "Bingo: Elrick, Julien and Louise share the win with 4 lines each. Florence finishes last with 0 lines.",
-      "Infirmary: Malkin (PIT) is day-to-day with a lower-body injury. Eve and Vicky are crossing their fingers."
+      "🏒 Caufield scored for 14 participants, but the Habs fell 5-4 in overtime to Winnipeg. Ouch!",
+      "Jackson (Les Anglers) climbs three spots to 6th with 21 points, edging Elrick on the bingo-line tiebreaker at 327 (30 lines to 29).",
+      "Michel leads with 361, ahead of Guillaume (352). Hugo (Crazy Blue Heelers) sits 3rd at 345 after 22 points last night, the pool's best haul.",
+      "Bingo: Eve wins with 5 lines and 7 squares. Jackson finishes last with a single square, a real roller-coaster night!",
+      "Infirmary: Malkin (PIT) goes from questionable to out, expected back Nov. 5 (Eve and Vicky own him). Tavares (TOR) is out too, which hits Marjolaine."
     ]
   },
   "image": {
     "fr": {
       "src": "data/recap-fr.png",
-      "alt": "MALKIN INCERTAIN, DEMIDOV TOUJOURS ABSENT / ÈVE NOMMERA SA PROCHAINE ÉQUIPE D'APRÈS LES JOUEURS DE MICHEL"
+      "alt": "NO REGRETZKYS : JULIEN AVOUE QUELQUES REGRETS — 4 CASES AU BINGO, 0 LIGNE · GRETZKY REFUSE DE COMMENTER"
     },
     "en": {
       "src": "data/recap-en.png",
-      "alt": "MALKIN DAY-TO-DAY, DEMIDOV STILL OUT / EVE'S NEXT TEAM NAME: 'MICHEL'S WHOLE ROSTER'. JUST IN CASE."
+      "alt": "NO REGRETZKYS: JULIEN HAS A FEW REGRETS — 4 SQUARES, 0 LINES · YOU MISS 100% OF THE LINES YOU MISS"
     }
   }
 }

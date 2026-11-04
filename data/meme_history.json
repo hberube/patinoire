@@ -1,19 +1,6 @@
 {
   "memes": [
     {
-      "gameDay": "2026-10-22",
-      "category": "injury",
-      "format": "breaking",
-      "subject": {
-        "kind": "player",
-        "id": 8476999
-      },
-      "fr": {
-        "headline": "CRISE DU LOGEMENT : LE FILET DE VINCENT À LOUER",
-        "ticker": "ULLMARK BLESSÉ JUSQU'AU 29 · BAIL COURT, FILET NON CHAUFFÉ"
-      }
-    },
-    {
       "gameDay": "2026-10-23",
       "category": "bingo",
       "format": "classic",
@@ -136,6 +123,19 @@
       "fr": {
         "top": "MALKIN INCERTAIN, DEMIDOV TOUJOURS ABSENT",
         "bottom": "ÈVE NOMMERA SA PROCHAINE ÉQUIPE D'APRÈS LES JOUEURS DE MICHEL"
+      }
+    },
+    {
+      "gameDay": "2026-11-03",
+      "category": "bingo",
+      "format": "breaking",
+      "subject": {
+        "kind": "team",
+        "id": "usr_julien_berube"
+      },
+      "fr": {
+        "headline": "NO REGRETZKYS : JULIEN AVOUE QUELQUES REGRETS",
+        "ticker": "4 CASES AU BINGO, 0 LIGNE · GRETZKY REFUSE DE COMMENTER"
       }
     }
   ]
