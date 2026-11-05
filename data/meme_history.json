@@ -1,19 +1,6 @@
 {
   "memes": [
     {
-      "gameDay": "2026-10-23",
-      "category": "bingo",
-      "format": "classic",
-      "subject": {
-        "kind": "team",
-        "id": "usr_florence"
-      },
-      "fr": {
-        "top": "TRIPLE ÉGALITÉ AU BINGO : 4 LIGNES CHACUN",
-        "bottom": "FLORENCE LANCE DÉJÀ « BINGO (FLORENCE'S VERSION) »"
-      }
-    },
-    {
       "gameDay": "2026-10-24",
       "category": "participant",
       "format": "versus",
@@ -136,6 +123,19 @@
       "fr": {
         "headline": "NO REGRETZKYS : JULIEN AVOUE QUELQUES REGRETS",
         "ticker": "4 CASES AU BINGO, 0 LIGNE · GRETZKY REFUSE DE COMMENTER"
+      }
+    },
+    {
+      "gameDay": "2026-11-04",
+      "category": "player",
+      "format": "classic",
+      "subject": {
+        "kind": "player",
+        "id": 8477960
+      },
+      "fr": {
+        "top": "KEMPE REVIENT AU JEU ET MARQUE 3 BUTS",
+        "bottom": "EN NOVEMBRE, LE SEUL KEMPING OUVERT : DEVANT LE FILET DE SAN JOSE"
       }
     }
   ]

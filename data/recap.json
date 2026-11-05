@@ -1,34 +1,36 @@
 {
-  "gameDay": "2026-11-03",
-  "generatedAt": "2026-11-04T08:31:06Z",
+  "gameDay": "2026-11-04",
+  "generatedAt": "2026-11-05T08:31:08Z",
   "fr": {
-    "title": "Jackson bondit de 3 rangs, Eve rafle le bingo",
+    "title": "Kempe signe un tour du chapeau, Hugo rafle le bingo",
     "bullets": [
-      "🏒 Caufield a marqué pour 14 participants, mais le Tricolore s'est incliné 5-4 en prolongation contre Winnipeg. Aïe!",
-      "Jackson (Les Anglers) grimpe de trois rangs au 6e avec 21 points et passe devant Elrick, à égalité à 327, grâce aux lignes de bingo (30 contre 29).",
-      "Michel mène avec 361, devant Guillaume (352). Hugo (Crazy Blue Heelers) est 3e avec 345 après 22 points hier, la meilleure soirée du pool.",
-      "Bingo : Eve gagne avec 5 lignes et 7 cases. Jackson ferme la marche avec une seule case, quelle soirée en montagnes russes!",
-      "Infirmerie : Malkin (PIT) passe d'incertain à absent, retour prévu le 5 novembre (Eve et Vicky l'ont). Tavares (TOR) est absent aussi, ce qui touche Marjolaine."
+      "Adrian Kempe, de retour au jeu, marque trois buts dans la victoire de 7-2 des Kings contre les Sharks. Cinq participants disent merci! 🏒",
+      "Étienne ramasse 10 points, la meilleure soirée du pool, et reste au 5e rang.",
+      "Michel (Les Ducks) garde la tête avec 361, devant Guillaume (352). Simon grimpe au 7e rang, Jackson recule d'un cran.",
+      "Bingo: Hugo gagne avec 6 lignes, Vincent suit avec 5. Sylvianne, zéro ligne malgré 4 cases. 🎯",
+      "Nick Suzuki (MTL, main) est incertain au jour le jour. Six participants retiennent leur souffle. 🩹",
+      "MacKinnon est à un but de la barre des 10, et 17 participants le suivent."
     ]
   },
   "en": {
-    "title": "Jackson leaps 3 spots, Eve takes bingo",
+    "title": "Kempe nets a hat trick, Hugo takes the bingo crown",
     "bullets": [
-      "🏒 Caufield scored for 14 participants, but the Habs fell 5-4 in overtime to Winnipeg. Ouch!",
-      "Jackson (Les Anglers) climbs three spots to 6th with 21 points, edging Elrick on the bingo-line tiebreaker at 327 (30 lines to 29).",
-      "Michel leads with 361, ahead of Guillaume (352). Hugo (Crazy Blue Heelers) sits 3rd at 345 after 22 points last night, the pool's best haul.",
-      "Bingo: Eve wins with 5 lines and 7 squares. Jackson finishes last with a single square, a real roller-coaster night!",
-      "Infirmary: Malkin (PIT) goes from questionable to out, expected back Nov. 5 (Eve and Vicky own him). Tavares (TOR) is out too, which hits Marjolaine."
+      "Adrian Kempe, back in the lineup, scores three in the Kings' 7-2 win over the Sharks. Five participants say thanks! 🏒",
+      "Étienne grabs 10 points, the best night in the pool, and holds 5th place.",
+      "Michel (Les Ducks) stays on top with 361, ahead of Guillaume (352). Simon climbs to 7th, Jackson slips a spot.",
+      "Bingo: Hugo wins with 6 lines, Vincent follows with 5. Sylvianne, no lines despite 4 squares. 🎯",
+      "Nick Suzuki (MTL, hand) is day-to-day. Six participants are holding their breath. 🩹",
+      "MacKinnon is one goal from 10, and 17 participants are watching."
     ]
   },
   "image": {
     "fr": {
       "src": "data/recap-fr.png",
-      "alt": "NO REGRETZKYS : JULIEN AVOUE QUELQUES REGRETS — 4 CASES AU BINGO, 0 LIGNE · GRETZKY REFUSE DE COMMENTER"
+      "alt": "KEMPE REVIENT AU JEU ET MARQUE 3 BUTS / EN NOVEMBRE, LE SEUL KEMPING OUVERT : DEVANT LE FILET DE SAN JOSE"
     },
     "en": {
       "src": "data/recap-en.png",
-      "alt": "NO REGRETZKYS: JULIEN HAS A FEW REGRETS — 4 SQUARES, 0 LINES · YOU MISS 100% OF THE LINES YOU MISS"
+      "alt": "KEMPE RETURNS, SCORES 3 GOALS / CAMP KEMPE: NOW OPEN IN NOVEMBER, RIGHT IN FRONT OF SAN JOSE'S NET"
     }
   }
 }
