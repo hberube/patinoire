@@ -1,23 +1,6 @@
 {
   "memes": [
     {
-      "gameDay": "2026-10-24",
-      "category": "participant",
-      "format": "versus",
-      "subject": {
-        "kind": "team",
-        "id": "usr_michel_bry"
-      },
-      "subject2": {
-        "kind": "team",
-        "id": "usr_guillaume_brossard"
-      },
-      "fr": {
-        "no": "MICHEL : 18 PTS HIER, 1ER RANG, PETITE SIESTE SUR LE TRÔNE",
-        "yes": "GUILLAUME : 19 PTS + BINGO À 6 LIGNES. LE KIWI EST À 14 DU TRÔNE"
-      }
-    },
-    {
       "gameDay": "2026-10-25",
       "category": "bingo",
       "format": "classic",
@@ -136,6 +119,19 @@
       "fr": {
         "top": "KEMPE REVIENT AU JEU ET MARQUE 3 BUTS",
         "bottom": "EN NOVEMBRE, LE SEUL KEMPING OUVERT : DEVANT LE FILET DE SAN JOSE"
+      }
+    },
+    {
+      "gameDay": "2026-11-05",
+      "category": "bingo",
+      "format": "breaking",
+      "subject": {
+        "kind": "team",
+        "id": "usr_vicky"
+      },
+      "fr": {
+        "headline": "SOUTENANCE : LES PHD FATIGUÉES RECALÉES AU BINGO",
+        "ticker": "VICKY : 2 CASES, 0 LIGNE · « ÉCHANTILLON TROP PETIT »"
       }
     }
   ]

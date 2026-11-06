@@ -1,36 +1,36 @@
 {
-  "gameDay": "2026-11-04",
-  "generatedAt": "2026-11-05T08:31:08Z",
+  "gameDay": "2026-11-05",
+  "generatedAt": "2026-11-06T08:31:06Z",
   "fr": {
-    "title": "Kempe signe un tour du chapeau, Hugo rafle le bingo",
+    "title": "Michel tient bon, Hugo pique le 2e rang à Guillaume",
     "bullets": [
-      "Adrian Kempe, de retour au jeu, marque trois buts dans la victoire de 7-2 des Kings contre les Sharks. Cinq participants disent merci! 🏒",
-      "Étienne ramasse 10 points, la meilleure soirée du pool, et reste au 5e rang.",
-      "Michel (Les Ducks) garde la tête avec 361, devant Guillaume (352). Simon grimpe au 7e rang, Jackson recule d'un cran.",
-      "Bingo: Hugo gagne avec 6 lignes, Vincent suit avec 5. Sylvianne, zéro ligne malgré 4 cases. 🎯",
-      "Nick Suzuki (MTL, main) est incertain au jour le jour. Six participants retiennent leur souffle. 🩹",
-      "MacKinnon est à un but de la barre des 10, et 17 participants le suivent."
+      "Michel (Les Ducks) reste en tête avec 380 points. Hugo grimpe au 2e rang (367) et Guillaume glisse au 3e, à un petit point. 🏒",
+      "Alexandre et Louise ont connu la meilleure soirée avec 21 points chacun. Florence, elle, n'en a ramassé que 9, ouch.",
+      "Bingo : Marjolaine (mchb) gagne avec 3 lignes. Vicky ferme la marche avec 0 ligne et 2 cases. 🎯",
+      "Le Canadien bat Utah 5-4 en prolongation. Caufield (14 participants) et Suzuki (6) ont marqué, de quoi faire sourire le pool.",
+      "MacKinnon (17 participants) est à un but du cap des 10. Rantanen aussi, avec ses 9 buts.",
+      "Infirmerie : Nick Suzuki (MTL) et Evgeni Malkin (PIT) sont de retour au jeu. 🚑"
     ]
   },
   "en": {
-    "title": "Kempe nets a hat trick, Hugo takes the bingo crown",
+    "title": "Michel holds on, Hugo steals 2nd from Guillaume",
     "bullets": [
-      "Adrian Kempe, back in the lineup, scores three in the Kings' 7-2 win over the Sharks. Five participants say thanks! 🏒",
-      "Étienne grabs 10 points, the best night in the pool, and holds 5th place.",
-      "Michel (Les Ducks) stays on top with 361, ahead of Guillaume (352). Simon climbs to 7th, Jackson slips a spot.",
-      "Bingo: Hugo wins with 6 lines, Vincent follows with 5. Sylvianne, no lines despite 4 squares. 🎯",
-      "Nick Suzuki (MTL, hand) is day-to-day. Six participants are holding their breath. 🩹",
-      "MacKinnon is one goal from 10, and 17 participants are watching."
+      "Michel (Les Ducks) stays on top with 380 points. Hugo climbs to 2nd (367) and Guillaume slips to 3rd, just one point back. 🏒",
+      "Alexandre and Louise had the best night with 21 points each. Florence managed only 9, ouch.",
+      "Bingo: Marjolaine (mchb) wins with 3 lines. Vicky brings up the rear with 0 lines and 2 squares. 🎯",
+      "Montreal beats Utah 5-4 in OT. Caufield (14 participants) and Suzuki (6) scored, and the pool is smiling.",
+      "MacKinnon (17 participants) is one goal from 10. Rantanen is too, sitting on 9 goals.",
+      "Infirmary: Nick Suzuki (MTL) and Evgeni Malkin (PIT) are back in the lineup. 🚑"
     ]
   },
   "image": {
     "fr": {
       "src": "data/recap-fr.png",
-      "alt": "KEMPE REVIENT AU JEU ET MARQUE 3 BUTS / EN NOVEMBRE, LE SEUL KEMPING OUVERT : DEVANT LE FILET DE SAN JOSE"
+      "alt": "SOUTENANCE : LES PHD FATIGUÉES RECALÉES AU BINGO — VICKY : 2 CASES, 0 LIGNE · « ÉCHANTILLON TROP PETIT »"
     },
     "en": {
       "src": "data/recap-en.png",
-      "alt": "KEMPE RETURNS, SCORES 3 GOALS / CAMP KEMPE: NOW OPEN IN NOVEMBER, RIGHT IN FRONT OF SAN JOSE'S NET"
+      "alt": "PHD DEFENSE: LES PHD FATIGUÉES FAIL BINGO ORALS — VICKY: 2 SQUARES, 0 LINES · REVIEWERS: \"SMALL SAMPLE SIZE\""
     }
   }
 }
