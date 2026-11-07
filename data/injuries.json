@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T08:30:45Z",
+  "updated": "2026-11-07T03:46:33Z",
   "source": "ESPN",
   "players": [
     {
@@ -75,9 +75,9 @@
       "pos": "G",
       "status": "ir",
       "type": "Lower Body",
-      "returnDate": "2026-11-07",
-      "noteDate": "2026-10-22",
-      "note": "Ullmark (lower body) is expected to miss the next 1-2 weeks, Claire Hanna of TSN reports Thursday."
+      "returnDate": "2026-11-10",
+      "noteDate": "2026-11-06",
+      "note": "Ullmark (lower body) is not expected back for Saturday's clash with Utah, TSN 1200 Ottawa reports."
     },
     {
       "id": 8478445,
@@ -91,26 +91,26 @@
       "note": "Barzal (knee) practiced Wednesday, but he wore a no-contact jersey, and there's still no timetable for his return, per Stefen Rosner of NHL.com."
     },
     {
-      "id": 8476434,
-      "name": "John Gibson",
-      "team": "DET",
-      "pos": "G",
-      "status": "out",
-      "type": "Lower Body",
-      "returnDate": "2026-11-07",
-      "noteDate": "2026-11-05",
-      "note": "out"
-    },
-    {
       "id": 8480036,
       "name": "Miro Heiskanen",
       "team": "DAL",
       "pos": "D",
       "status": "out",
       "type": "Upper Body",
+      "returnDate": "2026-11-12",
+      "noteDate": "2026-11-06",
+      "note": "out"
+    },
+    {
+      "id": 8476434,
+      "name": "John Gibson",
+      "team": "DET",
+      "pos": "G",
+      "status": "dtd",
+      "type": "Lower Body",
       "returnDate": "2026-11-07",
-      "noteDate": "2026-11-05",
-      "note": "Heiskanen (upper body) will not play in Thursday's road clash against the Blue Jackets, per Mike Heika of the Stars' official site."
+      "noteDate": "2026-11-06",
+      "note": "Gibson (lower body) participated in Friday's practice session, Helene St. James of the Detroit Free Press reports."
     }
   ]
 }

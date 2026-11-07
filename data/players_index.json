@@ -196,6 +196,13 @@
     "points": 19
   },
   {
+    "id": 8479420,
+    "name": "Tage Thompson",
+    "pos": "F",
+    "team": "BUF",
+    "points": 19
+  },
+  {
     "id": 8480069,
     "name": "Cale Makar",
     "pos": "D",
@@ -256,13 +263,6 @@
     "name": "Roman Josi",
     "pos": "D",
     "team": "NSH",
-    "points": 18
-  },
-  {
-    "id": 8479420,
-    "name": "Tage Thompson",
-    "pos": "F",
-    "team": "BUF",
     "points": 18
   },
   {
@@ -354,6 +354,20 @@
     "name": "Erik Karlsson",
     "pos": "D",
     "team": "PIT",
+    "points": 16
+  },
+  {
+    "id": 8482097,
+    "name": "Jack Quinn",
+    "pos": "F",
+    "team": "BUF",
+    "points": 16
+  },
+  {
+    "id": 8482660,
+    "name": "Kent Johnson",
+    "pos": "F",
+    "team": "CBJ",
     "points": 16
   },
   {
@@ -469,6 +483,13 @@
     "points": 15
   },
   {
+    "id": 8484145,
+    "name": "Zach Benson",
+    "pos": "F",
+    "team": "BUF",
+    "points": 15
+  },
+  {
     "id": 8477500,
     "name": "Bo Horvat",
     "pos": "F",
@@ -504,13 +525,6 @@
     "points": 14
   },
   {
-    "id": 8482097,
-    "name": "Jack Quinn",
-    "pos": "F",
-    "team": "BUF",
-    "points": 14
-  },
-  {
     "id": 8479979,
     "name": "Jake Oettinger",
     "pos": "G",
@@ -529,13 +543,6 @@
     "name": "Jordan Kyrou",
     "pos": "F",
     "team": "WSH",
-    "points": 14
-  },
-  {
-    "id": 8482660,
-    "name": "Kent Johnson",
-    "pos": "F",
-    "team": "CBJ",
     "points": 14
   },
   {
@@ -574,6 +581,13 @@
     "points": 14
   },
   {
+    "id": 8482671,
+    "name": "Owen Power",
+    "pos": "D",
+    "team": "BUF",
+    "points": 14
+  },
+  {
     "id": 8481611,
     "name": "Pyotr Kochetkov",
     "pos": "G",
@@ -602,10 +616,10 @@
     "points": 14
   },
   {
-    "id": 8484145,
-    "name": "Zach Benson",
-    "pos": "F",
-    "team": "BUF",
+    "id": 8478460,
+    "name": "Zach Werenski",
+    "pos": "D",
+    "team": "CBJ",
     "points": 14
   },
   {
@@ -655,13 +669,6 @@
     "name": "Roope Hintz",
     "pos": "F",
     "team": "DAL",
-    "points": 13
-  },
-  {
-    "id": 8478460,
-    "name": "Zach Werenski",
-    "pos": "D",
-    "team": "CBJ",
     "points": 13
   },
   {
@@ -931,13 +938,6 @@
     "points": 11
   },
   {
-    "id": 8482671,
-    "name": "Owen Power",
-    "pos": "D",
-    "team": "BUF",
-    "points": 11
-  },
-  {
     "id": 8480995,
     "name": "Pontus Holmberg",
     "pos": "F",
@@ -1148,10 +1148,24 @@
     "points": 10
   },
   {
+    "id": 8483500,
+    "name": "Noah Ostlund",
+    "pos": "F",
+    "team": "BUF",
+    "points": 10
+  },
+  {
     "id": 8481604,
     "name": "Pavel Dorofeyev",
     "pos": "F",
     "team": "NYR",
+    "points": 10
+  },
+  {
+    "id": 8480839,
+    "name": "Rasmus Dahlin",
+    "pos": "D",
+    "team": "BUF",
     "points": 10
   },
   {
@@ -1316,13 +1330,6 @@
     "points": 9
   },
   {
-    "id": 8483500,
-    "name": "Noah Ostlund",
-    "pos": "F",
-    "team": "BUF",
-    "points": 9
-  },
-  {
     "id": 8477416,
     "name": "Oliver Bjorkstrand",
     "pos": "F",
@@ -1337,9 +1344,9 @@
     "points": 9
   },
   {
-    "id": 8480839,
-    "name": "Rasmus Dahlin",
-    "pos": "D",
+    "id": 8481522,
+    "name": "Peyton Krebs",
+    "pos": "F",
     "team": "BUF",
     "points": 9
   },
@@ -1603,13 +1610,6 @@
     "points": 8
   },
   {
-    "id": 8481522,
-    "name": "Peyton Krebs",
-    "pos": "F",
-    "team": "BUF",
-    "points": 8
-  },
-  {
     "id": 8480459,
     "name": "Pius Suter",
     "pos": "F",
@@ -1705,6 +1705,13 @@
     "name": "Danila Yurov",
     "pos": "F",
     "team": "MIN",
+    "points": 7
+  },
+  {
+    "id": 8483485,
+    "name": "Denton Mateychuk",
+    "pos": "D",
+    "team": "CBJ",
     "points": 7
   },
   {
@@ -1817,6 +1824,13 @@
     "name": "Mathieu Joseph",
     "pos": "F",
     "team": "EDM",
+    "points": 7
+  },
+  {
+    "id": 8482720,
+    "name": "Matthew Knies",
+    "pos": "F",
+    "team": "CBJ",
     "points": 7
   },
   {
@@ -2072,13 +2086,6 @@
     "points": 6
   },
   {
-    "id": 8483485,
-    "name": "Denton Mateychuk",
-    "pos": "D",
-    "team": "CBJ",
-    "points": 6
-  },
-  {
     "id": 8482221,
     "name": "Devon Levi",
     "pos": "G",
@@ -2240,13 +2247,6 @@
     "points": 6
   },
   {
-    "id": 8482720,
-    "name": "Matthew Knies",
-    "pos": "F",
-    "team": "CBJ",
-    "points": 6
-  },
-  {
     "id": 8484136,
     "name": "Max Sasson",
     "pos": "F",
@@ -2335,6 +2335,13 @@
     "name": "Ryan Winterton",
     "pos": "F",
     "team": "SEA",
+    "points": 6
+  },
+  {
+    "id": 8477497,
+    "name": "Sean Monahan",
+    "pos": "F",
+    "team": "CBJ",
     "points": 6
   },
   {
@@ -2667,6 +2674,13 @@
     "points": 5
   },
   {
+    "id": 8480064,
+    "name": "Josh Norris",
+    "pos": "F",
+    "team": "BUF",
+    "points": 5
+  },
+  {
     "id": 8480817,
     "name": "K'Andre Miller",
     "pos": "D",
@@ -2807,13 +2821,6 @@
     "points": 5
   },
   {
-    "id": 8477497,
-    "name": "Sean Monahan",
-    "pos": "F",
-    "team": "CBJ",
-    "points": 5
-  },
-  {
     "id": 8477447,
     "name": "Shea Theodore",
     "pos": "D",
@@ -2895,6 +2902,13 @@
     "name": "Tyson Foerster",
     "pos": "F",
     "team": "PHI",
+    "points": 5
+  },
+  {
+    "id": 8480045,
+    "name": "Ukko-Pekka Luukkonen",
+    "pos": "G",
+    "team": "BUF",
     "points": 5
   },
   {
@@ -3094,6 +3108,13 @@
     "points": 4
   },
   {
+    "id": 8482659,
+    "name": "Josh Doan",
+    "pos": "F",
+    "team": "BUF",
+    "points": 4
+  },
+  {
     "id": 8476312,
     "name": "Josh Manson",
     "pos": "D",
@@ -3273,13 +3294,6 @@
     "name": "Tony DeAngelo",
     "pos": "D",
     "team": "NYI",
-    "points": 4
-  },
-  {
-    "id": 8480045,
-    "name": "Ukko-Pekka Luukkonen",
-    "pos": "G",
-    "team": "BUF",
     "points": 4
   },
   {
@@ -3549,13 +3563,6 @@
     "points": 3
   },
   {
-    "id": 8482659,
-    "name": "Josh Doan",
-    "pos": "F",
-    "team": "BUF",
-    "points": 3
-  },
-  {
     "id": 8479372,
     "name": "Josh Mahura",
     "pos": "D",
@@ -3567,13 +3574,6 @@
     "name": "Josh Morrissey",
     "pos": "D",
     "team": "WPG",
-    "points": 3
-  },
-  {
-    "id": 8480064,
-    "name": "Josh Norris",
-    "pos": "F",
-    "team": "BUF",
     "points": 3
   },
   {
@@ -4414,6 +4414,13 @@
     "name": "Conor Garland",
     "pos": "F",
     "team": "CBJ",
+    "points": 1
+  },
+  {
+    "id": 8479982,
+    "name": "Conor Timmins",
+    "pos": "D",
+    "team": "BUF",
     "points": 1
   },
   {
@@ -5376,6 +5383,13 @@
     "points": 0
   },
   {
+    "id": 8485469,
+    "name": "Jack Williams",
+    "pos": "F",
+    "team": "CBJ",
+    "points": 0
+  },
+  {
     "id": 8481848,
     "name": "Jacob Gaucher",
     "pos": "F",
@@ -5702,6 +5716,13 @@
     "name": "Spencer Martin",
     "pos": "G",
     "team": "NYR",
+    "points": 0
+  },
+  {
+    "id": 8478904,
+    "name": "Steven Lorentz",
+    "pos": "F",
+    "team": "CBJ",
     "points": 0
   },
   {
