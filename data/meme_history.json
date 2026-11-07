@@ -1,19 +1,6 @@
 {
   "memes": [
     {
-      "gameDay": "2026-10-25",
-      "category": "bingo",
-      "format": "classic",
-      "subject": {
-        "kind": "team",
-        "id": "usr_jackson_gagnon"
-      },
-      "fr": {
-        "top": "LES ANGLERS LANCENT 3 LIGNES À L'EAU",
-        "bottom": "JACKSON RAMÈNE LE BINGO. LOUISE : PÊCHE BLANCHE, 1 CASE, 0 LIGNE"
-      }
-    },
-    {
       "gameDay": "2026-10-26",
       "category": "player",
       "format": "versus",
@@ -132,6 +119,19 @@
       "fr": {
         "headline": "SOUTENANCE : LES PHD FATIGUÉES RECALÉES AU BINGO",
         "ticker": "VICKY : 2 CASES, 0 LIGNE · « ÉCHANTILLON TROP PETIT »"
+      }
+    },
+    {
+      "gameDay": "2026-11-06",
+      "category": "player",
+      "format": "classic",
+      "subject": {
+        "kind": "player",
+        "id": 8478864
+      },
+      "fr": {
+        "top": "SEUL À LA TABLE, VINCENT MISE SUR KAPRIZOV",
+        "bottom": "4 BUTS DU WILD, 4 POINTS DE KIRILL : LE HABSROLLER RAFLE LE POT"
       }
     }
   ]

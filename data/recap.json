@@ -1,36 +1,36 @@
 {
-  "gameDay": "2026-11-05",
-  "generatedAt": "2026-11-06T08:31:06Z",
+  "gameDay": "2026-11-06",
+  "generatedAt": "2026-11-07T08:30:59Z",
   "fr": {
-    "title": "Michel tient bon, Hugo pique le 2e rang à Guillaume",
+    "title": "Vincent bingote, Guillaume grimpe, Michel tient bon",
     "bullets": [
-      "Michel (Les Ducks) reste en tête avec 380 points. Hugo grimpe au 2e rang (367) et Guillaume glisse au 3e, à un petit point. 🏒",
-      "Alexandre et Louise ont connu la meilleure soirée avec 21 points chacun. Florence, elle, n'en a ramassé que 9, ouch.",
-      "Bingo : Marjolaine (mchb) gagne avec 3 lignes. Vicky ferme la marche avec 0 ligne et 2 cases. 🎯",
-      "Le Canadien bat Utah 5-4 en prolongation. Caufield (14 participants) et Suzuki (6) ont marqué, de quoi faire sourire le pool.",
-      "MacKinnon (17 participants) est à un but du cap des 10. Rantanen aussi, avec ses 9 buts.",
-      "Infirmerie : Nick Suzuki (MTL) et Evgeni Malkin (PIT) sont de retour au jeu. 🚑"
+      "Bingo: Vincent (Les HabsRoller) rafle la soirée avec 6 lignes et 7 cases. Hugo et Sylvianne suivent à 5 lignes. Étienne ferme la marche avec 1 ligne. 🎯",
+      "Guillaume (Laser Kiwis) a ramassé 8 points et pique le 2e rang à Hugo. Michel garde la tête avec 384 points.",
+      "Vincent a aussi encaissé 9 points, la meilleure soirée du pool. Il reste 10e, mais il se rapproche. 🔥",
+      "Kaprizov a marqué et sa passe à Hughes a fait sourire Vincent, le seul à l'avoir. Pari doré à 30 points! 🏒",
+      "Dahlin (BUF) a marqué pour 9 participants, Hughes pour 6. Simon glisse de trois rangs, au 9e.",
+      "Julien et Marjolaine sont à égalité à 323 points. Julien passe devant grâce aux lignes de bingo de la saison, 35 contre 30."
     ]
   },
   "en": {
-    "title": "Michel holds on, Hugo steals 2nd from Guillaume",
+    "title": "Vincent bingos, Guillaume climbs, Michel holds on",
     "bullets": [
-      "Michel (Les Ducks) stays on top with 380 points. Hugo climbs to 2nd (367) and Guillaume slips to 3rd, just one point back. 🏒",
-      "Alexandre and Louise had the best night with 21 points each. Florence managed only 9, ouch.",
-      "Bingo: Marjolaine (mchb) wins with 3 lines. Vicky brings up the rear with 0 lines and 2 squares. 🎯",
-      "Montreal beats Utah 5-4 in OT. Caufield (14 participants) and Suzuki (6) scored, and the pool is smiling.",
-      "MacKinnon (17 participants) is one goal from 10. Rantanen is too, sitting on 9 goals.",
-      "Infirmary: Nick Suzuki (MTL) and Evgeni Malkin (PIT) are back in the lineup. 🚑"
+      "Bingo: Vincent (Les HabsRoller) takes the night with 6 lines and 7 squares. Hugo and Sylvianne follow with 5 lines. Étienne brings up the rear with 1 line. 🎯",
+      "Guillaume (Laser Kiwis) piled up 8 points and takes 2nd place from Hugo. Michel keeps the lead at 384 points.",
+      "Vincent also banked 9 points, the best night in the pool. He stays 10th, but he's closing in. 🔥",
+      "Kaprizov scored and assisted Hughes, which made Vincent smile, as the only owner. Golden pick at 30 points! 🏒",
+      "Dahlin (BUF) scored for 9 participants, Hughes for 6. Simon slides three spots to 9th.",
+      "Julien and Marjolaine are tied at 323 points. Julien edges ahead on season bingo lines, 35 to 30."
     ]
   },
   "image": {
     "fr": {
       "src": "data/recap-fr.png",
-      "alt": "SOUTENANCE : LES PHD FATIGUÉES RECALÉES AU BINGO — VICKY : 2 CASES, 0 LIGNE · « ÉCHANTILLON TROP PETIT »"
+      "alt": "SEUL À LA TABLE, VINCENT MISE SUR KAPRIZOV / 4 BUTS DU WILD, 4 POINTS DE KIRILL : LE HABSROLLER RAFLE LE POT"
     },
     "en": {
       "src": "data/recap-en.png",
-      "alt": "PHD DEFENSE: LES PHD FATIGUÉES FAIL BINGO ORALS — VICKY: 2 SQUARES, 0 LINES · REVIEWERS: \"SMALL SAMPLE SIZE\""
+      "alt": "ALONE AT THE TABLE, VINCENT BETS ON KAPRIZOV / IN ON ALL 4 WILD GOALS: THE HABSROLLER CASHES OUT WITH A WILD CARD"
     }
   }
 }
