@@ -4,7 +4,21 @@
     "name": "Connor McDavid",
     "pos": "F",
     "team": "EDM",
-    "points": 44
+    "points": 47
+  },
+  {
+    "id": 8477934,
+    "name": "Leon Draisaitl",
+    "pos": "F",
+    "team": "EDM",
+    "points": 34
+  },
+  {
+    "id": 8480803,
+    "name": "Evan Bouchard",
+    "pos": "D",
+    "team": "EDM",
+    "points": 31
   },
   {
     "id": 8478864,
@@ -12,20 +26,6 @@
     "pos": "F",
     "team": "MIN",
     "points": 31
-  },
-  {
-    "id": 8477934,
-    "name": "Leon Draisaitl",
-    "pos": "F",
-    "team": "EDM",
-    "points": 31
-  },
-  {
-    "id": 8480803,
-    "name": "Evan Bouchard",
-    "pos": "D",
-    "team": "EDM",
-    "points": 30
   },
   {
     "id": 8477492,
@@ -210,6 +210,13 @@
     "points": 19
   },
   {
+    "id": 8480012,
+    "name": "Elias Pettersson",
+    "pos": "F",
+    "team": "VAN",
+    "points": 19
+  },
+  {
     "id": 8482809,
     "name": "Jackson Blake",
     "pos": "F",
@@ -291,13 +298,6 @@
     "name": "Drake Batherson",
     "pos": "F",
     "team": "OTT",
-    "points": 18
-  },
-  {
-    "id": 8480012,
-    "name": "Elias Pettersson",
-    "pos": "F",
-    "team": "VAN",
     "points": 18
   },
   {
@@ -406,6 +406,13 @@
     "points": 16
   },
   {
+    "id": 8478444,
+    "name": "Brock Boeser",
+    "pos": "F",
+    "team": "VAN",
+    "points": 16
+  },
+  {
     "id": 8481540,
     "name": "Cole Caufield",
     "pos": "F",
@@ -481,13 +488,6 @@
     "pos": "F",
     "team": "DAL",
     "points": 16
-  },
-  {
-    "id": 8478444,
-    "name": "Brock Boeser",
-    "pos": "F",
-    "team": "VAN",
-    "points": 15
   },
   {
     "id": 8477409,
@@ -714,6 +714,13 @@
     "points": 13
   },
   {
+    "id": 8479425,
+    "name": "Filip Hronek",
+    "pos": "D",
+    "team": "VAN",
+    "points": 13
+  },
+  {
     "id": 8476468,
     "name": "J.T. Miller",
     "pos": "F",
@@ -809,13 +816,6 @@
     "name": "Dylan Holloway",
     "pos": "F",
     "team": "STL",
-    "points": 12
-  },
-  {
-    "id": 8479425,
-    "name": "Filip Hronek",
-    "pos": "D",
-    "team": "VAN",
     "points": 12
   },
   {
@@ -1673,6 +1673,20 @@
     "points": 8
   },
   {
+    "id": 8478472,
+    "name": "Mathieu Joseph",
+    "pos": "F",
+    "team": "EDM",
+    "points": 8
+  },
+  {
+    "id": 8475218,
+    "name": "Mattias Ekholm",
+    "pos": "D",
+    "team": "EDM",
+    "points": 8
+  },
+  {
     "id": 8477446,
     "name": "Michael McCarron",
     "pos": "F",
@@ -1827,6 +1841,13 @@
     "points": 7
   },
   {
+    "id": 8482221,
+    "name": "Devon Levi",
+    "pos": "G",
+    "team": "EDM",
+    "points": 7
+  },
+  {
     "id": 8475287,
     "name": "Erik Haula",
     "pos": "F",
@@ -1866,6 +1887,13 @@
     "name": "Jamie Benn",
     "pos": "F",
     "team": "DAL",
+    "points": 7
+  },
+  {
+    "id": 8476467,
+    "name": "Jamie Oleksiak",
+    "pos": "D",
+    "team": "VAN",
     "points": 7
   },
   {
@@ -1932,13 +1960,6 @@
     "points": 7
   },
   {
-    "id": 8478472,
-    "name": "Mathieu Joseph",
-    "pos": "F",
-    "team": "EDM",
-    "points": 7
-  },
-  {
     "id": 8482720,
     "name": "Matthew Knies",
     "pos": "F",
@@ -1953,10 +1974,10 @@
     "points": 7
   },
   {
-    "id": 8475218,
-    "name": "Mattias Ekholm",
-    "pos": "D",
-    "team": "EDM",
+    "id": 8484136,
+    "name": "Max Sasson",
+    "pos": "F",
+    "team": "VAN",
     "points": 7
   },
   {
@@ -2170,13 +2191,6 @@
     "points": 6
   },
   {
-    "id": 8482221,
-    "name": "Devon Levi",
-    "pos": "G",
-    "team": "EDM",
-    "points": 6
-  },
-  {
     "id": 8477946,
     "name": "Dylan Larkin",
     "pos": "F",
@@ -2254,13 +2268,6 @@
     "points": 6
   },
   {
-    "id": 8476467,
-    "name": "Jamie Oleksiak",
-    "pos": "D",
-    "team": "VAN",
-    "points": 6
-  },
-  {
     "id": 8482408,
     "name": "Jeff Malott",
     "pos": "F",
@@ -2328,13 +2335,6 @@
     "name": "Matias Maccelli",
     "pos": "F",
     "team": "NYI",
-    "points": 6
-  },
-  {
-    "id": 8484136,
-    "name": "Max Sasson",
-    "pos": "F",
-    "team": "VAN",
     "points": 6
   },
   {
@@ -3150,6 +3150,13 @@
     "points": 4
   },
   {
+    "id": 8477450,
+    "name": "Jason Dickinson",
+    "pos": "F",
+    "team": "EDM",
+    "points": 4
+  },
+  {
     "id": 8482982,
     "name": "Jet Greaves",
     "pos": "G",
@@ -3581,13 +3588,6 @@
     "name": "Jakub Dobes",
     "pos": "G",
     "team": "MTL",
-    "points": 3
-  },
-  {
-    "id": 8477450,
-    "name": "Jason Dickinson",
-    "pos": "F",
-    "team": "EDM",
     "points": 3
   },
   {
@@ -4207,6 +4207,13 @@
     "points": 2
   },
   {
+    "id": 8480834,
+    "name": "Ty Emberson",
+    "pos": "D",
+    "team": "EDM",
+    "points": 2
+  },
+  {
     "id": 8474574,
     "name": "Tyler Myers",
     "pos": "D",
@@ -4253,6 +4260,13 @@
     "name": "Yakov Trenin",
     "pos": "F",
     "team": "MIN",
+    "points": 2
+  },
+  {
+    "id": 8475786,
+    "name": "Zach Hyman",
+    "pos": "F",
+    "team": "EDM",
     "points": 2
   },
   {
@@ -4540,6 +4554,13 @@
     "name": "Gavin Brindley",
     "pos": "F",
     "team": "COL",
+    "points": 1
+  },
+  {
+    "id": 8478465,
+    "name": "Guillaume Brisebois",
+    "pos": "D",
+    "team": "VAN",
     "points": 1
   },
   {
@@ -4977,13 +4998,6 @@
     "points": 1
   },
   {
-    "id": 8480834,
-    "name": "Ty Emberson",
-    "pos": "D",
-    "team": "EDM",
-    "points": 1
-  },
-  {
     "id": 8482896,
     "name": "Tyson Kozak",
     "pos": "F",
@@ -5037,13 +5051,6 @@
     "name": "Zach Bogosian",
     "pos": "D",
     "team": "MIN",
-    "points": 1
-  },
-  {
-    "id": 8475786,
-    "name": "Zach Hyman",
-    "pos": "F",
-    "team": "EDM",
     "points": 1
   },
   {
@@ -5366,13 +5373,6 @@
     "name": "Garrett Wilson",
     "pos": "F",
     "team": "PHI",
-    "points": 0
-  },
-  {
-    "id": 8478465,
-    "name": "Guillaume Brisebois",
-    "pos": "D",
-    "team": "VAN",
     "points": 0
   },
   {
