@@ -1,52 +1,70 @@
 {
-  "week": "2026-10-26",
-  "generatedAt": "2026-11-01T08:38:01Z",
+  "week": "2026-11-02",
+  "generatedAt": "2026-11-08T08:37:42Z",
   "segments": {
     "usr_michel_bry": {
-      "duration": 28,
+      "duration": 26,
       "engine": "elevenlabs",
       "lines": [
         {
           "host": "sylvie",
-          "line": "Michel, regarde en haut du classement. Tu vois quelqu'un? Non. C'est toi, avec 326 points."
+          "line": "Michel, numéro 1 du pool avec 406 points. Les Ducks, c'est pas des canards boiteux."
         },
         {
           "host": "jean",
-          "line": "[excited] Le canard vole au-dessus de tout le monde! C'est un moment historique, Michel!"
+          "line": "[excited] Et cette semaine, McDavid et Carlsson, 11 points chacun en 5 matchs! Un duo historique, Sylvie!"
         },
         {
           "host": "sylvie",
-          "line": "Et 16 lignes de bingo cette semaine. À ce rythme-là, tu vas devoir t'acheter un deuxième crayon."
+          "line": "Ton duel contre Marjolaine : 70 à 65. Ces 5 points d'avance, faut les couver ce soir."
         },
         {
           "host": "jean",
-          "line": "Ton duel contre Ève? 52 à 40. Ce soir, tu finis le travail, mon champion!"
+          "line": "Couve-les, Michel! Le trône t'attend encore lundi matin!"
         }
       ]
     },
     "usr_guillaume_brossard": {
-      "duration": 28,
+      "duration": 26,
       "engine": "elevenlabs",
       "lines": [
         {
           "host": "jean",
-          "line": "Guillaume! Arrête tout! Meilleure semaine du pool! 56 points! Je tremble!"
+          "line": "Guillaume! Deuxième au classement, à 7 points du sommet. Le sommet, je le sens trembler!"
         },
         {
           "host": "sylvie",
-          "line": "Il tremble vraiment. Les Laser Kiwis ont visé juste, en plein dans le mille."
+          "line": "Doucement, Jean. Larkin et Marchenko sont à l'infirmerie. On leur souhaite un prompt retour."
         },
         {
           "host": "jean",
-          "line": "Et pourtant, Marchenko et Larkin sont blessés. On leur souhaite un prompt rétablissement."
+          "line": "Et ton duel contre Sylvianne? 75 à 70. Seulement 5 points!"
         },
         {
           "host": "sylvie",
-          "line": "Contre Louise, tu mènes 56 à 41. Et au classement, tu es deuxième, à 11 points de la tête."
+          "line": "Avec Cutter Gauthier à 11 points en 5 matchs, ça pourrait couper court ce soir. [chuckles] Tes Kiwis ont encore du jus."
+        }
+      ]
+    },
+    "usr_sylvianne": {
+      "duration": 25,
+      "engine": "elevenlabs",
+      "lines": [
+        {
+          "host": "sylvie",
+          "line": "Sylvianne, la girafe voit loin : 75 points cette semaine, 5e sur 18."
         },
         {
           "host": "jean",
-          "line": "Ce soir, Guillaume, la première place te fait des clins d'œil!"
+          "line": "[excited] Et tu mènes ton duel contre Guillaume, 75 à 70! Une girafe qui regarde tout le monde de haut!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Petite pensée pour Demidov et Larkin, blessés. Revenez vite, les gars."
+        },
+        {
+          "host": "jean",
+          "line": "Ce soir, Sylvianne, garde le cou bien droit. Le podium est à toi, pis la victoire est à portée!"
         }
       ]
     },
@@ -55,196 +73,200 @@
       "engine": "elevenlabs",
       "lines": [
         {
-          "host": "sylvie",
-          "line": "Hugo, ton duel contre Maddox : 49 à 36. Les Crazy Blue Heelers gardent le troupeau en ordre."
-        },
-        {
           "host": "jean",
-          "line": "[chuckles] Un vrai chien de berger! Pas une brebis qui s'échappe!"
+          "line": "Hugo, 17 lignes de bingo cette semaine! Dans le pool qui porte ton nom! C'est historique!"
         },
         {
           "host": "sylvie",
-          "line": "Petite pensée pour Ivan Demidov, blessé. Reviens-nous vite, Ivan."
+          "line": "Le patron qui gagne au bingo, on appelle ça un conflit d'intérêts. [laughs]"
         },
         {
           "host": "jean",
-          "line": "Mais regarde-toi, Hugo! Troisième au classement, 10 lignes de bingo! Ce soir, on ferme la clôture et on rentre à la maison avec la victoire!"
+          "line": "Côté duel, Jackson mène 77 à 73. Juste 4 points!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Avec McDavid et Draisaitl qui ont empilé 21 points à eux deux, c'est jouable."
+        },
+        {
+          "host": "jean",
+          "line": "La remontée du fondateur commence ce soir!"
         }
       ]
     },
-    "usr_sylvianne": {
+    "usr_etienne": {
+      "duration": 28,
+      "engine": "elevenlabs",
+      "lines": [
+        {
+          "host": "jean",
+          "line": "[excited] Arrêtez tout! Étienne, 80 points, premier sur 18 cette semaine!"
+        },
+        {
+          "host": "sylvie",
+          "line": "The titi master porte bien son nom. Maître de la semaine, en titi."
+        },
+        {
+          "host": "jean",
+          "line": "Et ton duel contre Maddox : 80 à 49! 31 points d'avance! On grave ça dans le bronze!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Avec Cale Makar à 10 points en 5 matchs, ta défense attaque mieux que bien des attaques. Profite, Étienne, t'es sur une lancée."
+        }
+      ]
+    },
+    "usr_elrick": {
+      "duration": 27,
+      "engine": "elevenlabs",
+      "lines": [
+        {
+          "host": "sylvie",
+          "line": "Elrick, ton équipe s'appelle Michael Scofield. Pis cette semaine, t'as planifié ton évasion du peloton."
+        },
+        {
+          "host": "jean",
+          "line": "77 points, 2e sur 18! Un plan parfait, tatoué sur le bras!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Contre Alexandre, tu mènes 77 à 71. Et Cutter Gauthier, 11 points en 5 matchs, c'est ton meilleur complice."
+        },
+        {
+          "host": "jean",
+          "line": "[whispers] Ce soir, Elrick, pas un mot aux gardiens. [excited] La sortie est droit devant!"
+        }
+      ]
+    },
+    "usr_simon": {
       "duration": 27,
       "engine": "elevenlabs",
       "lines": [
         {
           "host": "jean",
-          "line": "Sylvianne! Presque le même prénom que ma collègue. C'est un signe!"
+          "line": "Simon, accroche-toi : ton duel contre Florence, c'est 76 à 75! Un seul point! Le suspense du siècle!"
         },
         {
           "host": "sylvie",
-          "line": "Un bon signe. 53 points cette semaine, quatrième sur 18. Maman Girafe voit loin."
-        },
-        {
-          "host": "sylvie",
-          "line": "Contre Florence, c'est serré : 53 à 49. Ça va se jouer à un cou près."
+          "line": "Un point, Jean. C'est le temps de compter chaque passe."
         },
         {
           "host": "jean",
-          "line": "[laughs] Et au classement, tu es à 1 seul point du podium! Ce soir, Sylvianne, tu tends le cou et tu vas le chercher!"
-        }
-      ]
-    },
-    "usr_etienne": {
-      "duration": 26,
-      "engine": "elevenlabs",
-      "lines": [
-        {
-          "host": "sylvie",
-          "line": "Étienne, deuxième meilleure semaine du pool avec 55 points. Le titi master mérite son titre."
-        },
-        {
-          "host": "jean",
-          "line": "Filip Forsberg, 9 points en 5 matchs! Je déclare ça historique, et personne ne peut m'arrêter!"
+          "line": "Mais 76 points cette semaine, 4e sur 18, c'est du solide!"
         },
         {
           "host": "sylvie",
-          "line": "Contre Vincent, tu mènes 55 à 49. 6 points d'avance, c'est pas un coussin, c'est un oreiller."
-        },
-        {
-          "host": "jean",
-          "line": "Ce soir, Étienne, dors sur tes deux oreilles... après les matchs!"
-        }
-      ]
-    },
-    "usr_elrick": {
-      "duration": 23,
-      "engine": "elevenlabs",
-      "lines": [
-        {
-          "host": "jean",
-          "line": "Elrick! Michael Scofield avait un plan pour s'évader de prison. Toi, tu as un plan pour t'évader avec la victoire!"
-        },
-        {
-          "host": "sylvie",
-          "line": "Le plan avance bien : 48 à 42 contre Jolyne. Le tunnel est presque creusé."
-        },
-        {
-          "host": "jean",
-          "line": "[whispers] Et ton complice, Nathan MacKinnon : 8 points en 5 matchs."
-        },
-        {
-          "host": "sylvie",
-          "line": "Ce soir, Elrick, il reste juste la dernière porte à déverrouiller. On croit en toi."
-        }
-      ]
-    },
-    "usr_simon": {
-      "duration": 24,
-      "engine": "elevenlabs",
-      "lines": [
-        {
-          "host": "sylvie",
-          "line": "Simon, les Méchants sont gentils avec toi cette semaine : 47 points."
-        },
-        {
-          "host": "jean",
-          "line": "Et contre Marjolaine, tu mènes 47 à 40! Je sens la tension d'ici!"
-        },
-        {
-          "host": "sylvie",
-          "line": "Tu as aussi 11 lignes de bingo. Et Simon dit : coche toutes les cases."
-        },
-        {
-          "host": "jean",
-          "line": "[laughs] Et Jean dit : ce soir, tu fermes la porte! Septième au classement, à 1 seul point de la sixième place. Ça bouge!"
+          "line": "Pis Makar et Draisaitl, 10 points chacun. Tes Méchants sont méchamment bons. [chuckles] Ce soir, Simon, tu fais la différence."
         }
       ]
     },
     "usr_jackson_gagnon": {
-      "duration": 24,
+      "duration": 25,
       "engine": "elevenlabs",
       "lines": [
         {
-          "host": "jean",
-          "line": "Jackson, mon ami! Troisième meilleure semaine du pool! 54 points! Je n'ai plus de voix!"
-        },
-        {
           "host": "sylvie",
-          "line": "Les Anglers ont sorti la canne à pêche, et ça mord en masse."
+          "line": "Jackson, 77 points, 2e sur 18. Les Anglers ont sorti la grosse prise cette semaine."
         },
         {
           "host": "jean",
-          "line": "Trevor Zegras, 9 points en 5 matchs! Ça, c'est une prise de trophée!"
+          "line": "Et pas n'importe quelle prise! Tu mènes 77 à 73 contre Hugo, le grand patron du pool!"
         },
         {
           "host": "sylvie",
-          "line": "Contre Vicky, tu mènes 54 à 37. Ce soir, Jackson, tu ramènes le filet à bord. Quelle pêche miraculeuse!"
+          "line": "Mener contre l'organisateur dans son propre pool, ça s'appelle pêcher en eau trouble."
+        },
+        {
+          "host": "jean",
+          "line": "[laughs] Garde la ligne tendue ce soir, Jackson. La prise est presque dans le bateau!"
         }
       ]
     },
     "usr_alexandre_comeau": {
-      "duration": 24,
+      "duration": 25,
       "engine": "elevenlabs",
       "lines": [
         {
-          "host": "sylvie",
-          "line": "Alexandre, les statistiques sont formelles : 52 points, cinquième meilleure semaine du pool."
-        },
-        {
           "host": "jean",
-          "line": "Les Éperviers de Sorel planent au-dessus du Richelieu! Majestueux!"
+          "line": "Alexandre! Les Éperviers de Sorel planent au-dessus de la mêlée : 71 points, 9e sur 18 cette semaine!"
         },
         {
           "host": "sylvie",
-          "line": "Mais contre Julien, c'est 52 à 48. 4 points. Un épervier, ça garde l'œil ouvert."
+          "line": "Bon, planer, c'est bien. Mais Elrick mène le duel 77 à 71."
         },
         {
           "host": "jean",
-          "line": "Et Leo Carlsson, 9 points en 5 matchs, c'est ton arme secrète! Ce soir, Alexandre, tu fonds sur ta proie!"
+          "line": "6 points, c'est rien pour un épervier! Un piqué, pis c'est réglé!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Avec Leo Carlsson à 11 points en 5 matchs, t'as les serres qu'il faut. Ce soir, tu fonces."
         }
       ]
     },
     "usr_vincent": {
-      "duration": 30,
+      "duration": 27,
+      "engine": "elevenlabs",
+      "lines": [
+        {
+          "host": "sylvie",
+          "line": "Vincent, semaine tranquille : 63 points, 15e sur 18. Mais 17 lignes de bingo! T'as la carte, à défaut des points."
+        },
+        {
+          "host": "jean",
+          "line": "Et deux blessés, Demidov et Ullmark. Courage, mon Vincent. Prompt rétablissement aux gars!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Ton duel contre Eve : 66 à 63. Seulement 3 points."
+        },
+        {
+          "host": "jean",
+          "line": "[excited] 3 points, c'est un tour du chapeau! Ce soir, tu peux virer ça de bord!"
+        }
+      ]
+    },
+    "usr_julien_berube": {
+      "duration": 27,
       "engine": "elevenlabs",
       "lines": [
         {
           "host": "jean",
-          "line": "Vincent... [sighs] Suzuki et Demidov blessés. Les deux Canadiens. Pour les HabsRoller, c'est un drame national."
+          "line": "Julien! Tu mènes contre Louise 72 à 59! 13 points d'avance! No Regretzkys, aucun regret!"
         },
         {
           "host": "sylvie",
-          "line": "On leur souhaite un bon retour. Et malgré tout, tu as fait 49 points, septième semaine du pool."
+          "line": "Bon, un petit regret quand même : Ovechkin, 7 matchs sans point."
         },
         {
           "host": "jean",
-          "line": "Contre Étienne, tu tires de l'arrière 49 à 55. Seulement 6 points!"
+          "line": "[sighs] Le grand Ovi se garde une réserve. Il prépare quelque chose d'énorme."
         },
         {
           "host": "sylvie",
-          "line": "Et Trevor Zegras a 9 points en 5 matchs. Ce soir, Vincent, la remontée commence."
+          "line": "En attendant, Makar et Tkachuk font le travail. Pis 16 lignes de bingo en prime. Ce soir, Julien, tu fermes la porte en beauté."
         }
       ]
     },
     "usr_eve": {
-      "duration": 22,
+      "duration": 23,
       "engine": "elevenlabs",
       "lines": [
         {
           "host": "sylvie",
-          "line": "Ève, ton équipe porte le nom de McDavid. Et McDavid te le rend bien : 11 points en 5 matchs."
+          "line": "Eve, ton équipe porte les noms de McDavid et Demidov. Un des deux te fait honneur : 11 points en 5 matchs."
         },
         {
           "host": "jean",
-          "line": "Un homme de parole! Il défend son nom comme un trophée!"
+          "line": "Et l'autre est blessé. Reviens vite, Ivan, Eve s'ennuie!"
         },
         {
           "host": "sylvie",
-          "line": "Demidov, lui, est blessé. On lui envoie de bonnes ondes."
+          "line": "Mais ton duel contre Vincent, tu le mènes 66 à 63."
         },
         {
           "host": "jean",
-          "line": "Contre Michel, c'est 40 à 52. Mais il reste les matchs de ce soir, Ève, et ton équipe te doit une soirée!"
+          "line": "[excited] Avec Bouchard et MacKinnon qui roulent, ce soir, Eve, tu signes ton nom en grosses lettres!"
         }
       ]
     },
@@ -254,151 +276,129 @@
       "lines": [
         {
           "host": "jean",
-          "line": "Marjolaine! Le duel de la semaine contre Simon : 40 à 47! Tout reste possible!"
+          "line": "Marjolaine, ton adversaire cette semaine? Michel. Le numéro 1 du pool en personne!"
         },
         {
           "host": "sylvie",
-          "line": "7 points d'écart. Et justement, Jack Hughes a 7 points en 5 matchs. Le hasard fait bien les choses."
+          "line": "Et le duel est à 70 à 65 pour Michel. 5 points, c'est un écart bien modeste."
         },
         {
           "host": "jean",
-          "line": "[excited] C'est écrit dans le ciel! Un 7 pour un 7!"
+          "line": "Faire tomber le numéro 1 un dimanche soir, ce serait historique!"
         },
         {
           "host": "sylvie",
-          "line": "Bonne pensée pour Suzuki et Barzal, blessés. Ce soir, Marjolaine, tes joueurs te doivent une soirée."
+          "line": "Barzal est blessé, on lui souhaite un bon retour. Mais avec Jack Hughes et Evan Bouchard à 9 points, t'as l'artillerie. [chuckles] Échec et mat, Marjolaine?"
         }
       ]
     },
     "usr_louise_trottier": {
-      "duration": 25,
+      "duration": 26,
       "engine": "elevenlabs",
       "lines": [
         {
           "host": "sylvie",
-          "line": "Louise, j'ai vérifié 2 fois : 16 lignes de bingo cette semaine. Parmi les meilleurs totaux du pool."
+          "line": "Louise, ta semaine : 59 points. Les huards ont plongé un peu creux."
         },
         {
           "host": "jean",
-          "line": "[excited] 16! Le huard chante à pleins poumons sur le lac!"
+          "line": "Mais un huard, ça remonte toujours à la surface! C'est la nature, Sylvie!"
         },
         {
           "host": "sylvie",
-          "line": "Contre Guillaume, c'est plus corsé : 41 à 56. Il a fait la meilleure semaine du pool."
+          "line": "Julien mène le duel 72 à 59. La pente est raide. Par contre, Tage Thompson, 10 points en 5 matchs, lui, il vole."
         },
         {
           "host": "jean",
-          "line": "Mais Tage Thompson a 8 points en 5 matchs. Ce soir, Louise, le huard prend son envol!"
-        }
-      ]
-    },
-    "usr_julien_berube": {
-      "duration": 27,
-      "engine": "elevenlabs",
-      "lines": [
-        {
-          "host": "sylvie",
-          "line": "Julien, No Regretzkys. Pas de regrets. Sauf peut-être Ovechkin : 4 matchs sans point."
-        },
-        {
-          "host": "jean",
-          "line": "Ovi! Le grand Ovi! Il prépare un retour historique, je le sens!"
-        },
-        {
-          "host": "sylvie",
-          "line": "Contre Alexandre, tu es à 48 contre 52. 4 petits points."
-        },
-        {
-          "host": "jean",
-          "line": "4 matchs sans point, 4 points de retard... c'est un signe! Ce soir, Ovi efface tout, et toi, Julien, tu n'auras aucun regret!"
+          "line": "[excited] Ce soir, Louise, ton huard pousse son grand cri. La remontée commence!"
         }
       ]
     },
     "usr_florence": {
-      "duration": 25,
+      "duration": 29,
       "engine": "elevenlabs",
       "lines": [
         {
-          "host": "sylvie",
-          "line": "Florence, ta tournée des Eras passe par chez nous. 49 points, septième semaine du pool."
-        },
-        {
           "host": "jean",
-          "line": "Et 14 lignes de bingo! La foule est debout! Les briquets sont allumés!"
+          "line": "Florence, 18 lignes de bingo! Personne n'a fait mieux dans le pool! Une tournée mondiale à guichets fermés!"
         },
         {
           "host": "sylvie",
-          "line": "Contre Sylvianne, c'est 49 à 53. Juste 4 points. Shake it off, comme dirait l'autre."
+          "line": "Et 75 points cette semaine, 5e sur 18. C'est ton ère, Florence."
         },
         {
           "host": "jean",
-          "line": "[excited] MacKinnon et Marner, 8 points chacun! Ce soir, Florence, c'est le rappel, et le rappel, c'est toujours la meilleure chanson!"
+          "line": "Ton duel contre Simon? 76 à 75. Un point, Sylvie! Un seul!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Avec Makar, Tkachuk et Hughes en tournée, ce soir, c'est le rappel. [chuckles] Shake it off, pis va chercher ce point-là."
         }
       ]
     },
     "usr_jolyne_brossard": {
+      "duration": 23,
+      "engine": "elevenlabs",
+      "lines": [
+        {
+          "host": "sylvie",
+          "line": "Jolyne, ton duel contre Vicky : 71 à 57. 14 points d'avance."
+        },
+        {
+          "host": "jean",
+          "line": "[excited] SkiBum en pleine descente vers la victoire! Une piste noire avalée sans tomber!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Bon, Ovechkin est resté pris dans le télésiège : 7 matchs sans point."
+        },
+        {
+          "host": "jean",
+          "line": "Pis Cutter Gauthier, 11 points en 5 matchs, lui, il dévale! Ce soir, Jolyne, tu files jusqu'en bas de la montagne!"
+        }
+      ]
+    },
+    "usr_vicky": {
       "duration": 28,
       "engine": "elevenlabs",
       "lines": [
         {
           "host": "jean",
-          "line": "Jolyne! La skieuse du pool! Cette semaine, une descente... disons sportive."
+          "line": "Vicky! Les PhD fatiguées ont eu une semaine de rédaction intense!"
         },
         {
           "host": "sylvie",
-          "line": "42 points. Ovechkin a pris le télésiège : 4 matchs sans point. Il admire encore le paysage."
+          "line": "57 points, et Jolyne mène le duel 71 à 57. La soutenance s'annonce corsée."
         },
         {
           "host": "jean",
-          "line": "Mais Connor McDavid, 11 points en 5 matchs, lui, il dévale la piste!"
+          "line": "Mais t'as Cutter Gauthier, 11 points en 5 matchs! C'est pas un joueur, c'est une publication majeure!"
         },
         {
           "host": "sylvie",
-          "line": "Contre Elrick, 42 à 48. 6 points, c'est une bosse, pas une montagne. Ce soir, Jolyne, tu attaques la pente."
+          "line": "Et 14 lignes de bingo, ça, c'est de la recherche rigoureuse. [laughs] Ce soir, Vicky, on sort la conclusion qui surprend tout le monde."
         }
       ]
     },
     "usr_maddox_gagnon": {
-      "duration": 25,
+      "duration": 28,
       "engine": "elevenlabs",
       "lines": [
         {
           "host": "sylvie",
-          "line": "Maddox, on va être honnêtes : 36 points, la semaine a été tranquille."
+          "line": "Maddox, on va se le dire, la semaine a été tranquille."
         },
         {
           "host": "jean",
-          "line": "Tranquille? C'était le calme avant la tempête! Je le sens dans mes os!"
+          "line": "[sighs] Tranquille? Étienne mène le duel 80 à 49, Sylvie!"
         },
         {
           "host": "sylvie",
-          "line": "Bonne nouvelle : Ryan O'Reilly et Nathan MacKinnon ont 8 points chacun. Ils ont le moteur en marche."
+          "line": "Oui, mais regarde : Nathan MacKinnon, 8 points en 5 matchs, pis Nick Suzuki et Sebastian Aho, 7 chacun. Ça, c'est du monde fiable."
         },
         {
           "host": "jean",
-          "line": "Contre Hugo, c'est 36 à 49. Mais ce soir, Maddox, c'est toi qui écris la suite. La tempête arrive!"
-        }
-      ]
-    },
-    "usr_vicky": {
-      "duration": 25,
-      "engine": "elevenlabs",
-      "lines": [
-        {
-          "host": "jean",
-          "line": "Vicky! Moment historique! 17 lignes de bingo! Le plus haut total du pool cette semaine!"
-        },
-        {
-          "host": "sylvie",
-          "line": "Tes chercheuses fatiguées ont trouvé l'énergie de cocher. C'est ça, la recherche appliquée."
-        },
-        {
-          "host": "jean",
-          "line": "[laughs] Et Filip Forsberg, 9 points en 5 matchs! Ton comité de thèse serait fier!"
-        },
-        {
-          "host": "sylvie",
-          "line": "Contre Jackson, 37 à 54, c'est une thèse difficile à défendre. Mais ce soir, Vicky, on écrit la conclusion ensemble."
+          "line": "[excited] Maddox, les grandes remontées commencent toujours au fond! Tes joueurs te doivent une soirée, pis c'est ce soir!"
         }
       ]
     }
