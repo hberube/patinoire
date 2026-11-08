@@ -1,36 +1,36 @@
 {
-  "gameDay": "2026-11-06",
-  "generatedAt": "2026-11-07T08:30:59Z",
+  "gameDay": "2026-11-07",
+  "generatedAt": "2026-11-08T08:31:02Z",
   "fr": {
-    "title": "Vincent bingote, Guillaume grimpe, Michel tient bon",
+    "title": "Michel tient bon, Sylvianne double Hugo au classement",
     "bullets": [
-      "Bingo: Vincent (Les HabsRoller) rafle la soirée avec 6 lignes et 7 cases. Hugo et Sylvianne suivent à 5 lignes. Étienne ferme la marche avec 1 ligne. 🎯",
-      "Guillaume (Laser Kiwis) a ramassé 8 points et pique le 2e rang à Hugo. Michel garde la tête avec 384 points.",
-      "Vincent a aussi encaissé 9 points, la meilleure soirée du pool. Il reste 10e, mais il se rapproche. 🔥",
-      "Kaprizov a marqué et sa passe à Hughes a fait sourire Vincent, le seul à l'avoir. Pari doré à 30 points! 🏒",
-      "Dahlin (BUF) a marqué pour 9 participants, Hughes pour 6. Simon glisse de trois rangs, au 9e.",
-      "Julien et Marjolaine sont à égalité à 323 points. Julien passe devant grâce aux lignes de bingo de la saison, 35 contre 30."
+      "Michel garde la tête avec 406 points, mais Guillaume le suit à 7 points. 👀",
+      "Simon signe la meilleure soirée (+30) et grimpe de deux rangs, au 7e. Sylvianne (+27) passe au 3e; Hugo glisse au 4e.",
+      "MacKinnon marque, avec Makar et Necas aux passes: 17 participants se frottent les mains. 🔥",
+      "Bingo: quatre gagnants à 5 lignes, soit Michel, Guillaume, Florence et Vicky. Hugo ferme la marche avec 0 ligne.",
+      "Jack Hughes et Svechnikov ne sont qu'à un but de la barre des 10. Hugues-moi ça!",
+      "Infirmerie: John Tavares (TOR) est de retour au jeu."
     ]
   },
   "en": {
-    "title": "Vincent bingos, Guillaume climbs, Michel holds on",
+    "title": "Michel holds on as Sylvianne leapfrogs Hugo in the standings",
     "bullets": [
-      "Bingo: Vincent (Les HabsRoller) takes the night with 6 lines and 7 squares. Hugo and Sylvianne follow with 5 lines. Étienne brings up the rear with 1 line. 🎯",
-      "Guillaume (Laser Kiwis) piled up 8 points and takes 2nd place from Hugo. Michel keeps the lead at 384 points.",
-      "Vincent also banked 9 points, the best night in the pool. He stays 10th, but he's closing in. 🔥",
-      "Kaprizov scored and assisted Hughes, which made Vincent smile, as the only owner. Golden pick at 30 points! 🏒",
-      "Dahlin (BUF) scored for 9 participants, Hughes for 6. Simon slides three spots to 9th.",
-      "Julien and Marjolaine are tied at 323 points. Julien edges ahead on season bingo lines, 35 to 30."
+      "Michel stays on top with 406 points, but Guillaume is 7 back and lurking. 👀",
+      "Simon had the night's best haul (+30) and jumps two spots to 7th. Sylvianne (+27) moves to 3rd; Hugo slides to 4th.",
+      "MacKinnon scores, with Makar and Necas on the assists: 17 participants are rubbing their hands. 🔥",
+      "Bingo: four winners with 5 lines each: Michel, Guillaume, Florence and Vicky. Hugo brings up the rear with 0 lines.",
+      "Jack Hughes and Svechnikov are each one goal shy of 10.",
+      "Infirmary: John Tavares (TOR) is back in the lineup."
     ]
   },
   "image": {
     "fr": {
       "src": "data/recap-fr.png",
-      "alt": "SEUL À LA TABLE, VINCENT MISE SUR KAPRIZOV / 4 BUTS DU WILD, 4 POINTS DE KIRILL : LE HABSROLLER RAFLE LE POT"
+      "alt": "MAMAN GIRAFE REGARDE MAINTENANT HUGO DE HAUT — SYLVIANNE 3E (+27 PTS) · HUGO 4E RÉCLAME UN ESCABEAU"
     },
     "en": {
       "src": "data/recap-en.png",
-      "alt": "ALONE AT THE TABLE, VINCENT BETS ON KAPRIZOV / IN ON ALL 4 WILD GOALS: THE HABSROLLER CASHES OUT WITH A WILD CARD"
+      "alt": "MAMA GIRAFFE NOW LOOKS DOWN ON HUGO — SYLVIANNE UP TO 3RD (+27) · HUGO, 4TH, ORDERS A STEPLADDER"
     }
   }
 }

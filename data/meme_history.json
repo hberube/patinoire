@@ -1,23 +1,6 @@
 {
   "memes": [
     {
-      "gameDay": "2026-10-26",
-      "category": "player",
-      "format": "versus",
-      "subject": {
-        "kind": "player",
-        "id": 8478403
-      },
-      "subject2": {
-        "kind": "player",
-        "id": 8482720
-      },
-      "fr": {
-        "no": "JACK EICHEL, 19 PTS : 18 PARTICIPANTS « NON MERCI »",
-        "yes": "MATTHEW KNIES, 7 MATCHS SANS POINT : 3 PARTICIPANTS EN AMOUR"
-      }
-    },
-    {
       "gameDay": "2026-10-29",
       "category": "bingo",
       "format": "classic",
@@ -132,6 +115,19 @@
       "fr": {
         "top": "SEUL À LA TABLE, VINCENT MISE SUR KAPRIZOV",
         "bottom": "4 BUTS DU WILD, 4 POINTS DE KIRILL : LE HABSROLLER RAFLE LE POT"
+      }
+    },
+    {
+      "gameDay": "2026-11-07",
+      "category": "participant",
+      "format": "breaking",
+      "subject": {
+        "kind": "team",
+        "id": "usr_sylvianne"
+      },
+      "fr": {
+        "headline": "MAMAN GIRAFE REGARDE MAINTENANT HUGO DE HAUT",
+        "ticker": "SYLVIANNE 3E (+27 PTS) · HUGO 4E RÉCLAME UN ESCABEAU"
       }
     }
   ]
