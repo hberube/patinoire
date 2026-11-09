@@ -1,19 +1,6 @@
 {
   "memes": [
     {
-      "gameDay": "2026-10-29",
-      "category": "bingo",
-      "format": "classic",
-      "subject": {
-        "kind": "team",
-        "id": "usr_louise_trottier"
-      },
-      "fr": {
-        "top": "LOUISE : 8 CASES, 8 LIGNES, 0 GASPILLAGE",
-        "bottom": "HUGO (4 CASES, 0 LIGNE) DEMANDE UNE REPRISE VIDÉO À TORONTO"
-      }
-    },
-    {
       "gameDay": "2026-10-30",
       "category": "participant",
       "format": "breaking",
@@ -128,6 +115,19 @@
       "fr": {
         "headline": "MAMAN GIRAFE REGARDE MAINTENANT HUGO DE HAUT",
         "ticker": "SYLVIANNE 3E (+27 PTS) · HUGO 4E RÉCLAME UN ESCABEAU"
+      }
+    },
+    {
+      "gameDay": "2026-11-08",
+      "category": "bingo",
+      "format": "classic",
+      "subject": {
+        "kind": "team",
+        "id": "usr_marjolaine_comeau"
+      },
+      "fr": {
+        "top": "HUGO ET MARJOLAINE : 7 CASES, 6 LIGNES CHACUN",
+        "bottom": "COPIES IDENTIQUES : LA DIRECTRICE CONVOQUE LES DEUX AU BUREAU"
       }
     }
   ]

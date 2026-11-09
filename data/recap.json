@@ -1,36 +1,36 @@
 {
-  "gameDay": "2026-11-07",
-  "generatedAt": "2026-11-08T08:31:02Z",
+  "gameDay": "2026-11-08",
+  "generatedAt": "2026-11-09T08:31:05Z",
   "fr": {
-    "title": "Michel tient bon, Sylvianne double Hugo au classement",
+    "title": "Gauthier sort son tour du chapeau, Vicky domine la soirée",
     "bullets": [
-      "Michel garde la tête avec 406 points, mais Guillaume le suit à 7 points. 👀",
-      "Simon signe la meilleure soirée (+30) et grimpe de deux rangs, au 7e. Sylvianne (+27) passe au 3e; Hugo glisse au 4e.",
-      "MacKinnon marque, avec Makar et Necas aux passes: 17 participants se frottent les mains. 🔥",
-      "Bingo: quatre gagnants à 5 lignes, soit Michel, Guillaume, Florence et Vicky. Hugo ferme la marche avec 0 ligne.",
-      "Jack Hughes et Svechnikov ne sont qu'à un but de la barre des 10. Hugues-moi ça!",
-      "Infirmerie: John Tavares (TOR) est de retour au jeu."
+      "Cutter Gauthier a fait le tour du chapeau contre Pittsburgh, et cinq équipes du pool ont ramassé la monnaie. 🎩",
+      "Vicky (Les PhD fatiguées) a eu la meilleure soirée avec 11 points, mais reste 17e. Y a du rattrapage à faire!",
+      "Michel (Les Ducks) mène à 411, mais Guillaume (Laser Kiwis) le suit à 3 points après une soirée de 9.",
+      "Jackson et Simon sont à égalité à 387. Jackson passe devant grâce à ses lignes de bingo de la saison. Florence monte d'un rang, Louise en perd un.",
+      "Bingo : Hugo et Marjolaine partagent la victoire avec 6 lignes chacun. Florence ferme la marche avec zéro ligne. 🎯",
+      "Infirmerie : Linus Ullmark (OTT) est de retour au jeu."
     ]
   },
   "en": {
-    "title": "Michel holds on as Sylvianne leapfrogs Hugo in the standings",
+    "title": "Gauthier's hat trick, Vicky owns the night",
     "bullets": [
-      "Michel stays on top with 406 points, but Guillaume is 7 back and lurking. 👀",
-      "Simon had the night's best haul (+30) and jumps two spots to 7th. Sylvianne (+27) moves to 3rd; Hugo slides to 4th.",
-      "MacKinnon scores, with Makar and Necas on the assists: 17 participants are rubbing their hands. 🔥",
-      "Bingo: four winners with 5 lines each: Michel, Guillaume, Florence and Vicky. Hugo brings up the rear with 0 lines.",
-      "Jack Hughes and Svechnikov are each one goal shy of 10.",
-      "Infirmary: John Tavares (TOR) is back in the lineup."
+      "Cutter Gauthier scored a hat trick against Pittsburgh, and five pool teams cashed in. 🎩",
+      "Vicky (Les PhD fatiguées) had the best night with 11 points but is still 17th. Some catching up to do!",
+      "Michel (Les Ducks) leads at 411, but Guillaume (Laser Kiwis) is 3 back after a 9-point night.",
+      "Jackson and Simon are tied at 387. Jackson edges ahead on season bingo lines. Florence climbs one spot, Louise drops one.",
+      "Bingo: Hugo and Marjolaine share the win with 6 lines each. Florence brings up the rear with zero lines. 🎯",
+      "Infirmary: Linus Ullmark (OTT) is back in the lineup."
     ]
   },
   "image": {
     "fr": {
       "src": "data/recap-fr.png",
-      "alt": "MAMAN GIRAFE REGARDE MAINTENANT HUGO DE HAUT — SYLVIANNE 3E (+27 PTS) · HUGO 4E RÉCLAME UN ESCABEAU"
+      "alt": "HUGO ET MARJOLAINE : 7 CASES, 6 LIGNES CHACUN / COPIES IDENTIQUES : LA DIRECTRICE CONVOQUE LES DEUX AU BUREAU"
     },
     "en": {
       "src": "data/recap-en.png",
-      "alt": "MAMA GIRAFFE NOW LOOKS DOWN ON HUGO — SYLVIANNE UP TO 3RD (+27) · HUGO, 4TH, ORDERS A STEPLADDER"
+      "alt": "HUGO & MARJOLAINE: 7 SQUARES, 6 LINES EACH / IDENTICAL ANSWERS. THE TEACHER WOULD LIKE A WORD WITH BOTH OF YOU."
     }
   }
 }
