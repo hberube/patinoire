@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T08:30:44Z",
+  "updated": "2026-11-09T03:41:45Z",
   "source": "ESPN",
   "players": [
     {
@@ -58,17 +58,6 @@
       "note": "ir"
     },
     {
-      "id": 8476999,
-      "name": "Linus Ullmark",
-      "team": "OTT",
-      "pos": "G",
-      "status": "ir",
-      "type": "Lower Body",
-      "returnDate": "2026-11-10",
-      "noteDate": "2026-11-06",
-      "note": "Ullmark (lower body) is not expected back for Saturday's clash with Utah, TSN 1200 Ottawa reports."
-    },
-    {
       "id": 8478445,
       "name": "Mathew Barzal",
       "team": "NYI",
@@ -84,22 +73,22 @@
       "name": "John Gibson",
       "team": "DET",
       "pos": "G",
-      "status": "out",
+      "status": "dtd",
       "type": "Lower Body",
       "returnDate": "2026-11-10",
       "noteDate": "2026-11-08",
-      "note": "out"
+      "note": "day-to-day"
     },
     {
       "id": 8480036,
       "name": "Miro Heiskanen",
       "team": "DAL",
       "pos": "D",
-      "status": "out",
+      "status": "dtd",
       "type": "Upper Body",
       "returnDate": "2026-11-12",
-      "noteDate": "2026-11-06",
-      "note": "out"
+      "noteDate": "2026-11-08",
+      "note": "day-to-day"
     }
   ]
 }

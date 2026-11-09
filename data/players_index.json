@@ -49,6 +49,13 @@
     "points": 26
   },
   {
+    "id": 8479314,
+    "name": "Matthew Tkachuk",
+    "pos": "F",
+    "team": "FLA",
+    "points": 26
+  },
+  {
     "id": 8480800,
     "name": "Quinn Hughes",
     "pos": "D",
@@ -63,10 +70,10 @@
     "points": 26
   },
   {
-    "id": 8479314,
-    "name": "Matthew Tkachuk",
+    "id": 8481559,
+    "name": "Jack Hughes",
     "pos": "F",
-    "team": "FLA",
+    "team": "NJD",
     "points": 25
   },
   {
@@ -77,18 +84,18 @@
     "points": 24
   },
   {
+    "id": 8477956,
+    "name": "David Pastrnak",
+    "pos": "F",
+    "team": "BOS",
+    "points": 24
+  },
+  {
     "id": 8478403,
     "name": "Jack Eichel",
     "pos": "F",
     "team": "VGK",
-    "points": 23
-  },
-  {
-    "id": 8481559,
-    "name": "Jack Hughes",
-    "pos": "F",
-    "team": "NJD",
-    "points": 23
+    "points": 24
   },
   {
     "id": 8480039,
@@ -109,13 +116,6 @@
     "name": "Adam Fox",
     "pos": "D",
     "team": "NYR",
-    "points": 22
-  },
-  {
-    "id": 8477956,
-    "name": "David Pastrnak",
-    "pos": "F",
-    "team": "BOS",
     "points": 22
   },
   {
@@ -168,6 +168,13 @@
     "points": 21
   },
   {
+    "id": 8480801,
+    "name": "Brady Tkachuk",
+    "pos": "F",
+    "team": "FLA",
+    "points": 20
+  },
+  {
     "id": 8476887,
     "name": "Filip Forsberg",
     "pos": "F",
@@ -179,6 +186,13 @@
     "name": "Mikhail Sergachev",
     "pos": "D",
     "team": "UTA",
+    "points": 20
+  },
+  {
+    "id": 8478483,
+    "name": "Mitch Marner",
+    "pos": "F",
+    "team": "VGK",
     "points": 20
   },
   {
@@ -201,13 +215,6 @@
     "pos": "D",
     "team": "FLA",
     "points": 20
-  },
-  {
-    "id": 8480801,
-    "name": "Brady Tkachuk",
-    "pos": "F",
-    "team": "FLA",
-    "points": 19
   },
   {
     "id": 8480012,
@@ -287,6 +294,13 @@
     "points": 18
   },
   {
+    "id": 8479542,
+    "name": "Brandon Hagel",
+    "pos": "F",
+    "team": "TBL",
+    "points": 18
+  },
+  {
     "id": 8483445,
     "name": "Cutter Gauthier",
     "pos": "F",
@@ -315,6 +329,13 @@
     "points": 18
   },
   {
+    "id": 8479407,
+    "name": "Jesper Bratt",
+    "pos": "F",
+    "team": "NJD",
+    "points": 18
+  },
+  {
     "id": 8482702,
     "name": "Logan Stankoven",
     "pos": "F",
@@ -322,10 +343,10 @@
     "points": 18
   },
   {
-    "id": 8478483,
-    "name": "Mitch Marner",
+    "id": 8476460,
+    "name": "Mark Scheifele",
     "pos": "F",
-    "team": "VGK",
+    "team": "WPG",
     "points": 18
   },
   {
@@ -333,13 +354,6 @@
     "name": "Artturi Lehkonen",
     "pos": "F",
     "team": "COL",
-    "points": 17
-  },
-  {
-    "id": 8479542,
-    "name": "Brandon Hagel",
-    "pos": "F",
-    "team": "TBL",
     "points": 17
   },
   {
@@ -354,6 +368,13 @@
     "name": "Joel Eriksson Ek",
     "pos": "F",
     "team": "MIN",
+    "points": 17
+  },
+  {
+    "id": 8480797,
+    "name": "Joel Farabee",
+    "pos": "F",
+    "team": "CGY",
     "points": 17
   },
   {
@@ -413,6 +434,13 @@
     "points": 16
   },
   {
+    "id": 8477409,
+    "name": "Carter Verhaeghe",
+    "pos": "F",
+    "team": "FLA",
+    "points": 16
+  },
+  {
     "id": 8481540,
     "name": "Cole Caufield",
     "pos": "F",
@@ -434,20 +462,6 @@
     "points": 16
   },
   {
-    "id": 8479407,
-    "name": "Jesper Bratt",
-    "pos": "F",
-    "team": "NJD",
-    "points": 16
-  },
-  {
-    "id": 8480797,
-    "name": "Joel Farabee",
-    "pos": "F",
-    "team": "CGY",
-    "points": 16
-  },
-  {
     "id": 8482660,
     "name": "Kent Johnson",
     "pos": "F",
@@ -459,13 +473,6 @@
     "name": "Lucas Raymond",
     "pos": "F",
     "team": "DET",
-    "points": 16
-  },
-  {
-    "id": 8476460,
-    "name": "Mark Scheifele",
-    "pos": "F",
-    "team": "WPG",
     "points": 16
   },
   {
@@ -490,10 +497,10 @@
     "points": 16
   },
   {
-    "id": 8477409,
-    "name": "Carter Verhaeghe",
+    "id": 8477496,
+    "name": "Elias Lindholm",
     "pos": "F",
-    "team": "FLA",
+    "team": "BOS",
     "points": 15
   },
   {
@@ -501,6 +508,13 @@
     "name": "Jake Oettinger",
     "pos": "G",
     "team": "DAL",
+    "points": 15
+  },
+  {
+    "id": 8482679,
+    "name": "Matt Coronato",
+    "pos": "F",
+    "team": "CGY",
     "points": 15
   },
   {
@@ -560,6 +574,13 @@
     "points": 14
   },
   {
+    "id": 8482149,
+    "name": "Cole Perfetti",
+    "pos": "F",
+    "team": "WPG",
+    "points": 14
+  },
+  {
     "id": 8484144,
     "name": "Connor Bedard",
     "pos": "F",
@@ -581,17 +602,17 @@
     "points": 14
   },
   {
-    "id": 8477496,
-    "name": "Elias Lindholm",
-    "pos": "F",
-    "team": "BOS",
-    "points": 14
-  },
-  {
     "id": 8471215,
     "name": "Evgeni Malkin",
     "pos": "F",
     "team": "PIT",
+    "points": 14
+  },
+  {
+    "id": 8482175,
+    "name": "JJ Peterka",
+    "pos": "F",
+    "team": "BOS",
     "points": 14
   },
   {
@@ -616,10 +637,10 @@
     "points": 14
   },
   {
-    "id": 8482679,
-    "name": "Matt Coronato",
+    "id": 8479987,
+    "name": "Morgan Geekie",
     "pos": "F",
-    "team": "CGY",
+    "team": "BOS",
     "points": 14
   },
   {
@@ -637,6 +658,13 @@
     "points": 14
   },
   {
+    "id": 8478401,
+    "name": "Pavel Zacha",
+    "pos": "F",
+    "team": "BOS",
+    "points": 14
+  },
+  {
     "id": 8481596,
     "name": "Shane Pinto",
     "pos": "F",
@@ -648,6 +676,13 @@
     "name": "Shayne Gostisbehere",
     "pos": "D",
     "team": "CAR",
+    "points": 14
+  },
+  {
+    "id": 8476881,
+    "name": "Tomas Hertl",
+    "pos": "F",
+    "team": "VGK",
     "points": 14
   },
   {
@@ -721,17 +756,17 @@
     "points": 13
   },
   {
+    "id": 8477964,
+    "name": "Ivan Barbashev",
+    "pos": "F",
+    "team": "VGK",
+    "points": 13
+  },
+  {
     "id": 8476468,
     "name": "J.T. Miller",
     "pos": "F",
     "team": "NYR",
-    "points": 13
-  },
-  {
-    "id": 8482175,
-    "name": "JJ Peterka",
-    "pos": "F",
-    "team": "BOS",
     "points": 13
   },
   {
@@ -756,10 +791,10 @@
     "points": 13
   },
   {
-    "id": 8479987,
-    "name": "Morgan Geekie",
+    "id": 8480002,
+    "name": "Nico Hischier",
     "pos": "F",
-    "team": "BOS",
+    "team": "NJD",
     "points": 13
   },
   {
@@ -767,6 +802,13 @@
     "name": "Philip Broberg",
     "pos": "D",
     "team": "STL",
+    "points": 13
+  },
+  {
+    "id": 8480995,
+    "name": "Pontus Holmberg",
+    "pos": "F",
+    "team": "TBL",
     "points": 13
   },
   {
@@ -798,13 +840,6 @@
     "points": 12
   },
   {
-    "id": 8482149,
-    "name": "Cole Perfetti",
-    "pos": "F",
-    "team": "WPG",
-    "points": 12
-  },
-  {
     "id": 8482699,
     "name": "Dylan Guenther",
     "pos": "F",
@@ -816,6 +851,13 @@
     "name": "Dylan Holloway",
     "pos": "F",
     "team": "STL",
+    "points": 12
+  },
+  {
+    "id": 8483489,
+    "name": "Fraser Minten",
+    "pos": "F",
+    "team": "BOS",
     "points": 12
   },
   {
@@ -882,10 +924,10 @@
     "points": 12
   },
   {
-    "id": 8478401,
-    "name": "Pavel Zacha",
-    "pos": "F",
-    "team": "BOS",
+    "id": 8480145,
+    "name": "Neal Pionk",
+    "pos": "D",
+    "team": "WPG",
     "points": 12
   },
   {
@@ -900,13 +942,6 @@
     "name": "Sidney Crosby",
     "pos": "F",
     "team": "PIT",
-    "points": 12
-  },
-  {
-    "id": 8476881,
-    "name": "Tomas Hertl",
-    "pos": "F",
-    "team": "VGK",
     "points": 12
   },
   {
@@ -938,6 +973,13 @@
     "points": 11
   },
   {
+    "id": 8478519,
+    "name": "Anthony Cirelli",
+    "pos": "F",
+    "team": "TBL",
+    "points": 11
+  },
+  {
     "id": 8482730,
     "name": "Brandt Clarke",
     "pos": "D",
@@ -966,20 +1008,6 @@
     "points": 11
   },
   {
-    "id": 8483489,
-    "name": "Fraser Minten",
-    "pos": "F",
-    "team": "BOS",
-    "points": 11
-  },
-  {
-    "id": 8477964,
-    "name": "Ivan Barbashev",
-    "pos": "F",
-    "team": "VGK",
-    "points": 11
-  },
-  {
     "id": 8486103,
     "name": "Ivar Stenberg",
     "pos": "F",
@@ -991,6 +1019,13 @@
     "name": "Jakob Chychrun",
     "pos": "D",
     "team": "WSH",
+    "points": 11
+  },
+  {
+    "id": 8480280,
+    "name": "Jeremy Swayman",
+    "pos": "G",
+    "team": "BOS",
     "points": 11
   },
   {
@@ -1029,6 +1064,13 @@
     "points": 11
   },
   {
+    "id": 8484860,
+    "name": "Matvei Gridin",
+    "pos": "F",
+    "team": "CGY",
+    "points": 11
+  },
+  {
     "id": 8485402,
     "name": "Michael Misa",
     "pos": "F",
@@ -1043,31 +1085,10 @@
     "points": 11
   },
   {
-    "id": 8480145,
-    "name": "Neal Pionk",
-    "pos": "D",
-    "team": "WPG",
-    "points": 11
-  },
-  {
-    "id": 8480002,
-    "name": "Nico Hischier",
-    "pos": "F",
-    "team": "NJD",
-    "points": 11
-  },
-  {
     "id": 8481604,
     "name": "Pavel Dorofeyev",
     "pos": "F",
     "team": "NYR",
-    "points": 11
-  },
-  {
-    "id": 8480995,
-    "name": "Pontus Holmberg",
-    "pos": "F",
-    "team": "TBL",
     "points": 11
   },
   {
@@ -1099,13 +1120,6 @@
     "points": 11
   },
   {
-    "id": 8478519,
-    "name": "Anthony Cirelli",
-    "pos": "F",
-    "team": "TBL",
-    "points": 10
-  },
-  {
     "id": 8477511,
     "name": "Anthony Mantha",
     "pos": "F",
@@ -1124,6 +1138,13 @@
     "name": "Brock Nelson",
     "pos": "F",
     "team": "COL",
+    "points": 10
+  },
+  {
+    "id": 8479999,
+    "name": "Casey Mittelstadt",
+    "pos": "F",
+    "team": "BOS",
     "points": 10
   },
   {
@@ -1173,13 +1194,6 @@
     "name": "Jake Sanderson",
     "pos": "D",
     "team": "OTT",
-    "points": 10
-  },
-  {
-    "id": 8480280,
-    "name": "Jeremy Swayman",
-    "pos": "G",
-    "team": "BOS",
     "points": 10
   },
   {
@@ -1239,10 +1253,10 @@
     "points": 10
   },
   {
-    "id": 8484860,
-    "name": "Matvei Gridin",
-    "pos": "F",
-    "team": "CGY",
+    "id": 8480807,
+    "name": "Mattias Samuelsson",
+    "pos": "D",
+    "team": "BUF",
     "points": 10
   },
   {
@@ -1330,9 +1344,9 @@
     "points": 9
   },
   {
-    "id": 8479999,
-    "name": "Casey Mittelstadt",
-    "pos": "F",
+    "id": 8479325,
+    "name": "Charlie McAvoy",
+    "pos": "D",
     "team": "BOS",
     "points": 9
   },
@@ -1386,10 +1400,24 @@
     "points": 9
   },
   {
+    "id": 8480014,
+    "name": "Gabriel Vilardi",
+    "pos": "F",
+    "team": "WPG",
+    "points": 9
+  },
+  {
     "id": 8482089,
     "name": "Jake Neighbours",
     "pos": "F",
     "team": "STL",
+    "points": 9
+  },
+  {
+    "id": 8482142,
+    "name": "Jamie Drysdale",
+    "pos": "D",
+    "team": "PHI",
     "points": 9
   },
   {
@@ -1439,13 +1467,6 @@
     "name": "Mark Jankowski",
     "pos": "F",
     "team": "CAR",
-    "points": 9
-  },
-  {
-    "id": 8480807,
-    "name": "Mattias Samuelsson",
-    "pos": "D",
-    "team": "BUF",
     "points": 9
   },
   {
@@ -1561,10 +1582,10 @@
     "points": 8
   },
   {
-    "id": 8479325,
-    "name": "Charlie McAvoy",
-    "pos": "D",
-    "team": "BOS",
+    "id": 8477989,
+    "name": "Christian Dvorak",
+    "pos": "F",
+    "team": "PHI",
     "points": 8
   },
   {
@@ -1579,6 +1600,13 @@
     "name": "Dawson Mercer",
     "pos": "F",
     "team": "WPG",
+    "points": 8
+  },
+  {
+    "id": 8484142,
+    "name": "Denver Barkey",
+    "pos": "F",
+    "team": "PHI",
     "points": 8
   },
   {
@@ -1617,24 +1645,10 @@
     "points": 8
   },
   {
-    "id": 8480014,
-    "name": "Gabriel Vilardi",
-    "pos": "F",
-    "team": "WPG",
-    "points": 8
-  },
-  {
     "id": 8478009,
     "name": "Ilya Sorokin",
     "pos": "G",
     "team": "NYI",
-    "points": 8
-  },
-  {
-    "id": 8482142,
-    "name": "Jamie Drysdale",
-    "pos": "D",
-    "team": "PHI",
     "points": 8
   },
   {
@@ -1778,10 +1792,31 @@
     "points": 8
   },
   {
+    "id": 8484768,
+    "name": "Zayne Parekh",
+    "pos": "D",
+    "team": "CGY",
+    "points": 8
+  },
+  {
     "id": 8481726,
     "name": "Adam Edstrom",
     "pos": "F",
     "team": "NSH",
+    "points": 7
+  },
+  {
+    "id": 8478499,
+    "name": "Adin Hill",
+    "pos": "G",
+    "team": "VGK",
+    "points": 7
+  },
+  {
+    "id": 8480113,
+    "name": "Alex Iafallo",
+    "pos": "F",
+    "team": "WPG",
     "points": 7
   },
   {
@@ -1813,10 +1848,10 @@
     "points": 7
   },
   {
-    "id": 8477989,
-    "name": "Christian Dvorak",
-    "pos": "F",
-    "team": "PHI",
+    "id": 8476945,
+    "name": "Connor Hellebuyck",
+    "pos": "G",
+    "team": "NJD",
     "points": 7
   },
   {
@@ -1834,17 +1869,17 @@
     "points": 7
   },
   {
-    "id": 8484142,
-    "name": "Denver Barkey",
-    "pos": "F",
-    "team": "PHI",
-    "points": 7
-  },
-  {
     "id": 8482221,
     "name": "Devon Levi",
     "pos": "G",
     "team": "EDM",
+    "points": 7
+  },
+  {
+    "id": 8478416,
+    "name": "Erik Cernak",
+    "pos": "D",
+    "team": "TBL",
     "points": 7
   },
   {
@@ -1880,6 +1915,13 @@
     "name": "Hendrix Lapierre",
     "pos": "F",
     "team": "PIT",
+    "points": 7
+  },
+  {
+    "id": 8481624,
+    "name": "Ilya Mikheyev",
+    "pos": "F",
+    "team": "TBL",
     "points": 7
   },
   {
@@ -1953,6 +1995,13 @@
     "points": 7
   },
   {
+    "id": 8481028,
+    "name": "Martin Pospisil",
+    "pos": "F",
+    "team": "CGY",
+    "points": 7
+  },
+  {
     "id": 8478975,
     "name": "Mason Marchment",
     "pos": "F",
@@ -1981,10 +2030,24 @@
     "points": 7
   },
   {
+    "id": 8480289,
+    "name": "Morgan Barron",
+    "pos": "F",
+    "team": "WPG",
+    "points": 7
+  },
+  {
     "id": 8481582,
     "name": "Nick Robertson",
     "pos": "F",
     "team": "PIT",
+    "points": 7
+  },
+  {
+    "id": 8484148,
+    "name": "Oliver Bonk",
+    "pos": "D",
+    "team": "PHI",
     "points": 7
   },
   {
@@ -2030,10 +2093,31 @@
     "points": 7
   },
   {
+    "id": 8476461,
+    "name": "Sean Couturier",
+    "pos": "F",
+    "team": "PHI",
+    "points": 7
+  },
+  {
+    "id": 8483495,
+    "name": "Simon Nemec",
+    "pos": "D",
+    "team": "CGY",
+    "points": 7
+  },
+  {
     "id": 8486171,
     "name": "T.J. Hughes",
     "pos": "F",
     "team": "COL",
+    "points": 7
+  },
+  {
+    "id": 8478414,
+    "name": "Timo Meier",
+    "pos": "F",
+    "team": "NJD",
     "points": 7
   },
   {
@@ -2044,9 +2128,9 @@
     "points": 7
   },
   {
-    "id": 8484768,
-    "name": "Zayne Parekh",
-    "pos": "D",
+    "id": 8481068,
+    "name": "Yegor Sharangovich",
+    "pos": "F",
     "team": "CGY",
     "points": 7
   },
@@ -2083,20 +2167,6 @@
     "name": "Adam Wilsby",
     "pos": "D",
     "team": "NSH",
-    "points": 6
-  },
-  {
-    "id": 8478499,
-    "name": "Adin Hill",
-    "pos": "G",
-    "team": "VGK",
-    "points": 6
-  },
-  {
-    "id": 8480113,
-    "name": "Alex Iafallo",
-    "pos": "F",
-    "team": "WPG",
     "points": 6
   },
   {
@@ -2149,6 +2219,13 @@
     "points": 6
   },
   {
+    "id": 8484234,
+    "name": "Aydar Suniev",
+    "pos": "F",
+    "team": "CGY",
+    "points": 6
+  },
+  {
     "id": 8483570,
     "name": "Ben Meyers",
     "pos": "F",
@@ -2170,6 +2247,13 @@
     "points": 6
   },
   {
+    "id": 8477015,
+    "name": "Connor Brown",
+    "pos": "F",
+    "team": "NJD",
+    "points": 6
+  },
+  {
     "id": 8476923,
     "name": "Damon Severson",
     "pos": "D",
@@ -2188,6 +2272,13 @@
     "name": "Declan Carlile",
     "pos": "D",
     "team": "PIT",
+    "points": 6
+  },
+  {
+    "id": 8482445,
+    "name": "Devin Cooley",
+    "pos": "G",
+    "team": "CGY",
     "points": 6
   },
   {
@@ -2216,13 +2307,6 @@
     "name": "Erik Gustafsson",
     "pos": "D",
     "team": "LAK",
-    "points": 6
-  },
-  {
-    "id": 8481624,
-    "name": "Ilya Mikheyev",
-    "pos": "F",
-    "team": "TBL",
     "points": 6
   },
   {
@@ -2310,13 +2394,6 @@
     "points": 6
   },
   {
-    "id": 8481028,
-    "name": "Martin Pospisil",
-    "pos": "F",
-    "team": "CGY",
-    "points": 6
-  },
-  {
     "id": 8482511,
     "name": "Mason Lohrei",
     "pos": "D",
@@ -2345,13 +2422,6 @@
     "points": 6
   },
   {
-    "id": 8480289,
-    "name": "Morgan Barron",
-    "pos": "F",
-    "team": "WPG",
-    "points": 6
-  },
-  {
     "id": 8477426,
     "name": "Nick Paul",
     "pos": "F",
@@ -2370,13 +2440,6 @@
     "name": "Olen Zellweger",
     "pos": "D",
     "team": "BUF",
-    "points": 6
-  },
-  {
-    "id": 8484148,
-    "name": "Oliver Bonk",
-    "pos": "D",
-    "team": "PHI",
     "points": 6
   },
   {
@@ -2429,10 +2492,10 @@
     "points": 6
   },
   {
-    "id": 8483495,
-    "name": "Simon Nemec",
+    "id": 8477447,
+    "name": "Shea Theodore",
     "pos": "D",
-    "team": "CGY",
+    "team": "VGK",
     "points": 6
   },
   {
@@ -2440,6 +2503,13 @@
     "name": "Stephen Halliday",
     "pos": "F",
     "team": "OTT",
+    "points": 6
+  },
+  {
+    "id": 8479973,
+    "name": "Stuart Skinner",
+    "pos": "G",
+    "team": "WPG",
     "points": 6
   },
   {
@@ -2562,13 +2632,6 @@
     "points": 5
   },
   {
-    "id": 8484234,
-    "name": "Aydar Suniev",
-    "pos": "F",
-    "team": "CGY",
-    "points": 5
-  },
-  {
     "id": 8481481,
     "name": "Blake Lizotte",
     "pos": "F",
@@ -2625,13 +2688,6 @@
     "points": 5
   },
   {
-    "id": 8477015,
-    "name": "Connor Brown",
-    "pos": "F",
-    "team": "NJD",
-    "points": 5
-  },
-  {
     "id": 8480980,
     "name": "Connor Dewar",
     "pos": "F",
@@ -2643,13 +2699,6 @@
     "name": "Dalibor Dvorsky",
     "pos": "F",
     "team": "STL",
-    "points": 5
-  },
-  {
-    "id": 8482445,
-    "name": "Devin Cooley",
-    "pos": "G",
-    "team": "CGY",
     "points": 5
   },
   {
@@ -2671,13 +2720,6 @@
     "name": "Egor Chinakhov",
     "pos": "F",
     "team": "PIT",
-    "points": 5
-  },
-  {
-    "id": 8478416,
-    "name": "Erik Cernak",
-    "pos": "D",
-    "team": "TBL",
     "points": 5
   },
   {
@@ -2807,6 +2849,13 @@
     "points": 5
   },
   {
+    "id": 8476372,
+    "name": "Nick Seeler",
+    "pos": "D",
+    "team": "PHI",
+    "points": 5
+  },
+  {
     "id": 8478462,
     "name": "Nicolas Roy",
     "pos": "F",
@@ -2905,13 +2954,6 @@
     "points": 5
   },
   {
-    "id": 8476461,
-    "name": "Sean Couturier",
-    "pos": "F",
-    "team": "PHI",
-    "points": 5
-  },
-  {
     "id": 8480434,
     "name": "Sean Durzi",
     "pos": "D",
@@ -2919,31 +2961,10 @@
     "points": 5
   },
   {
-    "id": 8477447,
-    "name": "Shea Theodore",
-    "pos": "D",
-    "team": "VGK",
-    "points": 5
-  },
-  {
-    "id": 8479973,
-    "name": "Stuart Skinner",
-    "pos": "G",
-    "team": "WPG",
-    "points": 5
-  },
-  {
     "id": 8479661,
     "name": "Tanner Jeannot",
     "pos": "F",
     "team": "BOS",
-    "points": 5
-  },
-  {
-    "id": 8478414,
-    "name": "Timo Meier",
-    "pos": "F",
-    "team": "NJD",
     "points": 5
   },
   {
@@ -2993,13 +3014,6 @@
     "name": "Ukko-Pekka Luukkonen",
     "pos": "G",
     "team": "BUF",
-    "points": 5
-  },
-  {
-    "id": 8481068,
-    "name": "Yegor Sharangovich",
-    "pos": "F",
-    "team": "CGY",
     "points": 5
   },
   {
@@ -3080,13 +3094,6 @@
     "points": 4
   },
   {
-    "id": 8476945,
-    "name": "Connor Hellebuyck",
-    "pos": "G",
-    "team": "NJD",
-    "points": 4
-  },
-  {
     "id": 8483447,
     "name": "Conor Geekie",
     "pos": "F",
@@ -3112,6 +3119,13 @@
     "name": "Daniil Tarasov",
     "pos": "G",
     "team": "DET",
+    "points": 4
+  },
+  {
+    "id": 8480990,
+    "name": "Declan Chisholm",
+    "pos": "D",
+    "team": "NJD",
     "points": 4
   },
   {
@@ -3248,17 +3262,17 @@
     "points": 4
   },
   {
-    "id": 8476372,
-    "name": "Nick Seeler",
-    "pos": "D",
-    "team": "PHI",
-    "points": 4
-  },
-  {
     "id": 8478859,
     "name": "Niko Mikkola",
     "pos": "D",
     "team": "FLA",
+    "points": 4
+  },
+  {
+    "id": 8478569,
+    "name": "Noel Acciari",
+    "pos": "F",
+    "team": "PHI",
     "points": 4
   },
   {
@@ -3367,6 +3381,13 @@
     "points": 4
   },
   {
+    "id": 8482165,
+    "name": "Yan Kuznetsov",
+    "pos": "D",
+    "team": "CGY",
+    "points": 4
+  },
+  {
     "id": 8482137,
     "name": "Yaroslav Askarov",
     "pos": "G",
@@ -3385,6 +3406,13 @@
     "name": "Zeev Buium",
     "pos": "D",
     "team": "VAN",
+    "points": 4
+  },
+  {
+    "id": 8476878,
+    "name": "Zemgus Girgensons",
+    "pos": "F",
+    "team": "TBL",
     "points": 4
   },
   {
@@ -3437,6 +3465,13 @@
     "points": 3
   },
   {
+    "id": 8479359,
+    "name": "Beck Malenstyn",
+    "pos": "F",
+    "team": "BUF",
+    "points": 3
+  },
+  {
     "id": 8483548,
     "name": "Brandon Bussi",
     "pos": "G",
@@ -3472,6 +3507,13 @@
     "points": 3
   },
   {
+    "id": 8479996,
+    "name": "Cody Glass",
+    "pos": "F",
+    "team": "NJD",
+    "points": 3
+  },
+  {
     "id": 8483787,
     "name": "Cole Knuble",
     "pos": "F",
@@ -3504,13 +3546,6 @@
     "name": "Corey Perry",
     "pos": "F",
     "team": "LAK",
-    "points": 3
-  },
-  {
-    "id": 8480990,
-    "name": "Declan Chisholm",
-    "pos": "D",
-    "team": "NJD",
     "points": 3
   },
   {
@@ -3560,6 +3595,13 @@
     "name": "Gage Goncalves",
     "pos": "F",
     "team": "TBL",
+    "points": 3
+  },
+  {
+    "id": 8477938,
+    "name": "Haydn Fleury",
+    "pos": "D",
+    "team": "WPG",
     "points": 3
   },
   {
@@ -3731,13 +3773,6 @@
     "points": 3
   },
   {
-    "id": 8478569,
-    "name": "Noel Acciari",
-    "pos": "F",
-    "team": "PHI",
-    "points": 3
-  },
-  {
     "id": 8482700,
     "name": "Nolan Allan",
     "pos": "D",
@@ -3756,6 +3791,13 @@
     "name": "Owen Beck",
     "pos": "F",
     "team": "MTL",
+    "points": 3
+  },
+  {
+    "id": 8480015,
+    "name": "Owen Tippett",
+    "pos": "F",
+    "team": "PHI",
     "points": 3
   },
   {
@@ -3822,6 +3864,13 @@
     "points": 3
   },
   {
+    "id": 8486025,
+    "name": "Viggo Björck",
+    "pos": "F",
+    "team": "WPG",
+    "points": 3
+  },
+  {
     "id": 8479576,
     "name": "Vincent Desharnais",
     "pos": "D",
@@ -3829,17 +3878,10 @@
     "points": 3
   },
   {
-    "id": 8482165,
-    "name": "Yan Kuznetsov",
+    "id": 8480727,
+    "name": "Zach Whitecloud",
     "pos": "D",
     "team": "CGY",
-    "points": 3
-  },
-  {
-    "id": 8476878,
-    "name": "Zemgus Girgensons",
-    "pos": "F",
-    "team": "TBL",
     "points": 3
   },
   {
@@ -3885,13 +3927,6 @@
     "points": 2
   },
   {
-    "id": 8479359,
-    "name": "Beck Malenstyn",
-    "pos": "F",
-    "team": "BUF",
-    "points": 2
-  },
-  {
     "id": 8482073,
     "name": "Braden Schneider",
     "pos": "D",
@@ -3917,13 +3952,6 @@
     "name": "Calum Ritchie",
     "pos": "F",
     "team": "NYI",
-    "points": 2
-  },
-  {
-    "id": 8479996,
-    "name": "Cody Glass",
-    "pos": "F",
-    "team": "NJD",
     "points": 2
   },
   {
@@ -3980,13 +4008,6 @@
     "name": "Gustav Forsling",
     "pos": "D",
     "team": "FLA",
-    "points": 2
-  },
-  {
-    "id": 8477938,
-    "name": "Haydn Fleury",
-    "pos": "D",
-    "team": "WPG",
     "points": 2
   },
   {
@@ -4165,13 +4186,6 @@
     "points": 2
   },
   {
-    "id": 8480015,
-    "name": "Owen Tippett",
-    "pos": "F",
-    "team": "PHI",
-    "points": 2
-  },
-  {
     "id": 8476889,
     "name": "Radek Faksa",
     "pos": "F",
@@ -4228,6 +4242,13 @@
     "points": 2
   },
   {
+    "id": 8482896,
+    "name": "Tyson Kozak",
+    "pos": "F",
+    "team": "BUF",
+    "points": 2
+  },
+  {
     "id": 8478024,
     "name": "Ville Husso",
     "pos": "G",
@@ -4274,13 +4295,6 @@
     "name": "Zach Metsa",
     "pos": "D",
     "team": "BUF",
-    "points": 2
-  },
-  {
-    "id": 8480727,
-    "name": "Zach Whitecloud",
-    "pos": "D",
-    "team": "CGY",
     "points": 2
   },
   {
@@ -4365,6 +4379,13 @@
     "name": "Brandon Carlo",
     "pos": "D",
     "team": "STL",
+    "points": 1
+  },
+  {
+    "id": 8484242,
+    "name": "Brayden Yager",
+    "pos": "F",
+    "team": "WPG",
     "points": 1
   },
   {
@@ -4802,6 +4823,13 @@
     "points": 1
   },
   {
+    "id": 8479591,
+    "name": "Michael Eyssimont",
+    "pos": "F",
+    "team": "BOS",
+    "points": 1
+  },
+  {
     "id": 8485545,
     "name": "Michal Postava",
     "pos": "G",
@@ -4998,24 +5026,10 @@
     "points": 1
   },
   {
-    "id": 8482896,
-    "name": "Tyson Kozak",
-    "pos": "F",
-    "team": "BUF",
-    "points": 1
-  },
-  {
     "id": 8484304,
     "name": "Uvis Balinskis",
     "pos": "D",
     "team": "FLA",
-    "points": 1
-  },
-  {
-    "id": 8486025,
-    "name": "Viggo Björck",
-    "pos": "F",
-    "team": "WPG",
     "points": 1
   },
   {
@@ -5180,13 +5194,6 @@
     "points": 0
   },
   {
-    "id": 8484242,
-    "name": "Brayden Yager",
-    "pos": "F",
-    "team": "WPG",
-    "points": 0
-  },
-  {
     "id": 8475455,
     "name": "Brenden Dillon",
     "pos": "D",
@@ -5226,6 +5233,13 @@
     "name": "Cole Beaudoin",
     "pos": "F",
     "team": "NYR",
+    "points": 0
+  },
+  {
+    "id": 8484287,
+    "name": "Cole McWard",
+    "pos": "D",
+    "team": "TOR",
     "points": 0
   },
   {
@@ -5814,6 +5828,13 @@
     "name": "Xavier Bourgault",
     "pos": "F",
     "team": "OTT",
+    "points": 0
+  },
+  {
+    "id": 8476826,
+    "name": "Yanni Gourde",
+    "pos": "F",
+    "team": "TBL",
     "points": 0
   },
   {
