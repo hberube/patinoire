@@ -1,19 +1,6 @@
 {
   "memes": [
     {
-      "gameDay": "2026-10-30",
-      "category": "participant",
-      "format": "breaking",
-      "subject": {
-        "kind": "team",
-        "id": "usr_elrick"
-      },
-      "fr": {
-        "headline": "ÉVASION : MICHAEL SCOFIELD SORT DU TOP 5",
-        "ticker": "ELRICK : 2 PTS, −3 RANGS · LE PLAN ÉTAIT TATOUÉ À L'ENVERS"
-      }
-    },
-    {
       "gameDay": "2026-10-31",
       "category": "bingo",
       "format": "classic",
@@ -128,6 +115,23 @@
       "fr": {
         "top": "HUGO ET MARJOLAINE : 7 CASES, 6 LIGNES CHACUN",
         "bottom": "COPIES IDENTIQUES : LA DIRECTRICE CONVOQUE LES DEUX AU BUREAU"
+      }
+    },
+    {
+      "gameDay": "2026-11-09",
+      "category": "player",
+      "format": "versus",
+      "subject": {
+        "kind": "player",
+        "id": 8478403
+      },
+      "subject2": {
+        "kind": "player",
+        "id": 8471214
+      },
+      "fr": {
+        "no": "JACK EICHEL : 24 POINTS, LIBRE COMME L'AIR DEPUIS LE REPÊCHAGE",
+        "yes": "OVECHKIN, 7 MATCHS À SEC : LE POOL CHOISIT LA NOSTALGIE"
       }
     }
   ]

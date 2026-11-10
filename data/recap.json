@@ -1,36 +1,36 @@
 {
-  "gameDay": "2026-11-08",
-  "generatedAt": "2026-11-09T08:31:05Z",
+  "gameDay": "2026-11-09",
+  "generatedAt": "2026-11-10T08:31:02Z",
   "fr": {
-    "title": "Gauthier sort son tour du chapeau, Vicky domine la soirée",
+    "title": "Michel tient bon, Guillaume rafle le bingo",
     "bullets": [
-      "Cutter Gauthier a fait le tour du chapeau contre Pittsburgh, et cinq équipes du pool ont ramassé la monnaie. 🎩",
-      "Vicky (Les PhD fatiguées) a eu la meilleure soirée avec 11 points, mais reste 17e. Y a du rattrapage à faire!",
-      "Michel (Les Ducks) mène à 411, mais Guillaume (Laser Kiwis) le suit à 3 points après une soirée de 9.",
-      "Jackson et Simon sont à égalité à 387. Jackson passe devant grâce à ses lignes de bingo de la saison. Florence monte d'un rang, Louise en perd un.",
-      "Bingo : Hugo et Marjolaine partagent la victoire avec 6 lignes chacun. Florence ferme la marche avec zéro ligne. 🎯",
-      "Infirmerie : Linus Ullmark (OTT) est de retour au jeu."
+      "Edmonton bat les Rangers 3-1: McDavid (chez 15 d'entre vous) et un doublé de Draisaitl (9 proprios) font plaisir. 🏒",
+      "Michel (Les Ducks) reste en tête avec 415 points, +4 hier. Guillaume le talonne à 4 points.",
+      "Bingo: Guillaume (Laser Kiwis) gagne avec 4 lignes. Michel en fait 3, et Vicky ferme la marche avec un seul carreau.",
+      "Jackson grimpe au 7e rang, Simon recule au 8e. Hugo ajoute 4 points mais reste 4e, à 400.",
+      "Ève et Marjolaine sont à égalité à 353; Ève passe devant grâce à ses 49 lignes de bingo. Florence et Maddox: zéro pointé. 🥶",
+      "Rantanen et Jack Hughes sont à un but du cap de 10, avec 10 proprios chacun."
     ]
   },
   "en": {
-    "title": "Gauthier's hat trick, Vicky owns the night",
+    "title": "Michel holds on, Guillaume takes the bingo",
     "bullets": [
-      "Cutter Gauthier scored a hat trick against Pittsburgh, and five pool teams cashed in. 🎩",
-      "Vicky (Les PhD fatiguées) had the best night with 11 points but is still 17th. Some catching up to do!",
-      "Michel (Les Ducks) leads at 411, but Guillaume (Laser Kiwis) is 3 back after a 9-point night.",
-      "Jackson and Simon are tied at 387. Jackson edges ahead on season bingo lines. Florence climbs one spot, Louise drops one.",
-      "Bingo: Hugo and Marjolaine share the win with 6 lines each. Florence brings up the rear with zero lines. 🎯",
-      "Infirmary: Linus Ullmark (OTT) is back in the lineup."
+      "Edmonton beat the Rangers 3-1: McDavid (on 15 rosters) and a Draisaitl brace (9 owners) delivered. 🏒",
+      "Michel (Les Ducks) stays on top with 415 points, up 4 last night. Guillaume trails by 4.",
+      "Bingo: Guillaume (Laser Kiwis) wins with 4 lines. Michel has 3, and Vicky brings up the rear with a single square.",
+      "Jackson climbs to 7th, Simon slips to 8th. Hugo adds 4 points but stays 4th at 400.",
+      "Ève and Marjolaine are tied at 353; Ève edges ahead on 49 season bingo lines. Florence and Maddox: goose eggs. 🥶",
+      "Rantanen and Jack Hughes are one goal from 10, with 10 owners each."
     ]
   },
   "image": {
     "fr": {
       "src": "data/recap-fr.png",
-      "alt": "HUGO ET MARJOLAINE : 7 CASES, 6 LIGNES CHACUN / COPIES IDENTIQUES : LA DIRECTRICE CONVOQUE LES DEUX AU BUREAU"
+      "alt": "JACK EICHEL : 24 POINTS, LIBRE COMME L'AIR DEPUIS LE REPÊCHAGE / OVECHKIN, 7 MATCHS À SEC : LE POOL CHOISIT LA NOSTALGIE"
     },
     "en": {
       "src": "data/recap-en.png",
-      "alt": "HUGO & MARJOLAINE: 7 SQUARES, 6 LINES EACH / IDENTICAL ANSWERS. THE TEACHER WOULD LIKE A WORD WITH BOTH OF YOU."
+      "alt": "JACK EICHEL: 24 POINTS, ZERO TAKERS SINCE DRAFT DAY / OVECHKIN, 7 GAMES DRY: 3 OWNERS CALL IT A VINTAGE SEASON"
     }
   }
 }
