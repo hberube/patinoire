@@ -1,146 +1,410 @@
 {
-  "lastUpdated": "2026-11-10T08:30:44Z",
-  "gameDay": "2026-11-09",
+  "lastUpdated": "2026-11-11T05:47:04Z",
+  "gameDay": "2026-11-10",
   "highlights": [
     {
-      "playerId": 8478402,
-      "name": "Connor McDavid",
-      "team": "EDM",
-      "opp": "NYR",
-      "period": 1,
-      "time": "06:42",
+      "playerId": 8477933,
+      "name": "Sam Reinhart",
+      "team": "FLA",
+      "opp": "CBJ",
+      "period": 3,
+      "time": "17:44",
       "strength": "ev",
-      "assists": [],
+      "assists": [
+        "A. Lundell",
+        "E. Luostarinen"
+      ],
       "poolAssists": [],
       "scorerOwned": true,
-      "owners": 15,
+      "owners": 7,
       "ownerIds": [
-        "usr_eve",
-        "usr_alexandre_comeau",
-        "usr_hugo_berube",
         "usr_simon",
-        "usr_sylvianne",
         "usr_etienne",
+        "usr_florence",
         "usr_julien_berube",
-        "usr_louise_trottier",
         "usr_jolyne_brossard",
         "usr_jackson_gagnon",
-        "usr_guillaume_brossard",
-        "usr_michel_bry",
-        "usr_marjolaine_comeau",
-        "usr_elrick",
-        "usr_vincent"
-      ],
-      "clipEn": "https://nhl.com/video/nyr-edm-mcdavid-scores-goal-against-dylan-garand-6408161912112",
-      "clipFr": "https://nhl.com/fr/video/nyr-edm-mcdavid-marque-un-but-contre-dylan-garand-6408163465112",
-      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8478402.png"
-    },
-    {
-      "playerId": 8477934,
-      "name": "Leon Draisaitl",
-      "team": "EDM",
-      "opp": "NYR",
-      "period": 2,
-      "time": "02:59",
-      "strength": "ev",
-      "assists": [
-        "V. Podkolzin",
-        "M. Ekholm"
-      ],
-      "poolAssists": [],
-      "scorerOwned": true,
-      "owners": 9,
-      "ownerIds": [
-        "usr_alexandre_comeau",
-        "usr_hugo_berube",
-        "usr_simon",
-        "usr_sylvianne",
-        "usr_etienne",
-        "usr_jackson_gagnon",
-        "usr_guillaume_brossard",
-        "usr_michel_bry",
         "usr_elrick"
       ],
-      "clipEn": "https://nhl.com/video/leon-draisaitl-with-a-goal-vs-new-york-rangers-6408162532112",
-      "clipFr": "https://nhl.com/fr/video/leon-draisaitl-with-a-but-vs-les-rangers-de-new-york-6408163899112",
-      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8477934.png"
+      "clipEn": "https://nhl.com/video/fla-cbj-reinhart-scores-empty-net-goal-6408216022112",
+      "clipFr": "https://nhl.com/fr/video/fla-cbj-reinhart-fla-marque-un-but-dans-un-filet-desert-6408216114112",
+      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8477933.png"
     },
     {
-      "playerId": 8477934,
-      "name": "Leon Draisaitl",
-      "team": "EDM",
-      "opp": "NYR",
+      "playerId": 8480039,
+      "name": "Martin Necas",
+      "team": "COL",
+      "opp": "TOR",
       "period": 3,
-      "time": "18:47",
-      "strength": "sh",
+      "time": "17:30",
+      "strength": "ev",
       "assists": [],
       "poolAssists": [],
       "scorerOwned": true,
-      "owners": 9,
+      "owners": 6,
       "ownerIds": [
-        "usr_alexandre_comeau",
-        "usr_hugo_berube",
         "usr_simon",
         "usr_sylvianne",
-        "usr_etienne",
-        "usr_jackson_gagnon",
+        "usr_louise_trottier",
         "usr_guillaume_brossard",
         "usr_michel_bry",
         "usr_elrick"
       ],
-      "clipEn": "https://nhl.com/video/nyr-edm-draisaitl-scores-empty-net-goal-6408164868112",
-      "clipFr": "https://nhl.com/fr/video/nyr-edm-draisaitl-edm-marque-un-but-dans-un-filet-desert-6408167020112",
-      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8477934.png"
+      "clipEn": "https://nhl.com/video/martin-necas-with-a-goal-vs-toronto-maple-leafs-6408214719112",
+      "clipFr": "https://nhl.com/fr/video/martin-necas-with-a-but-vs-les-maple-leafs-de-toronto-6408214909112",
+      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/COL/8480039.png"
     },
     {
-      "playerId": 8482877,
-      "name": "Jaroslav Chmelar",
-      "team": "NYR",
-      "opp": "EDM",
-      "period": 2,
-      "time": "05:05",
-      "strength": "sh",
+      "playerId": 8480018,
+      "name": "Nick Suzuki",
+      "team": "MTL",
+      "opp": "MIN",
+      "period": 3,
+      "time": "18:22",
+      "strength": "ev",
       "assists": [
-        "M. Zibanejad"
+        "C. Caufield",
+        "L. Hutson"
       ],
       "poolAssists": [
-        "M. Zibanejad"
+        "C. Caufield",
+        "L. Hutson"
       ],
-      "scorerOwned": false,
-      "owners": 0,
-      "ownerIds": [],
-      "clipEn": "https://nhl.com/video/nyr-edm-chmelar-scores-shg-against-devon-levi-6408163322112",
-      "clipFr": "https://nhl.com/fr/video/nyr-edm-chmelar-marque-un-but-en-i-n-contre-devon-levi-6408164677112",
-      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/NYR/8482877.png"
+      "scorerOwned": true,
+      "owners": 6,
+      "ownerIds": [
+        "usr_eve",
+        "usr_louise_trottier",
+        "usr_maddox_gagnon",
+        "usr_marjolaine_comeau",
+        "usr_vicky",
+        "usr_vincent"
+      ],
+      "clipEn": "https://nhl.com/video/min-mtl-suzuki-scores-goal-against-jesper-wallstedt-6408216088112",
+      "clipFr": "https://nhl.com/fr/video/min-mtl-suzuki-marque-un-but-contre-jesper-wallstedt-6408215699112",
+      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/MTL/8480018.png"
     },
     {
-      "playerId": 8483476,
-      "name": "Jonathan Lekkerimäki",
-      "team": "VAN",
-      "opp": "PHI",
+      "playerId": 8481542,
+      "name": "Moritz Seider",
+      "team": "DET",
+      "opp": "STL",
       "period": 3,
-      "time": "12:44",
+      "time": "18:46",
+      "strength": "ev",
+      "assists": [
+        "L. Raymond",
+        "A. Copp"
+      ],
+      "poolAssists": [],
+      "scorerOwned": true,
+      "owners": 2,
+      "ownerIds": [
+        "usr_julien_berube",
+        "usr_maddox_gagnon"
+      ],
+      "clipEn": "https://nhl.com/video/det-stl-seider-scores-goal-against-joel-hofer-6408216431112",
+      "clipFr": "https://nhl.com/fr/video/det-stl-seider-marque-un-but-contre-joel-hofer-6408216745112",
+      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/DET/8481542.png"
+    },
+    {
+      "playerId": 8476887,
+      "name": "Filip Forsberg",
+      "team": "NSH",
+      "opp": "LAK",
+      "period": 1,
+      "time": "05:20",
+      "strength": "ev",
+      "assists": [
+        "N. Hoglander"
+      ],
+      "poolAssists": [],
+      "scorerOwned": true,
+      "owners": 2,
+      "ownerIds": [
+        "usr_etienne",
+        "usr_vicky"
+      ],
+      "clipEn": "https://nhl.com/video/nsh-lak-forsberg-scores-goal-against-anton-forsberg-6408217100112",
+      "clipFr": "https://nhl.com/fr/video/nsh-lak-forsberg-marque-un-but-contre-anton-forsberg-6408214862112",
+      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8476887.png"
+    },
+    {
+      "playerId": 8476887,
+      "name": "Filip Forsberg",
+      "team": "NSH",
+      "opp": "LAK",
+      "period": 2,
+      "time": "10:32",
+      "strength": "ev",
+      "assists": [
+        "N. Hoglander",
+        "B. Skjei"
+      ],
+      "poolAssists": [],
+      "scorerOwned": true,
+      "owners": 2,
+      "ownerIds": [
+        "usr_etienne",
+        "usr_vicky"
+      ],
+      "clipEn": "https://nhl.com/video/nsh-lak-forsberg-scores-goal-against-anton-forsberg-6408219340112",
+      "clipFr": "https://nhl.com/fr/video/nsh-lak-forsberg-marque-un-but-contre-anton-forsberg-6408219833112",
+      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/NSH/8476887.png"
+    },
+    {
+      "playerId": 8475754,
+      "name": "Brock Nelson",
+      "team": "COL",
+      "opp": "TOR",
+      "period": 1,
+      "time": "16:09",
+      "strength": "ev",
+      "assists": [
+        "T. Hughes",
+        "J. Schwartz"
+      ],
+      "poolAssists": [],
+      "scorerOwned": true,
+      "owners": 1,
+      "ownerIds": [
+        "usr_maddox_gagnon"
+      ],
+      "clipEn": "https://nhl.com/video/col-tor-nelson-scores-goal-against-sergei-bobrovsky-6408210267112",
+      "clipFr": "https://nhl.com/fr/video/col-tor-nelson-marque-un-but-contre-sergei-bobrovsky-6408210073112",
+      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/COL/8475754.png"
+    },
+    {
+      "playerId": 8478864,
+      "name": "Kirill Kaprizov",
+      "team": "MIN",
+      "opp": "MTL",
+      "period": 4,
+      "time": "00:21",
       "strength": "pp",
       "assists": [
-        "B. Boeser",
-        "E. Pettersson"
+        "M. Boldy",
+        "Q. Hughes"
       ],
       "poolAssists": [
-        "E. Pettersson"
+        "M. Boldy",
+        "Q. Hughes"
+      ],
+      "scorerOwned": true,
+      "owners": 1,
+      "ownerIds": [
+        "usr_vincent"
+      ],
+      "clipEn": "https://nhl.com/video/min-mtl-kaprizov-scores-ppg-against-jacob-fowler-6408215615112",
+      "clipFr": "https://nhl.com/fr/video/min-mtl-kaprizov-marque-un-but-en-a-n-contre-jacob-fowler-6408216102112",
+      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8478864.png"
+    },
+    {
+      "playerId": 8479407,
+      "name": "Jesper Bratt",
+      "team": "NJD",
+      "opp": "WPG",
+      "period": 2,
+      "time": "01:14",
+      "strength": "ev",
+      "assists": [
+        "A. Gritsyuk",
+        "J. Hughes"
+      ],
+      "poolAssists": [
+        "J. Hughes"
+      ],
+      "scorerOwned": true,
+      "owners": 1,
+      "ownerIds": [
+        "usr_jackson_gagnon"
+      ],
+      "clipEn": "https://nhl.com/video/njd-wpg-bratt-scores-goal-against-nicolas-daws-6408211502112",
+      "clipFr": "https://nhl.com/fr/video/njd-wpg-bratt-marque-un-but-contre-nicolas-daws-6408209604112",
+      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/NJD/8479407.png"
+    },
+    {
+      "playerId": 8476455,
+      "name": "Gabriel Landeskog",
+      "team": "COL",
+      "opp": "TOR",
+      "period": 1,
+      "time": "17:26",
+      "strength": "ev",
+      "assists": [
+        "N. Roy",
+        "C. Makar"
+      ],
+      "poolAssists": [
+        "C. Makar"
       ],
       "scorerOwned": false,
       "owners": 0,
       "ownerIds": [],
-      "clipEn": "https://nhl.com/video/phi-van-lekkerimaki-scores-ppg-against-joseph-woll-6408169342112",
-      "clipFr": "https://nhl.com/fr/video/phi-van-lekkerimaki-marque-un-but-en-a-n-contre-joseph-woll-6408169233112",
-      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8483476.png"
+      "clipEn": "https://nhl.com/video/col-tor-landeskog-scores-goal-against-sergei-bobrovsky-6408209102112",
+      "clipFr": "https://nhl.com/fr/video/col-tor-landeskog-marque-un-but-contre-sergei-bobrovsky-6408210174112",
+      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/COL/8476455.png"
+    },
+    {
+      "playerId": 8484158,
+      "name": "Easton Cowan",
+      "team": "TOR",
+      "opp": "COL",
+      "period": 2,
+      "time": "19:31",
+      "strength": "ev",
+      "assists": [
+        "G. McKenna",
+        "N. Paul"
+      ],
+      "poolAssists": [
+        "G. McKenna"
+      ],
+      "scorerOwned": false,
+      "owners": 0,
+      "ownerIds": [],
+      "clipEn": "https://nhl.com/video/col-tor-cowan-scores-goal-against-mackenzie-blackwood-6408212104112",
+      "clipFr": "https://nhl.com/fr/video/col-tor-cowan-marque-un-but-contre-mackenzie-blackwood-6408211133112",
+      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/TOR/8484158.png"
+    },
+    {
+      "playerId": 8477476,
+      "name": "Artturi Lehkonen",
+      "team": "COL",
+      "opp": "TOR",
+      "period": 3,
+      "time": "17:15",
+      "strength": "ev",
+      "assists": [
+        "C. Makar",
+        "D. Toews"
+      ],
+      "poolAssists": [
+        "C. Makar"
+      ],
+      "scorerOwned": false,
+      "owners": 0,
+      "ownerIds": [],
+      "clipEn": "https://nhl.com/video/col-tor-lehkonen-scores-goal-against-sergei-bobrovsky-6408214511112",
+      "clipFr": "https://nhl.com/fr/video/col-tor-lehkonen-marque-un-but-contre-sergei-bobrovsky-6408215592112",
+      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/COL/8477476.png"
+    },
+    {
+      "playerId": 8478911,
+      "name": "Matt Roy",
+      "team": "WSH",
+      "opp": "OTT",
+      "period": 1,
+      "time": "00:35",
+      "strength": "ev",
+      "assists": [
+        "J. Chychrun",
+        "A. Protas"
+      ],
+      "poolAssists": [
+        "J. Chychrun"
+      ],
+      "scorerOwned": false,
+      "owners": 0,
+      "ownerIds": [],
+      "clipEn": "https://nhl.com/video/wsh-ott-roy-scores-goal-against-samuel-ersson-6408209326112",
+      "clipFr": "https://nhl.com/fr/video/wsh-ott-roy-marque-un-but-contre-samuel-ersson-6408208282112",
+      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8478911.png"
+    },
+    {
+      "playerId": 8484873,
+      "name": "Cole Hutson",
+      "team": "WSH",
+      "opp": "OTT",
+      "period": 4,
+      "time": "01:14",
+      "strength": "ev",
+      "assists": [
+        "A. Ovechkin",
+        "D. Strome"
+      ],
+      "poolAssists": [
+        "A. Ovechkin"
+      ],
+      "scorerOwned": false,
+      "owners": 0,
+      "ownerIds": [],
+      "clipEn": "https://nhl.com/video/wsh-ott-hutson-scores-goal-against-samuel-ersson-6408215601112",
+      "clipFr": "https://nhl.com/fr/video/wsh-ott-hutson-marque-un-but-contre-samuel-ersson-6408215404112",
+      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/WSH/8484873.png"
+    },
+    {
+      "playerId": 8477935,
+      "name": "Sam Bennett",
+      "team": "FLA",
+      "opp": "CBJ",
+      "period": 3,
+      "time": "14:29",
+      "strength": "ev",
+      "assists": [
+        "A. Ekblad",
+        "M. Tkachuk"
+      ],
+      "poolAssists": [
+        "M. Tkachuk"
+      ],
+      "scorerOwned": false,
+      "owners": 0,
+      "ownerIds": [],
+      "clipEn": "https://nhl.com/video/fla-cbj-bennett-scores-goal-against-cam-talbot-6408215623112",
+      "clipFr": "https://nhl.com/fr/video/fla-cbj-bennett-marque-un-but-contre-cam-talbot-6408214355112",
+      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/FLA/8477935.png"
+    },
+    {
+      "playerId": 8482111,
+      "name": "Justin Barron",
+      "team": "STL",
+      "opp": "DET",
+      "period": 2,
+      "time": "02:34",
+      "strength": "ev",
+      "assists": [
+        "R. Thomas",
+        "J. Snuggerud"
+      ],
+      "poolAssists": [
+        "R. Thomas"
+      ],
+      "scorerOwned": false,
+      "owners": 0,
+      "ownerIds": [],
+      "clipEn": "https://nhl.com/video/det-stl-barron-scores-goal-against-john-gibson-6408212626112",
+      "clipFr": "https://nhl.com/fr/video/det-stl-barron-marque-un-but-contre-john-gibson-6408214771112",
+      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/STL/8482111.png"
+    },
+    {
+      "playerId": 8483516,
+      "name": "Jimmy Snuggerud",
+      "team": "STL",
+      "opp": "DET",
+      "period": 3,
+      "time": "15:58",
+      "strength": "ev",
+      "assists": [
+        "D. Holloway",
+        "R. Thomas"
+      ],
+      "poolAssists": [
+        "R. Thomas"
+      ],
+      "scorerOwned": false,
+      "owners": 0,
+      "ownerIds": [],
+      "clipEn": "https://nhl.com/video/det-stl-snuggerud-scores-goal-against-john-gibson-6408216638112",
+      "clipFr": "https://nhl.com/fr/video/det-stl-snuggerud-marque-un-but-contre-john-gibson-6408217417112",
+      "thumb": "https://assets.nhle.com/mugs/nhl/20262027/STL/8483516.png"
     }
   ],
   "form": {
     "8471214": {
-      "last5": 0,
-      "games": 15,
-      "dry": 7
+      "last5": 1,
+      "games": 16,
+      "dry": 0
     },
     "8471215": {
       "last5": 7,
@@ -169,18 +433,18 @@
     },
     "8475166": {
       "last5": 4,
-      "games": 9,
-      "dry": 2
+      "games": 10,
+      "dry": 3
     },
     "8475683": {
-      "last5": 1,
-      "games": 12,
+      "last5": 0,
+      "games": 13,
       "dry": 0
     },
     "8475754": {
       "last5": 2,
-      "games": 18,
-      "dry": 1
+      "games": 19,
+      "dry": 0
     },
     "8475913": {
       "last5": 3,
@@ -218,9 +482,9 @@
       "dry": 1
     },
     "8477492": {
-      "last5": 8,
-      "games": 18,
-      "dry": 0
+      "last5": 6,
+      "games": 19,
+      "dry": 1
     },
     "8477493": {
       "last5": 0,
@@ -228,9 +492,9 @@
       "dry": 2
     },
     "8477933": {
-      "last5": 7,
-      "games": 18,
-      "dry": 1
+      "last5": 6,
+      "games": 19,
+      "dry": 0
     },
     "8477934": {
       "last5": 10,
@@ -239,8 +503,8 @@
     },
     "8477939": {
       "last5": 3,
-      "games": 19,
-      "dry": 1
+      "games": 20,
+      "dry": 2
     },
     "8477940": {
       "last5": 4,
@@ -253,9 +517,9 @@
       "dry": 0
     },
     "8477949": {
-      "last5": 4,
-      "games": 15,
-      "dry": 0
+      "last5": 2,
+      "games": 16,
+      "dry": 1
     },
     "8477956": {
       "last5": 6,
@@ -304,7 +568,7 @@
     },
     "8478864": {
       "last5": 8,
-      "games": 19,
+      "games": 20,
       "dry": 0
     },
     "8478872": {
@@ -313,8 +577,8 @@
       "dry": 0
     },
     "8479314": {
-      "last5": 6,
-      "games": 18,
+      "last5": 7,
+      "games": 19,
       "dry": 0
     },
     "8479325": {
@@ -324,12 +588,12 @@
     },
     "8479345": {
       "last5": 4,
-      "games": 15,
-      "dry": 1
+      "games": 16,
+      "dry": 0
     },
     "8479407": {
       "last5": 7,
-      "games": 18,
+      "games": 19,
       "dry": 0
     },
     "8479420": {
@@ -359,22 +623,22 @@
     },
     "8480018": {
       "last5": 7,
-      "games": 11,
-      "dry": 1
-    },
-    "8480023": {
-      "last5": 6,
-      "games": 17,
+      "games": 12,
       "dry": 0
     },
-    "8480039": {
-      "last5": 7,
+    "8480023": {
+      "last5": 5,
       "games": 18,
       "dry": 0
     },
+    "8480039": {
+      "last5": 6,
+      "games": 19,
+      "dry": 0
+    },
     "8480069": {
-      "last5": 10,
-      "games": 17,
+      "last5": 8,
+      "games": 18,
       "dry": 0
     },
     "8480280": {
@@ -383,19 +647,19 @@
       "dry": 0
     },
     "8480313": {
-      "last5": 2,
-      "games": 11,
+      "last5": 3,
+      "games": 12,
       "dry": 0
     },
     "8480800": {
-      "last5": 8,
-      "games": 19,
+      "last5": 7,
+      "games": 20,
       "dry": 0
     },
     "8480801": {
       "last5": 5,
-      "games": 18,
-      "dry": 0
+      "games": 19,
+      "dry": 1
     },
     "8480803": {
       "last5": 8,
@@ -418,8 +682,8 @@
       "dry": 1
     },
     "8480981": {
-      "last5": 2,
-      "games": 12,
+      "last5": 3,
+      "games": 13,
       "dry": 0
     },
     "8481533": {
@@ -428,23 +692,23 @@
       "dry": 3
     },
     "8481540": {
-      "last5": 6,
-      "games": 17,
+      "last5": 5,
+      "games": 18,
       "dry": 0
     },
     "8481542": {
       "last5": 3,
-      "games": 18,
-      "dry": 3
+      "games": 19,
+      "dry": 0
     },
     "8481557": {
       "last5": 5,
-      "games": 19,
-      "dry": 1
+      "games": 20,
+      "dry": 0
     },
     "8481559": {
-      "last5": 11,
-      "games": 18,
+      "last5": 10,
+      "games": 19,
       "dry": 0
     },
     "8482093": {
@@ -464,8 +728,8 @@
     },
     "8482720": {
       "last5": 2,
-      "games": 15,
-      "dry": 0
+      "games": 16,
+      "dry": 1
     },
     "8482740": {
       "last5": 8,
@@ -479,13 +743,13 @@
     },
     "8483457": {
       "last5": 7,
-      "games": 17,
+      "games": 18,
       "dry": 0
     },
     "8483515": {
-      "last5": 4,
-      "games": 17,
-      "dry": 1
+      "last5": 3,
+      "games": 18,
+      "dry": 2
     },
     "8483548": {
       "last5": 3,
@@ -513,9 +777,9 @@
       "dry": 0
     },
     "8486067": {
-      "last5": 4,
-      "games": 19,
-      "dry": 1
+      "last5": 2,
+      "games": 20,
+      "dry": 0
     }
   },
   "awards": {
@@ -524,18 +788,10 @@
       "name": "Kirill Kaprizov",
       "team": "MIN",
       "pos": "F",
-      "points": 31,
+      "points": 32,
       "owners": 1
     },
-    "iceAnchor": {
-      "id": 8471214,
-      "name": "Alex Ovechkin",
-      "team": "WSH",
-      "pos": "F",
-      "points": 4,
-      "owners": 3,
-      "dry": 7
-    },
+    "iceAnchor": null,
     "snub": {
       "id": 8478403,
       "name": "Jack Eichel",
@@ -563,7 +819,7 @@
       "name": "Jack Hughes",
       "team": "NJD",
       "pos": "F",
-      "points": 25,
+      "points": 26,
       "owners": 10,
       "stat": "goals",
       "value": 9,
@@ -603,17 +859,6 @@
       "target": 20
     },
     {
-      "id": 8477933,
-      "name": "Sam Reinhart",
-      "team": "FLA",
-      "pos": "F",
-      "points": 17,
-      "owners": 7,
-      "stat": "goals",
-      "value": 9,
-      "target": 10
-    },
-    {
       "id": 8479325,
       "name": "Charlie McAvoy",
       "team": "BOS",
@@ -647,17 +892,6 @@
       "target": 5
     },
     {
-      "id": 8480039,
-      "name": "Martin Necas",
-      "team": "COL",
-      "pos": "F",
-      "points": 23,
-      "owners": 6,
-      "stat": "goals",
-      "value": 9,
-      "target": 10
-    },
-    {
       "id": 8479542,
       "name": "Brandon Hagel",
       "team": "TBL",
@@ -678,122 +912,144 @@
       "stat": "points",
       "value": 19,
       "target": 20
+    },
+    {
+      "id": 8481533,
+      "name": "Trevor Zegras",
+      "team": "PHI",
+      "pos": "F",
+      "points": 14,
+      "owners": 3,
+      "stat": "goals",
+      "value": 4,
+      "target": 5
+    },
+    {
+      "id": 8479314,
+      "name": "Matthew Tkachuk",
+      "team": "FLA",
+      "pos": "F",
+      "points": 27,
+      "owners": 3,
+      "stat": "goals",
+      "value": 4,
+      "target": 5
     }
   ],
   "odds": {
-    "asOf": "2026-11-09",
+    "asOf": "2026-11-10",
     "sims": 5000,
     "teams": {
-      "usr_michel_bry": {
-        "win": 24.0,
-        "podium": 54.2,
-        "projected": 1751
-      },
       "usr_guillaume_brossard": {
-        "win": 15.5,
-        "podium": 42.5,
-        "projected": 1726
+        "win": 18.6,
+        "podium": 46.1,
+        "projected": 1724
+      },
+      "usr_michel_bry": {
+        "win": 22.2,
+        "podium": 53.4,
+        "projected": 1739
       },
       "usr_sylvianne": {
-        "win": 18.4,
-        "podium": 45.3,
-        "projected": 1732
+        "win": 19.6,
+        "podium": 46.0,
+        "projected": 1724
       },
       "usr_hugo_berube": {
-        "win": 5.1,
-        "podium": 25.2,
-        "projected": 1691
-      },
-      "usr_etienne": {
-        "win": 8.0,
-        "podium": 25.0,
-        "projected": 1689
+        "win": 4.8,
+        "podium": 24.4,
+        "projected": 1681
       },
       "usr_elrick": {
-        "win": 9.3,
-        "podium": 29.6,
-        "projected": 1692
+        "win": 7.8,
+        "podium": 27.0,
+        "projected": 1674
+      },
+      "usr_etienne": {
+        "win": 7.4,
+        "podium": 23.2,
+        "projected": 1677
       },
       "usr_jackson_gagnon": {
         "win": 5.9,
-        "podium": 20.0,
-        "projected": 1671
+        "podium": 19.5,
+        "projected": 1665
       },
       "usr_simon": {
-        "win": 4.8,
-        "podium": 20.4,
-        "projected": 1684
+        "win": 5.0,
+        "podium": 22.0,
+        "projected": 1682
       },
       "usr_alexandre_comeau": {
-        "win": 1.9,
-        "podium": 12.3,
-        "projected": 1659
+        "win": 2.2,
+        "podium": 12.9,
+        "projected": 1654
       },
       "usr_vincent": {
         "win": 3.1,
-        "podium": 9.7,
-        "projected": 1590
+        "podium": 10.0,
+        "projected": 1582
       },
       "usr_julien_berube": {
-        "win": 1.2,
-        "podium": 4.8,
-        "projected": 1576
+        "win": 1.1,
+        "podium": 5.6,
+        "projected": 1570
       },
       "usr_eve": {
-        "win": 0.5,
-        "podium": 3.1,
-        "projected": 1565
+        "win": 0.8,
+        "podium": 4.1,
+        "projected": 1557
       },
       "usr_marjolaine_comeau": {
         "win": 0.4,
-        "podium": 2.2,
-        "projected": 1553
+        "podium": 1.8,
+        "projected": 1538
       },
       "usr_florence": {
-        "win": 0.9,
-        "podium": 3.2,
-        "projected": 1529
+        "win": 0.6,
+        "podium": 2.4,
+        "projected": 1514
       },
       "usr_louise_trottier": {
-        "win": 0.3,
-        "podium": 1.4,
-        "projected": 1524
+        "win": 0.0,
+        "podium": 0.9,
+        "projected": 1508
       },
       "usr_jolyne_brossard": {
         "win": 0.2,
-        "podium": 1.1,
-        "projected": 1512
+        "podium": 0.9,
+        "projected": 1502
       },
       "usr_vicky": {
-        "win": 0.3,
-        "podium": 1.1,
-        "projected": 1430
+        "win": 0.2,
+        "podium": 0.9,
+        "projected": 1413
       },
       "usr_maddox_gagnon": {
-        "win": 0.1,
+        "win": 0.2,
         "podium": 0.6,
-        "projected": 1403
+        "projected": 1394
       }
     },
     "before": {
-      "usr_michel_bry": 23.7,
-      "usr_guillaume_brossard": 15.6,
-      "usr_sylvianne": 18.8,
-      "usr_hugo_berube": 5.4,
-      "usr_etienne": 8.5,
-      "usr_elrick": 8.6,
-      "usr_simon": 4.7,
-      "usr_jackson_gagnon": 5.3,
-      "usr_alexandre_comeau": 1.8,
-      "usr_vincent": 3.3,
-      "usr_julien_berube": 1.3,
-      "usr_eve": 0.8,
-      "usr_marjolaine_comeau": 0.5,
-      "usr_florence": 0.8,
-      "usr_louise_trottier": 0.1,
-      "usr_jolyne_brossard": 0.3,
-      "usr_vicky": 0.4,
-      "usr_maddox_gagnon": 0.2
+      "usr_michel_bry": 24.0,
+      "usr_guillaume_brossard": 15.5,
+      "usr_sylvianne": 18.4,
+      "usr_hugo_berube": 5.1,
+      "usr_etienne": 8.0,
+      "usr_elrick": 9.3,
+      "usr_jackson_gagnon": 5.9,
+      "usr_simon": 4.8,
+      "usr_alexandre_comeau": 1.9,
+      "usr_vincent": 3.1,
+      "usr_julien_berube": 1.2,
+      "usr_eve": 0.5,
+      "usr_marjolaine_comeau": 0.4,
+      "usr_florence": 0.9,
+      "usr_louise_trottier": 0.3,
+      "usr_jolyne_brossard": 0.2,
+      "usr_vicky": 0.3,
+      "usr_maddox_gagnon": 0.1
     }
   }
 }

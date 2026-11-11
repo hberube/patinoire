@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T08:30:44Z",
+  "updated": "2026-11-11T05:47:03Z",
   "source": "ESPN",
   "players": [
     {
@@ -53,7 +53,7 @@
       "pos": "F",
       "status": "ir",
       "type": "Lower Body",
-      "returnDate": "2026-11-17",
+      "returnDate": "2026-11-23",
       "noteDate": "2026-10-29",
       "note": "ir"
     },
@@ -69,14 +69,25 @@
       "note": "Barzal (knee) won't be in the lineup against the Sharks on Monday but has been upgraded to day-to-day, Andrew Gross of Newsday reports."
     },
     {
-      "id": 8476434,
-      "name": "John Gibson",
-      "team": "DET",
+      "id": 8476999,
+      "name": "Linus Ullmark",
+      "team": "OTT",
       "pos": "G",
-      "status": "dtd",
+      "status": "out",
       "type": "Lower Body",
-      "returnDate": "2026-11-10",
-      "noteDate": "2026-11-08",
+      "returnDate": "2026-11-12",
+      "noteDate": "2026-11-10",
+      "note": "out"
+    },
+    {
+      "id": 8482699,
+      "name": "Dylan Guenther",
+      "team": "UTA",
+      "pos": "F",
+      "status": "dtd",
+      "type": "Undisclosed",
+      "returnDate": "2026-11-11",
+      "noteDate": "2026-11-10",
       "note": "day-to-day"
     },
     {
