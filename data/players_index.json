@@ -140,6 +140,13 @@
     "points": 22
   },
   {
+    "id": 8476887,
+    "name": "Filip Forsberg",
+    "pos": "F",
+    "team": "NSH",
+    "points": 22
+  },
+  {
     "id": 8481605,
     "name": "Jackson LaCombe",
     "pos": "D",
@@ -207,13 +214,6 @@
     "name": "Elias Pettersson",
     "pos": "F",
     "team": "VAN",
-    "points": 20
-  },
-  {
-    "id": 8476887,
-    "name": "Filip Forsberg",
-    "pos": "F",
-    "team": "NSH",
     "points": 20
   },
   {
@@ -1757,6 +1757,13 @@
     "points": 8
   },
   {
+    "id": 8477424,
+    "name": "Juuse Saros",
+    "pos": "G",
+    "team": "NSH",
+    "points": 8
+  },
+  {
     "id": 8480748,
     "name": "Kiefer Sherwood",
     "pos": "F",
@@ -1879,6 +1886,13 @@
     "id": 8481726,
     "name": "Adam Edstrom",
     "pos": "F",
+    "team": "NSH",
+    "points": 7
+  },
+  {
+    "id": 8482482,
+    "name": "Adam Wilsby",
+    "pos": "D",
     "team": "NSH",
     "points": 7
   },
@@ -2107,6 +2121,13 @@
     "points": 7
   },
   {
+    "id": 8481535,
+    "name": "Nils Hoglander",
+    "pos": "F",
+    "team": "NSH",
+    "points": 7
+  },
+  {
     "id": 8484148,
     "name": "Oliver Bonk",
     "pos": "D",
@@ -2205,13 +2226,6 @@
     "points": 6
   },
   {
-    "id": 8482482,
-    "name": "Adam Wilsby",
-    "pos": "D",
-    "team": "NSH",
-    "points": 6
-  },
-  {
     "id": 8473986,
     "name": "Alex Killorn",
     "pos": "F",
@@ -2265,6 +2279,13 @@
     "name": "Ben Meyers",
     "pos": "F",
     "team": "SEA",
+    "points": 6
+  },
+  {
+    "id": 8476869,
+    "name": "Brady Skjei",
+    "pos": "D",
+    "team": "NSH",
     "points": 6
   },
   {
@@ -2681,13 +2702,6 @@
     "points": 5
   },
   {
-    "id": 8476869,
-    "name": "Brady Skjei",
-    "pos": "D",
-    "team": "NSH",
-    "points": 5
-  },
-  {
     "id": 8475810,
     "name": "Bryan Rust",
     "pos": "F",
@@ -2849,13 +2863,6 @@
     "points": 5
   },
   {
-    "id": 8477424,
-    "name": "Juuse Saros",
-    "pos": "G",
-    "team": "NSH",
-    "points": 5
-  },
-  {
     "id": 8478831,
     "name": "Kevin Stenlund",
     "pos": "F",
@@ -2909,13 +2916,6 @@
     "name": "Nikita Zadorov",
     "pos": "D",
     "team": "BOS",
-    "points": 5
-  },
-  {
-    "id": 8481535,
-    "name": "Nils Hoglander",
-    "pos": "F",
-    "team": "NSH",
     "points": 5
   },
   {
