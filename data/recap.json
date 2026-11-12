@@ -1,36 +1,36 @@
 {
-  "gameDay": "2026-11-09",
-  "generatedAt": "2026-11-10T08:31:02Z",
+  "gameDay": "2026-11-11",
+  "generatedAt": "2026-11-12T08:31:07Z",
   "fr": {
-    "title": "Michel tient bon, Guillaume rafle le bingo",
+    "title": "Michel passe en tête, Eve et Sylvianne explosent",
     "bullets": [
-      "Edmonton bat les Rangers 3-1: McDavid (chez 15 d'entre vous) et un doublé de Draisaitl (9 proprios) font plaisir. 🏒",
-      "Michel (Les Ducks) reste en tête avec 415 points, +4 hier. Guillaume le talonne à 4 points.",
-      "Bingo: Guillaume (Laser Kiwis) gagne avec 4 lignes. Michel en fait 3, et Vicky ferme la marche avec un seul carreau.",
-      "Jackson grimpe au 7e rang, Simon recule au 8e. Hugo ajoute 4 points mais reste 4e, à 400.",
-      "Ève et Marjolaine sont à égalité à 353; Ève passe devant grâce à ses 49 lignes de bingo. Florence et Maddox: zéro pointé. 🥶",
-      "Rantanen et Jack Hughes sont à un but du cap de 10, avec 10 proprios chacun."
+      "Michel (Les Ducks) grimpe au 1er rang avec 429 points. Guillaume recule au 2e, à deux points seulement. 🦆",
+      "Sylvianne et Eve ramassent 12 points chacune, la meilleure soirée du pool. Sylvianne reste 3e.",
+      "Bingo : Eve, Florence et Jolyne signent 3 lignes chacune. Michel a frôlé le tout (4 cases, zéro ligne), et Guillaume ferme la marche avec 2 cases.",
+      "Evan Bouchard marque dans la victoire d'Edmonton en prolongation, pour 10 participants. Kucherov a marqué à Tampa, mais personne ne l'a repêché. Aïe! 🏒",
+      "McDavid est à un point de 50, et 15 participants retiennent leur souffle.",
+      "Infirmerie : Dylan Guenther (UTA) est sur la liste des blessés, retour prévu vers le 5 décembre, chez 5 participants. Linus Ullmark (OTT) est incertain, au grand dam de Vincent."
     ]
   },
   "en": {
-    "title": "Michel holds on, Guillaume takes the bingo",
+    "title": "Michel takes the lead, Eve and Sylvianne light it up",
     "bullets": [
-      "Edmonton beat the Rangers 3-1: McDavid (on 15 rosters) and a Draisaitl brace (9 owners) delivered. 🏒",
-      "Michel (Les Ducks) stays on top with 415 points, up 4 last night. Guillaume trails by 4.",
-      "Bingo: Guillaume (Laser Kiwis) wins with 4 lines. Michel has 3, and Vicky brings up the rear with a single square.",
-      "Jackson climbs to 7th, Simon slips to 8th. Hugo adds 4 points but stays 4th at 400.",
-      "Ève and Marjolaine are tied at 353; Ève edges ahead on 49 season bingo lines. Florence and Maddox: goose eggs. 🥶",
-      "Rantanen and Jack Hughes are one goal from 10, with 10 owners each."
+      "Michel (Les Ducks) climbs to 1st with 429 points. Guillaume slips to 2nd, just two back. 🦆",
+      "Sylvianne and Eve each bank 12 points, the best night in the pool. Sylvianne holds 3rd.",
+      "Bingo: Eve, Florence and Jolyne each land 3 lines. Michel came close (4 squares, no lines), and Guillaume brings up the rear with 2 squares.",
+      "Evan Bouchard scores in Edmonton's overtime win, for 10 participants. Kucherov scored for Tampa, but nobody drafted him. Ouch! 🏒",
+      "McDavid sits one point shy of 50, with 15 participants holding their breath.",
+      "Infirmary: Dylan Guenther (UTA) is on the injured list, expected back around Dec. 5, owned by 5 participants. Linus Ullmark (OTT) is day-to-day, bad news for Vincent."
     ]
   },
   "image": {
     "fr": {
       "src": "data/recap-fr.png",
-      "alt": "JACK EICHEL : 24 POINTS, LIBRE COMME L'AIR DEPUIS LE REPÊCHAGE / OVECHKIN, 7 MATCHS À SEC : LE POOL CHOISIT LA NOSTALGIE"
+      "alt": "MICHEL PASSE GUILLAUME AU 1ER RANG PAR 2 PTS / LE KIWI NE VOLE PAS. LE CANARD, LUI, VOLE LA 1RE PLACE."
     },
     "en": {
       "src": "data/recap-en.png",
-      "alt": "JACK EICHEL: 24 POINTS, ZERO TAKERS SINCE DRAFT DAY / OVECHKIN, 7 GAMES DRY: 3 OWNERS CALL IT A VINTAGE SEASON"
+      "alt": "MICHEL PASSES GUILLAUME FOR 1ST BY 2 POINTS / KIWIS CAN'T FLY. DUCKS CAN, STRAIGHT TO THE TOP."
     }
   }
 }

@@ -1,19 +1,6 @@
 {
   "memes": [
     {
-      "gameDay": "2026-10-31",
-      "category": "bingo",
-      "format": "classic",
-      "subject": {
-        "kind": "team",
-        "id": "usr_florence"
-      },
-      "fr": {
-        "top": "HALLOWEEN : ÉTIENNE ET JOLYNE À 5 LIGNES",
-        "bottom": "FLORENCE : 3 CASES, 0 LIGNE… ET UN SAC DE RAISINS SECS"
-      }
-    },
-    {
       "gameDay": "2026-11-01",
       "category": "player",
       "format": "breaking",
@@ -132,6 +119,19 @@
       "fr": {
         "no": "JACK EICHEL : 24 POINTS, LIBRE COMME L'AIR DEPUIS LE REPÊCHAGE",
         "yes": "OVECHKIN, 7 MATCHS À SEC : LE POOL CHOISIT LA NOSTALGIE"
+      }
+    },
+    {
+      "gameDay": "2026-11-11",
+      "category": "participant",
+      "format": "classic",
+      "subject": {
+        "kind": "team",
+        "id": "usr_michel_bry"
+      },
+      "fr": {
+        "top": "MICHEL PASSE GUILLAUME AU 1ER RANG PAR 2 PTS",
+        "bottom": "LE KIWI NE VOLE PAS. LE CANARD, LUI, VOLE LA 1RE PLACE."
       }
     }
   ]
