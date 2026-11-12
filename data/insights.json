@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-12T06:02:43Z",
+  "lastUpdated": "2026-11-12T08:30:46Z",
   "gameDay": "2026-11-11",
   "highlights": [
     {
@@ -500,29 +500,29 @@
       "dry": 0
     },
     "8471215": {
-      "last5": 7,
-      "games": 16,
+      "last5": 6,
+      "games": 17,
       "dry": 0
     },
     "8471675": {
-      "last5": 6,
-      "games": 18,
-      "dry": 0
+      "last5": 3,
+      "games": 19,
+      "dry": 1
     },
     "8474564": {
       "last5": 4,
-      "games": 18,
-      "dry": 1
+      "games": 19,
+      "dry": 0
     },
     "8474578": {
-      "last5": 5,
-      "games": 18,
+      "last5": 3,
+      "games": 19,
       "dry": 0
     },
     "8475158": {
-      "last5": 3,
-      "games": 18,
-      "dry": 2
+      "last5": 2,
+      "games": 19,
+      "dry": 3
     },
     "8475166": {
       "last5": 4,
@@ -555,9 +555,9 @@
       "dry": 0
     },
     "8476887": {
-      "last5": 7,
-      "games": 18,
-      "dry": 0
+      "last5": 5,
+      "games": 19,
+      "dry": 1
     },
     "8476945": {
       "last5": 7,
@@ -830,8 +830,8 @@
       "dry": 0
     },
     "8483445": {
-      "last5": 13,
-      "games": 17,
+      "last5": 11,
+      "games": 18,
       "dry": 0
     },
     "8483457": {
@@ -855,14 +855,14 @@
       "dry": 0
     },
     "8484153": {
-      "last5": 8,
-      "games": 18,
-      "dry": 1
+      "last5": 5,
+      "games": 19,
+      "dry": 2
     },
     "8484801": {
-      "last5": 5,
-      "games": 18,
-      "dry": 1
+      "last5": 7,
+      "games": 19,
+      "dry": 0
     },
     "8484984": {
       "last5": 2,
@@ -1004,17 +1004,6 @@
       "target": 5
     },
     {
-      "id": 8474564,
-      "name": "Steven Stamkos",
-      "team": "NSH",
-      "pos": "F",
-      "points": 19,
-      "owners": 4,
-      "stat": "points",
-      "value": 19,
-      "target": 20
-    },
-    {
       "id": 8481533,
       "name": "Trevor Zegras",
       "team": "PHI",
@@ -1035,6 +1024,17 @@
       "stat": "goals",
       "value": 4,
       "target": 5
+    },
+    {
+      "id": 8474578,
+      "name": "Erik Karlsson",
+      "team": "PIT",
+      "pos": "D",
+      "points": 19,
+      "owners": 2,
+      "stat": "points",
+      "value": 19,
+      "target": 20
     }
   ],
   "odds": {
@@ -1042,94 +1042,94 @@
     "sims": 5000,
     "teams": {
       "usr_michel_bry": {
-        "win": 21.6,
-        "podium": 52.2,
-        "projected": 1733
+        "win": 22.3,
+        "podium": 53.0,
+        "projected": 1734
       },
       "usr_guillaume_brossard": {
-        "win": 17.2,
-        "podium": 44.3,
-        "projected": 1717
+        "win": 17.4,
+        "podium": 44.8,
+        "projected": 1718
       },
       "usr_sylvianne": {
-        "win": 18.5,
-        "podium": 43.7,
-        "projected": 1716
+        "win": 19.4,
+        "podium": 46.3,
+        "projected": 1721
       },
       "usr_hugo_berube": {
-        "win": 5.2,
-        "podium": 24.9,
-        "projected": 1678
+        "win": 4.9,
+        "podium": 24.0,
+        "projected": 1677
       },
       "usr_etienne": {
-        "win": 8.1,
-        "podium": 23.8,
-        "projected": 1675
-      },
-      "usr_simon": {
-        "win": 6.1,
-        "podium": 23.5,
-        "projected": 1679
+        "win": 7.2,
+        "podium": 22.9,
+        "projected": 1671
       },
       "usr_elrick": {
-        "win": 6.3,
-        "podium": 24.4,
+        "win": 6.8,
+        "podium": 24.7,
         "projected": 1664
       },
+      "usr_simon": {
+        "win": 5.6,
+        "podium": 22.2,
+        "projected": 1674
+      },
       "usr_jackson_gagnon": {
-        "win": 5.9,
-        "podium": 19.0,
+        "win": 5.4,
+        "podium": 18.4,
         "projected": 1660
       },
       "usr_alexandre_comeau": {
-        "win": 2.6,
-        "podium": 15.0,
-        "projected": 1654
+        "win": 2.4,
+        "podium": 14.6,
+        "projected": 1656
       },
       "usr_vincent": {
         "win": 3.3,
         "podium": 9.7,
-        "projected": 1581
+        "projected": 1577
       },
       "usr_julien_berube": {
-        "win": 1.5,
-        "podium": 6.4,
-        "projected": 1575
+        "win": 1.4,
+        "podium": 5.7,
+        "projected": 1573
       },
       "usr_eve": {
-        "win": 1.5,
-        "podium": 5.1,
-        "projected": 1569
+        "win": 1.6,
+        "podium": 6.0,
+        "projected": 1572
       },
       "usr_marjolaine_comeau": {
         "win": 0.3,
-        "podium": 2.0,
-        "projected": 1538
+        "podium": 1.7,
+        "projected": 1534
       },
       "usr_florence": {
-        "win": 1.0,
-        "podium": 3.2,
-        "projected": 1526
+        "win": 1.1,
+        "podium": 3.3,
+        "projected": 1524
+      },
+      "usr_jolyne_brossard": {
+        "win": 0.2,
+        "podium": 1.5,
+        "projected": 1508
       },
       "usr_louise_trottier": {
         "win": 0.2,
-        "podium": 1.5,
-        "projected": 1502
-      },
-      "usr_jolyne_brossard": {
-        "win": 0.3,
-        "podium": 1.2,
-        "projected": 1499
+        "podium": 1.3,
+        "projected": 1505
       },
       "usr_vicky": {
-        "win": 0.2,
-        "podium": 1.1,
-        "projected": 1422
+        "win": 0.3,
+        "podium": 1.3,
+        "projected": 1430
       },
       "usr_maddox_gagnon": {
-        "win": 0.2,
-        "podium": 0.7,
-        "projected": 1397
+        "win": 0.1,
+        "podium": 0.5,
+        "projected": 1395
       }
     },
     "before": {
