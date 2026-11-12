@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T11:00:43Z",
+  "updated": "2026-11-12T06:02:43Z",
   "source": "ESPN",
   "players": [
     {
@@ -23,6 +23,17 @@
       "returnDate": "2026-12-05",
       "noteDate": "2026-10-22",
       "note": "Rust (lower body) will be re-evaluated in six weeks, Michelle Crechiolo of the Penguins' official site reports Thursday."
+    },
+    {
+      "id": 8482699,
+      "name": "Dylan Guenther",
+      "team": "UTA",
+      "pos": "F",
+      "status": "ir",
+      "type": "Upper Body",
+      "returnDate": "2026-12-05",
+      "noteDate": "2026-11-12",
+      "note": "ir"
     },
     {
       "id": 8479406,
@@ -69,36 +80,36 @@
       "note": "Barzal (knee) won't be in the lineup against the Sharks on Monday but has been upgraded to day-to-day, Andrew Gross of Newsday reports."
     },
     {
-      "id": 8476999,
-      "name": "Linus Ullmark",
-      "team": "OTT",
-      "pos": "G",
-      "status": "out",
-      "type": "Lower Body",
-      "returnDate": "2026-11-12",
-      "noteDate": "2026-11-10",
-      "note": "out"
-    },
-    {
-      "id": 8482699,
-      "name": "Dylan Guenther",
-      "team": "UTA",
-      "pos": "F",
-      "status": "dtd",
-      "type": "Undisclosed",
-      "returnDate": "2026-11-11",
-      "noteDate": "2026-11-10",
-      "note": "day-to-day"
-    },
-    {
       "id": 8480036,
       "name": "Miro Heiskanen",
       "team": "DAL",
       "pos": "D",
-      "status": "dtd",
+      "status": "out",
       "type": "Upper Body",
+      "returnDate": "2026-11-14",
+      "noteDate": "2026-11-11",
+      "note": "Heiskanen (upper body) has been ruled out for Thursday's game against the Jets, Stars TV host Brien Rea reports."
+    },
+    {
+      "id": 8476999,
+      "name": "Linus Ullmark",
+      "team": "OTT",
+      "pos": "G",
+      "status": "dtd",
+      "type": "Lower Body",
       "returnDate": "2026-11-12",
-      "noteDate": "2026-11-08",
+      "noteDate": "2026-11-11",
+      "note": "day-to-day"
+    },
+    {
+      "id": 8477951,
+      "name": "Nick Schmaltz",
+      "team": "UTA",
+      "pos": "F",
+      "status": "dtd",
+      "type": "Lower Body",
+      "returnDate": "2026-11-12",
+      "noteDate": "2026-11-12",
       "note": "day-to-day"
     }
   ]
