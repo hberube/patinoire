@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T08:30:45Z",
+  "updated": "2026-11-13T06:03:34Z",
   "source": "ESPN",
   "players": [
     {
@@ -91,25 +91,36 @@
       "note": "Heiskanen (upper body) has been ruled out for Thursday's game against the Jets, Stars TV host Brien Rea reports."
     },
     {
-      "id": 8476999,
-      "name": "Linus Ullmark",
-      "team": "OTT",
-      "pos": "G",
-      "status": "dtd",
-      "type": "Lower Body",
-      "returnDate": "2026-11-12",
-      "noteDate": "2026-11-11",
-      "note": "day-to-day"
-    },
-    {
       "id": 8477951,
       "name": "Nick Schmaltz",
       "team": "UTA",
       "pos": "F",
+      "status": "out",
+      "type": "Lower Body",
+      "returnDate": "2026-11-14",
+      "noteDate": "2026-11-13",
+      "note": "out"
+    },
+    {
+      "id": 8480069,
+      "name": "Cale Makar",
+      "team": "COL",
+      "pos": "D",
       "status": "dtd",
       "type": "Lower Body",
       "returnDate": "2026-11-12",
-      "noteDate": "2026-11-12",
+      "noteDate": "2026-11-13",
+      "note": "day-to-day"
+    },
+    {
+      "id": 8477492,
+      "name": "Nathan MacKinnon",
+      "team": "COL",
+      "pos": "F",
+      "status": "dtd",
+      "type": "Lower Body",
+      "returnDate": "2026-11-14",
+      "noteDate": "2026-11-13",
       "note": "day-to-day"
     }
   ]
