@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-13T06:02:54Z",
+  "lastUpdated": "2026-11-13T08:30:02Z",
   "season": "20262027",
   "previousRanks": {
     "usr_michel_bry": 1,
@@ -972,7 +972,7 @@
           "pos": "F",
           "group": 10,
           "team": "LAK",
-          "gp": 15,
+          "gp": 16,
           "stats": {
             "goals": 6,
             "assists": 7,
@@ -1728,7 +1728,7 @@
           "pos": "F",
           "group": 10,
           "team": "LAK",
-          "gp": 15,
+          "gp": 16,
           "stats": {
             "goals": 6,
             "assists": 7,
@@ -2484,7 +2484,7 @@
           "pos": "F",
           "group": 10,
           "team": "LAK",
-          "gp": 15,
+          "gp": 16,
           "stats": {
             "goals": 6,
             "assists": 7,
@@ -2862,7 +2862,7 @@
           "pos": "F",
           "group": 10,
           "team": "LAK",
-          "gp": 15,
+          "gp": 16,
           "stats": {
             "goals": 6,
             "assists": 7,
@@ -5508,7 +5508,7 @@
           "pos": "F",
           "group": 10,
           "team": "LAK",
-          "gp": 15,
+          "gp": 16,
           "stats": {
             "goals": 6,
             "assists": 7,
@@ -6094,10 +6094,10 @@
       "participantId": "usr_vicky",
       "participantName": "Vicky",
       "teamName": "Les PhD fatiguées",
-      "totalPoints": 330,
+      "totalPoints": 331,
       "totalGoals": 106,
       "totalAssists": 209,
-      "goalieWins": 13,
+      "goalieWins": 14,
       "shootoutGoals": 0,
       "tradesUsed": {
         "F": 0,
@@ -6417,15 +6417,15 @@
           "pos": "G",
           "group": 19,
           "team": "NYI",
-          "gp": 12,
+          "gp": 13,
           "stats": {
             "goals": 0,
             "assists": 0,
             "soGoals": 0,
-            "wins": 6,
+            "wins": 7,
             "shutouts": 1,
             "otl": 2,
-            "points": 8
+            "points": 9
           }
         },
         {
@@ -6466,7 +6466,7 @@
       "formerStats": [],
       "rank": 17,
       "previousRank": 17,
-      "pointsDelta": 3
+      "pointsDelta": 4
     },
     {
       "participantId": "usr_maddox_gagnon",

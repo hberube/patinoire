@@ -357,6 +357,13 @@
     "points": 19
   },
   {
+    "id": 8478550,
+    "name": "Artemi Panarin",
+    "pos": "F",
+    "team": "LAK",
+    "points": 19
+  },
+  {
     "id": 8477476,
     "name": "Artturi Lehkonen",
     "pos": "F",
@@ -406,10 +413,10 @@
     "points": 19
   },
   {
-    "id": 8478550,
-    "name": "Artemi Panarin",
+    "id": 8477500,
+    "name": "Bo Horvat",
     "pos": "F",
-    "team": "LAK",
+    "team": "NYI",
     "points": 18
   },
   {
@@ -434,18 +441,18 @@
     "points": 18
   },
   {
+    "id": 8485366,
+    "name": "Matthew Schaefer",
+    "pos": "D",
+    "team": "NYI",
+    "points": 18
+  },
+  {
     "id": 8476459,
     "name": "Mika Zibanejad",
     "pos": "F",
     "team": "NYR",
     "points": 18
-  },
-  {
-    "id": 8477500,
-    "name": "Bo Horvat",
-    "pos": "F",
-    "team": "NYI",
-    "points": 17
   },
   {
     "id": 8478444,
@@ -487,13 +494,6 @@
     "name": "Kent Johnson",
     "pos": "F",
     "team": "CBJ",
-    "points": 17
-  },
-  {
-    "id": 8485366,
-    "name": "Matthew Schaefer",
-    "pos": "D",
-    "team": "NYI",
     "points": 17
   },
   {
@@ -543,6 +543,13 @@
     "name": "Brayden Point",
     "pos": "F",
     "team": "TBL",
+    "points": 16
+  },
+  {
+    "id": 8475170,
+    "name": "Brayden Schenn",
+    "pos": "F",
+    "team": "NYI",
     "points": 16
   },
   {
@@ -798,13 +805,6 @@
     "points": 13
   },
   {
-    "id": 8475170,
-    "name": "Brayden Schenn",
-    "pos": "F",
-    "team": "NYI",
-    "points": 13
-  },
-  {
     "id": 8476905,
     "name": "Chandler Stephenson",
     "pos": "F",
@@ -959,6 +959,13 @@
     "points": 12
   },
   {
+    "id": 8482730,
+    "name": "Brandt Clarke",
+    "pos": "D",
+    "team": "LAK",
+    "points": 12
+  },
+  {
     "id": 8475754,
     "name": "Brock Nelson",
     "pos": "F",
@@ -1106,6 +1113,13 @@
     "points": 12
   },
   {
+    "id": 8481601,
+    "name": "Simon Holmstrom",
+    "pos": "F",
+    "team": "NYI",
+    "points": 12
+  },
+  {
     "id": 8484803,
     "name": "Trevor Connelly",
     "pos": "F",
@@ -1123,13 +1137,6 @@
     "id": 8482155,
     "name": "Alex Laferriere",
     "pos": "F",
-    "team": "LAK",
-    "points": 11
-  },
-  {
-    "id": 8482730,
-    "name": "Brandt Clarke",
-    "pos": "D",
     "team": "LAK",
     "points": 11
   },
@@ -1442,17 +1449,17 @@
     "points": 10
   },
   {
-    "id": 8481601,
-    "name": "Simon Holmstrom",
-    "pos": "F",
-    "team": "NYI",
-    "points": 10
-  },
-  {
     "id": 8478469,
     "name": "Thomas Chabot",
     "pos": "D",
     "team": "OTT",
+    "points": 10
+  },
+  {
+    "id": 8485388,
+    "name": "Victor Eklund",
+    "pos": "F",
+    "team": "NYI",
     "points": 10
   },
   {
@@ -1589,6 +1596,13 @@
     "points": 9
   },
   {
+    "id": 8478009,
+    "name": "Ilya Sorokin",
+    "pos": "G",
+    "team": "NYI",
+    "points": 9
+  },
+  {
     "id": 8482089,
     "name": "Jake Neighbours",
     "pos": "F",
@@ -1698,13 +1712,6 @@
     "name": "Valeri Nichushkin",
     "pos": "F",
     "team": "CBJ",
-    "points": 9
-  },
-  {
-    "id": 8485388,
-    "name": "Victor Eklund",
-    "pos": "F",
-    "team": "NYI",
     "points": 9
   },
   {
@@ -1844,13 +1851,6 @@
     "id": 8482476,
     "name": "Emil Heineman",
     "pos": "F",
-    "team": "NYI",
-    "points": 8
-  },
-  {
-    "id": 8478009,
-    "name": "Ilya Sorokin",
-    "pos": "G",
     "team": "NYI",
     "points": 8
   },
@@ -2149,6 +2149,13 @@
     "points": 7
   },
   {
+    "id": 8476469,
+    "name": "Joel Armia",
+    "pos": "F",
+    "team": "LAK",
+    "points": 7
+  },
+  {
     "id": 8475166,
     "name": "John Tavares",
     "pos": "F",
@@ -2212,6 +2219,13 @@
     "points": 7
   },
   {
+    "id": 8481711,
+    "name": "Matias Maccelli",
+    "pos": "F",
+    "team": "NYI",
+    "points": 7
+  },
+  {
     "id": 8483505,
     "name": "Matthew Poitras",
     "pos": "F",
@@ -2258,6 +2272,13 @@
     "name": "Phillip Danault",
     "pos": "F",
     "team": "MTL",
+    "points": 7
+  },
+  {
+    "id": 8482124,
+    "name": "Quinton Byfield",
+    "pos": "F",
+    "team": "LAK",
     "points": 7
   },
   {
@@ -2534,13 +2555,6 @@
     "points": 6
   },
   {
-    "id": 8476469,
-    "name": "Joel Armia",
-    "pos": "F",
-    "team": "LAK",
-    "points": 6
-  },
-  {
     "id": 8482087,
     "name": "Kaiden Guhle",
     "pos": "D",
@@ -2566,13 +2580,6 @@
     "name": "Mathieu Olivier",
     "pos": "F",
     "team": "CBJ",
-    "points": 6
-  },
-  {
-    "id": 8481711,
-    "name": "Matias Maccelli",
-    "pos": "F",
-    "team": "NYI",
     "points": 6
   },
   {
@@ -2622,13 +2629,6 @@
     "name": "Pavel Mintyukov",
     "pos": "D",
     "team": "ANA",
-    "points": 6
-  },
-  {
-    "id": 8482124,
-    "name": "Quinton Byfield",
-    "pos": "F",
-    "team": "LAK",
     "points": 6
   },
   {
@@ -2685,6 +2685,13 @@
     "name": "Travis Konecny",
     "pos": "F",
     "team": "PHI",
+    "points": 6
+  },
+  {
+    "id": 8479675,
+    "name": "Trevor Moore",
+    "pos": "F",
+    "team": "LAK",
     "points": 6
   },
   {
@@ -3126,13 +3133,6 @@
     "name": "Tony DeAngelo",
     "pos": "D",
     "team": "NYI",
-    "points": 5
-  },
-  {
-    "id": 8479675,
-    "name": "Trevor Moore",
-    "pos": "F",
-    "team": "LAK",
     "points": 5
   },
   {
@@ -3885,6 +3885,13 @@
     "points": 3
   },
   {
+    "id": 8477506,
+    "name": "Ryan Pulock",
+    "pos": "D",
+    "team": "NYI",
+    "points": 3
+  },
+  {
     "id": 8479351,
     "name": "Sam Steel",
     "pos": "F",
@@ -4253,6 +4260,13 @@
     "name": "Mike Reilly",
     "pos": "D",
     "team": "CAR",
+    "points": 2
+  },
+  {
+    "id": 8482070,
+    "name": "Mitchell Chaffee",
+    "pos": "F",
+    "team": "NYI",
     "points": 2
   },
   {
@@ -4837,6 +4851,13 @@
     "points": 1
   },
   {
+    "id": 8477942,
+    "name": "Kevin Fiala",
+    "pos": "F",
+    "team": "LAK",
+    "points": 1
+  },
+  {
     "id": 8483466,
     "name": "Kevin Korchinski",
     "pos": "D",
@@ -4928,13 +4949,6 @@
     "points": 1
   },
   {
-    "id": 8482070,
-    "name": "Mitchell Chaffee",
-    "pos": "F",
-    "team": "NYI",
-    "points": 1
-  },
-  {
     "id": 8483565,
     "name": "Nick Blankenburg",
     "pos": "D",
@@ -4981,13 +4995,6 @@
     "name": "Ross Johnston",
     "pos": "F",
     "team": "STL",
-    "points": 1
-  },
-  {
-    "id": 8477506,
-    "name": "Ryan Pulock",
-    "pos": "D",
-    "team": "NYI",
     "points": 1
   },
   {
