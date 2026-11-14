@@ -140,6 +140,13 @@
     "points": 24
   },
   {
+    "id": 8479323,
+    "name": "Adam Fox",
+    "pos": "D",
+    "team": "NYR",
+    "points": 23
+  },
+  {
     "id": 8484762,
     "name": "Beckett Sennecke",
     "pos": "F",
@@ -175,9 +182,9 @@
     "points": 23
   },
   {
-    "id": 8479323,
-    "name": "Adam Fox",
-    "pos": "D",
+    "id": 8482109,
+    "name": "Alexis Lafrenière",
+    "pos": "F",
     "team": "NYR",
     "points": 22
   },
@@ -238,6 +245,13 @@
     "points": 21
   },
   {
+    "id": 8480012,
+    "name": "Elias Pettersson",
+    "pos": "F",
+    "team": "VAN",
+    "points": 21
+  },
+  {
     "id": 8483431,
     "name": "Logan Cooley",
     "pos": "F",
@@ -266,24 +280,10 @@
     "points": 21
   },
   {
-    "id": 8482109,
-    "name": "Alexis Lafrenière",
-    "pos": "F",
-    "team": "NYR",
-    "points": 20
-  },
-  {
     "id": 8477409,
     "name": "Carter Verhaeghe",
     "pos": "F",
     "team": "FLA",
-    "points": 20
-  },
-  {
-    "id": 8480012,
-    "name": "Elias Pettersson",
-    "pos": "F",
-    "team": "VAN",
     "points": 20
   },
   {
@@ -406,6 +406,13 @@
     "points": 19
   },
   {
+    "id": 8476459,
+    "name": "Mika Zibanejad",
+    "pos": "F",
+    "team": "NYR",
+    "points": 19
+  },
+  {
     "id": 8477933,
     "name": "Sam Reinhart",
     "pos": "F",
@@ -417,6 +424,13 @@
     "name": "Bo Horvat",
     "pos": "F",
     "team": "NYI",
+    "points": 18
+  },
+  {
+    "id": 8478444,
+    "name": "Brock Boeser",
+    "pos": "F",
+    "team": "VAN",
     "points": 18
   },
   {
@@ -446,20 +460,6 @@
     "pos": "D",
     "team": "NYI",
     "points": 18
-  },
-  {
-    "id": 8476459,
-    "name": "Mika Zibanejad",
-    "pos": "F",
-    "team": "NYR",
-    "points": 18
-  },
-  {
-    "id": 8478444,
-    "name": "Brock Boeser",
-    "pos": "F",
-    "team": "VAN",
-    "points": 17
   },
   {
     "id": 8477496,
@@ -557,6 +557,13 @@
     "name": "Easton Cowan",
     "pos": "F",
     "team": "TOR",
+    "points": 16
+  },
+  {
+    "id": 8476468,
+    "name": "J.T. Miller",
+    "pos": "F",
+    "team": "NYR",
     "points": 16
   },
   {
@@ -690,13 +697,6 @@
     "name": "Berkly Catton",
     "pos": "F",
     "team": "SEA",
-    "points": 14
-  },
-  {
-    "id": 8476468,
-    "name": "J.T. Miller",
-    "pos": "F",
-    "team": "NYR",
     "points": 14
   },
   {
@@ -1176,6 +1176,13 @@
     "points": 11
   },
   {
+    "id": 8484210,
+    "name": "Gabe Perreault",
+    "pos": "F",
+    "team": "NYR",
+    "points": 11
+  },
+  {
     "id": 8480280,
     "name": "Jeremy Swayman",
     "pos": "G",
@@ -1243,6 +1250,13 @@
     "name": "Noah Ostlund",
     "pos": "F",
     "team": "BUF",
+    "points": 11
+  },
+  {
+    "id": 8477416,
+    "name": "Oliver Bjorkstrand",
+    "pos": "F",
+    "team": "NYR",
     "points": 11
   },
   {
@@ -1421,13 +1435,6 @@
     "points": 10
   },
   {
-    "id": 8477416,
-    "name": "Oliver Bjorkstrand",
-    "pos": "F",
-    "team": "NYR",
-    "points": 10
-  },
-  {
     "id": 8481522,
     "name": "Peyton Krebs",
     "pos": "F",
@@ -1561,6 +1568,13 @@
     "points": 9
   },
   {
+    "id": 8482193,
+    "name": "Dylan Garand",
+    "pos": "G",
+    "team": "NYR",
+    "points": 9
+  },
+  {
     "id": 8480762,
     "name": "Eric Robinson",
     "pos": "F",
@@ -1586,13 +1600,6 @@
     "name": "Frank Nazar",
     "pos": "F",
     "team": "CHI",
-    "points": 9
-  },
-  {
-    "id": 8484210,
-    "name": "Gabe Perreault",
-    "pos": "F",
-    "team": "NYR",
     "points": 9
   },
   {
@@ -1831,13 +1838,6 @@
     "name": "Dylan DeMelo",
     "pos": "D",
     "team": "WPG",
-    "points": 8
-  },
-  {
-    "id": 8482193,
-    "name": "Dylan Garand",
-    "pos": "G",
-    "team": "NYR",
     "points": 8
   },
   {
@@ -2359,6 +2359,13 @@
     "points": 7
   },
   {
+    "id": 8478882,
+    "name": "Vladislav Gavrikov",
+    "pos": "D",
+    "team": "NYR",
+    "points": 7
+  },
+  {
     "id": 8476448,
     "name": "William Karlsson",
     "pos": "F",
@@ -2562,6 +2569,13 @@
     "points": 6
   },
   {
+    "id": 8475151,
+    "name": "Kyle Palmieri",
+    "pos": "F",
+    "team": "NYI",
+    "points": 6
+  },
+  {
     "id": 8482177,
     "name": "Marat Khusnutdinov",
     "pos": "F",
@@ -2734,13 +2748,6 @@
     "name": "Ville Koivunen",
     "pos": "F",
     "team": "PIT",
-    "points": 6
-  },
-  {
-    "id": 8478882,
-    "name": "Vladislav Gavrikov",
-    "pos": "D",
-    "team": "NYR",
     "points": 6
   },
   {
@@ -2975,13 +2982,6 @@
     "points": 5
   },
   {
-    "id": 8475151,
-    "name": "Kyle Palmieri",
-    "pos": "F",
-    "team": "NYI",
-    "points": 5
-  },
-  {
     "id": 8479378,
     "name": "Logan Stanley",
     "pos": "D",
@@ -3161,6 +3161,13 @@
     "name": "Yaroslav Askarov",
     "pos": "G",
     "team": "SJS",
+    "points": 5
+  },
+  {
+    "id": 8484798,
+    "name": "Zeev Buium",
+    "pos": "D",
+    "team": "VAN",
     "points": 5
   },
   {
@@ -3563,13 +3570,6 @@
     "points": 4
   },
   {
-    "id": 8484798,
-    "name": "Zeev Buium",
-    "pos": "D",
-    "team": "VAN",
-    "points": 4
-  },
-  {
     "id": 8476878,
     "name": "Zemgus Girgensons",
     "pos": "F",
@@ -3770,6 +3770,13 @@
     "name": "Jakub Dobes",
     "pos": "G",
     "team": "MTL",
+    "points": 3
+  },
+  {
+    "id": 8482877,
+    "name": "Jaroslav Chmelar",
+    "pos": "F",
+    "team": "NYR",
     "points": 3
   },
   {
@@ -4081,6 +4088,13 @@
     "points": 2
   },
   {
+    "id": 8478446,
+    "name": "Glenn Gawdin",
+    "pos": "F",
+    "team": "NYR",
+    "points": 2
+  },
+  {
     "id": 8482765,
     "name": "Isak Rosén",
     "pos": "F",
@@ -4106,13 +4120,6 @@
     "name": "Jacob Middleton",
     "pos": "D",
     "team": "CGY",
-    "points": 2
-  },
-  {
-    "id": 8482877,
-    "name": "Jaroslav Chmelar",
-    "pos": "F",
-    "team": "NYR",
     "points": 2
   },
   {
@@ -5281,7 +5288,7 @@
     "id": 8480075,
     "name": "Cameron Crotty",
     "pos": "D",
-    "team": "OTT",
+    "team": "VAN",
     "points": 0
   },
   {
@@ -5450,13 +5457,6 @@
     "name": "Garrett Wilson",
     "pos": "F",
     "team": "PHI",
-    "points": 0
-  },
-  {
-    "id": 8478446,
-    "name": "Glenn Gawdin",
-    "pos": "F",
-    "team": "NYR",
     "points": 0
   },
   {

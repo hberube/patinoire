@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T11:00:44Z",
+  "updated": "2026-11-14T05:59:05Z",
   "source": "ESPN",
   "players": [
     {
@@ -86,20 +86,9 @@
       "pos": "D",
       "status": "out",
       "type": "Upper Body",
-      "returnDate": "2026-11-14",
-      "noteDate": "2026-11-11",
-      "note": "Heiskanen (upper body) has been ruled out for Thursday's game against the Jets, Stars TV host Brien Rea reports."
-    },
-    {
-      "id": 8477951,
-      "name": "Nick Schmaltz",
-      "team": "UTA",
-      "pos": "F",
-      "status": "out",
-      "type": "Lower Body",
-      "returnDate": "2026-11-14",
+      "returnDate": "2026-11-17",
       "noteDate": "2026-11-13",
-      "note": "out"
+      "note": "Heiskanen (upper body) has been ruled out against the Sabres on Saturday, Stars TV host Brien Rea reports."
     },
     {
       "id": 8480069,
@@ -108,7 +97,7 @@
       "pos": "D",
       "status": "dtd",
       "type": "Lower Body",
-      "returnDate": "2026-11-12",
+      "returnDate": "2026-11-14",
       "noteDate": "2026-11-13",
       "note": "day-to-day"
     },
@@ -116,6 +105,17 @@
       "id": 8477492,
       "name": "Nathan MacKinnon",
       "team": "COL",
+      "pos": "F",
+      "status": "dtd",
+      "type": "Lower Body",
+      "returnDate": "2026-11-14",
+      "noteDate": "2026-11-13",
+      "note": "day-to-day"
+    },
+    {
+      "id": 8477951,
+      "name": "Nick Schmaltz",
+      "team": "UTA",
       "pos": "F",
       "status": "dtd",
       "type": "Lower Body",
