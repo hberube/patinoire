@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-15T05:59:13Z",
+  "lastUpdated": "2026-11-15T08:30:47Z",
   "gameDay": "2026-11-14",
   "highlights": [
     {
@@ -739,8 +739,8 @@
     },
     "8477960": {
       "last5": 5,
-      "games": 16,
-      "dry": 2
+      "games": 17,
+      "dry": 3
     },
     "8478009": {
       "last5": 2,
@@ -768,8 +768,8 @@
       "dry": 0
     },
     "8478445": {
-      "last5": 0,
-      "games": 0,
+      "last5": 1,
+      "games": 1,
       "dry": 0
     },
     "8478483": {
@@ -948,8 +948,8 @@
       "dry": 0
     },
     "8483445": {
-      "last5": 11,
-      "games": 18,
+      "last5": 9,
+      "games": 19,
       "dry": 0
     },
     "8483457": {
@@ -974,8 +974,8 @@
     },
     "8484153": {
       "last5": 5,
-      "games": 19,
-      "dry": 2
+      "games": 20,
+      "dry": 0
     },
     "8484801": {
       "last5": 7,
@@ -1160,94 +1160,94 @@
     "sims": 5000,
     "teams": {
       "usr_michel_bry": {
-        "win": 19.1,
-        "podium": 46.2,
-        "projected": 1677
+        "win": 18.2,
+        "podium": 46.6,
+        "projected": 1681
       },
       "usr_guillaume_brossard": {
-        "win": 14.3,
-        "podium": 38.1,
-        "projected": 1659
+        "win": 15.8,
+        "podium": 40.9,
+        "projected": 1668
       },
       "usr_jackson_gagnon": {
-        "win": 11.9,
-        "podium": 31.7,
-        "projected": 1647
+        "win": 12.0,
+        "podium": 31.3,
+        "projected": 1650
       },
       "usr_sylvianne": {
-        "win": 15.5,
-        "podium": 39.6,
-        "projected": 1663
-      },
-      "usr_etienne": {
-        "win": 9.0,
-        "podium": 27.0,
-        "projected": 1636
+        "win": 16.4,
+        "podium": 40.9,
+        "projected": 1669
       },
       "usr_hugo_berube": {
-        "win": 5.0,
-        "podium": 24.7,
-        "projected": 1634
+        "win": 4.9,
+        "podium": 23.2,
+        "projected": 1638
       },
-      "usr_simon": {
-        "win": 4.6,
-        "podium": 19.6,
-        "projected": 1626
+      "usr_etienne": {
+        "win": 9.1,
+        "podium": 26.1,
+        "projected": 1638
       },
       "usr_elrick": {
         "win": 5.9,
-        "podium": 21.3,
-        "projected": 1612
+        "podium": 21.7,
+        "projected": 1618
+      },
+      "usr_simon": {
+        "win": 4.0,
+        "podium": 18.3,
+        "projected": 1627
       },
       "usr_alexandre_comeau": {
-        "win": 4.0,
-        "podium": 18.9,
-        "projected": 1622
+        "win": 3.9,
+        "podium": 19.0,
+        "projected": 1630
       },
       "usr_vincent": {
-        "win": 4.5,
-        "podium": 12.0,
-        "projected": 1554
+        "win": 4.1,
+        "podium": 11.4,
+        "projected": 1556
       },
       "usr_julien_berube": {
-        "win": 2.4,
-        "podium": 7.3,
-        "projected": 1546
+        "win": 1.5,
+        "podium": 6.9,
+        "projected": 1549
       },
       "usr_eve": {
-        "win": 1.3,
-        "podium": 5.5,
-        "projected": 1533
+        "win": 1.5,
+        "podium": 5.7,
+        "projected": 1536
       },
       "usr_florence": {
-        "win": 1.4,
-        "podium": 4.7,
-        "projected": 1507
+        "win": 1.2,
+        "podium": 4.5,
+        "projected": 1506
       },
       "usr_marjolaine_comeau": {
         "win": 0.4,
-        "podium": 1.8,
-        "projected": 1493
+        "podium": 1.7,
+        "projected": 1497
       },
       "usr_jolyne_brossard": {
-        "win": 0.2,
-        "podium": 1.1,
-        "projected": 1468
+        "win": 0.3,
+        "podium": 1.3,
+        "projected": 1474
       },
       "usr_louise_trottier": {
         "win": 0.1,
-        "podium": 0.6,
-        "projected": 1444
+        "podium": 0.7,
+        "projected": 1447
       },
       "usr_maddox_gagnon": {
-        "win": 0.4,
+        "win": 0.5,
         "podium": 1.2,
         "projected": 1386
       },
       "usr_vicky": {
         "win": 0.2,
         "podium": 0.7,
-        "projected": 1378
+        "projected": 1381
       }
     },
     "before": {
