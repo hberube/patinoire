@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16T04:57:22Z",
+  "updated": "2026-11-16T22:17:32Z",
   "source": "ESPN",
   "players": [
     {
@@ -69,6 +69,17 @@
       "note": "ir"
     },
     {
+      "id": 8478550,
+      "name": "Artemi Panarin",
+      "team": "LAK",
+      "pos": "F",
+      "status": "out",
+      "type": "Personal",
+      "returnDate": "2026-11-19",
+      "noteDate": "2026-11-16",
+      "note": "out"
+    },
+    {
       "id": 8480069,
       "name": "Cale Makar",
       "team": "COL",
@@ -78,17 +89,6 @@
       "returnDate": "2026-11-28",
       "noteDate": "2026-11-14",
       "note": "out"
-    },
-    {
-      "id": 8480036,
-      "name": "Miro Heiskanen",
-      "team": "DAL",
-      "pos": "D",
-      "status": "out",
-      "type": "Upper Body",
-      "returnDate": "2026-11-17",
-      "noteDate": "2026-11-14",
-      "note": "Heiskanen (upper body) is doubtful for Sunday's matchup against Florida, per Mike Heika of the Stars' official site."
     },
     {
       "id": 8477492,
@@ -113,14 +113,14 @@
       "note": "Schmaltz (lower body) isn't expected to play against San Jose on Saturday, and it's unclear when he will be ready to return, Brogan Houston of the Deseret News reports."
     },
     {
-      "id": 8478550,
-      "name": "Artemi Panarin",
-      "team": "LAK",
-      "pos": "F",
+      "id": 8480036,
+      "name": "Miro Heiskanen",
+      "team": "DAL",
+      "pos": "D",
       "status": "dtd",
-      "type": "Personal",
+      "type": "Upper Body",
       "returnDate": "2026-11-17",
-      "noteDate": "2026-11-15",
+      "noteDate": "2026-11-16",
       "note": "day-to-day"
     }
   ]
