@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15T11:00:45Z",
+  "updated": "2026-11-16T04:57:22Z",
   "source": "ESPN",
   "players": [
     {
@@ -69,17 +69,6 @@
       "note": "ir"
     },
     {
-      "id": 8478550,
-      "name": "Artemi Panarin",
-      "team": "LAK",
-      "pos": "F",
-      "status": "out",
-      "type": "Personal",
-      "returnDate": "2026-11-17",
-      "noteDate": "2026-11-14",
-      "note": "out"
-    },
-    {
       "id": 8480069,
       "name": "Cale Makar",
       "team": "COL",
@@ -122,6 +111,17 @@
       "returnDate": "2026-11-21",
       "noteDate": "2026-11-14",
       "note": "Schmaltz (lower body) isn't expected to play against San Jose on Saturday, and it's unclear when he will be ready to return, Brogan Houston of the Deseret News reports."
+    },
+    {
+      "id": 8478550,
+      "name": "Artemi Panarin",
+      "team": "LAK",
+      "pos": "F",
+      "status": "dtd",
+      "type": "Personal",
+      "returnDate": "2026-11-17",
+      "noteDate": "2026-11-15",
+      "note": "day-to-day"
     }
   ]
 }
