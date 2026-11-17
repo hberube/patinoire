@@ -154,6 +154,13 @@
     "points": 25
   },
   {
+    "id": 8479323,
+    "name": "Adam Fox",
+    "pos": "D",
+    "team": "NYR",
+    "points": 24
+  },
+  {
     "id": 8479542,
     "name": "Brandon Hagel",
     "pos": "F",
@@ -180,13 +187,6 @@
     "pos": "F",
     "team": "ANA",
     "points": 24
-  },
-  {
-    "id": 8479323,
-    "name": "Adam Fox",
-    "pos": "D",
-    "team": "NYR",
-    "points": 23
   },
   {
     "id": 8480801,
@@ -462,6 +462,13 @@
     "points": 19
   },
   {
+    "id": 8483457,
+    "name": "Lane Hutson",
+    "pos": "D",
+    "team": "MTL",
+    "points": 19
+  },
+  {
     "id": 8476459,
     "name": "Mika Zibanejad",
     "pos": "F",
@@ -487,13 +494,6 @@
     "name": "Kent Johnson",
     "pos": "F",
     "team": "CBJ",
-    "points": 18
-  },
-  {
-    "id": 8483457,
-    "name": "Lane Hutson",
-    "pos": "D",
-    "team": "MTL",
     "points": 18
   },
   {
@@ -536,6 +536,13 @@
     "name": "Evgeni Malkin",
     "pos": "F",
     "team": "PIT",
+    "points": 17
+  },
+  {
+    "id": 8476468,
+    "name": "J.T. Miller",
+    "pos": "F",
+    "team": "NYR",
     "points": 17
   },
   {
@@ -627,13 +634,6 @@
     "name": "Ivan Barbashev",
     "pos": "F",
     "team": "VGK",
-    "points": 16
-  },
-  {
-    "id": 8476468,
-    "name": "J.T. Miller",
-    "pos": "F",
-    "team": "NYR",
     "points": 16
   },
   {
@@ -1428,6 +1428,13 @@
     "points": 11
   },
   {
+    "id": 8482157,
+    "name": "Will Cuylle",
+    "pos": "F",
+    "team": "NYR",
+    "points": 11
+  },
+  {
     "id": 8481618,
     "name": "Alex Newhook",
     "pos": "F",
@@ -1820,6 +1827,13 @@
     "points": 9
   },
   {
+    "id": 8480865,
+    "name": "Noah Dobson",
+    "pos": "D",
+    "team": "MTL",
+    "points": 9
+  },
+  {
     "id": 8480448,
     "name": "Parker Kelly",
     "pos": "F",
@@ -1873,13 +1887,6 @@
     "name": "Travis Sanheim",
     "pos": "D",
     "team": "PHI",
-    "points": 9
-  },
-  {
-    "id": 8482157,
-    "name": "Will Cuylle",
-    "pos": "F",
-    "team": "NYR",
     "points": 9
   },
   {
@@ -2100,13 +2107,6 @@
     "points": 8
   },
   {
-    "id": 8480865,
-    "name": "Noah Dobson",
-    "pos": "D",
-    "team": "MTL",
-    "points": 8
-  },
-  {
     "id": 8481032,
     "name": "Paul Cotter",
     "pos": "F",
@@ -2118,6 +2118,13 @@
     "name": "Pavel Mintyukov",
     "pos": "D",
     "team": "ANA",
+    "points": 8
+  },
+  {
+    "id": 8476479,
+    "name": "Phillip Danault",
+    "pos": "F",
+    "team": "MTL",
     "points": 8
   },
   {
@@ -2377,13 +2384,6 @@
     "name": "Pavel Buchnevich",
     "pos": "F",
     "team": "STL",
-    "points": 7
-  },
-  {
-    "id": 8476479,
-    "name": "Phillip Danault",
-    "pos": "F",
-    "team": "MTL",
     "points": 7
   },
   {
@@ -2758,6 +2758,13 @@
     "points": 6
   },
   {
+    "id": 8483690,
+    "name": "Noah Laba",
+    "pos": "F",
+    "team": "NYR",
+    "points": 6
+  },
+  {
     "id": 8483521,
     "name": "Noah Warren",
     "pos": "D",
@@ -3101,6 +3108,13 @@
     "points": 5
   },
   {
+    "id": 8477969,
+    "name": "Marcus Pettersson",
+    "pos": "D",
+    "team": "NYR",
+    "points": 5
+  },
+  {
     "id": 8482145,
     "name": "Mavrik Bourque",
     "pos": "F",
@@ -3119,13 +3133,6 @@
     "name": "Niko Mikkola",
     "pos": "D",
     "team": "FLA",
-    "points": 5
-  },
-  {
-    "id": 8483690,
-    "name": "Noah Laba",
-    "pos": "F",
-    "team": "NYR",
     "points": 5
   },
   {
@@ -3483,13 +3490,6 @@
     "name": "Lukas Dostal",
     "pos": "G",
     "team": "ANA",
-    "points": 4
-  },
-  {
-    "id": 8477969,
-    "name": "Marcus Pettersson",
-    "pos": "D",
-    "team": "NYR",
     "points": 4
   },
   {
@@ -3878,6 +3878,13 @@
     "points": 3
   },
   {
+    "id": 8476914,
+    "name": "Joonas Korpisalo",
+    "pos": "G",
+    "team": "NYR",
+    "points": 3
+  },
+  {
     "id": 8479361,
     "name": "Joseph Woll",
     "pos": "G",
@@ -4256,13 +4263,6 @@
     "points": 2
   },
   {
-    "id": 8476914,
-    "name": "Joonas Korpisalo",
-    "pos": "G",
-    "team": "NYR",
-    "points": 2
-  },
-  {
     "id": 8475718,
     "name": "Justin Holl",
     "pos": "D",
@@ -4407,6 +4407,13 @@
     "name": "Ryan Poehling",
     "pos": "F",
     "team": "ANA",
+    "points": 2
+  },
+  {
+    "id": 8482666,
+    "name": "Scott Morrow",
+    "pos": "D",
+    "team": "NYR",
     "points": 2
   },
   {
@@ -5100,13 +5107,6 @@
     "name": "Samuel Helenius",
     "pos": "F",
     "team": "LAK",
-    "points": 1
-  },
-  {
-    "id": 8482666,
-    "name": "Scott Morrow",
-    "pos": "D",
-    "team": "NYR",
     "points": 1
   },
   {

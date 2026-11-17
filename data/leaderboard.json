@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-17T04:00:04Z",
+  "lastUpdated": "2026-11-17T04:30:04Z",
   "season": "20262027",
   "previousRanks": {
     "usr_michel_bry": 1,
@@ -46,9 +46,9 @@
       "participantId": "usr_michel_bry",
       "participantName": "Michel Bry",
       "teamName": "Les Ducks",
-      "totalPoints": 457,
+      "totalPoints": 458,
       "totalGoals": 152,
-      "totalAssists": 275,
+      "totalAssists": 276,
       "goalieWins": 24,
       "shootoutGoals": 0,
       "tradesUsed": {
@@ -165,7 +165,7 @@
           "pos": "F",
           "group": 7,
           "team": "MTL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 12,
             "assists": 7,
@@ -216,7 +216,7 @@
           "pos": "F",
           "group": 10,
           "team": "MTL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 2,
             "assists": 11,
@@ -335,15 +335,15 @@
           "pos": "D",
           "group": 17,
           "team": "MTL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 3,
-            "assists": 15,
+            "assists": 16,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 18
+            "points": 19
           }
         },
         {
@@ -418,7 +418,7 @@
       "formerStats": [],
       "rank": 1,
       "previousRank": 1,
-      "pointsDelta": 0
+      "pointsDelta": 1
     },
     {
       "participantId": "usr_guillaume_brossard",
@@ -921,7 +921,7 @@
           "pos": "F",
           "group": 7,
           "team": "MTL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 12,
             "assists": 7,
@@ -1299,7 +1299,7 @@
           "pos": "F",
           "group": 7,
           "team": "MTL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 12,
             "assists": 7,
@@ -1350,7 +1350,7 @@
           "pos": "F",
           "group": 10,
           "team": "MTL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 2,
             "assists": 11,
@@ -1558,9 +1558,9 @@
       "participantId": "usr_hugo_berube",
       "participantName": "Hugo Berube",
       "teamName": "Crazy Blue Heelers",
-      "totalPoints": 443,
+      "totalPoints": 444,
       "totalGoals": 140,
-      "totalAssists": 280,
+      "totalAssists": 281,
       "goalieWins": 21,
       "shootoutGoals": 0,
       "tradesUsed": {
@@ -1677,7 +1677,7 @@
           "pos": "F",
           "group": 7,
           "team": "MTL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 12,
             "assists": 7,
@@ -1728,7 +1728,7 @@
           "pos": "F",
           "group": 10,
           "team": "MTL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 2,
             "assists": 11,
@@ -1847,15 +1847,15 @@
           "pos": "D",
           "group": 17,
           "team": "MTL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 3,
-            "assists": 15,
+            "assists": 16,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 18
+            "points": 19
           }
         },
         {
@@ -1930,7 +1930,7 @@
       "formerStats": [],
       "rank": 5,
       "previousRank": 5,
-      "pointsDelta": 0
+      "pointsDelta": 1
     },
     {
       "participantId": "usr_etienne",
@@ -2811,7 +2811,7 @@
           "pos": "F",
           "group": 7,
           "team": "MTL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 12,
             "assists": 7,
@@ -3070,9 +3070,9 @@
       "participantId": "usr_alexandre_comeau",
       "participantName": "Alexandre Comeau",
       "teamName": "Éperviers de Sorel",
-      "totalPoints": 431,
+      "totalPoints": 432,
       "totalGoals": 131,
-      "totalAssists": 267,
+      "totalAssists": 268,
       "goalieWins": 23,
       "shootoutGoals": 0,
       "tradesUsed": {
@@ -3189,7 +3189,7 @@
           "pos": "F",
           "group": 7,
           "team": "MTL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 12,
             "assists": 7,
@@ -3240,7 +3240,7 @@
           "pos": "F",
           "group": 10,
           "team": "MTL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 2,
             "assists": 11,
@@ -3359,15 +3359,15 @@
           "pos": "D",
           "group": 17,
           "team": "MTL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 3,
-            "assists": 15,
+            "assists": 16,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 18
+            "points": 19
           }
         },
         {
@@ -3442,7 +3442,7 @@
       "formerStats": [],
       "rank": 9,
       "previousRank": 9,
-      "pointsDelta": 0
+      "pointsDelta": 1
     },
     {
       "participantId": "usr_vincent",
@@ -3516,7 +3516,7 @@
           "pos": "F",
           "group": 4,
           "team": "MTL",
-          "gp": 14,
+          "gp": 15,
           "stats": {
             "goals": 8,
             "assists": 9,
@@ -3567,7 +3567,7 @@
           "pos": "F",
           "group": 7,
           "team": "MTL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 12,
             "assists": 7,
@@ -3618,7 +3618,7 @@
           "pos": "F",
           "group": 10,
           "team": "MTL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 2,
             "assists": 11,
@@ -3945,7 +3945,7 @@
           "pos": "F",
           "group": 7,
           "team": "MTL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 12,
             "assists": 7,
@@ -3996,7 +3996,7 @@
           "pos": "F",
           "group": 10,
           "team": "MTL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 2,
             "assists": 11,
@@ -4204,9 +4204,9 @@
       "participantId": "usr_eve",
       "participantName": "Eve",
       "teamName": "Ève Mcdavid-demidov-bérubé",
-      "totalPoints": 398,
+      "totalPoints": 399,
       "totalGoals": 125,
-      "totalAssists": 245,
+      "totalAssists": 246,
       "goalieWins": 20,
       "shootoutGoals": 0,
       "tradesUsed": {
@@ -4272,7 +4272,7 @@
           "pos": "F",
           "group": 4,
           "team": "MTL",
-          "gp": 14,
+          "gp": 15,
           "stats": {
             "goals": 8,
             "assists": 9,
@@ -4323,7 +4323,7 @@
           "pos": "F",
           "group": 7,
           "team": "MTL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 12,
             "assists": 7,
@@ -4374,7 +4374,7 @@
           "pos": "F",
           "group": 10,
           "team": "MTL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 2,
             "assists": 11,
@@ -4493,15 +4493,15 @@
           "pos": "D",
           "group": 17,
           "team": "MTL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 3,
-            "assists": 15,
+            "assists": 16,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 18
+            "points": 19
           }
         },
         {
@@ -4576,7 +4576,7 @@
       "formerStats": [],
       "rank": 12,
       "previousRank": 12,
-      "pointsDelta": 0
+      "pointsDelta": 1
     },
     {
       "participantId": "usr_florence",
@@ -4701,7 +4701,7 @@
           "pos": "F",
           "group": 7,
           "team": "MTL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 12,
             "assists": 7,
@@ -4752,7 +4752,7 @@
           "pos": "F",
           "group": 10,
           "team": "MTL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 2,
             "assists": 11,
@@ -4960,9 +4960,9 @@
       "participantId": "usr_marjolaine_comeau",
       "participantName": "Marjolaine Comeau",
       "teamName": "mchb",
-      "totalPoints": 389,
+      "totalPoints": 390,
       "totalGoals": 122,
-      "totalAssists": 235,
+      "totalAssists": 236,
       "goalieWins": 22,
       "shootoutGoals": 0,
       "tradesUsed": {
@@ -5028,7 +5028,7 @@
           "pos": "F",
           "group": 4,
           "team": "MTL",
-          "gp": 14,
+          "gp": 15,
           "stats": {
             "goals": 8,
             "assists": 9,
@@ -5079,7 +5079,7 @@
           "pos": "F",
           "group": 7,
           "team": "MTL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 12,
             "assists": 7,
@@ -5130,7 +5130,7 @@
           "pos": "F",
           "group": 10,
           "team": "MTL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 2,
             "assists": 11,
@@ -5249,15 +5249,15 @@
           "pos": "D",
           "group": 17,
           "team": "MTL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 3,
-            "assists": 15,
+            "assists": 16,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 18
+            "points": 19
           }
         },
         {
@@ -5332,7 +5332,7 @@
       "formerStats": [],
       "rank": 14,
       "previousRank": 14,
-      "pointsDelta": 0
+      "pointsDelta": 1
     },
     {
       "participantId": "usr_jolyne_brossard",
@@ -5457,7 +5457,7 @@
           "pos": "F",
           "group": 7,
           "team": "MTL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 12,
             "assists": 7,
@@ -5716,9 +5716,9 @@
       "participantId": "usr_louise_trottier",
       "participantName": "Louise Trottier",
       "teamName": "Les huards",
-      "totalPoints": 371,
+      "totalPoints": 372,
       "totalGoals": 127,
-      "totalAssists": 222,
+      "totalAssists": 223,
       "goalieWins": 18,
       "shootoutGoals": 0,
       "tradesUsed": {
@@ -5784,7 +5784,7 @@
           "pos": "F",
           "group": 4,
           "team": "MTL",
-          "gp": 14,
+          "gp": 15,
           "stats": {
             "goals": 8,
             "assists": 9,
@@ -5835,7 +5835,7 @@
           "pos": "F",
           "group": 7,
           "team": "MTL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 12,
             "assists": 7,
@@ -5886,7 +5886,7 @@
           "pos": "F",
           "group": 10,
           "team": "MTL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 2,
             "assists": 11,
@@ -6005,15 +6005,15 @@
           "pos": "D",
           "group": 17,
           "team": "MTL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 3,
-            "assists": 15,
+            "assists": 16,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 18
+            "points": 19
           }
         },
         {
@@ -6088,15 +6088,15 @@
       "formerStats": [],
       "rank": 16,
       "previousRank": 16,
-      "pointsDelta": 0
+      "pointsDelta": 1
     },
     {
       "participantId": "usr_vicky",
       "participantName": "Vicky",
       "teamName": "Les PhD fatiguées",
-      "totalPoints": 348,
+      "totalPoints": 349,
       "totalGoals": 110,
-      "totalAssists": 222,
+      "totalAssists": 223,
       "goalieWins": 14,
       "shootoutGoals": 0,
       "tradesUsed": {
@@ -6162,7 +6162,7 @@
           "pos": "F",
           "group": 4,
           "team": "MTL",
-          "gp": 14,
+          "gp": 15,
           "stats": {
             "goals": 8,
             "assists": 9,
@@ -6196,7 +6196,7 @@
           "pos": "F",
           "group": 6,
           "team": "NYR",
-          "gp": 21,
+          "gp": 22,
           "stats": {
             "goals": 5,
             "assists": 14,
@@ -6264,7 +6264,7 @@
           "pos": "F",
           "group": 10,
           "team": "MTL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 2,
             "assists": 11,
@@ -6383,15 +6383,15 @@
           "pos": "D",
           "group": 17,
           "team": "MTL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 3,
-            "assists": 15,
+            "assists": 16,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 18
+            "points": 19
           }
         },
         {
@@ -6466,15 +6466,15 @@
       "formerStats": [],
       "rank": 17,
       "previousRank": 17,
-      "pointsDelta": 0
+      "pointsDelta": 1
     },
     {
       "participantId": "usr_maddox_gagnon",
       "participantName": "Maddox Gagnon",
       "teamName": "SK|MADDOXG",
-      "totalPoints": 343,
+      "totalPoints": 344,
       "totalGoals": 122,
-      "totalAssists": 203,
+      "totalAssists": 204,
       "goalieWins": 14,
       "shootoutGoals": 0,
       "tradesUsed": {
@@ -6540,7 +6540,7 @@
           "pos": "F",
           "group": 4,
           "team": "MTL",
-          "gp": 14,
+          "gp": 15,
           "stats": {
             "goals": 8,
             "assists": 9,
@@ -6591,7 +6591,7 @@
           "pos": "F",
           "group": 7,
           "team": "MTL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 12,
             "assists": 7,
@@ -6642,7 +6642,7 @@
           "pos": "F",
           "group": 10,
           "team": "MTL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 2,
             "assists": 11,
@@ -6761,15 +6761,15 @@
           "pos": "D",
           "group": 17,
           "team": "MTL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 3,
-            "assists": 15,
+            "assists": 16,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 18
+            "points": 19
           }
         },
         {
@@ -6844,7 +6844,7 @@
       "formerStats": [],
       "rank": 18,
       "previousRank": 18,
-      "pointsDelta": 0
+      "pointsDelta": 1
     }
   ]
 }
