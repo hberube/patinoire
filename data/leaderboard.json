@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-11-16T23:30:53Z",
+  "lastUpdated": "2026-11-17T00:00:08Z",
   "season": "20262027",
   "previousRanks": {
     "usr_michel_bry": 1,
     "usr_guillaume_brossard": 2,
-    "usr_jackson_gagnon": 3,
-    "usr_sylvianne": 4,
+    "usr_sylvianne": 3,
+    "usr_jackson_gagnon": 4,
     "usr_hugo_berube": 5,
     "usr_etienne": 6,
     "usr_elrick": 7,
@@ -18,28 +18,28 @@
     "usr_marjolaine_comeau": 14,
     "usr_jolyne_brossard": 15,
     "usr_louise_trottier": 16,
-    "usr_maddox_gagnon": 17,
-    "usr_vicky": 18
+    "usr_vicky": 17,
+    "usr_maddox_gagnon": 18
   },
   "previousPoints": {
-    "usr_michel_bry": 444,
-    "usr_guillaume_brossard": 444,
-    "usr_jackson_gagnon": 435,
-    "usr_sylvianne": 434,
-    "usr_hugo_berube": 430,
-    "usr_etienne": 429,
-    "usr_elrick": 423,
-    "usr_simon": 423,
-    "usr_alexandre_comeau": 421,
-    "usr_vincent": 403,
-    "usr_julien_berube": 401,
-    "usr_eve": 390,
-    "usr_florence": 388,
-    "usr_marjolaine_comeau": 381,
-    "usr_jolyne_brossard": 371,
-    "usr_louise_trottier": 364,
-    "usr_maddox_gagnon": 341,
-    "usr_vicky": 341
+    "usr_michel_bry": 457,
+    "usr_guillaume_brossard": 453,
+    "usr_sylvianne": 444,
+    "usr_jackson_gagnon": 444,
+    "usr_hugo_berube": 443,
+    "usr_etienne": 442,
+    "usr_elrick": 433,
+    "usr_simon": 432,
+    "usr_alexandre_comeau": 431,
+    "usr_vincent": 409,
+    "usr_julien_berube": 406,
+    "usr_eve": 398,
+    "usr_florence": 396,
+    "usr_marjolaine_comeau": 389,
+    "usr_jolyne_brossard": 383,
+    "usr_louise_trottier": 371,
+    "usr_vicky": 348,
+    "usr_maddox_gagnon": 343
   },
   "standings": [
     {
@@ -418,7 +418,7 @@
       "formerStats": [],
       "rank": 1,
       "previousRank": 1,
-      "pointsDelta": 13
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_guillaume_brossard",
@@ -796,7 +796,7 @@
       "formerStats": [],
       "rank": 2,
       "previousRank": 2,
-      "pointsDelta": 9
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_sylvianne",
@@ -1173,8 +1173,8 @@
       ],
       "formerStats": [],
       "rank": 3,
-      "previousRank": 4,
-      "pointsDelta": 10
+      "previousRank": 3,
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_jackson_gagnon",
@@ -1551,8 +1551,8 @@
       ],
       "formerStats": [],
       "rank": 4,
-      "previousRank": 3,
-      "pointsDelta": 9
+      "previousRank": 4,
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_hugo_berube",
@@ -1930,7 +1930,7 @@
       "formerStats": [],
       "rank": 5,
       "previousRank": 5,
-      "pointsDelta": 13
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_etienne",
@@ -2308,7 +2308,7 @@
       "formerStats": [],
       "rank": 6,
       "previousRank": 6,
-      "pointsDelta": 13
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_elrick",
@@ -2686,7 +2686,7 @@
       "formerStats": [],
       "rank": 7,
       "previousRank": 7,
-      "pointsDelta": 10
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_simon",
@@ -3064,7 +3064,7 @@
       "formerStats": [],
       "rank": 8,
       "previousRank": 8,
-      "pointsDelta": 9
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_alexandre_comeau",
@@ -3442,7 +3442,7 @@
       "formerStats": [],
       "rank": 9,
       "previousRank": 9,
-      "pointsDelta": 10
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_vincent",
@@ -3820,7 +3820,7 @@
       "formerStats": [],
       "rank": 10,
       "previousRank": 10,
-      "pointsDelta": 6
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_julien_berube",
@@ -4198,7 +4198,7 @@
       "formerStats": [],
       "rank": 11,
       "previousRank": 11,
-      "pointsDelta": 5
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_eve",
@@ -4576,7 +4576,7 @@
       "formerStats": [],
       "rank": 12,
       "previousRank": 12,
-      "pointsDelta": 8
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_florence",
@@ -4954,7 +4954,7 @@
       "formerStats": [],
       "rank": 13,
       "previousRank": 13,
-      "pointsDelta": 8
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_marjolaine_comeau",
@@ -5332,7 +5332,7 @@
       "formerStats": [],
       "rank": 14,
       "previousRank": 14,
-      "pointsDelta": 8
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_jolyne_brossard",
@@ -5710,7 +5710,7 @@
       "formerStats": [],
       "rank": 15,
       "previousRank": 15,
-      "pointsDelta": 12
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_louise_trottier",
@@ -6088,7 +6088,7 @@
       "formerStats": [],
       "rank": 16,
       "previousRank": 16,
-      "pointsDelta": 7
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_vicky",
@@ -6465,8 +6465,8 @@
       ],
       "formerStats": [],
       "rank": 17,
-      "previousRank": 18,
-      "pointsDelta": 7
+      "previousRank": 17,
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_maddox_gagnon",
@@ -6843,8 +6843,8 @@
       ],
       "formerStats": [],
       "rank": 18,
-      "previousRank": 17,
-      "pointsDelta": 2
+      "previousRank": 18,
+      "pointsDelta": 0
     }
   ]
 }
