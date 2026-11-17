@@ -1,34 +1,36 @@
 {
-  "gameDay": "2026-11-15",
-  "generatedAt": "2026-11-17T00:02:07Z",
+  "gameDay": "2026-11-16",
+  "generatedAt": "2026-11-17T08:31:06Z",
   "fr": {
-    "title": "McDavid et Draisaitl brûlent Philly, Louise rafle le bingo",
+    "title": "Michel garde la barre, Hugo grimpe de deux crans",
     "bullets": [
-      "McDavid marque, Draisaitl en met deux : Edmonton écrase Philadelphie 5-2. Quinze participants dans le pool de McDavid se frottent les mains! 🏒",
-      "Bingo : Louise (Les huards) pulvérise la soirée avec 8 lignes sur 8 cases. Simon ferme la marche avec une seule ligne.",
-      "En tête, Michel (Les Ducks) mène avec 457 points, quatre devant Guillaume (Laser Kiwis). Sylvianne et Jackson restent collés à 444.",
-      "Tkachuk a marqué pour Florence, Julien et Jolyne, mais Florida plie 2-1 en prolongation à Dallas. Dur pour le trio!",
-      "Infirmerie : Makar (COL, 10 participants) est absent jusqu'au 28 nov. et MacKinnon (COL, 17 participants) jusqu'au 12 déc. Aïe, l'Avalanche!"
+      "🏒 Michel (Les Ducks) reste en tête avec 458 points, +14 hier. Guillaume (Laser Kiwis) le suit à 5 points.",
+      "Hugo (Crazy Blue Heelers) bondit au 3e rang, à égalité à 444 avec Sylvianne et Jackson. Ses 54 lignes de bingo font la différence.",
+      "🎯 Bingo : Elrick (Michael Scofield) gagne avec une ligne et 4 cases. Vicky ferme la marche avec une seule case.",
+      "Danault marque dans la défaite de 3-1 des Habs à New York, mais personne dans le pool ne l'a. Hutson a l'aide, lui.",
+      "Caufield (14 pooleurs) et Hutson sont tous deux à 19 points, à un point des 20. Rantanen guette son 10e but.",
+      "Kucherov a 28 points et personne ne l'a pigé. Ouch."
     ]
   },
   "en": {
-    "title": "McDavid and Draisaitl torch Philly, Louise rules bingo",
+    "title": "Michel holds the lead, Hugo climbs two spots",
     "bullets": [
-      "McDavid scores and Draisaitl adds two as Edmonton routs Philadelphia 5-2. Fifteen participants own McDavid and are smiling. 🏒",
-      "Bingo: Louise (Les huards) dominates the night with 8 lines on 8 squares. Simon brings up the rear with a single line.",
-      "At the top, Michel (Les Ducks) leads with 457 points, four clear of Guillaume (Laser Kiwis). Sylvianne and Jackson stay glued at 444.",
-      "Tkachuk scored for Florence, Julien and Jolyne, but Florida falls 2-1 in overtime in Dallas. Tough break for the trio!",
-      "Infirmary: Makar (COL, 10 owners) is out until Nov. 28 and MacKinnon (COL, 17 owners) until Dec. 12. Ouch, Avalanche!"
+      "🏒 Michel (Les Ducks) stays on top with 458 points, +14 last night. Guillaume (Laser Kiwis) trails by 5.",
+      "Hugo (Crazy Blue Heelers) jumps to 3rd, tied at 444 with Sylvianne and Jackson. His 54 bingo lines break the tie.",
+      "🎯 Bingo: Elrick (Michael Scofield) wins with one line and 4 squares. Vicky brings up the rear with a single square.",
+      "Danault scores in the Habs' 3-1 loss in New York, but nobody in the pool owns him. Hutson got the assist, though.",
+      "Caufield (14 owners) and Hutson are both at 19 points, one shy of 20. Rantanen is eyeing goal number 10.",
+      "Kucherov has 28 points and nobody picked him. Ouch."
     ]
   },
   "image": {
     "fr": {
       "src": "data/recap-fr.png",
-      "alt": "AVALANCHE : 17 POOLERS SUR 18 SOUS LES DÉBRIS — MACKINNON, MAKAR ABSENTS · LE 18E POOLER INTERROGÉ PAR LA SQ"
+      "alt": "MICHAEL SCOFIELD S'ÉVADE AVEC LE BINGO / 4 CASES SUFFISENT QUAND LE PLAN EST TATOUÉ SUR TON BRAS"
     },
     "en": {
       "src": "data/recap-en.png",
-      "alt": "AVALANCHE WARNING: 17 OF 18 POOLERS BURIED — MACKINNON, MAKAR OUT · 18TH POOLER NOW A PERSON OF INTEREST"
+      "alt": "MICHAEL SCOFIELD BREAKS OUT WITH BINGO / ONLY 4 SQUARES NEEDED WHEN THE MAP IS TATTOOED ON YOUR ARMS"
     }
   }
 }

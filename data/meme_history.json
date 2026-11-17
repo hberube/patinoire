@@ -1,19 +1,6 @@
 {
   "memes": [
     {
-      "gameDay": "2026-11-02",
-      "category": "injury",
-      "format": "classic",
-      "subject": {
-        "kind": "team",
-        "id": "usr_eve"
-      },
-      "fr": {
-        "top": "MALKIN INCERTAIN, DEMIDOV TOUJOURS ABSENT",
-        "bottom": "ÈVE NOMMERA SA PROCHAINE ÉQUIPE D'APRÈS LES JOUEURS DE MICHEL"
-      }
-    },
-    {
       "gameDay": "2026-11-03",
       "category": "bingo",
       "format": "breaking",
@@ -132,6 +119,19 @@
       "fr": {
         "headline": "AVALANCHE : 17 POOLERS SUR 18 SOUS LES DÉBRIS",
         "ticker": "MACKINNON, MAKAR ABSENTS · LE 18E POOLER INTERROGÉ PAR LA SQ"
+      }
+    },
+    {
+      "gameDay": "2026-11-16",
+      "category": "bingo",
+      "format": "classic",
+      "subject": {
+        "kind": "team",
+        "id": "usr_elrick"
+      },
+      "fr": {
+        "top": "MICHAEL SCOFIELD S'ÉVADE AVEC LE BINGO",
+        "bottom": "4 CASES SUFFISENT QUAND LE PLAN EST TATOUÉ SUR TON BRAS"
       }
     }
   ]
