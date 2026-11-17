@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-17T03:00:04Z",
+  "lastUpdated": "2026-11-17T03:30:04Z",
   "season": "20262027",
   "players": {
     "8478859": {
@@ -302,25 +302,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8476874": {
-      "name": "Olli Maatta",
-      "pos": "D",
-      "team": "MIN",
-      "gp": 18,
-      "goals": 1,
-      "assists": 5,
-      "soGoals": 0,
-      "wins": 0,
-      "shutouts": 0,
-      "otl": 0
-    },
-    "8478911": {
-      "name": "Matt Roy",
-      "pos": "D",
-      "team": "WSH",
-      "gp": 12,
-      "goals": 1,
-      "assists": 1,
+    "8482092": {
+      "name": "Ridly Greig",
+      "pos": "F",
+      "team": "OTT",
+      "gp": 17,
+      "goals": 3,
+      "assists": 2,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -338,18 +326,6 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8483565": {
-      "name": "Nick Blankenburg",
-      "pos": "D",
-      "team": "TOR",
-      "gp": 6,
-      "goals": 1,
-      "assists": 0,
-      "soGoals": 0,
-      "wins": 0,
-      "shutouts": 0,
-      "otl": 0
-    },
     "8478010": {
       "name": "Brayden Point",
       "pos": "F",
@@ -362,13 +338,37 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8482092": {
-      "name": "Ridly Greig",
-      "pos": "F",
-      "team": "OTT",
-      "gp": 17,
-      "goals": 3,
-      "assists": 2,
+    "8478911": {
+      "name": "Matt Roy",
+      "pos": "D",
+      "team": "WSH",
+      "gp": 12,
+      "goals": 1,
+      "assists": 1,
+      "soGoals": 0,
+      "wins": 0,
+      "shutouts": 0,
+      "otl": 0
+    },
+    "8483565": {
+      "name": "Nick Blankenburg",
+      "pos": "D",
+      "team": "TOR",
+      "gp": 6,
+      "goals": 1,
+      "assists": 0,
+      "soGoals": 0,
+      "wins": 0,
+      "shutouts": 0,
+      "otl": 0
+    },
+    "8476874": {
+      "name": "Olli Maatta",
+      "pos": "D",
+      "team": "MIN",
+      "gp": 18,
+      "goals": 1,
+      "assists": 5,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -482,13 +482,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8476854": {
-      "name": "Hampus Lindholm",
-      "pos": "D",
-      "team": "BOS",
-      "gp": 20,
-      "goals": 1,
-      "assists": 4,
+    "8478366": {
+      "name": "Frank Vatrano",
+      "pos": "F",
+      "team": "ANA",
+      "gp": 9,
+      "goals": 2,
+      "assists": 1,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -506,25 +506,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8478366": {
-      "name": "Frank Vatrano",
-      "pos": "F",
-      "team": "ANA",
-      "gp": 9,
-      "goals": 2,
-      "assists": 1,
-      "soGoals": 0,
-      "wins": 0,
-      "shutouts": 0,
-      "otl": 0
-    },
-    "8483690": {
-      "name": "Noah Laba",
-      "pos": "F",
-      "team": "NYR",
-      "gp": 21,
-      "goals": 0,
-      "assists": 5,
+    "8476854": {
+      "name": "Hampus Lindholm",
+      "pos": "D",
+      "team": "BOS",
+      "gp": 20,
+      "goals": 1,
+      "assists": 4,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -542,6 +530,18 @@
       "shutouts": 0,
       "otl": 0
     },
+    "8483690": {
+      "name": "Noah Laba",
+      "pos": "F",
+      "team": "NYR",
+      "gp": 21,
+      "goals": 0,
+      "assists": 5,
+      "soGoals": 0,
+      "wins": 0,
+      "shutouts": 0,
+      "otl": 0
+    },
     "8480830": {
       "name": "Andrei Svechnikov",
       "pos": "F",
@@ -549,18 +549,6 @@
       "gp": 21,
       "goals": 11,
       "assists": 10,
-      "soGoals": 0,
-      "wins": 0,
-      "shutouts": 0,
-      "otl": 0
-    },
-    "8482765": {
-      "name": "Isak Rosén",
-      "pos": "F",
-      "team": "WPG",
-      "gp": 19,
-      "goals": 1,
-      "assists": 1,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -585,6 +573,18 @@
       "gp": 22,
       "goals": 3,
       "assists": 20,
+      "soGoals": 0,
+      "wins": 0,
+      "shutouts": 0,
+      "otl": 0
+    },
+    "8482765": {
+      "name": "Isak Rosén",
+      "pos": "F",
+      "team": "WPG",
+      "gp": 19,
+      "goals": 1,
+      "assists": 1,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -926,13 +926,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8483436": {
-      "name": "Artem Duda",
-      "pos": "D",
-      "team": "UTA",
-      "gp": 6,
-      "goals": 0,
-      "assists": 0,
+    "8476455": {
+      "name": "Gabriel Landeskog",
+      "pos": "F",
+      "team": "COL",
+      "gp": 21,
+      "goals": 8,
+      "assists": 5,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -962,13 +962,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8476455": {
-      "name": "Gabriel Landeskog",
-      "pos": "F",
-      "team": "COL",
-      "gp": 21,
-      "goals": 8,
-      "assists": 5,
+    "8483436": {
+      "name": "Artem Duda",
+      "pos": "D",
+      "team": "UTA",
+      "gp": 6,
+      "goals": 0,
+      "assists": 0,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -1286,13 +1286,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8478891": {
-      "name": "Mason Appleton",
+    "8483553": {
+      "name": "Marc Gatcomb",
       "pos": "F",
-      "team": "DET",
-      "gp": 4,
-      "goals": 0,
-      "assists": 0,
+      "team": "VGK",
+      "gp": 21,
+      "goals": 1,
+      "assists": 1,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -1310,13 +1310,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8483553": {
-      "name": "Marc Gatcomb",
+    "8478891": {
+      "name": "Mason Appleton",
       "pos": "F",
-      "team": "VGK",
-      "gp": 21,
-      "goals": 1,
-      "assists": 1,
+      "team": "DET",
+      "gp": 4,
+      "goals": 0,
+      "assists": 0,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -1490,14 +1490,14 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8481540": {
-      "name": "Cole Caufield",
-      "pos": "F",
-      "team": "MTL",
-      "gp": 20,
-      "goals": 12,
-      "assists": 7,
-      "soGoals": 1,
+    "8478507": {
+      "name": "John Marino",
+      "pos": "D",
+      "team": "UTA",
+      "gp": 9,
+      "goals": 2,
+      "assists": 3,
+      "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
       "otl": 0
@@ -1526,14 +1526,14 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8478507": {
-      "name": "John Marino",
-      "pos": "D",
-      "team": "UTA",
-      "gp": 9,
-      "goals": 2,
-      "assists": 3,
-      "soGoals": 0,
+    "8481540": {
+      "name": "Cole Caufield",
+      "pos": "F",
+      "team": "MTL",
+      "gp": 20,
+      "goals": 12,
+      "assists": 7,
+      "soGoals": 1,
       "wins": 0,
       "shutouts": 0,
       "otl": 0
@@ -2258,13 +2258,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8483425": {
-      "name": "Lian Bichsel",
+    "8476979": {
+      "name": "Erik Gustafsson",
       "pos": "D",
-      "team": "DAL",
-      "gp": 18,
-      "goals": 0,
-      "assists": 1,
+      "team": "LAK",
+      "gp": 13,
+      "goals": 1,
+      "assists": 5,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -2306,13 +2306,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8476979": {
-      "name": "Erik Gustafsson",
+    "8483425": {
+      "name": "Lian Bichsel",
       "pos": "D",
-      "team": "LAK",
-      "gp": 13,
-      "goals": 1,
-      "assists": 5,
+      "team": "DAL",
+      "gp": 18,
+      "goals": 0,
+      "assists": 1,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -2798,18 +2798,6 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8475692": {
-      "name": "Mats Zuccarello",
-      "pos": "F",
-      "team": "LAK",
-      "gp": 9,
-      "goals": 1,
-      "assists": 1,
-      "soGoals": 0,
-      "wins": 0,
-      "shutouts": 0,
-      "otl": 0
-    },
     "8484938": {
       "name": "Arttu Hyry",
       "pos": "F",
@@ -2834,6 +2822,18 @@
       "shutouts": 0,
       "otl": 0
     },
+    "8475692": {
+      "name": "Mats Zuccarello",
+      "pos": "F",
+      "team": "LAK",
+      "gp": 9,
+      "goals": 1,
+      "assists": 1,
+      "soGoals": 0,
+      "wins": 0,
+      "shutouts": 0,
+      "otl": 0
+    },
     "8477950": {
       "name": "Tony DeAngelo",
       "pos": "D",
@@ -2846,13 +2846,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8478493": {
-      "name": "Joel Eriksson Ek",
+    "8476878": {
+      "name": "Zemgus Girgensons",
       "pos": "F",
-      "team": "MIN",
-      "gp": 22,
-      "goals": 6,
-      "assists": 11,
+      "team": "TBL",
+      "gp": 17,
+      "goals": 1,
+      "assists": 3,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -2930,13 +2930,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8476878": {
-      "name": "Zemgus Girgensons",
+    "8478493": {
+      "name": "Joel Eriksson Ek",
       "pos": "F",
-      "team": "TBL",
-      "gp": 17,
-      "goals": 1,
-      "assists": 3,
+      "team": "MIN",
+      "gp": 22,
+      "goals": 6,
+      "assists": 11,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -3182,13 +3182,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8482802": {
-      "name": "Carter Mazur",
+    "8483513": {
+      "name": "Reid Schaefer",
       "pos": "F",
-      "team": "DET",
+      "team": "NSH",
       "gp": 14,
       "goals": 1,
-      "assists": 4,
+      "assists": 1,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -3206,13 +3206,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8483513": {
-      "name": "Reid Schaefer",
+    "8482802": {
+      "name": "Carter Mazur",
       "pos": "F",
-      "team": "NSH",
+      "team": "DET",
       "gp": 14,
       "goals": 1,
-      "assists": 1,
+      "assists": 4,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -3578,18 +3578,6 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8476958": {
-      "name": "Jaccob Slavin",
-      "pos": "D",
-      "team": "CAR",
-      "gp": 21,
-      "goals": 0,
-      "assists": 4,
-      "soGoals": 0,
-      "wins": 0,
-      "shutouts": 0,
-      "otl": 0
-    },
     "8478399": {
       "name": "Jonas Siegenthaler",
       "pos": "D",
@@ -3609,6 +3597,18 @@
       "gp": 21,
       "goals": 0,
       "assists": 5,
+      "soGoals": 0,
+      "wins": 0,
+      "shutouts": 0,
+      "otl": 0
+    },
+    "8476958": {
+      "name": "Jaccob Slavin",
+      "pos": "D",
+      "team": "CAR",
+      "gp": 21,
+      "goals": 0,
+      "assists": 4,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -3806,13 +3806,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8484392": {
-      "name": "Felix Unger Sörum",
+    "8483478": {
+      "name": "Rieger Lorenz",
       "pos": "F",
-      "team": "CAR",
-      "gp": 3,
+      "team": "MIN",
+      "gp": 6,
       "goals": 0,
-      "assists": 0,
+      "assists": 1,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -3854,24 +3854,24 @@
       "shutouts": 0,
       "otl": 0
     },
+    "8484392": {
+      "name": "Felix Unger Sörum",
+      "pos": "F",
+      "team": "CAR",
+      "gp": 3,
+      "goals": 0,
+      "assists": 0,
+      "soGoals": 0,
+      "wins": 0,
+      "shutouts": 0,
+      "otl": 0
+    },
     "8482667": {
       "name": "William Eklund",
       "pos": "F",
       "team": "OTT",
       "gp": 4,
       "goals": 1,
-      "assists": 1,
-      "soGoals": 0,
-      "wins": 0,
-      "shutouts": 0,
-      "otl": 0
-    },
-    "8483478": {
-      "name": "Rieger Lorenz",
-      "pos": "F",
-      "team": "MIN",
-      "gp": 6,
-      "goals": 0,
       "assists": 1,
       "soGoals": 0,
       "wins": 0,
@@ -3902,13 +3902,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8483515": {
-      "name": "Juraj Slafkovský",
-      "pos": "F",
-      "team": "MTL",
-      "gp": 20,
-      "goals": 2,
-      "assists": 11,
+    "8482684": {
+      "name": "Luke Hughes",
+      "pos": "D",
+      "team": "NJD",
+      "gp": 21,
+      "goals": 6,
+      "assists": 8,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -3938,18 +3938,6 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8482155": {
-      "name": "Alex Laferriere",
-      "pos": "F",
-      "team": "LAK",
-      "gp": 18,
-      "goals": 3,
-      "assists": 10,
-      "soGoals": 0,
-      "wins": 0,
-      "shutouts": 0,
-      "otl": 0
-    },
     "8481601": {
       "name": "Simon Holmstrom",
       "pos": "F",
@@ -3962,13 +3950,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8482145": {
-      "name": "Mavrik Bourque",
+    "8483515": {
+      "name": "Juraj Slafkovský",
       "pos": "F",
-      "team": "NSH",
-      "gp": 17,
-      "goals": 0,
-      "assists": 5,
+      "team": "MTL",
+      "gp": 20,
+      "goals": 2,
+      "assists": 11,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -3998,13 +3986,25 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8482684": {
-      "name": "Luke Hughes",
-      "pos": "D",
-      "team": "NJD",
-      "gp": 21,
-      "goals": 6,
-      "assists": 8,
+    "8482145": {
+      "name": "Mavrik Bourque",
+      "pos": "F",
+      "team": "NSH",
+      "gp": 17,
+      "goals": 0,
+      "assists": 5,
+      "soGoals": 0,
+      "wins": 0,
+      "shutouts": 0,
+      "otl": 0
+    },
+    "8482155": {
+      "name": "Alex Laferriere",
+      "pos": "F",
+      "team": "LAK",
+      "gp": 18,
+      "goals": 3,
+      "assists": 10,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -4094,6 +4094,42 @@
       "shutouts": 0,
       "otl": 0
     },
+    "8476399": {
+      "name": "Blake Coleman",
+      "pos": "F",
+      "team": "MIN",
+      "gp": 22,
+      "goals": 6,
+      "assists": 6,
+      "soGoals": 0,
+      "wins": 0,
+      "shutouts": 0,
+      "otl": 0
+    },
+    "8480220": {
+      "name": "Noah Cates",
+      "pos": "F",
+      "team": "PHI",
+      "gp": 23,
+      "goals": 3,
+      "assists": 3,
+      "soGoals": 0,
+      "wins": 0,
+      "shutouts": 0,
+      "otl": 0
+    },
+    "8482742": {
+      "name": "Zachary L'Heureux",
+      "pos": "F",
+      "team": "COL",
+      "gp": 3,
+      "goals": 0,
+      "assists": 1,
+      "soGoals": 0,
+      "wins": 0,
+      "shutouts": 0,
+      "otl": 0
+    },
     "8477903": {
       "name": "Garnet Hathaway",
       "pos": "F",
@@ -4113,42 +4149,6 @@
       "gp": 19,
       "goals": 9,
       "assists": 11,
-      "soGoals": 0,
-      "wins": 0,
-      "shutouts": 0,
-      "otl": 0
-    },
-    "8480220": {
-      "name": "Noah Cates",
-      "pos": "F",
-      "team": "PHI",
-      "gp": 23,
-      "goals": 3,
-      "assists": 3,
-      "soGoals": 0,
-      "wins": 0,
-      "shutouts": 0,
-      "otl": 0
-    },
-    "8476399": {
-      "name": "Blake Coleman",
-      "pos": "F",
-      "team": "MIN",
-      "gp": 22,
-      "goals": 6,
-      "assists": 6,
-      "soGoals": 0,
-      "wins": 0,
-      "shutouts": 0,
-      "otl": 0
-    },
-    "8482742": {
-      "name": "Zachary L'Heureux",
-      "pos": "F",
-      "team": "COL",
-      "gp": 3,
-      "goals": 0,
-      "assists": 1,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -4322,25 +4322,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8477942": {
-      "name": "Kevin Fiala",
+    "8484860": {
+      "name": "Matvei Gridin",
       "pos": "F",
-      "team": "LAK",
-      "gp": 2,
-      "goals": 0,
-      "assists": 1,
-      "soGoals": 0,
-      "wins": 0,
-      "shutouts": 0,
-      "otl": 0
-    },
-    "8481014": {
-      "name": "Alexander Romanov",
-      "pos": "D",
-      "team": "NYI",
-      "gp": 3,
-      "goals": 0,
-      "assists": 0,
+      "team": "CGY",
+      "gp": 21,
+      "goals": 6,
+      "assists": 7,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -4358,13 +4346,25 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8484860": {
-      "name": "Matvei Gridin",
+    "8481014": {
+      "name": "Alexander Romanov",
+      "pos": "D",
+      "team": "NYI",
+      "gp": 3,
+      "goals": 0,
+      "assists": 0,
+      "soGoals": 0,
+      "wins": 0,
+      "shutouts": 0,
+      "otl": 0
+    },
+    "8477942": {
+      "name": "Kevin Fiala",
       "pos": "F",
-      "team": "CGY",
-      "gp": 21,
-      "goals": 6,
-      "assists": 7,
+      "team": "LAK",
+      "gp": 2,
+      "goals": 0,
+      "assists": 1,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -4454,13 +4454,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8482475": {
-      "name": "Egor Chinakhov",
+    "8482077": {
+      "name": "Dylan Holloway",
       "pos": "F",
-      "team": "PIT",
-      "gp": 16,
-      "goals": 3,
-      "assists": 3,
+      "team": "STL",
+      "gp": 20,
+      "goals": 4,
+      "assists": 10,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -4478,13 +4478,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8482077": {
-      "name": "Dylan Holloway",
+    "8482475": {
+      "name": "Egor Chinakhov",
       "pos": "F",
-      "team": "STL",
-      "gp": 20,
-      "goals": 4,
-      "assists": 10,
+      "team": "PIT",
+      "gp": 16,
+      "goals": 3,
+      "assists": 3,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -4586,13 +4586,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8480259": {
-      "name": "Ben Jones",
+    "8483447": {
+      "name": "Conor Geekie",
       "pos": "F",
-      "team": "CGY",
-      "gp": 2,
-      "goals": 0,
-      "assists": 0,
+      "team": "TBL",
+      "gp": 20,
+      "goals": 4,
+      "assists": 1,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -4622,13 +4622,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8483447": {
-      "name": "Conor Geekie",
+    "8480259": {
+      "name": "Ben Jones",
       "pos": "F",
-      "team": "TBL",
-      "gp": 20,
-      "goals": 4,
-      "assists": 1,
+      "team": "CGY",
+      "gp": 2,
+      "goals": 0,
+      "assists": 0,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -4766,13 +4766,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8481598": {
-      "name": "Philip Broberg",
-      "pos": "D",
-      "team": "STL",
-      "gp": 20,
-      "goals": 4,
-      "assists": 9,
+    "8478831": {
+      "name": "Kevin Stenlund",
+      "pos": "F",
+      "team": "UTA",
+      "gp": 21,
+      "goals": 1,
+      "assists": 4,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -4790,13 +4790,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8478831": {
-      "name": "Kevin Stenlund",
-      "pos": "F",
-      "team": "UTA",
-      "gp": 21,
-      "goals": 1,
-      "assists": 4,
+    "8481598": {
+      "name": "Philip Broberg",
+      "pos": "D",
+      "team": "STL",
+      "gp": 20,
+      "goals": 4,
+      "assists": 9,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -5282,25 +5282,25 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8483428": {
-      "name": "Filip Bystedt",
+    "8483463": {
+      "name": "Aleksanteri Kaskimaki",
       "pos": "F",
-      "team": "SJS",
-      "gp": 5,
-      "goals": 0,
-      "assists": 0,
+      "team": "STL",
+      "gp": 9,
+      "goals": 1,
+      "assists": 1,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
       "otl": 0
     },
-    "8475799": {
-      "name": "Nino Niederreiter",
+    "8479351": {
+      "name": "Sam Steel",
       "pos": "F",
-      "team": "WPG",
-      "gp": 11,
-      "goals": 0,
-      "assists": 0,
+      "team": "DAL",
+      "gp": 17,
+      "goals": 1,
+      "assists": 2,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -5330,6 +5330,30 @@
       "shutouts": 0,
       "otl": 0
     },
+    "8475799": {
+      "name": "Nino Niederreiter",
+      "pos": "F",
+      "team": "WPG",
+      "gp": 11,
+      "goals": 0,
+      "assists": 0,
+      "soGoals": 0,
+      "wins": 0,
+      "shutouts": 0,
+      "otl": 0
+    },
+    "8483428": {
+      "name": "Filip Bystedt",
+      "pos": "F",
+      "team": "SJS",
+      "gp": 5,
+      "goals": 0,
+      "assists": 0,
+      "soGoals": 0,
+      "wins": 0,
+      "shutouts": 0,
+      "otl": 0
+    },
     "8476923": {
       "name": "Damon Severson",
       "pos": "D",
@@ -5342,37 +5366,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8483463": {
-      "name": "Aleksanteri Kaskimaki",
+    "8476461": {
+      "name": "Sean Couturier",
       "pos": "F",
-      "team": "STL",
-      "gp": 9,
+      "team": "PHI",
+      "gp": 23,
       "goals": 1,
-      "assists": 1,
-      "soGoals": 0,
-      "wins": 0,
-      "shutouts": 0,
-      "otl": 0
-    },
-    "8484197": {
-      "name": "Oliver Moore",
-      "pos": "F",
-      "team": "CHI",
-      "gp": 19,
-      "goals": 2,
-      "assists": 3,
-      "soGoals": 0,
-      "wins": 0,
-      "shutouts": 0,
-      "otl": 0
-    },
-    "8479351": {
-      "name": "Sam Steel",
-      "pos": "F",
-      "team": "DAL",
-      "gp": 17,
-      "goals": 1,
-      "assists": 2,
+      "assists": 6,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -5402,13 +5402,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8476461": {
-      "name": "Sean Couturier",
+    "8484197": {
+      "name": "Oliver Moore",
       "pos": "F",
-      "team": "PHI",
-      "gp": 23,
-      "goals": 1,
-      "assists": 6,
+      "team": "CHI",
+      "gp": 19,
+      "goals": 2,
+      "assists": 3,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -5546,13 +5546,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8477964": {
-      "name": "Ivan Barbashev",
+    "8485391": {
+      "name": "Anton Frondell",
       "pos": "F",
-      "team": "VGK",
-      "gp": 22,
+      "team": "CHI",
+      "gp": 20,
       "goals": 4,
-      "assists": 12,
+      "assists": 6,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -5582,13 +5582,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8485391": {
-      "name": "Anton Frondell",
+    "8477964": {
+      "name": "Ivan Barbashev",
       "pos": "F",
-      "team": "CHI",
-      "gp": 20,
+      "team": "VGK",
+      "gp": 22,
       "goals": 4,
-      "assists": 6,
+      "assists": 12,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -5870,13 +5870,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8484800": {
-      "name": "Berkly Catton",
-      "pos": "F",
-      "team": "SEA",
-      "gp": 18,
-      "goals": 5,
-      "assists": 9,
+    "8478970": {
+      "name": "Jalen Chatfield",
+      "pos": "D",
+      "team": "CAR",
+      "gp": 21,
+      "goals": 2,
+      "assists": 4,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -5942,13 +5942,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8478970": {
-      "name": "Jalen Chatfield",
-      "pos": "D",
-      "team": "CAR",
-      "gp": 21,
-      "goals": 2,
-      "assists": 4,
+    "8484800": {
+      "name": "Berkly Catton",
+      "pos": "F",
+      "team": "SEA",
+      "gp": 18,
+      "goals": 5,
+      "assists": 9,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -6074,14 +6074,14 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8477956": {
-      "name": "David Pastrnak",
-      "pos": "F",
-      "team": "BOS",
-      "gp": 20,
-      "goals": 9,
-      "assists": 17,
-      "soGoals": 1,
+    "8476892": {
+      "name": "Colton Parayko",
+      "pos": "D",
+      "team": "STL",
+      "gp": 18,
+      "goals": 0,
+      "assists": 5,
+      "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
       "otl": 0
@@ -6110,18 +6110,6 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8476892": {
-      "name": "Colton Parayko",
-      "pos": "D",
-      "team": "STL",
-      "gp": 18,
-      "goals": 0,
-      "assists": 5,
-      "soGoals": 0,
-      "wins": 0,
-      "shutouts": 0,
-      "otl": 0
-    },
     "8477987": {
       "name": "Ryan Donato",
       "pos": "F",
@@ -6130,6 +6118,18 @@
       "goals": 3,
       "assists": 3,
       "soGoals": 0,
+      "wins": 0,
+      "shutouts": 0,
+      "otl": 0
+    },
+    "8477956": {
+      "name": "David Pastrnak",
+      "pos": "F",
+      "team": "BOS",
+      "gp": 20,
+      "goals": 9,
+      "assists": 17,
+      "soGoals": 1,
       "wins": 0,
       "shutouts": 0,
       "otl": 0
@@ -6662,13 +6662,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8481527": {
-      "name": "Kaedan Korczak",
-      "pos": "D",
-      "team": "PIT",
-      "gp": 20,
-      "goals": 0,
-      "assists": 10,
+    "8480028": {
+      "name": "Morgan Frost",
+      "pos": "F",
+      "team": "CGY",
+      "gp": 21,
+      "goals": 5,
+      "assists": 8,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -6686,13 +6686,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8480028": {
-      "name": "Morgan Frost",
-      "pos": "F",
-      "team": "CGY",
-      "gp": 21,
-      "goals": 5,
-      "assists": 8,
+    "8481527": {
+      "name": "Kaedan Korczak",
+      "pos": "D",
+      "team": "PIT",
+      "gp": 20,
+      "goals": 0,
+      "assists": 10,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -6758,18 +6758,6 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8484829": {
-      "name": "Justin Hryckowian",
-      "pos": "F",
-      "team": "DAL",
-      "gp": 20,
-      "goals": 2,
-      "assists": 1,
-      "soGoals": 0,
-      "wins": 0,
-      "shutouts": 0,
-      "otl": 0
-    },
     "8482699": {
       "name": "Dylan Guenther",
       "pos": "F",
@@ -6777,6 +6765,18 @@
       "gp": 18,
       "goals": 6,
       "assists": 6,
+      "soGoals": 0,
+      "wins": 0,
+      "shutouts": 0,
+      "otl": 0
+    },
+    "8484829": {
+      "name": "Justin Hryckowian",
+      "pos": "F",
+      "team": "DAL",
+      "gp": 20,
+      "goals": 2,
+      "assists": 1,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -7046,13 +7046,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8476889": {
-      "name": "Radek Faksa",
-      "pos": "F",
-      "team": "DAL",
-      "gp": 16,
-      "goals": 0,
-      "assists": 2,
+    "8482459": {
+      "name": "Tyrel Bauer",
+      "pos": "D",
+      "team": "WPG",
+      "gp": 15,
+      "goals": 1,
+      "assists": 1,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -7094,13 +7094,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8482459": {
-      "name": "Tyrel Bauer",
-      "pos": "D",
-      "team": "WPG",
-      "gp": 15,
-      "goals": 1,
-      "assists": 1,
+    "8476889": {
+      "name": "Radek Faksa",
+      "pos": "F",
+      "team": "DAL",
+      "gp": 16,
+      "goals": 0,
+      "assists": 2,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -7226,18 +7226,6 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8474600": {
-      "name": "Roman Josi",
-      "pos": "D",
-      "team": "NSH",
-      "gp": 21,
-      "goals": 2,
-      "assists": 21,
-      "soGoals": 1,
-      "wins": 0,
-      "shutouts": 0,
-      "otl": 0
-    },
     "8484471": {
       "name": "Emmitt Finnie",
       "pos": "F",
@@ -7262,6 +7250,18 @@
       "shutouts": 0,
       "otl": 0
     },
+    "8474600": {
+      "name": "Roman Josi",
+      "pos": "D",
+      "team": "NSH",
+      "gp": 21,
+      "goals": 2,
+      "assists": 21,
+      "soGoals": 1,
+      "wins": 0,
+      "shutouts": 0,
+      "otl": 0
+    },
     "8482740": {
       "name": "Wyatt Johnston",
       "pos": "F",
@@ -7274,14 +7274,14 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8481721": {
-      "name": "Arseny Gritsyuk",
+    "8480289": {
+      "name": "Morgan Barron",
       "pos": "F",
-      "team": "NJD",
+      "team": "WPG",
       "gp": 21,
-      "goals": 8,
-      "assists": 9,
-      "soGoals": 1,
+      "goals": 3,
+      "assists": 5,
+      "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
       "otl": 0
@@ -7334,26 +7334,14 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8480289": {
-      "name": "Morgan Barron",
+    "8481721": {
+      "name": "Arseny Gritsyuk",
       "pos": "F",
-      "team": "WPG",
+      "team": "NJD",
       "gp": 21,
-      "goals": 3,
-      "assists": 5,
-      "soGoals": 0,
-      "wins": 0,
-      "shutouts": 0,
-      "otl": 0
-    },
-    "8481754": {
-      "name": "Nikita Nesterenko",
-      "pos": "F",
-      "team": "ANA",
-      "gp": 19,
-      "goals": 4,
-      "assists": 2,
-      "soGoals": 0,
+      "goals": 8,
+      "assists": 9,
+      "soGoals": 1,
       "wins": 0,
       "shutouts": 0,
       "otl": 0
@@ -7366,6 +7354,18 @@
       "goals": 3,
       "assists": 3,
       "soGoals": 2,
+      "wins": 0,
+      "shutouts": 0,
+      "otl": 0
+    },
+    "8481754": {
+      "name": "Nikita Nesterenko",
+      "pos": "F",
+      "team": "ANA",
+      "gp": 19,
+      "goals": 4,
+      "assists": 2,
+      "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
       "otl": 0
@@ -7634,18 +7634,6 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8482160": {
-      "name": "Martin Chromiak",
-      "pos": "F",
-      "team": "LAK",
-      "gp": 2,
-      "goals": 0,
-      "assists": 0,
-      "soGoals": 0,
-      "wins": 0,
-      "shutouts": 0,
-      "otl": 0
-    },
     "8479542": {
       "name": "Brandon Hagel",
       "pos": "F",
@@ -7653,6 +7641,18 @@
       "gp": 20,
       "goals": 13,
       "assists": 11,
+      "soGoals": 0,
+      "wins": 0,
+      "shutouts": 0,
+      "otl": 0
+    },
+    "8482160": {
+      "name": "Martin Chromiak",
+      "pos": "F",
+      "team": "LAK",
+      "gp": 2,
+      "goals": 0,
+      "assists": 0,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -7694,13 +7694,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8478104": {
-      "name": "Samuel Blais",
+    "8480355": {
+      "name": "Mark Kastelic",
       "pos": "F",
-      "team": "OTT",
-      "gp": 4,
-      "goals": 0,
-      "assists": 0,
+      "team": "BOS",
+      "gp": 20,
+      "goals": 3,
+      "assists": 4,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -7754,13 +7754,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8480355": {
-      "name": "Mark Kastelic",
+    "8478104": {
+      "name": "Samuel Blais",
       "pos": "F",
-      "team": "BOS",
-      "gp": 20,
-      "goals": 3,
-      "assists": 4,
+      "team": "OTT",
+      "gp": 4,
+      "goals": 0,
+      "assists": 0,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -7862,18 +7862,6 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8476463": {
-      "name": "Jonas Brodin",
-      "pos": "D",
-      "team": "MIN",
-      "gp": 22,
-      "goals": 0,
-      "assists": 8,
-      "soGoals": 0,
-      "wins": 0,
-      "shutouts": 0,
-      "otl": 0
-    },
     "8480842": {
       "name": "Filip Hallander",
       "pos": "F",
@@ -7881,6 +7869,18 @@
       "gp": 12,
       "goals": 1,
       "assists": 2,
+      "soGoals": 0,
+      "wins": 0,
+      "shutouts": 0,
+      "otl": 0
+    },
+    "8476463": {
+      "name": "Jonas Brodin",
+      "pos": "D",
+      "team": "MIN",
+      "gp": 22,
+      "goals": 0,
+      "assists": 8,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -7982,13 +7982,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8476372": {
-      "name": "Nick Seeler",
-      "pos": "D",
-      "team": "PHI",
-      "gp": 23,
-      "goals": 0,
-      "assists": 6,
+    "8475754": {
+      "name": "Brock Nelson",
+      "pos": "F",
+      "team": "COL",
+      "gp": 21,
+      "goals": 6,
+      "assists": 7,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -8006,13 +8006,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8475754": {
-      "name": "Brock Nelson",
-      "pos": "F",
-      "team": "COL",
-      "gp": 21,
-      "goals": 6,
-      "assists": 7,
+    "8476372": {
+      "name": "Nick Seeler",
+      "pos": "D",
+      "team": "PHI",
+      "gp": 23,
+      "goals": 0,
+      "assists": 6,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -8030,13 +8030,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8484262": {
-      "name": "Travis Mitchell",
-      "pos": "D",
+    "8482118": {
+      "name": "Sam Colangelo",
+      "pos": "F",
       "team": "ANA",
-      "gp": 14,
-      "goals": 0,
-      "assists": 1,
+      "gp": 15,
+      "goals": 1,
+      "assists": 4,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -8066,13 +8066,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8482118": {
-      "name": "Sam Colangelo",
-      "pos": "F",
+    "8484262": {
+      "name": "Travis Mitchell",
+      "pos": "D",
       "team": "ANA",
-      "gp": 15,
-      "goals": 1,
-      "assists": 4,
+      "gp": 14,
+      "goals": 0,
+      "assists": 1,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -8150,18 +8150,6 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8480448": {
-      "name": "Parker Kelly",
-      "pos": "F",
-      "team": "COL",
-      "gp": 21,
-      "goals": 4,
-      "assists": 5,
-      "soGoals": 0,
-      "wins": 0,
-      "shutouts": 0,
-      "otl": 0
-    },
     "8475151": {
       "name": "Kyle Palmieri",
       "pos": "F",
@@ -8170,6 +8158,18 @@
       "goals": 3,
       "assists": 5,
       "soGoals": 1,
+      "wins": 0,
+      "shutouts": 0,
+      "otl": 0
+    },
+    "8480448": {
+      "name": "Parker Kelly",
+      "pos": "F",
+      "team": "COL",
+      "gp": 21,
+      "goals": 4,
+      "assists": 5,
+      "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
       "otl": 0
@@ -8306,18 +8306,6 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8481656": {
-      "name": "Aliaksei Protas",
-      "pos": "F",
-      "team": "WSH",
-      "gp": 18,
-      "goals": 2,
-      "assists": 8,
-      "soGoals": 0,
-      "wins": 0,
-      "shutouts": 0,
-      "otl": 0
-    },
     "8482078": {
       "name": "Lucas Raymond",
       "pos": "F",
@@ -8326,6 +8314,18 @@
       "goals": 8,
       "assists": 13,
       "soGoals": 2,
+      "wins": 0,
+      "shutouts": 0,
+      "otl": 0
+    },
+    "8481656": {
+      "name": "Aliaksei Protas",
+      "pos": "F",
+      "team": "WSH",
+      "gp": 18,
+      "goals": 2,
+      "assists": 8,
+      "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
       "otl": 0
@@ -8414,13 +8414,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8481535": {
-      "name": "Nils Hoglander",
-      "pos": "F",
-      "team": "NSH",
-      "gp": 21,
-      "goals": 5,
-      "assists": 5,
+    "8482111": {
+      "name": "Justin Barron",
+      "pos": "D",
+      "team": "STL",
+      "gp": 17,
+      "goals": 3,
+      "assists": 7,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -8438,18 +8438,6 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8482111": {
-      "name": "Justin Barron",
-      "pos": "D",
-      "team": "STL",
-      "gp": 17,
-      "goals": 3,
-      "assists": 7,
-      "soGoals": 0,
-      "wins": 0,
-      "shutouts": 0,
-      "otl": 0
-    },
     "8476875": {
       "name": "Mike Matheson",
       "pos": "D",
@@ -8457,6 +8445,18 @@
       "gp": 9,
       "goals": 1,
       "assists": 4,
+      "soGoals": 0,
+      "wins": 0,
+      "shutouts": 0,
+      "otl": 0
+    },
+    "8481535": {
+      "name": "Nils Hoglander",
+      "pos": "F",
+      "team": "NSH",
+      "gp": 21,
+      "goals": 5,
+      "assists": 5,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -8606,13 +8606,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8484188": {
-      "name": "Theo Lindstein",
-      "pos": "D",
-      "team": "STL",
+    "8476374": {
+      "name": "Sean Kuraly",
+      "pos": "F",
+      "team": "BOS",
       "gp": 6,
       "goals": 0,
-      "assists": 2,
+      "assists": 0,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -8642,13 +8642,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8476374": {
-      "name": "Sean Kuraly",
-      "pos": "F",
-      "team": "BOS",
+    "8484188": {
+      "name": "Theo Lindstein",
+      "pos": "D",
+      "team": "STL",
       "gp": 6,
       "goals": 0,
-      "assists": 0,
+      "assists": 2,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -8786,13 +8786,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8477989": {
-      "name": "Christian Dvorak",
-      "pos": "F",
-      "team": "PHI",
-      "gp": 23,
-      "goals": 3,
-      "assists": 8,
+    "8478136": {
+      "name": "Jacob Middleton",
+      "pos": "D",
+      "team": "CGY",
+      "gp": 21,
+      "goals": 1,
+      "assists": 1,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -8810,13 +8810,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8478136": {
-      "name": "Jacob Middleton",
-      "pos": "D",
-      "team": "CGY",
-      "gp": 21,
-      "goals": 1,
-      "assists": 1,
+    "8477989": {
+      "name": "Christian Dvorak",
+      "pos": "F",
+      "team": "PHI",
+      "gp": 23,
+      "goals": 3,
+      "assists": 8,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
