@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17T00:01:40Z",
+  "updated": "2026-11-17T00:30:49Z",
   "source": "ESPN",
   "players": [
     {
@@ -111,6 +111,17 @@
       "returnDate": "2026-11-21",
       "noteDate": "2026-11-14",
       "note": "Schmaltz (lower body) isn't expected to play against San Jose on Saturday, and it's unclear when he will be ready to return, Brogan Houston of the Deseret News reports."
+    },
+    {
+      "id": 8481604,
+      "name": "Pavel Dorofeyev",
+      "team": "NYR",
+      "pos": "F",
+      "status": "out",
+      "type": "Lower Body",
+      "returnDate": "2026-11-22",
+      "noteDate": "2026-11-17",
+      "note": "out"
     },
     {
       "id": 8480036,
