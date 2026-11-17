@@ -1,19 +1,6 @@
 {
   "memes": [
     {
-      "gameDay": "2026-11-01",
-      "category": "player",
-      "format": "breaking",
-      "subject": {
-        "kind": "player",
-        "id": 8483445
-      },
-      "fr": {
-        "headline": "CUTTER GAUTHIER COUPE LES SÉNATEURS EN TROIS",
-        "ticker": "3 BUTS À ANAHEIM · MICHEL (LES DUCKS) EXIGE DES REDEVANCES"
-      }
-    },
-    {
       "gameDay": "2026-11-02",
       "category": "injury",
       "format": "classic",
@@ -132,6 +119,19 @@
       "fr": {
         "top": "MICHEL PASSE GUILLAUME AU 1ER RANG PAR 2 PTS",
         "bottom": "LE KIWI NE VOLE PAS. LE CANARD, LUI, VOLE LA 1RE PLACE."
+      }
+    },
+    {
+      "gameDay": "2026-11-15",
+      "category": "injury",
+      "format": "breaking",
+      "subject": {
+        "kind": "player",
+        "id": 8477492
+      },
+      "fr": {
+        "headline": "AVALANCHE : 17 POOLERS SUR 18 SOUS LES DÉBRIS",
+        "ticker": "MACKINNON, MAKAR ABSENTS · LE 18E POOLER INTERROGÉ PAR LA SQ"
       }
     }
   ]

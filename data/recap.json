@@ -1,36 +1,34 @@
 {
-  "gameDay": "2026-11-11",
-  "generatedAt": "2026-11-12T08:31:07Z",
+  "gameDay": "2026-11-15",
+  "generatedAt": "2026-11-17T00:02:07Z",
   "fr": {
-    "title": "Michel passe en tête, Eve et Sylvianne explosent",
+    "title": "McDavid et Draisaitl brûlent Philly, Louise rafle le bingo",
     "bullets": [
-      "Michel (Les Ducks) grimpe au 1er rang avec 429 points. Guillaume recule au 2e, à deux points seulement. 🦆",
-      "Sylvianne et Eve ramassent 12 points chacune, la meilleure soirée du pool. Sylvianne reste 3e.",
-      "Bingo : Eve, Florence et Jolyne signent 3 lignes chacune. Michel a frôlé le tout (4 cases, zéro ligne), et Guillaume ferme la marche avec 2 cases.",
-      "Evan Bouchard marque dans la victoire d'Edmonton en prolongation, pour 10 participants. Kucherov a marqué à Tampa, mais personne ne l'a repêché. Aïe! 🏒",
-      "McDavid est à un point de 50, et 15 participants retiennent leur souffle.",
-      "Infirmerie : Dylan Guenther (UTA) est sur la liste des blessés, retour prévu vers le 5 décembre, chez 5 participants. Linus Ullmark (OTT) est incertain, au grand dam de Vincent."
+      "McDavid marque, Draisaitl en met deux : Edmonton écrase Philadelphie 5-2. Quinze participants dans le pool de McDavid se frottent les mains! 🏒",
+      "Bingo : Louise (Les huards) pulvérise la soirée avec 8 lignes sur 8 cases. Simon ferme la marche avec une seule ligne.",
+      "En tête, Michel (Les Ducks) mène avec 457 points, quatre devant Guillaume (Laser Kiwis). Sylvianne et Jackson restent collés à 444.",
+      "Tkachuk a marqué pour Florence, Julien et Jolyne, mais Florida plie 2-1 en prolongation à Dallas. Dur pour le trio!",
+      "Infirmerie : Makar (COL, 10 participants) est absent jusqu'au 28 nov. et MacKinnon (COL, 17 participants) jusqu'au 12 déc. Aïe, l'Avalanche!"
     ]
   },
   "en": {
-    "title": "Michel takes the lead, Eve and Sylvianne light it up",
+    "title": "McDavid and Draisaitl torch Philly, Louise rules bingo",
     "bullets": [
-      "Michel (Les Ducks) climbs to 1st with 429 points. Guillaume slips to 2nd, just two back. 🦆",
-      "Sylvianne and Eve each bank 12 points, the best night in the pool. Sylvianne holds 3rd.",
-      "Bingo: Eve, Florence and Jolyne each land 3 lines. Michel came close (4 squares, no lines), and Guillaume brings up the rear with 2 squares.",
-      "Evan Bouchard scores in Edmonton's overtime win, for 10 participants. Kucherov scored for Tampa, but nobody drafted him. Ouch! 🏒",
-      "McDavid sits one point shy of 50, with 15 participants holding their breath.",
-      "Infirmary: Dylan Guenther (UTA) is on the injured list, expected back around Dec. 5, owned by 5 participants. Linus Ullmark (OTT) is day-to-day, bad news for Vincent."
+      "McDavid scores and Draisaitl adds two as Edmonton routs Philadelphia 5-2. Fifteen participants own McDavid and are smiling. 🏒",
+      "Bingo: Louise (Les huards) dominates the night with 8 lines on 8 squares. Simon brings up the rear with a single line.",
+      "At the top, Michel (Les Ducks) leads with 457 points, four clear of Guillaume (Laser Kiwis). Sylvianne and Jackson stay glued at 444.",
+      "Tkachuk scored for Florence, Julien and Jolyne, but Florida falls 2-1 in overtime in Dallas. Tough break for the trio!",
+      "Infirmary: Makar (COL, 10 owners) is out until Nov. 28 and MacKinnon (COL, 17 owners) until Dec. 12. Ouch, Avalanche!"
     ]
   },
   "image": {
     "fr": {
       "src": "data/recap-fr.png",
-      "alt": "MICHEL PASSE GUILLAUME AU 1ER RANG PAR 2 PTS / LE KIWI NE VOLE PAS. LE CANARD, LUI, VOLE LA 1RE PLACE."
+      "alt": "AVALANCHE : 17 POOLERS SUR 18 SOUS LES DÉBRIS — MACKINNON, MAKAR ABSENTS · LE 18E POOLER INTERROGÉ PAR LA SQ"
     },
     "en": {
       "src": "data/recap-en.png",
-      "alt": "MICHEL PASSES GUILLAUME FOR 1ST BY 2 POINTS / KIWIS CAN'T FLY. DUCKS CAN, STRAIGHT TO THE TOP."
+      "alt": "AVALANCHE WARNING: 17 OF 18 POOLERS BURIED — MACKINNON, MAKAR OUT · 18TH POOLER NOW A PERSON OF INTEREST"
     }
   }
 }
