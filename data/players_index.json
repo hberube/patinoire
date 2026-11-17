@@ -63,18 +63,18 @@
     "points": 29
   },
   {
+    "id": 8479343,
+    "name": "Clayton Keller",
+    "pos": "F",
+    "team": "UTA",
+    "points": 28
+  },
+  {
     "id": 8476453,
     "name": "Nikita Kucherov",
     "pos": "F",
     "team": "TBL",
     "points": 28
-  },
-  {
-    "id": 8479343,
-    "name": "Clayton Keller",
-    "pos": "F",
-    "team": "UTA",
-    "points": 27
   },
   {
     "id": 8478403,
@@ -196,6 +196,13 @@
     "points": 23
   },
   {
+    "id": 8478444,
+    "name": "Brock Boeser",
+    "pos": "F",
+    "team": "VAN",
+    "points": 23
+  },
+  {
     "id": 8480069,
     "name": "Cale Makar",
     "pos": "D",
@@ -249,6 +256,13 @@
     "name": "Jason Robertson",
     "pos": "F",
     "team": "DAL",
+    "points": 22
+  },
+  {
+    "id": 8483431,
+    "name": "Logan Cooley",
+    "pos": "F",
+    "team": "UTA",
     "points": 22
   },
   {
@@ -315,13 +329,6 @@
     "points": 21
   },
   {
-    "id": 8483431,
-    "name": "Logan Cooley",
-    "pos": "F",
-    "team": "UTA",
-    "points": 21
-  },
-  {
     "id": 8482078,
     "name": "Lucas Raymond",
     "pos": "F",
@@ -361,13 +368,6 @@
     "name": "Bo Horvat",
     "pos": "F",
     "team": "NYI",
-    "points": 20
-  },
-  {
-    "id": 8478444,
-    "name": "Brock Boeser",
-    "pos": "F",
-    "team": "VAN",
     "points": 20
   },
   {
@@ -487,6 +487,13 @@
     "name": "Jake Oettinger",
     "pos": "G",
     "team": "DAL",
+    "points": 18
+  },
+  {
+    "id": 8483476,
+    "name": "Jonathan Lekkerimaki",
+    "pos": "F",
+    "team": "VAN",
     "points": 18
   },
   {
@@ -641,13 +648,6 @@
     "name": "John Carlson",
     "pos": "D",
     "team": "TBL",
-    "points": 16
-  },
-  {
-    "id": 8483476,
-    "name": "Jonathan Lekkerimaki",
-    "pos": "F",
-    "team": "VAN",
     "points": 16
   },
   {
@@ -1085,6 +1085,13 @@
     "points": 13
   },
   {
+    "id": 8480849,
+    "name": "Barrett Hayton",
+    "pos": "F",
+    "team": "UTA",
+    "points": 12
+  },
+  {
     "id": 8476399,
     "name": "Blake Coleman",
     "pos": "F",
@@ -1131,6 +1138,13 @@
     "name": "Dylan Guenther",
     "pos": "F",
     "team": "UTA",
+    "points": 12
+  },
+  {
+    "id": 8478498,
+    "name": "Jake DeBrusk",
+    "pos": "F",
+    "team": "VAN",
     "points": 12
   },
   {
@@ -1232,13 +1246,6 @@
     "points": 11
   },
   {
-    "id": 8480849,
-    "name": "Barrett Hayton",
-    "pos": "F",
-    "team": "UTA",
-    "points": 11
-  },
-  {
     "id": 8481553,
     "name": "Bobby Brink",
     "pos": "F",
@@ -1313,6 +1320,13 @@
     "name": "Jesperi Kotkaniemi",
     "pos": "F",
     "team": "CAR",
+    "points": 11
+  },
+  {
+    "id": 8479977,
+    "name": "Kailer Yamamoto",
+    "pos": "F",
+    "team": "UTA",
     "points": 11
   },
   {
@@ -1428,6 +1442,13 @@
     "points": 11
   },
   {
+    "id": 8476389,
+    "name": "Vincent Trocheck",
+    "pos": "F",
+    "team": "UTA",
+    "points": 11
+  },
+  {
     "id": 8482157,
     "name": "Will Cuylle",
     "pos": "F",
@@ -1446,6 +1467,13 @@
     "name": "Aliaksei Protas",
     "pos": "F",
     "team": "WSH",
+    "points": 10
+  },
+  {
+    "id": 8475314,
+    "name": "Anders Lee",
+    "pos": "F",
+    "team": "UTA",
     "points": 10
   },
   {
@@ -1498,13 +1526,6 @@
     "points": 10
   },
   {
-    "id": 8478498,
-    "name": "Jake DeBrusk",
-    "pos": "F",
-    "team": "VAN",
-    "points": 10
-  },
-  {
     "id": 8482105,
     "name": "Jake Sanderson",
     "pos": "D",
@@ -1551,13 +1572,6 @@
     "name": "Kaedan Korczak",
     "pos": "D",
     "team": "PIT",
-    "points": 10
-  },
-  {
-    "id": 8479977,
-    "name": "Kailer Yamamoto",
-    "pos": "F",
-    "team": "UTA",
     "points": 10
   },
   {
@@ -1659,13 +1673,6 @@
     "points": 10
   },
   {
-    "id": 8476389,
-    "name": "Vincent Trocheck",
-    "pos": "F",
-    "team": "UTA",
-    "points": 10
-  },
-  {
     "id": 8481068,
     "name": "Yegor Sharangovich",
     "pos": "F",
@@ -1677,13 +1684,6 @@
     "name": "Adam Wilsby",
     "pos": "D",
     "team": "NSH",
-    "points": 9
-  },
-  {
-    "id": 8475314,
-    "name": "Anders Lee",
-    "pos": "F",
-    "team": "UTA",
     "points": 9
   },
   {
@@ -3010,6 +3010,13 @@
     "points": 5
   },
   {
+    "id": 8480078,
+    "name": "Filip Chytil",
+    "pos": "F",
+    "team": "VAN",
+    "points": 5
+  },
+  {
     "id": 8483017,
     "name": "Frederic Brunet",
     "pos": "D",
@@ -3377,13 +3384,6 @@
     "id": 8483678,
     "name": "Elias Pettersson",
     "pos": "D",
-    "team": "VAN",
-    "points": 4
-  },
-  {
-    "id": 8480078,
-    "name": "Filip Chytil",
-    "pos": "F",
     "team": "VAN",
     "points": 4
   },
@@ -5044,6 +5044,13 @@
     "name": "Nicolas Hague",
     "pos": "D",
     "team": "NSH",
+    "points": 1
+  },
+  {
+    "id": 8484268,
+    "name": "Nikita Tolopilo",
+    "pos": "G",
+    "team": "VAN",
     "points": 1
   },
   {
