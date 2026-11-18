@@ -1,36 +1,34 @@
 {
-  "gameDay": "2026-11-16",
-  "generatedAt": "2026-11-17T08:31:06Z",
+  "gameDay": "2026-11-17",
+  "generatedAt": "2026-11-18T08:31:07Z",
   "fr": {
-    "title": "Michel garde la barre, Hugo grimpe de deux crans",
+    "title": "Guillaume prend la tête, Michel et Sylvianne à égalité",
     "bullets": [
-      "🏒 Michel (Les Ducks) reste en tête avec 458 points, +14 hier. Guillaume (Laser Kiwis) le suit à 5 points.",
-      "Hugo (Crazy Blue Heelers) bondit au 3e rang, à égalité à 444 avec Sylvianne et Jackson. Ses 54 lignes de bingo font la différence.",
-      "🎯 Bingo : Elrick (Michael Scofield) gagne avec une ligne et 4 cases. Vicky ferme la marche avec une seule case.",
-      "Danault marque dans la défaite de 3-1 des Habs à New York, mais personne dans le pool ne l'a. Hutson a l'aide, lui.",
-      "Caufield (14 pooleurs) et Hutson sont tous deux à 19 points, à un point des 20. Rantanen guette son 10e but.",
-      "Kucherov a 28 points et personne ne l'a pigé. Ouch."
+      "Guillaume (Laser Kiwis) s'empare du 1er rang avec 474 points, +21 hier. Ça vole haut! 🥝",
+      "Michel (Les Ducks) recule au 2e, à égalité à 469 avec Sylvianne (Maman Girafe, +25 hier). Ses 65 lignes de bingo le départagent.",
+      "Cutter Gauthier (ANA) réussit un tour du chapeau contre St. Louis, et McDavid marque pour ses 15 propriétaires. 🎩",
+      "Bingo : Jolyne (SkiBum) gagne avec 2 lignes. Florence ferme la marche avec 0 ligne et 2 cases.",
+      "Infirmerie : Bedard (CHI, poignet, incertain) et Hagel (TBL, bas du corps, absent), chez 8 et 5 participants. Retour prévu le 19. 🚑"
     ]
   },
   "en": {
-    "title": "Michel holds the lead, Hugo climbs two spots",
+    "title": "Guillaume takes the lead, Michel and Sylvianne tied",
     "bullets": [
-      "🏒 Michel (Les Ducks) stays on top with 458 points, +14 last night. Guillaume (Laser Kiwis) trails by 5.",
-      "Hugo (Crazy Blue Heelers) jumps to 3rd, tied at 444 with Sylvianne and Jackson. His 54 bingo lines break the tie.",
-      "🎯 Bingo: Elrick (Michael Scofield) wins with one line and 4 squares. Vicky brings up the rear with a single square.",
-      "Danault scores in the Habs' 3-1 loss in New York, but nobody in the pool owns him. Hutson got the assist, though.",
-      "Caufield (14 owners) and Hutson are both at 19 points, one shy of 20. Rantanen is eyeing goal number 10.",
-      "Kucherov has 28 points and nobody picked him. Ouch."
+      "Guillaume (Laser Kiwis) grabs 1st place with 474 points, +21 last night. Flying high! 🥝",
+      "Michel (Les Ducks) slips to 2nd, tied at 469 with Sylvianne (Maman Girafe, +25 last night). His 65 bingo lines break the tie.",
+      "Cutter Gauthier (ANA) nets a hat trick against St. Louis, and McDavid scores for his 15 owners. 🎩",
+      "Bingo: Jolyne (SkiBum) wins with 2 lines. Florence brings up the rear with 0 lines and 2 squares.",
+      "Infirmary: Bedard (CHI, wrist, day-to-day) and Hagel (TBL, lower body, out), owned by 8 and 5 participants. Expected back on the 19th. 🚑"
     ]
   },
   "image": {
     "fr": {
       "src": "data/recap-fr.png",
-      "alt": "MICHAEL SCOFIELD S'ÉVADE AVEC LE BINGO / 4 CASES SUFFISENT QUAND LE PLAN EST TATOUÉ SUR TON BRAS"
+      "alt": "ST. LOUIS 8, ANAHEIM 6 : LES GARDIENS DISPARUS — GAUTHIER : 3 BUTS · SES 5 POOLERS REFUSENT DE LES RETROUVER"
     },
     "en": {
       "src": "data/recap-en.png",
-      "alt": "MICHAEL SCOFIELD BREAKS OUT WITH BINGO / ONLY 4 SQUARES NEEDED WHEN THE MAP IS TATTOOED ON YOUR ARMS"
+      "alt": "BLUES 8, DUCKS 6: BOTH GOALIES STILL MISSING — GAUTHIER HAT TRICK · HIS 5 POOLERS: 'PLEASE DON'T FIND THEM'"
     }
   }
 }

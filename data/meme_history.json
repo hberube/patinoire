@@ -1,19 +1,6 @@
 {
   "memes": [
     {
-      "gameDay": "2026-11-03",
-      "category": "bingo",
-      "format": "breaking",
-      "subject": {
-        "kind": "team",
-        "id": "usr_julien_berube"
-      },
-      "fr": {
-        "headline": "NO REGRETZKYS : JULIEN AVOUE QUELQUES REGRETS",
-        "ticker": "4 CASES AU BINGO, 0 LIGNE · GRETZKY REFUSE DE COMMENTER"
-      }
-    },
-    {
       "gameDay": "2026-11-04",
       "category": "player",
       "format": "classic",
@@ -132,6 +119,19 @@
       "fr": {
         "top": "MICHAEL SCOFIELD S'ÉVADE AVEC LE BINGO",
         "bottom": "4 CASES SUFFISENT QUAND LE PLAN EST TATOUÉ SUR TON BRAS"
+      }
+    },
+    {
+      "gameDay": "2026-11-17",
+      "category": "player",
+      "format": "breaking",
+      "subject": {
+        "kind": "player",
+        "id": 8483445
+      },
+      "fr": {
+        "headline": "ST. LOUIS 8, ANAHEIM 6 : LES GARDIENS DISPARUS",
+        "ticker": "GAUTHIER : 3 BUTS · SES 5 POOLERS REFUSENT DE LES RETROUVER"
       }
     }
   ]
