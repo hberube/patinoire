@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17T08:30:45Z",
+  "updated": "2026-11-18T05:57:04Z",
   "source": "ESPN",
   "players": [
     {
@@ -42,9 +42,9 @@
       "pos": "G",
       "status": "ir",
       "type": "Hip",
-      "returnDate": "2026-11-19",
-      "noteDate": "2026-11-05",
-      "note": "Gustavsson (hip) will travel with the Wild during the team's upcoming three-game road trip, per Joe Smith of The Athletic."
+      "returnDate": "2026-11-23",
+      "noteDate": "2026-11-18",
+      "note": "Gustavsson (hip) could rejoin the Wild on Monday ahead of their game versus the Sharks, Michael Russo of The Athletic reports."
     },
     {
       "id": 8484984,
@@ -69,6 +69,17 @@
       "note": "ir"
     },
     {
+      "id": 8477951,
+      "name": "Nick Schmaltz",
+      "team": "UTA",
+      "pos": "F",
+      "status": "ir",
+      "type": "Lower Body",
+      "returnDate": "2026-11-25",
+      "noteDate": "2026-11-17",
+      "note": "ir"
+    },
+    {
       "id": 8478550,
       "name": "Artemi Panarin",
       "team": "LAK",
@@ -78,6 +89,17 @@
       "returnDate": "2026-11-19",
       "noteDate": "2026-11-16",
       "note": "out"
+    },
+    {
+      "id": 8479542,
+      "name": "Brandon Hagel",
+      "team": "TBL",
+      "pos": "F",
+      "status": "out",
+      "type": "Lower Body",
+      "returnDate": "2026-11-19",
+      "noteDate": "2026-11-17",
+      "note": "Hagel (undisclosed) won't play against Washington on Tuesday, Benjamin Pierce of the Lightning's official site reports."
     },
     {
       "id": 8480069,
@@ -102,36 +124,36 @@
       "note": "MacKinnon (lower body) will miss at least one month, per Corey Masisak of The Denver Post on Saturday."
     },
     {
-      "id": 8477951,
-      "name": "Nick Schmaltz",
-      "team": "UTA",
+      "id": 8484144,
+      "name": "Connor Bedard",
+      "team": "CHI",
       "pos": "F",
-      "status": "out",
-      "type": "Lower Body",
-      "returnDate": "2026-11-21",
-      "noteDate": "2026-11-14",
-      "note": "Schmaltz (lower body) isn't expected to play against San Jose on Saturday, and it's unclear when he will be ready to return, Brogan Houston of the Deseret News reports."
+      "status": "dtd",
+      "type": "Wrist",
+      "returnDate": "2026-11-19",
+      "noteDate": "2026-11-18",
+      "note": "day-to-day"
     },
     {
       "id": 8481604,
       "name": "Pavel Dorofeyev",
       "team": "NYR",
       "pos": "F",
-      "status": "out",
+      "status": "dtd",
       "type": "Lower Body",
       "returnDate": "2026-11-22",
       "noteDate": "2026-11-17",
-      "note": "out"
+      "note": "day-to-day"
     },
     {
-      "id": 8480036,
-      "name": "Miro Heiskanen",
-      "team": "DAL",
-      "pos": "D",
+      "id": 8475809,
+      "name": "Scott Wedgewood",
+      "team": "COL",
+      "pos": "G",
       "status": "dtd",
-      "type": "Upper Body",
-      "returnDate": "2026-11-17",
-      "noteDate": "2026-11-16",
+      "type": "Illness",
+      "returnDate": "2026-11-18",
+      "noteDate": "2026-11-17",
       "note": "day-to-day"
     }
   ]
