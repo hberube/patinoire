@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-19T06:02:40Z",
+  "lastUpdated": "2026-11-19T08:30:45Z",
   "gameDay": "2026-11-18",
   "highlights": [
     {
@@ -209,9 +209,9 @@
       "dry": 0
     },
     "8475754": {
-      "last5": 4,
-      "games": 21,
-      "dry": 0
+      "last5": 3,
+      "games": 22,
+      "dry": 1
     },
     "8475913": {
       "last5": 2,
@@ -399,9 +399,9 @@
       "dry": 0
     },
     "8480039": {
-      "last5": 6,
-      "games": 21,
-      "dry": 2
+      "last5": 5,
+      "games": 22,
+      "dry": 3
     },
     "8480069": {
       "last5": 7,
@@ -716,94 +716,94 @@
     "sims": 5000,
     "teams": {
       "usr_guillaume_brossard": {
-        "win": 18.9,
-        "podium": 45.8,
-        "projected": 1670
+        "win": 18.6,
+        "podium": 46.2,
+        "projected": 1671
       },
       "usr_michel_bry": {
         "win": 16.1,
         "podium": 44.7,
-        "projected": 1669
+        "projected": 1670
       },
       "usr_sylvianne": {
-        "win": 21.4,
-        "podium": 48.0,
-        "projected": 1676
+        "win": 22.2,
+        "podium": 48.4,
+        "projected": 1678
       },
       "usr_hugo_berube": {
-        "win": 5.1,
-        "podium": 24.2,
-        "projected": 1632
+        "win": 4.9,
+        "podium": 23.6,
+        "projected": 1631
       },
       "usr_jackson_gagnon": {
-        "win": 9.3,
-        "podium": 27.4,
+        "win": 8.9,
+        "podium": 26.8,
         "projected": 1633
       },
       "usr_etienne": {
-        "win": 7.6,
+        "win": 7.9,
         "podium": 25.0,
         "projected": 1630
       },
       "usr_alexandre_comeau": {
-        "win": 5.3,
-        "podium": 23.3,
-        "projected": 1629
+        "win": 5.0,
+        "podium": 23.4,
+        "projected": 1631
       },
       "usr_elrick": {
-        "win": 7.0,
-        "podium": 24.3,
-        "projected": 1613
+        "win": 6.6,
+        "podium": 23.9,
+        "projected": 1612
       },
       "usr_simon": {
         "win": 2.2,
-        "podium": 12.0,
-        "projected": 1603
+        "podium": 12.5,
+        "projected": 1605
       },
       "usr_vincent": {
-        "win": 2.5,
-        "podium": 8.4,
+        "win": 2.6,
+        "podium": 8.3,
         "projected": 1529
       },
       "usr_julien_berube": {
         "win": 1.7,
-        "podium": 5.9,
+        "podium": 5.8,
         "projected": 1529
       },
       "usr_eve": {
-        "win": 1.2,
+        "win": 1.3,
         "podium": 4.9,
-        "projected": 1529
+        "projected": 1530
       },
       "usr_marjolaine_comeau": {
-        "win": 0.2,
-        "podium": 1.2,
-        "projected": 1490
+        "win": 0.3,
+        "podium": 1.4,
+        "projected": 1492
       },
       "usr_florence": {
         "win": 0.8,
-        "podium": 3.2,
+        "podium": 3.3,
         "projected": 1487
       },
       "usr_jolyne_brossard": {
         "win": 0.2,
         "podium": 1.3,
-        "projected": 1468
+        "projected": 1467
       },
       "usr_louise_trottier": {
         "win": 0.0,
-        "podium": 0.4,
-        "projected": 1428
+        "podium": 0.3,
+        "projected": 1429
       },
       "usr_vicky": {
-        "win": 0.3,
+        "win": 0.4,
         "podium": 1.1,
-        "projected": 1385
+        "projected": 1384
       },
       "usr_maddox_gagnon": {
         "win": 0.2,
         "podium": 0.9,
-        "projected": 1372
+        "projected": 1370
       }
     },
     "before": {
