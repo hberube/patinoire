@@ -1,34 +1,36 @@
 {
-  "gameDay": "2026-11-17",
-  "generatedAt": "2026-11-18T08:31:07Z",
+  "gameDay": "2026-11-18",
+  "generatedAt": "2026-11-19T08:31:07Z",
   "fr": {
-    "title": "Guillaume prend la tête, Michel et Sylvianne à égalité",
+    "title": "Marjolaine explose, Guillaume ne tient que par un point",
     "bullets": [
-      "Guillaume (Laser Kiwis) s'empare du 1er rang avec 474 points, +21 hier. Ça vole haut! 🥝",
-      "Michel (Les Ducks) recule au 2e, à égalité à 469 avec Sylvianne (Maman Girafe, +25 hier). Ses 65 lignes de bingo le départagent.",
-      "Cutter Gauthier (ANA) réussit un tour du chapeau contre St. Louis, et McDavid marque pour ses 15 propriétaires. 🎩",
-      "Bingo : Jolyne (SkiBum) gagne avec 2 lignes. Florence ferme la marche avec 0 ligne et 2 cases.",
-      "Infirmerie : Bedard (CHI, poignet, incertain) et Hagel (TBL, bas du corps, absent), chez 8 et 5 participants. Retour prévu le 19. 🚑"
+      "👑 Guillaume (Laser Kiwis) reste en tête avec 475 points, mais Michel (Les Ducks) lui souffle dans le cou à 474 après une soirée de 5 points.",
+      "Hugo (Crazy Blue Heelers) grimpe de deux rangs au 4e échelon avec 462 points. Les Heelers sont en feu!",
+      "Marjolaine (mchb) a eu la meilleure soirée avec 10 points, dont le but de Zacha, et passe au 13e rang.",
+      "🎯 Bingo : Marjolaine rafle 3 lignes avec 6 cases. Simon (Les Méchants Grisonnants) a fait chou blanc, et Louise (Les huards) a eu 4 cases sans aucune ligne. Aïe!",
+      "Le Canadien l'emporte 3-2 au New Jersey. Suzuki marque et est à 9 buts, à un de la dizaine. Caufield est à un point de 20, et 14 participants l'ont!",
+      "🩹 Infirmerie : Brandon Hagel (TBL), que 5 participants ont dans leur alignement, passe d'absent à incertain au jour le jour. Retour possible demain."
     ]
   },
   "en": {
-    "title": "Guillaume takes the lead, Michel and Sylvianne tied",
+    "title": "Marjolaine erupts, Guillaume clings to a one-point lead",
     "bullets": [
-      "Guillaume (Laser Kiwis) grabs 1st place with 474 points, +21 last night. Flying high! 🥝",
-      "Michel (Les Ducks) slips to 2nd, tied at 469 with Sylvianne (Maman Girafe, +25 last night). His 65 bingo lines break the tie.",
-      "Cutter Gauthier (ANA) nets a hat trick against St. Louis, and McDavid scores for his 15 owners. 🎩",
-      "Bingo: Jolyne (SkiBum) wins with 2 lines. Florence brings up the rear with 0 lines and 2 squares.",
-      "Infirmary: Bedard (CHI, wrist, day-to-day) and Hagel (TBL, lower body, out), owned by 8 and 5 participants. Expected back on the 19th. 🚑"
+      "👑 Guillaume (Laser Kiwis) stays on top with 475 points, but Michel (Les Ducks) is right behind at 474 after a 5-point night.",
+      "Hugo (Crazy Blue Heelers) climbs two spots to 4th with 462 points. The Heelers are on fire!",
+      "Marjolaine (mchb) had the best night with 10 points, including Zacha's goal, and moves up to 13th.",
+      "🎯 Bingo: Marjolaine sweeps 3 lines with 6 squares. Simon (Les Méchants Grisonnants) was shut out, and Louise (Les huards) got 4 squares but no line. Ouch!",
+      "Montreal wins 3-2 in New Jersey. Suzuki scores and sits at 9 goals, one shy of 10. Caufield is a point from 20, and 14 participants own him!",
+      "🩹 Injuries: Brandon Hagel (TBL), rostered by 5 participants, goes from out to day-to-day. A return could come tomorrow."
     ]
   },
   "image": {
     "fr": {
       "src": "data/recap-fr.png",
-      "alt": "ST. LOUIS 8, ANAHEIM 6 : LES GARDIENS DISPARUS — GAUTHIER : 3 BUTS · SES 5 POOLERS REFUSENT DE LES RETROUVER"
+      "alt": "MÉCHANTS GRISONNANTS : 0 CASE AU BINGO / LA CARTE EST RESTÉE AUSSI BLANCHE QUE LEURS TEMPES"
     },
     "en": {
       "src": "data/recap-en.png",
-      "alt": "BLUES 8, DUCKS 6: BOTH GOALIES STILL MISSING — GAUTHIER HAT TRICK · HIS 5 POOLERS: 'PLEASE DON'T FIND THEM'"
+      "alt": "THE MEAN GREYBEARDS: 0 BINGO SQUARES / 18 CARDS PLAYED. HIS STAYED WHITER THAN HIS BEARD."
     }
   }
 }
