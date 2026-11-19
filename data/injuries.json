@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18T08:30:45Z",
+  "updated": "2026-11-19T06:02:39Z",
   "source": "ESPN",
   "players": [
     {
@@ -31,9 +31,9 @@
       "pos": "F",
       "status": "ir",
       "type": "Upper Body",
-      "returnDate": "2026-12-05",
-      "noteDate": "2026-11-12",
-      "note": "ir"
+      "returnDate": "2026-11-27",
+      "noteDate": "2026-11-18",
+      "note": "Guenther (upper body) was on the ice for Wednesday's optional morning skate in a non-contact sweater, Brogan Houston of the Deseret News reports."
     },
     {
       "id": 8479406,
@@ -53,7 +53,7 @@
       "pos": "F",
       "status": "ir",
       "type": "Ankle",
-      "returnDate": "2026-11-21",
+      "returnDate": "2026-11-25",
       "noteDate": "2026-11-04",
       "note": "Demidov (foot) skated Tuesday and could resume training with the team next week, Patrick Friolet of RDS reports."
     },
@@ -64,7 +64,7 @@
       "pos": "F",
       "status": "ir",
       "type": "Lower Body",
-      "returnDate": "2026-11-23",
+      "returnDate": "2026-11-27",
       "noteDate": "2026-10-29",
       "note": "ir"
     },
@@ -78,28 +78,6 @@
       "returnDate": "2026-11-25",
       "noteDate": "2026-11-17",
       "note": "ir"
-    },
-    {
-      "id": 8478550,
-      "name": "Artemi Panarin",
-      "team": "LAK",
-      "pos": "F",
-      "status": "out",
-      "type": "Personal",
-      "returnDate": "2026-11-19",
-      "noteDate": "2026-11-16",
-      "note": "out"
-    },
-    {
-      "id": 8479542,
-      "name": "Brandon Hagel",
-      "team": "TBL",
-      "pos": "F",
-      "status": "out",
-      "type": "Lower Body",
-      "returnDate": "2026-11-19",
-      "noteDate": "2026-11-17",
-      "note": "Hagel (undisclosed) won't play against Washington on Tuesday, Benjamin Pierce of the Lightning's official site reports."
     },
     {
       "id": 8480069,
@@ -124,15 +102,37 @@
       "note": "MacKinnon (lower body) will miss at least one month, per Corey Masisak of The Denver Post on Saturday."
     },
     {
+      "id": 8478550,
+      "name": "Artemi Panarin",
+      "team": "LAK",
+      "pos": "F",
+      "status": "dtd",
+      "type": "Personal",
+      "returnDate": "2026-11-19",
+      "noteDate": "2026-11-18",
+      "note": "day-to-day"
+    },
+    {
+      "id": 8479542,
+      "name": "Brandon Hagel",
+      "team": "TBL",
+      "pos": "F",
+      "status": "dtd",
+      "type": "Lower Body",
+      "returnDate": "2026-11-19",
+      "noteDate": "2026-11-18",
+      "note": "Hagel is considered day-to-day due to his lower-body injury, Eduardo A. Encina of the Tampa Bay Times reports Wednesday."
+    },
+    {
       "id": 8484144,
       "name": "Connor Bedard",
       "team": "CHI",
       "pos": "F",
       "status": "dtd",
-      "type": "Wrist",
+      "type": "Shoulder",
       "returnDate": "2026-11-19",
       "noteDate": "2026-11-18",
-      "note": "day-to-day"
+      "note": "Bedard is being evaluated for a shoulder injury, Emily Kaplan of ESPN reports Wednesday."
     },
     {
       "id": 8481604,
@@ -142,17 +142,6 @@
       "status": "dtd",
       "type": "Lower Body",
       "returnDate": "2026-11-22",
-      "noteDate": "2026-11-17",
-      "note": "day-to-day"
-    },
-    {
-      "id": 8475809,
-      "name": "Scott Wedgewood",
-      "team": "COL",
-      "pos": "G",
-      "status": "dtd",
-      "type": "Illness",
-      "returnDate": "2026-11-18",
       "noteDate": "2026-11-17",
       "note": "day-to-day"
     }
