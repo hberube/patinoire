@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19T08:30:45Z",
+  "updated": "2026-11-20T20:30:31Z",
   "source": "ESPN",
   "players": [
     {
@@ -14,6 +14,17 @@
       "note": "ir-nr"
     },
     {
+      "id": 8479542,
+      "name": "Brandon Hagel",
+      "team": "TBL",
+      "pos": "F",
+      "status": "ir",
+      "type": "Lower Body",
+      "returnDate": "2026-11-25",
+      "noteDate": "2026-11-19",
+      "note": "Hagel (lower body) was placed on injured reserve by the Lightning on Thursday, retroactive to Nov. 15, Eduardo A. Encina of the Tampa Bay Times reports."
+    },
+    {
       "id": 8475810,
       "name": "Bryan Rust",
       "team": "PIT",
@@ -21,8 +32,19 @@
       "status": "ir",
       "type": "Lower Body",
       "returnDate": "2026-12-05",
-      "noteDate": "2026-10-22",
-      "note": "Rust (lower body) will be re-evaluated in six weeks, Michelle Crechiolo of the Penguins' official site reports Thursday."
+      "noteDate": "2026-11-20",
+      "note": "Rust (lower body) is skating in a non-contact sweater Friday, Seth Rorabaugh of Tribune-Review Sports reports."
+    },
+    {
+      "id": 8480069,
+      "name": "Cale Makar",
+      "team": "COL",
+      "pos": "D",
+      "status": "ir",
+      "type": "Lower Body",
+      "returnDate": "2026-11-28",
+      "noteDate": "2026-11-19",
+      "note": "ir"
     },
     {
       "id": 8482699,
@@ -31,9 +53,9 @@
       "pos": "F",
       "status": "ir",
       "type": "Upper Body",
-      "returnDate": "2026-11-27",
-      "noteDate": "2026-11-18",
-      "note": "Guenther (upper body) was on the ice for Wednesday's optional morning skate in a non-contact sweater, Brogan Houston of the Deseret News reports."
+      "returnDate": "2026-11-21",
+      "noteDate": "2026-11-20",
+      "note": "Guenther (upper body) was upgraded to day-to-day ahead of Saturday's matchup with Anaheim, Cole Bagley of KSL Sports reports."
     },
     {
       "id": 8479406,
@@ -43,8 +65,8 @@
       "status": "ir",
       "type": "Hip",
       "returnDate": "2026-11-23",
-      "noteDate": "2026-11-18",
-      "note": "Gustavsson (hip) could rejoin the Wild on Monday ahead of their game versus the Sharks, Michael Russo of The Athletic reports."
+      "noteDate": "2026-11-19",
+      "note": "Gustavsson (hip) was reassigned to AHL Iowa on a conditioning assignment Thursday."
     },
     {
       "id": 8484984,
@@ -65,8 +87,8 @@
       "status": "ir",
       "type": "Lower Body",
       "returnDate": "2026-11-27",
-      "noteDate": "2026-10-29",
-      "note": "ir"
+      "noteDate": "2026-11-20",
+      "note": "Marchenko (lower body) was on the ice with his teammates for Friday's optional skate, Lance Hornby of The Toronto Sun reports."
     },
     {
       "id": 8477951,
@@ -80,14 +102,25 @@
       "note": "ir"
     },
     {
-      "id": 8480069,
-      "name": "Cale Makar",
-      "team": "COL",
-      "pos": "D",
+      "id": 8484144,
+      "name": "Connor Bedard",
+      "team": "CHI",
+      "pos": "F",
       "status": "out",
-      "type": "Lower Body",
-      "returnDate": "2026-11-28",
-      "noteDate": "2026-11-14",
+      "type": "Shoulder",
+      "returnDate": "2026-11-27",
+      "noteDate": "2026-11-19",
+      "note": "out"
+    },
+    {
+      "id": 8471215,
+      "name": "Evgeni Malkin",
+      "team": "PIT",
+      "pos": "F",
+      "status": "out",
+      "type": "Upper Body",
+      "returnDate": "2026-11-25",
+      "noteDate": "2026-11-20",
       "note": "out"
     },
     {
@@ -108,31 +141,9 @@
       "pos": "F",
       "status": "dtd",
       "type": "Personal",
-      "returnDate": "2026-11-19",
-      "noteDate": "2026-11-18",
+      "returnDate": "2026-11-21",
+      "noteDate": "2026-11-20",
       "note": "day-to-day"
-    },
-    {
-      "id": 8479542,
-      "name": "Brandon Hagel",
-      "team": "TBL",
-      "pos": "F",
-      "status": "dtd",
-      "type": "Lower Body",
-      "returnDate": "2026-11-19",
-      "noteDate": "2026-11-18",
-      "note": "Hagel is considered day-to-day due to his lower-body injury, Eduardo A. Encina of the Tampa Bay Times reports Wednesday."
-    },
-    {
-      "id": 8484144,
-      "name": "Connor Bedard",
-      "team": "CHI",
-      "pos": "F",
-      "status": "dtd",
-      "type": "Shoulder",
-      "returnDate": "2026-11-19",
-      "noteDate": "2026-11-18",
-      "note": "Bedard is being evaluated for a shoulder injury, Emily Kaplan of ESPN reports Wednesday."
     },
     {
       "id": 8481604,
@@ -143,6 +154,17 @@
       "type": "Lower Body",
       "returnDate": "2026-11-22",
       "noteDate": "2026-11-17",
+      "note": "day-to-day"
+    },
+    {
+      "id": 8480800,
+      "name": "Quinn Hughes",
+      "team": "MIN",
+      "pos": "D",
+      "status": "dtd",
+      "type": "Upper Body",
+      "returnDate": "2026-11-21",
+      "noteDate": "2026-11-20",
       "note": "day-to-day"
     }
   ]
