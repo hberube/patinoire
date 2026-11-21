@@ -1,45 +1,45 @@
 {
-  "lastUpdated": "2026-11-20T20:29:53Z",
+  "lastUpdated": "2026-11-21T00:00:09Z",
   "season": "20262027",
   "previousRanks": {
-    "usr_guillaume_brossard": 1,
-    "usr_michel_bry": 2,
-    "usr_sylvianne": 3,
-    "usr_hugo_berube": 4,
-    "usr_jackson_gagnon": 5,
-    "usr_etienne": 6,
-    "usr_alexandre_comeau": 7,
+    "usr_florence": 1,
+    "usr_julien_berube": 2,
+    "usr_maddox_gagnon": 3,
+    "usr_jackson_gagnon": 4,
+    "usr_vicky": 5,
+    "usr_guillaume_brossard": 6,
+    "usr_vincent": 7,
     "usr_elrick": 8,
-    "usr_simon": 9,
-    "usr_vincent": 10,
-    "usr_julien_berube": 11,
-    "usr_eve": 12,
-    "usr_marjolaine_comeau": 13,
-    "usr_florence": 14,
-    "usr_jolyne_brossard": 15,
-    "usr_louise_trottier": 16,
-    "usr_vicky": 17,
-    "usr_maddox_gagnon": 18
+    "usr_eve": 9,
+    "usr_jolyne_brossard": 10,
+    "usr_hugo_berube": 11,
+    "usr_etienne": 12,
+    "usr_alexandre_comeau": 13,
+    "usr_marjolaine_comeau": 14,
+    "usr_michel_bry": 15,
+    "usr_sylvianne": 15,
+    "usr_simon": 17,
+    "usr_louise_trottier": 18
   },
   "previousPoints": {
-    "usr_guillaume_brossard": 475,
-    "usr_michel_bry": 474,
-    "usr_sylvianne": 470,
-    "usr_hugo_berube": 462,
-    "usr_jackson_gagnon": 460,
-    "usr_etienne": 457,
-    "usr_alexandre_comeau": 454,
-    "usr_elrick": 453,
-    "usr_simon": 446,
-    "usr_vincent": 423,
-    "usr_julien_berube": 418,
-    "usr_eve": 417,
-    "usr_marjolaine_comeau": 409,
-    "usr_florence": 408,
-    "usr_jolyne_brossard": 398,
-    "usr_louise_trottier": 386,
-    "usr_vicky": 366,
-    "usr_maddox_gagnon": 354
+    "usr_florence": 118,
+    "usr_julien_berube": 107,
+    "usr_maddox_gagnon": 92,
+    "usr_jackson_gagnon": 87,
+    "usr_vicky": 74,
+    "usr_guillaume_brossard": 74,
+    "usr_vincent": 72,
+    "usr_elrick": 65,
+    "usr_eve": 53,
+    "usr_jolyne_brossard": 49,
+    "usr_hugo_berube": 47,
+    "usr_etienne": 44,
+    "usr_alexandre_comeau": 36,
+    "usr_marjolaine_comeau": 35,
+    "usr_michel_bry": 34,
+    "usr_sylvianne": 34,
+    "usr_simon": 31,
+    "usr_louise_trottier": 26
   },
   "standings": [
     {
@@ -417,8 +417,8 @@
       ],
       "formerStats": [],
       "rank": 1,
-      "previousRank": 14,
-      "pointsDelta": -290
+      "previousRank": 1,
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_julien_berube",
@@ -795,8 +795,8 @@
       ],
       "formerStats": [],
       "rank": 2,
-      "previousRank": 11,
-      "pointsDelta": -311
+      "previousRank": 2,
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_maddox_gagnon",
@@ -1173,8 +1173,8 @@
       ],
       "formerStats": [],
       "rank": 3,
-      "previousRank": 18,
-      "pointsDelta": -262
+      "previousRank": 3,
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_jackson_gagnon",
@@ -1551,8 +1551,8 @@
       ],
       "formerStats": [],
       "rank": 4,
-      "previousRank": 5,
-      "pointsDelta": -373
+      "previousRank": 4,
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_vicky",
@@ -1929,8 +1929,8 @@
       ],
       "formerStats": [],
       "rank": 5,
-      "previousRank": 17,
-      "pointsDelta": -292
+      "previousRank": 5,
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_guillaume_brossard",
@@ -2307,8 +2307,8 @@
       ],
       "formerStats": [],
       "rank": 6,
-      "previousRank": 1,
-      "pointsDelta": -401
+      "previousRank": 6,
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_vincent",
@@ -2685,8 +2685,8 @@
       ],
       "formerStats": [],
       "rank": 7,
-      "previousRank": 10,
-      "pointsDelta": -351
+      "previousRank": 7,
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_elrick",
@@ -3064,7 +3064,7 @@
       "formerStats": [],
       "rank": 8,
       "previousRank": 8,
-      "pointsDelta": -388
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_eve",
@@ -3441,8 +3441,8 @@
       ],
       "formerStats": [],
       "rank": 9,
-      "previousRank": 12,
-      "pointsDelta": -364
+      "previousRank": 9,
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_jolyne_brossard",
@@ -3819,8 +3819,8 @@
       ],
       "formerStats": [],
       "rank": 10,
-      "previousRank": 15,
-      "pointsDelta": -349
+      "previousRank": 10,
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_hugo_berube",
@@ -4197,8 +4197,8 @@
       ],
       "formerStats": [],
       "rank": 11,
-      "previousRank": 4,
-      "pointsDelta": -415
+      "previousRank": 11,
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_etienne",
@@ -4575,8 +4575,8 @@
       ],
       "formerStats": [],
       "rank": 12,
-      "previousRank": 6,
-      "pointsDelta": -413
+      "previousRank": 12,
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_alexandre_comeau",
@@ -4953,8 +4953,8 @@
       ],
       "formerStats": [],
       "rank": 13,
-      "previousRank": 7,
-      "pointsDelta": -418
+      "previousRank": 13,
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_marjolaine_comeau",
@@ -5331,8 +5331,8 @@
       ],
       "formerStats": [],
       "rank": 14,
-      "previousRank": 13,
-      "pointsDelta": -374
+      "previousRank": 14,
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_michel_bry",
@@ -5709,8 +5709,8 @@
       ],
       "formerStats": [],
       "rank": 15,
-      "previousRank": 2,
-      "pointsDelta": -440
+      "previousRank": 15,
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_sylvianne",
@@ -6087,8 +6087,8 @@
       ],
       "formerStats": [],
       "rank": 15,
-      "previousRank": 3,
-      "pointsDelta": -436
+      "previousRank": 15,
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_simon",
@@ -6465,8 +6465,8 @@
       ],
       "formerStats": [],
       "rank": 17,
-      "previousRank": 9,
-      "pointsDelta": -415
+      "previousRank": 17,
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_louise_trottier",
@@ -6843,8 +6843,8 @@
       ],
       "formerStats": [],
       "rank": 18,
-      "previousRank": 16,
-      "pointsDelta": -360
+      "previousRank": 18,
+      "pointsDelta": 0
     }
   ]
 }
