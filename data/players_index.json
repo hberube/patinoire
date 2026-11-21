@@ -812,13 +812,6 @@
     "points": 3
   },
   {
-    "id": 8477938,
-    "name": "Haydn Fleury",
-    "pos": "D",
-    "team": "WPG",
-    "points": 3
-  },
-  {
     "id": 8476914,
     "name": "Joonas Korpisalo",
     "pos": "G",
@@ -961,6 +954,13 @@
   {
     "id": 8484770,
     "name": "Sam O'Reilly",
+    "pos": "F",
+    "team": "TBL",
+    "points": 2
+  },
+  {
+    "id": 8477149,
+    "name": "Scott Sabourin",
     "pos": "F",
     "team": "TBL",
     "points": 2
@@ -1393,13 +1393,6 @@
     "points": 0
   },
   {
-    "id": 8481567,
-    "name": "Henry Thrun",
-    "pos": "D",
-    "team": "WPG",
-    "points": 0
-  },
-  {
     "id": 8484984,
     "name": "Ivan Demidov",
     "pos": "F",
@@ -1439,6 +1432,13 @@
     "name": "James Reimer",
     "pos": "G",
     "team": "NYR",
+    "points": 0
+  },
+  {
+    "id": 8483497,
+    "name": "Jani Nyman",
+    "pos": "F",
+    "team": "SEA",
     "points": 0
   },
   {
