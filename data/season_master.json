@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-21T03:30:07Z",
+  "lastUpdated": "2026-11-21T04:00:07Z",
   "season": "20262027",
   "players": {
     "8478859": {
@@ -386,24 +386,24 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8479353": {
-      "name": "Brett Howden",
-      "pos": "F",
-      "team": "VGK",
-      "gp": 24,
-      "goals": 7,
-      "assists": 3,
-      "soGoals": 0,
-      "wins": 0,
-      "shutouts": 0,
-      "otl": 0
-    },
     "8475343": {
       "name": "Nic Dowd",
       "pos": "F",
       "team": "VGK",
       "gp": 24,
       "goals": 0,
+      "assists": 3,
+      "soGoals": 0,
+      "wins": 0,
+      "shutouts": 0,
+      "otl": 0
+    },
+    "8479353": {
+      "name": "Brett Howden",
+      "pos": "F",
+      "team": "VGK",
+      "gp": 24,
+      "goals": 7,
       "assists": 3,
       "soGoals": 0,
       "wins": 0,
@@ -494,13 +494,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8478147": {
-      "name": "Bokondji Imama",
-      "pos": "F",
-      "team": "FLA",
-      "gp": 23,
-      "goals": 0,
-      "assists": 0,
+    "8476854": {
+      "name": "Hampus Lindholm",
+      "pos": "D",
+      "team": "BOS",
+      "gp": 22,
+      "goals": 1,
+      "assists": 4,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
@@ -530,13 +530,13 @@
       "shutouts": 0,
       "otl": 0
     },
-    "8476854": {
-      "name": "Hampus Lindholm",
-      "pos": "D",
-      "team": "BOS",
-      "gp": 22,
-      "goals": 1,
-      "assists": 4,
+    "8478147": {
+      "name": "Bokondji Imama",
+      "pos": "F",
+      "team": "FLA",
+      "gp": 23,
+      "goals": 0,
+      "assists": 0,
       "soGoals": 0,
       "wins": 0,
       "shutouts": 0,
