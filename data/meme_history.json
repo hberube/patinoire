@@ -1,19 +1,6 @@
 {
   "memes": [
     {
-      "gameDay": "2026-11-05",
-      "category": "bingo",
-      "format": "breaking",
-      "subject": {
-        "kind": "team",
-        "id": "usr_vicky"
-      },
-      "fr": {
-        "headline": "SOUTENANCE : LES PHD FATIGUÉES RECALÉES AU BINGO",
-        "ticker": "VICKY : 2 CASES, 0 LIGNE · « ÉCHANTILLON TROP PETIT »"
-      }
-    },
-    {
       "gameDay": "2026-11-06",
       "category": "player",
       "format": "classic",
@@ -132,6 +119,19 @@
       "fr": {
         "top": "MÉCHANTS GRISONNANTS : 0 CASE AU BINGO",
         "bottom": "LA CARTE EST RESTÉE AUSSI BLANCHE QUE LEURS TEMPES"
+      }
+    },
+    {
+      "gameDay": "2026-11-19",
+      "category": "player",
+      "format": "breaking",
+      "subject": {
+        "kind": "player",
+        "id": 8483457
+      },
+      "fr": {
+        "headline": "LANE HUTSON 2, CAROLINE 1 (EN PROLONGATION)",
+        "ticker": "2 BUTS D'UN D · CAUFIELD DEMANDE À JOUER À LA DÉFENSE"
       }
     }
   ]

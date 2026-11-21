@@ -1,36 +1,36 @@
 {
-  "gameDay": "2026-11-18",
-  "generatedAt": "2026-11-19T08:31:07Z",
+  "gameDay": "2026-11-19",
+  "generatedAt": "2026-11-21T00:01:59Z",
   "fr": {
-    "title": "Marjolaine explose, Guillaume ne tient que par un point",
+    "title": "Louise fait bingo, Florence file en tête",
     "bullets": [
-      "👑 Guillaume (Laser Kiwis) reste en tête avec 475 points, mais Michel (Les Ducks) lui souffle dans le cou à 474 après une soirée de 5 points.",
-      "Hugo (Crazy Blue Heelers) grimpe de deux rangs au 4e échelon avec 462 points. Les Heelers sont en feu!",
-      "Marjolaine (mchb) a eu la meilleure soirée avec 10 points, dont le but de Zacha, et passe au 13e rang.",
-      "🎯 Bingo : Marjolaine rafle 3 lignes avec 6 cases. Simon (Les Méchants Grisonnants) a fait chou blanc, et Louise (Les huards) a eu 4 cases sans aucune ligne. Aïe!",
-      "Le Canadien l'emporte 3-2 au New Jersey. Suzuki marque et est à 9 buts, à un de la dizaine. Caufield est à un point de 20, et 14 participants l'ont!",
-      "🩹 Infirmerie : Brandon Hagel (TBL), que 5 participants ont dans leur alignement, passe d'absent à incertain au jour le jour. Retour possible demain."
+      "🎯 Bingo: Louise (Les huards) rafle la soirée avec 5 lignes. Florence ferme la marche: 0 ligne, 2 cases.",
+      "Florence reste en tête avec 118 pts, 11 de plus que Julien (107). Le haut du classement n'a pas bronché.",
+      "Lane Hutson a marqué à Caroline, avec des aides de Suzuki et Caufield: 8 participants sourient.",
+      "Maddox profite d'Ehlers et de Nelson, et Vincent a Kaprizov, aidé par Boldy et Hughes.",
+      "Sylvianne (Maman Girafe) recule d'un rang: égalée à 34 pts par Michel (Les Ducks), qui la devance avec ses 71 lignes de bingo.",
+      "🚑 Infirmerie: Malkin (PIT) est absent, ouch pour Vicky et Eve. Bedard (CHI) aussi, 8 participants touchés."
     ]
   },
   "en": {
-    "title": "Marjolaine erupts, Guillaume clings to a one-point lead",
+    "title": "Louise hits bingo, Florence stays on top",
     "bullets": [
-      "👑 Guillaume (Laser Kiwis) stays on top with 475 points, but Michel (Les Ducks) is right behind at 474 after a 5-point night.",
-      "Hugo (Crazy Blue Heelers) climbs two spots to 4th with 462 points. The Heelers are on fire!",
-      "Marjolaine (mchb) had the best night with 10 points, including Zacha's goal, and moves up to 13th.",
-      "🎯 Bingo: Marjolaine sweeps 3 lines with 6 squares. Simon (Les Méchants Grisonnants) was shut out, and Louise (Les huards) got 4 squares but no line. Ouch!",
-      "Montreal wins 3-2 in New Jersey. Suzuki scores and sits at 9 goals, one shy of 10. Caufield is a point from 20, and 14 participants own him!",
-      "🩹 Injuries: Brandon Hagel (TBL), rostered by 5 participants, goes from out to day-to-day. A return could come tomorrow."
+      "🎯 Bingo: Louise (Les huards) takes the night with 5 lines. Florence brings up the rear: 0 lines, 2 squares.",
+      "Florence stays in front with 118 pts, 11 clear of Julien (107). The top of the standings didn't budge.",
+      "Lane Hutson scored in Carolina, with assists from Suzuki and Caufield: 8 participants are smiling.",
+      "Maddox cashes in on Ehlers and Nelson, and Vincent has Kaprizov, set up by Boldy and Hughes.",
+      "Sylvianne (Maman Girafe) slips a spot: tied at 34 pts with Michel (Les Ducks), who edges ahead on 71 bingo lines.",
+      "🚑 Infirmary: Malkin (PIT) is out, ouch for Vicky and Eve. Bedard (CHI) too, hitting 8 participants."
     ]
   },
   "image": {
     "fr": {
       "src": "data/recap-fr.png",
-      "alt": "MÉCHANTS GRISONNANTS : 0 CASE AU BINGO / LA CARTE EST RESTÉE AUSSI BLANCHE QUE LEURS TEMPES"
+      "alt": "LANE HUTSON 2, CAROLINE 1 (EN PROLONGATION) — 2 BUTS D'UN D · CAUFIELD DEMANDE À JOUER À LA DÉFENSE"
     },
     "en": {
       "src": "data/recap-en.png",
-      "alt": "THE MEAN GREYBEARDS: 0 BINGO SQUARES / 18 CARDS PLAYED. HIS STAYED WHITER THAN HIS BEARD."
+      "alt": "HUTSON 2, CAROLINA 1 — HABS CALL IT A TEAM WIN — BOTH GOALS BY A D-MAN · CAUFIELD ASKS TO TRY DEFENSE"
     }
   }
 }
