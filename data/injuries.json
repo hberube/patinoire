@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21T08:30:47Z",
+  "updated": "2026-11-22T05:57:10Z",
   "source": "ESPN",
   "players": [
     {
@@ -53,7 +53,7 @@
       "pos": "F",
       "status": "ir",
       "type": "Upper Body",
-      "returnDate": "2026-11-21",
+      "returnDate": "2026-11-23",
       "noteDate": "2026-11-20",
       "note": "Guenther (upper body) was upgraded to day-to-day ahead of Saturday's matchup with Anaheim, Cole Bagley of KSL Sports reports."
     },
@@ -86,9 +86,9 @@
       "pos": "F",
       "status": "ir",
       "type": "Lower Body",
-      "returnDate": "2026-11-27",
-      "noteDate": "2026-11-20",
-      "note": "Marchenko (lower body) was on the ice with his teammates for Friday's optional skate, Lance Hornby of The Toronto Sun reports."
+      "returnDate": "2026-11-23",
+      "noteDate": "2026-11-21",
+      "note": "Marchenko (lower body) is day-to-day, according to David Alter of The Hockey News on Saturday."
     },
     {
       "id": 8477951,
@@ -102,15 +102,59 @@
       "note": "ir"
     },
     {
+      "id": 8481604,
+      "name": "Pavel Dorofeyev",
+      "team": "NYR",
+      "pos": "F",
+      "status": "ir",
+      "type": "Lower Body",
+      "returnDate": "2026-11-22",
+      "noteDate": "2026-11-21",
+      "note": "ir"
+    },
+    {
+      "id": 8478550,
+      "name": "Artemi Panarin",
+      "team": "LAK",
+      "pos": "F",
+      "status": "out",
+      "type": "Personal",
+      "returnDate": "2026-11-23",
+      "noteDate": "2026-11-21",
+      "note": "out"
+    },
+    {
+      "id": 8479343,
+      "name": "Clayton Keller",
+      "team": "UTA",
+      "pos": "F",
+      "status": "out",
+      "type": "Illness",
+      "returnDate": "2026-11-23",
+      "noteDate": "2026-11-22",
+      "note": "out"
+    },
+    {
       "id": 8484144,
       "name": "Connor Bedard",
       "team": "CHI",
       "pos": "F",
       "status": "out",
       "type": "Shoulder",
-      "returnDate": "2026-11-27",
-      "noteDate": "2026-11-19",
-      "note": "out"
+      "returnDate": "2027-03-01",
+      "noteDate": "2026-11-22",
+      "note": "Bedard will undergo surgery on his injured right shoulder in the coming week, Ben Pope of the Chicago Sun-Times reports."
+    },
+    {
+      "id": 8480012,
+      "name": "Elias Pettersson",
+      "team": "VAN",
+      "pos": "F",
+      "status": "out",
+      "type": "Upper Body",
+      "returnDate": "2026-11-22",
+      "noteDate": "2026-11-21",
+      "note": "Pettersson (upper body) isn't expected to play against Chicago on Sunday, per Canucks play-by-play announcer Brendan Batchelor."
     },
     {
       "id": 8471215,
@@ -130,41 +174,41 @@
       "pos": "F",
       "status": "out",
       "type": "Lower Body",
-      "returnDate": "2026-12-12",
-      "noteDate": "2026-11-14",
-      "note": "MacKinnon (lower body) will miss at least one month, per Corey Masisak of The Denver Post on Saturday."
+      "returnDate": "2027-02-13",
+      "noteDate": "2026-11-21",
+      "note": "MacKinnon (lower body) has been evaluated by a specialist and is expected to miss the next 12 weeks, Aarif Deen of Colorado Hockey Now reports Saturday."
     },
     {
-      "id": 8478550,
-      "name": "Artemi Panarin",
-      "team": "LAK",
+      "id": 8477940,
+      "name": "Nikolaj Ehlers",
+      "team": "CAR",
       "pos": "F",
-      "status": "dtd",
-      "type": "Personal",
-      "returnDate": "2026-11-21",
-      "noteDate": "2026-11-20",
-      "note": "day-to-day"
-    },
-    {
-      "id": 8481604,
-      "name": "Pavel Dorofeyev",
-      "team": "NYR",
-      "pos": "F",
-      "status": "dtd",
-      "type": "Lower Body",
-      "returnDate": "2026-11-22",
-      "noteDate": "2026-11-17",
-      "note": "day-to-day"
+      "status": "out",
+      "type": "Undisclosed",
+      "returnDate": "2026-11-25",
+      "noteDate": "2026-11-21",
+      "note": "Ehlers (undisclosed) won't play Sunday against the Rangers, per Chip Alexander of The Raleigh News &amp; Observer."
     },
     {
       "id": 8480800,
       "name": "Quinn Hughes",
       "team": "MIN",
       "pos": "D",
+      "status": "out",
+      "type": "Upper Body",
+      "returnDate": "2026-11-25",
+      "noteDate": "2026-11-21",
+      "note": "Hughes (upper body) will miss the rest of Minnesota's road trip, per Joe Smith of The Athletic on Saturday."
+    },
+    {
+      "id": 8484153,
+      "name": "Leo Carlsson",
+      "team": "ANA",
+      "pos": "F",
       "status": "dtd",
       "type": "Upper Body",
-      "returnDate": "2026-11-21",
-      "noteDate": "2026-11-20",
+      "returnDate": "2026-11-23",
+      "noteDate": "2026-11-22",
       "note": "day-to-day"
     }
   ]
