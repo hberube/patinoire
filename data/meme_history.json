@@ -1,19 +1,6 @@
 {
   "memes": [
     {
-      "gameDay": "2026-11-06",
-      "category": "player",
-      "format": "classic",
-      "subject": {
-        "kind": "player",
-        "id": 8478864
-      },
-      "fr": {
-        "top": "SEUL À LA TABLE, VINCENT MISE SUR KAPRIZOV",
-        "bottom": "4 BUTS DU WILD, 4 POINTS DE KIRILL : LE HABSROLLER RAFLE LE POT"
-      }
-    },
-    {
       "gameDay": "2026-11-07",
       "category": "participant",
       "format": "breaking",
@@ -132,6 +119,19 @@
       "fr": {
         "headline": "LANE HUTSON 2, CAROLINE 1 (EN PROLONGATION)",
         "ticker": "2 BUTS D'UN D · CAUFIELD DEMANDE À JOUER À LA DÉFENSE"
+      }
+    },
+    {
+      "gameDay": "2026-11-21",
+      "category": "bingo",
+      "format": "classic",
+      "subject": {
+        "kind": "team",
+        "id": "usr_florence"
+      },
+      "fr": {
+        "top": "FLORENCE : 1RE AU POOL, 5 LIGNES AU BINGO",
+        "bottom": "PROCHAINE TOURNÉE : LES 17 AUTRES CHANTENT « SHAKE IT OFF »"
       }
     }
   ]

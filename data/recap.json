@@ -1,36 +1,34 @@
 {
-  "gameDay": "2026-11-19",
-  "generatedAt": "2026-11-21T00:01:59Z",
+  "gameDay": "2026-11-21",
+  "generatedAt": "2026-11-22T08:31:09Z",
   "fr": {
-    "title": "Louise fait bingo, Florence file en tête",
+    "title": "Florence file en tête, Celebrini frappe à la porte des 30",
     "bullets": [
-      "🎯 Bingo: Louise (Les huards) rafle la soirée avec 5 lignes. Florence ferme la marche: 0 ligne, 2 cases.",
-      "Florence reste en tête avec 118 pts, 11 de plus que Julien (107). Le haut du classement n'a pas bronché.",
-      "Lane Hutson a marqué à Caroline, avec des aides de Suzuki et Caufield: 8 participants sourient.",
-      "Maddox profite d'Ehlers et de Nelson, et Vincent a Kaprizov, aidé par Boldy et Hughes.",
-      "Sylvianne (Maman Girafe) recule d'un rang: égalée à 34 pts par Michel (Les Ducks), qui la devance avec ses 71 lignes de bingo.",
-      "🚑 Infirmerie: Malkin (PIT) est absent, ouch pour Vicky et Eve. Bedard (CHI) aussi, 8 participants touchés."
+      "🎯 Bingo : Florence rafle 5 lignes avec 7 cases. Vicky et Vincent suivent à 4 lignes. Elrick? Une seule case, gros câlin.",
+      "Course en tête : Florence 124, Julien 112, Maddox 98. Florence a ajouté 6 points hier, l'écart tient.",
+      "Celebrini (SJS) marque et plafonne à 29 points, à un petit point des 30. Florence et Vicky sourient.",
+      "Hugo grimpe au 10e rang, égal à 51 avec Jolyne, mais devant grâce au bingo. Louise, zéro point : les huards ont plongé.",
+      "🏥 Infirmerie : Ehlers (CAR, à Maddox) est absent. Hughes (MIN) passe d'incertain à absent, tout comme Pettersson (VAN), chacun dans 6 équipes."
     ]
   },
   "en": {
-    "title": "Louise hits bingo, Florence stays on top",
+    "title": "Florence stays on top, Celebrini knocks on the 30 door",
     "bullets": [
-      "🎯 Bingo: Louise (Les huards) takes the night with 5 lines. Florence brings up the rear: 0 lines, 2 squares.",
-      "Florence stays in front with 118 pts, 11 clear of Julien (107). The top of the standings didn't budge.",
-      "Lane Hutson scored in Carolina, with assists from Suzuki and Caufield: 8 participants are smiling.",
-      "Maddox cashes in on Ehlers and Nelson, and Vincent has Kaprizov, set up by Boldy and Hughes.",
-      "Sylvianne (Maman Girafe) slips a spot: tied at 34 pts with Michel (Les Ducks), who edges ahead on 71 bingo lines.",
-      "🚑 Infirmary: Malkin (PIT) is out, ouch for Vicky and Eve. Bedard (CHI) too, hitting 8 participants."
+      "🎯 Bingo: Florence sweeps 5 lines with 7 squares. Vicky and Vincent follow with 4 lines. Elrick? One square, big hug.",
+      "Title race: Florence 124, Julien 112, Maddox 98. Florence added 6 points last night, and the gap holds.",
+      "Celebrini (SJS) scores and sits at 29 points, one shy of 30. Florence and Vicky are smiling.",
+      "Hugo climbs to 10th, tied at 51 with Jolyne but ahead on bingo lines. Louise got zero points: the loons took a dive.",
+      "🏥 Infirmary: Ehlers (CAR, Maddox's) is out. Hughes (MIN) goes from day-to-day to out, as does Pettersson (VAN), each rostered by 6 teams."
     ]
   },
   "image": {
     "fr": {
       "src": "data/recap-fr.png",
-      "alt": "LANE HUTSON 2, CAROLINE 1 (EN PROLONGATION) — 2 BUTS D'UN D · CAUFIELD DEMANDE À JOUER À LA DÉFENSE"
+      "alt": "FLORENCE : 1RE AU POOL, 5 LIGNES AU BINGO / PROCHAINE TOURNÉE : LES 17 AUTRES CHANTENT « SHAKE IT OFF »"
     },
     "en": {
       "src": "data/recap-en.png",
-      "alt": "HUTSON 2, CAROLINA 1 — HABS CALL IT A TEAM WIN — BOTH GOALS BY A D-MAN · CAUFIELD ASKS TO TRY DEFENSE"
+      "alt": "FLORENCE: 1ST IN THE POOL, 5 BINGO LINES / THE OTHER 17 ARE NOW JUST OPENING ACTS ON THE ERAS TOUR"
     }
   }
 }
