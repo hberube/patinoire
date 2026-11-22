@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-22T05:56:29Z",
+  "lastUpdated": "2026-11-22T08:30:05Z",
   "season": "20262027",
   "previousRanks": {
     "usr_florence": 1,
@@ -46,9 +46,9 @@
       "participantId": "usr_florence",
       "participantName": "Florence",
       "teamName": "The Eras Tour: Stanley Cup Edition",
-      "totalPoints": 122,
-      "totalGoals": 33,
-      "totalAssists": 66,
+      "totalPoints": 124,
+      "totalGoals": 34,
+      "totalAssists": 67,
       "goalieWins": 21,
       "shootoutGoals": 0,
       "tradesUsed": {
@@ -63,15 +63,15 @@
           "pos": "F",
           "group": 1,
           "team": "SJS",
-          "gp": 22,
+          "gp": 23,
           "stats": {
-            "goals": 9,
-            "assists": 18,
+            "goals": 10,
+            "assists": 19,
             "soGoals": 2,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 27
+            "points": 29
           }
         },
         {
@@ -418,7 +418,7 @@
       "formerStats": [],
       "rank": 1,
       "previousRank": 1,
-      "pointsDelta": 4
+      "pointsDelta": 6
     },
     {
       "participantId": "usr_julien_berube",
@@ -1558,9 +1558,9 @@
       "participantId": "usr_vicky",
       "participantName": "Vicky",
       "teamName": "Les PhD fatiguées",
-      "totalPoints": 78,
-      "totalGoals": 22,
-      "totalAssists": 37,
+      "totalPoints": 80,
+      "totalGoals": 23,
+      "totalAssists": 38,
       "goalieWins": 17,
       "shootoutGoals": 0,
       "tradesUsed": {
@@ -1575,15 +1575,15 @@
           "pos": "F",
           "group": 1,
           "team": "SJS",
-          "gp": 22,
+          "gp": 23,
           "stats": {
-            "goals": 9,
-            "assists": 18,
+            "goals": 10,
+            "assists": 19,
             "soGoals": 2,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 27
+            "points": 29
           }
         },
         {
@@ -1930,7 +1930,7 @@
       "formerStats": [],
       "rank": 5,
       "previousRank": 5,
-      "pointsDelta": 4
+      "pointsDelta": 6
     },
     {
       "participantId": "usr_guillaume_brossard",

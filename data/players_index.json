@@ -25,7 +25,7 @@
     "name": "Macklin Celebrini",
     "pos": "F",
     "team": "SJS",
-    "points": 27
+    "points": 29
   },
   {
     "id": 8477495,
@@ -630,6 +630,13 @@
     "points": 5
   },
   {
+    "id": 8477968,
+    "name": "Alex Nedeljkovic",
+    "pos": "G",
+    "team": "SJS",
+    "points": 5
+  },
+  {
     "id": 8481546,
     "name": "Cam York",
     "pos": "D",
@@ -693,13 +700,6 @@
     "points": 5
   },
   {
-    "id": 8477968,
-    "name": "Alex Nedeljkovic",
-    "pos": "G",
-    "team": "SJS",
-    "points": 4
-  },
-  {
     "id": 8483548,
     "name": "Brandon Bussi",
     "pos": "G",
@@ -756,6 +756,13 @@
     "points": 4
   },
   {
+    "id": 8482447,
+    "name": "Leevi Merilainen",
+    "pos": "G",
+    "team": "VAN",
+    "points": 4
+  },
+  {
     "id": 8480843,
     "name": "Lukas Dostal",
     "pos": "G",
@@ -774,6 +781,13 @@
     "name": "Matt Roy",
     "pos": "D",
     "team": "WSH",
+    "points": 4
+  },
+  {
+    "id": 8473422,
+    "name": "Nick Foligno",
+    "pos": "F",
+    "team": "MIN",
     "points": 4
   },
   {
@@ -840,13 +854,6 @@
     "points": 3
   },
   {
-    "id": 8477938,
-    "name": "Haydn Fleury",
-    "pos": "D",
-    "team": "WPG",
-    "points": 3
-  },
-  {
     "id": 8476914,
     "name": "Joonas Korpisalo",
     "pos": "G",
@@ -861,24 +868,10 @@
     "points": 3
   },
   {
-    "id": 8482447,
-    "name": "Leevi Merilainen",
-    "pos": "G",
-    "team": "VAN",
-    "points": 3
-  },
-  {
     "id": 8475343,
     "name": "Nic Dowd",
     "pos": "F",
     "team": "VGK",
-    "points": 3
-  },
-  {
-    "id": 8473422,
-    "name": "Nick Foligno",
-    "pos": "F",
-    "team": "MIN",
     "points": 3
   },
   {
@@ -975,6 +968,13 @@
   {
     "id": 8484770,
     "name": "Sam O'Reilly",
+    "pos": "F",
+    "team": "TBL",
+    "points": 2
+  },
+  {
+    "id": 8477149,
+    "name": "Scott Sabourin",
     "pos": "F",
     "team": "TBL",
     "points": 2
@@ -1393,13 +1393,6 @@
     "points": 0
   },
   {
-    "id": 8481567,
-    "name": "Henry Thrun",
-    "pos": "D",
-    "team": "WPG",
-    "points": 0
-  },
-  {
     "id": 8484984,
     "name": "Ivan Demidov",
     "pos": "F",
@@ -1439,6 +1432,13 @@
     "name": "James Reimer",
     "pos": "G",
     "team": "NYR",
+    "points": 0
+  },
+  {
+    "id": 8483497,
+    "name": "Jani Nyman",
+    "pos": "F",
+    "team": "SEA",
     "points": 0
   },
   {
