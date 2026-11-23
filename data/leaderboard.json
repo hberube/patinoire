@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-22T08:30:05Z",
+  "lastUpdated": "2026-11-23T03:46:23Z",
   "season": "20262027",
   "previousRanks": {
     "usr_florence": 1,
@@ -11,8 +11,8 @@
     "usr_vincent": 7,
     "usr_elrick": 8,
     "usr_eve": 9,
+    "usr_hugo_berube": 10,
     "usr_jolyne_brossard": 10,
-    "usr_hugo_berube": 11,
     "usr_etienne": 12,
     "usr_alexandre_comeau": 13,
     "usr_marjolaine_comeau": 14,
@@ -22,23 +22,23 @@
     "usr_louise_trottier": 18
   },
   "previousPoints": {
-    "usr_florence": 118,
-    "usr_julien_berube": 107,
-    "usr_maddox_gagnon": 92,
-    "usr_jackson_gagnon": 87,
-    "usr_vicky": 74,
-    "usr_guillaume_brossard": 74,
-    "usr_vincent": 72,
-    "usr_elrick": 65,
-    "usr_eve": 53,
-    "usr_jolyne_brossard": 49,
-    "usr_hugo_berube": 47,
-    "usr_etienne": 44,
-    "usr_alexandre_comeau": 36,
-    "usr_marjolaine_comeau": 35,
-    "usr_michel_bry": 34,
-    "usr_sylvianne": 34,
-    "usr_simon": 31,
+    "usr_florence": 124,
+    "usr_julien_berube": 112,
+    "usr_maddox_gagnon": 98,
+    "usr_jackson_gagnon": 89,
+    "usr_vicky": 80,
+    "usr_guillaume_brossard": 76,
+    "usr_vincent": 73,
+    "usr_elrick": 67,
+    "usr_eve": 55,
+    "usr_hugo_berube": 51,
+    "usr_jolyne_brossard": 51,
+    "usr_etienne": 46,
+    "usr_alexandre_comeau": 38,
+    "usr_marjolaine_comeau": 37,
+    "usr_michel_bry": 36,
+    "usr_sylvianne": 36,
+    "usr_simon": 33,
     "usr_louise_trottier": 26
   },
   "standings": [
@@ -233,7 +233,7 @@
           "pos": "F",
           "group": 11,
           "team": "CAR",
-          "gp": 23,
+          "gp": 24,
           "stats": {
             "goals": 13,
             "assists": 10,
@@ -418,15 +418,15 @@
       "formerStats": [],
       "rank": 1,
       "previousRank": 1,
-      "pointsDelta": 6
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_julien_berube",
       "participantName": "Julien Bérubé",
       "teamName": "No Regretzkys",
-      "totalPoints": 112,
+      "totalPoints": 113,
       "totalGoals": 34,
-      "totalAssists": 55,
+      "totalAssists": 56,
       "goalieWins": 21,
       "shootoutGoals": 0,
       "tradesUsed": {
@@ -458,15 +458,15 @@
           "pos": "F",
           "group": 2,
           "team": "CAR",
-          "gp": 23,
+          "gp": 24,
           "stats": {
             "goals": 13,
-            "assists": 19,
+            "assists": 20,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 32
+            "points": 33
           }
         },
         {
@@ -611,7 +611,7 @@
           "pos": "F",
           "group": 11,
           "team": "CAR",
-          "gp": 23,
+          "gp": 24,
           "stats": {
             "goals": 13,
             "assists": 10,
@@ -796,16 +796,16 @@
       "formerStats": [],
       "rank": 2,
       "previousRank": 2,
-      "pointsDelta": 5
+      "pointsDelta": 1
     },
     {
       "participantId": "usr_maddox_gagnon",
       "participantName": "Maddox Gagnon",
       "teamName": "SK|MADDOXG",
-      "totalPoints": 98,
+      "totalPoints": 100,
       "totalGoals": 32,
-      "totalAssists": 46,
-      "goalieWins": 16,
+      "totalAssists": 47,
+      "goalieWins": 17,
       "shootoutGoals": 0,
       "tradesUsed": {
         "F": 0,
@@ -836,15 +836,15 @@
           "pos": "F",
           "group": 2,
           "team": "CAR",
-          "gp": 23,
+          "gp": 24,
           "stats": {
             "goals": 13,
-            "assists": 19,
+            "assists": 20,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 32
+            "points": 33
           }
         },
         {
@@ -989,7 +989,7 @@
           "pos": "F",
           "group": 11,
           "team": "CAR",
-          "gp": 23,
+          "gp": 24,
           "stats": {
             "goals": 13,
             "assists": 10,
@@ -1125,15 +1125,15 @@
           "pos": "G",
           "group": 19,
           "team": "STL",
-          "gp": 16,
+          "gp": 17,
           "stats": {
             "goals": 0,
             "assists": 1,
             "soGoals": 0,
-            "wins": 9,
+            "wins": 10,
             "shutouts": 2,
             "otl": 1,
-            "points": 14
+            "points": 15
           }
         },
         {
@@ -1174,16 +1174,16 @@
       "formerStats": [],
       "rank": 3,
       "previousRank": 3,
-      "pointsDelta": 6
+      "pointsDelta": 2
     },
     {
       "participantId": "usr_jackson_gagnon",
       "participantName": "Jackson Gagnon",
       "teamName": "Les Anglers",
-      "totalPoints": 89,
+      "totalPoints": 92,
       "totalGoals": 21,
       "totalAssists": 36,
-      "goalieWins": 22,
+      "goalieWins": 23,
       "shootoutGoals": 0,
       "tradesUsed": {
         "F": 0,
@@ -1367,7 +1367,7 @@
           "pos": "F",
           "group": 11,
           "team": "CAR",
-          "gp": 23,
+          "gp": 24,
           "stats": {
             "goals": 13,
             "assists": 10,
@@ -1503,15 +1503,15 @@
           "pos": "G",
           "group": 19,
           "team": "DAL",
-          "gp": 17,
+          "gp": 18,
           "stats": {
             "goals": 0,
             "assists": 0,
             "soGoals": 0,
-            "wins": 12,
-            "shutouts": 4,
+            "wins": 13,
+            "shutouts": 5,
             "otl": 1,
-            "points": 20
+            "points": 23
           }
         },
         {
@@ -1552,16 +1552,16 @@
       "formerStats": [],
       "rank": 4,
       "previousRank": 4,
-      "pointsDelta": 2
+      "pointsDelta": 3
     },
     {
       "participantId": "usr_vicky",
       "participantName": "Vicky",
       "teamName": "Les PhD fatiguées",
-      "totalPoints": 80,
+      "totalPoints": 82,
       "totalGoals": 23,
-      "totalAssists": 38,
-      "goalieWins": 17,
+      "totalAssists": 39,
+      "goalieWins": 18,
       "shootoutGoals": 0,
       "tradesUsed": {
         "F": 0,
@@ -1592,15 +1592,15 @@
           "pos": "F",
           "group": 2,
           "team": "CAR",
-          "gp": 23,
+          "gp": 24,
           "stats": {
             "goals": 13,
-            "assists": 19,
+            "assists": 20,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 32
+            "points": 33
           }
         },
         {
@@ -1898,15 +1898,15 @@
           "pos": "G",
           "group": 20,
           "team": "CAR",
-          "gp": 8,
+          "gp": 9,
           "stats": {
             "goals": 0,
             "assists": 0,
             "soGoals": 0,
-            "wins": 4,
+            "wins": 5,
             "shutouts": 0,
             "otl": 2,
-            "points": 4
+            "points": 5
           }
         },
         {
@@ -1930,16 +1930,16 @@
       "formerStats": [],
       "rank": 5,
       "previousRank": 5,
-      "pointsDelta": 6
+      "pointsDelta": 2
     },
     {
       "participantId": "usr_guillaume_brossard",
       "participantName": "Guillaume Brossard",
       "teamName": "Laser Kiwis",
-      "totalPoints": 76,
+      "totalPoints": 79,
       "totalGoals": 8,
       "totalAssists": 28,
-      "goalieWins": 30,
+      "goalieWins": 31,
       "shootoutGoals": 0,
       "tradesUsed": {
         "F": 0,
@@ -2259,15 +2259,15 @@
           "pos": "G",
           "group": 19,
           "team": "DAL",
-          "gp": 17,
+          "gp": 18,
           "stats": {
             "goals": 0,
             "assists": 0,
             "soGoals": 0,
-            "wins": 12,
-            "shutouts": 4,
+            "wins": 13,
+            "shutouts": 5,
             "otl": 1,
-            "points": 20
+            "points": 23
           }
         },
         {
@@ -2308,16 +2308,16 @@
       "formerStats": [],
       "rank": 6,
       "previousRank": 6,
-      "pointsDelta": 2
+      "pointsDelta": 3
     },
     {
       "participantId": "usr_vincent",
       "participantName": "Vincent",
       "teamName": "Les HabsRoller",
-      "totalPoints": 73,
+      "totalPoints": 76,
       "totalGoals": 8,
       "totalAssists": 27,
-      "goalieWins": 30,
+      "goalieWins": 31,
       "shootoutGoals": 0,
       "tradesUsed": {
         "F": 0,
@@ -2637,15 +2637,15 @@
           "pos": "G",
           "group": 19,
           "team": "DAL",
-          "gp": 17,
+          "gp": 18,
           "stats": {
             "goals": 0,
             "assists": 0,
             "soGoals": 0,
-            "wins": 12,
-            "shutouts": 4,
+            "wins": 13,
+            "shutouts": 5,
             "otl": 1,
-            "points": 20
+            "points": 23
           }
         },
         {
@@ -2686,7 +2686,7 @@
       "formerStats": [],
       "rank": 7,
       "previousRank": 7,
-      "pointsDelta": 1
+      "pointsDelta": 3
     },
     {
       "participantId": "usr_elrick",
@@ -3064,16 +3064,16 @@
       "formerStats": [],
       "rank": 8,
       "previousRank": 8,
-      "pointsDelta": 2
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_eve",
       "participantName": "Eve",
       "teamName": "Ève Mcdavid-demidov-bérubé",
-      "totalPoints": 55,
+      "totalPoints": 58,
       "totalGoals": 13,
       "totalAssists": 11,
-      "goalieWins": 23,
+      "goalieWins": 24,
       "shootoutGoals": 0,
       "tradesUsed": {
         "F": 0,
@@ -3257,7 +3257,7 @@
           "pos": "F",
           "group": 11,
           "team": "CAR",
-          "gp": 23,
+          "gp": 24,
           "stats": {
             "goals": 13,
             "assists": 10,
@@ -3393,15 +3393,15 @@
           "pos": "G",
           "group": 19,
           "team": "DAL",
-          "gp": 17,
+          "gp": 18,
           "stats": {
             "goals": 0,
             "assists": 0,
             "soGoals": 0,
-            "wins": 12,
-            "shutouts": 4,
+            "wins": 13,
+            "shutouts": 5,
             "otl": 1,
-            "points": 20
+            "points": 23
           }
         },
         {
@@ -3442,7 +3442,7 @@
       "formerStats": [],
       "rank": 9,
       "previousRank": 9,
-      "pointsDelta": 2
+      "pointsDelta": 3
     },
     {
       "participantId": "usr_hugo_berube",
@@ -3635,7 +3635,7 @@
           "pos": "F",
           "group": 11,
           "team": "CAR",
-          "gp": 23,
+          "gp": 24,
           "stats": {
             "goals": 13,
             "assists": 10,
@@ -3819,8 +3819,8 @@
       ],
       "formerStats": [],
       "rank": 10,
-      "previousRank": 11,
-      "pointsDelta": 4
+      "previousRank": 10,
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_jolyne_brossard",
@@ -4013,7 +4013,7 @@
           "pos": "F",
           "group": 11,
           "team": "CAR",
-          "gp": 23,
+          "gp": 24,
           "stats": {
             "goals": 13,
             "assists": 10,
@@ -4198,7 +4198,7 @@
       "formerStats": [],
       "rank": 10,
       "previousRank": 10,
-      "pointsDelta": 2
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_etienne",
@@ -4391,7 +4391,7 @@
           "pos": "F",
           "group": 11,
           "team": "CAR",
-          "gp": 23,
+          "gp": 24,
           "stats": {
             "goals": 13,
             "assists": 10,
@@ -4576,16 +4576,16 @@
       "formerStats": [],
       "rank": 12,
       "previousRank": 12,
-      "pointsDelta": 2
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_alexandre_comeau",
       "participantName": "Alexandre Comeau",
       "teamName": "Éperviers de Sorel",
-      "totalPoints": 38,
+      "totalPoints": 42,
       "totalGoals": 0,
       "totalAssists": 1,
-      "goalieWins": 27,
+      "goalieWins": 29,
       "shootoutGoals": 0,
       "tradesUsed": {
         "F": 0,
@@ -4905,15 +4905,15 @@
           "pos": "G",
           "group": 19,
           "team": "DAL",
-          "gp": 17,
+          "gp": 18,
           "stats": {
             "goals": 0,
             "assists": 0,
             "soGoals": 0,
-            "wins": 12,
-            "shutouts": 4,
+            "wins": 13,
+            "shutouts": 5,
             "otl": 1,
-            "points": 20
+            "points": 23
           }
         },
         {
@@ -4922,15 +4922,15 @@
           "pos": "G",
           "group": 20,
           "team": "CAR",
-          "gp": 8,
+          "gp": 9,
           "stats": {
             "goals": 0,
             "assists": 0,
             "soGoals": 0,
-            "wins": 4,
+            "wins": 5,
             "shutouts": 0,
             "otl": 2,
-            "points": 4
+            "points": 5
           }
         },
         {
@@ -4954,16 +4954,16 @@
       "formerStats": [],
       "rank": 13,
       "previousRank": 13,
-      "pointsDelta": 2
+      "pointsDelta": 4
     },
     {
       "participantId": "usr_marjolaine_comeau",
       "participantName": "Marjolaine Comeau",
       "teamName": "mchb",
-      "totalPoints": 37,
+      "totalPoints": 40,
       "totalGoals": 0,
       "totalAssists": 1,
-      "goalieWins": 26,
+      "goalieWins": 27,
       "shootoutGoals": 0,
       "tradesUsed": {
         "F": 0,
@@ -5283,15 +5283,15 @@
           "pos": "G",
           "group": 19,
           "team": "DAL",
-          "gp": 17,
+          "gp": 18,
           "stats": {
             "goals": 0,
             "assists": 0,
             "soGoals": 0,
-            "wins": 12,
-            "shutouts": 4,
+            "wins": 13,
+            "shutouts": 5,
             "otl": 1,
-            "points": 20
+            "points": 23
           }
         },
         {
@@ -5332,7 +5332,7 @@
       "formerStats": [],
       "rank": 14,
       "previousRank": 14,
-      "pointsDelta": 2
+      "pointsDelta": 3
     },
     {
       "participantId": "usr_michel_bry",
@@ -5710,7 +5710,7 @@
       "formerStats": [],
       "rank": 15,
       "previousRank": 15,
-      "pointsDelta": 2
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_sylvianne",
@@ -6088,7 +6088,7 @@
       "formerStats": [],
       "rank": 15,
       "previousRank": 15,
-      "pointsDelta": 2
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_simon",
@@ -6466,7 +6466,7 @@
       "formerStats": [],
       "rank": 17,
       "previousRank": 17,
-      "pointsDelta": 2
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_louise_trottier",

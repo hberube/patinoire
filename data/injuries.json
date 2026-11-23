@@ -1,18 +1,7 @@
 {
-  "updated": "2026-11-22T08:30:48Z",
+  "updated": "2026-11-23T03:47:05Z",
   "source": "ESPN",
   "players": [
-    {
-      "id": 8477946,
-      "name": "Dylan Larkin",
-      "team": "DET",
-      "pos": "F",
-      "status": "susp",
-      "type": "Suspension",
-      "returnDate": "2026-12-20",
-      "noteDate": "2026-10-31",
-      "note": "ir-nr"
-    },
     {
       "id": 8479542,
       "name": "Brandon Hagel",
@@ -45,6 +34,17 @@
       "returnDate": "2026-11-28",
       "noteDate": "2026-11-19",
       "note": "ir"
+    },
+    {
+      "id": 8484144,
+      "name": "Connor Bedard",
+      "team": "CHI",
+      "pos": "F",
+      "status": "ir",
+      "type": "Shoulder",
+      "returnDate": "2027-03-01",
+      "noteDate": "2026-11-22",
+      "note": "Bedard (shoulder) was placed on injured reserve Sunday."
     },
     {
       "id": 8482699,
@@ -108,42 +108,9 @@
       "pos": "F",
       "status": "ir",
       "type": "Lower Body",
-      "returnDate": "2026-11-22",
+      "returnDate": "2026-11-25",
       "noteDate": "2026-11-21",
       "note": "ir"
-    },
-    {
-      "id": 8478550,
-      "name": "Artemi Panarin",
-      "team": "LAK",
-      "pos": "F",
-      "status": "out",
-      "type": "Personal",
-      "returnDate": "2026-11-23",
-      "noteDate": "2026-11-21",
-      "note": "out"
-    },
-    {
-      "id": 8479343,
-      "name": "Clayton Keller",
-      "team": "UTA",
-      "pos": "F",
-      "status": "out",
-      "type": "Illness",
-      "returnDate": "2026-11-23",
-      "noteDate": "2026-11-22",
-      "note": "out"
-    },
-    {
-      "id": 8484144,
-      "name": "Connor Bedard",
-      "team": "CHI",
-      "pos": "F",
-      "status": "out",
-      "type": "Shoulder",
-      "returnDate": "2027-03-01",
-      "noteDate": "2026-11-22",
-      "note": "Bedard will undergo surgery on his injured right shoulder in the coming week, Ben Pope of the Chicago Sun-Times reports."
     },
     {
       "id": 8480012,
@@ -152,7 +119,7 @@
       "pos": "F",
       "status": "out",
       "type": "Upper Body",
-      "returnDate": "2026-11-22",
+      "returnDate": "2026-11-25",
       "noteDate": "2026-11-21",
       "note": "Pettersson (upper body) isn't expected to play against Chicago on Sunday, per Canucks play-by-play announcer Brendan Batchelor."
     },
@@ -184,7 +151,7 @@
       "team": "CAR",
       "pos": "F",
       "status": "out",
-      "type": "Undisclosed",
+      "type": "Lower Body",
       "returnDate": "2026-11-25",
       "noteDate": "2026-11-21",
       "note": "Ehlers (undisclosed) won't play Sunday against the Rangers, per Chip Alexander of The Raleigh News &amp; Observer."
@@ -201,6 +168,28 @@
       "note": "Hughes (upper body) will miss the rest of Minnesota's road trip, per Joe Smith of The Athletic on Saturday."
     },
     {
+      "id": 8478550,
+      "name": "Artemi Panarin",
+      "team": "LAK",
+      "pos": "F",
+      "status": "dtd",
+      "type": "Personal",
+      "returnDate": "2026-11-23",
+      "noteDate": "2026-11-22",
+      "note": "day-to-day"
+    },
+    {
+      "id": 8479343,
+      "name": "Clayton Keller",
+      "team": "UTA",
+      "pos": "F",
+      "status": "dtd",
+      "type": "Illness",
+      "returnDate": "2026-11-23",
+      "noteDate": "2026-11-22",
+      "note": "day-to-day"
+    },
+    {
       "id": 8484153,
       "name": "Leo Carlsson",
       "team": "ANA",
@@ -209,7 +198,7 @@
       "type": "Upper Body",
       "returnDate": "2026-11-23",
       "noteDate": "2026-11-22",
-      "note": "day-to-day"
+      "note": "Carlsson (upper body) is day-to-day, according to Eric Stephens of The Athletic on Sunday."
     }
   ]
 }
