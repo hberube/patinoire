@@ -1,34 +1,36 @@
 {
-  "gameDay": "2026-11-21",
-  "generatedAt": "2026-11-22T08:31:09Z",
+  "gameDay": "2026-11-22",
+  "generatedAt": "2026-11-23T08:31:11Z",
   "fr": {
-    "title": "Florence file en tête, Celebrini frappe à la porte des 30",
+    "title": "Maman Girafe fait bingo, Bedard file à l'infirmerie",
     "bullets": [
-      "🎯 Bingo : Florence rafle 5 lignes avec 7 cases. Vicky et Vincent suivent à 4 lignes. Elrick? Une seule case, gros câlin.",
-      "Course en tête : Florence 124, Julien 112, Maddox 98. Florence a ajouté 6 points hier, l'écart tient.",
-      "Celebrini (SJS) marque et plafonne à 29 points, à un petit point des 30. Florence et Vicky sourient.",
-      "Hugo grimpe au 10e rang, égal à 51 avec Jolyne, mais devant grâce au bingo. Louise, zéro point : les huards ont plongé.",
-      "🏥 Infirmerie : Ehlers (CAR, à Maddox) est absent. Hughes (MIN) passe d'incertain à absent, tout comme Pettersson (VAN), chacun dans 6 équipes."
+      "Florence garde la tête avec 124 points malgré une soirée blanche; Julien la suit à 113. 👀",
+      "Alexandre frappe le plus fort: +4 hier, pour 42 points. Les Éperviers prennent leur envol!",
+      "Tage Thompson marque deux fois: Sylvianne et Louise sourient. Draisaitl a aussi compté, dans 9 équipes.",
+      "Bingo: Sylvianne (Maman Girafe) gagne avec 8 lignes! Hugo ferme la marche: 0 ligne, 3 cases. Aïe. 🎯",
+      "Égalité à 51 points: Hugo garde le 10e rang devant Jolyne grâce aux lignes de bingo (57 contre 54).",
+      "Infirmerie: Connor Bedard (CHI) passe à la liste des blessés, épaule, retour prévu le 1er mars 2027; 8 participants l'ont. Dylan Larkin (DET) revient au jeu."
     ]
   },
   "en": {
-    "title": "Florence stays on top, Celebrini knocks on the 30 door",
+    "title": "Maman Girafe Wins Bingo, Bedard Heads to the Infirmary",
     "bullets": [
-      "🎯 Bingo: Florence sweeps 5 lines with 7 squares. Vicky and Vincent follow with 4 lines. Elrick? One square, big hug.",
-      "Title race: Florence 124, Julien 112, Maddox 98. Florence added 6 points last night, and the gap holds.",
-      "Celebrini (SJS) scores and sits at 29 points, one shy of 30. Florence and Vicky are smiling.",
-      "Hugo climbs to 10th, tied at 51 with Jolyne but ahead on bingo lines. Louise got zero points: the loons took a dive.",
-      "🏥 Infirmary: Ehlers (CAR, Maddox's) is out. Hughes (MIN) goes from day-to-day to out, as does Pettersson (VAN), each rostered by 6 teams."
+      "Florence holds the lead at 124 points despite a scoreless night; Julien trails at 113. 👀",
+      "Alexandre had the biggest night: +4 for 42 points. The Éperviers are taking flight!",
+      "Tage Thompson scored twice: Sylvianne and Louise are smiling. Draisaitl scored too, for 9 teams.",
+      "Bingo: Sylvianne (Maman Girafe) wins with 8 lines! Hugo brings up the rear: 0 lines, 3 squares. Ouch. 🎯",
+      "Tied at 51 points: Hugo stays 10th ahead of Jolyne on bingo lines (57 to 54).",
+      "Infirmary: Connor Bedard (CHI) moves to injured reserve with a shoulder injury, expected back March 1, 2027; 8 participants own him. Dylan Larkin (DET) is back in the lineup."
     ]
   },
   "image": {
     "fr": {
       "src": "data/recap-fr.png",
-      "alt": "FLORENCE : 1RE AU POOL, 5 LIGNES AU BINGO / PROCHAINE TOURNÉE : LES 17 AUTRES CHANTENT « SHAKE IT OFF »"
+      "alt": "BEDARD : RETOUR PRÉVU LE 1ER MARS 2027 — LA MARMOTTE SORTIRA AVANT LUI · 8 POOLERS HIBERNENT AUSSI"
     },
     "en": {
       "src": "data/recap-en.png",
-      "alt": "FLORENCE: 1ST IN THE POOL, 5 BINGO LINES / THE OTHER 17 ARE NOW JUST OPENING ACTS ON THE ERAS TOUR"
+      "alt": "BEDARD BACK MARCH 1, 2027... MAYBE — GROUNDHOG GETS FIRST SHIFT · 8 POOLERS ENTER HIBERNATION"
     }
   }
 }

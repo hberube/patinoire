@@ -1,19 +1,6 @@
 {
   "memes": [
     {
-      "gameDay": "2026-11-07",
-      "category": "participant",
-      "format": "breaking",
-      "subject": {
-        "kind": "team",
-        "id": "usr_sylvianne"
-      },
-      "fr": {
-        "headline": "MAMAN GIRAFE REGARDE MAINTENANT HUGO DE HAUT",
-        "ticker": "SYLVIANNE 3E (+27 PTS) · HUGO 4E RÉCLAME UN ESCABEAU"
-      }
-    },
-    {
       "gameDay": "2026-11-08",
       "category": "bingo",
       "format": "classic",
@@ -132,6 +119,19 @@
       "fr": {
         "top": "FLORENCE : 1RE AU POOL, 5 LIGNES AU BINGO",
         "bottom": "PROCHAINE TOURNÉE : LES 17 AUTRES CHANTENT « SHAKE IT OFF »"
+      }
+    },
+    {
+      "gameDay": "2026-11-22",
+      "category": "injury",
+      "format": "breaking",
+      "subject": {
+        "kind": "player",
+        "id": 8484144
+      },
+      "fr": {
+        "headline": "BEDARD : RETOUR PRÉVU LE 1ER MARS 2027",
+        "ticker": "LA MARMOTTE SORTIRA AVANT LUI · 8 POOLERS HIBERNENT AUSSI"
       }
     }
   ]
