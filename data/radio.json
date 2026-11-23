@@ -1,104 +1,100 @@
 {
-  "gameDay": "2026-11-21",
-  "generatedAt": "2026-11-22T08:33:58Z",
-  "duration": 172,
+  "gameDay": "2026-11-22",
+  "generatedAt": "2026-11-23T08:33:51Z",
+  "duration": 157,
   "engine": "elevenlabs",
   "lines": [
     {
       "host": "jean",
-      "line": "[whispers] Bonjour la famille, ici les Ondes de la Patinoire. Philadelphie bat le Canadien 4 à 3."
+      "line": "[sighs] Bonjour la famille, ici les Ondes de la Patinoire. Pas de Canadien hier soir. J'ai vérifié le calendrier 3 fois."
     },
     {
       "host": "sylvie",
-      "line": "Bonjour, c'est Sylvie. Pas de bulletin spécial, Jean? On se croirait à la bibliothèque."
+      "line": "Bonjour, c'est Sylvie. Jean a cherché un moment historique ailleurs. Buffalo bat Tampa 6 à 2, pis la Caroline bat les Rangers 5 à 2."
     },
     {
       "host": "jean",
-      "line": "Ailleurs, Saint-Louis bat le New Jersey 9 à 6!"
-    },
-    {
-      "host": "sylvie",
-      "line": "15 buts. Les gardiens voulaient un congé de groupe, ils ont eu du temps supplémentaire."
+      "line": "Saint-Louis bat Edmonton 5 à 4 en tirs de barrage! Pis Dallas blanchit Pittsburgh 1 à 0!"
     },
     {
       "host": "jean",
-      "line": "Le classement! Florence fait 6 points, 124, toujours 1re! Julien suit, 112!"
+      "line": "Le classement! Florence fait zéro point, mais garde le 1er rang, 124! Julien en fait 1, 113!"
     },
     {
       "host": "sylvie",
-      "line": "12 points derrière, mais fidèle à son nom d'équipe: aucun regret. En haut, personne bouge."
+      "line": "L'écart passe de 12 à 11. À ce rythme-là, Julien la rattrape à la Saint-Jean."
     },
     {
       "host": "jean",
-      "line": "[excited] Sauf Hugo! 4 points, il passe Jolyne pour le 10e rang!"
+      "line": "[excited] Alexandre fait 4 points, la meilleure soirée du pool!"
     },
     {
       "host": "sylvie",
-      "line": "À égalité, 51 chacun. Il l'a pas dépassée, il s'est assis à côté d'elle sur le banc."
+      "line": "Pis Jolyne glisse au 11e, toujours à égalité avec Hugo. Hugo, t'étais assis à côté d'elle sur le banc. Là, tu lui as pris le coussin."
     },
     {
       "host": "jean",
-      "line": "[excited] Le bingo! 18 cartes, pis Florence gagne toute seule, 5 lignes sur 7 cases!"
+      "line": "[gasps] Le bingo! 18 cartes, pis Sylvianne gagne toute seule: 8 lignes sur 8 cases!"
     },
     {
       "host": "sylvie",
-      "line": "L'autre jour, je disais qu'on peut pas être en tête de toutes les affiches. Florence a pris ça comme un défi."
+      "line": "Chaque case a fait du temps plein. Pis au pool, la girafe glisse au 16e. Elle regarde sa carte, pas en bas."
     },
     {
       "host": "jean",
-      "line": "Vicky pis Vincent suivent, 4 lignes sur 6 cases! Pis Hugo passe proche, 4 cases, zéro ligne!"
+      "line": "Elrick pis Jolyne suivent, 6 lignes sur 7 cases!"
     },
     {
       "host": "sylvie",
-      "line": "[chuckles] Hugo monte au pool, pas au bingo. Pis Elrick ferme la marche, 1 case. Pour un Michael Scofield, t'es resté enfermé."
+      "line": "[chuckles] Elrick était dernier à la dernière émission, avec 1 case. Michael Scofield a fini par trouver la sortie."
     },
     {
       "host": "jean",
-      "line": "Le prix de fin d'année, après 35 soirées! Triple égalité à 5 victoires: Louise, Florence pis Étienne!"
+      "line": "Pis Hugo ferme la marche, 3 cases, zéro ligne!"
     },
     {
       "host": "sylvie",
-      "line": "Pis Louise a le plus de lignes, 66. Lanterne rouge au pool, mais au bingo, elle tient le fanal."
+      "line": "4 cases l'autre fois, 3 ce matin. Hugo, au bingo, tu fais un compte à rebours."
     },
     {
       "host": "jean",
-      "line": "[sighs] L'infirmerie. Elias Pettersson, de Vancouver, absent, haut du corps, retour prévu aujourd'hui. 6 d'entre vous."
+      "line": "Le prix de fin d'année, après 36 soirées! Louise pis Étienne, 5 victoires chacun! Vicky suit, 4!"
     },
     {
       "host": "sylvie",
-      "line": "Quinn Hughes, du Minnesota, passe d'incertain à absent, retour prévu le 25. 6 d'entre vous aussi. Prompt rétablissement."
+      "line": "Pis Michel a 77 lignes, le plus du pool, sans être dans le top 3. Il remplit les cartes, les autres ramassent les prix."
     },
     {
       "host": "jean",
-      "line": "Nikolaj Ehlers, de la Caroline, absent, retour prévu le 25! Maddox l'a, pis il a fait une passe sur le but d'Aho hier!"
+      "line": "[sighs] L'infirmerie. Connor Bedard, de Chicago, passe d'absent à la liste des blessés, épaule. Retour prévu le 1er mars. 8 d'entre vous l'ont."
     },
     {
       "host": "sylvie",
-      "line": "Il a livré la passe pis il est parti, comme un livreur de pizza. Leo Carlsson, d'Anaheim, incertain au jour le jour, 6 d'entre vous."
+      "line": "Le 1er mars. Les 8, rangez sa carte avec les décorations de Noël. Prompt rétablissement, Connor."
     },
     {
       "host": "jean",
-      "line": "[gasps] Pis Carlsson a marqué hier, sur une passe de Gauthier!"
+      "line": "Bonne nouvelle: Dylan Larkin, de Detroit, revient au jeu! Mais Elias Pettersson, de Vancouver, est encore absent."
     },
     {
       "host": "sylvie",
-      "line": "Un but pis un bobo le même soir. Les 6, c'est un cadeau avec la facture dans la boîte."
+      "line": "Il devait revenir le 21. Les 6, le gâteau de bienvenue commence à sécher sur le comptoir."
     },
     {
       "host": "jean",
-      "line": "Les beaux buts! Svechnikov en marque 2, servi les 2 fois par Aho! Draisaitl marque sur des passes de McDavid pis Bouchard, 9 d'entre vous!"
+      "line": "Les beaux buts! Tage Thompson en marque 2 pour Sylvianne pis Louise, une fois servi par Dahlin!"
     },
     {
       "host": "sylvie",
-      "line": "Pis Trevor Zegras, de Philadelphie: son équipe bat le Canadien, pis lui, rien. 4 matchs sans point, 3 propriétaires."
+      "line": "Sylvianne, le bingo pis 2 buts de Thompson: ça se met dans un cadre. Zibanejad marque pour Vicky, pis Draisaitl pour 9 d'entre vous."
     },
     {
       "host": "jean",
-      "line": "[excited] On se retrouve demain matin! Celebrini est à 1 point de 30, pis Dobes à 1 victoire de 5!"
+      "line": "[excited] Pis Rantanen pis Johnston servent Kiviranta pour le seul but à Dallas! On se retrouve demain matin, Sorokin est à 1 victoire de 10!"
     },
     {
       "host": "sylvie",
-      "line": "[laughs] Une défaite, pis Jean trouve encore des jalons. Florence, la tournée affiche complet; garde un billet pour Louise. À demain!"
+      "line": "[laughs] Un gardien des Islanders, pis Jean l'annonce pareil. Le sevrage fait des miracles. À demain!"
     }
   ]
 }
