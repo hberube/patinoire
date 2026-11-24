@@ -1,128 +1,6 @@
 {
   "shows": [
     {
-      "gameDay": "2026-11-15",
-      "lines": [
-        {
-          "host": "jean",
-          "line": "[excited] Bonjour la famille, ici les Ondes de la Patinoire! 5 matchs hier, pis Anaheim écrase Calgary 6 à 1!"
-        },
-        {
-          "host": "sylvie",
-          "line": "Bonjour, c'est Sylvie. Le Canadien jouait pas encore, fait que Jean s'est trouvé une équipe d'accueil."
-        },
-        {
-          "host": "jean",
-          "line": "Vancouver gagne 6 à 3 à Vegas, Edmonton gagne 5 à 2 à Philadelphie, Dallas bat la Floride en prolongation, pis San Jose bat Nashville!"
-        },
-        {
-          "host": "sylvie",
-          "line": "En haut, Michel, 457, Guillaume, 453. 4 points d'écart. Michel commence à avoir les pieds au sec."
-        },
-        {
-          "host": "jean",
-          "line": "[gasps] Mais le vrai drame, c'est du 3e au 6e! Sylvianne pis Jackson, 444 à égalité, Hugo, 443, Étienne, 442!"
-        },
-        {
-          "host": "sylvie",
-          "line": "4 personnes en 2 points. C'est pas un classement, c'est une file au service au volant. Le premier qui hésite sur son café perd sa place."
-        },
-        {
-          "host": "jean",
-          "line": "Pis juste derrière, Elrick, 433, Simon, 432, Alexandre, 431! Un point entre chacun!"
-        },
-        {
-          "host": "sylvie",
-          "line": "Au sous-sol, Vicky, 348, Maddox, 343. L'écart était de 15, il est rendu à 5. Maddox a trouvé la table de ping-pong, pis il s'entraîne."
-        },
-        {
-          "host": "jean",
-          "line": "[excited] Le bingo! 18 cartes, pis Louise gagne toute seule! 8 lignes sur 8 cases!"
-        },
-        {
-          "host": "sylvie",
-          "line": "8 cases, 8 lignes, pas une case de gaspillée. Louise fait son bingo comme une épicerie avec une liste."
-        },
-        {
-          "host": "jean",
-          "line": "Sylvianne suit, 5 lignes sur 7 cases, pis Jackson, 4 lignes sur 6! Encore collés, ces 2-là!"
-        },
-        {
-          "host": "sylvie",
-          "line": "Pis Simon ferme la marche, 1 ligne sur 3 cases. Au moins, il a pas eu besoin d'un deuxième crayon."
-        },
-        {
-          "host": "jean",
-          "line": "Le prix de fin d'année, après 30 soirées! Étienne reprend les devants tout seul, 5 victoires! Louise pis Florence suivent, 4 victoires chacune!"
-        },
-        {
-          "host": "sylvie",
-          "line": "Louise a 60 lignes, Étienne, 49. Elle a les munitions, lui a les trophées. Pis Ève redescend du podium."
-        },
-        {
-          "host": "jean",
-          "line": "[sighs] L'infirmerie. Dure soirée au Colorado. Cale Makar, bas du corps, retour prévu vers le 28 novembre. 10 d'entre vous l'ont."
-        },
-        {
-          "host": "sylvie",
-          "line": "Pis Nathan MacKinnon, bas du corps aussi, retour vers le 12 décembre. 17 d'entre vous l'ont. Prompt rétablissement, les gars."
-        },
-        {
-          "host": "jean",
-          "line": "[gasps] 17 sur 18! Qui est le 18e?"
-        },
-        {
-          "host": "sylvie",
-          "line": "Je le sais pas, mais quelqu'un boit son café ce matin avec un petit sourire en coin."
-        },
-        {
-          "host": "jean",
-          "line": "Bonne nouvelle: Mathew Barzal, des Islanders, pis Linus Ullmark, d'Ottawa, sont de retour au jeu!"
-        },
-        {
-          "host": "sylvie",
-          "line": "[sarcastic] Ullmark revient, repart, revient. Vincent, sors le champagne du frigo, mais garde le bouchon proche."
-        },
-        {
-          "host": "jean",
-          "line": "Les beaux buts! Connor McDavid marque sur une passe de Draisaitl, 15 d'entre vous! Pis Draisaitl en marque 2, 9 d'entre vous!"
-        },
-        {
-          "host": "sylvie",
-          "line": "Encore eux 2. À Edmonton, les autres Oilers font la vaisselle pis, astheure, le séchage."
-        },
-        {
-          "host": "jean",
-          "line": "Matthew Tkachuk marque pour la Floride sur une passe de Reinhart, pour Florence, Julien pis Jolyne! Pis Macklin Celebrini marque pour San Jose, pour Florence pis Vicky!"
-        },
-        {
-          "host": "sylvie",
-          "line": "Florence, 2 de tes joueurs marquent. Ce matin, c'est toi qui chantes sous la douche."
-        },
-        {
-          "host": "jean",
-          "line": "On se retrouve demain matin! Cole Caufield est à 19 points, 1 de plus pis c'est 20!"
-        },
-        {
-          "host": "sylvie",
-          "line": "[laughs] Jean prépare déjà la parade. Hugo, t'es à 1 point du podium. Fais la file comme tout le monde. À demain!"
-        }
-      ],
-      "injured": {
-        "8477946": "susp",
-        "8482699": "ir",
-        "8484984": "ir",
-        "8480893": "ir",
-        "8480069": "out",
-        "8477492": "out"
-      },
-      "awards": {
-        "goldenPick": 8478864,
-        "iceAnchor": 8475166,
-        "snub": 8476453
-      }
-    },
-    {
       "gameDay": "2026-11-16",
       "lines": [
         {
@@ -840,6 +718,125 @@
         "8477940": "out",
         "8480800": "out",
         "8484153": "dtd"
+      },
+      "awards": {
+        "goldenPick": 8484801,
+        "iceAnchor": 8481533,
+        "snub": 8476453
+      }
+    },
+    {
+      "gameDay": "2026-11-23",
+      "lines": [
+        {
+          "host": "jean",
+          "line": "Bonjour la famille, ici les Ondes de la Patinoire! Los Angeles bat le Canadien 2 à 1 au Centre Bell. Je déclare ça une défaite historiquement serrée."
+        },
+        {
+          "host": "sylvie",
+          "line": "[sarcastic] Bonjour, c'est Sylvie. Un but d'écart, Jean, c'est pas historique, c'est juste perdu. Pis Toronto bat les Islanders 4 à 2, pendant qu'Ottawa bat Calgary 2 à 1."
+        },
+        {
+          "host": "jean",
+          "line": "[sighs] Toronto pis Ottawa gagnent le même soir qu'on perd. Ça devrait être interdit par la Charte. Pis le Minnesota bat San José 5 à 2!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Le classement. Florence fait 3 points, la meilleure soirée du pool, 127. Julien en fait 1, 114. L'écart passe à 13. Julien, oublie la Saint-Jean, vise la fête du Travail."
+        },
+        {
+          "host": "jean",
+          "line": "Pis Hugo! Jolyne fait 1 point, 52, pis Hugo glisse au 11e, avec 51!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Assis à côté d'elle, ensuite le coussin, pis là, Jolyne a pris le banc au complet. Hugo, tu regardes la game debout."
+        },
+        {
+          "host": "jean",
+          "line": "[excited] Le bingo! 18 cartes, pis égalité au sommet: Florence pis Elrick, 3 lignes sur 5 cases chacun!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Florence mène le pool pis partage le bingo. Elle prête le micro, mais juste pour une chanson."
+        },
+        {
+          "host": "jean",
+          "line": "Elrick! Dernier avec 1 case, ensuite 2e, pis là, en tête! C'est un film!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Une évasion en 3 épisodes. Michael Scofield a pas juste trouvé la sortie, il est reparti avec le butin. Jolyne suit, 1 ligne sur 4 cases."
+        },
+        {
+          "host": "jean",
+          "line": "Pis Louise ferme la marche: zéro case, zéro ligne!"
+        },
+        {
+          "host": "sylvie",
+          "line": "[chuckles] Pis pourtant, après 37 soirées, Louise mène encore la course au prix avec 70 lignes. Lanterne rouge au pool avec 26 points, elle peut ben se payer un soir de congé."
+        },
+        {
+          "host": "jean",
+          "line": "Triple égalité à 5 victoires: Louise, Florence pis Étienne! Florence a 62 lignes, Étienne 59!"
+        },
+        {
+          "host": "sylvie",
+          "line": "La dernière du pool devant la première. Le monde à l'envers, version salon."
+        },
+        {
+          "host": "jean",
+          "line": "[sighs] L'infirmerie. Quinn Hughes, du Minnesota, passe d'absent à la liste des blessés, retour prévu le 27. 6 d'entre vous l'ont."
+        },
+        {
+          "host": "sylvie",
+          "line": "Le 21, le 25, pis là le 27. Les 6, sa date de retour recule plus vite que Jean devant un fan de Toronto. Prompt rétablissement, Quinn."
+        },
+        {
+          "host": "jean",
+          "line": "Leo Carlsson, d'Anaheim, passe d'incertain à absent, retour prévu le 25. 6 d'entre vous aussi."
+        },
+        {
+          "host": "sylvie",
+          "line": "Mais ça s'améliore ailleurs: Elias Pettersson, de Vancouver, Evgeni Malkin, de Pittsburgh, pis Nikolaj Ehlers, de la Caroline, passent d'absent à incertain, tous prévus le 25."
+        },
+        {
+          "host": "jean",
+          "line": "[excited] Le 25, c'est la journée des retrouvailles! Vicky, Ève, Maddox, pis les 6 de Pettersson, sortez les ballons!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Pis pour Pettersson, faites un gâteau neuf. Dylan Guenther, de l'Utah, revient au jeu."
+        },
+        {
+          "host": "jean",
+          "line": "Les beaux buts! Kaprizov marque pour Vincent, servi par Boldy, pis il ajoute 3 passes! 4 points!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Kaprizov a fait tout le travail à San José, les autres ont juste signé la feuille. Barzal marque pour Jolyne pis Marjolaine, pis McKenna pour Guillaume pis Michel."
+        },
+        {
+          "host": "jean",
+          "line": "Pis Cutter Gauthier marque pour 5 d'entre vous! On se retrouve demain matin: Dobes est encore à 1 victoire de 5, pis Sorokin à 1 de 10!"
+        },
+        {
+          "host": "sylvie",
+          "line": "[laughs] Jean, ta liste de jalons, c'est un calendrier de l'Avent sans chocolat. Hugo, trouve-toi une chaise. À demain!"
+        }
+      ],
+      "injured": {
+        "8479542": "ir",
+        "8480069": "ir",
+        "8484144": "ir",
+        "8484984": "ir",
+        "8480893": "ir",
+        "8480800": "ir",
+        "8484153": "out",
+        "8477492": "out",
+        "8480012": "dtd",
+        "8471215": "dtd",
+        "8477940": "dtd"
       },
       "awards": {
         "goldenPick": 8484801,
