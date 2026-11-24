@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-24T05:39:43Z",
+  "lastUpdated": "2026-11-24T08:30:06Z",
   "season": "20262027",
   "previousRanks": {
     "usr_florence": 1,
@@ -46,9 +46,9 @@
       "participantId": "usr_florence",
       "participantName": "Florence",
       "teamName": "The Eras Tour: Stanley Cup Edition",
-      "totalPoints": 125,
+      "totalPoints": 127,
       "totalGoals": 34,
-      "totalAssists": 67,
+      "totalAssists": 69,
       "goalieWins": 22,
       "shootoutGoals": 0,
       "tradesUsed": {
@@ -63,15 +63,15 @@
           "pos": "F",
           "group": 1,
           "team": "SJS",
-          "gp": 23,
+          "gp": 24,
           "stats": {
             "goals": 10,
-            "assists": 19,
+            "assists": 21,
             "soGoals": 2,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 29
+            "points": 31
           }
         },
         {
@@ -418,7 +418,7 @@
       "formerStats": [],
       "rank": 1,
       "previousRank": 1,
-      "pointsDelta": 1
+      "pointsDelta": 3
     },
     {
       "participantId": "usr_julien_berube",
@@ -1558,9 +1558,9 @@
       "participantId": "usr_vicky",
       "participantName": "Vicky",
       "teamName": "Les PhD fatiguées",
-      "totalPoints": 82,
+      "totalPoints": 84,
       "totalGoals": 23,
-      "totalAssists": 39,
+      "totalAssists": 41,
       "goalieWins": 18,
       "shootoutGoals": 0,
       "tradesUsed": {
@@ -1575,15 +1575,15 @@
           "pos": "F",
           "group": 1,
           "team": "SJS",
-          "gp": 23,
+          "gp": 24,
           "stats": {
             "goals": 10,
-            "assists": 19,
+            "assists": 21,
             "soGoals": 2,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 29
+            "points": 31
           }
         },
         {
@@ -1930,7 +1930,7 @@
       "formerStats": [],
       "rank": 5,
       "previousRank": 5,
-      "pointsDelta": 0
+      "pointsDelta": 2
     },
     {
       "participantId": "usr_guillaume_brossard",

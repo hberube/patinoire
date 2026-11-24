@@ -25,7 +25,7 @@
     "name": "Macklin Celebrini",
     "pos": "F",
     "team": "SJS",
-    "points": 29
+    "points": 31
   },
   {
     "id": 8477495,
@@ -553,6 +553,13 @@
     "points": 6
   },
   {
+    "id": 8478916,
+    "name": "Joey Daccord",
+    "pos": "G",
+    "team": "SEA",
+    "points": 6
+  },
+  {
     "id": 8479361,
     "name": "Joseph Woll",
     "pos": "G",
@@ -679,13 +686,6 @@
     "points": 5
   },
   {
-    "id": 8478916,
-    "name": "Joey Daccord",
-    "pos": "G",
-    "team": "SEA",
-    "points": 5
-  },
-  {
     "id": 8482076,
     "name": "Nico Daws",
     "pos": "G",
@@ -711,6 +711,13 @@
     "name": "Elias Pettersson",
     "pos": "D",
     "team": "VAN",
+    "points": 4
+  },
+  {
+    "id": 8478366,
+    "name": "Frank Vatrano",
+    "pos": "F",
+    "team": "ANA",
     "points": 4
   },
   {
@@ -837,13 +844,6 @@
     "name": "Charlie Lindgren",
     "pos": "G",
     "team": "WSH",
-    "points": 3
-  },
-  {
-    "id": 8478366,
-    "name": "Frank Vatrano",
-    "pos": "F",
-    "team": "ANA",
     "points": 3
   },
   {
@@ -1047,6 +1047,13 @@
     "name": "Esa Lindell",
     "pos": "D",
     "team": "DAL",
+    "points": 1
+  },
+  {
+    "id": 8479406,
+    "name": "Filip Gustavsson",
+    "pos": "G",
+    "team": "MIN",
     "points": 1
   },
   {
@@ -1369,13 +1376,6 @@
     "name": "Filip Forsberg",
     "pos": "F",
     "team": "NSH",
-    "points": 0
-  },
-  {
-    "id": 8479406,
-    "name": "Filip Gustavsson",
-    "pos": "G",
-    "team": "MIN",
     "points": 0
   },
   {
