@@ -1,36 +1,34 @@
 {
-  "gameDay": "2026-11-22",
-  "generatedAt": "2026-11-23T08:31:11Z",
+  "gameDay": "2026-11-23",
+  "generatedAt": "2026-11-24T08:31:14Z",
   "fr": {
-    "title": "Maman Girafe fait bingo, Bedard file à l'infirmerie",
+    "title": "Florence file en solo, Louise fait chou blanc",
     "bullets": [
-      "Florence garde la tête avec 124 points malgré une soirée blanche; Julien la suit à 113. 👀",
-      "Alexandre frappe le plus fort: +4 hier, pour 42 points. Les Éperviers prennent leur envol!",
-      "Tage Thompson marque deux fois: Sylvianne et Louise sourient. Draisaitl a aussi compté, dans 9 équipes.",
-      "Bingo: Sylvianne (Maman Girafe) gagne avec 8 lignes! Hugo ferme la marche: 0 ligne, 3 cases. Aïe. 🎯",
-      "Égalité à 51 points: Hugo garde le 10e rang devant Jolyne grâce aux lignes de bingo (57 contre 54).",
-      "Infirmerie: Connor Bedard (CHI) passe à la liste des blessés, épaule, retour prévu le 1er mars 2027; 8 participants l'ont. Dylan Larkin (DET) revient au jeu."
+      "Florence ajoute 3 points et grimpe à 127, 13 devant Julien. Ça sent la parade! 🏆",
+      "Bingo : Florence et Elrick signent 3 lignes chacun. Louise? Zéro case, une carte blanche comme la glace fraîche.",
+      "Cutter Gauthier (ANA) a régalé 5 participants; Barzal fait sourire Jolyne et Marjolaine, Kaprizov (Boldy à la passe) fait sourire Vincent. 🏒",
+      "Hugo recule au 11e rang. Michel et Sylvianne sont nez à nez à 36 points, mais les lignes de bingo placent Michel devant.",
+      "Infirmerie : Leo Carlsson (ANA) passe à absent, 6 pooleurs grincent des dents. Malkin (PIT) est incertain, un bon signe pour Vicky et Eve."
     ]
   },
   "en": {
-    "title": "Maman Girafe Wins Bingo, Bedard Heads to the Infirmary",
+    "title": "Florence cruises solo, Louise gets blanked",
     "bullets": [
-      "Florence holds the lead at 124 points despite a scoreless night; Julien trails at 113. 👀",
-      "Alexandre had the biggest night: +4 for 42 points. The Éperviers are taking flight!",
-      "Tage Thompson scored twice: Sylvianne and Louise are smiling. Draisaitl scored too, for 9 teams.",
-      "Bingo: Sylvianne (Maman Girafe) wins with 8 lines! Hugo brings up the rear: 0 lines, 3 squares. Ouch. 🎯",
-      "Tied at 51 points: Hugo stays 10th ahead of Jolyne on bingo lines (57 to 54).",
-      "Infirmary: Connor Bedard (CHI) moves to injured reserve with a shoulder injury, expected back March 1, 2027; 8 participants own him. Dylan Larkin (DET) is back in the lineup."
+      "Florence adds 3 points and climbs to 127, 13 clear of Julien. Start planning the parade! 🏆",
+      "Bingo: Florence and Elrick each land 3 lines. Louise? Zero squares, a card as blank as fresh ice.",
+      "Cutter Gauthier (ANA) rewarded 5 participants; Barzal cheers up Jolyne and Marjolaine, and Kaprizov (Boldy assisting) does the same for Vincent. 🏒",
+      "Hugo slips to 11th. Michel and Sylvianne are tied at 36 points, but bingo lines put Michel ahead.",
+      "Infirmary: Leo Carlsson (ANA) is now out, and 6 poolies are wincing. Malkin (PIT) is day-to-day, good news for Vicky and Eve."
     ]
   },
   "image": {
     "fr": {
       "src": "data/recap-fr.png",
-      "alt": "BEDARD : RETOUR PRÉVU LE 1ER MARS 2027 — LA MARMOTTE SORTIRA AVANT LUI · 8 POOLERS HIBERNENT AUSSI"
+      "alt": "HUGO, 0 PT : 11E DANS SON PROPRE POOL · VETO REFUSÉ / JOLYNE DOUBLE LE PROPRIO PAR 1 PT : SKIBUM REMONTE LA PENTE"
     },
     "en": {
       "src": "data/recap-en.png",
-      "alt": "BEDARD BACK MARCH 1, 2027... MAYBE — GROUNDHOG GETS FIRST SHIFT · 8 POOLERS ENTER HIBERNATION"
+      "alt": "HUGO, 0 PTS: OWNS THE POOL, NOW 11TH IN IT · VETO DENIED / JOLYNE PASSES THE COMMISSIONER BY 1 PT: SKIBUM SKIS UPHILL"
     }
   }
 }

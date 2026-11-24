@@ -1,19 +1,6 @@
 {
   "memes": [
     {
-      "gameDay": "2026-11-08",
-      "category": "bingo",
-      "format": "classic",
-      "subject": {
-        "kind": "team",
-        "id": "usr_marjolaine_comeau"
-      },
-      "fr": {
-        "top": "HUGO ET MARJOLAINE : 7 CASES, 6 LIGNES CHACUN",
-        "bottom": "COPIES IDENTIQUES : LA DIRECTRICE CONVOQUE LES DEUX AU BUREAU"
-      }
-    },
-    {
       "gameDay": "2026-11-09",
       "category": "player",
       "format": "versus",
@@ -132,6 +119,23 @@
       "fr": {
         "headline": "BEDARD : RETOUR PRÉVU LE 1ER MARS 2027",
         "ticker": "LA MARMOTTE SORTIRA AVANT LUI · 8 POOLERS HIBERNENT AUSSI"
+      }
+    },
+    {
+      "gameDay": "2026-11-23",
+      "category": "participant",
+      "format": "versus",
+      "subject": {
+        "kind": "team",
+        "id": "usr_hugo_berube"
+      },
+      "subject2": {
+        "kind": "team",
+        "id": "usr_jolyne_brossard"
+      },
+      "fr": {
+        "no": "HUGO, 0 PT : 11E DANS SON PROPRE POOL · VETO REFUSÉ",
+        "yes": "JOLYNE DOUBLE LE PROPRIO PAR 1 PT : SKIBUM REMONTE LA PENTE"
       }
     }
   ]
