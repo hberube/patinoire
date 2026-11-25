@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24T08:30:47Z",
+  "updated": "2026-11-25T03:41:43Z",
   "source": "ESPN",
   "players": [
     {
@@ -31,9 +31,9 @@
       "pos": "D",
       "status": "ir",
       "type": "Lower Body",
-      "returnDate": "2026-11-28",
-      "noteDate": "2026-11-19",
-      "note": "ir"
+      "returnDate": "2026-11-25",
+      "noteDate": "2026-11-24",
+      "note": "Makar (lower body) was on the ice in a regular sweater ahead of Wednesday's clash with Montreal, Evan Rawal of the Denver Gazette reports."
     },
     {
       "id": 8484144,
@@ -86,9 +86,9 @@
       "pos": "F",
       "status": "ir",
       "type": "Lower Body",
-      "returnDate": "2026-11-25",
-      "noteDate": "2026-11-21",
-      "note": "ir"
+      "returnDate": "2026-11-27",
+      "noteDate": "2026-11-24",
+      "note": "Dorofeyev (lower body) will join the Rangers for their two-game road trip, Mollie Walker of the New York Post reports Tuesday."
     },
     {
       "id": 8480800,
@@ -102,17 +102,6 @@
       "note": "ir"
     },
     {
-      "id": 8484153,
-      "name": "Leo Carlsson",
-      "team": "ANA",
-      "pos": "F",
-      "status": "out",
-      "type": "Upper Body",
-      "returnDate": "2026-11-25",
-      "noteDate": "2026-11-24",
-      "note": "out"
-    },
-    {
       "id": 8477492,
       "name": "Nathan MacKinnon",
       "team": "COL",
@@ -122,6 +111,17 @@
       "returnDate": "2027-02-13",
       "noteDate": "2026-11-21",
       "note": "MacKinnon (lower body) has been evaluated by a specialist and is expected to miss the next 12 weeks, Aarif Deen of Colorado Hockey Now reports Saturday."
+    },
+    {
+      "id": 8477940,
+      "name": "Nikolaj Ehlers",
+      "team": "CAR",
+      "pos": "F",
+      "status": "out",
+      "type": "Lower Body",
+      "returnDate": "2026-11-28",
+      "noteDate": "2026-11-24",
+      "note": "out"
     },
     {
       "id": 8480012,
@@ -146,14 +146,14 @@
       "note": "day-to-day"
     },
     {
-      "id": 8477940,
-      "name": "Nikolaj Ehlers",
-      "team": "CAR",
+      "id": 8484153,
+      "name": "Leo Carlsson",
+      "team": "ANA",
       "pos": "F",
       "status": "dtd",
-      "type": "Lower Body",
+      "type": "Upper Body",
       "returnDate": "2026-11-25",
-      "noteDate": "2026-11-23",
+      "noteDate": "2026-11-24",
       "note": "day-to-day"
     }
   ]

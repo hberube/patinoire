@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-24T08:30:06Z",
+  "lastUpdated": "2026-11-25T03:41:00Z",
   "season": "20262027",
   "previousRanks": {
     "usr_florence": 1,
@@ -11,8 +11,8 @@
     "usr_vincent": 7,
     "usr_elrick": 8,
     "usr_eve": 9,
-    "usr_hugo_berube": 10,
     "usr_jolyne_brossard": 10,
+    "usr_hugo_berube": 11,
     "usr_etienne": 12,
     "usr_alexandre_comeau": 13,
     "usr_marjolaine_comeau": 14,
@@ -22,18 +22,18 @@
     "usr_louise_trottier": 18
   },
   "previousPoints": {
-    "usr_florence": 124,
-    "usr_julien_berube": 113,
+    "usr_florence": 127,
+    "usr_julien_berube": 114,
     "usr_maddox_gagnon": 100,
-    "usr_jackson_gagnon": 92,
-    "usr_vicky": 82,
+    "usr_jackson_gagnon": 93,
+    "usr_vicky": 84,
     "usr_guillaume_brossard": 79,
-    "usr_vincent": 76,
+    "usr_vincent": 77,
     "usr_elrick": 67,
     "usr_eve": 58,
+    "usr_jolyne_brossard": 52,
     "usr_hugo_berube": 51,
-    "usr_jolyne_brossard": 51,
-    "usr_etienne": 46,
+    "usr_etienne": 47,
     "usr_alexandre_comeau": 42,
     "usr_marjolaine_comeau": 40,
     "usr_michel_bry": 36,
@@ -418,7 +418,7 @@
       "formerStats": [],
       "rank": 1,
       "previousRank": 1,
-      "pointsDelta": 3
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_julien_berube",
@@ -796,7 +796,7 @@
       "formerStats": [],
       "rank": 2,
       "previousRank": 2,
-      "pointsDelta": 1
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_maddox_gagnon",
@@ -1552,7 +1552,7 @@
       "formerStats": [],
       "rank": 4,
       "previousRank": 4,
-      "pointsDelta": 1
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_vicky",
@@ -1930,7 +1930,7 @@
       "formerStats": [],
       "rank": 5,
       "previousRank": 5,
-      "pointsDelta": 2
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_guillaume_brossard",
@@ -2686,7 +2686,7 @@
       "formerStats": [],
       "rank": 7,
       "previousRank": 7,
-      "pointsDelta": 1
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_elrick",
@@ -3820,7 +3820,7 @@
       "formerStats": [],
       "rank": 10,
       "previousRank": 10,
-      "pointsDelta": 1
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_hugo_berube",
@@ -4197,7 +4197,7 @@
       ],
       "formerStats": [],
       "rank": 11,
-      "previousRank": 10,
+      "previousRank": 11,
       "pointsDelta": 0
     },
     {
@@ -4576,7 +4576,7 @@
       "formerStats": [],
       "rank": 12,
       "previousRank": 12,
-      "pointsDelta": 1
+      "pointsDelta": 0
     },
     {
       "participantId": "usr_alexandre_comeau",
