@@ -1,128 +1,6 @@
 {
   "shows": [
     {
-      "gameDay": "2026-11-16",
-      "lines": [
-        {
-          "host": "jean",
-          "line": "[excited] Bonjour la famille, ici les Ondes de la Patinoire! Enfin! Le Canadien jouait hier soir!"
-        },
-        {
-          "host": "sylvie",
-          "line": "Bonjour, c'est Sylvie. Pis il a perdu 3 à 1 à New York. Jean, rends pas tout de suite ton équipe d'accueil."
-        },
-        {
-          "host": "jean",
-          "line": "[sighs] Un détail. Pis Vancouver gagne 3 à 2 en Utah. Juste 2 matchs, mais quel drame dans le pool!"
-        },
-        {
-          "host": "sylvie",
-          "line": "En haut, Michel fait 14 points, 458. Guillaume en fait 9, 453. Le canard a trouvé le courant, pis il se laisse porter."
-        },
-        {
-          "host": "jean",
-          "line": "[gasps] Hugo fait 14 points pis saute 2 rangs! 3e, à 444!"
-        },
-        {
-          "host": "sylvie",
-          "line": "À égalité avec Sylvianne pis Jackson, mais c'est lui qui passe en avant. Au service au volant, le chien de berger a mis les 2 pattes sur le comptoir."
-        },
-        {
-          "host": "jean",
-          "line": "Sylvianne pis Jackson glissent au 4e pis au 5e sans perdre un point! Pis Étienne en fait 13, à 442!"
-        },
-        {
-          "host": "sylvie",
-          "line": "4 personnes en 2 points, encore. La file avance pas, elle change juste d'ordre."
-        },
-        {
-          "host": "jean",
-          "line": "Pis Alexandre passe Simon pour le 8e! 432 chacun!"
-        },
-        {
-          "host": "sylvie",
-          "line": "Simon, la Saint-Valentin est repoussée. Mets les chocolats au congélateur."
-        },
-        {
-          "host": "jean",
-          "line": "Au sous-sol, Vicky, 349, Maddox, 344! Maddox fait juste 3 points."
-        },
-        {
-          "host": "sylvie",
-          "line": "5 points d'écart. Maddox, la raquette de ping-pong est sur la table, faudrait juste la ramasser."
-        },
-        {
-          "host": "jean",
-          "line": "[excited] Le bingo! 18 cartes, pis Elrick gagne tout seul, 1 ligne sur 4 cases!"
-        },
-        {
-          "host": "sylvie",
-          "line": "1 ligne. Avec 2 matchs, c'était un concours de patience. Ève pis Florence suivent, 1 ligne sur 3 cases chacune."
-        },
-        {
-          "host": "jean",
-          "line": "Pis Vicky ferme la marche, 1 case, zéro ligne!"
-        },
-        {
-          "host": "sylvie",
-          "line": "Vicky, ta carte est quasiment neuve. Tu peux la revendre sur Marketplace."
-        },
-        {
-          "host": "jean",
-          "line": "Le prix de fin d'année, après 31 soirées! Étienne garde les devants, 5 victoires! Louise pis Florence suivent, 4 chacune!"
-        },
-        {
-          "host": "sylvie",
-          "line": "Florence monte à 54 lignes. Pas de victoire hier, mais la tournée affiche encore complet."
-        },
-        {
-          "host": "jean",
-          "line": "[sighs] L'infirmerie. Aucun nouveau blessé, aucun changement, aucun retour."
-        },
-        {
-          "host": "sylvie",
-          "line": "Mais Ivan Demidov manquait encore pour le Canadien, pis ils perdent. Ève, toi qui l'as mis dans le nom de ton équipe, envoie-lui une carte de prompt rétablissement."
-        },
-        {
-          "host": "jean",
-          "line": "Les beaux buts! Phillip Danault marque le seul but du Canadien, sur une passe de Lane Hutson!"
-        },
-        {
-          "host": "sylvie",
-          "line": "Danault, personne l'a dans le pool. Mais Hutson, 8 d'entre vous l'ont, pis il est rendu à 19 points."
-        },
-        {
-          "host": "jean",
-          "line": "1 de plus pis c'est 20! Pis Cole Caufield est à 19 aussi!"
-        },
-        {
-          "host": "sylvie",
-          "line": "[chuckles] Caufield était déjà à 19 au dernier bulletin. La parade attend dans le stationnement, le moteur qui tourne."
-        },
-        {
-          "host": "jean",
-          "line": "On se retrouve demain matin! 2 Glorieux à 1 point de 20, c'est un double moment historique!"
-        },
-        {
-          "host": "sylvie",
-          "line": "[laughs] Hugo, t'as fini par passer devant dans la file. Astheure, renverse pas ton café. À demain!"
-        }
-      ],
-      "injured": {
-        "8477946": "susp",
-        "8482699": "ir",
-        "8484984": "ir",
-        "8480893": "ir",
-        "8480069": "out",
-        "8477492": "out"
-      },
-      "awards": {
-        "goldenPick": 8478864,
-        "iceAnchor": 8475166,
-        "snub": 8476453
-      }
-    },
-    {
       "gameDay": "2026-11-17",
       "lines": [
         {
@@ -837,6 +715,125 @@
         "8480012": "dtd",
         "8471215": "dtd",
         "8477940": "dtd"
+      },
+      "awards": {
+        "goldenPick": 8484801,
+        "iceAnchor": 8481533,
+        "snub": 8476453
+      }
+    },
+    {
+      "gameDay": "2026-11-24",
+      "lines": [
+        {
+          "host": "jean",
+          "line": "[excited] Bonjour la famille, ici les Ondes de la Patinoire! Une seule game hier soir: Vegas bat Edmonton 5 à 3!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Bonjour, c'est Sylvie. Pas de Canadien, alors Jean a adopté Vegas pour la soirée. Une garde partagée."
+        },
+        {
+          "host": "jean",
+          "line": "Bulletin spécial au classement! 8 participants font 10 points chacun! Florence monte à 137, Julien à 124!"
+        },
+        {
+          "host": "sylvie",
+          "line": "[sarcastic] Une seule game, pis 8 personnes font 10 points pile. Julien a couru aussi vite que Florence: l'écart reste à 13. Le tapis roulant du gym."
+        },
+        {
+          "host": "jean",
+          "line": "Vicky passe Jackson, 4e! Ève passe Elrick, 8e! Pis Simon grimpe de 3 places, 14e!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Pis Alexandre monte de 2, au 11e, avec 52, à égalité avec Jolyne. Hugo glisse au 12e, avec 51."
+        },
+        {
+          "host": "jean",
+          "line": "[gasps] Hugo regardait déjà la game debout!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Pis là, il fait la file au casse-croûte. Hugo, rapporte-nous des frites."
+        },
+        {
+          "host": "jean",
+          "line": "En bas, triple égalité à 36: Michel, Louise pis Sylvianne! Louise remonte au 17e, Sylvianne tombe au 18e!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Louise lâche la lanterne rouge, pis Sylvianne l'attrape. La girafe est rendue au sous-sol, faut qu'elle se penche."
+        },
+        {
+          "host": "jean",
+          "line": "Le bingo! 18 cartes, pis Jolyne gagne toute seule, 5 lignes sur 7 cases!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Jolyne a pris le banc d'Hugo, pis là, le bingo en dessert. Jackson suit, 3 lignes sur 6 cases, pis Julien, 3 lignes sur 5."
+        },
+        {
+          "host": "jean",
+          "line": "Pis Hugo ferme la marche: 4 cases, 1 ligne!"
+        },
+        {
+          "host": "sylvie",
+          "line": "[chuckles] Une ligne! Le compte à rebours est fini, Hugo. Mauvaise nouvelle: t'es dernier pareil."
+        },
+        {
+          "host": "jean",
+          "line": "La course au prix, après 38 soirées: Louise, Florence pis Étienne, toujours 5 victoires chacun! Louise mène avec 71 lignes!"
+        },
+        {
+          "host": "sylvie",
+          "line": "Personne bouge. Ça fait 3 émissions que le podium attend l'autobus."
+        },
+        {
+          "host": "jean",
+          "line": "[sighs] L'infirmerie. Nikolaj Ehlers, de la Caroline, passe d'incertain à absent, bas du corps, retour prévu le 28. Maddox l'a."
+        },
+        {
+          "host": "sylvie",
+          "line": "Maddox, dégonfle les ballons du 25. Prompt rétablissement, Nikolaj. Pis Leo Carlsson, d'Anaheim, va mieux: d'absent à incertain, retour prévu aujourd'hui. 6 d'entre vous."
+        },
+        {
+          "host": "jean",
+          "line": "Les beaux buts! Connor McDavid marque contre Vegas, servi par Bouchard, pour 15 d'entre vous!"
+        },
+        {
+          "host": "sylvie",
+          "line": "15 sur 18. McDavid, c'est le café du pool: presque tout le monde en prend. Pis Bouchard sert aussi Colton Dach."
+        },
+        {
+          "host": "jean",
+          "line": "Pis Marner fait 2 passes pour Vegas, sur les buts d'Eichel pis de Connelly!"
+        },
+        {
+          "host": "sylvie",
+          "line": "McDavid marque, pis Edmonton perd pareil. Le café était bon, mais les toasts ont brûlé."
+        },
+        {
+          "host": "jean",
+          "line": "[excited] On se retrouve demain matin! Dobes est toujours à 1 victoire de 5!"
+        },
+        {
+          "host": "sylvie",
+          "line": "[laughs] Jean, ton calendrier de l'Avent est encore figé sur la même case. Jolyne, garde le banc chaud, Hugo arrive avec les frites. À demain!"
+        }
+      ],
+      "injured": {
+        "8479542": "ir",
+        "8480069": "ir",
+        "8484144": "ir",
+        "8484984": "ir",
+        "8480893": "ir",
+        "8480800": "ir",
+        "8477492": "out",
+        "8477940": "out",
+        "8480012": "dtd",
+        "8471215": "dtd",
+        "8484153": "dtd"
       },
       "awards": {
         "goldenPick": 8484801,
