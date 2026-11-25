@@ -1,34 +1,34 @@
 {
-  "gameDay": "2026-11-23",
-  "generatedAt": "2026-11-24T08:31:14Z",
+  "gameDay": "2026-11-24",
+  "generatedAt": "2026-11-25T08:31:04Z",
   "fr": {
-    "title": "Florence file en solo, Louise fait chou blanc",
+    "title": "McDavid allume la lumière, Jolyne rafle le bingo",
     "bullets": [
-      "Florence ajoute 3 points et grimpe à 127, 13 devant Julien. Ça sent la parade! 🏆",
-      "Bingo : Florence et Elrick signent 3 lignes chacun. Louise? Zéro case, une carte blanche comme la glace fraîche.",
-      "Cutter Gauthier (ANA) a régalé 5 participants; Barzal fait sourire Jolyne et Marjolaine, Kaprizov (Boldy à la passe) fait sourire Vincent. 🏒",
-      "Hugo recule au 11e rang. Michel et Sylvianne sont nez à nez à 36 points, mais les lignes de bingo placent Michel devant.",
-      "Infirmerie : Leo Carlsson (ANA) passe à absent, 6 pooleurs grincent des dents. Malkin (PIT) est incertain, un bon signe pour Vicky et Eve."
+      "McDavid a marqué pour Edmonton et 15 participants sourient. Vegas a quand même gagné 5-3. 🏒",
+      "Florence reste en tête avec 137 points, suivie de Julien (124). Les deux ont ajouté 10 points hier.",
+      "Simon grimpe de trois rangs (14e) et Alexandre de deux (11e). Sylvianne glisse de trois, au 18e rang.",
+      "Bingo : Jolyne (SkiBum) gagne avec 5 lignes et 7 cases. Hugo ferme la marche avec une seule ligne. 🎯",
+      "Infirmerie : Ehlers (CAR), chez Maddox, passe à absent, retour prévu le 28. Carlsson (ANA), chez 6 participants, passe d'absent à incertain. 🩹"
     ]
   },
   "en": {
-    "title": "Florence cruises solo, Louise gets blanked",
+    "title": "McDavid lights the lamp, Jolyne takes the bingo crown",
     "bullets": [
-      "Florence adds 3 points and climbs to 127, 13 clear of Julien. Start planning the parade! 🏆",
-      "Bingo: Florence and Elrick each land 3 lines. Louise? Zero squares, a card as blank as fresh ice.",
-      "Cutter Gauthier (ANA) rewarded 5 participants; Barzal cheers up Jolyne and Marjolaine, and Kaprizov (Boldy assisting) does the same for Vincent. 🏒",
-      "Hugo slips to 11th. Michel and Sylvianne are tied at 36 points, but bingo lines put Michel ahead.",
-      "Infirmary: Leo Carlsson (ANA) is now out, and 6 poolies are wincing. Malkin (PIT) is day-to-day, good news for Vicky and Eve."
+      "McDavid scored for Edmonton and 15 participants are smiling. Vegas still won 5-3. 🏒",
+      "Florence stays on top with 137 points, followed by Julien (124). Both added 10 points last night.",
+      "Simon climbs three spots (14th) and Alexandre two (11th). Sylvianne slides three, down to 18th.",
+      "Bingo: Jolyne (SkiBum) wins with 5 lines and 7 squares. Hugo brings up the rear with a single line. 🎯",
+      "Infirmary: Ehlers (CAR), owned by Maddox, goes from day-to-day to out, back around the 28th. Carlsson (ANA), owned by 6 participants, goes from out to day-to-day. 🩹"
     ]
   },
   "image": {
     "fr": {
       "src": "data/recap-fr.png",
-      "alt": "HUGO, 0 PT : 11E DANS SON PROPRE POOL · VETO REFUSÉ / JOLYNE DOUBLE LE PROPRIO PAR 1 PT : SKIBUM REMONTE LA PENTE"
+      "alt": "ZEGRAS : 4 MATCHS, 0 POINT / SES 3 POOLERS RÊVAIENT D'UN MICHIGAN. UN RICOCHET FERAIT L'AFFAIRE."
     },
     "en": {
       "src": "data/recap-en.png",
-      "alt": "HUGO, 0 PTS: OWNS THE POOL, NOW 11TH IN IT · VETO DENIED / JOLYNE PASSES THE COMMISSIONER BY 1 PT: SKIBUM SKIS UPHILL"
+      "alt": "ZEGRAS: 4 GAMES, 0 POINTS / 3 POOLERS WANTED A MICHIGAN. THEY'D TAKE A SHIN-PAD BOUNCE."
     }
   }
 }

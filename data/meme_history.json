@@ -1,23 +1,6 @@
 {
   "memes": [
     {
-      "gameDay": "2026-11-09",
-      "category": "player",
-      "format": "versus",
-      "subject": {
-        "kind": "player",
-        "id": 8478403
-      },
-      "subject2": {
-        "kind": "player",
-        "id": 8471214
-      },
-      "fr": {
-        "no": "JACK EICHEL : 24 POINTS, LIBRE COMME L'AIR DEPUIS LE REPÊCHAGE",
-        "yes": "OVECHKIN, 7 MATCHS À SEC : LE POOL CHOISIT LA NOSTALGIE"
-      }
-    },
-    {
       "gameDay": "2026-11-11",
       "category": "participant",
       "format": "classic",
@@ -136,6 +119,19 @@
       "fr": {
         "no": "HUGO, 0 PT : 11E DANS SON PROPRE POOL · VETO REFUSÉ",
         "yes": "JOLYNE DOUBLE LE PROPRIO PAR 1 PT : SKIBUM REMONTE LA PENTE"
+      }
+    },
+    {
+      "gameDay": "2026-11-24",
+      "category": "player",
+      "format": "classic",
+      "subject": {
+        "kind": "player",
+        "id": 8481533
+      },
+      "fr": {
+        "top": "ZEGRAS : 4 MATCHS, 0 POINT",
+        "bottom": "SES 3 POOLERS RÊVAIENT D'UN MICHIGAN. UN RICOCHET FERAIT L'AFFAIRE."
       }
     }
   ]
