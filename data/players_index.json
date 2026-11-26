@@ -238,13 +238,6 @@
     "points": 12
   },
   {
-    "id": 8481604,
-    "name": "Pavel Dorofeyev",
-    "pos": "F",
-    "team": "NYR",
-    "points": 12
-  },
-  {
     "id": 8476448,
     "name": "William Karlsson",
     "pos": "F",
@@ -298,13 +291,6 @@
     "name": "Pavel Buchnevich",
     "pos": "F",
     "team": "STL",
-    "points": 11
-  },
-  {
-    "id": 8484768,
-    "name": "Zayne Parekh",
-    "pos": "D",
-    "team": "CGY",
     "points": 11
   },
   {
@@ -452,6 +438,20 @@
     "name": "Dmitri Simashev",
     "pos": "D",
     "team": "UTA",
+    "points": 8
+  },
+  {
+    "id": 8482408,
+    "name": "Jeff Malott",
+    "pos": "F",
+    "team": "ANA",
+    "points": 8
+  },
+  {
+    "id": 8481523,
+    "name": "Kirby Dach",
+    "pos": "F",
+    "team": "DET",
     "points": 8
   },
   {
@@ -868,6 +868,13 @@
     "points": 3
   },
   {
+    "id": 8477938,
+    "name": "Haydn Fleury",
+    "pos": "D",
+    "team": "WPG",
+    "points": 3
+  },
+  {
     "id": 8475722,
     "name": "Jason Zucker",
     "pos": "F",
@@ -968,13 +975,6 @@
   {
     "id": 8484770,
     "name": "Sam O'Reilly",
-    "pos": "F",
-    "team": "TBL",
-    "points": 2
-  },
-  {
-    "id": 8477149,
-    "name": "Scott Sabourin",
     "pos": "F",
     "team": "TBL",
     "points": 2
@@ -1393,6 +1393,13 @@
     "points": 0
   },
   {
+    "id": 8481567,
+    "name": "Henry Thrun",
+    "pos": "D",
+    "team": "WPG",
+    "points": 0
+  },
+  {
     "id": 8484984,
     "name": "Ivan Demidov",
     "pos": "F",
@@ -1432,13 +1439,6 @@
     "name": "James Reimer",
     "pos": "G",
     "team": "NYR",
-    "points": 0
-  },
-  {
-    "id": 8483497,
-    "name": "Jani Nyman",
-    "pos": "F",
-    "team": "SEA",
     "points": 0
   },
   {
@@ -1670,6 +1670,13 @@
     "name": "Nico Hischier",
     "pos": "F",
     "team": "NJD",
+    "points": 0
+  },
+  {
+    "id": 8481604,
+    "name": "Pavel Dorofeyev",
+    "pos": "F",
+    "team": "NYR",
     "points": 0
   },
   {
