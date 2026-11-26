@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T05:43:02Z",
+  "updated": "2026-11-26T21:42:06Z",
   "source": "ESPN",
   "players": [
     {
@@ -91,17 +91,6 @@
       "note": "out"
     },
     {
-      "id": 8484153,
-      "name": "Leo Carlsson",
-      "team": "ANA",
-      "pos": "F",
-      "status": "out",
-      "type": "Upper Body",
-      "returnDate": "2026-11-27",
-      "noteDate": "2026-11-25",
-      "note": "out"
-    },
-    {
       "id": 8477492,
       "name": "Nathan MacKinnon",
       "team": "COL",
@@ -113,15 +102,26 @@
       "note": "MacKinnon (lower body) has been evaluated by a specialist and is expected to miss the next 12 weeks, Aarif Deen of Colorado Hockey Now reports Saturday."
     },
     {
+      "id": 8484153,
+      "name": "Leo Carlsson",
+      "team": "ANA",
+      "pos": "F",
+      "status": "dtd",
+      "type": "Upper Body",
+      "returnDate": "2026-11-27",
+      "noteDate": "2026-11-26",
+      "note": "day-to-day"
+    },
+    {
       "id": 8477940,
       "name": "Nikolaj Ehlers",
       "team": "CAR",
       "pos": "F",
-      "status": "out",
+      "status": "dtd",
       "type": "Lower Body",
       "returnDate": "2026-11-28",
-      "noteDate": "2026-11-24",
-      "note": "out"
+      "noteDate": "2026-11-26",
+      "note": "day-to-day"
     }
   ]
 }

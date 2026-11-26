@@ -98,10 +98,24 @@
     "points": 16
   },
   {
+    "id": 8478406,
+    "name": "Mackenzie Blackwood",
+    "pos": "G",
+    "team": "COL",
+    "points": 16
+  },
+  {
     "id": 8483489,
     "name": "Fraser Minten",
     "pos": "F",
     "team": "BOS",
+    "points": 15
+  },
+  {
+    "id": 8476455,
+    "name": "Gabriel Landeskog",
+    "pos": "F",
+    "team": "COL",
     "points": 15
   },
   {
@@ -124,13 +138,6 @@
     "pos": "D",
     "team": "DAL",
     "points": 15
-  },
-  {
-    "id": 8476455,
-    "name": "Gabriel Landeskog",
-    "pos": "F",
-    "team": "COL",
-    "points": 14
   },
   {
     "id": 8484170,
@@ -165,13 +172,6 @@
     "name": "Devon Levi",
     "pos": "G",
     "team": "EDM",
-    "points": 13
-  },
-  {
-    "id": 8478406,
-    "name": "Mackenzie Blackwood",
-    "pos": "G",
-    "team": "COL",
     "points": 13
   },
   {
@@ -469,6 +469,13 @@
     "points": 8
   },
   {
+    "id": 8481519,
+    "name": "Spencer Knight",
+    "pos": "G",
+    "team": "CHI",
+    "points": 8
+  },
+  {
     "id": 8479973,
     "name": "Stuart Skinner",
     "pos": "G",
@@ -511,6 +518,13 @@
     "points": 7
   },
   {
+    "id": 8476316,
+    "name": "Laurent Brossoit",
+    "pos": "G",
+    "team": "ANA",
+    "points": 7
+  },
+  {
     "id": 8478859,
     "name": "Niko Mikkola",
     "pos": "D",
@@ -522,13 +536,6 @@
     "name": "Ridly Greig",
     "pos": "F",
     "team": "OTT",
-    "points": 7
-  },
-  {
-    "id": 8481519,
-    "name": "Spencer Knight",
-    "pos": "G",
-    "team": "CHI",
     "points": 7
   },
   {
@@ -700,6 +707,13 @@
     "points": 5
   },
   {
+    "id": 8478366,
+    "name": "Frank Vatrano",
+    "pos": "F",
+    "team": "ANA",
+    "points": 5
+  },
+  {
     "id": 8478048,
     "name": "Igor Shesterkin",
     "pos": "G",
@@ -742,13 +756,6 @@
     "points": 4
   },
   {
-    "id": 8478366,
-    "name": "Frank Vatrano",
-    "pos": "F",
-    "team": "ANA",
-    "points": 4
-  },
-  {
     "id": 8482487,
     "name": "Jakub Dobes",
     "pos": "G",
@@ -774,13 +781,6 @@
     "name": "Justus Annunen",
     "pos": "G",
     "team": "NSH",
-    "points": 4
-  },
-  {
-    "id": 8476316,
-    "name": "Laurent Brossoit",
-    "pos": "G",
-    "team": "ANA",
     "points": 4
   },
   {
