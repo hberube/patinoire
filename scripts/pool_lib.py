@@ -51,9 +51,23 @@ def get_json(url, params=None, tries=6):
             time.sleep(wait)
 
 
-def _fetch(kind, season, report="summary"):
-    params = {"limit": -1, "cayenneExp": f"seasonId={season} and gameTypeId=2"}
-    return get_json(STATS_URL.format(kind=kind, report=report), params)["data"]
+def _fetch(kind, season, report="summary", page=100):
+    """Every row of a stats report. Since late Nov 2026 the API ignores limit=-1 and returns at most
+    100 rows, which zeroed every skater outside the top 100, so page through it (sorted by id so the
+    pages don't overlap) and fail loudly rather than publish a short list."""
+    rows, total = [], None
+    sort = json.dumps([{"property": "playerId", "direction": "ASC"}])
+    while total is None or len(rows) < total:
+        params = {"limit": page, "start": len(rows), "sort": sort,
+                  "cayenneExp": f"seasonId={season} and gameTypeId=2"}
+        data = get_json(STATS_URL.format(kind=kind, report=report), params)
+        batch, total = data["data"], data.get("total", 0)
+        if not batch:
+            break
+        rows += batch
+    if total and len(rows) < total:
+        raise RuntimeError(f"{kind} {report}: got {len(rows)} of {total} rows from the NHL stats API")
+    return rows
 
 
 def fetch_season_stats(season):
