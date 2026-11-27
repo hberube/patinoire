@@ -238,13 +238,6 @@
     "points": 12
   },
   {
-    "id": 8481604,
-    "name": "Pavel Dorofeyev",
-    "pos": "F",
-    "team": "NYR",
-    "points": 12
-  },
-  {
     "id": 8476448,
     "name": "William Karlsson",
     "pos": "F",
@@ -287,17 +280,17 @@
     "points": 11
   },
   {
+    "id": 8477416,
+    "name": "Oliver Bjorkstrand",
+    "pos": "F",
+    "team": "NYR",
+    "points": 11
+  },
+  {
     "id": 8477402,
     "name": "Pavel Buchnevich",
     "pos": "F",
     "team": "STL",
-    "points": 11
-  },
-  {
-    "id": 8484768,
-    "name": "Zayne Parekh",
-    "pos": "D",
-    "team": "CGY",
     "points": 11
   },
   {
@@ -861,6 +854,13 @@
     "points": 4
   },
   {
+    "id": 8484790,
+    "name": "Adam Jiricek",
+    "pos": "D",
+    "team": "STL",
+    "points": 3
+  },
+  {
     "id": 8479292,
     "name": "Charlie Lindgren",
     "pos": "G",
@@ -973,8 +973,8 @@
     "points": 2
   },
   {
-    "id": 8477149,
-    "name": "Scott Sabourin",
+    "id": 8484770,
+    "name": "Sam O'Reilly",
     "pos": "F",
     "team": "TBL",
     "points": 2
@@ -1442,13 +1442,6 @@
     "points": 0
   },
   {
-    "id": 8483497,
-    "name": "Jani Nyman",
-    "pos": "F",
-    "team": "SEA",
-    "points": 0
-  },
-  {
     "id": 8480027,
     "name": "Jason Robertson",
     "pos": "F",
@@ -1551,6 +1544,13 @@
     "name": "Martin Necas",
     "pos": "F",
     "team": "COL",
+    "points": 0
+  },
+  {
+    "id": 8478891,
+    "name": "Mason Appleton",
+    "pos": "F",
+    "team": "DET",
     "points": 0
   },
   {
@@ -1670,6 +1670,13 @@
     "name": "Nico Hischier",
     "pos": "F",
     "team": "NJD",
+    "points": 0
+  },
+  {
+    "id": 8481604,
+    "name": "Pavel Dorofeyev",
+    "pos": "F",
+    "team": "NYR",
     "points": 0
   },
   {
