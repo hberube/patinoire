@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-28T00:04:06Z",
+  "lastUpdated": "2026-11-28T03:55:13Z",
   "season": "20262027",
   "previousRanks": {
     "usr_guillaume_brossard": 1,
@@ -46,9 +46,9 @@
       "participantId": "usr_guillaume_brossard",
       "participantName": "Guillaume Brossard",
       "teamName": "Laser Kiwis",
-      "totalPoints": 537,
-      "totalGoals": 167,
-      "totalAssists": 326,
+      "totalPoints": 548,
+      "totalGoals": 169,
+      "totalAssists": 335,
       "goalieWins": 32,
       "shootoutGoals": 0,
       "tradesUsed": {
@@ -131,27 +131,10 @@
           "pos": "F",
           "group": 5,
           "team": "VGK",
-          "gp": 24,
-          "stats": {
-            "goals": 4,
-            "assists": 25,
-            "soGoals": 0,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 29
-          }
-        },
-        {
-          "id": 8481559,
-          "name": "Jack Hughes",
-          "pos": "F",
-          "group": 6,
-          "team": "NJD",
           "gp": 25,
           "stats": {
-            "goals": 10,
-            "assists": 20,
+            "goals": 4,
+            "assists": 26,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
@@ -160,20 +143,37 @@
           }
         },
         {
+          "id": 8481559,
+          "name": "Jack Hughes",
+          "pos": "F",
+          "group": 6,
+          "team": "NJD",
+          "gp": 26,
+          "stats": {
+            "goals": 11,
+            "assists": 23,
+            "soGoals": 0,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 34
+          }
+        },
+        {
           "id": 8481557,
           "name": "Matt Boldy",
           "pos": "F",
           "group": 7,
           "team": "MIN",
-          "gp": 27,
+          "gp": 28,
           "stats": {
             "goals": 14,
-            "assists": 18,
+            "assists": 19,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 32
+            "points": 33
           }
         },
         {
@@ -182,7 +182,7 @@
           "pos": "F",
           "group": 8,
           "team": "TOR",
-          "gp": 26,
+          "gp": 27,
           "stats": {
             "goals": 11,
             "assists": 14,
@@ -199,7 +199,7 @@
           "pos": "F",
           "group": 9,
           "team": "ANA",
-          "gp": 25,
+          "gp": 26,
           "stats": {
             "goals": 23,
             "assists": 9,
@@ -216,7 +216,7 @@
           "pos": "F",
           "group": 10,
           "team": "TOR",
-          "gp": 14,
+          "gp": 15,
           "stats": {
             "goals": 6,
             "assists": 8,
@@ -233,15 +233,15 @@
           "pos": "F",
           "group": 11,
           "team": "STL",
-          "gp": 25,
+          "gp": 26,
           "stats": {
-            "goals": 5,
-            "assists": 20,
+            "goals": 6,
+            "assists": 22,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 25
+            "points": 28
           }
         },
         {
@@ -301,15 +301,15 @@
           "pos": "F",
           "group": 15,
           "team": "TOR",
-          "gp": 26,
+          "gp": 27,
           "stats": {
             "goals": 7,
-            "assists": 8,
+            "assists": 9,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 15
+            "points": 16
           }
         },
         {
@@ -335,15 +335,15 @@
           "pos": "D",
           "group": 17,
           "team": "COL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 5,
-            "assists": 21,
-            "soGoals": 0,
+            "assists": 22,
+            "soGoals": 1,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 26
+            "points": 27
           }
         },
         {
@@ -386,7 +386,7 @@
           "pos": "G",
           "group": 20,
           "team": "WSH",
-          "gp": 16,
+          "gp": 17,
           "stats": {
             "goals": 0,
             "assists": 1,
@@ -403,7 +403,7 @@
           "pos": "G",
           "group": 21,
           "team": "BOS",
-          "gp": 18,
+          "gp": 19,
           "stats": {
             "goals": 0,
             "assists": 1,
@@ -418,16 +418,16 @@
       "formerStats": [],
       "rank": 1,
       "previousRank": 1,
-      "pointsDelta": 0
+      "pointsDelta": 11
     },
     {
       "participantId": "usr_sylvianne",
       "participantName": "Sylvianne",
       "teamName": "Maman Girafe",
-      "totalPoints": 526,
-      "totalGoals": 188,
-      "totalAssists": 303,
-      "goalieWins": 29,
+      "totalPoints": 535,
+      "totalGoals": 192,
+      "totalAssists": 307,
+      "goalieWins": 30,
       "shootoutGoals": 0,
       "tradesUsed": {
         "F": 0,
@@ -526,15 +526,15 @@
           "pos": "F",
           "group": 6,
           "team": "TBL",
-          "gp": 24,
+          "gp": 25,
           "stats": {
-            "goals": 13,
+            "goals": 15,
             "assists": 16,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 29
+            "points": 31
           }
         },
         {
@@ -560,15 +560,15 @@
           "pos": "F",
           "group": 8,
           "team": "DAL",
-          "gp": 24,
+          "gp": 25,
           "stats": {
             "goals": 10,
-            "assists": 18,
+            "assists": 19,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 28
+            "points": 29
           }
         },
         {
@@ -577,7 +577,7 @@
           "pos": "F",
           "group": 9,
           "team": "ANA",
-          "gp": 25,
+          "gp": 26,
           "stats": {
             "goals": 23,
             "assists": 9,
@@ -594,15 +594,15 @@
           "pos": "F",
           "group": 10,
           "team": "LAK",
-          "gp": 21,
+          "gp": 22,
           "stats": {
-            "goals": 6,
+            "goals": 7,
             "assists": 8,
             "soGoals": 1,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 14
+            "points": 15
           }
         },
         {
@@ -611,15 +611,15 @@
           "pos": "F",
           "group": 11,
           "team": "STL",
-          "gp": 25,
+          "gp": 26,
           "stats": {
-            "goals": 5,
-            "assists": 20,
+            "goals": 6,
+            "assists": 22,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 25
+            "points": 28
           }
         },
         {
@@ -645,7 +645,7 @@
           "pos": "F",
           "group": 13,
           "team": "NSH",
-          "gp": 24,
+          "gp": 25,
           "stats": {
             "goals": 12,
             "assists": 12,
@@ -713,15 +713,15 @@
           "pos": "D",
           "group": 17,
           "team": "COL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 5,
-            "assists": 21,
-            "soGoals": 0,
+            "assists": 22,
+            "soGoals": 1,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 26
+            "points": 27
           }
         },
         {
@@ -764,15 +764,15 @@
           "pos": "G",
           "group": 20,
           "team": "UTA",
-          "gp": 17,
+          "gp": 18,
           "stats": {
             "goals": 0,
             "assists": 1,
             "soGoals": 0,
-            "wins": 7,
+            "wins": 8,
             "shutouts": 2,
             "otl": 2,
-            "points": 12
+            "points": 13
           }
         },
         {
@@ -781,7 +781,7 @@
           "pos": "G",
           "group": 21,
           "team": "BOS",
-          "gp": 18,
+          "gp": 19,
           "stats": {
             "goals": 0,
             "assists": 1,
@@ -796,16 +796,16 @@
       "formerStats": [],
       "rank": 2,
       "previousRank": 2,
-      "pointsDelta": 0
+      "pointsDelta": 9
     },
     {
       "participantId": "usr_michel_bry",
       "participantName": "Michel Bry",
       "teamName": "Les Ducks",
-      "totalPoints": 526,
-      "totalGoals": 171,
-      "totalAssists": 320,
-      "goalieWins": 29,
+      "totalPoints": 533,
+      "totalGoals": 172,
+      "totalAssists": 325,
+      "goalieWins": 30,
       "shootoutGoals": 0,
       "tradesUsed": {
         "F": 0,
@@ -887,15 +887,15 @@
           "pos": "F",
           "group": 5,
           "team": "VGK",
-          "gp": 24,
+          "gp": 25,
           "stats": {
             "goals": 4,
-            "assists": 25,
+            "assists": 26,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 29
+            "points": 30
           }
         },
         {
@@ -904,15 +904,15 @@
           "pos": "F",
           "group": 6,
           "team": "NJD",
-          "gp": 25,
+          "gp": 26,
           "stats": {
-            "goals": 10,
-            "assists": 20,
+            "goals": 11,
+            "assists": 23,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 30
+            "points": 34
           }
         },
         {
@@ -938,7 +938,7 @@
           "pos": "F",
           "group": 8,
           "team": "TOR",
-          "gp": 26,
+          "gp": 27,
           "stats": {
             "goals": 11,
             "assists": 14,
@@ -955,7 +955,7 @@
           "pos": "F",
           "group": 9,
           "team": "VGK",
-          "gp": 26,
+          "gp": 27,
           "stats": {
             "goals": 11,
             "assists": 12,
@@ -989,7 +989,7 @@
           "pos": "F",
           "group": 11,
           "team": "WSH",
-          "gp": 22,
+          "gp": 23,
           "stats": {
             "goals": 15,
             "assists": 5,
@@ -1040,7 +1040,7 @@
           "pos": "F",
           "group": 14,
           "team": "CBJ",
-          "gp": 23,
+          "gp": 24,
           "stats": {
             "goals": 6,
             "assists": 8,
@@ -1057,15 +1057,15 @@
           "pos": "F",
           "group": 15,
           "team": "TOR",
-          "gp": 26,
+          "gp": 27,
           "stats": {
             "goals": 7,
-            "assists": 8,
+            "assists": 9,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 15
+            "points": 16
           }
         },
         {
@@ -1142,15 +1142,15 @@
           "pos": "G",
           "group": 20,
           "team": "UTA",
-          "gp": 17,
+          "gp": 18,
           "stats": {
             "goals": 0,
             "assists": 1,
             "soGoals": 0,
-            "wins": 7,
+            "wins": 8,
             "shutouts": 2,
             "otl": 2,
-            "points": 12
+            "points": 13
           }
         },
         {
@@ -1159,7 +1159,7 @@
           "pos": "G",
           "group": 21,
           "team": "BOS",
-          "gp": 18,
+          "gp": 19,
           "stats": {
             "goals": 0,
             "assists": 1,
@@ -1174,15 +1174,15 @@
       "formerStats": [],
       "rank": 3,
       "previousRank": 3,
-      "pointsDelta": 0
+      "pointsDelta": 7
     },
     {
       "participantId": "usr_alexandre_comeau",
       "participantName": "Alexandre Comeau",
       "teamName": "Éperviers de Sorel",
-      "totalPoints": 505,
-      "totalGoals": 148,
-      "totalAssists": 315,
+      "totalPoints": 515,
+      "totalGoals": 150,
+      "totalAssists": 323,
       "goalieWins": 30,
       "shootoutGoals": 0,
       "tradesUsed": {
@@ -1265,15 +1265,15 @@
           "pos": "F",
           "group": 5,
           "team": "VGK",
-          "gp": 24,
+          "gp": 25,
           "stats": {
             "goals": 4,
-            "assists": 25,
+            "assists": 26,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 29
+            "points": 30
           }
         },
         {
@@ -1282,15 +1282,15 @@
           "pos": "F",
           "group": 6,
           "team": "NJD",
-          "gp": 25,
+          "gp": 26,
           "stats": {
-            "goals": 10,
-            "assists": 20,
+            "goals": 11,
+            "assists": 23,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 30
+            "points": 34
           }
         },
         {
@@ -1316,15 +1316,15 @@
           "pos": "F",
           "group": 8,
           "team": "DAL",
-          "gp": 24,
+          "gp": 25,
           "stats": {
             "goals": 10,
-            "assists": 18,
+            "assists": 19,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 28
+            "points": 29
           }
         },
         {
@@ -1333,15 +1333,15 @@
           "pos": "F",
           "group": 9,
           "team": "TBL",
-          "gp": 21,
+          "gp": 22,
           "stats": {
             "goals": 13,
-            "assists": 11,
+            "assists": 12,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 24
+            "points": 25
           }
         },
         {
@@ -1367,15 +1367,15 @@
           "pos": "F",
           "group": 11,
           "team": "STL",
-          "gp": 25,
+          "gp": 26,
           "stats": {
-            "goals": 5,
-            "assists": 20,
+            "goals": 6,
+            "assists": 22,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 25
+            "points": 28
           }
         },
         {
@@ -1418,7 +1418,7 @@
           "pos": "F",
           "group": 14,
           "team": "CBJ",
-          "gp": 23,
+          "gp": 24,
           "stats": {
             "goals": 6,
             "assists": 8,
@@ -1537,7 +1537,7 @@
           "pos": "G",
           "group": 21,
           "team": "BOS",
-          "gp": 18,
+          "gp": 19,
           "stats": {
             "goals": 0,
             "assists": 1,
@@ -1552,15 +1552,15 @@
       "formerStats": [],
       "rank": 4,
       "previousRank": 4,
-      "pointsDelta": 0
+      "pointsDelta": 10
     },
     {
       "participantId": "usr_elrick",
       "participantName": "Elrick",
       "teamName": "Michael Scofield",
-      "totalPoints": 503,
-      "totalGoals": 187,
-      "totalAssists": 284,
+      "totalPoints": 510,
+      "totalGoals": 188,
+      "totalAssists": 290,
       "goalieWins": 30,
       "shootoutGoals": 0,
       "tradesUsed": {
@@ -1660,15 +1660,15 @@
           "pos": "F",
           "group": 6,
           "team": "DAL",
-          "gp": 22,
+          "gp": 23,
           "stats": {
             "goals": 8,
-            "assists": 14,
+            "assists": 15,
             "soGoals": 1,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 22
+            "points": 23
           }
         },
         {
@@ -1677,15 +1677,15 @@
           "pos": "F",
           "group": 7,
           "team": "MIN",
-          "gp": 27,
+          "gp": 28,
           "stats": {
             "goals": 14,
-            "assists": 18,
+            "assists": 19,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 32
+            "points": 33
           }
         },
         {
@@ -1694,7 +1694,7 @@
           "pos": "F",
           "group": 8,
           "team": "TOR",
-          "gp": 26,
+          "gp": 27,
           "stats": {
             "goals": 11,
             "assists": 14,
@@ -1711,7 +1711,7 @@
           "pos": "F",
           "group": 9,
           "team": "ANA",
-          "gp": 25,
+          "gp": 26,
           "stats": {
             "goals": 23,
             "assists": 9,
@@ -1728,15 +1728,15 @@
           "pos": "F",
           "group": 10,
           "team": "LAK",
-          "gp": 21,
+          "gp": 22,
           "stats": {
-            "goals": 6,
+            "goals": 7,
             "assists": 8,
             "soGoals": 1,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 14
+            "points": 15
           }
         },
         {
@@ -1745,15 +1745,15 @@
           "pos": "F",
           "group": 11,
           "team": "UTA",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 7,
-            "assists": 7,
+            "assists": 8,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 14
+            "points": 15
           }
         },
         {
@@ -1762,7 +1762,7 @@
           "pos": "F",
           "group": 12,
           "team": "FLA",
-          "gp": 25,
+          "gp": 26,
           "stats": {
             "goals": 12,
             "assists": 11,
@@ -1779,7 +1779,7 @@
           "pos": "F",
           "group": 13,
           "team": "NSH",
-          "gp": 24,
+          "gp": 25,
           "stats": {
             "goals": 12,
             "assists": 12,
@@ -1796,15 +1796,15 @@
           "pos": "F",
           "group": 14,
           "team": "FLA",
-          "gp": 25,
+          "gp": 26,
           "stats": {
             "goals": 11,
-            "assists": 13,
+            "assists": 15,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 24
+            "points": 26
           }
         },
         {
@@ -1847,15 +1847,15 @@
           "pos": "D",
           "group": 17,
           "team": "COL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 5,
-            "assists": 21,
-            "soGoals": 0,
+            "assists": 22,
+            "soGoals": 1,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 26
+            "points": 27
           }
         },
         {
@@ -1898,7 +1898,7 @@
           "pos": "G",
           "group": 20,
           "team": "WSH",
-          "gp": 16,
+          "gp": 17,
           "stats": {
             "goals": 0,
             "assists": 1,
@@ -1915,7 +1915,7 @@
           "pos": "G",
           "group": 21,
           "team": "BOS",
-          "gp": 18,
+          "gp": 19,
           "stats": {
             "goals": 0,
             "assists": 1,
@@ -1930,393 +1930,15 @@
       "formerStats": [],
       "rank": 5,
       "previousRank": 5,
-      "pointsDelta": 0
-    },
-    {
-      "participantId": "usr_hugo_berube",
-      "participantName": "Hugo Berube",
-      "teamName": "Crazy Blue Heelers",
-      "totalPoints": 495,
-      "totalGoals": 153,
-      "totalAssists": 315,
-      "goalieWins": 25,
-      "shootoutGoals": 0,
-      "tradesUsed": {
-        "F": 0,
-        "D": 0,
-        "G": 0
-      },
-      "rosterStats": [
-        {
-          "id": 8478402,
-          "name": "Connor McDavid",
-          "pos": "F",
-          "group": 1,
-          "team": "EDM",
-          "gp": 27,
-          "stats": {
-            "goals": 14,
-            "assists": 45,
-            "soGoals": 2,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 59
-          }
-        },
-        {
-          "id": 8484144,
-          "name": "Connor Bedard",
-          "pos": "F",
-          "group": 2,
-          "team": "CHI",
-          "gp": 15,
-          "stats": {
-            "goals": 7,
-            "assists": 11,
-            "soGoals": 0,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 18
-          }
-        },
-        {
-          "id": 8477492,
-          "name": "Nathan MacKinnon",
-          "pos": "F",
-          "group": 3,
-          "team": "COL",
-          "gp": 20,
-          "stats": {
-            "goals": 10,
-            "assists": 20,
-            "soGoals": 0,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 30
-          }
-        },
-        {
-          "id": 8477934,
-          "name": "Leon Draisaitl",
-          "pos": "F",
-          "group": 4,
-          "team": "EDM",
-          "gp": 27,
-          "stats": {
-            "goals": 23,
-            "assists": 24,
-            "soGoals": 0,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 47
-          }
-        },
-        {
-          "id": 8478483,
-          "name": "Mitch Marner",
-          "pos": "F",
-          "group": 5,
-          "team": "VGK",
-          "gp": 24,
-          "stats": {
-            "goals": 4,
-            "assists": 25,
-            "soGoals": 0,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 29
-          }
-        },
-        {
-          "id": 8481559,
-          "name": "Jack Hughes",
-          "pos": "F",
-          "group": 6,
-          "team": "NJD",
-          "gp": 25,
-          "stats": {
-            "goals": 10,
-            "assists": 20,
-            "soGoals": 0,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 30
-          }
-        },
-        {
-          "id": 8481540,
-          "name": "Cole Caufield",
-          "pos": "F",
-          "group": 7,
-          "team": "MTL",
-          "gp": 26,
-          "stats": {
-            "goals": 12,
-            "assists": 8,
-            "soGoals": 1,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 20
-          }
-        },
-        {
-          "id": 8478420,
-          "name": "Mikko Rantanen",
-          "pos": "F",
-          "group": 8,
-          "team": "DAL",
-          "gp": 24,
-          "stats": {
-            "goals": 10,
-            "assists": 18,
-            "soGoals": 0,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 28
-          }
-        },
-        {
-          "id": 8475913,
-          "name": "Mark Stone",
-          "pos": "F",
-          "group": 9,
-          "team": "VGK",
-          "gp": 26,
-          "stats": {
-            "goals": 11,
-            "assists": 12,
-            "soGoals": 0,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 23
-          }
-        },
-        {
-          "id": 8483515,
-          "name": "Juraj Slafkovský",
-          "pos": "F",
-          "group": 10,
-          "team": "MTL",
-          "gp": 26,
-          "stats": {
-            "goals": 2,
-            "assists": 12,
-            "soGoals": 0,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 14
-          }
-        },
-        {
-          "id": 8480830,
-          "name": "Andrei Svechnikov",
-          "pos": "F",
-          "group": 11,
-          "team": "CAR",
-          "gp": 25,
-          "stats": {
-            "goals": 13,
-            "assists": 10,
-            "soGoals": 0,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 23
-          }
-        },
-        {
-          "id": 8484153,
-          "name": "Leo Carlsson",
-          "pos": "F",
-          "group": 12,
-          "team": "ANA",
-          "gp": 24,
-          "stats": {
-            "goals": 7,
-            "assists": 22,
-            "soGoals": 0,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 29
-          }
-        },
-        {
-          "id": 8480012,
-          "name": "Elias Pettersson",
-          "pos": "F",
-          "group": 13,
-          "team": "VAN",
-          "gp": 24,
-          "stats": {
-            "goals": 6,
-            "assists": 17,
-            "soGoals": 0,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 23
-          }
-        },
-        {
-          "id": 8481533,
-          "name": "Trevor Zegras",
-          "pos": "F",
-          "group": 14,
-          "team": "PHI",
-          "gp": 27,
-          "stats": {
-            "goals": 5,
-            "assists": 10,
-            "soGoals": 0,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 15
-          }
-        },
-        {
-          "id": 8484984,
-          "name": "Ivan Demidov",
-          "pos": "F",
-          "group": 15,
-          "team": "MTL",
-          "gp": 2,
-          "stats": {
-            "goals": 1,
-            "assists": 1,
-            "soGoals": 0,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 2
-          }
-        },
-        {
-          "id": 8480803,
-          "name": "Evan Bouchard",
-          "pos": "D",
-          "group": 16,
-          "team": "EDM",
-          "gp": 27,
-          "stats": {
-            "goals": 12,
-            "assists": 29,
-            "soGoals": 0,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 41
-          }
-        },
-        {
-          "id": 8483457,
-          "name": "Lane Hutson",
-          "pos": "D",
-          "group": 17,
-          "team": "MTL",
-          "gp": 26,
-          "stats": {
-            "goals": 5,
-            "assists": 19,
-            "soGoals": 0,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 24
-          }
-        },
-        {
-          "id": 8479325,
-          "name": "Charlie McAvoy",
-          "pos": "D",
-          "group": 18,
-          "team": "BOS",
-          "gp": 18,
-          "stats": {
-            "goals": 1,
-            "assists": 11,
-            "soGoals": 0,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 12
-          }
-        },
-        {
-          "id": 8476883,
-          "name": "Andrei Vasilevskiy",
-          "pos": "G",
-          "group": 19,
-          "team": "TBL",
-          "gp": 18,
-          "stats": {
-            "goals": 0,
-            "assists": 0,
-            "soGoals": 0,
-            "wins": 11,
-            "shutouts": 0,
-            "otl": 1,
-            "points": 11
-          }
-        },
-        {
-          "id": 8475683,
-          "name": "Sergei Bobrovsky",
-          "pos": "G",
-          "group": 20,
-          "team": "TOR",
-          "gp": 14,
-          "stats": {
-            "goals": 0,
-            "assists": 0,
-            "soGoals": 0,
-            "wins": 3,
-            "shutouts": 0,
-            "otl": 2,
-            "points": 3
-          }
-        },
-        {
-          "id": 8480280,
-          "name": "Jeremy Swayman",
-          "pos": "G",
-          "group": 21,
-          "team": "BOS",
-          "gp": 18,
-          "stats": {
-            "goals": 0,
-            "assists": 1,
-            "soGoals": 0,
-            "wins": 11,
-            "shutouts": 1,
-            "otl": 1,
-            "points": 14
-          }
-        }
-      ],
-      "formerStats": [],
-      "rank": 6,
-      "previousRank": 6,
-      "pointsDelta": 0
+      "pointsDelta": 7
     },
     {
       "participantId": "usr_etienne",
       "participantName": "Étienne",
       "teamName": "The titi master",
-      "totalPoints": 494,
-      "totalGoals": 171,
-      "totalAssists": 298,
+      "totalPoints": 504,
+      "totalGoals": 174,
+      "totalAssists": 305,
       "goalieWins": 23,
       "shootoutGoals": 0,
       "tradesUsed": {
@@ -2416,15 +2038,15 @@
           "pos": "F",
           "group": 6,
           "team": "NJD",
-          "gp": 25,
+          "gp": 26,
           "stats": {
-            "goals": 10,
-            "assists": 20,
+            "goals": 11,
+            "assists": 23,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 30
+            "points": 34
           }
         },
         {
@@ -2433,15 +2055,15 @@
           "pos": "F",
           "group": 7,
           "team": "NSH",
-          "gp": 24,
+          "gp": 25,
           "stats": {
-            "goals": 9,
+            "goals": 10,
             "assists": 17,
             "soGoals": 1,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 26
+            "points": 27
           }
         },
         {
@@ -2450,15 +2072,15 @@
           "pos": "F",
           "group": 8,
           "team": "DAL",
-          "gp": 24,
+          "gp": 25,
           "stats": {
             "goals": 10,
-            "assists": 18,
+            "assists": 19,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 28
+            "points": 29
           }
         },
         {
@@ -2467,7 +2089,7 @@
           "pos": "F",
           "group": 9,
           "team": "VGK",
-          "gp": 26,
+          "gp": 27,
           "stats": {
             "goals": 11,
             "assists": 12,
@@ -2484,15 +2106,15 @@
           "pos": "F",
           "group": 10,
           "team": "LAK",
-          "gp": 21,
+          "gp": 22,
           "stats": {
-            "goals": 6,
+            "goals": 7,
             "assists": 8,
             "soGoals": 1,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 14
+            "points": 15
           }
         },
         {
@@ -2518,7 +2140,7 @@
           "pos": "F",
           "group": 12,
           "team": "FLA",
-          "gp": 25,
+          "gp": 26,
           "stats": {
             "goals": 12,
             "assists": 11,
@@ -2552,15 +2174,15 @@
           "pos": "F",
           "group": 14,
           "team": "FLA",
-          "gp": 25,
+          "gp": 26,
           "stats": {
             "goals": 11,
-            "assists": 13,
+            "assists": 15,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 24
+            "points": 26
           }
         },
         {
@@ -2603,15 +2225,15 @@
           "pos": "D",
           "group": 17,
           "team": "COL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 5,
-            "assists": 21,
-            "soGoals": 0,
+            "assists": 22,
+            "soGoals": 1,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 26
+            "points": 27
           }
         },
         {
@@ -2684,17 +2306,395 @@
         }
       ],
       "formerStats": [],
-      "rank": 7,
+      "rank": 6,
       "previousRank": 7,
-      "pointsDelta": 0
+      "pointsDelta": 10
+    },
+    {
+      "participantId": "usr_hugo_berube",
+      "participantName": "Hugo Berube",
+      "teamName": "Crazy Blue Heelers",
+      "totalPoints": 501,
+      "totalGoals": 154,
+      "totalAssists": 320,
+      "goalieWins": 25,
+      "shootoutGoals": 0,
+      "tradesUsed": {
+        "F": 0,
+        "D": 0,
+        "G": 0
+      },
+      "rosterStats": [
+        {
+          "id": 8478402,
+          "name": "Connor McDavid",
+          "pos": "F",
+          "group": 1,
+          "team": "EDM",
+          "gp": 27,
+          "stats": {
+            "goals": 14,
+            "assists": 45,
+            "soGoals": 2,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 59
+          }
+        },
+        {
+          "id": 8484144,
+          "name": "Connor Bedard",
+          "pos": "F",
+          "group": 2,
+          "team": "CHI",
+          "gp": 15,
+          "stats": {
+            "goals": 7,
+            "assists": 11,
+            "soGoals": 0,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 18
+          }
+        },
+        {
+          "id": 8477492,
+          "name": "Nathan MacKinnon",
+          "pos": "F",
+          "group": 3,
+          "team": "COL",
+          "gp": 20,
+          "stats": {
+            "goals": 10,
+            "assists": 20,
+            "soGoals": 0,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 30
+          }
+        },
+        {
+          "id": 8477934,
+          "name": "Leon Draisaitl",
+          "pos": "F",
+          "group": 4,
+          "team": "EDM",
+          "gp": 27,
+          "stats": {
+            "goals": 23,
+            "assists": 24,
+            "soGoals": 0,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 47
+          }
+        },
+        {
+          "id": 8478483,
+          "name": "Mitch Marner",
+          "pos": "F",
+          "group": 5,
+          "team": "VGK",
+          "gp": 25,
+          "stats": {
+            "goals": 4,
+            "assists": 26,
+            "soGoals": 0,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 30
+          }
+        },
+        {
+          "id": 8481559,
+          "name": "Jack Hughes",
+          "pos": "F",
+          "group": 6,
+          "team": "NJD",
+          "gp": 26,
+          "stats": {
+            "goals": 11,
+            "assists": 23,
+            "soGoals": 0,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 34
+          }
+        },
+        {
+          "id": 8481540,
+          "name": "Cole Caufield",
+          "pos": "F",
+          "group": 7,
+          "team": "MTL",
+          "gp": 26,
+          "stats": {
+            "goals": 12,
+            "assists": 8,
+            "soGoals": 1,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 20
+          }
+        },
+        {
+          "id": 8478420,
+          "name": "Mikko Rantanen",
+          "pos": "F",
+          "group": 8,
+          "team": "DAL",
+          "gp": 25,
+          "stats": {
+            "goals": 10,
+            "assists": 19,
+            "soGoals": 0,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 29
+          }
+        },
+        {
+          "id": 8475913,
+          "name": "Mark Stone",
+          "pos": "F",
+          "group": 9,
+          "team": "VGK",
+          "gp": 27,
+          "stats": {
+            "goals": 11,
+            "assists": 12,
+            "soGoals": 0,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 23
+          }
+        },
+        {
+          "id": 8483515,
+          "name": "Juraj Slafkovský",
+          "pos": "F",
+          "group": 10,
+          "team": "MTL",
+          "gp": 26,
+          "stats": {
+            "goals": 2,
+            "assists": 12,
+            "soGoals": 0,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 14
+          }
+        },
+        {
+          "id": 8480830,
+          "name": "Andrei Svechnikov",
+          "pos": "F",
+          "group": 11,
+          "team": "CAR",
+          "gp": 25,
+          "stats": {
+            "goals": 13,
+            "assists": 10,
+            "soGoals": 0,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 23
+          }
+        },
+        {
+          "id": 8484153,
+          "name": "Leo Carlsson",
+          "pos": "F",
+          "group": 12,
+          "team": "ANA",
+          "gp": 24,
+          "stats": {
+            "goals": 7,
+            "assists": 22,
+            "soGoals": 0,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 29
+          }
+        },
+        {
+          "id": 8480012,
+          "name": "Elias Pettersson",
+          "pos": "F",
+          "group": 13,
+          "team": "VAN",
+          "gp": 24,
+          "stats": {
+            "goals": 6,
+            "assists": 17,
+            "soGoals": 0,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 23
+          }
+        },
+        {
+          "id": 8481533,
+          "name": "Trevor Zegras",
+          "pos": "F",
+          "group": 14,
+          "team": "PHI",
+          "gp": 28,
+          "stats": {
+            "goals": 5,
+            "assists": 10,
+            "soGoals": 0,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 15
+          }
+        },
+        {
+          "id": 8484984,
+          "name": "Ivan Demidov",
+          "pos": "F",
+          "group": 15,
+          "team": "MTL",
+          "gp": 2,
+          "stats": {
+            "goals": 1,
+            "assists": 1,
+            "soGoals": 0,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 2
+          }
+        },
+        {
+          "id": 8480803,
+          "name": "Evan Bouchard",
+          "pos": "D",
+          "group": 16,
+          "team": "EDM",
+          "gp": 27,
+          "stats": {
+            "goals": 12,
+            "assists": 29,
+            "soGoals": 0,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 41
+          }
+        },
+        {
+          "id": 8483457,
+          "name": "Lane Hutson",
+          "pos": "D",
+          "group": 17,
+          "team": "MTL",
+          "gp": 26,
+          "stats": {
+            "goals": 5,
+            "assists": 19,
+            "soGoals": 0,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 24
+          }
+        },
+        {
+          "id": 8479325,
+          "name": "Charlie McAvoy",
+          "pos": "D",
+          "group": 18,
+          "team": "BOS",
+          "gp": 19,
+          "stats": {
+            "goals": 1,
+            "assists": 11,
+            "soGoals": 0,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 12
+          }
+        },
+        {
+          "id": 8476883,
+          "name": "Andrei Vasilevskiy",
+          "pos": "G",
+          "group": 19,
+          "team": "TBL",
+          "gp": 18,
+          "stats": {
+            "goals": 0,
+            "assists": 0,
+            "soGoals": 0,
+            "wins": 11,
+            "shutouts": 0,
+            "otl": 1,
+            "points": 11
+          }
+        },
+        {
+          "id": 8475683,
+          "name": "Sergei Bobrovsky",
+          "pos": "G",
+          "group": 20,
+          "team": "TOR",
+          "gp": 14,
+          "stats": {
+            "goals": 0,
+            "assists": 0,
+            "soGoals": 0,
+            "wins": 3,
+            "shutouts": 0,
+            "otl": 2,
+            "points": 3
+          }
+        },
+        {
+          "id": 8480280,
+          "name": "Jeremy Swayman",
+          "pos": "G",
+          "group": 21,
+          "team": "BOS",
+          "gp": 19,
+          "stats": {
+            "goals": 0,
+            "assists": 1,
+            "soGoals": 0,
+            "wins": 11,
+            "shutouts": 1,
+            "otl": 1,
+            "points": 14
+          }
+        }
+      ],
+      "formerStats": [],
+      "rank": 7,
+      "previousRank": 6,
+      "pointsDelta": 6
     },
     {
       "participantId": "usr_jackson_gagnon",
       "participantName": "Jackson Gagnon",
       "teamName": "Les Anglers",
-      "totalPoints": 493,
-      "totalGoals": 160,
-      "totalAssists": 296,
+      "totalPoints": 500,
+      "totalGoals": 161,
+      "totalAssists": 302,
       "goalieWins": 25,
       "shootoutGoals": 0,
       "tradesUsed": {
@@ -2777,7 +2777,7 @@
           "pos": "F",
           "group": 5,
           "team": "NJD",
-          "gp": 25,
+          "gp": 26,
           "stats": {
             "goals": 4,
             "assists": 19,
@@ -2794,15 +2794,15 @@
           "pos": "F",
           "group": 6,
           "team": "NJD",
-          "gp": 25,
+          "gp": 26,
           "stats": {
-            "goals": 10,
-            "assists": 20,
+            "goals": 11,
+            "assists": 23,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 30
+            "points": 34
           }
         },
         {
@@ -2828,15 +2828,15 @@
           "pos": "F",
           "group": 8,
           "team": "DAL",
-          "gp": 24,
+          "gp": 25,
           "stats": {
             "goals": 10,
-            "assists": 18,
+            "assists": 19,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 28
+            "points": 29
           }
         },
         {
@@ -2845,15 +2845,15 @@
           "pos": "F",
           "group": 9,
           "team": "TBL",
-          "gp": 21,
+          "gp": 22,
           "stats": {
             "goals": 13,
-            "assists": 11,
+            "assists": 12,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 24
+            "points": 25
           }
         },
         {
@@ -2896,7 +2896,7 @@
           "pos": "F",
           "group": 12,
           "team": "FLA",
-          "gp": 25,
+          "gp": 26,
           "stats": {
             "goals": 12,
             "assists": 11,
@@ -2930,7 +2930,7 @@
           "pos": "F",
           "group": 14,
           "team": "PHI",
-          "gp": 27,
+          "gp": 28,
           "stats": {
             "goals": 5,
             "assists": 10,
@@ -2981,15 +2981,15 @@
           "pos": "D",
           "group": 17,
           "team": "COL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 5,
-            "assists": 21,
-            "soGoals": 0,
+            "assists": 22,
+            "soGoals": 1,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 26
+            "points": 27
           }
         },
         {
@@ -3064,15 +3064,15 @@
       "formerStats": [],
       "rank": 8,
       "previousRank": 8,
-      "pointsDelta": 0
+      "pointsDelta": 7
     },
     {
       "participantId": "usr_simon",
       "participantName": "Simon",
       "teamName": "Les Méchants Grisonnants",
-      "totalPoints": 488,
-      "totalGoals": 170,
-      "totalAssists": 286,
+      "totalPoints": 499,
+      "totalGoals": 172,
+      "totalAssists": 295,
       "goalieWins": 30,
       "shootoutGoals": 0,
       "tradesUsed": {
@@ -3172,15 +3172,15 @@
           "pos": "F",
           "group": 6,
           "team": "NJD",
-          "gp": 25,
+          "gp": 26,
           "stats": {
-            "goals": 10,
-            "assists": 20,
+            "goals": 11,
+            "assists": 23,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 30
+            "points": 34
           }
         },
         {
@@ -3206,15 +3206,15 @@
           "pos": "F",
           "group": 8,
           "team": "DAL",
-          "gp": 24,
+          "gp": 25,
           "stats": {
             "goals": 10,
-            "assists": 18,
+            "assists": 19,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 28
+            "points": 29
           }
         },
         {
@@ -3223,15 +3223,15 @@
           "pos": "F",
           "group": 9,
           "team": "TBL",
-          "gp": 21,
+          "gp": 22,
           "stats": {
             "goals": 13,
-            "assists": 11,
+            "assists": 12,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 24
+            "points": 25
           }
         },
         {
@@ -3240,15 +3240,15 @@
           "pos": "F",
           "group": 10,
           "team": "LAK",
-          "gp": 21,
+          "gp": 22,
           "stats": {
-            "goals": 6,
+            "goals": 7,
             "assists": 8,
             "soGoals": 1,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 14
+            "points": 15
           }
         },
         {
@@ -3257,15 +3257,15 @@
           "pos": "F",
           "group": 11,
           "team": "UTA",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 7,
-            "assists": 7,
+            "assists": 8,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 14
+            "points": 15
           }
         },
         {
@@ -3274,7 +3274,7 @@
           "pos": "F",
           "group": 12,
           "team": "FLA",
-          "gp": 25,
+          "gp": 26,
           "stats": {
             "goals": 12,
             "assists": 11,
@@ -3308,15 +3308,15 @@
           "pos": "F",
           "group": 14,
           "team": "FLA",
-          "gp": 25,
+          "gp": 26,
           "stats": {
             "goals": 11,
-            "assists": 13,
+            "assists": 15,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 24
+            "points": 26
           }
         },
         {
@@ -3359,15 +3359,15 @@
           "pos": "D",
           "group": 17,
           "team": "COL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 5,
-            "assists": 21,
-            "soGoals": 0,
+            "assists": 22,
+            "soGoals": 1,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 26
+            "points": 27
           }
         },
         {
@@ -3410,7 +3410,7 @@
           "pos": "G",
           "group": 20,
           "team": "WSH",
-          "gp": 16,
+          "gp": 17,
           "stats": {
             "goals": 0,
             "assists": 1,
@@ -3427,7 +3427,7 @@
           "pos": "G",
           "group": 21,
           "team": "BOS",
-          "gp": 18,
+          "gp": 19,
           "stats": {
             "goals": 0,
             "assists": 1,
@@ -3442,16 +3442,16 @@
       "formerStats": [],
       "rank": 9,
       "previousRank": 9,
-      "pointsDelta": 0
+      "pointsDelta": 11
     },
     {
       "participantId": "usr_vincent",
       "participantName": "Vincent",
       "teamName": "Les HabsRoller",
-      "totalPoints": 465,
+      "totalPoints": 470,
       "totalGoals": 141,
-      "totalAssists": 281,
-      "goalieWins": 33,
+      "totalAssists": 285,
+      "goalieWins": 34,
       "shootoutGoals": 0,
       "tradesUsed": {
         "F": 0,
@@ -3499,7 +3499,7 @@
           "pos": "F",
           "group": 3,
           "team": "MIN",
-          "gp": 27,
+          "gp": 28,
           "stats": {
             "goals": 19,
             "assists": 30,
@@ -3550,15 +3550,15 @@
           "pos": "F",
           "group": 6,
           "team": "DAL",
-          "gp": 22,
+          "gp": 23,
           "stats": {
             "goals": 8,
-            "assists": 14,
+            "assists": 15,
             "soGoals": 1,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 22
+            "points": 23
           }
         },
         {
@@ -3584,7 +3584,7 @@
           "pos": "F",
           "group": 8,
           "team": "TOR",
-          "gp": 26,
+          "gp": 27,
           "stats": {
             "goals": 11,
             "assists": 14,
@@ -3601,15 +3601,15 @@
           "pos": "F",
           "group": 9,
           "team": "TBL",
-          "gp": 21,
+          "gp": 22,
           "stats": {
             "goals": 13,
-            "assists": 11,
+            "assists": 12,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 24
+            "points": 25
           }
         },
         {
@@ -3635,15 +3635,15 @@
           "pos": "F",
           "group": 11,
           "team": "UTA",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 7,
-            "assists": 7,
+            "assists": 8,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 14
+            "points": 15
           }
         },
         {
@@ -3686,7 +3686,7 @@
           "pos": "F",
           "group": 14,
           "team": "PHI",
-          "gp": 27,
+          "gp": 28,
           "stats": {
             "goals": 5,
             "assists": 10,
@@ -3737,15 +3737,15 @@
           "pos": "D",
           "group": 17,
           "team": "COL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 5,
-            "assists": 21,
-            "soGoals": 0,
+            "assists": 22,
+            "soGoals": 1,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 26
+            "points": 27
           }
         },
         {
@@ -3754,7 +3754,7 @@
           "pos": "D",
           "group": 18,
           "team": "BOS",
-          "gp": 18,
+          "gp": 19,
           "stats": {
             "goals": 1,
             "assists": 11,
@@ -3788,7 +3788,7 @@
           "pos": "G",
           "group": 20,
           "team": "WSH",
-          "gp": 16,
+          "gp": 17,
           "stats": {
             "goals": 0,
             "assists": 1,
@@ -3805,30 +3805,30 @@
           "pos": "G",
           "group": 21,
           "team": "OTT",
-          "gp": 14,
+          "gp": 15,
           "stats": {
             "goals": 0,
             "assists": 0,
             "soGoals": 0,
-            "wins": 12,
+            "wins": 13,
             "shutouts": 0,
             "otl": 0,
-            "points": 12
+            "points": 13
           }
         }
       ],
       "formerStats": [],
       "rank": 10,
       "previousRank": 10,
-      "pointsDelta": 0
+      "pointsDelta": 5
     },
     {
       "participantId": "usr_eve",
       "participantName": "Eve",
       "teamName": "Ève Mcdavid-demidov-bérubé",
-      "totalPoints": 460,
-      "totalGoals": 139,
-      "totalAssists": 286,
+      "totalPoints": 464,
+      "totalGoals": 141,
+      "totalAssists": 288,
       "goalieWins": 25,
       "shootoutGoals": 0,
       "tradesUsed": {
@@ -3911,15 +3911,15 @@
           "pos": "F",
           "group": 5,
           "team": "VGK",
-          "gp": 24,
+          "gp": 25,
           "stats": {
             "goals": 4,
-            "assists": 25,
+            "assists": 26,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 29
+            "points": 30
           }
         },
         {
@@ -3928,15 +3928,15 @@
           "pos": "F",
           "group": 6,
           "team": "TBL",
-          "gp": 24,
+          "gp": 25,
           "stats": {
-            "goals": 13,
+            "goals": 15,
             "assists": 16,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 29
+            "points": 31
           }
         },
         {
@@ -3962,15 +3962,15 @@
           "pos": "F",
           "group": 8,
           "team": "DAL",
-          "gp": 24,
+          "gp": 25,
           "stats": {
             "goals": 10,
-            "assists": 18,
+            "assists": 19,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 28
+            "points": 29
           }
         },
         {
@@ -3979,7 +3979,7 @@
           "pos": "F",
           "group": 9,
           "team": "VGK",
-          "gp": 26,
+          "gp": 27,
           "stats": {
             "goals": 11,
             "assists": 12,
@@ -4030,7 +4030,7 @@
           "pos": "F",
           "group": 12,
           "team": "BOS",
-          "gp": 24,
+          "gp": 25,
           "stats": {
             "goals": 6,
             "assists": 15,
@@ -4132,7 +4132,7 @@
           "pos": "D",
           "group": 18,
           "team": "BOS",
-          "gp": 18,
+          "gp": 19,
           "stats": {
             "goals": 1,
             "assists": 11,
@@ -4166,7 +4166,7 @@
           "pos": "G",
           "group": 20,
           "team": "WSH",
-          "gp": 16,
+          "gp": 17,
           "stats": {
             "goals": 0,
             "assists": 1,
@@ -4198,15 +4198,15 @@
       "formerStats": [],
       "rank": 11,
       "previousRank": 11,
-      "pointsDelta": 0
+      "pointsDelta": 4
     },
     {
       "participantId": "usr_julien_berube",
       "participantName": "Julien Bérubé",
       "teamName": "No Regretzkys",
-      "totalPoints": 453,
-      "totalGoals": 140,
-      "totalAssists": 288,
+      "totalPoints": 463,
+      "totalGoals": 141,
+      "totalAssists": 297,
       "goalieWins": 23,
       "shootoutGoals": 0,
       "tradesUsed": {
@@ -4272,15 +4272,15 @@
           "pos": "F",
           "group": 4,
           "team": "FLA",
-          "gp": 25,
+          "gp": 26,
           "stats": {
             "goals": 7,
-            "assists": 26,
+            "assists": 28,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 33
+            "points": 35
           }
         },
         {
@@ -4306,15 +4306,15 @@
           "pos": "F",
           "group": 6,
           "team": "NJD",
-          "gp": 25,
+          "gp": 26,
           "stats": {
-            "goals": 10,
-            "assists": 20,
+            "goals": 11,
+            "assists": 23,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 30
+            "points": 34
           }
         },
         {
@@ -4340,15 +4340,15 @@
           "pos": "F",
           "group": 8,
           "team": "DAL",
-          "gp": 24,
+          "gp": 25,
           "stats": {
             "goals": 10,
-            "assists": 18,
+            "assists": 19,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 28
+            "points": 29
           }
         },
         {
@@ -4357,15 +4357,15 @@
           "pos": "F",
           "group": 9,
           "team": "TBL",
-          "gp": 21,
+          "gp": 22,
           "stats": {
             "goals": 13,
-            "assists": 11,
+            "assists": 12,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 24
+            "points": 25
           }
         },
         {
@@ -4408,7 +4408,7 @@
           "pos": "F",
           "group": 12,
           "team": "FLA",
-          "gp": 25,
+          "gp": 26,
           "stats": {
             "goals": 12,
             "assists": 11,
@@ -4442,7 +4442,7 @@
           "pos": "F",
           "group": 14,
           "team": "WSH",
-          "gp": 22,
+          "gp": 23,
           "stats": {
             "goals": 1,
             "assists": 6,
@@ -4493,15 +4493,15 @@
           "pos": "D",
           "group": 17,
           "team": "COL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 5,
-            "assists": 21,
-            "soGoals": 0,
+            "assists": 22,
+            "soGoals": 1,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 26
+            "points": 27
           }
         },
         {
@@ -4510,15 +4510,15 @@
           "pos": "D",
           "group": 18,
           "team": "DET",
-          "gp": 24,
+          "gp": 25,
           "stats": {
             "goals": 1,
-            "assists": 14,
+            "assists": 15,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 15
+            "points": 16
           }
         },
         {
@@ -4576,15 +4576,393 @@
       "formerStats": [],
       "rank": 12,
       "previousRank": 12,
-      "pointsDelta": 0
+      "pointsDelta": 10
+    },
+    {
+      "participantId": "usr_florence",
+      "participantName": "Florence",
+      "teamName": "The Eras Tour: Stanley Cup Edition",
+      "totalPoints": 453,
+      "totalGoals": 140,
+      "totalAssists": 288,
+      "goalieWins": 23,
+      "shootoutGoals": 0,
+      "tradesUsed": {
+        "F": 0,
+        "D": 0,
+        "G": 0
+      },
+      "rosterStats": [
+        {
+          "id": 8484801,
+          "name": "Macklin Celebrini",
+          "pos": "F",
+          "group": 1,
+          "team": "SJS",
+          "gp": 26,
+          "stats": {
+            "goals": 11,
+            "assists": 22,
+            "soGoals": 2,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 33
+          }
+        },
+        {
+          "id": 8484144,
+          "name": "Connor Bedard",
+          "pos": "F",
+          "group": 2,
+          "team": "CHI",
+          "gp": 15,
+          "stats": {
+            "goals": 7,
+            "assists": 11,
+            "soGoals": 0,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 18
+          }
+        },
+        {
+          "id": 8477492,
+          "name": "Nathan MacKinnon",
+          "pos": "F",
+          "group": 3,
+          "team": "COL",
+          "gp": 20,
+          "stats": {
+            "goals": 10,
+            "assists": 20,
+            "soGoals": 0,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 30
+          }
+        },
+        {
+          "id": 8479314,
+          "name": "Matthew Tkachuk",
+          "pos": "F",
+          "group": 4,
+          "team": "FLA",
+          "gp": 26,
+          "stats": {
+            "goals": 7,
+            "assists": 28,
+            "soGoals": 0,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 35
+          }
+        },
+        {
+          "id": 8478483,
+          "name": "Mitch Marner",
+          "pos": "F",
+          "group": 5,
+          "team": "VGK",
+          "gp": 25,
+          "stats": {
+            "goals": 4,
+            "assists": 26,
+            "soGoals": 0,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 30
+          }
+        },
+        {
+          "id": 8481559,
+          "name": "Jack Hughes",
+          "pos": "F",
+          "group": 6,
+          "team": "NJD",
+          "gp": 26,
+          "stats": {
+            "goals": 11,
+            "assists": 23,
+            "soGoals": 0,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 34
+          }
+        },
+        {
+          "id": 8481540,
+          "name": "Cole Caufield",
+          "pos": "F",
+          "group": 7,
+          "team": "MTL",
+          "gp": 26,
+          "stats": {
+            "goals": 12,
+            "assists": 8,
+            "soGoals": 1,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 20
+          }
+        },
+        {
+          "id": 8478420,
+          "name": "Mikko Rantanen",
+          "pos": "F",
+          "group": 8,
+          "team": "DAL",
+          "gp": 25,
+          "stats": {
+            "goals": 10,
+            "assists": 19,
+            "soGoals": 0,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 29
+          }
+        },
+        {
+          "id": 8475913,
+          "name": "Mark Stone",
+          "pos": "F",
+          "group": 9,
+          "team": "VGK",
+          "gp": 27,
+          "stats": {
+            "goals": 11,
+            "assists": 12,
+            "soGoals": 0,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 23
+          }
+        },
+        {
+          "id": 8483515,
+          "name": "Juraj Slafkovský",
+          "pos": "F",
+          "group": 10,
+          "team": "MTL",
+          "gp": 26,
+          "stats": {
+            "goals": 2,
+            "assists": 12,
+            "soGoals": 0,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 14
+          }
+        },
+        {
+          "id": 8480830,
+          "name": "Andrei Svechnikov",
+          "pos": "F",
+          "group": 11,
+          "team": "CAR",
+          "gp": 25,
+          "stats": {
+            "goals": 13,
+            "assists": 10,
+            "soGoals": 0,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 23
+          }
+        },
+        {
+          "id": 8477933,
+          "name": "Sam Reinhart",
+          "pos": "F",
+          "group": 12,
+          "team": "FLA",
+          "gp": 26,
+          "stats": {
+            "goals": 12,
+            "assists": 11,
+            "soGoals": 0,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 23
+          }
+        },
+        {
+          "id": 8482093,
+          "name": "Seth Jarvis",
+          "pos": "F",
+          "group": 13,
+          "team": "CAR",
+          "gp": 14,
+          "stats": {
+            "goals": 2,
+            "assists": 9,
+            "soGoals": 0,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 11
+          }
+        },
+        {
+          "id": 8480801,
+          "name": "Brady Tkachuk",
+          "pos": "F",
+          "group": 14,
+          "team": "FLA",
+          "gp": 26,
+          "stats": {
+            "goals": 11,
+            "assists": 15,
+            "soGoals": 0,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 26
+          }
+        },
+        {
+          "id": 8484984,
+          "name": "Ivan Demidov",
+          "pos": "F",
+          "group": 15,
+          "team": "MTL",
+          "gp": 2,
+          "stats": {
+            "goals": 1,
+            "assists": 1,
+            "soGoals": 0,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 2
+          }
+        },
+        {
+          "id": 8480800,
+          "name": "Quinn Hughes",
+          "pos": "D",
+          "group": 16,
+          "team": "MIN",
+          "gp": 24,
+          "stats": {
+            "goals": 8,
+            "assists": 26,
+            "soGoals": 0,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 34
+          }
+        },
+        {
+          "id": 8480069,
+          "name": "Cale Makar",
+          "pos": "D",
+          "group": 17,
+          "team": "COL",
+          "gp": 21,
+          "stats": {
+            "goals": 5,
+            "assists": 22,
+            "soGoals": 1,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 27
+          }
+        },
+        {
+          "id": 8479345,
+          "name": "Jakob Chychrun",
+          "pos": "D",
+          "group": 18,
+          "team": "WSH",
+          "gp": 23,
+          "stats": {
+            "goals": 3,
+            "assists": 13,
+            "soGoals": 0,
+            "wins": 0,
+            "shutouts": 0,
+            "otl": 0,
+            "points": 16
+          }
+        },
+        {
+          "id": 8476883,
+          "name": "Andrei Vasilevskiy",
+          "pos": "G",
+          "group": 19,
+          "team": "TBL",
+          "gp": 18,
+          "stats": {
+            "goals": 0,
+            "assists": 0,
+            "soGoals": 0,
+            "wins": 11,
+            "shutouts": 0,
+            "otl": 1,
+            "points": 11
+          }
+        },
+        {
+          "id": 8475683,
+          "name": "Sergei Bobrovsky",
+          "pos": "G",
+          "group": 20,
+          "team": "TOR",
+          "gp": 14,
+          "stats": {
+            "goals": 0,
+            "assists": 0,
+            "soGoals": 0,
+            "wins": 3,
+            "shutouts": 0,
+            "otl": 2,
+            "points": 3
+          }
+        },
+        {
+          "id": 8476945,
+          "name": "Connor Hellebuyck",
+          "pos": "G",
+          "group": 21,
+          "team": "NJD",
+          "gp": 11,
+          "stats": {
+            "goals": 0,
+            "assists": 0,
+            "soGoals": 0,
+            "wins": 9,
+            "shutouts": 1,
+            "otl": 0,
+            "points": 11
+          }
+        }
+      ],
+      "formerStats": [],
+      "rank": 13,
+      "previousRank": 14,
+      "pointsDelta": 13
     },
     {
       "participantId": "usr_marjolaine_comeau",
       "participantName": "Marjolaine Comeau",
       "teamName": "mchb",
-      "totalPoints": 446,
-      "totalGoals": 133,
-      "totalAssists": 274,
+      "totalPoints": 452,
+      "totalGoals": 134,
+      "totalAssists": 279,
       "goalieWins": 27,
       "shootoutGoals": 0,
       "tradesUsed": {
@@ -4684,15 +5062,15 @@
           "pos": "F",
           "group": 6,
           "team": "NJD",
-          "gp": 25,
+          "gp": 26,
           "stats": {
-            "goals": 10,
-            "assists": 20,
+            "goals": 11,
+            "assists": 23,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 30
+            "points": 34
           }
         },
         {
@@ -4718,7 +5096,7 @@
           "pos": "F",
           "group": 8,
           "team": "NYI",
-          "gp": 6,
+          "gp": 7,
           "stats": {
             "goals": 1,
             "assists": 3,
@@ -4735,7 +5113,7 @@
           "pos": "F",
           "group": 9,
           "team": "VGK",
-          "gp": 26,
+          "gp": 27,
           "stats": {
             "goals": 11,
             "assists": 12,
@@ -4769,7 +5147,7 @@
           "pos": "F",
           "group": 11,
           "team": "TOR",
-          "gp": 16,
+          "gp": 17,
           "stats": {
             "goals": 4,
             "assists": 6,
@@ -4786,7 +5164,7 @@
           "pos": "F",
           "group": 12,
           "team": "BOS",
-          "gp": 24,
+          "gp": 25,
           "stats": {
             "goals": 6,
             "assists": 15,
@@ -4820,15 +5198,15 @@
           "pos": "F",
           "group": 14,
           "team": "FLA",
-          "gp": 25,
+          "gp": 26,
           "stats": {
             "goals": 11,
-            "assists": 13,
+            "assists": 15,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 24
+            "points": 26
           }
         },
         {
@@ -4837,7 +5215,7 @@
           "pos": "F",
           "group": 15,
           "team": "BOS",
-          "gp": 23,
+          "gp": 24,
           "stats": {
             "goals": 6,
             "assists": 12,
@@ -4888,7 +5266,7 @@
           "pos": "D",
           "group": 18,
           "team": "BOS",
-          "gp": 18,
+          "gp": 19,
           "stats": {
             "goals": 1,
             "assists": 11,
@@ -4939,7 +5317,7 @@
           "pos": "G",
           "group": 21,
           "team": "BOS",
-          "gp": 18,
+          "gp": 19,
           "stats": {
             "goals": 0,
             "assists": 1,
@@ -4948,399 +5326,21 @@
             "shutouts": 1,
             "otl": 1,
             "points": 14
-          }
-        }
-      ],
-      "formerStats": [],
-      "rank": 13,
-      "previousRank": 13,
-      "pointsDelta": 0
-    },
-    {
-      "participantId": "usr_florence",
-      "participantName": "Florence",
-      "teamName": "The Eras Tour: Stanley Cup Edition",
-      "totalPoints": 440,
-      "totalGoals": 138,
-      "totalAssists": 277,
-      "goalieWins": 23,
-      "shootoutGoals": 0,
-      "tradesUsed": {
-        "F": 0,
-        "D": 0,
-        "G": 0
-      },
-      "rosterStats": [
-        {
-          "id": 8484801,
-          "name": "Macklin Celebrini",
-          "pos": "F",
-          "group": 1,
-          "team": "SJS",
-          "gp": 25,
-          "stats": {
-            "goals": 10,
-            "assists": 21,
-            "soGoals": 2,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 31
-          }
-        },
-        {
-          "id": 8484144,
-          "name": "Connor Bedard",
-          "pos": "F",
-          "group": 2,
-          "team": "CHI",
-          "gp": 15,
-          "stats": {
-            "goals": 7,
-            "assists": 11,
-            "soGoals": 0,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 18
-          }
-        },
-        {
-          "id": 8477492,
-          "name": "Nathan MacKinnon",
-          "pos": "F",
-          "group": 3,
-          "team": "COL",
-          "gp": 20,
-          "stats": {
-            "goals": 10,
-            "assists": 20,
-            "soGoals": 0,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 30
-          }
-        },
-        {
-          "id": 8479314,
-          "name": "Matthew Tkachuk",
-          "pos": "F",
-          "group": 4,
-          "team": "FLA",
-          "gp": 25,
-          "stats": {
-            "goals": 7,
-            "assists": 26,
-            "soGoals": 0,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 33
-          }
-        },
-        {
-          "id": 8478483,
-          "name": "Mitch Marner",
-          "pos": "F",
-          "group": 5,
-          "team": "VGK",
-          "gp": 24,
-          "stats": {
-            "goals": 4,
-            "assists": 25,
-            "soGoals": 0,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 29
-          }
-        },
-        {
-          "id": 8481559,
-          "name": "Jack Hughes",
-          "pos": "F",
-          "group": 6,
-          "team": "NJD",
-          "gp": 25,
-          "stats": {
-            "goals": 10,
-            "assists": 20,
-            "soGoals": 0,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 30
-          }
-        },
-        {
-          "id": 8481540,
-          "name": "Cole Caufield",
-          "pos": "F",
-          "group": 7,
-          "team": "MTL",
-          "gp": 26,
-          "stats": {
-            "goals": 12,
-            "assists": 8,
-            "soGoals": 1,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 20
-          }
-        },
-        {
-          "id": 8478420,
-          "name": "Mikko Rantanen",
-          "pos": "F",
-          "group": 8,
-          "team": "DAL",
-          "gp": 24,
-          "stats": {
-            "goals": 10,
-            "assists": 18,
-            "soGoals": 0,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 28
-          }
-        },
-        {
-          "id": 8475913,
-          "name": "Mark Stone",
-          "pos": "F",
-          "group": 9,
-          "team": "VGK",
-          "gp": 26,
-          "stats": {
-            "goals": 11,
-            "assists": 12,
-            "soGoals": 0,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 23
-          }
-        },
-        {
-          "id": 8483515,
-          "name": "Juraj Slafkovský",
-          "pos": "F",
-          "group": 10,
-          "team": "MTL",
-          "gp": 26,
-          "stats": {
-            "goals": 2,
-            "assists": 12,
-            "soGoals": 0,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 14
-          }
-        },
-        {
-          "id": 8480830,
-          "name": "Andrei Svechnikov",
-          "pos": "F",
-          "group": 11,
-          "team": "CAR",
-          "gp": 25,
-          "stats": {
-            "goals": 13,
-            "assists": 10,
-            "soGoals": 0,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 23
-          }
-        },
-        {
-          "id": 8477933,
-          "name": "Sam Reinhart",
-          "pos": "F",
-          "group": 12,
-          "team": "FLA",
-          "gp": 25,
-          "stats": {
-            "goals": 12,
-            "assists": 11,
-            "soGoals": 0,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 23
-          }
-        },
-        {
-          "id": 8482093,
-          "name": "Seth Jarvis",
-          "pos": "F",
-          "group": 13,
-          "team": "CAR",
-          "gp": 14,
-          "stats": {
-            "goals": 2,
-            "assists": 9,
-            "soGoals": 0,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 11
-          }
-        },
-        {
-          "id": 8480801,
-          "name": "Brady Tkachuk",
-          "pos": "F",
-          "group": 14,
-          "team": "FLA",
-          "gp": 25,
-          "stats": {
-            "goals": 11,
-            "assists": 13,
-            "soGoals": 0,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 24
-          }
-        },
-        {
-          "id": 8484984,
-          "name": "Ivan Demidov",
-          "pos": "F",
-          "group": 15,
-          "team": "MTL",
-          "gp": 2,
-          "stats": {
-            "goals": 1,
-            "assists": 1,
-            "soGoals": 0,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 2
-          }
-        },
-        {
-          "id": 8480800,
-          "name": "Quinn Hughes",
-          "pos": "D",
-          "group": 16,
-          "team": "MIN",
-          "gp": 24,
-          "stats": {
-            "goals": 8,
-            "assists": 26,
-            "soGoals": 0,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 34
-          }
-        },
-        {
-          "id": 8480069,
-          "name": "Cale Makar",
-          "pos": "D",
-          "group": 17,
-          "team": "COL",
-          "gp": 20,
-          "stats": {
-            "goals": 5,
-            "assists": 21,
-            "soGoals": 0,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 26
-          }
-        },
-        {
-          "id": 8479345,
-          "name": "Jakob Chychrun",
-          "pos": "D",
-          "group": 18,
-          "team": "WSH",
-          "gp": 22,
-          "stats": {
-            "goals": 3,
-            "assists": 13,
-            "soGoals": 0,
-            "wins": 0,
-            "shutouts": 0,
-            "otl": 0,
-            "points": 16
-          }
-        },
-        {
-          "id": 8476883,
-          "name": "Andrei Vasilevskiy",
-          "pos": "G",
-          "group": 19,
-          "team": "TBL",
-          "gp": 18,
-          "stats": {
-            "goals": 0,
-            "assists": 0,
-            "soGoals": 0,
-            "wins": 11,
-            "shutouts": 0,
-            "otl": 1,
-            "points": 11
-          }
-        },
-        {
-          "id": 8475683,
-          "name": "Sergei Bobrovsky",
-          "pos": "G",
-          "group": 20,
-          "team": "TOR",
-          "gp": 14,
-          "stats": {
-            "goals": 0,
-            "assists": 0,
-            "soGoals": 0,
-            "wins": 3,
-            "shutouts": 0,
-            "otl": 2,
-            "points": 3
-          }
-        },
-        {
-          "id": 8476945,
-          "name": "Connor Hellebuyck",
-          "pos": "G",
-          "group": 21,
-          "team": "NJD",
-          "gp": 11,
-          "stats": {
-            "goals": 0,
-            "assists": 0,
-            "soGoals": 0,
-            "wins": 9,
-            "shutouts": 1,
-            "otl": 0,
-            "points": 11
           }
         }
       ],
       "formerStats": [],
       "rank": 14,
-      "previousRank": 14,
-      "pointsDelta": 0
+      "previousRank": 13,
+      "pointsDelta": 6
     },
     {
       "participantId": "usr_jolyne_brossard",
       "participantName": "Jolyne Brossard",
       "teamName": "SkiBum",
-      "totalPoints": 438,
-      "totalGoals": 147,
-      "totalAssists": 261,
+      "totalPoints": 444,
+      "totalGoals": 148,
+      "totalAssists": 266,
       "goalieWins": 28,
       "shootoutGoals": 0,
       "tradesUsed": {
@@ -5372,7 +5372,7 @@
           "pos": "F",
           "group": 2,
           "team": "FLA",
-          "gp": 3,
+          "gp": 4,
           "stats": {
             "goals": 1,
             "assists": 0,
@@ -5406,15 +5406,15 @@
           "pos": "F",
           "group": 4,
           "team": "FLA",
-          "gp": 25,
+          "gp": 26,
           "stats": {
             "goals": 7,
-            "assists": 26,
+            "assists": 28,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 33
+            "points": 35
           }
         },
         {
@@ -5423,15 +5423,15 @@
           "pos": "F",
           "group": 5,
           "team": "VGK",
-          "gp": 24,
+          "gp": 25,
           "stats": {
             "goals": 4,
-            "assists": 25,
+            "assists": 26,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 29
+            "points": 30
           }
         },
         {
@@ -5440,15 +5440,15 @@
           "pos": "F",
           "group": 6,
           "team": "DAL",
-          "gp": 22,
+          "gp": 23,
           "stats": {
             "goals": 8,
-            "assists": 14,
+            "assists": 15,
             "soGoals": 1,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 22
+            "points": 23
           }
         },
         {
@@ -5474,7 +5474,7 @@
           "pos": "F",
           "group": 8,
           "team": "NYI",
-          "gp": 6,
+          "gp": 7,
           "stats": {
             "goals": 1,
             "assists": 3,
@@ -5491,7 +5491,7 @@
           "pos": "F",
           "group": 9,
           "team": "ANA",
-          "gp": 25,
+          "gp": 26,
           "stats": {
             "goals": 23,
             "assists": 9,
@@ -5508,15 +5508,15 @@
           "pos": "F",
           "group": 10,
           "team": "LAK",
-          "gp": 21,
+          "gp": 22,
           "stats": {
-            "goals": 6,
+            "goals": 7,
             "assists": 8,
             "soGoals": 1,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 14
+            "points": 15
           }
         },
         {
@@ -5542,7 +5542,7 @@
           "pos": "F",
           "group": 12,
           "team": "FLA",
-          "gp": 25,
+          "gp": 26,
           "stats": {
             "goals": 12,
             "assists": 11,
@@ -5559,7 +5559,7 @@
           "pos": "F",
           "group": 13,
           "team": "NSH",
-          "gp": 24,
+          "gp": 25,
           "stats": {
             "goals": 12,
             "assists": 12,
@@ -5576,7 +5576,7 @@
           "pos": "F",
           "group": 14,
           "team": "WSH",
-          "gp": 22,
+          "gp": 23,
           "stats": {
             "goals": 1,
             "assists": 6,
@@ -5627,15 +5627,15 @@
           "pos": "D",
           "group": 17,
           "team": "COL",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 5,
-            "assists": 21,
-            "soGoals": 0,
+            "assists": 22,
+            "soGoals": 1,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 26
+            "points": 27
           }
         },
         {
@@ -5678,7 +5678,7 @@
           "pos": "G",
           "group": 20,
           "team": "WSH",
-          "gp": 16,
+          "gp": 17,
           "stats": {
             "goals": 0,
             "assists": 1,
@@ -5710,16 +5710,16 @@
       "formerStats": [],
       "rank": 15,
       "previousRank": 15,
-      "pointsDelta": 0
+      "pointsDelta": 6
     },
     {
       "participantId": "usr_louise_trottier",
       "participantName": "Louise Trottier",
       "teamName": "Les huards",
-      "totalPoints": 438,
+      "totalPoints": 441,
       "totalGoals": 145,
-      "totalAssists": 267,
-      "goalieWins": 22,
+      "totalAssists": 269,
+      "goalieWins": 23,
       "shootoutGoals": 0,
       "tradesUsed": {
         "F": 0,
@@ -5818,15 +5818,15 @@
           "pos": "F",
           "group": 6,
           "team": "DAL",
-          "gp": 22,
+          "gp": 23,
           "stats": {
             "goals": 8,
-            "assists": 14,
+            "assists": 15,
             "soGoals": 1,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 22
+            "points": 23
           }
         },
         {
@@ -5852,7 +5852,7 @@
           "pos": "F",
           "group": 8,
           "team": "TOR",
-          "gp": 26,
+          "gp": 27,
           "stats": {
             "goals": 11,
             "assists": 14,
@@ -5869,7 +5869,7 @@
           "pos": "F",
           "group": 9,
           "team": "VGK",
-          "gp": 26,
+          "gp": 27,
           "stats": {
             "goals": 11,
             "assists": 12,
@@ -5903,15 +5903,15 @@
           "pos": "F",
           "group": 11,
           "team": "UTA",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 7,
-            "assists": 7,
+            "assists": 8,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 14
+            "points": 15
           }
         },
         {
@@ -5920,7 +5920,7 @@
           "pos": "F",
           "group": 12,
           "team": "BOS",
-          "gp": 24,
+          "gp": 25,
           "stats": {
             "goals": 6,
             "assists": 15,
@@ -5954,7 +5954,7 @@
           "pos": "F",
           "group": 14,
           "team": "CBJ",
-          "gp": 23,
+          "gp": 24,
           "stats": {
             "goals": 6,
             "assists": 8,
@@ -6022,7 +6022,7 @@
           "pos": "D",
           "group": 18,
           "team": "BOS",
-          "gp": 18,
+          "gp": 19,
           "stats": {
             "goals": 1,
             "assists": 11,
@@ -6056,15 +6056,15 @@
           "pos": "G",
           "group": 20,
           "team": "UTA",
-          "gp": 17,
+          "gp": 18,
           "stats": {
             "goals": 0,
             "assists": 1,
             "soGoals": 0,
-            "wins": 7,
+            "wins": 8,
             "shutouts": 2,
             "otl": 2,
-            "points": 12
+            "points": 13
           }
         },
         {
@@ -6088,15 +6088,15 @@
       "formerStats": [],
       "rank": 16,
       "previousRank": 16,
-      "pointsDelta": 0
+      "pointsDelta": 3
     },
     {
       "participantId": "usr_vicky",
       "participantName": "Vicky",
       "teamName": "Les PhD fatiguées",
-      "totalPoints": 410,
-      "totalGoals": 128,
-      "totalAssists": 260,
+      "totalPoints": 417,
+      "totalGoals": 131,
+      "totalAssists": 264,
       "goalieWins": 20,
       "shootoutGoals": 0,
       "tradesUsed": {
@@ -6111,15 +6111,15 @@
           "pos": "F",
           "group": 1,
           "team": "SJS",
-          "gp": 25,
+          "gp": 26,
           "stats": {
-            "goals": 10,
-            "assists": 21,
+            "goals": 11,
+            "assists": 22,
             "soGoals": 2,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 31
+            "points": 33
           }
         },
         {
@@ -6179,15 +6179,15 @@
           "pos": "F",
           "group": 5,
           "team": "VGK",
-          "gp": 24,
+          "gp": 25,
           "stats": {
             "goals": 4,
-            "assists": 25,
+            "assists": 26,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 29
+            "points": 30
           }
         },
         {
@@ -6196,15 +6196,15 @@
           "pos": "F",
           "group": 6,
           "team": "NYR",
-          "gp": 24,
+          "gp": 25,
           "stats": {
-            "goals": 6,
+            "goals": 7,
             "assists": 14,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 20
+            "points": 21
           }
         },
         {
@@ -6213,15 +6213,15 @@
           "pos": "F",
           "group": 7,
           "team": "NSH",
-          "gp": 24,
+          "gp": 25,
           "stats": {
-            "goals": 9,
+            "goals": 10,
             "assists": 17,
             "soGoals": 1,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 26
+            "points": 27
           }
         },
         {
@@ -6230,15 +6230,15 @@
           "pos": "F",
           "group": 8,
           "team": "DAL",
-          "gp": 24,
+          "gp": 25,
           "stats": {
             "goals": 10,
-            "assists": 18,
+            "assists": 19,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 28
+            "points": 29
           }
         },
         {
@@ -6247,7 +6247,7 @@
           "pos": "F",
           "group": 9,
           "team": "ANA",
-          "gp": 25,
+          "gp": 26,
           "stats": {
             "goals": 23,
             "assists": 9,
@@ -6281,15 +6281,15 @@
           "pos": "F",
           "group": 11,
           "team": "UTA",
-          "gp": 20,
+          "gp": 21,
           "stats": {
             "goals": 7,
-            "assists": 7,
+            "assists": 8,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 14
+            "points": 15
           }
         },
         {
@@ -6298,7 +6298,7 @@
           "pos": "F",
           "group": 12,
           "team": "BOS",
-          "gp": 24,
+          "gp": 25,
           "stats": {
             "goals": 6,
             "assists": 15,
@@ -6400,7 +6400,7 @@
           "pos": "D",
           "group": 18,
           "team": "BOS",
-          "gp": 18,
+          "gp": 19,
           "stats": {
             "goals": 1,
             "assists": 11,
@@ -6466,16 +6466,16 @@
       "formerStats": [],
       "rank": 17,
       "previousRank": 17,
-      "pointsDelta": 0
+      "pointsDelta": 7
     },
     {
       "participantId": "usr_maddox_gagnon",
       "participantName": "Maddox Gagnon",
       "teamName": "SK|MADDOXG",
-      "totalPoints": 394,
-      "totalGoals": 135,
-      "totalAssists": 238,
-      "goalieWins": 17,
+      "totalPoints": 400,
+      "totalGoals": 137,
+      "totalAssists": 241,
+      "goalieWins": 18,
       "shootoutGoals": 0,
       "tradesUsed": {
         "F": 0,
@@ -6489,7 +6489,7 @@
           "pos": "F",
           "group": 1,
           "team": "BOS",
-          "gp": 24,
+          "gp": 25,
           "stats": {
             "goals": 11,
             "assists": 21,
@@ -6574,15 +6574,15 @@
           "pos": "F",
           "group": 6,
           "team": "TBL",
-          "gp": 24,
+          "gp": 25,
           "stats": {
-            "goals": 13,
+            "goals": 15,
             "assists": 16,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 29
+            "points": 31
           }
         },
         {
@@ -6608,15 +6608,15 @@
           "pos": "F",
           "group": 8,
           "team": "NSH",
-          "gp": 24,
+          "gp": 25,
           "stats": {
             "goals": 9,
-            "assists": 14,
+            "assists": 15,
             "soGoals": 1,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 23
+            "points": 24
           }
         },
         {
@@ -6676,15 +6676,15 @@
           "pos": "F",
           "group": 12,
           "team": "COL",
-          "gp": 24,
+          "gp": 25,
           "stats": {
             "goals": 8,
-            "assists": 10,
+            "assists": 11,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 18
+            "points": 19
           }
         },
         {
@@ -6693,7 +6693,7 @@
           "pos": "F",
           "group": 13,
           "team": "NSH",
-          "gp": 24,
+          "gp": 25,
           "stats": {
             "goals": 12,
             "assists": 12,
@@ -6710,7 +6710,7 @@
           "pos": "F",
           "group": 14,
           "team": "WSH",
-          "gp": 22,
+          "gp": 23,
           "stats": {
             "goals": 1,
             "assists": 6,
@@ -6778,15 +6778,15 @@
           "pos": "D",
           "group": 18,
           "team": "DET",
-          "gp": 24,
+          "gp": 25,
           "stats": {
             "goals": 1,
-            "assists": 14,
+            "assists": 15,
             "soGoals": 0,
             "wins": 0,
             "shutouts": 0,
             "otl": 0,
-            "points": 15
+            "points": 16
           }
         },
         {
@@ -6795,15 +6795,15 @@
           "pos": "G",
           "group": 19,
           "team": "STL",
-          "gp": 18,
+          "gp": 19,
           "stats": {
             "goals": 0,
             "assists": 1,
             "soGoals": 0,
-            "wins": 10,
+            "wins": 11,
             "shutouts": 2,
             "otl": 2,
-            "points": 15
+            "points": 16
           }
         },
         {
@@ -6844,7 +6844,7 @@
       "formerStats": [],
       "rank": 18,
       "previousRank": 18,
-      "pointsDelta": 0
+      "pointsDelta": 6
     }
   ]
 }

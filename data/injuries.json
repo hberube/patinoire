@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T08:30:48Z",
+  "updated": "2026-11-28T03:55:56Z",
   "source": "ESPN",
   "players": [
     {
@@ -36,15 +36,15 @@
       "note": "Demidov is expected to travel to Vegas and join the Canadiens for practice Friday, Eric Engels of Sportsnet reports."
     },
     {
-      "id": 8480893,
-      "name": "Kirill Marchenko",
-      "team": "TOR",
+      "id": 8484153,
+      "name": "Leo Carlsson",
+      "team": "ANA",
       "pos": "F",
       "status": "ir",
-      "type": "Lower Body",
-      "returnDate": "2026-11-27",
-      "noteDate": "2026-11-25",
-      "note": "Marchenko (lower body) is expected back in the lineup against the Bruins on Friday after telling reporters, \"My leg feels perfect and I'm ready to go,\" Mark Masters of TSN reports."
+      "type": "Upper Body",
+      "returnDate": "2026-12-01",
+      "noteDate": "2026-11-27",
+      "note": "ir"
     },
     {
       "id": 8477951,
@@ -64,7 +64,7 @@
       "pos": "F",
       "status": "ir",
       "type": "Lower Body",
-      "returnDate": "2026-11-27",
+      "returnDate": "2026-11-28",
       "noteDate": "2026-11-24",
       "note": "Dorofeyev (lower body) will join the Rangers for their two-game road trip, Mollie Walker of the New York Post reports Tuesday."
     },
@@ -91,6 +91,17 @@
       "note": "out"
     },
     {
+      "id": 8480039,
+      "name": "Martin Necas",
+      "team": "COL",
+      "pos": "F",
+      "status": "out",
+      "type": "Upper Body",
+      "returnDate": "2026-11-28",
+      "noteDate": "2026-11-27",
+      "note": "out"
+    },
+    {
       "id": 8477492,
       "name": "Nathan MacKinnon",
       "team": "COL",
@@ -102,15 +113,15 @@
       "note": "MacKinnon (lower body) has been evaluated by a specialist and is expected to miss the next 12 weeks, Aarif Deen of Colorado Hockey Now reports Saturday."
     },
     {
-      "id": 8484153,
-      "name": "Leo Carlsson",
-      "team": "ANA",
+      "id": 8477956,
+      "name": "David Pastrnak",
+      "team": "BOS",
       "pos": "F",
       "status": "dtd",
-      "type": "Upper Body",
-      "returnDate": "2026-11-27",
-      "noteDate": "2026-11-26",
-      "note": "day-to-day"
+      "type": "Lower Body",
+      "returnDate": "2026-11-29",
+      "noteDate": "2026-11-27",
+      "note": "Pastrnak sustained a lower-body injury and is unlikely to return to Friday's game against Toronto."
     },
     {
       "id": 8477940,
