@@ -1,19 +1,6 @@
 {
   "memes": [
     {
-      "gameDay": "2026-11-11",
-      "category": "participant",
-      "format": "classic",
-      "subject": {
-        "kind": "team",
-        "id": "usr_michel_bry"
-      },
-      "fr": {
-        "top": "MICHEL PASSE GUILLAUME AU 1ER RANG PAR 2 PTS",
-        "bottom": "LE KIWI NE VOLE PAS. LE CANARD, LUI, VOLE LA 1RE PLACE."
-      }
-    },
-    {
       "gameDay": "2026-11-15",
       "category": "injury",
       "format": "breaking",
@@ -132,6 +119,23 @@
       "fr": {
         "top": "ZEGRAS : 4 MATCHS, 0 POINT",
         "bottom": "SES 3 POOLERS RÊVAIENT D'UN MICHIGAN. UN RICOCHET FERAIT L'AFFAIRE."
+      }
+    },
+    {
+      "gameDay": "2026-11-27",
+      "category": "bingo",
+      "format": "versus",
+      "subject": {
+        "kind": "team",
+        "id": "usr_guillaume_brossard"
+      },
+      "subject2": {
+        "kind": "team",
+        "id": "usr_simon"
+      },
+      "fr": {
+        "no": "GUILLAUME : 4 CASES, 0 LIGNE. C'EST PAS UN BINGO, C'EST UN POLLOCK",
+        "yes": "SIMON, 0 CASE LE 18 NOV, 4 LIGNES HIER : LES GRIS REPRENNENT COULEUR"
       }
     }
   ]
