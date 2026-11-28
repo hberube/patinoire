@@ -51,15 +51,18 @@ def get_json(url, params=None, tries=6):
             time.sleep(wait)
 
 
-def _fetch(kind, season, report="summary", page=100):
+def _fetch(kind, season, report="summary", page=100, through=None):
     """Every row of a stats report. Since late Nov 2026 the API ignores limit=-1 and returns at most
     100 rows, which zeroed every skater outside the top 100, so page through it (sorted by id so the
     pages don't overlap) and fail loudly rather than publish a short list."""
     rows, total = [], None
     sort = json.dumps([{"property": "playerId", "direction": "ASC"}])
+    where = f"seasonId={season} and gameTypeId=2"
+    if through:  # only games up to that date (YYYY-MM-DD), e.g. to leave tonight's games out
+        where += f' and gameDate<="{through} 23:59:59"'
     while total is None or len(rows) < total:
         params = {"limit": page, "start": len(rows), "sort": sort,
-                  "cayenneExp": f"seasonId={season} and gameTypeId=2"}
+                  "cayenneExp": where}
         data = get_json(STATS_URL.format(kind=kind, report=report), params)
         batch, total = data["data"], data.get("total", 0)
         if not batch:
@@ -70,11 +73,11 @@ def _fetch(kind, season, report="summary", page=100):
     return rows
 
 
-def fetch_season_stats(season):
+def fetch_season_stats(season, through=None):
     """Returns {player_id(str): {name, pos, team, gp, goals, assists, soGoals, wins, shutouts, otl}}
     for every player who has played a regular-season game this season (3 API calls)."""
     players = {}
-    for row in _fetch("skater", season):
+    for row in _fetch("skater", season, through=through):
         players[str(row["playerId"])] = {
             "name": row["skaterFullName"],
             "pos": "D" if row["positionCode"] == "D" else "F",
@@ -84,7 +87,7 @@ def fetch_season_stats(season):
             "assists": row["assists"],
             "soGoals": 0, "wins": 0, "shutouts": 0, "otl": 0,
         }
-    for row in _fetch("goalie", season):
+    for row in _fetch("goalie", season, through=through):
         players[str(row["playerId"])] = {
             "name": row["goalieFullName"],
             "pos": "G",
@@ -98,7 +101,7 @@ def fetch_season_stats(season):
             "otl": row["otLosses"] or 0,
         }
     try:  # only matters if config.scoring weights soGoals; never fail the run over it
-        for row in _fetch("skater", season, report="shootout"):
+        for row in _fetch("skater", season, report="shootout", through=through):
             if str(row["playerId"]) in players:
                 players[str(row["playerId"])]["soGoals"] = row["shootoutGoals"] or 0
     except requests.RequestException as e:

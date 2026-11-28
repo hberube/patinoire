@@ -9,12 +9,12 @@ from pool_lib import (STAT_KEYS, diff_stats, fetch_season_stats, load, now_iso,
                       pool_line, raw_stats, save, weights)
 
 
-def rebuild_leaderboard(season_players=None):
+def rebuild_leaderboard(season_players=None, through=None, history_day=None):
     config = load("config.json")
     rosters = load("rosters.json")
     scoring = config["scoring"]
     if season_players is None:
-        season_players = fetch_season_stats(config["season"])
+        season_players = fetch_season_stats(config["season"], through)
     stamp = now_iso()
 
     # Keep every sheet player (and anyone rostered) in the master even before his first game
@@ -93,10 +93,14 @@ def rebuild_leaderboard(season_players=None):
         "previousPoints": prev_points,
         "standings": standings,
     })
-    history.record(standings)
+    history.record(standings, day=history_day)
     print(f"Leaderboard rebuilt: {len(standings)} teams, {len(season_players)} NHL players tracked.")
     return season_players
 
 
 if __name__ == "__main__":
-    rebuild_leaderboard()
+    # --through YYYY-MM-DD: count only games up to that date (rebuild mid-evening without tonight's games)
+    # --history-day YYYY-MM-DD: also rewrite that day's point in history.json
+    import sys
+    opt = lambda name: sys.argv[sys.argv.index(name) + 1] if name in sys.argv else None
+    rebuild_leaderboard(through=opt("--through"), history_day=opt("--history-day"))
